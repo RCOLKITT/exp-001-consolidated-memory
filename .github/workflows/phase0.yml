@@ -11,8 +11,11 @@ on:
     branches: ["run/phase0-*"]
   workflow_dispatch:
     inputs:
+      dataset:
+        description: "Hugging Face dataset id"
+        default: "SWE-bench-Live/SWE-bench-Live"
       split:
-        description: "SWE-bench-Live split (lite | verified | full)"
+        description: "Dataset split (lite | verified | full | all)"
         default: "full"
       cutoff:
         description: "Training cutoff (YYYY-MM-DD) of the model under evaluation. Blank = no freshness gate (exploration only)."
@@ -38,6 +41,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       dir: ${{ steps.dir.outputs.dir }}
+      dataset: ${{ steps.cfg.outputs.dataset }}
       split: ${{ steps.cfg.outputs.split }}
       cutoff: ${{ steps.cfg.outputs.cutoff }}
       model: ${{ steps.cfg.outputs.model }}
@@ -66,7 +70,7 @@ jobs:
           def pick(env, key, default):
               v = os.environ.get(env, "")
               return v if v not in ("", "false") or key == "cutoff" and v != "" else cfg.get(key, default)
-          out = {"split": pick("IN_SPLIT", "split", "full"), "cutoff": pick("IN_CUTOFF", "cutoff", ""),
+          out = {"dataset": pick("IN_DATASET", "dataset", "SWE-bench-Live/SWE-bench-Live"), "split": pick("IN_SPLIT", "split", "full"), "cutoff": pick("IN_CUTOFF", "cutoff", ""),
                  "model": pick("IN_MODEL", "model", "claude-opus-5"), "run_control": str(pick("IN_RUN_CONTROL", "run_control", False)).lower(),
                  "limit": str(pick("IN_LIMIT", "limit", 50)), "top_k": str(pick("IN_TOP_K", "top_k", 3))}
           for k, v in out.items(): print(f"{k}={v}")
@@ -80,11 +84,11 @@ jobs:
           mkdir -p corpus "${{ steps.dir.outputs.dir }}"
           if [ -n "${{ steps.cfg.outputs.cutoff }}" ]; then
             printf '{"%s": "%s"}\n' "${{ steps.cfg.outputs.model }}" "${{ steps.cfg.outputs.cutoff }}" > corpus/models.json
-            python -m phase0.corpus pull --split "${{ steps.cfg.outputs.split }}" --out corpus/tasks.jsonl --models corpus/models.json 2> corpus/pull.log
+            python -m phase0.corpus pull --dataset "${{ steps.cfg.outputs.dataset }}" --split "${{ steps.cfg.outputs.split }}" --out corpus/tasks.jsonl --models corpus/models.json 2> corpus/pull.log
             cp corpus/models.json "${{ steps.dir.outputs.dir }}/models.json"
             cp corpus/tasks.freshness.jsonl "${{ steps.dir.outputs.dir }}/freshness.jsonl"
           else
-            python -m phase0.corpus pull --split "${{ steps.cfg.outputs.split }}" --out corpus/tasks.jsonl 2> corpus/pull.log
+            python -m phase0.corpus pull --dataset "${{ steps.cfg.outputs.dataset }}" --split "${{ steps.cfg.outputs.split }}" --out corpus/tasks.jsonl 2> corpus/pull.log
           fi
           cat corpus/pull.log
           cp corpus/pull.log "${{ steps.dir.outputs.dir }}/pull.log"
@@ -98,7 +102,15 @@ jobs:
           rows=[json.loads(l) for l in open("corpus/tasks.jsonl")]
           by=collections.Counter(r["repo"] for r in rows)
           dates=sorted(r["created_at"][:10] for r in rows)
-          print(json.dumps({"split":"${{ steps.cfg.outputs.split }}","cutoff":"${{ steps.cfg.outputs.cutoff }}","n_tasks":len(rows),"n_repos":len(by),"first":dates[0] if dates else None,"last":dates[-1] if dates else None,"fields":sorted(rows[0].keys()) if rows else []},indent=1))
+          months=collections.Counter(d[:7] for d in dates)
+          # how much corpus survives each candidate cutoff, and how many repos keep >= 30 tasks
+          survivors={}
+          for c in ["2024-07-01","2025-01-01","2025-04-01","2025-07-01","2026-01-01"]:
+              keep=[r for r in rows if r["created_at"][:10] > c]
+              rc=collections.Counter(r["repo"] for r in keep)
+              survivors[c]={"tasks":len(keep),"repos":len(rc),"repos_ge30":sum(1 for v in rc.values() if v>=30),"repos_ge20":sum(1 for v in rc.values() if v>=20)}
+          langs=collections.Counter(r.get("language","?") for r in rows)
+          print(json.dumps({"dataset":"${{ steps.cfg.outputs.dataset }}","split":"${{ steps.cfg.outputs.split }}","cutoff":"${{ steps.cfg.outputs.cutoff }}","n_tasks":len(rows),"n_repos":len(by),"first":dates[0] if dates else None,"last":dates[-1] if dates else None,"per_month":dict(sorted(months.items())),"survivors_after_cutoff":survivors,"languages":dict(langs),"fields":sorted(rows[0].keys()) if rows else []},indent=1))
           PY
           cat "$D/corpus-summary.json"; head -12 "$D/chain-report.md"
       - uses: actions/upload-artifact@v4

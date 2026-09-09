@@ -114,12 +114,25 @@ def write_tasks(tasks: Iterable[Task], path: str | Path) -> int:
 
 
 def pull_from_hf(dataset: str = HF_DATASET, split: str = "full") -> list[Task]:
+    """`split="all"` concatenates every split of the dataset (de-duplicated by
+    instance_id, first split wins) — for datasets whose split names are unknown."""
     try:
         from datasets import load_dataset  # type: ignore
     except ImportError as e:  # pragma: no cover
         raise SystemExit("pip install datasets  (needs network access to huggingface.co)") from e
-    ds = load_dataset(dataset, split=split)
-    return [normalise(row) for row in ds]
+    if split != "all":
+        return [normalise(row) for row in load_dataset(dataset, split=split)]
+    seen: set[str] = set()
+    out: list[Task] = []
+    dd = load_dataset(dataset)
+    for name in sorted(dd.keys()):
+        sys.stderr.write(f"split {name}: {len(dd[name])} rows\n")
+        for row in dd[name]:
+            if row["instance_id"] in seen:
+                continue
+            seen.add(row["instance_id"])
+            out.append(normalise(row))
+    return out
 
 
 def apply_freshness(tasks: list[Task], models_path: str | Path, report_path: str | Path | None, margin_days: int = 0) -> list[Task]:
