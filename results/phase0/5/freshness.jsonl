@@ -1,0 +1,1077 @@
+{"instance_id": "cc65__cc65-2941", "created": "2026-03-11", "admitted": true, "reason": "fresh"}
+{"instance_id": "libarchive__libarchive-2968", "created": "2026-04-19", "admitted": true, "reason": "fresh"}
+{"instance_id": "saghul__txiki.js-881", "created": "2026-03-26", "admitted": true, "reason": "fresh"}
+{"instance_id": "fluent__fluent-bit-11677", "created": "2026-04-06", "admitted": true, "reason": "fresh"}
+{"instance_id": "rizinorg__rizin-6079", "created": "2026-03-23", "admitted": true, "reason": "fresh"}
+{"instance_id": "fluent__fluent-bit-11722", "created": "2026-04-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-817", "created": "2026-07-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "AOMediaCodec__libavif-3273", "created": "2026-06-19", "admitted": true, "reason": "fresh"}
+{"instance_id": "DynamoRIO__dynamorio-7945", "created": "2026-06-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "DynamoRIO__dynamorio-7944", "created": "2026-06-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-830", "created": "2026-07-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "DynamoRIO__dynamorio-7903", "created": "2026-05-20", "admitted": true, "reason": "fresh"}
+{"instance_id": "c-ares__c-ares-1190", "created": "2026-07-03", "admitted": true, "reason": "fresh"}
+{"instance_id": "timescale__timescaledb-9983", "created": "2026-06-06", "admitted": true, "reason": "fresh"}
+{"instance_id": "colbymchenry__codegraph-1051", "created": "2026-06-29", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-809", "created": "2026-07-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-763", "created": "2026-07-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-789", "created": "2026-07-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-803", "created": "2026-07-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-810", "created": "2026-07-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-815", "created": "2026-07-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-876", "created": "2026-07-29", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-829", "created": "2026-07-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-784", "created": "2026-07-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-807", "created": "2026-07-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-837", "created": "2026-07-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-849", "created": "2026-07-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-851", "created": "2026-07-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-893", "created": "2026-07-30", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-835", "created": "2026-07-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-765", "created": "2026-07-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-850", "created": "2026-07-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "timescale__timescaledb-9908", "created": "2026-05-26", "admitted": true, "reason": "fresh"}
+{"instance_id": "timescale__timescaledb-9988", "created": "2026-06-07", "admitted": true, "reason": "fresh"}
+{"instance_id": "timescale__timescaledb-9955", "created": "2026-06-02", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-811", "created": "2026-07-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "AOMediaCodec__libavif-3300", "created": "2026-07-15", "admitted": true, "reason": "fresh"}
+{"instance_id": "fluent__fluent-bit-12029", "created": "2026-07-02", "admitted": true, "reason": "fresh"}
+{"instance_id": "c-ares__c-ares-1197", "created": "2026-07-04", "admitted": true, "reason": "fresh"}
+{"instance_id": "colbymchenry__codegraph-951", "created": "2026-06-22", "admitted": true, "reason": "fresh"}
+{"instance_id": "c-ares__c-ares-1189", "created": "2026-07-03", "admitted": true, "reason": "fresh"}
+{"instance_id": "AOMediaCodec__libavif-3270", "created": "2026-06-18", "admitted": true, "reason": "fresh"}
+{"instance_id": "colbymchenry__codegraph-1066", "created": "2026-06-29", "admitted": true, "reason": "fresh"}
+{"instance_id": "colbymchenry__codegraph-1207", "created": "2026-07-07", "admitted": true, "reason": "fresh"}
+{"instance_id": "colbymchenry__codegraph-894", "created": "2026-06-15", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-856", "created": "2026-07-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "colbymchenry__codegraph-868", "created": "2026-06-13", "admitted": true, "reason": "fresh"}
+{"instance_id": "colbymchenry__codegraph-1314", "created": "2026-07-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "colbymchenry__codegraph-1201", "created": "2026-07-07", "admitted": true, "reason": "fresh"}
+{"instance_id": "colbymchenry__codegraph-1370", "created": "2026-07-20", "admitted": true, "reason": "fresh"}
+{"instance_id": "colbymchenry__codegraph-1318", "created": "2026-07-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "colbymchenry__codegraph-1317", "created": "2026-07-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-610", "created": "2026-07-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "colbymchenry__codegraph-939", "created": "2026-06-21", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-618", "created": "2026-07-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "DynamoRIO__dynamorio-8017", "created": "2026-07-20", "admitted": true, "reason": "fresh"}
+{"instance_id": "colbymchenry__codegraph-1313", "created": "2026-07-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "colbymchenry__codegraph-804", "created": "2026-06-11", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-584", "created": "2026-07-15", "admitted": true, "reason": "fresh"}
+{"instance_id": "DeusData__codebase-memory-mcp-632", "created": "2026-06-25", "admitted": true, "reason": "fresh"}
+{"instance_id": "colbymchenry__codegraph-948", "created": "2026-06-22", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-560", "created": "2026-07-14", "admitted": true, "reason": "fresh"}
+{"instance_id": "colbymchenry__codegraph-749", "created": "2026-06-09", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-596", "created": "2026-07-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "colbymchenry__codegraph-461", "created": "2026-05-26", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-522", "created": "2026-07-11", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-530", "created": "2026-07-11", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-599", "created": "2026-07-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "colbymchenry__codegraph-462", "created": "2026-05-26", "admitted": true, "reason": "fresh"}
+{"instance_id": "colbymchenry__codegraph-715", "created": "2026-06-07", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-399", "created": "2026-06-19", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-482", "created": "2026-07-04", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-428", "created": "2026-06-26", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-422", "created": "2026-06-24", "admitted": true, "reason": "fresh"}
+{"instance_id": "colbymchenry__codegraph-454", "created": "2026-05-26", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-454", "created": "2026-06-28", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-395", "created": "2026-06-19", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-408", "created": "2026-06-20", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-444", "created": "2026-06-28", "admitted": true, "reason": "fresh"}
+{"instance_id": "xroche__httrack-457", "created": "2026-06-28", "admitted": true, "reason": "fresh"}
+{"instance_id": "kokkos__kokkos-8967", "created": "2026-03-12", "admitted": true, "reason": "fresh"}
+{"instance_id": "shader-slang__slang-10758", "created": "2026-04-07", "admitted": true, "reason": "fresh"}
+{"instance_id": "shader-slang__slang-10856", "created": "2026-04-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "shader-slang__slang-9967", "created": "2026-02-10", "admitted": true, "reason": "fresh"}
+{"instance_id": "WasmEdge__WasmEdge-4788", "created": "2026-04-13", "admitted": true, "reason": "fresh"}
+{"instance_id": "harfbuzz__harfbuzz-5947", "created": "2026-04-18", "admitted": true, "reason": "fresh"}
+{"instance_id": "TrenchBroom__TrenchBroom-5133", "created": "2026-03-22", "admitted": true, "reason": "fresh"}
+{"instance_id": "shader-slang__slang-10664", "created": "2026-03-25", "admitted": true, "reason": "fresh"}
+{"instance_id": "shader-slang__slang-10663", "created": "2026-03-25", "admitted": true, "reason": "fresh"}
+{"instance_id": "ninja-build__ninja-2749", "created": "2026-03-22", "admitted": true, "reason": "fresh"}
+{"instance_id": "include-what-you-use__include-what-you-use-1991", "created": "2026-04-13", "admitted": true, "reason": "fresh"}
+{"instance_id": "pocoproject__poco-5270", "created": "2026-03-26", "admitted": true, "reason": "fresh"}
+{"instance_id": "shader-slang__slang-10846", "created": "2026-04-15", "admitted": true, "reason": "fresh"}
+{"instance_id": "pocoproject__poco-5265", "created": "2026-03-25", "admitted": true, "reason": "fresh"}
+{"instance_id": "esphome__esphome-15060", "created": "2026-03-21", "admitted": true, "reason": "fresh"}
+{"instance_id": "TrenchBroom__TrenchBroom-5149", "created": "2026-03-29", "admitted": true, "reason": "fresh"}
+{"instance_id": "esphome__esphome-15850", "created": "2026-04-19", "admitted": true, "reason": "fresh"}
+{"instance_id": "shader-slang__slang-10768", "created": "2026-04-08", "admitted": true, "reason": "fresh"}
+{"instance_id": "canonical__multipass-4808", "created": "2026-04-10", "admitted": true, "reason": "fresh"}
+{"instance_id": "shader-slang__slang-10682", "created": "2026-03-30", "admitted": true, "reason": "fresh"}
+{"instance_id": "esphome__esphome-15814", "created": "2026-04-17", "admitted": true, "reason": "fresh"}
+{"instance_id": "duckdb__duckdb-22152", "created": "2026-04-19", "admitted": true, "reason": "fresh"}
+{"instance_id": "canonical__multipass-4817", "created": "2026-04-12", "admitted": true, "reason": "fresh"}
+{"instance_id": "WasmEdge__WasmEdge-4764", "created": "2026-04-07", "admitted": true, "reason": "fresh"}
+{"instance_id": "shader-slang__slang-10807", "created": "2026-04-13", "admitted": true, "reason": "fresh"}
+{"instance_id": "esphome__esphome-15723", "created": "2026-04-13", "admitted": true, "reason": "fresh"}
+{"instance_id": "shader-slang__slang-10738", "created": "2026-04-02", "admitted": true, "reason": "fresh"}
+{"instance_id": "esphome__esphome-15048", "created": "2026-03-21", "admitted": true, "reason": "fresh"}
+{"instance_id": "actor-framework__actor-framework-2300", "created": "2026-03-21", "admitted": true, "reason": "fresh"}
+{"instance_id": "shader-slang__slang-10678", "created": "2026-03-30", "admitted": true, "reason": "fresh"}
+{"instance_id": "WasmEdge__WasmEdge-4772", "created": "2026-04-10", "admitted": true, "reason": "fresh"}
+{"instance_id": "NVIDIA__stdexec-2002", "created": "2026-04-07", "admitted": true, "reason": "fresh"}
+{"instance_id": "organicmaps__organicmaps-12396", "created": "2026-03-20", "admitted": true, "reason": "fresh"}
+{"instance_id": "shader-slang__slang-10736", "created": "2026-04-02", "admitted": true, "reason": "fresh"}
+{"instance_id": "shader-slang__slang-10697", "created": "2026-04-01", "admitted": true, "reason": "fresh"}
+{"instance_id": "shader-slang__slang-10029", "created": "2026-02-15", "admitted": true, "reason": "fresh"}
+{"instance_id": "esphome__esphome-15668", "created": "2026-04-12", "admitted": true, "reason": "fresh"}
+{"instance_id": "musescore__MuseScore-32832", "created": "2026-03-28", "admitted": true, "reason": "fresh"}
+{"instance_id": "microsoft__DirectXShaderCompiler-8337", "created": "2026-04-03", "admitted": true, "reason": "fresh"}
+{"instance_id": "microsoft__DirectXShaderCompiler-8286", "created": "2026-03-21", "admitted": true, "reason": "fresh"}
+{"instance_id": "BYVoid__OpenCC-1123", "created": "2026-04-17", "admitted": true, "reason": "fresh"}
+{"instance_id": "ChaiScript__ChaiScript-670", "created": "2026-04-12", "admitted": true, "reason": "fresh"}
+{"instance_id": "ChaiScript__ChaiScript-648", "created": "2026-04-11", "admitted": true, "reason": "fresh"}
+{"instance_id": "ClickHouse__ClickHouse-100579", "created": "2026-03-24", "admitted": true, "reason": "fresh"}
+{"instance_id": "OpenRCT2__OpenRCT2-26315", "created": "2026-04-03", "admitted": true, "reason": "fresh"}
+{"instance_id": "microsoft__DirectXShaderCompiler-8347", "created": "2026-04-07", "admitted": true, "reason": "fresh"}
+{"instance_id": "BYVoid__OpenCC-1094", "created": "2026-04-11", "admitted": true, "reason": "fresh"}
+{"instance_id": "CleverRaven__Cataclysm-DDA-86316", "created": "2026-04-07", "admitted": true, "reason": "fresh"}
+{"instance_id": "microsoft__DirectXShaderCompiler-8326", "created": "2026-04-01", "admitted": true, "reason": "fresh"}
+{"instance_id": "CleverRaven__Cataclysm-DDA-86364", "created": "2026-04-09", "admitted": true, "reason": "fresh"}
+{"instance_id": "microsoft__DirectXShaderCompiler-8338", "created": "2026-04-03", "admitted": true, "reason": "fresh"}
+{"instance_id": "BYVoid__OpenCC-1096", "created": "2026-04-12", "admitted": true, "reason": "fresh"}
+{"instance_id": "CleverRaven__Cataclysm-DDA-86096", "created": "2026-03-26", "admitted": true, "reason": "fresh"}
+{"instance_id": "musescore__MuseScore-33064", "created": "2026-04-20", "admitted": true, "reason": "fresh"}
+{"instance_id": "CleverRaven__Cataclysm-DDA-86525", "created": "2026-04-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "BYVoid__OpenCC-1307", "created": "2026-06-13", "admitted": true, "reason": "fresh"}
+{"instance_id": "duckdb__duckdb-23615", "created": "2026-07-05", "admitted": true, "reason": "fresh"}
+{"instance_id": "duckdb__duckdb-23604", "created": "2026-07-04", "admitted": true, "reason": "fresh"}
+{"instance_id": "root-project__root-22854", "created": "2026-07-20", "admitted": true, "reason": "fresh"}
+{"instance_id": "dragonflydb__dragonfly-7777", "created": "2026-07-02", "admitted": true, "reason": "fresh"}
+{"instance_id": "duckdb__duckdb-23628", "created": "2026-07-06", "admitted": true, "reason": "fresh"}
+{"instance_id": "duckdb__duckdb-23624", "created": "2026-07-05", "admitted": true, "reason": "fresh"}
+{"instance_id": "duckdb__ducklake-1339", "created": "2026-07-23", "admitted": true, "reason": "fresh"}
+{"instance_id": "root-project__root-22857", "created": "2026-07-20", "admitted": true, "reason": "fresh"}
+{"instance_id": "kvcache-ai__Mooncake-2892", "created": "2026-07-14", "admitted": true, "reason": "fresh"}
+{"instance_id": "duckdb__ducklake-1340", "created": "2026-07-23", "admitted": true, "reason": "fresh"}
+{"instance_id": "carbon-language__carbon-lang-7342", "created": "2026-06-11", "admitted": true, "reason": "fresh"}
+{"instance_id": "OSGeo__gdal-14681", "created": "2026-05-29", "admitted": true, "reason": "fresh"}
+{"instance_id": "ml-explore__mlx-3635", "created": "2026-06-06", "admitted": true, "reason": "fresh"}
+{"instance_id": "duckdb__duckdb-23618", "created": "2026-07-05", "admitted": true, "reason": "fresh"}
+{"instance_id": "OSGeo__gdal-14683", "created": "2026-05-29", "admitted": true, "reason": "fresh"}
+{"instance_id": "duckdb__duckdb-23538", "created": "2026-06-30", "admitted": true, "reason": "fresh"}
+{"instance_id": "duckdb__duckdb-24105", "created": "2026-07-24", "admitted": true, "reason": "fresh"}
+{"instance_id": "duckdb__duckdb-24100", "created": "2026-07-24", "admitted": true, "reason": "fresh"}
+{"instance_id": "duckdb__duckdb-23280", "created": "2026-06-15", "admitted": true, "reason": "fresh"}
+{"instance_id": "duckdb__duckdb-23422", "created": "2026-06-23", "admitted": true, "reason": "fresh"}
+{"instance_id": "duckdb__duckdb-24181", "created": "2026-07-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "duckdb__duckdb-24074", "created": "2026-07-23", "admitted": true, "reason": "fresh"}
+{"instance_id": "duckdb__duckdb-24150", "created": "2026-07-25", "admitted": true, "reason": "fresh"}
+{"instance_id": "duckdb__duckdb-23491", "created": "2026-06-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "ml-explore__mlx-3604", "created": "2026-05-29", "admitted": true, "reason": "fresh"}
+{"instance_id": "duckdb__duckdb-24018", "created": "2026-07-21", "admitted": true, "reason": "fresh"}
+{"instance_id": "duckdb__duckdb-23637", "created": "2026-07-06", "admitted": true, "reason": "fresh"}
+{"instance_id": "FastLED__FastLED-3781", "created": "2026-07-31", "admitted": true, "reason": "fresh"}
+{"instance_id": "FastLED__FastLED-2560", "created": "2026-05-30", "admitted": true, "reason": "fresh"}
+{"instance_id": "duckdb__duckdb-23634", "created": "2026-07-06", "admitted": true, "reason": "fresh"}
+{"instance_id": "duckdb__duckdb-24318", "created": "2026-07-30", "admitted": true, "reason": "fresh"}
+{"instance_id": "dragonflydb__dragonfly-7422", "created": "2026-05-26", "admitted": true, "reason": "fresh"}
+{"instance_id": "duckdb__duckdb-24290", "created": "2026-07-29", "admitted": true, "reason": "fresh"}
+{"instance_id": "dragonflydb__dragonfly-7850", "created": "2026-07-14", "admitted": true, "reason": "fresh"}
+{"instance_id": "duckdb__duckdb-24211", "created": "2026-07-28", "admitted": true, "reason": "fresh"}
+{"instance_id": "dragonflydb__dragonfly-7434", "created": "2026-05-28", "admitted": true, "reason": "fresh"}
+{"instance_id": "IfcOpenShell__IfcOpenShell-8887", "created": "2026-07-23", "admitted": true, "reason": "fresh"}
+{"instance_id": "duckdb__ducklake-1224", "created": "2026-06-05", "admitted": true, "reason": "fresh"}
+{"instance_id": "BYVoid__OpenCC-1257", "created": "2026-05-29", "admitted": true, "reason": "fresh"}
+{"instance_id": "FastLED__FastLED-2691", "created": "2026-06-03", "admitted": true, "reason": "fresh"}
+{"instance_id": "shader-slang__slang-11273", "created": "2026-05-25", "admitted": true, "reason": "fresh"}
+{"instance_id": "duckdb__duckdb-24266", "created": "2026-07-29", "admitted": true, "reason": "fresh"}
+{"instance_id": "dragonflydb__dragonfly-7493", "created": "2026-06-02", "admitted": true, "reason": "fresh"}
+{"instance_id": "open-source-parsers__jsoncpp-1696", "created": "2026-06-17", "admitted": true, "reason": "fresh"}
+{"instance_id": "stephenberry__glaze-2611", "created": "2026-06-10", "admitted": true, "reason": "fresh"}
+{"instance_id": "BYVoid__OpenCC-1289", "created": "2026-06-07", "admitted": true, "reason": "fresh"}
+{"instance_id": "stephenberry__glaze-2731", "created": "2026-07-30", "admitted": true, "reason": "fresh"}
+{"instance_id": "stephenberry__glaze-2604", "created": "2026-06-08", "admitted": true, "reason": "fresh"}
+{"instance_id": "OSGeo__gdal-14631", "created": "2026-05-23", "admitted": true, "reason": "fresh"}
+{"instance_id": "BYVoid__OpenCC-1405", "created": "2026-07-07", "admitted": true, "reason": "fresh"}
+{"instance_id": "BYVoid__OpenCC-1255", "created": "2026-05-28", "admitted": true, "reason": "fresh"}
+{"instance_id": "open-source-parsers__jsoncpp-1693", "created": "2026-06-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "kvcache-ai__Mooncake-2964", "created": "2026-07-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "shader-slang__slang-11286", "created": "2026-05-25", "admitted": true, "reason": "fresh"}
+{"instance_id": "carbon-language__carbon-lang-6912", "created": "2026-03-15", "admitted": true, "reason": "fresh"}
+{"instance_id": "BYVoid__OpenCC-1310", "created": "2026-06-13", "admitted": true, "reason": "fresh"}
+{"instance_id": "monero-project__monero-10747", "created": "2026-06-08", "admitted": true, "reason": "fresh"}
+{"instance_id": "luau-lang__luau-2506", "created": "2026-07-05", "admitted": true, "reason": "fresh"}
+{"instance_id": "duckdb__duckdb-23569", "created": "2026-07-02", "admitted": true, "reason": "fresh"}
+{"instance_id": "duckdb__duckdb-24101", "created": "2026-07-24", "admitted": true, "reason": "fresh"}
+{"instance_id": "duckdb__duckdb-23413", "created": "2026-06-23", "admitted": true, "reason": "fresh"}
+{"instance_id": "carbon-language__carbon-lang-7359", "created": "2026-06-15", "admitted": true, "reason": "fresh"}
+{"instance_id": "duckdb__duckdb-24011", "created": "2026-07-21", "admitted": true, "reason": "fresh"}
+{"instance_id": "BYVoid__OpenCC-1326", "created": "2026-06-22", "admitted": true, "reason": "fresh"}
+{"instance_id": "monero-project__monero-10858", "created": "2026-07-04", "admitted": true, "reason": "fresh"}
+{"instance_id": "MudBlazor__MudBlazor-12920", "created": "2026-03-31", "admitted": true, "reason": "fresh"}
+{"instance_id": "Megabit__Blazorise-6500", "created": "2026-03-31", "admitted": true, "reason": "fresh"}
+{"instance_id": "MudBlazor__MudBlazor-12908", "created": "2026-03-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "dotnet__command-line-api-2790", "created": "2026-04-02", "admitted": true, "reason": "fresh"}
+{"instance_id": "MudBlazor__MudBlazor-12775", "created": "2026-03-01", "admitted": true, "reason": "fresh"}
+{"instance_id": "KSP-CKAN__CKAN-4556", "created": "2026-04-12", "admitted": true, "reason": "fresh"}
+{"instance_id": "quartznet__quartznet-2932", "created": "2026-03-29", "admitted": true, "reason": "fresh"}
+{"instance_id": "dotnet__command-line-api-2781", "created": "2026-03-10", "admitted": true, "reason": "fresh"}
+{"instance_id": "MudBlazor__MudBlazor-13104", "created": "2026-04-21", "admitted": true, "reason": "fresh"}
+{"instance_id": "quartznet__quartznet-2955", "created": "2026-03-29", "admitted": true, "reason": "fresh"}
+{"instance_id": "spectreconsole__spectre.console-2082", "created": "2026-04-13", "admitted": true, "reason": "fresh"}
+{"instance_id": "dotnetcore__BootstrapBlazor-7898", "created": "2026-04-20", "admitted": true, "reason": "fresh"}
+{"instance_id": "quartznet__quartznet-2944", "created": "2026-03-29", "admitted": true, "reason": "fresh"}
+{"instance_id": "dotnet__runtime-126719", "created": "2026-04-09", "admitted": true, "reason": "fresh"}
+{"instance_id": "shimat__opencvsharp-1860", "created": "2026-04-05", "admitted": true, "reason": "fresh"}
+{"instance_id": "MudBlazor__MudBlazor-12957", "created": "2026-04-02", "admitted": true, "reason": "fresh"}
+{"instance_id": "openai__openai-dotnet-1060", "created": "2026-03-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "openai__openai-dotnet-1104", "created": "2026-04-15", "admitted": true, "reason": "fresh"}
+{"instance_id": "dotnet__command-line-api-2793", "created": "2026-04-10", "admitted": true, "reason": "fresh"}
+{"instance_id": "MudBlazor__MudBlazor-12973", "created": "2026-04-04", "admitted": true, "reason": "fresh"}
+{"instance_id": "AvaloniaUI__Avalonia-20978", "created": "2026-03-25", "admitted": true, "reason": "fresh"}
+{"instance_id": "MudBlazor__MudBlazor-13097", "created": "2026-04-20", "admitted": true, "reason": "fresh"}
+{"instance_id": "nissl-lab__npoi-1781", "created": "2026-04-01", "admitted": true, "reason": "fresh"}
+{"instance_id": "unoplatform__uno-22978", "created": "2026-04-07", "admitted": true, "reason": "fresh"}
+{"instance_id": "SubtitleEdit__subtitleedit-10419", "created": "2026-03-25", "admitted": true, "reason": "fresh"}
+{"instance_id": "MudBlazor__MudBlazor-13044", "created": "2026-04-15", "admitted": true, "reason": "fresh"}
+{"instance_id": "riok__mapperly-2232", "created": "2026-04-13", "admitted": true, "reason": "fresh"}
+{"instance_id": "MudBlazor__MudBlazor-12917", "created": "2026-03-30", "admitted": true, "reason": "fresh"}
+{"instance_id": "quartznet__quartznet-2934", "created": "2026-03-29", "admitted": true, "reason": "fresh"}
+{"instance_id": "dotnet-state-machine__stateless-644", "created": "2026-03-11", "admitted": true, "reason": "fresh"}
+{"instance_id": "unoplatform__uno-22941", "created": "2026-04-01", "admitted": true, "reason": "fresh"}
+{"instance_id": "SubtitleEdit__subtitleedit-10411", "created": "2026-03-24", "admitted": true, "reason": "fresh"}
+{"instance_id": "ErikEJ__EFCorePowerTools-3418", "created": "2026-04-17", "admitted": true, "reason": "fresh"}
+{"instance_id": "MudBlazor__MudBlazor-12817", "created": "2026-03-05", "admitted": true, "reason": "fresh"}
+{"instance_id": "quartznet__quartznet-2921", "created": "2026-03-28", "admitted": true, "reason": "fresh"}
+{"instance_id": "MudBlazor__MudBlazor-12974", "created": "2026-04-04", "admitted": true, "reason": "fresh"}
+{"instance_id": "Azure__azure-sdk-for-net-57616", "created": "2026-03-31", "admitted": true, "reason": "fresh"}
+{"instance_id": "KSP-CKAN__CKAN-4561", "created": "2026-04-13", "admitted": true, "reason": "fresh"}
+{"instance_id": "gui-cs__Terminal.Gui-4982", "created": "2026-04-17", "admitted": true, "reason": "fresh"}
+{"instance_id": "gui-cs__Terminal.Gui-4841", "created": "2026-03-21", "admitted": true, "reason": "fresh"}
+{"instance_id": "MudBlazor__MudBlazor-12907", "created": "2026-03-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "MudBlazor__MudBlazor-13063", "created": "2026-04-17", "admitted": true, "reason": "fresh"}
+{"instance_id": "riok__mapperly-2207", "created": "2026-03-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "riok__mapperly-2225", "created": "2026-04-10", "admitted": true, "reason": "fresh"}
+{"instance_id": "MudBlazor__MudBlazor-13109", "created": "2026-04-21", "admitted": true, "reason": "fresh"}
+{"instance_id": "AvaloniaUI__Avalonia-20964", "created": "2026-03-22", "admitted": true, "reason": "fresh"}
+{"instance_id": "MudBlazor__MudBlazor-12958", "created": "2026-04-02", "admitted": true, "reason": "fresh"}
+{"instance_id": "ErikEJ__EFCorePowerTools-3417", "created": "2026-04-17", "admitted": true, "reason": "fresh"}
+{"instance_id": "MudBlazor__MudBlazor-13039", "created": "2026-04-15", "admitted": true, "reason": "fresh"}
+{"instance_id": "Kareadita__Kavita-4552", "created": "2026-03-20", "admitted": true, "reason": "fresh"}
+{"instance_id": "gui-cs__Terminal.Gui-4882", "created": "2026-04-04", "admitted": true, "reason": "fresh"}
+{"instance_id": "gui-cs__Terminal.Gui-4860", "created": "2026-03-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "MudBlazor__MudBlazor-12918", "created": "2026-03-30", "admitted": true, "reason": "fresh"}
+{"instance_id": "Azure__azure-sdk-for-net-58482", "created": "2026-04-22", "admitted": true, "reason": "fresh"}
+{"instance_id": "spectreconsole__spectre.console-2077", "created": "2026-04-07", "admitted": true, "reason": "fresh"}
+{"instance_id": "quartznet__quartznet-2942", "created": "2026-03-29", "admitted": true, "reason": "fresh"}
+{"instance_id": "OrchardCMS__OrchardCore-19169", "created": "2026-04-19", "admitted": true, "reason": "fresh"}
+{"instance_id": "MudBlazor__MudBlazor-12915", "created": "2026-03-30", "admitted": true, "reason": "fresh"}
+{"instance_id": "JasperFx__wolverine-3523", "created": "2026-07-20", "admitted": true, "reason": "fresh"}
+{"instance_id": "tui-cs__Terminal.Gui-5431", "created": "2026-05-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "riok__mapperly-2339", "created": "2026-06-22", "admitted": true, "reason": "fresh"}
+{"instance_id": "angularsen__UnitsNet-1699", "created": "2026-07-25", "admitted": true, "reason": "fresh"}
+{"instance_id": "ppy__osu-38107", "created": "2026-06-18", "admitted": true, "reason": "fresh"}
+{"instance_id": "UglyToad__PdfPig-1350", "created": "2026-06-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "naudio__NAudio-1352", "created": "2026-06-25", "admitted": true, "reason": "fresh"}
+{"instance_id": "dotnetcore__BootstrapBlazor-8073", "created": "2026-05-31", "admitted": true, "reason": "fresh"}
+{"instance_id": "elsa-workflows__elsa-core-7714", "created": "2026-06-09", "admitted": true, "reason": "fresh"}
+{"instance_id": "OrchardCMS__OrchardCore-19492", "created": "2026-07-01", "admitted": true, "reason": "fresh"}
+{"instance_id": "SubtitleEdit__subtitleedit-12151", "created": "2026-07-04", "admitted": true, "reason": "fresh"}
+{"instance_id": "JasperFx__wolverine-2930", "created": "2026-05-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "JasperFx__wolverine-2988", "created": "2026-05-29", "admitted": true, "reason": "fresh"}
+{"instance_id": "nunit__nunit-5351", "created": "2026-07-18", "admitted": true, "reason": "fresh"}
+{"instance_id": "Ombi-app__Ombi-5434", "created": "2026-06-15", "admitted": true, "reason": "fresh"}
+{"instance_id": "JasperFx__wolverine-2934", "created": "2026-05-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "JasperFx__wolverine-3066", "created": "2026-06-10", "admitted": true, "reason": "fresh"}
+{"instance_id": "JasperFx__wolverine-3162", "created": "2026-06-19", "admitted": true, "reason": "fresh"}
+{"instance_id": "JasperFx__wolverine-3233", "created": "2026-06-23", "admitted": true, "reason": "fresh"}
+{"instance_id": "JasperFx__wolverine-3241", "created": "2026-06-23", "admitted": true, "reason": "fresh"}
+{"instance_id": "JasperFx__wolverine-3426", "created": "2026-07-14", "admitted": true, "reason": "fresh"}
+{"instance_id": "JasperFx__wolverine-3488", "created": "2026-07-18", "admitted": true, "reason": "fresh"}
+{"instance_id": "JasperFx__wolverine-3456", "created": "2026-07-17", "admitted": true, "reason": "fresh"}
+{"instance_id": "JasperFx__wolverine-3695", "created": "2026-07-28", "admitted": true, "reason": "fresh"}
+{"instance_id": "JasperFx__wolverine-3513", "created": "2026-07-19", "admitted": true, "reason": "fresh"}
+{"instance_id": "angularsen__UnitsNet-1698", "created": "2026-07-25", "admitted": true, "reason": "fresh"}
+{"instance_id": "SubtitleEdit__subtitleedit-11851", "created": "2026-06-25", "admitted": true, "reason": "fresh"}
+{"instance_id": "tui-cs__Terminal.Gui-5487", "created": "2026-06-13", "admitted": true, "reason": "fresh"}
+{"instance_id": "SubtitleEdit__subtitleedit-11957", "created": "2026-06-28", "admitted": true, "reason": "fresh"}
+{"instance_id": "SubtitleEdit__subtitleedit-12685", "created": "2026-07-21", "admitted": true, "reason": "fresh"}
+{"instance_id": "Ombi-app__Ombi-5432", "created": "2026-06-12", "admitted": true, "reason": "fresh"}
+{"instance_id": "riok__mapperly-2324", "created": "2026-06-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "SubtitleEdit__subtitleedit-12895", "created": "2026-07-28", "admitted": true, "reason": "fresh"}
+{"instance_id": "SubtitleEdit__subtitleedit-12763", "created": "2026-07-23", "admitted": true, "reason": "fresh"}
+{"instance_id": "Ombi-app__Ombi-5444", "created": "2026-07-09", "admitted": true, "reason": "fresh"}
+{"instance_id": "riok__mapperly-2355", "created": "2026-07-06", "admitted": true, "reason": "fresh"}
+{"instance_id": "riok__mapperly-2332", "created": "2026-06-22", "admitted": true, "reason": "fresh"}
+{"instance_id": "riok__mapperly-2341", "created": "2026-06-25", "admitted": true, "reason": "fresh"}
+{"instance_id": "SubtitleEdit__subtitleedit-11916", "created": "2026-06-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "dotnetcore__BootstrapBlazor-8113", "created": "2026-06-13", "admitted": true, "reason": "fresh"}
+{"instance_id": "naudio__NAudio-1372", "created": "2026-06-30", "admitted": true, "reason": "fresh"}
+{"instance_id": "elsa-workflows__elsa-core-7898", "created": "2026-07-30", "admitted": true, "reason": "fresh"}
+{"instance_id": "naudio__NAudio-1316", "created": "2026-05-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "elsa-workflows__elsa-core-7711", "created": "2026-06-09", "admitted": true, "reason": "fresh"}
+{"instance_id": "JasperFx__marten-5080", "created": "2026-07-29", "admitted": true, "reason": "fresh"}
+{"instance_id": "JasperFx__wolverine-3642", "created": "2026-07-26", "admitted": true, "reason": "fresh"}
+{"instance_id": "JasperFx__wolverine-3608", "created": "2026-07-23", "admitted": true, "reason": "fresh"}
+{"instance_id": "JasperFx__wolverine-3612", "created": "2026-07-23", "admitted": true, "reason": "fresh"}
+{"instance_id": "JasperFx__wolverine-3582", "created": "2026-07-22", "admitted": true, "reason": "fresh"}
+{"instance_id": "caddyserver__caddy-7567", "created": "2026-03-13", "admitted": true, "reason": "fresh"}
+{"instance_id": "kubernetes-sigs__controller-runtime-3494", "created": "2026-04-05", "admitted": true, "reason": "fresh"}
+{"instance_id": "twpayne__chezmoi-5016", "created": "2026-04-14", "admitted": true, "reason": "fresh"}
+{"instance_id": "oauth2-proxy__oauth2-proxy-3374", "created": "2026-03-14", "admitted": true, "reason": "fresh"}
+{"instance_id": "amir20__dozzle-4612", "created": "2026-04-11", "admitted": true, "reason": "fresh"}
+{"instance_id": "gruntwork-io__cloud-nuke-1085", "created": "2026-03-23", "admitted": true, "reason": "fresh"}
+{"instance_id": "envoyproxy__gateway-8521", "created": "2026-03-13", "admitted": true, "reason": "fresh"}
+{"instance_id": "influxdata__telegraf-18556", "created": "2026-03-17", "admitted": true, "reason": "fresh"}
+{"instance_id": "github__gh-aw-24043", "created": "2026-04-02", "admitted": true, "reason": "fresh"}
+{"instance_id": "kubernetes__kops-18146", "created": "2026-04-02", "admitted": true, "reason": "fresh"}
+{"instance_id": "terraform-docs__terraform-docs-901", "created": "2026-02-21", "admitted": true, "reason": "fresh"}
+{"instance_id": "kubernetes-sigs__kueue-9866", "created": "2026-03-13", "admitted": true, "reason": "fresh"}
+{"instance_id": "nextlevelbuilder__goclaw-841", "created": "2026-04-11", "admitted": true, "reason": "fresh"}
+{"instance_id": "twpayne__chezmoi-5001", "created": "2026-04-09", "admitted": true, "reason": "fresh"}
+{"instance_id": "centrifugal__centrifugo-1129", "created": "2026-04-09", "admitted": true, "reason": "fresh"}
+{"instance_id": "sqlc-dev__sqlc-4383", "created": "2026-04-17", "admitted": true, "reason": "fresh"}
+{"instance_id": "gohugoio__hugo-14741", "created": "2026-04-08", "admitted": true, "reason": "fresh"}
+{"instance_id": "github__gh-aw-26689", "created": "2026-04-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "open-telemetry__opentelemetry-collector-contrib-47408", "created": "2026-04-07", "admitted": true, "reason": "fresh"}
+{"instance_id": "gohugoio__hugo-14733", "created": "2026-04-07", "admitted": true, "reason": "fresh"}
+{"instance_id": "gohugoio__hugo-14757", "created": "2026-04-15", "admitted": true, "reason": "fresh"}
+{"instance_id": "karmada-io__karmada-7365", "created": "2026-04-04", "admitted": true, "reason": "fresh"}
+{"instance_id": "chenhg5__cc-connect-567", "created": "2026-04-11", "admitted": true, "reason": "fresh"}
+{"instance_id": "moonD4rk__HackBrowserData-571", "created": "2026-04-13", "admitted": true, "reason": "fresh"}
+{"instance_id": "github__gh-aw-23870", "created": "2026-04-01", "admitted": true, "reason": "fresh"}
+{"instance_id": "github__gh-aw-27242", "created": "2026-04-19", "admitted": true, "reason": "fresh"}
+{"instance_id": "github__gh-aw-24521", "created": "2026-04-04", "admitted": true, "reason": "fresh"}
+{"instance_id": "kumahq__kuma-15918", "created": "2026-03-20", "admitted": true, "reason": "fresh"}
+{"instance_id": "chenhg5__cc-connect-303", "created": "2026-03-24", "admitted": true, "reason": "fresh"}
+{"instance_id": "mgechev__revive-1686", "created": "2026-03-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "kubernetes__kube-state-metrics-2926", "created": "2026-04-15", "admitted": true, "reason": "fresh"}
+{"instance_id": "dlvhdr__gh-dash-813", "created": "2026-03-25", "admitted": true, "reason": "fresh"}
+{"instance_id": "lima-vm__lima-4803", "created": "2026-04-06", "admitted": true, "reason": "fresh"}
+{"instance_id": "open-telemetry__opentelemetry-go-8133", "created": "2026-04-03", "admitted": true, "reason": "fresh"}
+{"instance_id": "go-task__task-2716", "created": "2026-03-05", "admitted": true, "reason": "fresh"}
+{"instance_id": "coze-dev__coze-loop-462", "created": "2026-03-18", "admitted": true, "reason": "fresh"}
+{"instance_id": "ethereum__go-ethereum-34675", "created": "2026-04-07", "admitted": true, "reason": "fresh"}
+{"instance_id": "github__gh-aw-22943", "created": "2026-03-25", "admitted": true, "reason": "fresh"}
+{"instance_id": "NVIDIA__gpu-operator-2258", "created": "2026-03-31", "admitted": true, "reason": "fresh"}
+{"instance_id": "go-vikunja__vikunja-2574", "created": "2026-04-09", "admitted": true, "reason": "fresh"}
+{"instance_id": "influxdata__telegraf-18640", "created": "2026-03-31", "admitted": true, "reason": "fresh"}
+{"instance_id": "gohugoio__hugo-14685", "created": "2026-03-28", "admitted": true, "reason": "fresh"}
+{"instance_id": "modelcontextprotocol__go-sdk-862", "created": "2026-03-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "evcc-io__evcc-28765", "created": "2026-04-02", "admitted": true, "reason": "fresh"}
+{"instance_id": "github__gh-aw-23146", "created": "2026-03-26", "admitted": true, "reason": "fresh"}
+{"instance_id": "kube-vip__kube-vip-1505", "created": "2026-04-06", "admitted": true, "reason": "fresh"}
+{"instance_id": "kubernetes__kops-18152", "created": "2026-04-03", "admitted": true, "reason": "fresh"}
+{"instance_id": "Gentleman-Programming__gentle-ai-50", "created": "2026-03-14", "admitted": true, "reason": "fresh"}
+{"instance_id": "github__gh-aw-23348", "created": "2026-03-28", "admitted": true, "reason": "fresh"}
+{"instance_id": "magefile__mage-544", "created": "2026-03-15", "admitted": true, "reason": "fresh"}
+{"instance_id": "gohugoio__hugo-14742", "created": "2026-04-08", "admitted": true, "reason": "fresh"}
+{"instance_id": "submariner-io__submariner-3957", "created": "2026-04-09", "admitted": true, "reason": "fresh"}
+{"instance_id": "github__gh-aw-26074", "created": "2026-04-13", "admitted": true, "reason": "fresh"}
+{"instance_id": "akuity__kargo-5990", "created": "2026-03-26", "admitted": true, "reason": "fresh"}
+{"instance_id": "open-telemetry__opentelemetry-collector-contrib-46272", "created": "2026-02-23", "admitted": true, "reason": "fresh"}
+{"instance_id": "gohugoio__hugo-14671", "created": "2026-03-25", "admitted": true, "reason": "fresh"}
+{"instance_id": "danielmiessler__Fabric-2098", "created": "2026-04-17", "admitted": true, "reason": "fresh"}
+{"instance_id": "twpayne__chezmoi-4978", "created": "2026-03-29", "admitted": true, "reason": "fresh"}
+{"instance_id": "kyverno__kyverno-15561", "created": "2026-03-13", "admitted": true, "reason": "fresh"}
+{"instance_id": "0xERR0R__blocky-2016", "created": "2026-03-15", "admitted": true, "reason": "fresh"}
+{"instance_id": "kubernetes-sigs__kubebuilder-5559", "created": "2026-03-29", "admitted": true, "reason": "fresh"}
+{"instance_id": "getgauge__gauge-2836", "created": "2026-03-30", "admitted": true, "reason": "fresh"}
+{"instance_id": "gohugoio__hugo-14657", "created": "2026-03-23", "admitted": true, "reason": "fresh"}
+{"instance_id": "gastownhall__beads-2992", "created": "2026-04-03", "admitted": true, "reason": "fresh"}
+{"instance_id": "kedacore__keda-7642", "created": "2026-04-10", "admitted": true, "reason": "fresh"}
+{"instance_id": "velero-io__velero-9653", "created": "2026-03-26", "admitted": true, "reason": "fresh"}
+{"instance_id": "kyverno__kyverno-15834", "created": "2026-04-10", "admitted": true, "reason": "fresh"}
+{"instance_id": "influxdata__telegraf-18686", "created": "2026-04-09", "admitted": true, "reason": "fresh"}
+{"instance_id": "helidon-io__helidon-11434", "created": "2026-03-30", "admitted": true, "reason": "fresh"}
+{"instance_id": "opendataloader-project__opendataloader-pdf-383", "created": "2026-04-03", "admitted": true, "reason": "fresh"}
+{"instance_id": "floci-io__floci-352", "created": "2026-04-11", "admitted": true, "reason": "fresh"}
+{"instance_id": "LFDT-web3j__web3j-2254", "created": "2026-04-03", "admitted": true, "reason": "fresh"}
+{"instance_id": "spring-projects__spring-boot-50119", "created": "2026-04-18", "admitted": true, "reason": "fresh"}
+{"instance_id": "floci-io__floci-54", "created": "2026-03-24", "admitted": true, "reason": "fresh"}
+{"instance_id": "spring-projects__spring-framework-36550", "created": "2026-03-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "magefree__mage-14628", "created": "2026-03-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "smithy-lang__smithy-3058", "created": "2026-04-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "langchain4j__langchain4j-4890", "created": "2026-04-09", "admitted": true, "reason": "fresh"}
+{"instance_id": "jetty__jetty.project-14652", "created": "2026-03-11", "admitted": true, "reason": "fresh"}
+{"instance_id": "floci-io__floci-463", "created": "2026-04-15", "admitted": true, "reason": "fresh"}
+{"instance_id": "floci-io__floci-248", "created": "2026-04-06", "admitted": true, "reason": "fresh"}
+{"instance_id": "floci-io__floci-57", "created": "2026-03-24", "admitted": true, "reason": "fresh"}
+{"instance_id": "grpc__grpc-java-12735", "created": "2026-03-29", "admitted": true, "reason": "fresh"}
+{"instance_id": "floci-io__floci-88", "created": "2026-03-26", "admitted": true, "reason": "fresh"}
+{"instance_id": "floci-io__floci-309", "created": "2026-04-09", "admitted": true, "reason": "fresh"}
+{"instance_id": "strimzi__strimzi-kafka-operator-12590", "created": "2026-04-02", "admitted": true, "reason": "fresh"}
+{"instance_id": "langchain4j__langchain4j-4809", "created": "2026-03-28", "admitted": true, "reason": "fresh"}
+{"instance_id": "alibaba__nacos-14917", "created": "2026-04-13", "admitted": true, "reason": "fresh"}
+{"instance_id": "langchain4j__langchain4j-4847", "created": "2026-04-02", "admitted": true, "reason": "fresh"}
+{"instance_id": "mc1arke__sonarqube-community-branch-plugin-1221", "created": "2026-03-12", "admitted": true, "reason": "fresh"}
+{"instance_id": "apache__shardingsphere-38622", "created": "2026-04-15", "admitted": true, "reason": "fresh"}
+{"instance_id": "openrewrite__rewrite-7286", "created": "2026-04-06", "admitted": true, "reason": "fresh"}
+{"instance_id": "floci-io__floci-112", "created": "2026-03-29", "admitted": true, "reason": "fresh"}
+{"instance_id": "jetty__jetty.project-14748", "created": "2026-03-25", "admitted": true, "reason": "fresh"}
+{"instance_id": "open-telemetry__opentelemetry-java-instrumentation-16697", "created": "2026-03-18", "admitted": true, "reason": "fresh"}
+{"instance_id": "langchain4j__langchain4j-4734", "created": "2026-03-18", "admitted": true, "reason": "fresh"}
+{"instance_id": "helidon-io__helidon-11386", "created": "2026-03-20", "admitted": true, "reason": "fresh"}
+{"instance_id": "checkstyle__checkstyle-19487", "created": "2026-03-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "floci-io__floci-164", "created": "2026-04-01", "admitted": true, "reason": "fresh"}
+{"instance_id": "floci-io__floci-26", "created": "2026-03-24", "admitted": true, "reason": "fresh"}
+{"instance_id": "openrewrite__rewrite-7287", "created": "2026-04-06", "admitted": true, "reason": "fresh"}
+{"instance_id": "openrewrite__rewrite-7413", "created": "2026-04-17", "admitted": true, "reason": "fresh"}
+{"instance_id": "kestra-io__kestra-15267", "created": "2026-03-26", "admitted": true, "reason": "fresh"}
+{"instance_id": "alibaba__nacos-14778", "created": "2026-03-29", "admitted": true, "reason": "fresh"}
+{"instance_id": "langchain4j__langchain4j-4872", "created": "2026-04-08", "admitted": true, "reason": "fresh"}
+{"instance_id": "floci-io__floci-153", "created": "2026-04-01", "admitted": true, "reason": "fresh"}
+{"instance_id": "floci-io__floci-420", "created": "2026-04-13", "admitted": true, "reason": "fresh"}
+{"instance_id": "floci-io__floci-210", "created": "2026-04-05", "admitted": true, "reason": "fresh"}
+{"instance_id": "langchain4j__langchain4j-4876", "created": "2026-04-08", "admitted": true, "reason": "fresh"}
+{"instance_id": "smithy-lang__smithy-3038", "created": "2026-04-08", "admitted": true, "reason": "fresh"}
+{"instance_id": "helidon-io__helidon-11407", "created": "2026-03-24", "admitted": true, "reason": "fresh"}
+{"instance_id": "opendataloader-project__opendataloader-pdf-386", "created": "2026-04-03", "admitted": true, "reason": "fresh"}
+{"instance_id": "spring-projects__spring-security-18938", "created": "2026-03-19", "admitted": true, "reason": "fresh"}
+{"instance_id": "FasterXML__jackson-databind-5837", "created": "2026-03-25", "admitted": true, "reason": "fresh"}
+{"instance_id": "floci-io__floci-299", "created": "2026-04-08", "admitted": true, "reason": "fresh"}
+{"instance_id": "magefree__mage-14755", "created": "2026-04-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "iflytek__skillhub-253", "created": "2026-04-08", "admitted": true, "reason": "fresh"}
+{"instance_id": "sofastack__sofa-jraft-1249", "created": "2026-04-03", "admitted": true, "reason": "fresh"}
+{"instance_id": "FasterXML__jackson-databind-5928", "created": "2026-04-19", "admitted": true, "reason": "fresh"}
+{"instance_id": "magefree__mage-14655", "created": "2026-04-04", "admitted": true, "reason": "fresh"}
+{"instance_id": "agentscope-ai__agentscope-java-2257", "created": "2026-07-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "agentscope-ai__agentscope-java-2260", "created": "2026-07-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "langchain4j__langchain4j-5806", "created": "2026-07-20", "admitted": true, "reason": "fresh"}
+{"instance_id": "langchain4j__langchain4j-5799", "created": "2026-07-19", "admitted": true, "reason": "fresh"}
+{"instance_id": "btraceio__btrace-898", "created": "2026-07-13", "admitted": true, "reason": "fresh"}
+{"instance_id": "floci-io__floci-1908", "created": "2026-07-19", "admitted": true, "reason": "fresh"}
+{"instance_id": "apache__rocketmq-10573", "created": "2026-07-02", "admitted": true, "reason": "fresh"}
+{"instance_id": "floci-io__floci-1895", "created": "2026-07-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "langchain4j__langchain4j-5807", "created": "2026-07-20", "admitted": true, "reason": "fresh"}
+{"instance_id": "langchain4j__langchain4j-5809", "created": "2026-07-20", "admitted": true, "reason": "fresh"}
+{"instance_id": "apache__parquet-java-3642", "created": "2026-07-02", "admitted": true, "reason": "fresh"}
+{"instance_id": "apache__parquet-java-3638", "created": "2026-07-01", "admitted": true, "reason": "fresh"}
+{"instance_id": "langchain4j__langchain4j-5850", "created": "2026-07-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "apache__parquet-java-3645", "created": "2026-07-03", "admitted": true, "reason": "fresh"}
+{"instance_id": "langchain4j__langchain4j-5790", "created": "2026-07-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "langchain4j__langchain4j-5792", "created": "2026-07-17", "admitted": true, "reason": "fresh"}
+{"instance_id": "langchain4j__langchain4j-5788", "created": "2026-07-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "langchain4j__langchain4j-5864", "created": "2026-07-28", "admitted": true, "reason": "fresh"}
+{"instance_id": "langchain4j__langchain4j-5847", "created": "2026-07-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "langchain4j__langchain4j-5861", "created": "2026-07-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "apache__shardingsphere-39137", "created": "2026-07-15", "admitted": true, "reason": "fresh"}
+{"instance_id": "apache__rocketmq-10614", "created": "2026-07-13", "admitted": true, "reason": "fresh"}
+{"instance_id": "apache__rocketmq-10662", "created": "2026-07-25", "admitted": true, "reason": "fresh"}
+{"instance_id": "langchain4j__langchain4j-5817", "created": "2026-07-21", "admitted": true, "reason": "fresh"}
+{"instance_id": "btraceio__btrace-910", "created": "2026-07-18", "admitted": true, "reason": "fresh"}
+{"instance_id": "floci-io__floci-2031", "created": "2026-07-28", "admitted": true, "reason": "fresh"}
+{"instance_id": "langchain4j__langchain4j-5869", "created": "2026-07-28", "admitted": true, "reason": "fresh"}
+{"instance_id": "langchain4j__langchain4j-5848", "created": "2026-07-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "apache__paimon-8536", "created": "2026-07-10", "admitted": true, "reason": "fresh"}
+{"instance_id": "floci-io__floci-1931", "created": "2026-07-23", "admitted": true, "reason": "fresh"}
+{"instance_id": "apache__shardingsphere-39104", "created": "2026-07-14", "admitted": true, "reason": "fresh"}
+{"instance_id": "apache__shardingsphere-39237", "created": "2026-07-24", "admitted": true, "reason": "fresh"}
+{"instance_id": "floci-io__floci-2015", "created": "2026-07-28", "admitted": true, "reason": "fresh"}
+{"instance_id": "floci-io__floci-1932", "created": "2026-07-23", "admitted": true, "reason": "fresh"}
+{"instance_id": "apache__parquet-java-3669", "created": "2026-07-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "agentscope-ai__agentscope-java-2343", "created": "2026-07-21", "admitted": true, "reason": "fresh"}
+{"instance_id": "langchain4j__langchain4j-5755", "created": "2026-07-11", "admitted": true, "reason": "fresh"}
+{"instance_id": "apache__shardingsphere-39126", "created": "2026-07-15", "admitted": true, "reason": "fresh"}
+{"instance_id": "agentscope-ai__agentscope-java-2189", "created": "2026-07-14", "admitted": true, "reason": "fresh"}
+{"instance_id": "langchain4j__langchain4j-5757", "created": "2026-07-11", "admitted": true, "reason": "fresh"}
+{"instance_id": "langchain4j__langchain4j-5752", "created": "2026-07-11", "admitted": true, "reason": "fresh"}
+{"instance_id": "btraceio__btrace-899", "created": "2026-07-13", "admitted": true, "reason": "fresh"}
+{"instance_id": "floci-io__floci-1838", "created": "2026-07-11", "admitted": true, "reason": "fresh"}
+{"instance_id": "floci-io__floci-1837", "created": "2026-07-11", "admitted": true, "reason": "fresh"}
+{"instance_id": "btraceio__btrace-897", "created": "2026-07-13", "admitted": true, "reason": "fresh"}
+{"instance_id": "apache__shardingsphere-39072", "created": "2026-07-10", "admitted": true, "reason": "fresh"}
+{"instance_id": "agentscope-ai__agentscope-java-2232", "created": "2026-07-15", "admitted": true, "reason": "fresh"}
+{"instance_id": "apache__paimon-8874", "created": "2026-07-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "floci-io__floci-1870", "created": "2026-07-14", "admitted": true, "reason": "fresh"}
+{"instance_id": "btraceio__btrace-895", "created": "2026-07-13", "admitted": true, "reason": "fresh"}
+{"instance_id": "btraceio__btrace-894", "created": "2026-07-13", "admitted": true, "reason": "fresh"}
+{"instance_id": "Automattic__mongoose-16153", "created": "2026-03-23", "admitted": true, "reason": "fresh"}
+{"instance_id": "code-charity__youtube-3708", "created": "2026-03-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "proj4js__proj4js-560", "created": "2026-04-02", "admitted": true, "reason": "fresh"}
+{"instance_id": "gsd-build__get-shit-done-2186", "created": "2026-04-13", "admitted": true, "reason": "fresh"}
+{"instance_id": "Mintplex-Labs__anything-llm-5252", "created": "2026-03-23", "admitted": true, "reason": "fresh"}
+{"instance_id": "reactjs__react-rails-1418", "created": "2026-04-13", "admitted": true, "reason": "fresh"}
+{"instance_id": "haraka__Haraka-3535", "created": "2026-03-24", "admitted": true, "reason": "fresh"}
+{"instance_id": "nodejs__undici-5000", "created": "2026-04-08", "admitted": true, "reason": "fresh"}
+{"instance_id": "thlorenz__doctoc-328", "created": "2026-03-13", "admitted": true, "reason": "fresh"}
+{"instance_id": "sveltejs__svelte-18039", "created": "2026-03-31", "admitted": true, "reason": "fresh"}
+{"instance_id": "nodejs__undici-5011", "created": "2026-04-09", "admitted": true, "reason": "fresh"}
+{"instance_id": "openai__codex-plugin-cc-83", "created": "2026-04-01", "admitted": true, "reason": "fresh"}
+{"instance_id": "GladysAssistant__Gladys-2504", "created": "2026-03-23", "admitted": true, "reason": "fresh"}
+{"instance_id": "aralroca__next-translate-1259", "created": "2026-03-22", "admitted": true, "reason": "fresh"}
+{"instance_id": "usebruno__bruno-7620", "created": "2026-03-30", "admitted": true, "reason": "fresh"}
+{"instance_id": "thlorenz__doctoc-329", "created": "2026-03-19", "admitted": true, "reason": "fresh"}
+{"instance_id": "gsd-build__get-shit-done-2107", "created": "2026-04-11", "admitted": true, "reason": "fresh"}
+{"instance_id": "notionnext-org__NotionNext-4253", "created": "2026-07-10", "admitted": true, "reason": "fresh"}
+{"instance_id": "open-gsd__gsd-core-2233", "created": "2026-07-13", "admitted": true, "reason": "fresh"}
+{"instance_id": "notionnext-org__NotionNext-4338", "created": "2026-07-28", "admitted": true, "reason": "fresh"}
+{"instance_id": "jsonata-js__jsonata-809", "created": "2026-07-02", "admitted": true, "reason": "fresh"}
+{"instance_id": "notionnext-org__NotionNext-4290", "created": "2026-07-18", "admitted": true, "reason": "fresh"}
+{"instance_id": "playcanvas__engine-9000", "created": "2026-07-02", "admitted": true, "reason": "fresh"}
+{"instance_id": "playcanvas__engine-9002", "created": "2026-07-02", "admitted": true, "reason": "fresh"}
+{"instance_id": "playcanvas__engine-9066", "created": "2026-07-17", "admitted": true, "reason": "fresh"}
+{"instance_id": "notionnext-org__NotionNext-4316", "created": "2026-07-26", "admitted": true, "reason": "fresh"}
+{"instance_id": "jsonata-js__jsonata-817", "created": "2026-07-15", "admitted": true, "reason": "fresh"}
+{"instance_id": "jsonata-js__jsonata-814", "created": "2026-07-15", "admitted": true, "reason": "fresh"}
+{"instance_id": "open-gsd__gsd-core-2492", "created": "2026-07-21", "admitted": true, "reason": "fresh"}
+{"instance_id": "open-gsd__gsd-core-1794", "created": "2026-06-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "open-gsd__gsd-core-2079", "created": "2026-07-08", "admitted": true, "reason": "fresh"}
+{"instance_id": "open-gsd__gsd-core-1799", "created": "2026-06-28", "admitted": true, "reason": "fresh"}
+{"instance_id": "rust-lang__rust-analyzer-22046", "created": "2026-04-14", "admitted": true, "reason": "fresh"}
+{"instance_id": "GitoxideLabs__gitoxide-2476", "created": "2026-03-20", "admitted": true, "reason": "fresh"}
+{"instance_id": "gleam-lang__gleam-5493", "created": "2026-03-21", "admitted": true, "reason": "fresh"}
+{"instance_id": "wasm-bindgen__wasm-bindgen-5051", "created": "2026-03-24", "admitted": true, "reason": "fresh"}
+{"instance_id": "ProvableHQ__leo-29334", "created": "2026-04-14", "admitted": true, "reason": "fresh"}
+{"instance_id": "Automattic__harper-2962", "created": "2026-03-18", "admitted": true, "reason": "fresh"}
+{"instance_id": "biomejs__biome-9995", "created": "2026-04-15", "admitted": true, "reason": "fresh"}
+{"instance_id": "NVIDIA__OpenShell-695", "created": "2026-03-31", "admitted": true, "reason": "fresh"}
+{"instance_id": "slatedb__slatedb-1461", "created": "2026-03-29", "admitted": true, "reason": "fresh"}
+{"instance_id": "ruffle-rs__ruffle-23330", "created": "2026-03-26", "admitted": true, "reason": "fresh"}
+{"instance_id": "oxc-project__oxc-21546", "created": "2026-04-18", "admitted": true, "reason": "fresh"}
+{"instance_id": "delta-io__delta-rs-4357", "created": "2026-04-11", "admitted": true, "reason": "fresh"}
+{"instance_id": "Automattic__harper-3112", "created": "2026-04-04", "admitted": true, "reason": "fresh"}
+{"instance_id": "NVIDIA__OpenShell-810", "created": "2026-04-10", "admitted": true, "reason": "fresh"}
+{"instance_id": "astral-sh__uv-18976", "created": "2026-04-12", "admitted": true, "reason": "fresh"}
+{"instance_id": "ProvableHQ__leo-29291", "created": "2026-04-01", "admitted": true, "reason": "fresh"}
+{"instance_id": "oxc-project__oxc-20976", "created": "2026-04-02", "admitted": true, "reason": "fresh"}
+{"instance_id": "gleam-lang__gleam-5482", "created": "2026-03-19", "admitted": true, "reason": "fresh"}
+{"instance_id": "Automattic__harper-2973", "created": "2026-03-19", "admitted": true, "reason": "fresh"}
+{"instance_id": "Automattic__harper-3150", "created": "2026-04-10", "admitted": true, "reason": "fresh"}
+{"instance_id": "modelcontextprotocol__rust-sdk-760", "created": "2026-03-19", "admitted": true, "reason": "fresh"}
+{"instance_id": "DioxusLabs__dioxus-5464", "created": "2026-04-08", "admitted": true, "reason": "fresh"}
+{"instance_id": "oxc-project__oxc-20810", "created": "2026-03-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "sinelaw__fresh-1642", "created": "2026-04-20", "admitted": true, "reason": "fresh"}
+{"instance_id": "DioxusLabs__dioxus-5384", "created": "2026-03-17", "admitted": true, "reason": "fresh"}
+{"instance_id": "gleam-lang__gleam-5510", "created": "2026-03-25", "admitted": true, "reason": "fresh"}
+{"instance_id": "gfx-rs__wgpu-9298", "created": "2026-03-25", "admitted": true, "reason": "fresh"}
+{"instance_id": "Automattic__harper-2976", "created": "2026-03-19", "admitted": true, "reason": "fresh"}
+{"instance_id": "skim-rs__skim-1044", "created": "2026-04-10", "admitted": true, "reason": "fresh"}
+{"instance_id": "delta-io__delta-rs-4358", "created": "2026-04-11", "admitted": true, "reason": "fresh"}
+{"instance_id": "vercel__turborepo-12599", "created": "2026-04-10", "admitted": true, "reason": "fresh"}
+{"instance_id": "casey__just-3200", "created": "2026-03-26", "admitted": true, "reason": "fresh"}
+{"instance_id": "zeroclaw-labs__zeroclaw-5165", "created": "2026-04-02", "admitted": true, "reason": "fresh"}
+{"instance_id": "ProvableHQ__leo-29265", "created": "2026-03-30", "admitted": true, "reason": "fresh"}
+{"instance_id": "oxc-project__oxc-21163", "created": "2026-04-08", "admitted": true, "reason": "fresh"}
+{"instance_id": "delta-io__delta-rs-4333", "created": "2026-04-03", "admitted": true, "reason": "fresh"}
+{"instance_id": "gleam-lang__gleam-5532", "created": "2026-03-29", "admitted": true, "reason": "fresh"}
+{"instance_id": "oxc-project__oxc-21330", "created": "2026-04-11", "admitted": true, "reason": "fresh"}
+{"instance_id": "oxc-project__oxc-20857", "created": "2026-03-30", "admitted": true, "reason": "fresh"}
+{"instance_id": "prefix-dev__pixi-5850", "created": "2026-04-08", "admitted": true, "reason": "fresh"}
+{"instance_id": "rust-lang__rust-analyzer-22061", "created": "2026-04-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "apache__datafusion-21121", "created": "2026-03-23", "admitted": true, "reason": "fresh"}
+{"instance_id": "gfx-rs__wgpu-9367", "created": "2026-04-03", "admitted": true, "reason": "fresh"}
+{"instance_id": "ruffle-rs__ruffle-23197", "created": "2026-03-07", "admitted": true, "reason": "fresh"}
+{"instance_id": "rust-lang__rustfmt-6840", "created": "2026-03-24", "admitted": true, "reason": "fresh"}
+{"instance_id": "oxc-project__oxc-21092", "created": "2026-04-06", "admitted": true, "reason": "fresh"}
+{"instance_id": "J-F-Liu__lopdf-481", "created": "2026-03-19", "admitted": true, "reason": "fresh"}
+{"instance_id": "vercel__turborepo-12516", "created": "2026-03-31", "admitted": true, "reason": "fresh"}
+{"instance_id": "lakehq__sail-2284", "created": "2026-07-23", "admitted": true, "reason": "fresh"}
+{"instance_id": "prefix-dev__pixi-6500", "created": "2026-07-02", "admitted": true, "reason": "fresh"}
+{"instance_id": "h4ckf0r0day__obscura-426", "created": "2026-07-15", "admitted": true, "reason": "fresh"}
+{"instance_id": "biomejs__biome-10853", "created": "2026-07-04", "admitted": true, "reason": "fresh"}
+{"instance_id": "yvgude__lean-ctx-1180", "created": "2026-07-22", "admitted": true, "reason": "fresh"}
+{"instance_id": "h4ckf0r0day__obscura-421", "created": "2026-07-14", "admitted": true, "reason": "fresh"}
+{"instance_id": "h4ckf0r0day__obscura-414", "created": "2026-07-14", "admitted": true, "reason": "fresh"}
+{"instance_id": "rust-lang__rust-analyzer-22822", "created": "2026-07-15", "admitted": true, "reason": "fresh"}
+{"instance_id": "gleam-lang__gleam-6021", "created": "2026-07-21", "admitted": true, "reason": "fresh"}
+{"instance_id": "rust-lang__rust-bindgen-3390", "created": "2026-07-07", "admitted": true, "reason": "fresh"}
+{"instance_id": "modelcontextprotocol__rust-sdk-1005", "created": "2026-07-17", "admitted": true, "reason": "fresh"}
+{"instance_id": "NVlabs__cuda-oxide-381", "created": "2026-07-12", "admitted": true, "reason": "fresh"}
+{"instance_id": "prefix-dev__pixi-6518", "created": "2026-07-03", "admitted": true, "reason": "fresh"}
+{"instance_id": "rust-lang__rust-analyzer-22804", "created": "2026-07-14", "admitted": true, "reason": "fresh"}
+{"instance_id": "rust-lang__rust-bindgen-3391", "created": "2026-07-07", "admitted": true, "reason": "fresh"}
+{"instance_id": "rust-lang__rust-analyzer-22827", "created": "2026-07-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "rust-lang__rust-analyzer-22849", "created": "2026-07-18", "admitted": true, "reason": "fresh"}
+{"instance_id": "rust-lang__rust-analyzer-22789", "created": "2026-07-14", "admitted": true, "reason": "fresh"}
+{"instance_id": "rust-lang__rust-analyzer-22855", "created": "2026-07-19", "admitted": true, "reason": "fresh"}
+{"instance_id": "yvgude__lean-ctx-1179", "created": "2026-07-22", "admitted": true, "reason": "fresh"}
+{"instance_id": "h4ckf0r0day__obscura-447", "created": "2026-07-19", "admitted": true, "reason": "fresh"}
+{"instance_id": "h4ckf0r0day__obscura-440", "created": "2026-07-17", "admitted": true, "reason": "fresh"}
+{"instance_id": "h4ckf0r0day__obscura-479", "created": "2026-07-24", "admitted": true, "reason": "fresh"}
+{"instance_id": "h4ckf0r0day__obscura-413", "created": "2026-07-14", "admitted": true, "reason": "fresh"}
+{"instance_id": "pnpm__pnpm-12935", "created": "2026-07-11", "admitted": true, "reason": "fresh"}
+{"instance_id": "h4ckf0r0day__obscura-390", "created": "2026-07-12", "admitted": true, "reason": "fresh"}
+{"instance_id": "biomejs__biome-10767", "created": "2026-06-26", "admitted": true, "reason": "fresh"}
+{"instance_id": "biomejs__biome-10886", "created": "2026-07-08", "admitted": true, "reason": "fresh"}
+{"instance_id": "rust-lang__rust-analyzer-22751", "created": "2026-07-09", "admitted": true, "reason": "fresh"}
+{"instance_id": "biomejs__biome-10867", "created": "2026-07-06", "admitted": true, "reason": "fresh"}
+{"instance_id": "biomejs__biome-10773", "created": "2026-06-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "h4ckf0r0day__obscura-412", "created": "2026-07-14", "admitted": true, "reason": "fresh"}
+{"instance_id": "biomejs__biome-10827", "created": "2026-07-02", "admitted": true, "reason": "fresh"}
+{"instance_id": "lakehq__sail-2292", "created": "2026-07-26", "admitted": true, "reason": "fresh"}
+{"instance_id": "biomejs__biome-10875", "created": "2026-07-07", "admitted": true, "reason": "fresh"}
+{"instance_id": "h4ckf0r0day__obscura-477", "created": "2026-07-24", "admitted": true, "reason": "fresh"}
+{"instance_id": "prefix-dev__pixi-6457", "created": "2026-06-26", "admitted": true, "reason": "fresh"}
+{"instance_id": "h4ckf0r0day__obscura-392", "created": "2026-07-12", "admitted": true, "reason": "fresh"}
+{"instance_id": "pnpm__pnpm-12888", "created": "2026-07-09", "admitted": true, "reason": "fresh"}
+{"instance_id": "prefix-dev__pixi-6335", "created": "2026-06-10", "admitted": true, "reason": "fresh"}
+{"instance_id": "yvgude__lean-ctx-816", "created": "2026-07-14", "admitted": true, "reason": "fresh"}
+{"instance_id": "yvgude__lean-ctx-927", "created": "2026-07-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "yvgude__lean-ctx-1164", "created": "2026-07-22", "admitted": true, "reason": "fresh"}
+{"instance_id": "gleam-lang__gleam-5938", "created": "2026-07-02", "admitted": true, "reason": "fresh"}
+{"instance_id": "gleam-lang__gleam-5982", "created": "2026-07-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "gleam-lang__gleam-6049", "created": "2026-07-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "yvgude__lean-ctx-1168", "created": "2026-07-22", "admitted": true, "reason": "fresh"}
+{"instance_id": "agentgateway__agentgateway-2313", "created": "2026-06-24", "admitted": true, "reason": "fresh"}
+{"instance_id": "pola-rs__polars-28484", "created": "2026-07-22", "admitted": true, "reason": "fresh"}
+{"instance_id": "gleam-lang__gleam-5971", "created": "2026-07-15", "admitted": true, "reason": "fresh"}
+{"instance_id": "gitbutlerapp__gitbutler-14920", "created": "2026-07-22", "admitted": true, "reason": "fresh"}
+{"instance_id": "yvgude__lean-ctx-969", "created": "2026-07-17", "admitted": true, "reason": "fresh"}
+{"instance_id": "agentgateway__agentgateway-2452", "created": "2026-07-07", "admitted": true, "reason": "fresh"}
+{"instance_id": "apache__datafusion-23201", "created": "2026-06-26", "admitted": true, "reason": "fresh"}
+{"instance_id": "gleam-lang__gleam-5958", "created": "2026-07-09", "admitted": true, "reason": "fresh"}
+{"instance_id": "prefix-dev__pixi-6529", "created": "2026-07-05", "admitted": true, "reason": "fresh"}
+{"instance_id": "web-infra-dev__rspack-14794", "created": "2026-07-15", "admitted": true, "reason": "fresh"}
+{"instance_id": "rust-lang__rust-bindgen-3382", "created": "2026-06-06", "admitted": true, "reason": "fresh"}
+{"instance_id": "gleam-lang__gleam-6030", "created": "2026-07-23", "admitted": true, "reason": "fresh"}
+{"instance_id": "web-infra-dev__rspack-14882", "created": "2026-07-20", "admitted": true, "reason": "fresh"}
+{"instance_id": "lance-format__lance-8049", "created": "2026-07-28", "admitted": true, "reason": "fresh"}
+{"instance_id": "web-infra-dev__rspack-14803", "created": "2026-07-15", "admitted": true, "reason": "fresh"}
+{"instance_id": "tursodatabase__turso-8102", "created": "2026-07-29", "admitted": true, "reason": "fresh"}
+{"instance_id": "lance-format__lance-7565", "created": "2026-07-01", "admitted": true, "reason": "fresh"}
+{"instance_id": "modelcontextprotocol__rust-sdk-1021", "created": "2026-07-21", "admitted": true, "reason": "fresh"}
+{"instance_id": "servo__servo-46309", "created": "2026-07-06", "admitted": true, "reason": "fresh"}
+{"instance_id": "modelcontextprotocol__rust-sdk-996", "created": "2026-07-15", "admitted": true, "reason": "fresh"}
+{"instance_id": "lance-format__lance-7545", "created": "2026-06-30", "admitted": true, "reason": "fresh"}
+{"instance_id": "modelcontextprotocol__rust-sdk-1044", "created": "2026-07-24", "admitted": true, "reason": "fresh"}
+{"instance_id": "pnpm__pnpm-12879", "created": "2026-07-09", "admitted": true, "reason": "fresh"}
+{"instance_id": "nearai__ironclaw-6706", "created": "2026-07-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "lance-format__lance-7618", "created": "2026-07-03", "admitted": true, "reason": "fresh"}
+{"instance_id": "lance-format__lance-7835", "created": "2026-07-17", "admitted": true, "reason": "fresh"}
+{"instance_id": "nearai__ironclaw-6712", "created": "2026-07-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "web-infra-dev__rspack-14806", "created": "2026-07-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "yvgude__lean-ctx-632", "created": "2026-06-30", "admitted": true, "reason": "fresh"}
+{"instance_id": "nearai__ironclaw-6724", "created": "2026-07-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "mnfst__manifest-1635", "created": "2026-04-20", "admitted": true, "reason": "fresh"}
+{"instance_id": "gsd-build__gsd-2-2738", "created": "2026-03-26", "admitted": true, "reason": "fresh"}
+{"instance_id": "mikro-orm__mikro-orm-7464", "created": "2026-04-01", "admitted": true, "reason": "fresh"}
+{"instance_id": "kepano__defuddle-243", "created": "2026-04-12", "admitted": true, "reason": "fresh"}
+{"instance_id": "assistant-ui__assistant-ui-3866", "created": "2026-04-20", "admitted": true, "reason": "fresh"}
+{"instance_id": "gsd-build__gsd-2-3258", "created": "2026-03-30", "admitted": true, "reason": "fresh"}
+{"instance_id": "gsd-build__gsd-2-2643", "created": "2026-03-26", "admitted": true, "reason": "fresh"}
+{"instance_id": "chimurai__http-proxy-middleware-1163", "created": "2026-02-13", "admitted": true, "reason": "fresh"}
+{"instance_id": "mui__mui-x-22062", "created": "2026-04-13", "admitted": true, "reason": "fresh"}
+{"instance_id": "NVIDIA__NemoClaw-330", "created": "2026-03-18", "admitted": true, "reason": "fresh"}
+{"instance_id": "RooCodeInc__Roo-Code-12135", "created": "2026-04-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "wxt-dev__wxt-2267", "created": "2026-04-14", "admitted": true, "reason": "fresh"}
+{"instance_id": "iOfficeAI__AionUi-1818", "created": "2026-03-27", "admitted": true, "reason": "fresh"}
+{"instance_id": "gsd-build__gsd-2-4400", "created": "2026-04-17", "admitted": true, "reason": "fresh"}
+{"instance_id": "code-yeongyu__oh-my-openagent-3013", "created": "2026-04-02", "admitted": true, "reason": "fresh"}
+{"instance_id": "ether__etherpad-7445", "created": "2026-04-04", "admitted": true, "reason": "fresh"}
+{"instance_id": "vueuse__vueuse-5336", "created": "2026-03-24", "admitted": true, "reason": "fresh"}
+{"instance_id": "surveyjs__survey-library-11137", "created": "2026-04-07", "admitted": true, "reason": "fresh"}
+{"instance_id": "gsd-build__gsd-2-3946", "created": "2026-04-10", "admitted": true, "reason": "fresh"}
+{"instance_id": "can1357__oh-my-pi-489", "created": "2026-03-20", "admitted": true, "reason": "fresh"}
+{"instance_id": "TypeCellOS__BlockNote-2629", "created": "2026-04-07", "admitted": true, "reason": "fresh"}
+{"instance_id": "QwenLM__qwen-code-3310", "created": "2026-04-16", "admitted": true, "reason": "fresh"}
+{"instance_id": "puppeteer__puppeteer-14826", "created": "2026-04-03", "admitted": true, "reason": "fresh"}
+{"instance_id": "samtools__samtools-2235", "created": "2025-07-10", "admitted": false, "reason": "2025-07-10 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "micropython__micropython-17683", "created": "2025-07-15", "admitted": false, "reason": "2025-07-15 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "timescale__timescaledb-8559", "created": "2025-08-28", "admitted": false, "reason": "2025-08-28 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "cilium__tetragon-4069", "created": "2025-08-29", "admitted": false, "reason": "2025-08-29 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "quickjs-ng__quickjs-1113", "created": "2025-06-24", "admitted": false, "reason": "2025-06-24 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "fluent__fluent-bit-10563", "created": "2025-07-09", "admitted": false, "reason": "2025-07-09 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "php__php-src-19478", "created": "2025-08-14", "admitted": false, "reason": "2025-08-14 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "varnishcache__varnish-cache-4370", "created": "2025-07-21", "admitted": false, "reason": "2025-07-21 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "rsyslog__rsyslog-6047", "created": "2025-08-28", "admitted": false, "reason": "2025-08-28 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "aws__s2n-tls-5481", "created": "2025-08-25", "admitted": false, "reason": "2025-08-25 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "php__php-src-19316", "created": "2025-07-30", "admitted": false, "reason": "2025-07-30 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "php__php-src-19154", "created": "2025-07-17", "admitted": false, "reason": "2025-07-17 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "DynamoRIO__dynamorio-7583", "created": "2025-07-29", "admitted": false, "reason": "2025-07-29 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "php__php-src-19611", "created": "2025-08-27", "admitted": false, "reason": "2025-08-27 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "php__php-src-19297", "created": "2025-07-30", "admitted": false, "reason": "2025-07-30 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "Mbed-TLS__mbedtls-10361", "created": "2025-08-18", "admitted": false, "reason": "2025-08-18 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "cc65__cc65-2791", "created": "2025-07-11", "admitted": false, "reason": "2025-07-11 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "redis__redis-14274", "created": "2025-08-13", "admitted": false, "reason": "2025-08-13 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "valkey-io__valkey-2370", "created": "2025-07-21", "admitted": false, "reason": "2025-07-21 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "php__php-src-19215", "created": "2025-07-22", "admitted": false, "reason": "2025-07-22 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "redis__redis-14243", "created": "2025-08-01", "admitted": false, "reason": "2025-08-01 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "capstone-engine__capstone-2743", "created": "2025-06-25", "admitted": false, "reason": "2025-06-25 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "valkey-io__valkey-2287", "created": "2025-06-30", "admitted": false, "reason": "2025-06-30 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "fluent__fluent-bit-10767", "created": "2025-08-21", "admitted": false, "reason": "2025-08-21 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "valkey-io__valkey-2277", "created": "2025-06-26", "admitted": false, "reason": "2025-06-26 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "DynamoRIO__dynamorio-7561", "created": "2025-07-22", "admitted": false, "reason": "2025-07-22 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "valkey-io__valkey-2431", "created": "2025-08-05", "admitted": false, "reason": "2025-08-05 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "valkey-io__valkey-2458", "created": "2025-08-08", "admitted": false, "reason": "2025-08-08 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "cc65__cc65-2761", "created": "2025-07-01", "admitted": false, "reason": "2025-07-01 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "zmkfirmware__zmk-2942", "created": "2025-05-15", "admitted": false, "reason": "2025-05-15 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "valkey-io__valkey-2553", "created": "2025-08-27", "admitted": false, "reason": "2025-08-27 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "fmtlib__fmt-4490", "created": "2025-07-08", "admitted": false, "reason": "2025-07-08 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "KhronosGroup__glslang-4006", "created": "2025-07-25", "admitted": false, "reason": "2025-07-25 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "shader-slang__slang-7864", "created": "2025-07-22", "admitted": false, "reason": "2025-07-22 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "shader-slang__slang-7581", "created": "2025-07-01", "admitted": false, "reason": "2025-07-01 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "musescore__MuseScore-28806", "created": "2025-07-15", "admitted": false, "reason": "2025-07-15 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "alibaba__yalantinglibs-1002", "created": "2025-06-27", "admitted": false, "reason": "2025-06-27 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "apache__kvrocks-3084", "created": "2025-07-30", "admitted": false, "reason": "2025-07-30 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "esphome__esphome-10345", "created": "2025-08-20", "admitted": false, "reason": "2025-08-20 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "shader-slang__slang-7662", "created": "2025-07-08", "admitted": false, "reason": "2025-07-08 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "pybind__pybind11-5776", "created": "2025-07-28", "admitted": false, "reason": "2025-07-28 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "GothenburgBitFactory__taskwarrior-3911", "created": "2025-07-10", "admitted": false, "reason": "2025-07-10 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "musescore__MuseScore-28647", "created": "2025-07-01", "admitted": false, "reason": "2025-07-01 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "shader-slang__slang-7815", "created": "2025-07-18", "admitted": false, "reason": "2025-07-18 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "shader-slang__slang-7523", "created": "2025-06-25", "admitted": false, "reason": "2025-06-25 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "shader-slang__slang-7734", "created": "2025-07-11", "admitted": false, "reason": "2025-07-11 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "versatica__mediasoup-1570", "created": "2025-07-09", "admitted": false, "reason": "2025-07-09 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "kokkos__kokkos-8182", "created": "2025-06-16", "admitted": false, "reason": "2025-06-16 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "nodejs__node-addon-api-1705", "created": "2026-01-30", "admitted": false, "reason": "2026-01-30 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "rui314__mold-1546", "created": "2026-01-21", "admitted": false, "reason": "2026-01-21 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "BYVoid__OpenCC-461", "created": "2020-06-29", "admitted": false, "reason": "2020-06-29 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "luau-lang__luau-2209", "created": "2026-01-23", "admitted": false, "reason": "2026-01-23 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "Azure__azure-mcp-647", "created": "2025-07-17", "admitted": false, "reason": "2025-07-17 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "dotnet__winforms-13797", "created": "2025-08-08", "admitted": false, "reason": "2025-08-08 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "Azure__azure-mcp-870", "created": "2025-08-05", "admitted": false, "reason": "2025-08-05 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "Azure__azure-mcp-533", "created": "2025-07-08", "admitted": false, "reason": "2025-07-08 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "dotnet__machinelearning-7494", "created": "2025-08-09", "admitted": false, "reason": "2025-08-09 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "dotnetcore__BootstrapBlazor-6540", "created": "2025-08-03", "admitted": false, "reason": "2025-08-03 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "dotnet__efcore-36620", "created": "2025-08-21", "admitted": false, "reason": "2025-08-21 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "Azure__azure-mcp-594", "created": "2025-07-14", "admitted": false, "reason": "2025-07-14 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "unoplatform__uno-20897", "created": "2025-06-27", "admitted": false, "reason": "2025-06-27 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "dotnet__orleans-9605", "created": "2025-07-11", "admitted": false, "reason": "2025-07-11 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "Azure__azure-mcp-609", "created": "2025-07-15", "admitted": false, "reason": "2025-07-15 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "dotnet__runtime-118239", "created": "2025-07-31", "admitted": false, "reason": "2025-07-31 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "dotnetcore__BootstrapBlazor-6376", "created": "2025-07-08", "admitted": false, "reason": "2025-07-08 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "dotnet__sdk-50083", "created": "2025-08-06", "admitted": false, "reason": "2025-08-06 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "Azure__azure-mcp-604", "created": "2025-07-15", "admitted": false, "reason": "2025-07-15 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "dotnet__runtime-117313", "created": "2025-07-04", "admitted": false, "reason": "2025-07-04 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "dotnet__efcore-36664", "created": "2025-08-27", "admitted": false, "reason": "2025-08-27 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "dotnet__aspnetcore-62868", "created": "2025-07-22", "admitted": false, "reason": "2025-07-22 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "Finbuckle__Finbuckle.MultiTenant-994", "created": "2025-08-04", "admitted": false, "reason": "2025-08-04 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "fluentmigrator__fluentmigrator-2086", "created": "2025-06-19", "admitted": false, "reason": "2025-06-19 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "dotnetcore__BootstrapBlazor-6551", "created": "2025-08-05", "admitted": false, "reason": "2025-08-05 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "dotnet__efcore-36355", "created": "2025-07-09", "admitted": false, "reason": "2025-07-09 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "dotnetcore__BootstrapBlazor-6338", "created": "2025-07-01", "admitted": false, "reason": "2025-07-01 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "SixLabors__ImageSharp-2946", "created": "2025-06-12", "admitted": false, "reason": "2025-06-12 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "dotnet__yarp-2903", "created": "2025-07-19", "admitted": false, "reason": "2025-07-19 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "dotnet__efcore-36404", "created": "2025-07-21", "admitted": false, "reason": "2025-07-21 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "dotnetcore__BootstrapBlazor-6663", "created": "2025-08-21", "admitted": false, "reason": "2025-08-21 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "dotnet__efcore-36159", "created": "2025-05-29", "admitted": false, "reason": "2025-05-29 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "dotnet__command-line-api-2708", "created": "2025-10-16", "admitted": false, "reason": "2025-10-16 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "open-telemetry__opentelemetry-operator-4245", "created": "2025-08-03", "admitted": false, "reason": "2025-08-03 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "openfga__openfga-2598", "created": "2025-07-31", "admitted": false, "reason": "2025-07-31 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "oauth2-proxy__oauth2-proxy-2524", "created": "2024-02-24", "admitted": false, "reason": "2024-02-24 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "kubernetes__kops-17519", "created": "2025-07-27", "admitted": false, "reason": "2025-07-27 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "casbin__casbin-1512", "created": "2025-08-04", "admitted": false, "reason": "2025-08-04 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "netbirdio__netbird-3970", "created": "2025-06-12", "admitted": false, "reason": "2025-06-12 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "ossf__scorecard-4728", "created": "2025-07-29", "admitted": false, "reason": "2025-07-29 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "nats-io__nats-server-7089", "created": "2025-07-22", "admitted": false, "reason": "2025-07-22 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "graphql-go__graphql-727", "created": "2025-07-28", "admitted": false, "reason": "2025-07-28 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "casbin__casbin-1522", "created": "2025-08-11", "admitted": false, "reason": "2025-08-11 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "nats-io__nats-server-7175", "created": "2025-08-15", "admitted": false, "reason": "2025-08-15 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "vmware-tanzu__velero-9059", "created": "2025-07-02", "admitted": false, "reason": "2025-07-02 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "rook__rook-16087", "created": "2025-07-02", "admitted": false, "reason": "2025-07-02 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "open-telemetry__opentelemetry-collector-contrib-40522", "created": "2025-06-06", "admitted": false, "reason": "2025-06-06 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "github__github-mcp-server-869", "created": "2025-08-13", "admitted": false, "reason": "2025-08-13 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "a-h__templ-1213", "created": "2025-07-03", "admitted": false, "reason": "2025-07-03 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "charmbracelet__crush-766", "created": "2025-08-14", "admitted": false, "reason": "2025-08-14 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "stripe__stripe-cli-1352", "created": "2025-07-17", "admitted": false, "reason": "2025-07-17 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "caddyserver__caddy-7189", "created": "2025-08-20", "admitted": false, "reason": "2025-08-20 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "libp2p__go-libp2p-3306", "created": "2025-06-09", "admitted": false, "reason": "2025-06-09 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "zitadel__zitadel-10197", "created": "2025-07-08", "admitted": false, "reason": "2025-07-08 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "prometheus__alertmanager-4478", "created": "2025-07-15", "admitted": false, "reason": "2025-07-15 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "kubernetes-sigs__controller-runtime-3247", "created": "2025-06-26", "admitted": false, "reason": "2025-06-26 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "open-telemetry__opentelemetry-operator-4118", "created": "2025-06-18", "admitted": false, "reason": "2025-06-18 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "coder__coder-19201", "created": "2025-08-06", "admitted": false, "reason": "2025-08-06 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "open-telemetry__opentelemetry-collector-contrib-41929", "created": "2025-08-12", "admitted": false, "reason": "2025-08-12 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "istio__istio-56962", "created": "2025-07-10", "admitted": false, "reason": "2025-07-10 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "envoyproxy__gateway-6372", "created": "2025-06-21", "admitted": false, "reason": "2025-06-21 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "knative__eventing-8611", "created": "2025-06-25", "admitted": false, "reason": "2025-06-25 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "cadence-workflow__cadence-7182", "created": "2025-08-20", "admitted": false, "reason": "2025-08-20 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "moby__moby-50281", "created": "2025-06-28", "admitted": false, "reason": "2025-06-28 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "lima-vm__lima-3923", "created": "2025-08-27", "admitted": false, "reason": "2025-08-27 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "jesseduffield__lazygit-4750", "created": "2025-07-17", "admitted": false, "reason": "2025-07-17 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "cert-manager__cert-manager-7866", "created": "2025-07-19", "admitted": false, "reason": "2025-07-19 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "ollama__ollama-11509", "created": "2025-07-23", "admitted": false, "reason": "2025-07-23 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "open-telemetry__opentelemetry-go-6393", "created": "2025-03-02", "admitted": false, "reason": "2025-03-02 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "rqlite__rqlite-2182", "created": "2025-07-24", "admitted": false, "reason": "2025-07-24 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "crowdsecurity__crowdsec-3744", "created": "2025-07-22", "admitted": false, "reason": "2025-07-22 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "redpanda-data__connect-3512", "created": "2025-06-27", "admitted": false, "reason": "2025-06-27 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "google__go-github-3653", "created": "2025-07-27", "admitted": false, "reason": "2025-07-27 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "bpg__terraform-provider-proxmox-2122", "created": "2025-08-19", "admitted": false, "reason": "2025-08-19 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "open-telemetry__opentelemetry-ebpf-profiler-734", "created": "2025-08-26", "admitted": false, "reason": "2025-08-26 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "kedacore__keda-6901", "created": "2025-07-11", "admitted": false, "reason": "2025-07-11 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "modelcontextprotocol__registry-321", "created": "2025-08-28", "admitted": false, "reason": "2025-08-28 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "open-telemetry__opentelemetry-go-contrib-7607", "created": "2025-07-22", "admitted": false, "reason": "2025-07-22 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "argoproj__argo-rollouts-4305", "created": "2025-06-04", "admitted": false, "reason": "2025-06-04 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "kedacore__keda-6888", "created": "2025-07-07", "admitted": false, "reason": "2025-07-07 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "rqlite__rqlite-2190", "created": "2025-07-31", "admitted": false, "reason": "2025-07-31 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "golang-jwt__jwt-456", "created": "2025-08-01", "admitted": false, "reason": "2025-08-01 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "sustainable-computing-io__kepler-2277", "created": "2025-08-12", "admitted": false, "reason": "2025-08-12 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "lima-vm__lima-3812", "created": "2025-08-09", "admitted": false, "reason": "2025-08-09 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "kubernetes-sigs__kueue-6381", "created": "2025-08-03", "admitted": false, "reason": "2025-08-03 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "pelletier__go-toml-996", "created": "2025-08-21", "admitted": false, "reason": "2025-08-21 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "IBM__sarama-3258", "created": "2025-08-11", "admitted": false, "reason": "2025-08-11 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "nginx__kubernetes-ingress-8119", "created": "2025-08-08", "admitted": false, "reason": "2025-08-08 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "tmc__langchaingo-1350", "created": "2025-08-08", "admitted": false, "reason": "2025-08-08 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "google__starlark-go-599", "created": "2025-07-13", "admitted": false, "reason": "2025-07-13 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "rook__rook-16336", "created": "2025-08-18", "admitted": false, "reason": "2025-08-18 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "tikv__pd-9618", "created": "2025-08-01", "admitted": false, "reason": "2025-08-01 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "tikv__pd-9472", "created": "2025-07-02", "admitted": false, "reason": "2025-07-02 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "fortio__fortio-1081", "created": "2025-08-18", "admitted": false, "reason": "2025-08-18 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "open-telemetry__opentelemetry-collector-contrib-42164", "created": "2025-08-21", "admitted": false, "reason": "2025-08-21 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "open-telemetry__opentelemetry-go-6962", "created": "2025-07-03", "admitted": false, "reason": "2025-07-03 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "slack-go__slack-1471", "created": "2025-08-30", "admitted": false, "reason": "2025-08-30 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "akuity__kargo-4687", "created": "2025-07-26", "admitted": false, "reason": "2025-07-26 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "TecharoHQ__anubis-881", "created": "2025-07-21", "admitted": false, "reason": "2025-07-21 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "cucumber__godog-695", "created": "2025-07-18", "admitted": false, "reason": "2025-07-18 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "rqlite__rqlite-2197", "created": "2025-08-05", "admitted": false, "reason": "2025-08-05 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "yuin__gopher-lua-523", "created": "2025-01-10", "admitted": false, "reason": "2025-01-10 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "kubernetes-sigs__kueue-8597", "created": "2026-01-15", "admitted": false, "reason": "2026-01-15 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "microsoft__playwright-java-1817", "created": "2025-07-08", "admitted": false, "reason": "2025-07-08 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "opentripplanner__OpenTripPlanner-6732", "created": "2025-07-02", "admitted": false, "reason": "2025-07-02 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "apple__pkl-1165", "created": "2025-08-06", "admitted": false, "reason": "2025-08-06 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "alibaba__nacos-13650", "created": "2025-07-28", "admitted": false, "reason": "2025-07-28 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "wiremock__wiremock-3130", "created": "2025-08-08", "admitted": false, "reason": "2025-08-08 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "OpenAPITools__openapi-generator-21579", "created": "2025-07-17", "admitted": false, "reason": "2025-07-17 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "diffplug__spotless-2520", "created": "2025-06-23", "admitted": false, "reason": "2025-06-23 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "AutoMQ__automq-2699", "created": "2025-07-25", "admitted": false, "reason": "2025-07-25 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "springdoc__springdoc-openapi-3051", "created": "2025-08-05", "admitted": false, "reason": "2025-08-05 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "OpenAPITools__openapi-generator-21734", "created": "2025-08-12", "admitted": false, "reason": "2025-08-12 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "OpenLiberty__open-liberty-32198", "created": "2025-07-21", "admitted": false, "reason": "2025-07-21 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "strimzi__strimzi-kafka-operator-11510", "created": "2025-06-07", "admitted": false, "reason": "2025-06-07 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "apache__accumulo-5763", "created": "2025-07-25", "admitted": false, "reason": "2025-07-25 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "portfolio-performance__portfolio-4899", "created": "2025-08-23", "admitted": false, "reason": "2025-08-23 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "apache__inlong-11946", "created": "2025-07-23", "admitted": false, "reason": "2025-07-23 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "junit-team__junit-framework-4778", "created": "2025-07-19", "admitted": false, "reason": "2025-07-19 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "TeamNewPipe__NewPipeExtractor-1302", "created": "2025-05-26", "admitted": false, "reason": "2025-05-26 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "OpenLineage__OpenLineage-3921", "created": "2025-07-22", "admitted": false, "reason": "2025-07-22 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "openhab__openhab-addons-19118", "created": "2025-08-06", "admitted": false, "reason": "2025-08-06 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "apple__pkl-1126", "created": "2025-07-16", "admitted": false, "reason": "2025-07-16 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "stleary__JSON-java-995", "created": "2025-07-06", "admitted": false, "reason": "2025-07-06 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "javaparser__javaparser-4792", "created": "2025-07-06", "admitted": false, "reason": "2025-07-06 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "apache__inlong-11947", "created": "2025-07-23", "admitted": false, "reason": "2025-07-23 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "kestra-io__kestra-10698", "created": "2025-08-12", "admitted": false, "reason": "2025-08-12 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "gitlab4j__gitlab4j-api-1266", "created": "2025-07-24", "admitted": false, "reason": "2025-07-24 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "gwtproject__gwt-10153", "created": "2025-08-20", "admitted": false, "reason": "2025-08-20 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "keycloak__keycloak-40685", "created": "2025-06-24", "admitted": false, "reason": "2025-06-24 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "line__armeria-6325", "created": "2025-07-25", "admitted": false, "reason": "2025-07-25 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "apache__pinot-16271", "created": "2025-07-03", "admitted": false, "reason": "2025-07-03 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "quarkusio__quarkus-49065", "created": "2025-07-23", "admitted": false, "reason": "2025-07-23 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "micrometer-metrics__micrometer-6593", "created": "2025-08-07", "admitted": false, "reason": "2025-08-07 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "gwtproject__gwt-10054", "created": "2024-12-10", "admitted": false, "reason": "2024-12-10 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "apple__pkl-1187", "created": "2025-08-25", "admitted": false, "reason": "2025-08-25 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "AntennaPod__AntennaPod-7755", "created": "2025-04-13", "admitted": false, "reason": "2025-04-13 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "apache__jena-3324", "created": "2025-07-20", "admitted": false, "reason": "2025-07-20 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "OpenLiberty__open-liberty-32404", "created": "2025-08-07", "admitted": false, "reason": "2025-08-07 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "vavr-io__vavr-3045", "created": "2025-07-12", "admitted": false, "reason": "2025-07-12 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "alibaba__nacos-13539", "created": "2025-06-22", "admitted": false, "reason": "2025-06-22 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "portfolio-performance__portfolio-4844", "created": "2025-07-12", "admitted": false, "reason": "2025-07-12 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "junit-team__junit-framework-4700", "created": "2025-06-30", "admitted": false, "reason": "2025-06-30 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "primefaces__primefaces-14032", "created": "2025-07-24", "admitted": false, "reason": "2025-07-24 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "apache__incubator-seata-7482", "created": "2025-06-27", "admitted": false, "reason": "2025-06-27 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "spring-projects__spring-data-elasticsearch-3143", "created": "2025-08-02", "admitted": false, "reason": "2025-08-02 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "quarkusio__quarkus-48907", "created": "2025-07-14", "admitted": false, "reason": "2025-07-14 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "apache__pinot-16421", "created": "2025-07-24", "admitted": false, "reason": "2025-07-24 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "Minestom__Minestom-2896", "created": "2025-08-28", "admitted": false, "reason": "2025-08-28 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "hyperledger__besu-8929", "created": "2025-07-08", "admitted": false, "reason": "2025-07-08 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "mapstruct__mapstruct-3908", "created": "2025-07-29", "admitted": false, "reason": "2025-07-29 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "jacoco__jacoco-1940", "created": "2025-08-24", "admitted": false, "reason": "2025-08-24 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "junit-team__junit-framework-4819", "created": "2025-08-08", "admitted": false, "reason": "2025-08-08 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "microsoft__playwright-java-1825", "created": "2025-07-24", "admitted": false, "reason": "2025-07-24 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "junit-team__junit-framework-4718", "created": "2025-07-03", "admitted": false, "reason": "2025-07-03 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "apache__lucene-14932", "created": "2025-07-10", "admitted": false, "reason": "2025-07-10 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "opentripplanner__OpenTripPlanner-6770", "created": "2025-07-30", "admitted": false, "reason": "2025-07-30 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "quarkusio__quarkus-49661", "created": "2025-08-21", "admitted": false, "reason": "2025-08-21 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "apache__rocketmq-9778", "created": "2025-10-23", "admitted": false, "reason": "2025-10-23 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "spring-projects__spring-framework-35808", "created": "2025-11-13", "admitted": false, "reason": "2025-11-13 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "stdlib-js__stdlib-7672", "created": "2025-07-15", "admitted": false, "reason": "2025-07-15 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "MultiQC__MultiQC-3242", "created": "2025-07-01", "admitted": false, "reason": "2025-07-01 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "sveltejs__svelte-16666", "created": "2025-08-25", "admitted": false, "reason": "2025-08-25 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "sveltejs__svelte-16309", "created": "2025-07-06", "admitted": false, "reason": "2025-07-06 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "sveltejs__svelte-16542", "created": "2025-08-02", "admitted": false, "reason": "2025-08-02 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "stdlib-js__stdlib-6527", "created": "2025-04-03", "admitted": false, "reason": "2025-04-03 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "grommet__grommet-7718", "created": "2025-07-21", "admitted": false, "reason": "2025-07-21 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "sveltejs__svelte-16417", "created": "2025-07-17", "admitted": false, "reason": "2025-07-17 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "sveltejs__svelte-16504", "created": "2025-07-26", "admitted": false, "reason": "2025-07-26 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "sveltejs__svelte-16405", "created": "2025-07-16", "admitted": false, "reason": "2025-07-16 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "less__less.js-4349", "created": "2025-07-21", "admitted": false, "reason": "2025-07-21 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "codeceptjs__CodeceptJS-5106", "created": "2025-08-24", "admitted": false, "reason": "2025-08-24 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "preactjs__preact-3855", "created": "2023-01-08", "admitted": false, "reason": "2023-01-08 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "sveltejs__svelte-16466", "created": "2025-07-21", "admitted": false, "reason": "2025-07-21 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "moment__luxon-1720", "created": "2025-07-29", "admitted": false, "reason": "2025-07-29 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "sveltejs__svelte-16526", "created": "2025-07-30", "admitted": false, "reason": "2025-07-30 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "stdlib-js__stdlib-5735", "created": "2025-03-02", "admitted": false, "reason": "2025-03-02 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "sveltejs__svelte-16278", "created": "2025-07-01", "admitted": false, "reason": "2025-07-01 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "Automattic__mongoose-15534", "created": "2025-07-14", "admitted": false, "reason": "2025-07-14 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "sveltejs__svelte-16509", "created": "2025-07-27", "admitted": false, "reason": "2025-07-27 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "sveltejs__svelte-16592", "created": "2025-08-09", "admitted": false, "reason": "2025-08-09 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "sveltejs__svelte-16649", "created": "2025-08-19", "admitted": false, "reason": "2025-08-19 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "stdlib-js__stdlib-7590", "created": "2025-07-08", "admitted": false, "reason": "2025-07-08 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "facebook__stylex-1209", "created": "2025-08-26", "admitted": false, "reason": "2025-08-26 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "rollup__rollup-6041", "created": "2025-07-29", "admitted": false, "reason": "2025-07-29 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "less__less.js-4363", "created": "2025-08-26", "admitted": false, "reason": "2025-08-26 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "sveltejs__svelte-16341", "created": "2025-07-11", "admitted": false, "reason": "2025-07-11 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "marko-js__marko-2793", "created": "2025-08-30", "admitted": false, "reason": "2025-08-30 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "stdlib-js__stdlib-5914", "created": "2025-03-09", "admitted": false, "reason": "2025-03-09 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "preactjs__preact-4880", "created": "2025-08-08", "admitted": false, "reason": "2025-08-08 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "rollup__rollup-6051", "created": "2025-08-01", "admitted": false, "reason": "2025-08-01 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "stdlib-js__stdlib-7575", "created": "2025-07-06", "admitted": false, "reason": "2025-07-06 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "sveltejs__svelte-16389", "created": "2025-07-16", "admitted": false, "reason": "2025-07-16 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "sveltejs__svelte-16622", "created": "2025-08-14", "admitted": false, "reason": "2025-08-14 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "siimon__prom-client-679", "created": "2025-07-05", "admitted": false, "reason": "2025-07-05 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "hotwired__turbo-1421", "created": "2025-07-29", "admitted": false, "reason": "2025-07-29 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "codeceptjs__CodeceptJS-5109", "created": "2025-08-24", "admitted": false, "reason": "2025-08-24 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "rollup__rollup-6071", "created": "2025-08-16", "admitted": false, "reason": "2025-08-16 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "sveltejs__svelte-16570", "created": "2025-08-06", "admitted": false, "reason": "2025-08-06 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "google__zx-1317", "created": "2025-08-16", "admitted": false, "reason": "2025-08-16 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "mozilla__pdf.js-20160", "created": "2025-08-09", "admitted": false, "reason": "2025-08-09 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "Automattic__mongoose-15485", "created": "2025-06-21", "admitted": false, "reason": "2025-06-21 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "facebook__stylex-1192", "created": "2025-08-07", "admitted": false, "reason": "2025-08-07 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "asciidwango__js-primer-1834", "created": "2025-08-11", "admitted": false, "reason": "2025-08-11 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "sveltejs__svelte-16619", "created": "2025-08-14", "admitted": false, "reason": "2025-08-14 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "rollup__rollup-6038", "created": "2025-07-28", "admitted": false, "reason": "2025-07-28 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "camunda__camunda-modeler-5121", "created": "2025-07-01", "admitted": false, "reason": "2025-07-01 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "prettier__prettier-17708", "created": "2025-07-07", "admitted": false, "reason": "2025-07-07 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "hapijs__joi-3082", "created": "2025-06-16", "admitted": false, "reason": "2025-06-16 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "stdlib-js__stdlib-1716", "created": "2024-03-05", "admitted": false, "reason": "2024-03-05 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "cytoscape__cytoscape.js-3396", "created": "2025-07-15", "admitted": false, "reason": "2025-07-15 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "grommet__grommet-7712", "created": "2025-07-15", "admitted": false, "reason": "2025-07-15 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "Automattic__mongoose-15492", "created": "2025-06-26", "admitted": false, "reason": "2025-06-26 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "TryGhost__Ghost-24345", "created": "2025-07-14", "admitted": false, "reason": "2025-07-14 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "grommet__grommet-7709", "created": "2025-07-11", "admitted": false, "reason": "2025-07-11 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "nock__nock-2880", "created": "2025-06-29", "admitted": false, "reason": "2025-06-29 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "sveltejs__svelte-16449", "created": "2025-07-19", "admitted": false, "reason": "2025-07-19 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "codeceptjs__CodeceptJS-5072", "created": "2025-08-19", "admitted": false, "reason": "2025-08-19 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "sveltejs__svelte-16502", "created": "2025-07-25", "admitted": false, "reason": "2025-07-25 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "decaporg__decap-cms-7495", "created": "2025-06-06", "admitted": false, "reason": "2025-06-06 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "nodejs__undici-4453", "created": "2025-08-24", "admitted": false, "reason": "2025-08-24 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "simple-icons__simple-icons-13659", "created": "2025-07-25", "admitted": false, "reason": "2025-07-25 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "sveltejs__svelte-16482", "created": "2025-07-22", "admitted": false, "reason": "2025-07-22 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "rollup__rollup-6009", "created": "2025-07-12", "admitted": false, "reason": "2025-07-12 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "fastify__fastify-5985", "created": "2025-02-14", "admitted": false, "reason": "2025-02-14 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "asciidwango__js-primer-1837", "created": "2025-08-17", "admitted": false, "reason": "2025-08-17 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "sveltejs__svelte-16248", "created": "2025-06-26", "admitted": false, "reason": "2025-06-26 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "docsifyjs__docsify-2595", "created": "2025-08-08", "admitted": false, "reason": "2025-08-08 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "appium__appium-inspector-2178", "created": "2025-07-12", "admitted": false, "reason": "2025-07-12 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "MultiQC__MultiQC-3300", "created": "2025-08-19", "admitted": false, "reason": "2025-08-19 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "sveltejs__svelte-16601", "created": "2025-08-11", "admitted": false, "reason": "2025-08-11 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "grommet__grommet-7719", "created": "2025-07-21", "admitted": false, "reason": "2025-07-21 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "sveltejs__svelte-16668", "created": "2025-08-25", "admitted": false, "reason": "2025-08-25 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "ember-cli__ember-cli-10776", "created": "2025-08-21", "admitted": false, "reason": "2025-08-21 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "shaka-project__shaka-player-8835", "created": "2025-07-03", "admitted": false, "reason": "2025-07-03 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "cthackers__adm-zip-559", "created": "2025-06-24", "admitted": false, "reason": "2025-06-24 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "apache__datafusion-16726", "created": "2025-07-09", "admitted": false, "reason": "2025-07-09 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "linebender__vello-1100", "created": "2025-07-15", "admitted": false, "reason": "2025-07-15 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "apache__datafusion-17233", "created": "2025-08-18", "admitted": false, "reason": "2025-08-18 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "uutils__coreutils-8447", "created": "2025-08-07", "admitted": false, "reason": "2025-08-07 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "uutils__coreutils-8528", "created": "2025-08-30", "admitted": false, "reason": "2025-08-30 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "casey__just-2835", "created": "2025-07-24", "admitted": false, "reason": "2025-07-24 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "gleam-lang__gleam-4854", "created": "2025-08-14", "admitted": false, "reason": "2025-08-14 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "uutils__coreutils-8310", "created": "2025-07-03", "admitted": false, "reason": "2025-07-03 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "jtroo__kanata-1681", "created": "2025-07-06", "admitted": false, "reason": "2025-07-06 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "immunant__c2rust-1322", "created": "2025-08-13", "admitted": false, "reason": "2025-08-13 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "uutils__coreutils-8336", "created": "2025-07-12", "admitted": false, "reason": "2025-07-12 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "apache__datafusion-17130", "created": "2025-08-11", "admitted": false, "reason": "2025-08-11 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "casey__just-2785", "created": "2025-06-20", "admitted": false, "reason": "2025-06-20 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "ProvableHQ__leo-28814", "created": "2025-08-25", "admitted": false, "reason": "2025-08-25 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "linebender__vello-1132", "created": "2025-07-29", "admitted": false, "reason": "2025-07-29 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "rust-lang__rust-analyzer-20185", "created": "2025-07-06", "admitted": false, "reason": "2025-07-06 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "apache__datafusion-16610", "created": "2025-06-29", "admitted": false, "reason": "2025-06-29 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "uutils__coreutils-8197", "created": "2025-06-16", "admitted": false, "reason": "2025-06-16 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "apache__datafusion-17139", "created": "2025-08-12", "admitted": false, "reason": "2025-08-12 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "apache__arrow-rs-7841", "created": "2025-07-01", "admitted": false, "reason": "2025-07-01 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "uutils__coreutils-8149", "created": "2025-06-11", "admitted": false, "reason": "2025-06-11 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "gleam-lang__gleam-4708", "created": "2025-06-22", "admitted": false, "reason": "2025-06-22 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "clap-rs__clap-6068", "created": "2025-07-09", "admitted": false, "reason": "2025-07-09 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "jj-vcs__jj-7269", "created": "2025-08-16", "admitted": false, "reason": "2025-08-16 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "rust-lang__rust-analyzer-20381", "created": "2025-08-04", "admitted": false, "reason": "2025-08-04 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "apache__datafusion-17201", "created": "2025-08-15", "admitted": false, "reason": "2025-08-15 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "noir-lang__noir-9323", "created": "2025-07-25", "admitted": false, "reason": "2025-07-25 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "notify-rs__notify-700", "created": "2025-07-16", "admitted": false, "reason": "2025-07-16 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "lalrpop__lalrpop-1076", "created": "2025-07-09", "admitted": false, "reason": "2025-07-09 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "rust-lang__rust-analyzer-20180", "created": "2025-07-06", "admitted": false, "reason": "2025-07-06 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "notify-rs__notify-701", "created": "2025-07-16", "admitted": false, "reason": "2025-07-16 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "rust-lang__mdBook-2806", "created": "2025-08-18", "admitted": false, "reason": "2025-08-18 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "jj-vcs__jj-6728", "created": "2025-06-09", "admitted": false, "reason": "2025-06-09 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "redis-rs__redis-rs-1721", "created": "2025-07-13", "admitted": false, "reason": "2025-07-13 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "apache__arrow-rs-8214", "created": "2025-08-23", "admitted": false, "reason": "2025-08-23 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "noir-lang__noir-9250", "created": "2025-07-18", "admitted": false, "reason": "2025-07-18 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "matrix-org__matrix-rust-sdk-5395", "created": "2025-07-13", "admitted": false, "reason": "2025-07-13 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "matrix-org__matrix-rust-sdk-5522", "created": "2025-08-12", "admitted": false, "reason": "2025-08-12 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "Automattic__harper-1737", "created": "2025-08-13", "admitted": false, "reason": "2025-08-13 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "apache__arrow-rs-7783", "created": "2025-06-25", "admitted": false, "reason": "2025-06-25 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "rust-lang__mdBook-2796", "created": "2025-08-16", "admitted": false, "reason": "2025-08-16 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "SeaQL__sea-query-920", "created": "2025-07-28", "admitted": false, "reason": "2025-07-28 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "apache__datafusion-17081", "created": "2025-08-08", "admitted": false, "reason": "2025-08-08 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "napi-rs__napi-rs-2784", "created": "2025-07-18", "admitted": false, "reason": "2025-07-18 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "uutils__coreutils-8433", "created": "2025-08-05", "admitted": false, "reason": "2025-08-05 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "eza-community__eza-1664", "created": "2025-11-06", "admitted": false, "reason": "2025-11-06 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "owid__owid-grapher-5115", "created": "2025-07-10", "admitted": false, "reason": "2025-07-10 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "remotion-dev__remotion-5529", "created": "2025-07-25", "admitted": false, "reason": "2025-07-25 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "openai__openai-agents-js-340", "created": "2025-08-14", "admitted": false, "reason": "2025-08-14 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "firefox-devtools__profiler-5512", "created": "2025-07-11", "admitted": false, "reason": "2025-07-11 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "TanStack__router-4751", "created": "2025-07-22", "admitted": false, "reason": "2025-07-22 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "ChainSafe__lodestar-8203", "created": "2025-08-14", "admitted": false, "reason": "2025-08-14 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "TanStack__router-4915", "created": "2025-08-11", "admitted": false, "reason": "2025-08-11 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "excalidraw__excalidraw-9760", "created": "2025-07-18", "admitted": false, "reason": "2025-07-18 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "mui__base-ui-2269", "created": "2025-07-07", "admitted": false, "reason": "2025-07-07 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "Shopify__hydrogen-3072", "created": "2025-08-14", "admitted": false, "reason": "2025-08-14 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "mui__base-ui-2231", "created": "2025-07-02", "admitted": false, "reason": "2025-07-02 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "recharts__recharts-6068", "created": "2025-07-06", "admitted": false, "reason": "2025-07-06 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "honojs__hono-4249", "created": "2025-06-27", "admitted": false, "reason": "2025-06-27 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "reown-com__appkit-4542", "created": "2025-06-20", "admitted": false, "reason": "2025-06-20 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "openapi-ts__openapi-typescript-2365", "created": "2025-06-29", "admitted": false, "reason": "2025-06-29 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "jhlywa__chess.js-546", "created": "2025-07-08", "admitted": false, "reason": "2025-07-08 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "jestjs__jest-15714", "created": "2025-07-02", "admitted": false, "reason": "2025-07-02 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "lightdash__lightdash-16521", "created": "2025-08-20", "admitted": false, "reason": "2025-08-20 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "getsentry__sentry-javascript-17013", "created": "2025-07-15", "admitted": false, "reason": "2025-07-15 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "tailwindlabs__tailwindcss-18718", "created": "2025-08-11", "admitted": false, "reason": "2025-08-11 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "openai__openai-agents-js-375", "created": "2025-08-26", "admitted": false, "reason": "2025-08-26 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "TanStack__router-4685", "created": "2025-07-17", "admitted": false, "reason": "2025-07-17 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "mui__base-ui-2290", "created": "2025-07-11", "admitted": false, "reason": "2025-07-11 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "honojs__hono-4269", "created": "2025-07-03", "admitted": false, "reason": "2025-07-03 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "monkeytypegame__monkeytype-6830", "created": "2025-08-03", "admitted": false, "reason": "2025-08-03 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "unocss__unocss-4827", "created": "2025-07-21", "admitted": false, "reason": "2025-07-21 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "remotion-dev__remotion-5532", "created": "2025-07-28", "admitted": false, "reason": "2025-07-28 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "maplibre__maplibre-gl-js-6216", "created": "2025-08-04", "admitted": false, "reason": "2025-08-04 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "formbricks__formbricks-5903", "created": "2025-05-28", "admitted": false, "reason": "2025-05-28 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "TanStack__router-5033", "created": "2025-08-28", "admitted": false, "reason": "2025-08-28 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "cloudflare__workers-sdk-9866", "created": "2025-07-07", "admitted": false, "reason": "2025-07-07 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "gpbl__react-day-picker-2815", "created": "2025-08-04", "admitted": false, "reason": "2025-08-04 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "TanStack__router-4978", "created": "2025-08-17", "admitted": false, "reason": "2025-08-17 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "formbricks__formbricks-6413", "created": "2025-08-14", "admitted": false, "reason": "2025-08-14 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "TanStack__form-1664", "created": "2025-08-03", "admitted": false, "reason": "2025-08-03 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "MetaMask__metamask-mobile-17208", "created": "2025-07-15", "admitted": false, "reason": "2025-07-15 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "gpbl__react-day-picker-2816", "created": "2025-08-05", "admitted": false, "reason": "2025-08-05 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "vercel__ai-7608", "created": "2025-07-28", "admitted": false, "reason": "2025-07-28 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "aws-amplify__amplify-ui-6665", "created": "2025-08-12", "admitted": false, "reason": "2025-08-12 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "MetaMask__metamask-mobile-17409", "created": "2025-07-21", "admitted": false, "reason": "2025-07-21 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "RocketChat__Rocket.Chat.ReactNative-6382", "created": "2025-05-25", "admitted": false, "reason": "2025-05-25 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "antvis__G2-7076", "created": "2025-08-14", "admitted": false, "reason": "2025-08-14 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "react-hook-form__react-hook-form-12983", "created": "2025-07-24", "admitted": false, "reason": "2025-07-24 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "recharts__recharts-6124", "created": "2025-07-20", "admitted": false, "reason": "2025-07-20 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "MetaMask__metamask-mobile-17294", "created": "2025-07-16", "admitted": false, "reason": "2025-07-16 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "vercel__ai-7326", "created": "2025-07-16", "admitted": false, "reason": "2025-07-16 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "vercel__ai-7552", "created": "2025-07-25", "admitted": false, "reason": "2025-07-25 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "lightdash__lightdash-15838", "created": "2025-07-14", "admitted": false, "reason": "2025-07-14 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "Shopify__hydrogen-3008", "created": "2025-07-08", "admitted": false, "reason": "2025-07-08 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "openai__openai-agents-js-318", "created": "2025-08-09", "admitted": false, "reason": "2025-08-09 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "getsentry__sentry-javascript-17078", "created": "2025-07-18", "admitted": false, "reason": "2025-07-18 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "antvis__G2-7021", "created": "2025-07-08", "admitted": false, "reason": "2025-07-08 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "QwenLM__qwen-code-349", "created": "2025-08-16", "admitted": false, "reason": "2025-08-16 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "unplugin__unplugin-vue-components-858", "created": "2025-07-12", "admitted": false, "reason": "2025-07-12 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "cloudflare__workers-sdk-10209", "created": "2025-08-04", "admitted": false, "reason": "2025-08-04 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "mui__base-ui-2591", "created": "2025-08-28", "admitted": false, "reason": "2025-08-28 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "formbricks__formbricks-6361", "created": "2025-08-06", "admitted": false, "reason": "2025-08-06 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "orval-labs__orval-2328", "created": "2025-08-22", "admitted": false, "reason": "2025-08-22 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "withastro__starlight-3293", "created": "2025-07-12", "admitted": false, "reason": "2025-07-12 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "maplibre__maplibre-gl-js-6266", "created": "2025-08-17", "admitted": false, "reason": "2025-08-17 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "withastro__starlight-3306", "created": "2025-07-16", "admitted": false, "reason": "2025-07-16 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "MetaMask__metamask-mobile-17198", "created": "2025-07-15", "admitted": false, "reason": "2025-07-15 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "formbricks__formbricks-6270", "created": "2025-07-21", "admitted": false, "reason": "2025-07-21 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "recharts__recharts-6070", "created": "2025-07-06", "admitted": false, "reason": "2025-07-06 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "formbricks__formbricks-6302", "created": "2025-07-23", "admitted": false, "reason": "2025-07-23 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "webdriverio__webdriverio-14672", "created": "2025-07-28", "admitted": false, "reason": "2025-07-28 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "owid__owid-grapher-5068", "created": "2025-07-01", "admitted": false, "reason": "2025-07-01 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "denoland__std-6775", "created": "2025-07-27", "admitted": false, "reason": "2025-07-27 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "TanStack__router-4716", "created": "2025-07-19", "admitted": false, "reason": "2025-07-19 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "TanStack__form-1620", "created": "2025-07-21", "admitted": false, "reason": "2025-07-21 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "twentyhq__twenty-13858", "created": "2025-08-12", "admitted": false, "reason": "2025-08-12 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "cloudflare__workers-sdk-10032", "created": "2025-07-21", "admitted": false, "reason": "2025-07-21 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "Milkdown__milkdown-2041", "created": "2025-07-26", "admitted": false, "reason": "2025-07-26 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "openai__openai-agents-js-205", "created": "2025-07-13", "admitted": false, "reason": "2025-07-13 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "openai__openai-agents-js-156", "created": "2025-06-25", "admitted": false, "reason": "2025-06-25 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "react-hook-form__react-hook-form-12990", "created": "2025-07-27", "admitted": false, "reason": "2025-07-27 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "firefox-devtools__profiler-3073", "created": "2020-11-21", "admitted": false, "reason": "2020-11-21 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "highcharts__highcharts-23356", "created": "2025-07-24", "admitted": false, "reason": "2025-07-24 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "MetaMask__metamask-mobile-17623", "created": "2025-07-25", "admitted": false, "reason": "2025-07-25 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "mui__base-ui-2493", "created": "2025-08-14", "admitted": false, "reason": "2025-08-14 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "honojs__hono-4329", "created": "2025-07-31", "admitted": false, "reason": "2025-07-31 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "katspaugh__wavesurfer.js-4166", "created": "2025-07-21", "admitted": false, "reason": "2025-07-21 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "TanStack__router-4611", "created": "2025-07-10", "admitted": false, "reason": "2025-07-10 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "ghostfolio__ghostfolio-5093", "created": "2025-07-05", "admitted": false, "reason": "2025-07-05 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "taiga-family__taiga-ui-11501", "created": "2025-07-31", "admitted": false, "reason": "2025-07-31 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "better-auth__better-auth-4175", "created": "2025-08-23", "admitted": false, "reason": "2025-08-23 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "TanStack__router-4629", "created": "2025-07-11", "admitted": false, "reason": "2025-07-11 <= cutoff 2026-01-31 (+0d)"}
+{"instance_id": "dsherret__ts-morph-1663", "created": "2025-11-13", "admitted": false, "reason": "2025-11-13 <= cutoff 2026-01-31 (+0d)"}

@@ -1,0 +1,2704 @@
+[
+ {
+  "repo": "xroche/httrack",
+  "n": 38,
+  "first": "2026-06-19",
+  "last": "2026-07-30",
+  "span_days": 41,
+  "instance_ids": [
+   "xroche__httrack-395",
+   "xroche__httrack-399",
+   "xroche__httrack-408",
+   "xroche__httrack-422",
+   "xroche__httrack-428",
+   "xroche__httrack-444",
+   "xroche__httrack-454",
+   "xroche__httrack-457",
+   "xroche__httrack-482",
+   "xroche__httrack-522",
+   "xroche__httrack-530",
+   "xroche__httrack-560",
+   "xroche__httrack-584",
+   "xroche__httrack-596",
+   "xroche__httrack-599",
+   "xroche__httrack-610",
+   "xroche__httrack-618",
+   "xroche__httrack-763",
+   "xroche__httrack-765",
+   "xroche__httrack-784",
+   "xroche__httrack-789",
+   "xroche__httrack-803",
+   "xroche__httrack-807",
+   "xroche__httrack-809",
+   "xroche__httrack-810",
+   "xroche__httrack-811",
+   "xroche__httrack-815",
+   "xroche__httrack-817",
+   "xroche__httrack-829",
+   "xroche__httrack-830",
+   "xroche__httrack-835",
+   "xroche__httrack-837",
+   "xroche__httrack-849",
+   "xroche__httrack-850",
+   "xroche__httrack-851",
+   "xroche__httrack-856",
+   "xroche__httrack-876",
+   "xroche__httrack-893"
+  ]
+ },
+ {
+  "repo": "duckdb/duckdb",
+  "n": 26,
+  "first": "2026-04-19",
+  "last": "2026-07-30",
+  "span_days": 102,
+  "instance_ids": [
+   "duckdb__duckdb-22152",
+   "duckdb__duckdb-23280",
+   "duckdb__duckdb-23413",
+   "duckdb__duckdb-23422",
+   "duckdb__duckdb-23491",
+   "duckdb__duckdb-23538",
+   "duckdb__duckdb-23569",
+   "duckdb__duckdb-23604",
+   "duckdb__duckdb-23615",
+   "duckdb__duckdb-23618",
+   "duckdb__duckdb-23624",
+   "duckdb__duckdb-23628",
+   "duckdb__duckdb-23634",
+   "duckdb__duckdb-23637",
+   "duckdb__duckdb-24011",
+   "duckdb__duckdb-24018",
+   "duckdb__duckdb-24074",
+   "duckdb__duckdb-24100",
+   "duckdb__duckdb-24101",
+   "duckdb__duckdb-24105",
+   "duckdb__duckdb-24150",
+   "duckdb__duckdb-24181",
+   "duckdb__duckdb-24211",
+   "duckdb__duckdb-24266",
+   "duckdb__duckdb-24290",
+   "duckdb__duckdb-24318"
+  ]
+ },
+ {
+  "repo": "floci-io/floci",
+  "n": 23,
+  "first": "2026-03-24",
+  "last": "2026-07-28",
+  "span_days": 126,
+  "instance_ids": [
+   "floci-io__floci-26",
+   "floci-io__floci-54",
+   "floci-io__floci-57",
+   "floci-io__floci-88",
+   "floci-io__floci-112",
+   "floci-io__floci-153",
+   "floci-io__floci-164",
+   "floci-io__floci-210",
+   "floci-io__floci-248",
+   "floci-io__floci-299",
+   "floci-io__floci-309",
+   "floci-io__floci-352",
+   "floci-io__floci-420",
+   "floci-io__floci-463",
+   "floci-io__floci-1837",
+   "floci-io__floci-1838",
+   "floci-io__floci-1870",
+   "floci-io__floci-1895",
+   "floci-io__floci-1908",
+   "floci-io__floci-1931",
+   "floci-io__floci-1932",
+   "floci-io__floci-2015",
+   "floci-io__floci-2031"
+  ]
+ },
+ {
+  "repo": "langchain4j/langchain4j",
+  "n": 23,
+  "first": "2026-03-18",
+  "last": "2026-07-28",
+  "span_days": 132,
+  "instance_ids": [
+   "langchain4j__langchain4j-4734",
+   "langchain4j__langchain4j-4809",
+   "langchain4j__langchain4j-4847",
+   "langchain4j__langchain4j-4872",
+   "langchain4j__langchain4j-4876",
+   "langchain4j__langchain4j-4890",
+   "langchain4j__langchain4j-5752",
+   "langchain4j__langchain4j-5755",
+   "langchain4j__langchain4j-5757",
+   "langchain4j__langchain4j-5788",
+   "langchain4j__langchain4j-5790",
+   "langchain4j__langchain4j-5792",
+   "langchain4j__langchain4j-5799",
+   "langchain4j__langchain4j-5806",
+   "langchain4j__langchain4j-5807",
+   "langchain4j__langchain4j-5809",
+   "langchain4j__langchain4j-5817",
+   "langchain4j__langchain4j-5847",
+   "langchain4j__langchain4j-5848",
+   "langchain4j__langchain4j-5850",
+   "langchain4j__langchain4j-5861",
+   "langchain4j__langchain4j-5864",
+   "langchain4j__langchain4j-5869"
+  ]
+ },
+ {
+  "repo": "colbymchenry/codegraph",
+  "n": 20,
+  "first": "2026-05-26",
+  "last": "2026-07-20",
+  "span_days": 55,
+  "instance_ids": [
+   "colbymchenry__codegraph-454",
+   "colbymchenry__codegraph-461",
+   "colbymchenry__codegraph-462",
+   "colbymchenry__codegraph-715",
+   "colbymchenry__codegraph-749",
+   "colbymchenry__codegraph-804",
+   "colbymchenry__codegraph-868",
+   "colbymchenry__codegraph-894",
+   "colbymchenry__codegraph-939",
+   "colbymchenry__codegraph-948",
+   "colbymchenry__codegraph-951",
+   "colbymchenry__codegraph-1051",
+   "colbymchenry__codegraph-1066",
+   "colbymchenry__codegraph-1201",
+   "colbymchenry__codegraph-1207",
+   "colbymchenry__codegraph-1313",
+   "colbymchenry__codegraph-1314",
+   "colbymchenry__codegraph-1317",
+   "colbymchenry__codegraph-1318",
+   "colbymchenry__codegraph-1370"
+  ]
+ },
+ {
+  "repo": "MudBlazor/MudBlazor",
+  "n": 18,
+  "first": "2026-03-01",
+  "last": "2026-04-21",
+  "span_days": 51,
+  "instance_ids": [
+   "MudBlazor__MudBlazor-12775",
+   "MudBlazor__MudBlazor-12817",
+   "MudBlazor__MudBlazor-12907",
+   "MudBlazor__MudBlazor-12908",
+   "MudBlazor__MudBlazor-12915",
+   "MudBlazor__MudBlazor-12917",
+   "MudBlazor__MudBlazor-12918",
+   "MudBlazor__MudBlazor-12920",
+   "MudBlazor__MudBlazor-12957",
+   "MudBlazor__MudBlazor-12958",
+   "MudBlazor__MudBlazor-12973",
+   "MudBlazor__MudBlazor-12974",
+   "MudBlazor__MudBlazor-13039",
+   "MudBlazor__MudBlazor-13044",
+   "MudBlazor__MudBlazor-13063",
+   "MudBlazor__MudBlazor-13097",
+   "MudBlazor__MudBlazor-13104",
+   "MudBlazor__MudBlazor-13109"
+  ]
+ },
+ {
+  "repo": "JasperFx/wolverine",
+  "n": 17,
+  "first": "2026-05-27",
+  "last": "2026-07-28",
+  "span_days": 62,
+  "instance_ids": [
+   "JasperFx__wolverine-2930",
+   "JasperFx__wolverine-2934",
+   "JasperFx__wolverine-2988",
+   "JasperFx__wolverine-3066",
+   "JasperFx__wolverine-3162",
+   "JasperFx__wolverine-3233",
+   "JasperFx__wolverine-3241",
+   "JasperFx__wolverine-3426",
+   "JasperFx__wolverine-3456",
+   "JasperFx__wolverine-3488",
+   "JasperFx__wolverine-3513",
+   "JasperFx__wolverine-3523",
+   "JasperFx__wolverine-3582",
+   "JasperFx__wolverine-3608",
+   "JasperFx__wolverine-3612",
+   "JasperFx__wolverine-3642",
+   "JasperFx__wolverine-3695"
+  ]
+ },
+ {
+  "repo": "shader-slang/slang",
+  "n": 16,
+  "first": "2026-02-10",
+  "last": "2026-05-25",
+  "span_days": 104,
+  "instance_ids": [
+   "shader-slang__slang-9967",
+   "shader-slang__slang-10029",
+   "shader-slang__slang-10663",
+   "shader-slang__slang-10664",
+   "shader-slang__slang-10678",
+   "shader-slang__slang-10682",
+   "shader-slang__slang-10697",
+   "shader-slang__slang-10736",
+   "shader-slang__slang-10738",
+   "shader-slang__slang-10758",
+   "shader-slang__slang-10768",
+   "shader-slang__slang-10807",
+   "shader-slang__slang-10846",
+   "shader-slang__slang-10856",
+   "shader-slang__slang-11273",
+   "shader-slang__slang-11286"
+  ]
+ },
+ {
+  "repo": "gleam-lang/gleam",
+  "n": 11,
+  "first": "2026-03-19",
+  "last": "2026-07-27",
+  "span_days": 130,
+  "instance_ids": [
+   "gleam-lang__gleam-5482",
+   "gleam-lang__gleam-5493",
+   "gleam-lang__gleam-5510",
+   "gleam-lang__gleam-5532",
+   "gleam-lang__gleam-5938",
+   "gleam-lang__gleam-5958",
+   "gleam-lang__gleam-5971",
+   "gleam-lang__gleam-5982",
+   "gleam-lang__gleam-6021",
+   "gleam-lang__gleam-6030",
+   "gleam-lang__gleam-6049"
+  ]
+ },
+ {
+  "repo": "h4ckf0r0day/obscura",
+  "n": 11,
+  "first": "2026-07-12",
+  "last": "2026-07-24",
+  "span_days": 12,
+  "instance_ids": [
+   "h4ckf0r0day__obscura-390",
+   "h4ckf0r0day__obscura-392",
+   "h4ckf0r0day__obscura-412",
+   "h4ckf0r0day__obscura-413",
+   "h4ckf0r0day__obscura-414",
+   "h4ckf0r0day__obscura-421",
+   "h4ckf0r0day__obscura-426",
+   "h4ckf0r0day__obscura-440",
+   "h4ckf0r0day__obscura-447",
+   "h4ckf0r0day__obscura-477",
+   "h4ckf0r0day__obscura-479"
+  ]
+ },
+ {
+  "repo": "BYVoid/OpenCC",
+  "n": 10,
+  "first": "2026-04-11",
+  "last": "2026-07-07",
+  "span_days": 87,
+  "instance_ids": [
+   "BYVoid__OpenCC-1094",
+   "BYVoid__OpenCC-1096",
+   "BYVoid__OpenCC-1123",
+   "BYVoid__OpenCC-1255",
+   "BYVoid__OpenCC-1257",
+   "BYVoid__OpenCC-1289",
+   "BYVoid__OpenCC-1307",
+   "BYVoid__OpenCC-1310",
+   "BYVoid__OpenCC-1326",
+   "BYVoid__OpenCC-1405"
+  ]
+ },
+ {
+  "repo": "SubtitleEdit/subtitleedit",
+  "n": 9,
+  "first": "2026-03-24",
+  "last": "2026-07-28",
+  "span_days": 126,
+  "instance_ids": [
+   "SubtitleEdit__subtitleedit-10411",
+   "SubtitleEdit__subtitleedit-10419",
+   "SubtitleEdit__subtitleedit-11851",
+   "SubtitleEdit__subtitleedit-11916",
+   "SubtitleEdit__subtitleedit-11957",
+   "SubtitleEdit__subtitleedit-12151",
+   "SubtitleEdit__subtitleedit-12685",
+   "SubtitleEdit__subtitleedit-12763",
+   "SubtitleEdit__subtitleedit-12895"
+  ]
+ },
+ {
+  "repo": "github/gh-aw",
+  "n": 9,
+  "first": "2026-03-25",
+  "last": "2026-04-19",
+  "span_days": 25,
+  "instance_ids": [
+   "github__gh-aw-22943",
+   "github__gh-aw-23146",
+   "github__gh-aw-23348",
+   "github__gh-aw-23870",
+   "github__gh-aw-24043",
+   "github__gh-aw-24521",
+   "github__gh-aw-26074",
+   "github__gh-aw-26689",
+   "github__gh-aw-27242"
+  ]
+ },
+ {
+  "repo": "rust-lang/rust-analyzer",
+  "n": 9,
+  "first": "2026-04-14",
+  "last": "2026-07-19",
+  "span_days": 96,
+  "instance_ids": [
+   "rust-lang__rust-analyzer-22046",
+   "rust-lang__rust-analyzer-22061",
+   "rust-lang__rust-analyzer-22751",
+   "rust-lang__rust-analyzer-22789",
+   "rust-lang__rust-analyzer-22804",
+   "rust-lang__rust-analyzer-22822",
+   "rust-lang__rust-analyzer-22827",
+   "rust-lang__rust-analyzer-22849",
+   "rust-lang__rust-analyzer-22855"
+  ]
+ },
+ {
+  "repo": "biomejs/biome",
+  "n": 8,
+  "first": "2026-04-15",
+  "last": "2026-07-08",
+  "span_days": 84,
+  "instance_ids": [
+   "biomejs__biome-9995",
+   "biomejs__biome-10767",
+   "biomejs__biome-10773",
+   "biomejs__biome-10827",
+   "biomejs__biome-10853",
+   "biomejs__biome-10867",
+   "biomejs__biome-10875",
+   "biomejs__biome-10886"
+  ]
+ },
+ {
+  "repo": "riok/mapperly",
+  "n": 8,
+  "first": "2026-03-27",
+  "last": "2026-07-06",
+  "span_days": 101,
+  "instance_ids": [
+   "riok__mapperly-2207",
+   "riok__mapperly-2225",
+   "riok__mapperly-2232",
+   "riok__mapperly-2324",
+   "riok__mapperly-2332",
+   "riok__mapperly-2339",
+   "riok__mapperly-2341",
+   "riok__mapperly-2355"
+  ]
+ },
+ {
+  "repo": "yvgude/lean-ctx",
+  "n": 8,
+  "first": "2026-06-30",
+  "last": "2026-07-22",
+  "span_days": 22,
+  "instance_ids": [
+   "yvgude__lean-ctx-632",
+   "yvgude__lean-ctx-816",
+   "yvgude__lean-ctx-927",
+   "yvgude__lean-ctx-969",
+   "yvgude__lean-ctx-1164",
+   "yvgude__lean-ctx-1168",
+   "yvgude__lean-ctx-1179",
+   "yvgude__lean-ctx-1180"
+  ]
+ },
+ {
+  "repo": "gohugoio/hugo",
+  "n": 7,
+  "first": "2026-03-23",
+  "last": "2026-04-15",
+  "span_days": 23,
+  "instance_ids": [
+   "gohugoio__hugo-14657",
+   "gohugoio__hugo-14671",
+   "gohugoio__hugo-14685",
+   "gohugoio__hugo-14733",
+   "gohugoio__hugo-14741",
+   "gohugoio__hugo-14742",
+   "gohugoio__hugo-14757"
+  ]
+ },
+ {
+  "repo": "oxc-project/oxc",
+  "n": 7,
+  "first": "2026-03-27",
+  "last": "2026-04-18",
+  "span_days": 22,
+  "instance_ids": [
+   "oxc-project__oxc-20810",
+   "oxc-project__oxc-20857",
+   "oxc-project__oxc-20976",
+   "oxc-project__oxc-21092",
+   "oxc-project__oxc-21163",
+   "oxc-project__oxc-21330",
+   "oxc-project__oxc-21546"
+  ]
+ },
+ {
+  "repo": "apache/shardingsphere",
+  "n": 6,
+  "first": "2026-04-15",
+  "last": "2026-07-24",
+  "span_days": 100,
+  "instance_ids": [
+   "apache__shardingsphere-38622",
+   "apache__shardingsphere-39072",
+   "apache__shardingsphere-39104",
+   "apache__shardingsphere-39126",
+   "apache__shardingsphere-39137",
+   "apache__shardingsphere-39237"
+  ]
+ },
+ {
+  "repo": "btraceio/btrace",
+  "n": 6,
+  "first": "2026-07-13",
+  "last": "2026-07-18",
+  "span_days": 5,
+  "instance_ids": [
+   "btraceio__btrace-894",
+   "btraceio__btrace-895",
+   "btraceio__btrace-897",
+   "btraceio__btrace-898",
+   "btraceio__btrace-899",
+   "btraceio__btrace-910"
+  ]
+ },
+ {
+  "repo": "esphome/esphome",
+  "n": 6,
+  "first": "2026-03-21",
+  "last": "2026-04-19",
+  "span_days": 29,
+  "instance_ids": [
+   "esphome__esphome-15048",
+   "esphome__esphome-15060",
+   "esphome__esphome-15668",
+   "esphome__esphome-15723",
+   "esphome__esphome-15814",
+   "esphome__esphome-15850"
+  ]
+ },
+ {
+  "repo": "prefix-dev/pixi",
+  "n": 6,
+  "first": "2026-04-08",
+  "last": "2026-07-05",
+  "span_days": 88,
+  "instance_ids": [
+   "prefix-dev__pixi-5850",
+   "prefix-dev__pixi-6335",
+   "prefix-dev__pixi-6457",
+   "prefix-dev__pixi-6500",
+   "prefix-dev__pixi-6518",
+   "prefix-dev__pixi-6529"
+  ]
+ },
+ {
+  "repo": "quartznet/quartznet",
+  "n": 6,
+  "first": "2026-03-28",
+  "last": "2026-03-29",
+  "span_days": 1,
+  "instance_ids": [
+   "quartznet__quartznet-2921",
+   "quartznet__quartznet-2932",
+   "quartznet__quartznet-2934",
+   "quartznet__quartznet-2942",
+   "quartznet__quartznet-2944",
+   "quartznet__quartznet-2955"
+  ]
+ },
+ {
+  "repo": "Automattic/harper",
+  "n": 5,
+  "first": "2026-03-18",
+  "last": "2026-04-10",
+  "span_days": 23,
+  "instance_ids": [
+   "Automattic__harper-2962",
+   "Automattic__harper-2973",
+   "Automattic__harper-2976",
+   "Automattic__harper-3112",
+   "Automattic__harper-3150"
+  ]
+ },
+ {
+  "repo": "agentscope-ai/agentscope-java",
+  "n": 5,
+  "first": "2026-07-14",
+  "last": "2026-07-21",
+  "span_days": 7,
+  "instance_ids": [
+   "agentscope-ai__agentscope-java-2189",
+   "agentscope-ai__agentscope-java-2232",
+   "agentscope-ai__agentscope-java-2257",
+   "agentscope-ai__agentscope-java-2260",
+   "agentscope-ai__agentscope-java-2343"
+  ]
+ },
+ {
+  "repo": "dragonflydb/dragonfly",
+  "n": 5,
+  "first": "2026-05-26",
+  "last": "2026-07-14",
+  "span_days": 49,
+  "instance_ids": [
+   "dragonflydb__dragonfly-7422",
+   "dragonflydb__dragonfly-7434",
+   "dragonflydb__dragonfly-7493",
+   "dragonflydb__dragonfly-7777",
+   "dragonflydb__dragonfly-7850"
+  ]
+ },
+ {
+  "repo": "gsd-build/gsd-2",
+  "n": 5,
+  "first": "2026-03-26",
+  "last": "2026-04-17",
+  "span_days": 22,
+  "instance_ids": [
+   "gsd-build__gsd-2-2643",
+   "gsd-build__gsd-2-2738",
+   "gsd-build__gsd-2-3258",
+   "gsd-build__gsd-2-3946",
+   "gsd-build__gsd-2-4400"
+  ]
+ },
+ {
+  "repo": "lance-format/lance",
+  "n": 5,
+  "first": "2026-06-30",
+  "last": "2026-07-28",
+  "span_days": 28,
+  "instance_ids": [
+   "lance-format__lance-7545",
+   "lance-format__lance-7565",
+   "lance-format__lance-7618",
+   "lance-format__lance-7835",
+   "lance-format__lance-8049"
+  ]
+ },
+ {
+  "repo": "microsoft/DirectXShaderCompiler",
+  "n": 5,
+  "first": "2026-03-21",
+  "last": "2026-04-07",
+  "span_days": 17,
+  "instance_ids": [
+   "microsoft__DirectXShaderCompiler-8286",
+   "microsoft__DirectXShaderCompiler-8326",
+   "microsoft__DirectXShaderCompiler-8337",
+   "microsoft__DirectXShaderCompiler-8338",
+   "microsoft__DirectXShaderCompiler-8347"
+  ]
+ },
+ {
+  "repo": "modelcontextprotocol/rust-sdk",
+  "n": 5,
+  "first": "2026-03-19",
+  "last": "2026-07-24",
+  "span_days": 127,
+  "instance_ids": [
+   "modelcontextprotocol__rust-sdk-760",
+   "modelcontextprotocol__rust-sdk-996",
+   "modelcontextprotocol__rust-sdk-1005",
+   "modelcontextprotocol__rust-sdk-1021",
+   "modelcontextprotocol__rust-sdk-1044"
+  ]
+ },
+ {
+  "repo": "open-gsd/gsd-core",
+  "n": 5,
+  "first": "2026-06-27",
+  "last": "2026-07-21",
+  "span_days": 24,
+  "instance_ids": [
+   "open-gsd__gsd-core-1794",
+   "open-gsd__gsd-core-1799",
+   "open-gsd__gsd-core-2079",
+   "open-gsd__gsd-core-2233",
+   "open-gsd__gsd-core-2492"
+  ]
+ },
+ {
+  "repo": "CleverRaven/Cataclysm-DDA",
+  "n": 4,
+  "first": "2026-03-26",
+  "last": "2026-04-16",
+  "span_days": 21,
+  "instance_ids": [
+   "CleverRaven__Cataclysm-DDA-86096",
+   "CleverRaven__Cataclysm-DDA-86316",
+   "CleverRaven__Cataclysm-DDA-86364",
+   "CleverRaven__Cataclysm-DDA-86525"
+  ]
+ },
+ {
+  "repo": "DynamoRIO/dynamorio",
+  "n": 4,
+  "first": "2026-05-20",
+  "last": "2026-07-20",
+  "span_days": 61,
+  "instance_ids": [
+   "DynamoRIO__dynamorio-7903",
+   "DynamoRIO__dynamorio-7944",
+   "DynamoRIO__dynamorio-7945",
+   "DynamoRIO__dynamorio-8017"
+  ]
+ },
+ {
+  "repo": "apache/parquet-java",
+  "n": 4,
+  "first": "2026-07-01",
+  "last": "2026-07-16",
+  "span_days": 15,
+  "instance_ids": [
+   "apache__parquet-java-3638",
+   "apache__parquet-java-3642",
+   "apache__parquet-java-3645",
+   "apache__parquet-java-3669"
+  ]
+ },
+ {
+  "repo": "gui-cs/Terminal.Gui",
+  "n": 4,
+  "first": "2026-03-21",
+  "last": "2026-04-17",
+  "span_days": 27,
+  "instance_ids": [
+   "gui-cs__Terminal.Gui-4841",
+   "gui-cs__Terminal.Gui-4860",
+   "gui-cs__Terminal.Gui-4882",
+   "gui-cs__Terminal.Gui-4982"
+  ]
+ },
+ {
+  "repo": "notionnext-org/NotionNext",
+  "n": 4,
+  "first": "2026-07-10",
+  "last": "2026-07-28",
+  "span_days": 18,
+  "instance_ids": [
+   "notionnext-org__NotionNext-4253",
+   "notionnext-org__NotionNext-4290",
+   "notionnext-org__NotionNext-4316",
+   "notionnext-org__NotionNext-4338"
+  ]
+ },
+ {
+  "repo": "timescale/timescaledb",
+  "n": 4,
+  "first": "2026-05-26",
+  "last": "2026-06-07",
+  "span_days": 12,
+  "instance_ids": [
+   "timescale__timescaledb-9908",
+   "timescale__timescaledb-9955",
+   "timescale__timescaledb-9983",
+   "timescale__timescaledb-9988"
+  ]
+ },
+ {
+  "repo": "web-infra-dev/rspack",
+  "n": 4,
+  "first": "2026-07-15",
+  "last": "2026-07-20",
+  "span_days": 5,
+  "instance_ids": [
+   "web-infra-dev__rspack-14794",
+   "web-infra-dev__rspack-14803",
+   "web-infra-dev__rspack-14806",
+   "web-infra-dev__rspack-14882"
+  ]
+ },
+ {
+  "repo": "AOMediaCodec/libavif",
+  "n": 3,
+  "first": "2026-06-18",
+  "last": "2026-07-15",
+  "span_days": 27,
+  "instance_ids": [
+   "AOMediaCodec__libavif-3270",
+   "AOMediaCodec__libavif-3273",
+   "AOMediaCodec__libavif-3300"
+  ]
+ },
+ {
+  "repo": "FastLED/FastLED",
+  "n": 3,
+  "first": "2026-05-30",
+  "last": "2026-07-31",
+  "span_days": 62,
+  "instance_ids": [
+   "FastLED__FastLED-2560",
+   "FastLED__FastLED-2691",
+   "FastLED__FastLED-3781"
+  ]
+ },
+ {
+  "repo": "OSGeo/gdal",
+  "n": 3,
+  "first": "2026-05-23",
+  "last": "2026-05-29",
+  "span_days": 6,
+  "instance_ids": [
+   "OSGeo__gdal-14631",
+   "OSGeo__gdal-14681",
+   "OSGeo__gdal-14683"
+  ]
+ },
+ {
+  "repo": "Ombi-app/Ombi",
+  "n": 3,
+  "first": "2026-06-12",
+  "last": "2026-07-09",
+  "span_days": 27,
+  "instance_ids": [
+   "Ombi-app__Ombi-5432",
+   "Ombi-app__Ombi-5434",
+   "Ombi-app__Ombi-5444"
+  ]
+ },
+ {
+  "repo": "ProvableHQ/leo",
+  "n": 3,
+  "first": "2026-03-30",
+  "last": "2026-04-14",
+  "span_days": 15,
+  "instance_ids": [
+   "ProvableHQ__leo-29265",
+   "ProvableHQ__leo-29291",
+   "ProvableHQ__leo-29334"
+  ]
+ },
+ {
+  "repo": "WasmEdge/WasmEdge",
+  "n": 3,
+  "first": "2026-04-07",
+  "last": "2026-04-13",
+  "span_days": 6,
+  "instance_ids": [
+   "WasmEdge__WasmEdge-4764",
+   "WasmEdge__WasmEdge-4772",
+   "WasmEdge__WasmEdge-4788"
+  ]
+ },
+ {
+  "repo": "apache/rocketmq",
+  "n": 3,
+  "first": "2026-07-02",
+  "last": "2026-07-25",
+  "span_days": 23,
+  "instance_ids": [
+   "apache__rocketmq-10573",
+   "apache__rocketmq-10614",
+   "apache__rocketmq-10662"
+  ]
+ },
+ {
+  "repo": "c-ares/c-ares",
+  "n": 3,
+  "first": "2026-07-03",
+  "last": "2026-07-04",
+  "span_days": 1,
+  "instance_ids": [
+   "c-ares__c-ares-1189",
+   "c-ares__c-ares-1190",
+   "c-ares__c-ares-1197"
+  ]
+ },
+ {
+  "repo": "carbon-language/carbon-lang",
+  "n": 3,
+  "first": "2026-03-15",
+  "last": "2026-06-15",
+  "span_days": 92,
+  "instance_ids": [
+   "carbon-language__carbon-lang-6912",
+   "carbon-language__carbon-lang-7342",
+   "carbon-language__carbon-lang-7359"
+  ]
+ },
+ {
+  "repo": "delta-io/delta-rs",
+  "n": 3,
+  "first": "2026-04-03",
+  "last": "2026-04-11",
+  "span_days": 8,
+  "instance_ids": [
+   "delta-io__delta-rs-4333",
+   "delta-io__delta-rs-4357",
+   "delta-io__delta-rs-4358"
+  ]
+ },
+ {
+  "repo": "dotnet/command-line-api",
+  "n": 3,
+  "first": "2026-03-10",
+  "last": "2026-04-10",
+  "span_days": 31,
+  "instance_ids": [
+   "dotnet__command-line-api-2781",
+   "dotnet__command-line-api-2790",
+   "dotnet__command-line-api-2793"
+  ]
+ },
+ {
+  "repo": "dotnetcore/BootstrapBlazor",
+  "n": 3,
+  "first": "2026-04-20",
+  "last": "2026-06-13",
+  "span_days": 54,
+  "instance_ids": [
+   "dotnetcore__BootstrapBlazor-7898",
+   "dotnetcore__BootstrapBlazor-8073",
+   "dotnetcore__BootstrapBlazor-8113"
+  ]
+ },
+ {
+  "repo": "duckdb/ducklake",
+  "n": 3,
+  "first": "2026-06-05",
+  "last": "2026-07-23",
+  "span_days": 48,
+  "instance_ids": [
+   "duckdb__ducklake-1224",
+   "duckdb__ducklake-1339",
+   "duckdb__ducklake-1340"
+  ]
+ },
+ {
+  "repo": "elsa-workflows/elsa-core",
+  "n": 3,
+  "first": "2026-06-09",
+  "last": "2026-07-30",
+  "span_days": 51,
+  "instance_ids": [
+   "elsa-workflows__elsa-core-7711",
+   "elsa-workflows__elsa-core-7714",
+   "elsa-workflows__elsa-core-7898"
+  ]
+ },
+ {
+  "repo": "fluent/fluent-bit",
+  "n": 3,
+  "first": "2026-04-06",
+  "last": "2026-07-02",
+  "span_days": 87,
+  "instance_ids": [
+   "fluent__fluent-bit-11677",
+   "fluent__fluent-bit-11722",
+   "fluent__fluent-bit-12029"
+  ]
+ },
+ {
+  "repo": "helidon-io/helidon",
+  "n": 3,
+  "first": "2026-03-20",
+  "last": "2026-03-30",
+  "span_days": 10,
+  "instance_ids": [
+   "helidon-io__helidon-11386",
+   "helidon-io__helidon-11407",
+   "helidon-io__helidon-11434"
+  ]
+ },
+ {
+  "repo": "influxdata/telegraf",
+  "n": 3,
+  "first": "2026-03-17",
+  "last": "2026-04-09",
+  "span_days": 23,
+  "instance_ids": [
+   "influxdata__telegraf-18556",
+   "influxdata__telegraf-18640",
+   "influxdata__telegraf-18686"
+  ]
+ },
+ {
+  "repo": "jsonata-js/jsonata",
+  "n": 3,
+  "first": "2026-07-02",
+  "last": "2026-07-15",
+  "span_days": 13,
+  "instance_ids": [
+   "jsonata-js__jsonata-809",
+   "jsonata-js__jsonata-814",
+   "jsonata-js__jsonata-817"
+  ]
+ },
+ {
+  "repo": "magefree/mage",
+  "n": 3,
+  "first": "2026-03-16",
+  "last": "2026-04-16",
+  "span_days": 31,
+  "instance_ids": [
+   "magefree__mage-14628",
+   "magefree__mage-14655",
+   "magefree__mage-14755"
+  ]
+ },
+ {
+  "repo": "naudio/NAudio",
+  "n": 3,
+  "first": "2026-05-27",
+  "last": "2026-06-30",
+  "span_days": 34,
+  "instance_ids": [
+   "naudio__NAudio-1316",
+   "naudio__NAudio-1352",
+   "naudio__NAudio-1372"
+  ]
+ },
+ {
+  "repo": "nearai/ironclaw",
+  "n": 3,
+  "first": "2026-07-27",
+  "last": "2026-07-27",
+  "span_days": 0,
+  "instance_ids": [
+   "nearai__ironclaw-6706",
+   "nearai__ironclaw-6712",
+   "nearai__ironclaw-6724"
+  ]
+ },
+ {
+  "repo": "openrewrite/rewrite",
+  "n": 3,
+  "first": "2026-04-06",
+  "last": "2026-04-17",
+  "span_days": 11,
+  "instance_ids": [
+   "openrewrite__rewrite-7286",
+   "openrewrite__rewrite-7287",
+   "openrewrite__rewrite-7413"
+  ]
+ },
+ {
+  "repo": "playcanvas/engine",
+  "n": 3,
+  "first": "2026-07-02",
+  "last": "2026-07-17",
+  "span_days": 15,
+  "instance_ids": [
+   "playcanvas__engine-9000",
+   "playcanvas__engine-9002",
+   "playcanvas__engine-9066"
+  ]
+ },
+ {
+  "repo": "pnpm/pnpm",
+  "n": 3,
+  "first": "2026-07-09",
+  "last": "2026-07-11",
+  "span_days": 2,
+  "instance_ids": [
+   "pnpm__pnpm-12879",
+   "pnpm__pnpm-12888",
+   "pnpm__pnpm-12935"
+  ]
+ },
+ {
+  "repo": "rust-lang/rust-bindgen",
+  "n": 3,
+  "first": "2026-06-06",
+  "last": "2026-07-07",
+  "span_days": 31,
+  "instance_ids": [
+   "rust-lang__rust-bindgen-3382",
+   "rust-lang__rust-bindgen-3390",
+   "rust-lang__rust-bindgen-3391"
+  ]
+ },
+ {
+  "repo": "stephenberry/glaze",
+  "n": 3,
+  "first": "2026-06-08",
+  "last": "2026-07-30",
+  "span_days": 52,
+  "instance_ids": [
+   "stephenberry__glaze-2604",
+   "stephenberry__glaze-2611",
+   "stephenberry__glaze-2731"
+  ]
+ },
+ {
+  "repo": "twpayne/chezmoi",
+  "n": 3,
+  "first": "2026-03-29",
+  "last": "2026-04-14",
+  "span_days": 16,
+  "instance_ids": [
+   "twpayne__chezmoi-4978",
+   "twpayne__chezmoi-5001",
+   "twpayne__chezmoi-5016"
+  ]
+ },
+ {
+  "repo": "AvaloniaUI/Avalonia",
+  "n": 2,
+  "first": "2026-03-22",
+  "last": "2026-03-25",
+  "span_days": 3,
+  "instance_ids": [
+   "AvaloniaUI__Avalonia-20964",
+   "AvaloniaUI__Avalonia-20978"
+  ]
+ },
+ {
+  "repo": "Azure/azure-sdk-for-net",
+  "n": 2,
+  "first": "2026-03-31",
+  "last": "2026-04-22",
+  "span_days": 22,
+  "instance_ids": [
+   "Azure__azure-sdk-for-net-57616",
+   "Azure__azure-sdk-for-net-58482"
+  ]
+ },
+ {
+  "repo": "ChaiScript/ChaiScript",
+  "n": 2,
+  "first": "2026-04-11",
+  "last": "2026-04-12",
+  "span_days": 1,
+  "instance_ids": [
+   "ChaiScript__ChaiScript-648",
+   "ChaiScript__ChaiScript-670"
+  ]
+ },
+ {
+  "repo": "DioxusLabs/dioxus",
+  "n": 2,
+  "first": "2026-03-17",
+  "last": "2026-04-08",
+  "span_days": 22,
+  "instance_ids": [
+   "DioxusLabs__dioxus-5384",
+   "DioxusLabs__dioxus-5464"
+  ]
+ },
+ {
+  "repo": "ErikEJ/EFCorePowerTools",
+  "n": 2,
+  "first": "2026-04-17",
+  "last": "2026-04-17",
+  "span_days": 0,
+  "instance_ids": [
+   "ErikEJ__EFCorePowerTools-3417",
+   "ErikEJ__EFCorePowerTools-3418"
+  ]
+ },
+ {
+  "repo": "FasterXML/jackson-databind",
+  "n": 2,
+  "first": "2026-03-25",
+  "last": "2026-04-19",
+  "span_days": 25,
+  "instance_ids": [
+   "FasterXML__jackson-databind-5837",
+   "FasterXML__jackson-databind-5928"
+  ]
+ },
+ {
+  "repo": "KSP-CKAN/CKAN",
+  "n": 2,
+  "first": "2026-04-12",
+  "last": "2026-04-13",
+  "span_days": 1,
+  "instance_ids": [
+   "KSP-CKAN__CKAN-4556",
+   "KSP-CKAN__CKAN-4561"
+  ]
+ },
+ {
+  "repo": "NVIDIA/OpenShell",
+  "n": 2,
+  "first": "2026-03-31",
+  "last": "2026-04-10",
+  "span_days": 10,
+  "instance_ids": [
+   "NVIDIA__OpenShell-695",
+   "NVIDIA__OpenShell-810"
+  ]
+ },
+ {
+  "repo": "OrchardCMS/OrchardCore",
+  "n": 2,
+  "first": "2026-04-19",
+  "last": "2026-07-01",
+  "span_days": 73,
+  "instance_ids": [
+   "OrchardCMS__OrchardCore-19169",
+   "OrchardCMS__OrchardCore-19492"
+  ]
+ },
+ {
+  "repo": "TrenchBroom/TrenchBroom",
+  "n": 2,
+  "first": "2026-03-22",
+  "last": "2026-03-29",
+  "span_days": 7,
+  "instance_ids": [
+   "TrenchBroom__TrenchBroom-5133",
+   "TrenchBroom__TrenchBroom-5149"
+  ]
+ },
+ {
+  "repo": "agentgateway/agentgateway",
+  "n": 2,
+  "first": "2026-06-24",
+  "last": "2026-07-07",
+  "span_days": 13,
+  "instance_ids": [
+   "agentgateway__agentgateway-2313",
+   "agentgateway__agentgateway-2452"
+  ]
+ },
+ {
+  "repo": "alibaba/nacos",
+  "n": 2,
+  "first": "2026-03-29",
+  "last": "2026-04-13",
+  "span_days": 15,
+  "instance_ids": [
+   "alibaba__nacos-14778",
+   "alibaba__nacos-14917"
+  ]
+ },
+ {
+  "repo": "angularsen/UnitsNet",
+  "n": 2,
+  "first": "2026-07-25",
+  "last": "2026-07-25",
+  "span_days": 0,
+  "instance_ids": [
+   "angularsen__UnitsNet-1698",
+   "angularsen__UnitsNet-1699"
+  ]
+ },
+ {
+  "repo": "apache/datafusion",
+  "n": 2,
+  "first": "2026-03-23",
+  "last": "2026-06-26",
+  "span_days": 95,
+  "instance_ids": [
+   "apache__datafusion-21121",
+   "apache__datafusion-23201"
+  ]
+ },
+ {
+  "repo": "apache/paimon",
+  "n": 2,
+  "first": "2026-07-10",
+  "last": "2026-07-27",
+  "span_days": 17,
+  "instance_ids": [
+   "apache__paimon-8536",
+   "apache__paimon-8874"
+  ]
+ },
+ {
+  "repo": "canonical/multipass",
+  "n": 2,
+  "first": "2026-04-10",
+  "last": "2026-04-12",
+  "span_days": 2,
+  "instance_ids": [
+   "canonical__multipass-4808",
+   "canonical__multipass-4817"
+  ]
+ },
+ {
+  "repo": "chenhg5/cc-connect",
+  "n": 2,
+  "first": "2026-03-24",
+  "last": "2026-04-11",
+  "span_days": 18,
+  "instance_ids": [
+   "chenhg5__cc-connect-303",
+   "chenhg5__cc-connect-567"
+  ]
+ },
+ {
+  "repo": "gfx-rs/wgpu",
+  "n": 2,
+  "first": "2026-03-25",
+  "last": "2026-04-03",
+  "span_days": 9,
+  "instance_ids": [
+   "gfx-rs__wgpu-9298",
+   "gfx-rs__wgpu-9367"
+  ]
+ },
+ {
+  "repo": "gsd-build/get-shit-done",
+  "n": 2,
+  "first": "2026-04-11",
+  "last": "2026-04-13",
+  "span_days": 2,
+  "instance_ids": [
+   "gsd-build__get-shit-done-2107",
+   "gsd-build__get-shit-done-2186"
+  ]
+ },
+ {
+  "repo": "jetty/jetty.project",
+  "n": 2,
+  "first": "2026-03-11",
+  "last": "2026-03-25",
+  "span_days": 14,
+  "instance_ids": [
+   "jetty__jetty.project-14652",
+   "jetty__jetty.project-14748"
+  ]
+ },
+ {
+  "repo": "kubernetes/kops",
+  "n": 2,
+  "first": "2026-04-02",
+  "last": "2026-04-03",
+  "span_days": 1,
+  "instance_ids": [
+   "kubernetes__kops-18146",
+   "kubernetes__kops-18152"
+  ]
+ },
+ {
+  "repo": "kvcache-ai/Mooncake",
+  "n": 2,
+  "first": "2026-07-14",
+  "last": "2026-07-16",
+  "span_days": 2,
+  "instance_ids": [
+   "kvcache-ai__Mooncake-2892",
+   "kvcache-ai__Mooncake-2964"
+  ]
+ },
+ {
+  "repo": "kyverno/kyverno",
+  "n": 2,
+  "first": "2026-03-13",
+  "last": "2026-04-10",
+  "span_days": 28,
+  "instance_ids": [
+   "kyverno__kyverno-15561",
+   "kyverno__kyverno-15834"
+  ]
+ },
+ {
+  "repo": "lakehq/sail",
+  "n": 2,
+  "first": "2026-07-23",
+  "last": "2026-07-26",
+  "span_days": 3,
+  "instance_ids": [
+   "lakehq__sail-2284",
+   "lakehq__sail-2292"
+  ]
+ },
+ {
+  "repo": "ml-explore/mlx",
+  "n": 2,
+  "first": "2026-05-29",
+  "last": "2026-06-06",
+  "span_days": 8,
+  "instance_ids": [
+   "ml-explore__mlx-3604",
+   "ml-explore__mlx-3635"
+  ]
+ },
+ {
+  "repo": "monero-project/monero",
+  "n": 2,
+  "first": "2026-06-08",
+  "last": "2026-07-04",
+  "span_days": 26,
+  "instance_ids": [
+   "monero-project__monero-10747",
+   "monero-project__monero-10858"
+  ]
+ },
+ {
+  "repo": "musescore/MuseScore",
+  "n": 2,
+  "first": "2026-03-28",
+  "last": "2026-04-20",
+  "span_days": 23,
+  "instance_ids": [
+   "musescore__MuseScore-32832",
+   "musescore__MuseScore-33064"
+  ]
+ },
+ {
+  "repo": "nodejs/undici",
+  "n": 2,
+  "first": "2026-04-08",
+  "last": "2026-04-09",
+  "span_days": 1,
+  "instance_ids": [
+   "nodejs__undici-5000",
+   "nodejs__undici-5011"
+  ]
+ },
+ {
+  "repo": "open-source-parsers/jsoncpp",
+  "n": 2,
+  "first": "2026-06-16",
+  "last": "2026-06-17",
+  "span_days": 1,
+  "instance_ids": [
+   "open-source-parsers__jsoncpp-1693",
+   "open-source-parsers__jsoncpp-1696"
+  ]
+ },
+ {
+  "repo": "open-telemetry/opentelemetry-collector-contrib",
+  "n": 2,
+  "first": "2026-02-23",
+  "last": "2026-04-07",
+  "span_days": 43,
+  "instance_ids": [
+   "open-telemetry__opentelemetry-collector-contrib-46272",
+   "open-telemetry__opentelemetry-collector-contrib-47408"
+  ]
+ },
+ {
+  "repo": "openai/openai-dotnet",
+  "n": 2,
+  "first": "2026-03-27",
+  "last": "2026-04-15",
+  "span_days": 19,
+  "instance_ids": [
+   "openai__openai-dotnet-1060",
+   "openai__openai-dotnet-1104"
+  ]
+ },
+ {
+  "repo": "opendataloader-project/opendataloader-pdf",
+  "n": 2,
+  "first": "2026-04-03",
+  "last": "2026-04-03",
+  "span_days": 0,
+  "instance_ids": [
+   "opendataloader-project__opendataloader-pdf-383",
+   "opendataloader-project__opendataloader-pdf-386"
+  ]
+ },
+ {
+  "repo": "pocoproject/poco",
+  "n": 2,
+  "first": "2026-03-25",
+  "last": "2026-03-26",
+  "span_days": 1,
+  "instance_ids": [
+   "pocoproject__poco-5265",
+   "pocoproject__poco-5270"
+  ]
+ },
+ {
+  "repo": "root-project/root",
+  "n": 2,
+  "first": "2026-07-20",
+  "last": "2026-07-20",
+  "span_days": 0,
+  "instance_ids": [
+   "root-project__root-22854",
+   "root-project__root-22857"
+  ]
+ },
+ {
+  "repo": "ruffle-rs/ruffle",
+  "n": 2,
+  "first": "2026-03-07",
+  "last": "2026-03-26",
+  "span_days": 19,
+  "instance_ids": [
+   "ruffle-rs__ruffle-23197",
+   "ruffle-rs__ruffle-23330"
+  ]
+ },
+ {
+  "repo": "smithy-lang/smithy",
+  "n": 2,
+  "first": "2026-04-08",
+  "last": "2026-04-16",
+  "span_days": 8,
+  "instance_ids": [
+   "smithy-lang__smithy-3038",
+   "smithy-lang__smithy-3058"
+  ]
+ },
+ {
+  "repo": "spectreconsole/spectre.console",
+  "n": 2,
+  "first": "2026-04-07",
+  "last": "2026-04-13",
+  "span_days": 6,
+  "instance_ids": [
+   "spectreconsole__spectre.console-2077",
+   "spectreconsole__spectre.console-2082"
+  ]
+ },
+ {
+  "repo": "thlorenz/doctoc",
+  "n": 2,
+  "first": "2026-03-13",
+  "last": "2026-03-19",
+  "span_days": 6,
+  "instance_ids": [
+   "thlorenz__doctoc-328",
+   "thlorenz__doctoc-329"
+  ]
+ },
+ {
+  "repo": "tui-cs/Terminal.Gui",
+  "n": 2,
+  "first": "2026-05-27",
+  "last": "2026-06-13",
+  "span_days": 17,
+  "instance_ids": [
+   "tui-cs__Terminal.Gui-5431",
+   "tui-cs__Terminal.Gui-5487"
+  ]
+ },
+ {
+  "repo": "unoplatform/uno",
+  "n": 2,
+  "first": "2026-04-01",
+  "last": "2026-04-07",
+  "span_days": 6,
+  "instance_ids": [
+   "unoplatform__uno-22941",
+   "unoplatform__uno-22978"
+  ]
+ },
+ {
+  "repo": "vercel/turborepo",
+  "n": 2,
+  "first": "2026-03-31",
+  "last": "2026-04-10",
+  "span_days": 10,
+  "instance_ids": [
+   "vercel__turborepo-12516",
+   "vercel__turborepo-12599"
+  ]
+ },
+ {
+  "repo": "0xERR0R/blocky",
+  "n": 1,
+  "first": "2026-03-15",
+  "last": "2026-03-15",
+  "span_days": 0,
+  "instance_ids": [
+   "0xERR0R__blocky-2016"
+  ]
+ },
+ {
+  "repo": "Automattic/mongoose",
+  "n": 1,
+  "first": "2026-03-23",
+  "last": "2026-03-23",
+  "span_days": 0,
+  "instance_ids": [
+   "Automattic__mongoose-16153"
+  ]
+ },
+ {
+  "repo": "ClickHouse/ClickHouse",
+  "n": 1,
+  "first": "2026-03-24",
+  "last": "2026-03-24",
+  "span_days": 0,
+  "instance_ids": [
+   "ClickHouse__ClickHouse-100579"
+  ]
+ },
+ {
+  "repo": "DeusData/codebase-memory-mcp",
+  "n": 1,
+  "first": "2026-06-25",
+  "last": "2026-06-25",
+  "span_days": 0,
+  "instance_ids": [
+   "DeusData__codebase-memory-mcp-632"
+  ]
+ },
+ {
+  "repo": "Gentleman-Programming/gentle-ai",
+  "n": 1,
+  "first": "2026-03-14",
+  "last": "2026-03-14",
+  "span_days": 0,
+  "instance_ids": [
+   "Gentleman-Programming__gentle-ai-50"
+  ]
+ },
+ {
+  "repo": "GitoxideLabs/gitoxide",
+  "n": 1,
+  "first": "2026-03-20",
+  "last": "2026-03-20",
+  "span_days": 0,
+  "instance_ids": [
+   "GitoxideLabs__gitoxide-2476"
+  ]
+ },
+ {
+  "repo": "GladysAssistant/Gladys",
+  "n": 1,
+  "first": "2026-03-23",
+  "last": "2026-03-23",
+  "span_days": 0,
+  "instance_ids": [
+   "GladysAssistant__Gladys-2504"
+  ]
+ },
+ {
+  "repo": "IfcOpenShell/IfcOpenShell",
+  "n": 1,
+  "first": "2026-07-23",
+  "last": "2026-07-23",
+  "span_days": 0,
+  "instance_ids": [
+   "IfcOpenShell__IfcOpenShell-8887"
+  ]
+ },
+ {
+  "repo": "J-F-Liu/lopdf",
+  "n": 1,
+  "first": "2026-03-19",
+  "last": "2026-03-19",
+  "span_days": 0,
+  "instance_ids": [
+   "J-F-Liu__lopdf-481"
+  ]
+ },
+ {
+  "repo": "JasperFx/marten",
+  "n": 1,
+  "first": "2026-07-29",
+  "last": "2026-07-29",
+  "span_days": 0,
+  "instance_ids": [
+   "JasperFx__marten-5080"
+  ]
+ },
+ {
+  "repo": "Kareadita/Kavita",
+  "n": 1,
+  "first": "2026-03-20",
+  "last": "2026-03-20",
+  "span_days": 0,
+  "instance_ids": [
+   "Kareadita__Kavita-4552"
+  ]
+ },
+ {
+  "repo": "LFDT-web3j/web3j",
+  "n": 1,
+  "first": "2026-04-03",
+  "last": "2026-04-03",
+  "span_days": 0,
+  "instance_ids": [
+   "LFDT-web3j__web3j-2254"
+  ]
+ },
+ {
+  "repo": "Megabit/Blazorise",
+  "n": 1,
+  "first": "2026-03-31",
+  "last": "2026-03-31",
+  "span_days": 0,
+  "instance_ids": [
+   "Megabit__Blazorise-6500"
+  ]
+ },
+ {
+  "repo": "Mintplex-Labs/anything-llm",
+  "n": 1,
+  "first": "2026-03-23",
+  "last": "2026-03-23",
+  "span_days": 0,
+  "instance_ids": [
+   "Mintplex-Labs__anything-llm-5252"
+  ]
+ },
+ {
+  "repo": "NVIDIA/NemoClaw",
+  "n": 1,
+  "first": "2026-03-18",
+  "last": "2026-03-18",
+  "span_days": 0,
+  "instance_ids": [
+   "NVIDIA__NemoClaw-330"
+  ]
+ },
+ {
+  "repo": "NVIDIA/gpu-operator",
+  "n": 1,
+  "first": "2026-03-31",
+  "last": "2026-03-31",
+  "span_days": 0,
+  "instance_ids": [
+   "NVIDIA__gpu-operator-2258"
+  ]
+ },
+ {
+  "repo": "NVIDIA/stdexec",
+  "n": 1,
+  "first": "2026-04-07",
+  "last": "2026-04-07",
+  "span_days": 0,
+  "instance_ids": [
+   "NVIDIA__stdexec-2002"
+  ]
+ },
+ {
+  "repo": "NVlabs/cuda-oxide",
+  "n": 1,
+  "first": "2026-07-12",
+  "last": "2026-07-12",
+  "span_days": 0,
+  "instance_ids": [
+   "NVlabs__cuda-oxide-381"
+  ]
+ },
+ {
+  "repo": "OpenRCT2/OpenRCT2",
+  "n": 1,
+  "first": "2026-04-03",
+  "last": "2026-04-03",
+  "span_days": 0,
+  "instance_ids": [
+   "OpenRCT2__OpenRCT2-26315"
+  ]
+ },
+ {
+  "repo": "QwenLM/qwen-code",
+  "n": 1,
+  "first": "2026-04-16",
+  "last": "2026-04-16",
+  "span_days": 0,
+  "instance_ids": [
+   "QwenLM__qwen-code-3310"
+  ]
+ },
+ {
+  "repo": "RooCodeInc/Roo-Code",
+  "n": 1,
+  "first": "2026-04-16",
+  "last": "2026-04-16",
+  "span_days": 0,
+  "instance_ids": [
+   "RooCodeInc__Roo-Code-12135"
+  ]
+ },
+ {
+  "repo": "TypeCellOS/BlockNote",
+  "n": 1,
+  "first": "2026-04-07",
+  "last": "2026-04-07",
+  "span_days": 0,
+  "instance_ids": [
+   "TypeCellOS__BlockNote-2629"
+  ]
+ },
+ {
+  "repo": "UglyToad/PdfPig",
+  "n": 1,
+  "first": "2026-06-27",
+  "last": "2026-06-27",
+  "span_days": 0,
+  "instance_ids": [
+   "UglyToad__PdfPig-1350"
+  ]
+ },
+ {
+  "repo": "actor-framework/actor-framework",
+  "n": 1,
+  "first": "2026-03-21",
+  "last": "2026-03-21",
+  "span_days": 0,
+  "instance_ids": [
+   "actor-framework__actor-framework-2300"
+  ]
+ },
+ {
+  "repo": "akuity/kargo",
+  "n": 1,
+  "first": "2026-03-26",
+  "last": "2026-03-26",
+  "span_days": 0,
+  "instance_ids": [
+   "akuity__kargo-5990"
+  ]
+ },
+ {
+  "repo": "amir20/dozzle",
+  "n": 1,
+  "first": "2026-04-11",
+  "last": "2026-04-11",
+  "span_days": 0,
+  "instance_ids": [
+   "amir20__dozzle-4612"
+  ]
+ },
+ {
+  "repo": "aralroca/next-translate",
+  "n": 1,
+  "first": "2026-03-22",
+  "last": "2026-03-22",
+  "span_days": 0,
+  "instance_ids": [
+   "aralroca__next-translate-1259"
+  ]
+ },
+ {
+  "repo": "assistant-ui/assistant-ui",
+  "n": 1,
+  "first": "2026-04-20",
+  "last": "2026-04-20",
+  "span_days": 0,
+  "instance_ids": [
+   "assistant-ui__assistant-ui-3866"
+  ]
+ },
+ {
+  "repo": "astral-sh/uv",
+  "n": 1,
+  "first": "2026-04-12",
+  "last": "2026-04-12",
+  "span_days": 0,
+  "instance_ids": [
+   "astral-sh__uv-18976"
+  ]
+ },
+ {
+  "repo": "caddyserver/caddy",
+  "n": 1,
+  "first": "2026-03-13",
+  "last": "2026-03-13",
+  "span_days": 0,
+  "instance_ids": [
+   "caddyserver__caddy-7567"
+  ]
+ },
+ {
+  "repo": "can1357/oh-my-pi",
+  "n": 1,
+  "first": "2026-03-20",
+  "last": "2026-03-20",
+  "span_days": 0,
+  "instance_ids": [
+   "can1357__oh-my-pi-489"
+  ]
+ },
+ {
+  "repo": "casey/just",
+  "n": 1,
+  "first": "2026-03-26",
+  "last": "2026-03-26",
+  "span_days": 0,
+  "instance_ids": [
+   "casey__just-3200"
+  ]
+ },
+ {
+  "repo": "cc65/cc65",
+  "n": 1,
+  "first": "2026-03-11",
+  "last": "2026-03-11",
+  "span_days": 0,
+  "instance_ids": [
+   "cc65__cc65-2941"
+  ]
+ },
+ {
+  "repo": "centrifugal/centrifugo",
+  "n": 1,
+  "first": "2026-04-09",
+  "last": "2026-04-09",
+  "span_days": 0,
+  "instance_ids": [
+   "centrifugal__centrifugo-1129"
+  ]
+ },
+ {
+  "repo": "checkstyle/checkstyle",
+  "n": 1,
+  "first": "2026-03-27",
+  "last": "2026-03-27",
+  "span_days": 0,
+  "instance_ids": [
+   "checkstyle__checkstyle-19487"
+  ]
+ },
+ {
+  "repo": "chimurai/http-proxy-middleware",
+  "n": 1,
+  "first": "2026-02-13",
+  "last": "2026-02-13",
+  "span_days": 0,
+  "instance_ids": [
+   "chimurai__http-proxy-middleware-1163"
+  ]
+ },
+ {
+  "repo": "code-charity/youtube",
+  "n": 1,
+  "first": "2026-03-16",
+  "last": "2026-03-16",
+  "span_days": 0,
+  "instance_ids": [
+   "code-charity__youtube-3708"
+  ]
+ },
+ {
+  "repo": "code-yeongyu/oh-my-openagent",
+  "n": 1,
+  "first": "2026-04-02",
+  "last": "2026-04-02",
+  "span_days": 0,
+  "instance_ids": [
+   "code-yeongyu__oh-my-openagent-3013"
+  ]
+ },
+ {
+  "repo": "coze-dev/coze-loop",
+  "n": 1,
+  "first": "2026-03-18",
+  "last": "2026-03-18",
+  "span_days": 0,
+  "instance_ids": [
+   "coze-dev__coze-loop-462"
+  ]
+ },
+ {
+  "repo": "danielmiessler/Fabric",
+  "n": 1,
+  "first": "2026-04-17",
+  "last": "2026-04-17",
+  "span_days": 0,
+  "instance_ids": [
+   "danielmiessler__Fabric-2098"
+  ]
+ },
+ {
+  "repo": "dlvhdr/gh-dash",
+  "n": 1,
+  "first": "2026-03-25",
+  "last": "2026-03-25",
+  "span_days": 0,
+  "instance_ids": [
+   "dlvhdr__gh-dash-813"
+  ]
+ },
+ {
+  "repo": "dotnet-state-machine/stateless",
+  "n": 1,
+  "first": "2026-03-11",
+  "last": "2026-03-11",
+  "span_days": 0,
+  "instance_ids": [
+   "dotnet-state-machine__stateless-644"
+  ]
+ },
+ {
+  "repo": "dotnet/runtime",
+  "n": 1,
+  "first": "2026-04-09",
+  "last": "2026-04-09",
+  "span_days": 0,
+  "instance_ids": [
+   "dotnet__runtime-126719"
+  ]
+ },
+ {
+  "repo": "envoyproxy/gateway",
+  "n": 1,
+  "first": "2026-03-13",
+  "last": "2026-03-13",
+  "span_days": 0,
+  "instance_ids": [
+   "envoyproxy__gateway-8521"
+  ]
+ },
+ {
+  "repo": "ether/etherpad",
+  "n": 1,
+  "first": "2026-04-04",
+  "last": "2026-04-04",
+  "span_days": 0,
+  "instance_ids": [
+   "ether__etherpad-7445"
+  ]
+ },
+ {
+  "repo": "ethereum/go-ethereum",
+  "n": 1,
+  "first": "2026-04-07",
+  "last": "2026-04-07",
+  "span_days": 0,
+  "instance_ids": [
+   "ethereum__go-ethereum-34675"
+  ]
+ },
+ {
+  "repo": "evcc-io/evcc",
+  "n": 1,
+  "first": "2026-04-02",
+  "last": "2026-04-02",
+  "span_days": 0,
+  "instance_ids": [
+   "evcc-io__evcc-28765"
+  ]
+ },
+ {
+  "repo": "gastownhall/beads",
+  "n": 1,
+  "first": "2026-04-03",
+  "last": "2026-04-03",
+  "span_days": 0,
+  "instance_ids": [
+   "gastownhall__beads-2992"
+  ]
+ },
+ {
+  "repo": "getgauge/gauge",
+  "n": 1,
+  "first": "2026-03-30",
+  "last": "2026-03-30",
+  "span_days": 0,
+  "instance_ids": [
+   "getgauge__gauge-2836"
+  ]
+ },
+ {
+  "repo": "gitbutlerapp/gitbutler",
+  "n": 1,
+  "first": "2026-07-22",
+  "last": "2026-07-22",
+  "span_days": 0,
+  "instance_ids": [
+   "gitbutlerapp__gitbutler-14920"
+  ]
+ },
+ {
+  "repo": "go-task/task",
+  "n": 1,
+  "first": "2026-03-05",
+  "last": "2026-03-05",
+  "span_days": 0,
+  "instance_ids": [
+   "go-task__task-2716"
+  ]
+ },
+ {
+  "repo": "go-vikunja/vikunja",
+  "n": 1,
+  "first": "2026-04-09",
+  "last": "2026-04-09",
+  "span_days": 0,
+  "instance_ids": [
+   "go-vikunja__vikunja-2574"
+  ]
+ },
+ {
+  "repo": "grpc/grpc-java",
+  "n": 1,
+  "first": "2026-03-29",
+  "last": "2026-03-29",
+  "span_days": 0,
+  "instance_ids": [
+   "grpc__grpc-java-12735"
+  ]
+ },
+ {
+  "repo": "gruntwork-io/cloud-nuke",
+  "n": 1,
+  "first": "2026-03-23",
+  "last": "2026-03-23",
+  "span_days": 0,
+  "instance_ids": [
+   "gruntwork-io__cloud-nuke-1085"
+  ]
+ },
+ {
+  "repo": "haraka/Haraka",
+  "n": 1,
+  "first": "2026-03-24",
+  "last": "2026-03-24",
+  "span_days": 0,
+  "instance_ids": [
+   "haraka__Haraka-3535"
+  ]
+ },
+ {
+  "repo": "harfbuzz/harfbuzz",
+  "n": 1,
+  "first": "2026-04-18",
+  "last": "2026-04-18",
+  "span_days": 0,
+  "instance_ids": [
+   "harfbuzz__harfbuzz-5947"
+  ]
+ },
+ {
+  "repo": "iOfficeAI/AionUi",
+  "n": 1,
+  "first": "2026-03-27",
+  "last": "2026-03-27",
+  "span_days": 0,
+  "instance_ids": [
+   "iOfficeAI__AionUi-1818"
+  ]
+ },
+ {
+  "repo": "iflytek/skillhub",
+  "n": 1,
+  "first": "2026-04-08",
+  "last": "2026-04-08",
+  "span_days": 0,
+  "instance_ids": [
+   "iflytek__skillhub-253"
+  ]
+ },
+ {
+  "repo": "include-what-you-use/include-what-you-use",
+  "n": 1,
+  "first": "2026-04-13",
+  "last": "2026-04-13",
+  "span_days": 0,
+  "instance_ids": [
+   "include-what-you-use__include-what-you-use-1991"
+  ]
+ },
+ {
+  "repo": "karmada-io/karmada",
+  "n": 1,
+  "first": "2026-04-04",
+  "last": "2026-04-04",
+  "span_days": 0,
+  "instance_ids": [
+   "karmada-io__karmada-7365"
+  ]
+ },
+ {
+  "repo": "kedacore/keda",
+  "n": 1,
+  "first": "2026-04-10",
+  "last": "2026-04-10",
+  "span_days": 0,
+  "instance_ids": [
+   "kedacore__keda-7642"
+  ]
+ },
+ {
+  "repo": "kepano/defuddle",
+  "n": 1,
+  "first": "2026-04-12",
+  "last": "2026-04-12",
+  "span_days": 0,
+  "instance_ids": [
+   "kepano__defuddle-243"
+  ]
+ },
+ {
+  "repo": "kestra-io/kestra",
+  "n": 1,
+  "first": "2026-03-26",
+  "last": "2026-03-26",
+  "span_days": 0,
+  "instance_ids": [
+   "kestra-io__kestra-15267"
+  ]
+ },
+ {
+  "repo": "kokkos/kokkos",
+  "n": 1,
+  "first": "2026-03-12",
+  "last": "2026-03-12",
+  "span_days": 0,
+  "instance_ids": [
+   "kokkos__kokkos-8967"
+  ]
+ },
+ {
+  "repo": "kube-vip/kube-vip",
+  "n": 1,
+  "first": "2026-04-06",
+  "last": "2026-04-06",
+  "span_days": 0,
+  "instance_ids": [
+   "kube-vip__kube-vip-1505"
+  ]
+ },
+ {
+  "repo": "kubernetes-sigs/controller-runtime",
+  "n": 1,
+  "first": "2026-04-05",
+  "last": "2026-04-05",
+  "span_days": 0,
+  "instance_ids": [
+   "kubernetes-sigs__controller-runtime-3494"
+  ]
+ },
+ {
+  "repo": "kubernetes-sigs/kubebuilder",
+  "n": 1,
+  "first": "2026-03-29",
+  "last": "2026-03-29",
+  "span_days": 0,
+  "instance_ids": [
+   "kubernetes-sigs__kubebuilder-5559"
+  ]
+ },
+ {
+  "repo": "kubernetes-sigs/kueue",
+  "n": 1,
+  "first": "2026-03-13",
+  "last": "2026-03-13",
+  "span_days": 0,
+  "instance_ids": [
+   "kubernetes-sigs__kueue-9866"
+  ]
+ },
+ {
+  "repo": "kubernetes/kube-state-metrics",
+  "n": 1,
+  "first": "2026-04-15",
+  "last": "2026-04-15",
+  "span_days": 0,
+  "instance_ids": [
+   "kubernetes__kube-state-metrics-2926"
+  ]
+ },
+ {
+  "repo": "kumahq/kuma",
+  "n": 1,
+  "first": "2026-03-20",
+  "last": "2026-03-20",
+  "span_days": 0,
+  "instance_ids": [
+   "kumahq__kuma-15918"
+  ]
+ },
+ {
+  "repo": "libarchive/libarchive",
+  "n": 1,
+  "first": "2026-04-19",
+  "last": "2026-04-19",
+  "span_days": 0,
+  "instance_ids": [
+   "libarchive__libarchive-2968"
+  ]
+ },
+ {
+  "repo": "lima-vm/lima",
+  "n": 1,
+  "first": "2026-04-06",
+  "last": "2026-04-06",
+  "span_days": 0,
+  "instance_ids": [
+   "lima-vm__lima-4803"
+  ]
+ },
+ {
+  "repo": "luau-lang/luau",
+  "n": 1,
+  "first": "2026-07-05",
+  "last": "2026-07-05",
+  "span_days": 0,
+  "instance_ids": [
+   "luau-lang__luau-2506"
+  ]
+ },
+ {
+  "repo": "magefile/mage",
+  "n": 1,
+  "first": "2026-03-15",
+  "last": "2026-03-15",
+  "span_days": 0,
+  "instance_ids": [
+   "magefile__mage-544"
+  ]
+ },
+ {
+  "repo": "mc1arke/sonarqube-community-branch-plugin",
+  "n": 1,
+  "first": "2026-03-12",
+  "last": "2026-03-12",
+  "span_days": 0,
+  "instance_ids": [
+   "mc1arke__sonarqube-community-branch-plugin-1221"
+  ]
+ },
+ {
+  "repo": "mgechev/revive",
+  "n": 1,
+  "first": "2026-03-16",
+  "last": "2026-03-16",
+  "span_days": 0,
+  "instance_ids": [
+   "mgechev__revive-1686"
+  ]
+ },
+ {
+  "repo": "mikro-orm/mikro-orm",
+  "n": 1,
+  "first": "2026-04-01",
+  "last": "2026-04-01",
+  "span_days": 0,
+  "instance_ids": [
+   "mikro-orm__mikro-orm-7464"
+  ]
+ },
+ {
+  "repo": "mnfst/manifest",
+  "n": 1,
+  "first": "2026-04-20",
+  "last": "2026-04-20",
+  "span_days": 0,
+  "instance_ids": [
+   "mnfst__manifest-1635"
+  ]
+ },
+ {
+  "repo": "modelcontextprotocol/go-sdk",
+  "n": 1,
+  "first": "2026-03-27",
+  "last": "2026-03-27",
+  "span_days": 0,
+  "instance_ids": [
+   "modelcontextprotocol__go-sdk-862"
+  ]
+ },
+ {
+  "repo": "moonD4rk/HackBrowserData",
+  "n": 1,
+  "first": "2026-04-13",
+  "last": "2026-04-13",
+  "span_days": 0,
+  "instance_ids": [
+   "moonD4rk__HackBrowserData-571"
+  ]
+ },
+ {
+  "repo": "mui/mui-x",
+  "n": 1,
+  "first": "2026-04-13",
+  "last": "2026-04-13",
+  "span_days": 0,
+  "instance_ids": [
+   "mui__mui-x-22062"
+  ]
+ },
+ {
+  "repo": "nextlevelbuilder/goclaw",
+  "n": 1,
+  "first": "2026-04-11",
+  "last": "2026-04-11",
+  "span_days": 0,
+  "instance_ids": [
+   "nextlevelbuilder__goclaw-841"
+  ]
+ },
+ {
+  "repo": "ninja-build/ninja",
+  "n": 1,
+  "first": "2026-03-22",
+  "last": "2026-03-22",
+  "span_days": 0,
+  "instance_ids": [
+   "ninja-build__ninja-2749"
+  ]
+ },
+ {
+  "repo": "nissl-lab/npoi",
+  "n": 1,
+  "first": "2026-04-01",
+  "last": "2026-04-01",
+  "span_days": 0,
+  "instance_ids": [
+   "nissl-lab__npoi-1781"
+  ]
+ },
+ {
+  "repo": "nunit/nunit",
+  "n": 1,
+  "first": "2026-07-18",
+  "last": "2026-07-18",
+  "span_days": 0,
+  "instance_ids": [
+   "nunit__nunit-5351"
+  ]
+ },
+ {
+  "repo": "oauth2-proxy/oauth2-proxy",
+  "n": 1,
+  "first": "2026-03-14",
+  "last": "2026-03-14",
+  "span_days": 0,
+  "instance_ids": [
+   "oauth2-proxy__oauth2-proxy-3374"
+  ]
+ },
+ {
+  "repo": "open-telemetry/opentelemetry-go",
+  "n": 1,
+  "first": "2026-04-03",
+  "last": "2026-04-03",
+  "span_days": 0,
+  "instance_ids": [
+   "open-telemetry__opentelemetry-go-8133"
+  ]
+ },
+ {
+  "repo": "open-telemetry/opentelemetry-java-instrumentation",
+  "n": 1,
+  "first": "2026-03-18",
+  "last": "2026-03-18",
+  "span_days": 0,
+  "instance_ids": [
+   "open-telemetry__opentelemetry-java-instrumentation-16697"
+  ]
+ },
+ {
+  "repo": "openai/codex-plugin-cc",
+  "n": 1,
+  "first": "2026-04-01",
+  "last": "2026-04-01",
+  "span_days": 0,
+  "instance_ids": [
+   "openai__codex-plugin-cc-83"
+  ]
+ },
+ {
+  "repo": "organicmaps/organicmaps",
+  "n": 1,
+  "first": "2026-03-20",
+  "last": "2026-03-20",
+  "span_days": 0,
+  "instance_ids": [
+   "organicmaps__organicmaps-12396"
+  ]
+ },
+ {
+  "repo": "pola-rs/polars",
+  "n": 1,
+  "first": "2026-07-22",
+  "last": "2026-07-22",
+  "span_days": 0,
+  "instance_ids": [
+   "pola-rs__polars-28484"
+  ]
+ },
+ {
+  "repo": "ppy/osu",
+  "n": 1,
+  "first": "2026-06-18",
+  "last": "2026-06-18",
+  "span_days": 0,
+  "instance_ids": [
+   "ppy__osu-38107"
+  ]
+ },
+ {
+  "repo": "proj4js/proj4js",
+  "n": 1,
+  "first": "2026-04-02",
+  "last": "2026-04-02",
+  "span_days": 0,
+  "instance_ids": [
+   "proj4js__proj4js-560"
+  ]
+ },
+ {
+  "repo": "puppeteer/puppeteer",
+  "n": 1,
+  "first": "2026-04-03",
+  "last": "2026-04-03",
+  "span_days": 0,
+  "instance_ids": [
+   "puppeteer__puppeteer-14826"
+  ]
+ },
+ {
+  "repo": "reactjs/react-rails",
+  "n": 1,
+  "first": "2026-04-13",
+  "last": "2026-04-13",
+  "span_days": 0,
+  "instance_ids": [
+   "reactjs__react-rails-1418"
+  ]
+ },
+ {
+  "repo": "rizinorg/rizin",
+  "n": 1,
+  "first": "2026-03-23",
+  "last": "2026-03-23",
+  "span_days": 0,
+  "instance_ids": [
+   "rizinorg__rizin-6079"
+  ]
+ },
+ {
+  "repo": "rust-lang/rustfmt",
+  "n": 1,
+  "first": "2026-03-24",
+  "last": "2026-03-24",
+  "span_days": 0,
+  "instance_ids": [
+   "rust-lang__rustfmt-6840"
+  ]
+ },
+ {
+  "repo": "saghul/txiki.js",
+  "n": 1,
+  "first": "2026-03-26",
+  "last": "2026-03-26",
+  "span_days": 0,
+  "instance_ids": [
+   "saghul__txiki.js-881"
+  ]
+ },
+ {
+  "repo": "servo/servo",
+  "n": 1,
+  "first": "2026-07-06",
+  "last": "2026-07-06",
+  "span_days": 0,
+  "instance_ids": [
+   "servo__servo-46309"
+  ]
+ },
+ {
+  "repo": "shimat/opencvsharp",
+  "n": 1,
+  "first": "2026-04-05",
+  "last": "2026-04-05",
+  "span_days": 0,
+  "instance_ids": [
+   "shimat__opencvsharp-1860"
+  ]
+ },
+ {
+  "repo": "sinelaw/fresh",
+  "n": 1,
+  "first": "2026-04-20",
+  "last": "2026-04-20",
+  "span_days": 0,
+  "instance_ids": [
+   "sinelaw__fresh-1642"
+  ]
+ },
+ {
+  "repo": "skim-rs/skim",
+  "n": 1,
+  "first": "2026-04-10",
+  "last": "2026-04-10",
+  "span_days": 0,
+  "instance_ids": [
+   "skim-rs__skim-1044"
+  ]
+ },
+ {
+  "repo": "slatedb/slatedb",
+  "n": 1,
+  "first": "2026-03-29",
+  "last": "2026-03-29",
+  "span_days": 0,
+  "instance_ids": [
+   "slatedb__slatedb-1461"
+  ]
+ },
+ {
+  "repo": "sofastack/sofa-jraft",
+  "n": 1,
+  "first": "2026-04-03",
+  "last": "2026-04-03",
+  "span_days": 0,
+  "instance_ids": [
+   "sofastack__sofa-jraft-1249"
+  ]
+ },
+ {
+  "repo": "spring-projects/spring-boot",
+  "n": 1,
+  "first": "2026-04-18",
+  "last": "2026-04-18",
+  "span_days": 0,
+  "instance_ids": [
+   "spring-projects__spring-boot-50119"
+  ]
+ },
+ {
+  "repo": "spring-projects/spring-framework",
+  "n": 1,
+  "first": "2026-03-27",
+  "last": "2026-03-27",
+  "span_days": 0,
+  "instance_ids": [
+   "spring-projects__spring-framework-36550"
+  ]
+ },
+ {
+  "repo": "spring-projects/spring-security",
+  "n": 1,
+  "first": "2026-03-19",
+  "last": "2026-03-19",
+  "span_days": 0,
+  "instance_ids": [
+   "spring-projects__spring-security-18938"
+  ]
+ },
+ {
+  "repo": "sqlc-dev/sqlc",
+  "n": 1,
+  "first": "2026-04-17",
+  "last": "2026-04-17",
+  "span_days": 0,
+  "instance_ids": [
+   "sqlc-dev__sqlc-4383"
+  ]
+ },
+ {
+  "repo": "strimzi/strimzi-kafka-operator",
+  "n": 1,
+  "first": "2026-04-02",
+  "last": "2026-04-02",
+  "span_days": 0,
+  "instance_ids": [
+   "strimzi__strimzi-kafka-operator-12590"
+  ]
+ },
+ {
+  "repo": "submariner-io/submariner",
+  "n": 1,
+  "first": "2026-04-09",
+  "last": "2026-04-09",
+  "span_days": 0,
+  "instance_ids": [
+   "submariner-io__submariner-3957"
+  ]
+ },
+ {
+  "repo": "surveyjs/survey-library",
+  "n": 1,
+  "first": "2026-04-07",
+  "last": "2026-04-07",
+  "span_days": 0,
+  "instance_ids": [
+   "surveyjs__survey-library-11137"
+  ]
+ },
+ {
+  "repo": "sveltejs/svelte",
+  "n": 1,
+  "first": "2026-03-31",
+  "last": "2026-03-31",
+  "span_days": 0,
+  "instance_ids": [
+   "sveltejs__svelte-18039"
+  ]
+ },
+ {
+  "repo": "terraform-docs/terraform-docs",
+  "n": 1,
+  "first": "2026-02-21",
+  "last": "2026-02-21",
+  "span_days": 0,
+  "instance_ids": [
+   "terraform-docs__terraform-docs-901"
+  ]
+ },
+ {
+  "repo": "tursodatabase/turso",
+  "n": 1,
+  "first": "2026-07-29",
+  "last": "2026-07-29",
+  "span_days": 0,
+  "instance_ids": [
+   "tursodatabase__turso-8102"
+  ]
+ },
+ {
+  "repo": "usebruno/bruno",
+  "n": 1,
+  "first": "2026-03-30",
+  "last": "2026-03-30",
+  "span_days": 0,
+  "instance_ids": [
+   "usebruno__bruno-7620"
+  ]
+ },
+ {
+  "repo": "velero-io/velero",
+  "n": 1,
+  "first": "2026-03-26",
+  "last": "2026-03-26",
+  "span_days": 0,
+  "instance_ids": [
+   "velero-io__velero-9653"
+  ]
+ },
+ {
+  "repo": "vueuse/vueuse",
+  "n": 1,
+  "first": "2026-03-24",
+  "last": "2026-03-24",
+  "span_days": 0,
+  "instance_ids": [
+   "vueuse__vueuse-5336"
+  ]
+ },
+ {
+  "repo": "wasm-bindgen/wasm-bindgen",
+  "n": 1,
+  "first": "2026-03-24",
+  "last": "2026-03-24",
+  "span_days": 0,
+  "instance_ids": [
+   "wasm-bindgen__wasm-bindgen-5051"
+  ]
+ },
+ {
+  "repo": "wxt-dev/wxt",
+  "n": 1,
+  "first": "2026-04-14",
+  "last": "2026-04-14",
+  "span_days": 0,
+  "instance_ids": [
+   "wxt-dev__wxt-2267"
+  ]
+ },
+ {
+  "repo": "zeroclaw-labs/zeroclaw",
+  "n": 1,
+  "first": "2026-04-02",
+  "last": "2026-04-02",
+  "span_days": 0,
+  "instance_ids": [
+   "zeroclaw-labs__zeroclaw-5165"
+  ]
+ }
+]
