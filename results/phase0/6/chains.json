@@ -1,0 +1,923 @@
+[
+ {
+  "repo": "xroche/httrack",
+  "n": 38,
+  "first": "2026-06-19",
+  "last": "2026-07-30",
+  "span_days": 41,
+  "instance_ids": [
+   "xroche__httrack-395",
+   "xroche__httrack-399",
+   "xroche__httrack-408",
+   "xroche__httrack-422",
+   "xroche__httrack-428",
+   "xroche__httrack-444",
+   "xroche__httrack-454",
+   "xroche__httrack-457",
+   "xroche__httrack-482",
+   "xroche__httrack-522",
+   "xroche__httrack-530",
+   "xroche__httrack-560",
+   "xroche__httrack-584",
+   "xroche__httrack-596",
+   "xroche__httrack-599",
+   "xroche__httrack-610",
+   "xroche__httrack-618",
+   "xroche__httrack-763",
+   "xroche__httrack-765",
+   "xroche__httrack-784",
+   "xroche__httrack-789",
+   "xroche__httrack-803",
+   "xroche__httrack-807",
+   "xroche__httrack-809",
+   "xroche__httrack-810",
+   "xroche__httrack-811",
+   "xroche__httrack-815",
+   "xroche__httrack-817",
+   "xroche__httrack-829",
+   "xroche__httrack-830",
+   "xroche__httrack-835",
+   "xroche__httrack-837",
+   "xroche__httrack-849",
+   "xroche__httrack-850",
+   "xroche__httrack-851",
+   "xroche__httrack-856",
+   "xroche__httrack-876",
+   "xroche__httrack-893"
+  ]
+ },
+ {
+  "repo": "duckdb/duckdb",
+  "n": 25,
+  "first": "2026-06-15",
+  "last": "2026-07-30",
+  "span_days": 45,
+  "instance_ids": [
+   "duckdb__duckdb-23280",
+   "duckdb__duckdb-23413",
+   "duckdb__duckdb-23422",
+   "duckdb__duckdb-23491",
+   "duckdb__duckdb-23538",
+   "duckdb__duckdb-23569",
+   "duckdb__duckdb-23604",
+   "duckdb__duckdb-23615",
+   "duckdb__duckdb-23618",
+   "duckdb__duckdb-23624",
+   "duckdb__duckdb-23628",
+   "duckdb__duckdb-23634",
+   "duckdb__duckdb-23637",
+   "duckdb__duckdb-24011",
+   "duckdb__duckdb-24018",
+   "duckdb__duckdb-24074",
+   "duckdb__duckdb-24100",
+   "duckdb__duckdb-24101",
+   "duckdb__duckdb-24105",
+   "duckdb__duckdb-24150",
+   "duckdb__duckdb-24181",
+   "duckdb__duckdb-24211",
+   "duckdb__duckdb-24266",
+   "duckdb__duckdb-24290",
+   "duckdb__duckdb-24318"
+  ]
+ },
+ {
+  "repo": "colbymchenry/codegraph",
+  "n": 17,
+  "first": "2026-06-07",
+  "last": "2026-07-20",
+  "span_days": 43,
+  "instance_ids": [
+   "colbymchenry__codegraph-715",
+   "colbymchenry__codegraph-749",
+   "colbymchenry__codegraph-804",
+   "colbymchenry__codegraph-868",
+   "colbymchenry__codegraph-894",
+   "colbymchenry__codegraph-939",
+   "colbymchenry__codegraph-948",
+   "colbymchenry__codegraph-951",
+   "colbymchenry__codegraph-1051",
+   "colbymchenry__codegraph-1066",
+   "colbymchenry__codegraph-1201",
+   "colbymchenry__codegraph-1207",
+   "colbymchenry__codegraph-1313",
+   "colbymchenry__codegraph-1314",
+   "colbymchenry__codegraph-1317",
+   "colbymchenry__codegraph-1318",
+   "colbymchenry__codegraph-1370"
+  ]
+ },
+ {
+  "repo": "langchain4j/langchain4j",
+  "n": 17,
+  "first": "2026-07-11",
+  "last": "2026-07-28",
+  "span_days": 17,
+  "instance_ids": [
+   "langchain4j__langchain4j-5752",
+   "langchain4j__langchain4j-5755",
+   "langchain4j__langchain4j-5757",
+   "langchain4j__langchain4j-5788",
+   "langchain4j__langchain4j-5790",
+   "langchain4j__langchain4j-5792",
+   "langchain4j__langchain4j-5799",
+   "langchain4j__langchain4j-5806",
+   "langchain4j__langchain4j-5807",
+   "langchain4j__langchain4j-5809",
+   "langchain4j__langchain4j-5817",
+   "langchain4j__langchain4j-5847",
+   "langchain4j__langchain4j-5848",
+   "langchain4j__langchain4j-5850",
+   "langchain4j__langchain4j-5861",
+   "langchain4j__langchain4j-5864",
+   "langchain4j__langchain4j-5869"
+  ]
+ },
+ {
+  "repo": "JasperFx/wolverine",
+  "n": 14,
+  "first": "2026-06-10",
+  "last": "2026-07-28",
+  "span_days": 48,
+  "instance_ids": [
+   "JasperFx__wolverine-3066",
+   "JasperFx__wolverine-3162",
+   "JasperFx__wolverine-3233",
+   "JasperFx__wolverine-3241",
+   "JasperFx__wolverine-3426",
+   "JasperFx__wolverine-3456",
+   "JasperFx__wolverine-3488",
+   "JasperFx__wolverine-3513",
+   "JasperFx__wolverine-3523",
+   "JasperFx__wolverine-3582",
+   "JasperFx__wolverine-3608",
+   "JasperFx__wolverine-3612",
+   "JasperFx__wolverine-3642",
+   "JasperFx__wolverine-3695"
+  ]
+ },
+ {
+  "repo": "h4ckf0r0day/obscura",
+  "n": 11,
+  "first": "2026-07-12",
+  "last": "2026-07-24",
+  "span_days": 12,
+  "instance_ids": [
+   "h4ckf0r0day__obscura-390",
+   "h4ckf0r0day__obscura-392",
+   "h4ckf0r0day__obscura-412",
+   "h4ckf0r0day__obscura-413",
+   "h4ckf0r0day__obscura-414",
+   "h4ckf0r0day__obscura-421",
+   "h4ckf0r0day__obscura-426",
+   "h4ckf0r0day__obscura-440",
+   "h4ckf0r0day__obscura-447",
+   "h4ckf0r0day__obscura-477",
+   "h4ckf0r0day__obscura-479"
+  ]
+ },
+ {
+  "repo": "floci-io/floci",
+  "n": 9,
+  "first": "2026-07-11",
+  "last": "2026-07-28",
+  "span_days": 17,
+  "instance_ids": [
+   "floci-io__floci-1837",
+   "floci-io__floci-1838",
+   "floci-io__floci-1870",
+   "floci-io__floci-1895",
+   "floci-io__floci-1908",
+   "floci-io__floci-1931",
+   "floci-io__floci-1932",
+   "floci-io__floci-2015",
+   "floci-io__floci-2031"
+  ]
+ },
+ {
+  "repo": "yvgude/lean-ctx",
+  "n": 8,
+  "first": "2026-06-30",
+  "last": "2026-07-22",
+  "span_days": 22,
+  "instance_ids": [
+   "yvgude__lean-ctx-632",
+   "yvgude__lean-ctx-816",
+   "yvgude__lean-ctx-927",
+   "yvgude__lean-ctx-969",
+   "yvgude__lean-ctx-1164",
+   "yvgude__lean-ctx-1168",
+   "yvgude__lean-ctx-1179",
+   "yvgude__lean-ctx-1180"
+  ]
+ },
+ {
+  "repo": "SubtitleEdit/subtitleedit",
+  "n": 7,
+  "first": "2026-06-25",
+  "last": "2026-07-28",
+  "span_days": 33,
+  "instance_ids": [
+   "SubtitleEdit__subtitleedit-11851",
+   "SubtitleEdit__subtitleedit-11916",
+   "SubtitleEdit__subtitleedit-11957",
+   "SubtitleEdit__subtitleedit-12151",
+   "SubtitleEdit__subtitleedit-12685",
+   "SubtitleEdit__subtitleedit-12763",
+   "SubtitleEdit__subtitleedit-12895"
+  ]
+ },
+ {
+  "repo": "biomejs/biome",
+  "n": 7,
+  "first": "2026-06-26",
+  "last": "2026-07-08",
+  "span_days": 12,
+  "instance_ids": [
+   "biomejs__biome-10767",
+   "biomejs__biome-10773",
+   "biomejs__biome-10827",
+   "biomejs__biome-10853",
+   "biomejs__biome-10867",
+   "biomejs__biome-10875",
+   "biomejs__biome-10886"
+  ]
+ },
+ {
+  "repo": "gleam-lang/gleam",
+  "n": 7,
+  "first": "2026-07-02",
+  "last": "2026-07-27",
+  "span_days": 25,
+  "instance_ids": [
+   "gleam-lang__gleam-5938",
+   "gleam-lang__gleam-5958",
+   "gleam-lang__gleam-5971",
+   "gleam-lang__gleam-5982",
+   "gleam-lang__gleam-6021",
+   "gleam-lang__gleam-6030",
+   "gleam-lang__gleam-6049"
+  ]
+ },
+ {
+  "repo": "rust-lang/rust-analyzer",
+  "n": 7,
+  "first": "2026-07-09",
+  "last": "2026-07-19",
+  "span_days": 10,
+  "instance_ids": [
+   "rust-lang__rust-analyzer-22751",
+   "rust-lang__rust-analyzer-22789",
+   "rust-lang__rust-analyzer-22804",
+   "rust-lang__rust-analyzer-22822",
+   "rust-lang__rust-analyzer-22827",
+   "rust-lang__rust-analyzer-22849",
+   "rust-lang__rust-analyzer-22855"
+  ]
+ },
+ {
+  "repo": "btraceio/btrace",
+  "n": 6,
+  "first": "2026-07-13",
+  "last": "2026-07-18",
+  "span_days": 5,
+  "instance_ids": [
+   "btraceio__btrace-894",
+   "btraceio__btrace-895",
+   "btraceio__btrace-897",
+   "btraceio__btrace-898",
+   "btraceio__btrace-899",
+   "btraceio__btrace-910"
+  ]
+ },
+ {
+  "repo": "BYVoid/OpenCC",
+  "n": 5,
+  "first": "2026-06-07",
+  "last": "2026-07-07",
+  "span_days": 30,
+  "instance_ids": [
+   "BYVoid__OpenCC-1289",
+   "BYVoid__OpenCC-1307",
+   "BYVoid__OpenCC-1310",
+   "BYVoid__OpenCC-1326",
+   "BYVoid__OpenCC-1405"
+  ]
+ },
+ {
+  "repo": "agentscope-ai/agentscope-java",
+  "n": 5,
+  "first": "2026-07-14",
+  "last": "2026-07-21",
+  "span_days": 7,
+  "instance_ids": [
+   "agentscope-ai__agentscope-java-2189",
+   "agentscope-ai__agentscope-java-2232",
+   "agentscope-ai__agentscope-java-2257",
+   "agentscope-ai__agentscope-java-2260",
+   "agentscope-ai__agentscope-java-2343"
+  ]
+ },
+ {
+  "repo": "apache/shardingsphere",
+  "n": 5,
+  "first": "2026-07-10",
+  "last": "2026-07-24",
+  "span_days": 14,
+  "instance_ids": [
+   "apache__shardingsphere-39072",
+   "apache__shardingsphere-39104",
+   "apache__shardingsphere-39126",
+   "apache__shardingsphere-39137",
+   "apache__shardingsphere-39237"
+  ]
+ },
+ {
+  "repo": "lance-format/lance",
+  "n": 5,
+  "first": "2026-06-30",
+  "last": "2026-07-28",
+  "span_days": 28,
+  "instance_ids": [
+   "lance-format__lance-7545",
+   "lance-format__lance-7565",
+   "lance-format__lance-7618",
+   "lance-format__lance-7835",
+   "lance-format__lance-8049"
+  ]
+ },
+ {
+  "repo": "open-gsd/gsd-core",
+  "n": 5,
+  "first": "2026-06-27",
+  "last": "2026-07-21",
+  "span_days": 24,
+  "instance_ids": [
+   "open-gsd__gsd-core-1794",
+   "open-gsd__gsd-core-1799",
+   "open-gsd__gsd-core-2079",
+   "open-gsd__gsd-core-2233",
+   "open-gsd__gsd-core-2492"
+  ]
+ },
+ {
+  "repo": "prefix-dev/pixi",
+  "n": 5,
+  "first": "2026-06-10",
+  "last": "2026-07-05",
+  "span_days": 25,
+  "instance_ids": [
+   "prefix-dev__pixi-6335",
+   "prefix-dev__pixi-6457",
+   "prefix-dev__pixi-6500",
+   "prefix-dev__pixi-6518",
+   "prefix-dev__pixi-6529"
+  ]
+ },
+ {
+  "repo": "riok/mapperly",
+  "n": 5,
+  "first": "2026-06-16",
+  "last": "2026-07-06",
+  "span_days": 20,
+  "instance_ids": [
+   "riok__mapperly-2324",
+   "riok__mapperly-2332",
+   "riok__mapperly-2339",
+   "riok__mapperly-2341",
+   "riok__mapperly-2355"
+  ]
+ },
+ {
+  "repo": "apache/parquet-java",
+  "n": 4,
+  "first": "2026-07-01",
+  "last": "2026-07-16",
+  "span_days": 15,
+  "instance_ids": [
+   "apache__parquet-java-3638",
+   "apache__parquet-java-3642",
+   "apache__parquet-java-3645",
+   "apache__parquet-java-3669"
+  ]
+ },
+ {
+  "repo": "modelcontextprotocol/rust-sdk",
+  "n": 4,
+  "first": "2026-07-15",
+  "last": "2026-07-24",
+  "span_days": 9,
+  "instance_ids": [
+   "modelcontextprotocol__rust-sdk-996",
+   "modelcontextprotocol__rust-sdk-1005",
+   "modelcontextprotocol__rust-sdk-1021",
+   "modelcontextprotocol__rust-sdk-1044"
+  ]
+ },
+ {
+  "repo": "notionnext-org/NotionNext",
+  "n": 4,
+  "first": "2026-07-10",
+  "last": "2026-07-28",
+  "span_days": 18,
+  "instance_ids": [
+   "notionnext-org__NotionNext-4253",
+   "notionnext-org__NotionNext-4290",
+   "notionnext-org__NotionNext-4316",
+   "notionnext-org__NotionNext-4338"
+  ]
+ },
+ {
+  "repo": "web-infra-dev/rspack",
+  "n": 4,
+  "first": "2026-07-15",
+  "last": "2026-07-20",
+  "span_days": 5,
+  "instance_ids": [
+   "web-infra-dev__rspack-14794",
+   "web-infra-dev__rspack-14803",
+   "web-infra-dev__rspack-14806",
+   "web-infra-dev__rspack-14882"
+  ]
+ },
+ {
+  "repo": "AOMediaCodec/libavif",
+  "n": 3,
+  "first": "2026-06-18",
+  "last": "2026-07-15",
+  "span_days": 27,
+  "instance_ids": [
+   "AOMediaCodec__libavif-3270",
+   "AOMediaCodec__libavif-3273",
+   "AOMediaCodec__libavif-3300"
+  ]
+ },
+ {
+  "repo": "DynamoRIO/dynamorio",
+  "n": 3,
+  "first": "2026-06-16",
+  "last": "2026-07-20",
+  "span_days": 34,
+  "instance_ids": [
+   "DynamoRIO__dynamorio-7944",
+   "DynamoRIO__dynamorio-7945",
+   "DynamoRIO__dynamorio-8017"
+  ]
+ },
+ {
+  "repo": "Ombi-app/Ombi",
+  "n": 3,
+  "first": "2026-06-12",
+  "last": "2026-07-09",
+  "span_days": 27,
+  "instance_ids": [
+   "Ombi-app__Ombi-5432",
+   "Ombi-app__Ombi-5434",
+   "Ombi-app__Ombi-5444"
+  ]
+ },
+ {
+  "repo": "apache/rocketmq",
+  "n": 3,
+  "first": "2026-07-02",
+  "last": "2026-07-25",
+  "span_days": 23,
+  "instance_ids": [
+   "apache__rocketmq-10573",
+   "apache__rocketmq-10614",
+   "apache__rocketmq-10662"
+  ]
+ },
+ {
+  "repo": "c-ares/c-ares",
+  "n": 3,
+  "first": "2026-07-03",
+  "last": "2026-07-04",
+  "span_days": 1,
+  "instance_ids": [
+   "c-ares__c-ares-1189",
+   "c-ares__c-ares-1190",
+   "c-ares__c-ares-1197"
+  ]
+ },
+ {
+  "repo": "dragonflydb/dragonfly",
+  "n": 3,
+  "first": "2026-06-02",
+  "last": "2026-07-14",
+  "span_days": 42,
+  "instance_ids": [
+   "dragonflydb__dragonfly-7493",
+   "dragonflydb__dragonfly-7777",
+   "dragonflydb__dragonfly-7850"
+  ]
+ },
+ {
+  "repo": "duckdb/ducklake",
+  "n": 3,
+  "first": "2026-06-05",
+  "last": "2026-07-23",
+  "span_days": 48,
+  "instance_ids": [
+   "duckdb__ducklake-1224",
+   "duckdb__ducklake-1339",
+   "duckdb__ducklake-1340"
+  ]
+ },
+ {
+  "repo": "elsa-workflows/elsa-core",
+  "n": 3,
+  "first": "2026-06-09",
+  "last": "2026-07-30",
+  "span_days": 51,
+  "instance_ids": [
+   "elsa-workflows__elsa-core-7711",
+   "elsa-workflows__elsa-core-7714",
+   "elsa-workflows__elsa-core-7898"
+  ]
+ },
+ {
+  "repo": "jsonata-js/jsonata",
+  "n": 3,
+  "first": "2026-07-02",
+  "last": "2026-07-15",
+  "span_days": 13,
+  "instance_ids": [
+   "jsonata-js__jsonata-809",
+   "jsonata-js__jsonata-814",
+   "jsonata-js__jsonata-817"
+  ]
+ },
+ {
+  "repo": "nearai/ironclaw",
+  "n": 3,
+  "first": "2026-07-27",
+  "last": "2026-07-27",
+  "span_days": 0,
+  "instance_ids": [
+   "nearai__ironclaw-6706",
+   "nearai__ironclaw-6712",
+   "nearai__ironclaw-6724"
+  ]
+ },
+ {
+  "repo": "playcanvas/engine",
+  "n": 3,
+  "first": "2026-07-02",
+  "last": "2026-07-17",
+  "span_days": 15,
+  "instance_ids": [
+   "playcanvas__engine-9000",
+   "playcanvas__engine-9002",
+   "playcanvas__engine-9066"
+  ]
+ },
+ {
+  "repo": "pnpm/pnpm",
+  "n": 3,
+  "first": "2026-07-09",
+  "last": "2026-07-11",
+  "span_days": 2,
+  "instance_ids": [
+   "pnpm__pnpm-12879",
+   "pnpm__pnpm-12888",
+   "pnpm__pnpm-12935"
+  ]
+ },
+ {
+  "repo": "rust-lang/rust-bindgen",
+  "n": 3,
+  "first": "2026-06-06",
+  "last": "2026-07-07",
+  "span_days": 31,
+  "instance_ids": [
+   "rust-lang__rust-bindgen-3382",
+   "rust-lang__rust-bindgen-3390",
+   "rust-lang__rust-bindgen-3391"
+  ]
+ },
+ {
+  "repo": "stephenberry/glaze",
+  "n": 3,
+  "first": "2026-06-08",
+  "last": "2026-07-30",
+  "span_days": 52,
+  "instance_ids": [
+   "stephenberry__glaze-2604",
+   "stephenberry__glaze-2611",
+   "stephenberry__glaze-2731"
+  ]
+ },
+ {
+  "repo": "timescale/timescaledb",
+  "n": 3,
+  "first": "2026-06-02",
+  "last": "2026-06-07",
+  "span_days": 5,
+  "instance_ids": [
+   "timescale__timescaledb-9955",
+   "timescale__timescaledb-9983",
+   "timescale__timescaledb-9988"
+  ]
+ },
+ {
+  "repo": "FastLED/FastLED",
+  "n": 2,
+  "first": "2026-06-03",
+  "last": "2026-07-31",
+  "span_days": 58,
+  "instance_ids": [
+   "FastLED__FastLED-2691",
+   "FastLED__FastLED-3781"
+  ]
+ },
+ {
+  "repo": "agentgateway/agentgateway",
+  "n": 2,
+  "first": "2026-06-24",
+  "last": "2026-07-07",
+  "span_days": 13,
+  "instance_ids": [
+   "agentgateway__agentgateway-2313",
+   "agentgateway__agentgateway-2452"
+  ]
+ },
+ {
+  "repo": "angularsen/UnitsNet",
+  "n": 2,
+  "first": "2026-07-25",
+  "last": "2026-07-25",
+  "span_days": 0,
+  "instance_ids": [
+   "angularsen__UnitsNet-1698",
+   "angularsen__UnitsNet-1699"
+  ]
+ },
+ {
+  "repo": "apache/paimon",
+  "n": 2,
+  "first": "2026-07-10",
+  "last": "2026-07-27",
+  "span_days": 17,
+  "instance_ids": [
+   "apache__paimon-8536",
+   "apache__paimon-8874"
+  ]
+ },
+ {
+  "repo": "carbon-language/carbon-lang",
+  "n": 2,
+  "first": "2026-06-11",
+  "last": "2026-06-15",
+  "span_days": 4,
+  "instance_ids": [
+   "carbon-language__carbon-lang-7342",
+   "carbon-language__carbon-lang-7359"
+  ]
+ },
+ {
+  "repo": "kvcache-ai/Mooncake",
+  "n": 2,
+  "first": "2026-07-14",
+  "last": "2026-07-16",
+  "span_days": 2,
+  "instance_ids": [
+   "kvcache-ai__Mooncake-2892",
+   "kvcache-ai__Mooncake-2964"
+  ]
+ },
+ {
+  "repo": "lakehq/sail",
+  "n": 2,
+  "first": "2026-07-23",
+  "last": "2026-07-26",
+  "span_days": 3,
+  "instance_ids": [
+   "lakehq__sail-2284",
+   "lakehq__sail-2292"
+  ]
+ },
+ {
+  "repo": "monero-project/monero",
+  "n": 2,
+  "first": "2026-06-08",
+  "last": "2026-07-04",
+  "span_days": 26,
+  "instance_ids": [
+   "monero-project__monero-10747",
+   "monero-project__monero-10858"
+  ]
+ },
+ {
+  "repo": "naudio/NAudio",
+  "n": 2,
+  "first": "2026-06-25",
+  "last": "2026-06-30",
+  "span_days": 5,
+  "instance_ids": [
+   "naudio__NAudio-1352",
+   "naudio__NAudio-1372"
+  ]
+ },
+ {
+  "repo": "open-source-parsers/jsoncpp",
+  "n": 2,
+  "first": "2026-06-16",
+  "last": "2026-06-17",
+  "span_days": 1,
+  "instance_ids": [
+   "open-source-parsers__jsoncpp-1693",
+   "open-source-parsers__jsoncpp-1696"
+  ]
+ },
+ {
+  "repo": "root-project/root",
+  "n": 2,
+  "first": "2026-07-20",
+  "last": "2026-07-20",
+  "span_days": 0,
+  "instance_ids": [
+   "root-project__root-22854",
+   "root-project__root-22857"
+  ]
+ },
+ {
+  "repo": "DeusData/codebase-memory-mcp",
+  "n": 1,
+  "first": "2026-06-25",
+  "last": "2026-06-25",
+  "span_days": 0,
+  "instance_ids": [
+   "DeusData__codebase-memory-mcp-632"
+  ]
+ },
+ {
+  "repo": "IfcOpenShell/IfcOpenShell",
+  "n": 1,
+  "first": "2026-07-23",
+  "last": "2026-07-23",
+  "span_days": 0,
+  "instance_ids": [
+   "IfcOpenShell__IfcOpenShell-8887"
+  ]
+ },
+ {
+  "repo": "JasperFx/marten",
+  "n": 1,
+  "first": "2026-07-29",
+  "last": "2026-07-29",
+  "span_days": 0,
+  "instance_ids": [
+   "JasperFx__marten-5080"
+  ]
+ },
+ {
+  "repo": "NVlabs/cuda-oxide",
+  "n": 1,
+  "first": "2026-07-12",
+  "last": "2026-07-12",
+  "span_days": 0,
+  "instance_ids": [
+   "NVlabs__cuda-oxide-381"
+  ]
+ },
+ {
+  "repo": "OrchardCMS/OrchardCore",
+  "n": 1,
+  "first": "2026-07-01",
+  "last": "2026-07-01",
+  "span_days": 0,
+  "instance_ids": [
+   "OrchardCMS__OrchardCore-19492"
+  ]
+ },
+ {
+  "repo": "UglyToad/PdfPig",
+  "n": 1,
+  "first": "2026-06-27",
+  "last": "2026-06-27",
+  "span_days": 0,
+  "instance_ids": [
+   "UglyToad__PdfPig-1350"
+  ]
+ },
+ {
+  "repo": "apache/datafusion",
+  "n": 1,
+  "first": "2026-06-26",
+  "last": "2026-06-26",
+  "span_days": 0,
+  "instance_ids": [
+   "apache__datafusion-23201"
+  ]
+ },
+ {
+  "repo": "dotnetcore/BootstrapBlazor",
+  "n": 1,
+  "first": "2026-06-13",
+  "last": "2026-06-13",
+  "span_days": 0,
+  "instance_ids": [
+   "dotnetcore__BootstrapBlazor-8113"
+  ]
+ },
+ {
+  "repo": "fluent/fluent-bit",
+  "n": 1,
+  "first": "2026-07-02",
+  "last": "2026-07-02",
+  "span_days": 0,
+  "instance_ids": [
+   "fluent__fluent-bit-12029"
+  ]
+ },
+ {
+  "repo": "gitbutlerapp/gitbutler",
+  "n": 1,
+  "first": "2026-07-22",
+  "last": "2026-07-22",
+  "span_days": 0,
+  "instance_ids": [
+   "gitbutlerapp__gitbutler-14920"
+  ]
+ },
+ {
+  "repo": "luau-lang/luau",
+  "n": 1,
+  "first": "2026-07-05",
+  "last": "2026-07-05",
+  "span_days": 0,
+  "instance_ids": [
+   "luau-lang__luau-2506"
+  ]
+ },
+ {
+  "repo": "ml-explore/mlx",
+  "n": 1,
+  "first": "2026-06-06",
+  "last": "2026-06-06",
+  "span_days": 0,
+  "instance_ids": [
+   "ml-explore__mlx-3635"
+  ]
+ },
+ {
+  "repo": "nunit/nunit",
+  "n": 1,
+  "first": "2026-07-18",
+  "last": "2026-07-18",
+  "span_days": 0,
+  "instance_ids": [
+   "nunit__nunit-5351"
+  ]
+ },
+ {
+  "repo": "pola-rs/polars",
+  "n": 1,
+  "first": "2026-07-22",
+  "last": "2026-07-22",
+  "span_days": 0,
+  "instance_ids": [
+   "pola-rs__polars-28484"
+  ]
+ },
+ {
+  "repo": "ppy/osu",
+  "n": 1,
+  "first": "2026-06-18",
+  "last": "2026-06-18",
+  "span_days": 0,
+  "instance_ids": [
+   "ppy__osu-38107"
+  ]
+ },
+ {
+  "repo": "servo/servo",
+  "n": 1,
+  "first": "2026-07-06",
+  "last": "2026-07-06",
+  "span_days": 0,
+  "instance_ids": [
+   "servo__servo-46309"
+  ]
+ },
+ {
+  "repo": "tui-cs/Terminal.Gui",
+  "n": 1,
+  "first": "2026-06-13",
+  "last": "2026-06-13",
+  "span_days": 0,
+  "instance_ids": [
+   "tui-cs__Terminal.Gui-5487"
+  ]
+ },
+ {
+  "repo": "tursodatabase/turso",
+  "n": 1,
+  "first": "2026-07-29",
+  "last": "2026-07-29",
+  "span_days": 0,
+  "instance_ids": [
+   "tursodatabase__turso-8102"
+  ]
+ }
+]

@@ -1,0 +1,20 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Generating c split:   0%|          | 0/111 [00:00<?, ? examples/s]Generating c split: 100%|██████████| 111/111 [00:00<00:00, 4504.81 examples/s]
+Generating cpp split:   0%|          | 0/142 [00:00<?, ? examples/s]Generating cpp split: 100%|██████████| 142/142 [00:00<00:00, 3583.19 examples/s]
+Generating go split:   0%|          | 0/138 [00:00<?, ? examples/s]Generating go split: 100%|██████████| 138/138 [00:00<00:00, 3504.35 examples/s]
+Generating js split:   0%|          | 0/108 [00:00<?, ? examples/s]Generating js split: 100%|██████████| 108/108 [00:00<00:00, 3039.09 examples/s]
+Generating rust split:   0%|          | 0/171 [00:00<?, ? examples/s]Generating rust split: 100%|██████████| 171/171 [00:00<00:00, 3214.33 examples/s]
+Generating java split:   0%|          | 0/160 [00:00<?, ? examples/s]Generating java split: 100%|██████████| 160/160 [00:00<00:00, 2395.04 examples/s]
+Generating ts split:   0%|          | 0/111 [00:00<?, ? examples/s]Generating ts split: 100%|██████████| 111/111 [00:00<00:00, 4369.15 examples/s]
+Generating cs split:   0%|          | 0/136 [00:00<?, ? examples/s]Generating cs split: 100%|██████████| 136/136 [00:00<00:00, 2282.73 examples/s]
+split c: 111 rows
+split cpp: 142 rows
+split cs: 136 rows
+split go: 138 rows
+split java: 160 rows
+split js: 108 rows
+split rust: 171 rows
+split ts: 111 rows
+loaded 1077 tasks
+freshness gate: 309 admitted, 768 rejected
+wrote 309 tasks -> corpus/tasks.jsonl

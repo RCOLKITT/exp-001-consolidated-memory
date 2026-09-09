@@ -1,0 +1,61 @@
+{
+ "dataset": "SWE-bench-Live/MultiLang",
+ "split": "all",
+ "cutoff": "2026-05-31",
+ "n_tasks": 309,
+ "n_repos": 68,
+ "first": "2026-06-02",
+ "last": "2026-07-31",
+ "per_month": {
+  "2026-06": 78,
+  "2026-07": 231
+ },
+ "survivors_after_cutoff": {
+  "2024-07-01": {
+   "tasks": 309,
+   "repos": 68,
+   "repos_ge30": 1,
+   "repos_ge20": 2
+  },
+  "2025-01-01": {
+   "tasks": 309,
+   "repos": 68,
+   "repos_ge30": 1,
+   "repos_ge20": 2
+  },
+  "2025-04-01": {
+   "tasks": 309,
+   "repos": 68,
+   "repos_ge30": 1,
+   "repos_ge20": 2
+  },
+  "2025-07-01": {
+   "tasks": 309,
+   "repos": 68,
+   "repos_ge30": 1,
+   "repos_ge20": 2
+  },
+  "2026-01-01": {
+   "tasks": 309,
+   "repos": 68,
+   "repos_ge30": 1,
+   "repos_ge20": 2
+  }
+ },
+ "languages": {
+  "?": 309
+ },
+ "fields": [
+  "base_commit",
+  "created_at",
+  "environment_setup_commit",
+  "fail_to_pass",
+  "hints_text",
+  "instance_id",
+  "pass_to_pass",
+  "patch",
+  "problem_statement",
+  "repo",
+  "test_patch"
+ ]
+}
