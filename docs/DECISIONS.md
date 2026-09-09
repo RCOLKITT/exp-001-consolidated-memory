@@ -122,3 +122,31 @@ replaces it with `EmbeddingCosineSimilarity` over a pinned embedding model
 with a content-hash cache (adapters/code/similarity.py). Θ_surprise and
 `cluster_similarity` must be re-tuned on synthetic streams for that seam
 before pre-registration; the Jaccard values do not transfer.
+
+### D15. Stated model cutoffs (pre-registration input, from the vendor page)
+Source: https://platform.claude.com/docs/en/models/overview (read 2026-09-09).
+
+| Model | Training data cutoff | Reliable knowledge cutoff |
+|---|---|---|
+| claude-fable-5-1 | Jun 2026 | Jun 2026 |
+| claude-opus-5 | May 2026 | May 2026 |
+| claude-sonnet-5 | Jan 2026 | Jan 2026 |
+| claude-haiku-4-5 | Jul 2025 | Feb 2025 |
+
+The freshness gate uses the **training data** cutoff (the broader range),
+taken as the last day of the stated month. For `models.json` that is
+`{"claude-opus-5": "2026-05-31"}`.
+
+Consequence, from `results/phase0/2/corpus-summary.json`: the Python
+SWE-bench-Live `full` split runs 2021-07-22 → 2025-09-02. **No task in it
+postdates any Claude 5 model's cutoff.** Options, in order of preference:
+1. A corpus with 2026 tasks — SWE-bench-Live/MultiLang was refreshed
+   2026-08-21 per its README (run 4 measures its date range and chains).
+2. Evaluate a model whose cutoff precedes the corpus — only Haiku 4.5
+   (Jul 2025) qualifies, leaving August 2025 tasks at most; chains would be
+   far too short for Gate 2.
+3. Build fresh tasks ourselves from the long-chain repos' 2025-09 → now
+   issue history with the SWE-bench-Live curation pipeline (RepoLaunch),
+   which the corpus decision (§9.1) never anticipated and which costs Phase 0
+   its "4 days".
+Never weaken the gate to fit the corpus (§8, contamination).

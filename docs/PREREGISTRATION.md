@@ -8,7 +8,7 @@ that, changing any value below invalidates the result.
 |---|---|
 | Repositories (full list) | |
 | Negative-control repo | |
-| Model + stated training cutoff | |
+| Model + stated training cutoff | candidate: claude-opus-5, training data cutoff May 2026 (D15) — corpus must postdate 2026-05-31 |
 | Embedding model + version (similarity seam) | |
 | Chain split point per repo | |
 | Θ_surprise | 0.35 (spec default; confirm) |
