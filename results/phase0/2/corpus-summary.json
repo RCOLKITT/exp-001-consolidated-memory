@@ -1,0 +1,21 @@
+{
+ "split": "full",
+ "cutoff": "",
+ "n_tasks": 1888,
+ "n_repos": 223,
+ "first": "2021-07-22",
+ "last": "2025-09-02",
+ "fields": [
+  "base_commit",
+  "created_at",
+  "environment_setup_commit",
+  "fail_to_pass",
+  "hints_text",
+  "instance_id",
+  "pass_to_pass",
+  "patch",
+  "problem_statement",
+  "repo",
+  "test_patch"
+ ]
+}
