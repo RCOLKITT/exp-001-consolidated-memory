@@ -1,0 +1,43 @@
+# Gate tracker
+
+Any gate can end the experiment. Tick boxes only with evidence linked.
+
+## Gate 0 — Baseline (Phase 0)
+- [ ] Control-arm localization rate within a defensible margin of a published baseline — evidence: ______
+- [x] Freshness gate enforced in code, not by convention — `phase0/freshness_gate.py`, `tests/test_freshness_gate.py`
+- [ ] Harness reruns produce identical results on identical inputs — evidence: ______
+
+## Gate 1 — Mechanism (Phase 1)
+Run: `make gate1`
+
+| Assertion | Test | Status |
+|---|---|---|
+| Surprise gate discards the injected redundant fraction within tolerance | `tests/test_surprise_gate.py` | passing |
+| Promotion fires exactly at threshold, never earlier | `tests/test_promotion_gate.py::test_fires_exactly_at_threshold` | passing |
+| TTL removes unpromoted entries | `tests/test_ttl.py` | passing |
+| Same input + same memory version → identical output, every time | `tests/test_replay.py` | passing |
+| Clock skew: wall clock provably wrong, causal order right | `tests/test_clock_skew.py` | passing |
+| Supersession creates a new object; no mutation | `tests/test_supersession.py` | passing |
+
+- [x] All mechanism assertions pass (33 tests, `make test`)
+- [x] Clock-skew demonstration reproducible and written up — `docs/clock-skew.md`
+
+**Gate 1 status: passing on the synthetic kernel.** It stays provisional until
+the same assertions hold with the real similarity seam (embedding cosine) in
+Phase 2 — determinism of the embedding cache is the risk.
+
+## Gate 2 — Corpus (Phase 2)
+- [ ] Pre-registration published and timestamped — `docs/PREREGISTRATION.md`
+- [ ] Per-repo chains ≥ power-calc minimum in the build split
+- [ ] Oracle agreement with manual labels ≥ 95% on a 50-instance hand-check
+
+## Gate 3 — Learning (Phase 3) — expected failure point
+- [ ] Surprise gate discards > 60% of candidate writes
+- [ ] ≥ floor promoted memories per repo (floor from pre-registration)
+- [ ] Promoted memories human-legible on inspection
+
+## Gate 4 — Result (Phase 4)
+- [ ] Localization lift ≥ 15 pts absolute (or MDE if higher)
+- [ ] False-positive rise ≤ 5 pts absolute
+- [ ] Effect in a majority of repos
+- [ ] Negative-control repo shows no lift

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "memkernel"
+version = "0.1.0"
+description = "EXP-001 v2.0 — domain-independent consolidated-memory kernel (buffer, surprise gate, promotion gate, content-addressed store, vector clocks, replay, ledger)"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-cov>=5"]
+# Phase 2+ adapter deps are declared here so the kernel stays dependency-free.
+adapter = ["numpy>=1.26"]
+
+[tool.setuptools.packages.find]
+include = ["memkernel*", "adapters*", "phase0*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

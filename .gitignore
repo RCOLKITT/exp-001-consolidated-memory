@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+.venv/
+.env
+.env.*
+# Phase 0/2 corpus artifacts — never commit task images or repo checkouts
+corpus/
+runs/
+*.sqlite
