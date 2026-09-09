@@ -8,7 +8,9 @@ Full spec: [docs/EXP-001.md](docs/EXP-001.md). Gate tracker:
 [docs/GATES.md](docs/GATES.md). Decisions: [docs/DECISIONS.md](docs/DECISIONS.md).
 
 **Status:** Phase 1 kernel built and passing its mechanism assertions on
-synthetic streams. Phase 0 not started. Nothing pre-registered.
+synthetic streams. Phase 0 harness built and unit-tested, not yet run on the
+corpus (needs a machine with Hugging Face access and a model key —
+`phase0/RUNBOOK.md`). Nothing pre-registered.
 
 ## Layout
 
@@ -26,7 +28,15 @@ memkernel/            domain-independent kernel (no dependencies)
   provenance.py       knew_by_causal_order vs knew_by_wall_clock
   synthetic.py        event streams with known properties (Phase 1)
 adapters/code/        GitHub / SWE-bench-Live adapter (Phase 2; stubs + §6 config)
-phase0/               baseline reproduction; freshness gate (enforced in code)
+phase0/               baseline reproduction (RUNBOOK.md)
+  freshness_gate.py   tasks must postdate every model cutoff — enforced at import
+  corpus.py           SWE-bench-Live pull / local load -> tasks.jsonl
+  chains.py           per-repo chronological chains, split eligibility, report
+  ground_truth.py     gold patch -> hunk locations (feeds oracle + metric)
+  timemachine.py      pip pinning to base_commit date; freeze audit
+  verifier.py         control-arm file localizer; cached model client (determinism)
+  metrics.py          paired localization / false-positive rates, per repo
+  run_control.py      end-to-end control run + rerun comparison
 tests/                one test file per mechanism assertion
 docs/                 spec, pre-registration, gates, decisions, clock-skew write-up
 ```

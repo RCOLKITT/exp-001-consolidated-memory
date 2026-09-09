@@ -5,7 +5,14 @@ kernel. Each entry: what was decided, why, and what it forecloses.
 
 ## Open (spec §9)
 1. **Primary corpus** — ChainSWE vs SWE-bench-Live. Resolve in Phase 0 by
-   measuring per-repo chain length.
+   measuring per-repo chain length (`python -m phase0.chains`). Known so far:
+   ChainSWE is 304 issues across 54 Python repos mined from six SWE-bench-family
+   sets, i.e. ~5.6 issues per chain on average, which is far below any
+   plausible build+eval split. SWE-bench-Live (Python) `full` adds ~50 verified
+   issues per month across its repos. Expect the answer to be "SWE-bench-Live
+   full, restricted to the few repos with long chains", and expect Gate 2 to
+   bite on chain length. Its dataset could not be pulled from the cloud
+   session (huggingface.co blocked), so the report is produced by the runbook.
 2. **Retrieval index** — reuse VasperaMemory's or stand up a separate one.
    Leaning separate: Gate 1 determinism requires a cache keyed by content
    hash with a pinned embedding model, which is easier to guarantee in
@@ -58,3 +65,37 @@ pre-registration.
 `store.freeze()` records the exact set of live object ids under a digest.
 `store.at(v)` returns that set forever, even after later supersessions.
 `at(None)` returns nothing: this is the control arm.
+
+### D8. Phase 0 localization runs on git checkouts, not Docker images
+File-level localization needs the source tree at `base_commit` and nothing
+else: no dependency install, no test execution. `run_control` clones each
+repo once and checks out per task. Docker images (`Task.docker_image`, the
+`starryzhang/sweb.eval.x86_64.*` namespace) and time-machine pinning
+(`phase0/timemachine.py`) are wired but only exercised when execution-based
+checks are needed (Gate 2 oracle hand-check, or a later line-level metric).
+This keeps Phase 0 runnable on a laptop with git, HF access, and a model key.
+
+### D9. Localization metric is task-level hit@k over files, paired with flag-level FP
+- A task is "localized" if any of its top-k flagged files overlaps a gold
+  hunk in a non-test file.
+- FP rate is over flags: flagged files with no gold overlap / all flags.
+- k is fixed for the whole experiment (default 3) and pre-registered.
+- Test files are excluded from ground truth; a verifier that names the test
+  is not localizing the defect.
+Rationale: file-level is what published baselines report; the paired FP
+metric is what stops threshold games (§8). Line-level is a later refinement
+and would need Docker (D8).
+
+### D10. Published baseline reference is a pre-registration value, not a memory
+arXiv and the SWE-bench-Live leaderboard were unreachable from the cloud
+session, so no number is recorded here. Do not fill Gate 0 from recollection.
+Candidates to read and pin: the Agentless paper's localization tables
+(arXiv 2407.01489) and the SWE-bench-Live leaderboard. Record metric
+definition, k, model, and corpus alongside the number.
+
+### D11. Determinism is a cache property, not a sampling property
+Model sampling is not reproducible. The harness content-addresses every
+request (sha256 of model, system, user prompt, schema, effort) and stores the
+response; `--offline` reruns fail on any miss. "Identical results on identical
+inputs" (Gate 0.3) is therefore a claim about the harness, and the manifest
+records cache hits/misses so a reviewer can see it.
