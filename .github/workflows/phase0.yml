@@ -1,0 +1,124 @@
+# Phase 0 on a GitHub-hosted runner: the runner reaches Hugging Face and can
+# hold the model key as a secret, which the authoring session cannot.
+# Small results are committed under results/phase0/<run_number>/ so they can
+# be read back through the GitHub API; bulky files go to artifacts.
+name: phase0
+on:
+  workflow_dispatch:
+    inputs:
+      split:
+        description: "SWE-bench-Live split (lite | verified | full)"
+        default: "full"
+      cutoff:
+        description: "Training cutoff (YYYY-MM-DD) of the model under evaluation. Blank = no freshness gate (exploration only)."
+        default: ""
+      model:
+        description: "Model id for the control arm"
+        default: "claude-opus-5"
+      run_control:
+        description: "Run the control arm (spends API credit; needs ANTHROPIC_API_KEY secret)"
+        type: boolean
+        default: false
+      limit:
+        description: "Max tasks for the control arm"
+        default: "50"
+      top_k:
+        default: "3"
+permissions:
+  contents: write
+concurrency:
+  group: phase0-results
+jobs:
+  corpus:
+    runs-on: ubuntu-latest
+    outputs:
+      dir: ${{ steps.dir.outputs.dir }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install -e ".[dev]" "datasets>=3"
+      - id: dir
+        run: echo "dir=results/phase0/${{ github.run_number }}" >> "$GITHUB_OUTPUT"
+      - name: Pull corpus (+ freshness gate when a cutoff is given)
+        run: |
+          set -euo pipefail
+          mkdir -p corpus "${{ steps.dir.outputs.dir }}"
+          if [ -n "${{ inputs.cutoff }}" ]; then
+            printf '{"%s": "%s"}\n' "${{ inputs.model }}" "${{ inputs.cutoff }}" > corpus/models.json
+            python -m phase0.corpus pull --split "${{ inputs.split }}" --out corpus/tasks.jsonl --models corpus/models.json 2> corpus/pull.log
+            cp corpus/models.json "${{ steps.dir.outputs.dir }}/models.json"
+            cp corpus/tasks.freshness.jsonl "${{ steps.dir.outputs.dir }}/freshness.jsonl"
+          else
+            python -m phase0.corpus pull --split "${{ inputs.split }}" --out corpus/tasks.jsonl 2> corpus/pull.log
+          fi
+          cat corpus/pull.log
+          cp corpus/pull.log "${{ steps.dir.outputs.dir }}/pull.log"
+      - name: Chain report
+        run: |
+          set -euo pipefail
+          D="${{ steps.dir.outputs.dir }}"
+          python -m phase0.chains corpus/tasks.jsonl --min-build 20 --min-eval 10 --md "$D/chain-report.md" --json "$D/chains.json" > /dev/null
+          python - <<'PY' > "$D/corpus-summary.json"
+          import json, collections
+          rows=[json.loads(l) for l in open("corpus/tasks.jsonl")]
+          by=collections.Counter(r["repo"] for r in rows)
+          dates=sorted(r["created_at"][:10] for r in rows)
+          print(json.dumps({"split":"${{ inputs.split }}","cutoff":"${{ inputs.cutoff }}","n_tasks":len(rows),"n_repos":len(by),"first":dates[0] if dates else None,"last":dates[-1] if dates else None,"fields":sorted(rows[0].keys()) if rows else []},indent=1))
+          PY
+          cat "$D/corpus-summary.json"; head -12 "$D/chain-report.md"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: corpus-${{ github.run_number }}
+          path: corpus/
+          retention-days: 90
+      - name: Commit results
+        run: |
+          set -euo pipefail
+          git config user.name "phase0-bot"; git config user.email "phase0-bot@users.noreply.github.com"
+          git add results/
+          git commit -m "results(phase0): run ${{ github.run_number }} corpus + chain report [skip ci]" || exit 0
+          git pull --rebase origin main && git push origin HEAD:main
+  control:
+    needs: corpus
+    if: ${{ inputs.run_control }}
+    runs-on: ubuntu-latest
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { ref: main }
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install -e ".[dev]" "anthropic>=1"
+      - uses: actions/download-artifact@v4
+        with:
+          name: corpus-${{ github.run_number }}
+          path: corpus/
+      - name: Control arm, then offline rerun, then compare
+        run: |
+          set -euo pipefail
+          test -n "$ANTHROPIC_API_KEY" || { echo "ANTHROPIC_API_KEY secret is not set"; exit 2; }
+          M=""; [ -f corpus/models.json ] && M="--models corpus/models.json"
+          python -m phase0.run_control --tasks corpus/tasks.jsonl $M --repos-dir corpus/repos --out runs/control-a --model "${{ inputs.model }}" --top-k "${{ inputs.top_k }}" --limit "${{ inputs.limit }}"
+          python -m phase0.run_control --tasks corpus/tasks.jsonl $M --repos-dir corpus/repos --out runs/control-b --model "${{ inputs.model }}" --top-k "${{ inputs.top_k }}" --limit "${{ inputs.limit }}" --cache runs/control-a/cache.jsonl --offline
+          python -m phase0.run_control --compare runs/control-a runs/control-b | tee runs/compare.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: control-${{ github.run_number }}
+          path: runs/
+          retention-days: 90
+      - name: Commit results
+        if: always()
+        run: |
+          set -euo pipefail
+          D="${{ needs.corpus.outputs.dir }}/control"; mkdir -p "$D"
+          for f in metrics.json manifest.json flags.jsonl freshness.jsonl; do [ -f runs/control-a/$f ] && cp runs/control-a/$f "$D/"; done
+          [ -f runs/compare.txt ] && cp runs/compare.txt "$D/"
+          git config user.name "phase0-bot"; git config user.email "phase0-bot@users.noreply.github.com"
+          git add results/
+          git commit -m "results(phase0): run ${{ github.run_number }} control arm [skip ci]" || exit 0
+          git pull --rebase origin main && git push origin HEAD:main
