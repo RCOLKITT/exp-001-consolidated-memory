@@ -4,6 +4,11 @@
 # be read back through the GitHub API; bulky files go to artifacts.
 name: phase0
 on:
+  # Two ways to start a run: the Actions UI (inputs below), or pushing a branch
+  # named run/phase0-* that carries a .phase0-run.json with the same keys —
+  # the path used when the API caller cannot dispatch workflows.
+  push:
+    branches: ["run/phase0-*"]
   workflow_dispatch:
     inputs:
       split:
@@ -33,25 +38,53 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       dir: ${{ steps.dir.outputs.dir }}
+      split: ${{ steps.cfg.outputs.split }}
+      cutoff: ${{ steps.cfg.outputs.cutoff }}
+      model: ${{ steps.cfg.outputs.model }}
+      run_control: ${{ steps.cfg.outputs.run_control }}
+      limit: ${{ steps.cfg.outputs.limit }}
+      top_k: ${{ steps.cfg.outputs.top_k }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
       - run: python -m pip install -e ".[dev]" "datasets>=3"
+      - id: cfg
+        name: Resolve run config (dispatch inputs override .phase0-run.json)
+        env:
+          IN_SPLIT: ${{ steps.cfg.outputs.split }}
+          IN_CUTOFF: ${{ steps.cfg.outputs.cutoff }}
+          IN_MODEL: ${{ steps.cfg.outputs.model }}
+          IN_RUN_CONTROL: ${{ inputs.run_control }}
+          IN_LIMIT: ${{ inputs.limit }}
+          IN_TOP_K: ${{ inputs.top_k }}
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, os
+          cfg = json.load(open(".phase0-run.json")) if os.path.exists(".phase0-run.json") else {}
+          def pick(env, key, default):
+              v = os.environ.get(env, "")
+              return v if v not in ("", "false") or key == "cutoff" and v != "" else cfg.get(key, default)
+          out = {"split": pick("IN_SPLIT", "split", "full"), "cutoff": pick("IN_CUTOFF", "cutoff", ""),
+                 "model": pick("IN_MODEL", "model", "claude-opus-5"), "run_control": str(pick("IN_RUN_CONTROL", "run_control", False)).lower(),
+                 "limit": str(pick("IN_LIMIT", "limit", 50)), "top_k": str(pick("IN_TOP_K", "top_k", 3))}
+          for k, v in out.items(): print(f"{k}={v}")
+          print(json.dumps(out))
+          PY
       - id: dir
         run: echo "dir=results/phase0/${{ github.run_number }}" >> "$GITHUB_OUTPUT"
       - name: Pull corpus (+ freshness gate when a cutoff is given)
         run: |
           set -euo pipefail
           mkdir -p corpus "${{ steps.dir.outputs.dir }}"
-          if [ -n "${{ inputs.cutoff }}" ]; then
-            printf '{"%s": "%s"}\n' "${{ inputs.model }}" "${{ inputs.cutoff }}" > corpus/models.json
-            python -m phase0.corpus pull --split "${{ inputs.split }}" --out corpus/tasks.jsonl --models corpus/models.json 2> corpus/pull.log
+          if [ -n "${{ steps.cfg.outputs.cutoff }}" ]; then
+            printf '{"%s": "%s"}\n' "${{ steps.cfg.outputs.model }}" "${{ steps.cfg.outputs.cutoff }}" > corpus/models.json
+            python -m phase0.corpus pull --split "${{ steps.cfg.outputs.split }}" --out corpus/tasks.jsonl --models corpus/models.json 2> corpus/pull.log
             cp corpus/models.json "${{ steps.dir.outputs.dir }}/models.json"
             cp corpus/tasks.freshness.jsonl "${{ steps.dir.outputs.dir }}/freshness.jsonl"
           else
-            python -m phase0.corpus pull --split "${{ inputs.split }}" --out corpus/tasks.jsonl 2> corpus/pull.log
+            python -m phase0.corpus pull --split "${{ steps.cfg.outputs.split }}" --out corpus/tasks.jsonl 2> corpus/pull.log
           fi
           cat corpus/pull.log
           cp corpus/pull.log "${{ steps.dir.outputs.dir }}/pull.log"
@@ -65,7 +98,7 @@ jobs:
           rows=[json.loads(l) for l in open("corpus/tasks.jsonl")]
           by=collections.Counter(r["repo"] for r in rows)
           dates=sorted(r["created_at"][:10] for r in rows)
-          print(json.dumps({"split":"${{ inputs.split }}","cutoff":"${{ inputs.cutoff }}","n_tasks":len(rows),"n_repos":len(by),"first":dates[0] if dates else None,"last":dates[-1] if dates else None,"fields":sorted(rows[0].keys()) if rows else []},indent=1))
+          print(json.dumps({"split":"${{ steps.cfg.outputs.split }}","cutoff":"${{ steps.cfg.outputs.cutoff }}","n_tasks":len(rows),"n_repos":len(by),"first":dates[0] if dates else None,"last":dates[-1] if dates else None,"fields":sorted(rows[0].keys()) if rows else []},indent=1))
           PY
           cat "$D/corpus-summary.json"; head -12 "$D/chain-report.md"
       - uses: actions/upload-artifact@v4
@@ -79,16 +112,16 @@ jobs:
           git config user.name "phase0-bot"; git config user.email "phase0-bot@users.noreply.github.com"
           git add results/
           git commit -m "results(phase0): run ${{ github.run_number }} corpus + chain report [skip ci]" || exit 0
-          git pull --rebase origin main && git push origin HEAD:main
+          git pull --rebase origin "$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME"
   control:
     needs: corpus
-    if: ${{ inputs.run_control }}
+    if: needs.corpus.outputs.run_control == 'true'
     runs-on: ubuntu-latest
     env:
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
     steps:
       - uses: actions/checkout@v4
-        with: { ref: main }
+        with: { ref: "${{ github.ref_name }}" }
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -102,8 +135,8 @@ jobs:
           set -euo pipefail
           test -n "$ANTHROPIC_API_KEY" || { echo "ANTHROPIC_API_KEY secret is not set"; exit 2; }
           M=""; [ -f corpus/models.json ] && M="--models corpus/models.json"
-          python -m phase0.run_control --tasks corpus/tasks.jsonl $M --repos-dir corpus/repos --out runs/control-a --model "${{ inputs.model }}" --top-k "${{ inputs.top_k }}" --limit "${{ inputs.limit }}"
-          python -m phase0.run_control --tasks corpus/tasks.jsonl $M --repos-dir corpus/repos --out runs/control-b --model "${{ inputs.model }}" --top-k "${{ inputs.top_k }}" --limit "${{ inputs.limit }}" --cache runs/control-a/cache.jsonl --offline
+          python -m phase0.run_control --tasks corpus/tasks.jsonl $M --repos-dir corpus/repos --out runs/control-a --model "${{ needs.corpus.outputs.model }}" --top-k "${{ needs.corpus.outputs.top_k }}" --limit "${{ needs.corpus.outputs.limit }}"
+          python -m phase0.run_control --tasks corpus/tasks.jsonl $M --repos-dir corpus/repos --out runs/control-b --model "${{ needs.corpus.outputs.model }}" --top-k "${{ needs.corpus.outputs.top_k }}" --limit "${{ needs.corpus.outputs.limit }}" --cache runs/control-a/cache.jsonl --offline
           python -m phase0.run_control --compare runs/control-a runs/control-b | tee runs/compare.txt
       - uses: actions/upload-artifact@v4
         if: always()
@@ -121,4 +154,4 @@ jobs:
           git config user.name "phase0-bot"; git config user.email "phase0-bot@users.noreply.github.com"
           git add results/
           git commit -m "results(phase0): run ${{ github.run_number }} control arm [skip ci]" || exit 0
-          git pull --rebase origin main && git push origin HEAD:main
+          git pull --rebase origin "$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME"
