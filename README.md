@@ -7,11 +7,13 @@ every belief it acquired traceable to the evidence that produced it?
 Full spec: [docs/EXP-001.md](docs/EXP-001.md). Gate tracker:
 [docs/GATES.md](docs/GATES.md). Decisions: [docs/DECISIONS.md](docs/DECISIONS.md).
 
-**Status:** Phase 1 kernel built and passing its mechanism assertions on
-synthetic streams. Phase 0–4 harness built and tested offline end to end,
-not yet run on the corpus (needs a machine with Hugging Face access and a
-model key — `phase0/RUNBOOK.md`). Nothing pre-registered. Similarity seam is
-still the Jaccard placeholder (D14).
+**Status:** Phase 1 kernel passes its mechanism assertions on synthetic
+streams. Phase 0–4 harness built and tested offline end to end. Phase 0
+corpus runs done on GitHub Actions (`results/phase0/`): the public corpora
+and the freshness gate conflict for every Claude 5 model — see
+[docs/phase0-findings.md](docs/phase0-findings.md) for the numbers and the
+options. Control arm not run (model choice pending). Nothing pre-registered.
+Similarity seam is still the Jaccard placeholder (D14).
 
 ## Layout
 

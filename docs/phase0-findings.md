@@ -31,8 +31,8 @@ Tasks surviving "created strictly after the cutoff":
 | 2025-04-01 | 591 / 3 | 1,066 / 7 |
 | 2025-07-01 (≈ Haiku 4.5) | 248 / 0 | 1,006 / 7 |
 | 2026-01-01 (≈ Sonnet 5) | **0 / 0** | 663 / 5 |
-| 2026-01-31 Sonnet 5, gated run 5 | — | _fill from results/phase0/5_ |
-| 2026-05-31 Opus 5, gated run 6 | — | _fill from results/phase0/6_ |
+| 2026-01-31 Sonnet 5, gated run 5 | — | **659 / 5** (227 repos; 1 repo ≥ 30: httrack 38; then duckdb 26, floci 23, langchain4j 23, codegraph 20) |
+| 2026-05-31 Opus 5, gated run 6 | — | **309 / 2** (68 repos; httrack 38, duckdb 25; median chain 3) |
 
 The Python corpus stopped growing after August 2025 (per-month counts:
 2025-06: 109, 2025-07: 115, 2025-08: 137, 2025-09: 3), despite the README's
@@ -55,8 +55,8 @@ oracle. The public data satisfies any two.
 | Option | Fresh? | Chains? | Cost | Notes |
 |---|---|---|---|---|
 | A. Model with a ≤ mid-2024 cutoff on the Python corpus | yes | **13 repos ≥ 20** | new `ModelClient` for that model | The corpus is rich for it: 1,392 fresh tasks. Choose the model to fit the gate, not the corpus to fit the model. Localization quality will be lower than Opus 5; the *lift* is what is measured, not the level. |
-| B. Sonnet 5 on MultiLang 2026 tasks | yes | weak (≤ 5 repos ≥ 20, 1 ≥ 30) | per-language file trees in the adapter | Gated run 5 gives exact chains. Probably 2–3 usable repos at a smaller split; power will be thin. |
-| C. Opus 5 on MultiLang after May 2026 | yes | very weak | as B | ~309 tasks in Jun–Jul 2026; gated run 6 gives chains. Likely fails Gate 2 outright. |
+| B. Sonnet 5 on MultiLang 2026 tasks | yes | weak: 5 repos ≥ 20 (httrack 38, duckdb 26, floci 23, langchain4j 23, codegraph 20), 4 languages | per-language file trees in the adapter | Run 5. At a 12-build / 8-eval split, five repos and ~40 eval tasks total: far below the ~163 per arm the power calculation asks for at a 15-point MDE. |
+| C. Opus 5 on MultiLang after May 2026 | yes | very weak: httrack 38, duckdb 25, then ≤ 17 | as B | Run 6. Fails Gate 2 on chain length. |
 | D. Build fresh Python tasks from the 13 long-chain repos' post-2025-09 issues | yes | yes, by construction | weeks: the SWE-bench-Live curation pipeline + RepoLaunch + validation | Turns Phase 0 into a corpus-construction project. Also yields a publishable dataset. |
 | E. Weaken the gate | — | — | — | **Not an option** (§8). A contaminated result is uninterpretable. |
 
