@@ -30,17 +30,25 @@ the same assertions hold with the real similarity seam (embedding cosine) in
 Phase 2 — determinism of the embedding cache is the risk.
 
 ## Gate 2 — Corpus (Phase 2)
+Tooling: `phase2/power.py` (n per arm / MDE), `phase2/handcheck.py` (oracle vs manual, exit 1 below 95%),
+`adapters/code/pipeline.py` (three seams wired to the kernel; `tests/test_pipeline.py`).
+
 - [ ] Pre-registration published and timestamped — `docs/PREREGISTRATION.md`
-- [ ] Per-repo chains ≥ power-calc minimum in the build split
-- [ ] Oracle agreement with manual labels ≥ 95% on a 50-instance hand-check
+- [ ] Per-repo chains ≥ power-calc minimum in the build split — `python -m phase2.power --p0 <Gate 0 rate> --mde 0.15` vs `docs/chain-report.md`
+- [ ] Oracle agreement with manual labels ≥ 95% on a 50-instance hand-check — `python -m phase2.handcheck score handcheck.csv`
+- [ ] Similarity seam replaced with pinned embedding cosine and Θ re-tuned (D14)
 
 ## Gate 3 — Learning (Phase 3) — expected failure point
-- [ ] Surprise gate discards > 60% of candidate writes
-- [ ] ≥ floor promoted memories per repo (floor from pre-registration)
-- [ ] Promoted memories human-legible on inspection
+Run: `python -m phase3.learn …` → `runs/learn-*/<repo>/gate3.json`
+
+- [ ] Surprise gate discards > 60% of candidate writes — `gate3.json: discard_rate`
+- [ ] ≥ floor promoted memories per repo (floor from pre-registration) — `gate3.json: promoted`
+- [ ] Promoted memories human-legible on inspection — read `kernel.json: objects[].content`
 
 ## Gate 4 — Result (Phase 4)
-- [ ] Localization lift ≥ 15 pts absolute (or MDE if higher)
-- [ ] False-positive rise ≤ 5 pts absolute
-- [ ] Effect in a majority of repos
-- [ ] Negative-control repo shows no lift
+Run: `python -m phase4.evaluate …` → `runs/eval-*/gate4.json`
+
+- [ ] Localization lift ≥ 15 pts absolute (or MDE if higher) — `localization_lift_pts`
+- [ ] False-positive rise ≤ 5 pts absolute — `false_positive_rise_pts`
+- [ ] Effect in a majority of repos — `effect_in_majority_of_repos`
+- [ ] Negative-control repo shows no lift — `negative_control_lift`

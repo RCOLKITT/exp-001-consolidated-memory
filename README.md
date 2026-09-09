@@ -8,9 +8,10 @@ Full spec: [docs/EXP-001.md](docs/EXP-001.md). Gate tracker:
 [docs/GATES.md](docs/GATES.md). Decisions: [docs/DECISIONS.md](docs/DECISIONS.md).
 
 **Status:** Phase 1 kernel built and passing its mechanism assertions on
-synthetic streams. Phase 0 harness built and unit-tested, not yet run on the
-corpus (needs a machine with Hugging Face access and a model key —
-`phase0/RUNBOOK.md`). Nothing pre-registered.
+synthetic streams. Phase 0–4 harness built and tested offline end to end,
+not yet run on the corpus (needs a machine with Hugging Face access and a
+model key — `phase0/RUNBOOK.md`). Nothing pre-registered. Similarity seam is
+still the Jaccard placeholder (D14).
 
 ## Layout
 
@@ -25,9 +26,17 @@ memkernel/            domain-independent kernel (no dependencies)
   ledger.py           hash-chained outcome ledger
   kernel.py           orchestration; every mutation traced for replay
   replay.py           replay a trace, compare two kernels
+  persist.py          save/load a kernel between phases (ledger re-verified on load)
   provenance.py       knew_by_causal_order vs knew_by_wall_clock
   synthetic.py        event streams with known properties (Phase 1)
-adapters/code/        GitHub / SWE-bench-Live adapter (Phase 2; stubs + §6 config)
+adapters/code/        GitHub / SWE-bench-Live adapter
+  oracle.py           flagged location vs gold hunks -> good | bad | unknown
+  similarity.py       embedding cosine with content-hash cache (Phase 2 pins the model)
+  policy.py           §6 promotion constants
+  pipeline.py         one kernel per repo: learn (Phase 3) and two-arm evaluate (Phase 4)
+phase2/               power.py (n per arm / MDE), handcheck.py (oracle vs manual labels)
+phase3/learn.py       build split -> kernel.json + gate3.json per repo
+phase4/evaluate.py    eval split, both arms interleaved -> gate4.json
 phase0/               baseline reproduction (RUNBOOK.md)
   freshness_gate.py   tasks must postdate every model cutoff — enforced at import
   corpus.py           SWE-bench-Live pull / local load -> tasks.jsonl

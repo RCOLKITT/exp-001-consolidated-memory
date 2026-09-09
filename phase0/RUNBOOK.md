@@ -72,3 +72,35 @@ and point pip at it; audit with `check_freeze`.
 - [ ] control-arm localization within a defensible margin of the published reference (step 5)
 - [x] freshness gate enforced in code (step 1; `tests/test_freshness_gate.py`)
 - [ ] `--compare` exit 0 on a rerun (step 4)
+
+---
+
+# Phases 2–4 (only after Gates 0 and 1)
+
+## 7. Pre-register, then split
+Fill `docs/PREREGISTRATION.md`, commit, tag `prereg-v1`. Write `corpus/split.json`
+= `{"owner/name": N}` with N build tasks per repo from the chain report and
+`python -m phase2.power --p0 <Gate 0 rate> --mde 0.15`. Name the negative-control repo.
+
+## 8. Oracle hand-check (Gate 2.3)
+```bash
+python -m phase2.handcheck export runs/control-001/flags.jsonl corpus/tasks.jsonl --n 50 --seed 1 --out handcheck.csv
+# fill `manual` by reading each gold patch; then:
+python -m phase2.handcheck score handcheck.csv
+```
+
+## 9. Learn (Phase 3), then freeze
+```bash
+python -m phase3.learn --tasks corpus/tasks.jsonl --models corpus/models.json --split corpus/split.json \
+  --repos-dir corpus/repos --out runs/learn-001 --negative-control owner/name
+cat runs/learn-001/*/gate3.json          # discard_rate > 0.60 and promoted >= floor, per repo
+```
+
+## 10. Evaluate (Phase 4)
+```bash
+python -m phase4.evaluate --tasks corpus/tasks.jsonl --models corpus/models.json --split corpus/split.json \
+  --learn-dir runs/learn-001 --repos-dir corpus/repos --out runs/eval-001 --seed 7 --negative-control owner/name
+cat runs/eval-001/gate4.json
+```
+Both arms run on every eval task, interleaved, task order seeded. The only
+difference between arms is the memory section of the prompt.

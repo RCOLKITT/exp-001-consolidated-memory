@@ -99,3 +99,26 @@ request (sha256 of model, system, user prompt, schema, effort) and stores the
 response; `--offline` reruns fail on any miss. "Identical results on identical
 inputs" (Gate 0.3) is therefore a claim about the harness, and the manifest
 records cache hits/misses so a reviewer can see it.
+
+### D12. A memory is `symptom => location :: reason`
+First draft excluded the issue text from memory content so memory would
+capture "where defects live, not what issues say". The first end-to-end test
+showed why that cannot work: retrieval is keyed by the new issue's text, and
+a location-only memory shares no tokens with it, so the treatment arm never
+retrieved anything. A defect pattern that can be *recalled* must pair the
+symptom (the issue's first line, i.e. its title) with the location. The
+surprise gate still de-duplicates on the whole string, so repeated
+symptom+location pairs reinforce rather than re-write.
+
+### D13. Learning consults memory as it grows
+During Phase 3 the verifier retrieves from the latest promoted snapshot
+(`snapshot()` + `pin()` after every promotion that adds memory). This is the
+"treatment pipeline" of the spec; it also means the build split produces
+retrieval ledger entries that show when memory first became usable.
+
+### D14. Similarity seam is still the Jaccard placeholder
+`phase3/learn.py::similarity()` returns TokenJaccardSimilarity. Phase 2
+replaces it with `EmbeddingCosineSimilarity` over a pinned embedding model
+with a content-hash cache (adapters/code/similarity.py). Θ_surprise and
+`cluster_similarity` must be re-tuned on synthetic streams for that seam
+before pre-registration; the Jaccard values do not transfer.

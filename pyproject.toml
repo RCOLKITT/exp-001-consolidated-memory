@@ -17,7 +17,7 @@ adapter = ["numpy>=1.26"]
 corpus = ["datasets>=3", "anthropic>=1", "pypi-timemachine>=0.3"]
 
 [tool.setuptools.packages.find]
-include = ["memkernel*", "adapters*", "phase0*"]
+include = ["memkernel*", "adapters*", "phase0*", "phase2*", "phase3*", "phase4*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

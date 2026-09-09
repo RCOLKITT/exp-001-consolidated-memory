@@ -25,6 +25,20 @@ class KernelError(RuntimeError):
     pass
 
 
+def counting_clock(start: float = 1_700_000_000.0, step: float = 1.0) -> Callable[[], float]:
+    """Deterministic wall clock for reproducible runs. Wall clock is recorded,
+    never used for ordering, and excluded from every hash — so this only
+    makes ledgers human-comparable across runs."""
+    n = -1
+
+    def _clock() -> float:
+        nonlocal n
+        n += 1
+        return start + n * step
+
+    return _clock
+
+
 @dataclass(frozen=True)
 class KernelConfig:
     theta_surprise: float = 0.35

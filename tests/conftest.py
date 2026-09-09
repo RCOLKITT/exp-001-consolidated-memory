@@ -1,14 +1,10 @@
-import itertools
-
 import pytest
 
 from memkernel import Kernel, KernelConfig, PromotionPolicy
 from memkernel.seams import PassthroughOracle, TokenJaccardSimilarity
 
 
-def fixed_clock(start: float = 1_700_000_000.0, step: float = 1.0):
-    c = itertools.count()
-    return lambda: start + next(c) * step
+from memkernel.kernel import counting_clock as fixed_clock  # noqa: E402
 
 
 @pytest.fixture
