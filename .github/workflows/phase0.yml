@@ -70,7 +70,7 @@ jobs:
                  "model": pick("IN_MODEL", "model", "claude-opus-5"), "run_control": str(pick("IN_RUN_CONTROL", "run_control", False)).lower(),
                  "limit": str(pick("IN_LIMIT", "limit", 50)), "top_k": str(pick("IN_TOP_K", "top_k", 3))}
           for k, v in out.items(): print(f"{k}={v}")
-          print(json.dumps(out))
+          import sys; print(json.dumps(out), file=sys.stderr)
           PY
       - id: dir
         run: echo "dir=results/phase0/${{ github.run_number }}" >> "$GITHUB_OUTPUT"
