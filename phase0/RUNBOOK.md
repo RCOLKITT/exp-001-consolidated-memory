@@ -1,7 +1,29 @@
-# Phase 0 runbook — run this on a machine with Docker, Hugging Face access, and a model key
+# Phase 0 runbook
 
-Everything below is scripted; the cloud session that built it had none of
-the three, so nothing here has been run against the real corpus yet.
+Two ways to run Phase 0. Both use the same scripts.
+
+## A. On GitHub Actions (no laptop needed)
+`.github/workflows/phase0.yml` runs on a hosted runner that can reach Hugging
+Face and hold the model key. Start a run either from the Actions tab
+("phase0" → Run workflow) or by pushing a branch named `run/phase0-<n>` that
+carries a `.phase0-run.json`:
+```json
+{"dataset": "SWE-bench-Live/SWE-bench-Live", "split": "full", "cutoff": "YYYY-MM-DD",
+ "model": "claude-opus-5", "run_control": true, "limit": 50, "top_k": 3}
+```
+- Small results are committed back to that branch under `results/phase0/<run_number>/`
+  (corpus summary with per-month histogram and cutoff survivor counts, chain
+  report, and for the control arm: metrics, manifest, flags, compare). Merge
+  the branch into main to keep them.
+- The corpus and model-response cache are uploaded as 90-day artifacts.
+- The control job needs the repository secret `ANTHROPIC_API_KEY`
+  (Settings → Secrets and variables → Actions). Without it the job exits 2
+  before spending anything. It spends API credit: keep `limit` small first.
+- `cutoff` blank = no freshness gate (exploration only). Never report a
+  number from an ungated run.
+
+## B. On your machine
+Everything below is the same pipeline, run locally.
 
 ## 0. Setup
 ```bash
