@@ -32,6 +32,9 @@ on:
       model_extra:
         description: "openai-compatible only: JSON merged into each request (provider pinning)"
         default: ""
+      repos:
+        description: "restrict the control arm to these repos (comma-separated owner/name); blank = all"
+        default: ""
       run_control:
         description: "Run the control arm (spends API credit; needs ANTHROPIC_API_KEY secret)"
         type: boolean
@@ -60,6 +63,7 @@ jobs:
       run_control: ${{ steps.cfg.outputs.run_control }}
       limit: ${{ steps.cfg.outputs.limit }}
       top_k: ${{ steps.cfg.outputs.top_k }}
+      repos: ${{ steps.cfg.outputs.repos }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -85,7 +89,8 @@ jobs:
           out = {"dataset": pick("IN_DATASET", "dataset", "SWE-bench-Live/SWE-bench-Live"), "split": pick("IN_SPLIT", "split", "full"), "cutoff": pick("IN_CUTOFF", "cutoff", ""),
                  "model": pick("IN_MODEL", "model", "claude-opus-5"), "provider": pick("IN_PROVIDER", "provider", "anthropic"),
                  "base_url": pick("IN_BASE_URL", "base_url", ""), "model_extra": json.dumps(cfg["model_extra"]) if isinstance(cfg.get("model_extra"), dict) else pick("IN_MODEL_EXTRA", "model_extra", ""), "run_control": str(pick("IN_RUN_CONTROL", "run_control", False)).lower(),
-                 "limit": str(pick("IN_LIMIT", "limit", 50)), "top_k": str(pick("IN_TOP_K", "top_k", 3))}
+                 "limit": str(pick("IN_LIMIT", "limit", 50)), "top_k": str(pick("IN_TOP_K", "top_k", 3)),
+                 "repos": ",".join(cfg["repos"]) if isinstance(cfg.get("repos"), list) else pick("IN_REPOS", "repos", "")}
           for k, v in out.items(): print(f"{k}={v}")
           import sys; print(json.dumps(out), file=sys.stderr)
           PY
@@ -187,8 +192,9 @@ jobs:
             if [ -n '${{ needs.corpus.outputs.model_extra }}' ]; then P="$P --model-extra"; MX='${{ needs.corpus.outputs.model_extra }}'; fi
           fi
           M=""; [ -f corpus/models.json ] && M="--models corpus/models.json"
-          python -m phase0.run_control --tasks corpus/tasks.jsonl $M --repos-dir corpus/repos --out runs/control-a $P ${MX:+"$MX"} --model "${{ needs.corpus.outputs.model }}" --top-k "${{ needs.corpus.outputs.top_k }}" --limit "${{ needs.corpus.outputs.limit }}"
-          python -m phase0.run_control --tasks corpus/tasks.jsonl $M --repos-dir corpus/repos --out runs/control-b $P ${MX:+"$MX"} --model "${{ needs.corpus.outputs.model }}" --top-k "${{ needs.corpus.outputs.top_k }}" --limit "${{ needs.corpus.outputs.limit }}" --cache runs/control-a/cache.jsonl --offline
+          R=""; [ -n "${{ needs.corpus.outputs.repos }}" ] && R="--repos ${{ needs.corpus.outputs.repos }}"
+          python -m phase0.run_control --tasks corpus/tasks.jsonl $M --repos-dir corpus/repos --out runs/control-a $P ${MX:+"$MX"} $R --model "${{ needs.corpus.outputs.model }}" --top-k "${{ needs.corpus.outputs.top_k }}" --limit "${{ needs.corpus.outputs.limit }}"
+          python -m phase0.run_control --tasks corpus/tasks.jsonl $M --repos-dir corpus/repos --out runs/control-b $P ${MX:+"$MX"} $R --model "${{ needs.corpus.outputs.model }}" --top-k "${{ needs.corpus.outputs.top_k }}" --limit "${{ needs.corpus.outputs.limit }}" --cache runs/control-a/cache.jsonl --offline
           python -m phase0.run_control --compare runs/control-a runs/control-b | tee runs/compare.txt
       - uses: actions/upload-artifact@v4
         if: always()
@@ -201,7 +207,7 @@ jobs:
         run: |
           set -euo pipefail
           D="${{ needs.corpus.outputs.dir }}/control"; mkdir -p "$D"
-          for f in metrics.json manifest.json flags.jsonl freshness.jsonl; do [ -f runs/control-a/$f ] && cp runs/control-a/$f "$D/"; done; true
+          for f in metrics.json manifest.json flags.jsonl errors.jsonl freshness.jsonl; do [ -f runs/control-a/$f ] && cp runs/control-a/$f "$D/"; done; true
           [ -f runs/compare.txt ] && cp runs/compare.txt "$D/"
           git config user.name "phase0-bot"; git config user.email "phase0-bot@users.noreply.github.com"
           git add results/

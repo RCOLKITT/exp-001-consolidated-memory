@@ -1,0 +1,18 @@
+{
+ "false_positive_rate": 0.8794,
+ "localization_rate": 0.34,
+ "n_false_positive": 124,
+ "n_flags": 141,
+ "n_localized": 17,
+ "n_tasks": 50,
+ "per_repo": {
+  "aws-cloudformation/cfn-lint": {
+   "false_positive_rate": 0.8794,
+   "localization_rate": 0.34,
+   "n_false_positive": 124,
+   "n_flags": 141,
+   "n_localized": 17,
+   "n_tasks": 50
+  }
+ }
+}
