@@ -1,0 +1,8 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Generating test split:   0%|          | 0/1000 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 1000/1000 [00:00<00:00, 3082.09 examples/s]Generating test split: 100%|██████████| 1000/1000 [00:00<00:00, 3072.66 examples/s]
+Generating lite split:   0%|          | 0/300 [00:00<?, ? examples/s]Generating lite split: 100%|██████████| 300/300 [00:00<00:00, 3143.26 examples/s]
+Generating verified split:   0%|          | 0/500 [00:00<?, ? examples/s]Generating verified split: 100%|██████████| 500/500 [00:00<00:00, 3311.40 examples/s]Generating verified split: 100%|██████████| 500/500 [00:00<00:00, 3297.51 examples/s]
+Generating full split:   0%|          | 0/1888 [00:00<?, ? examples/s]Generating full split:  50%|█████     | 944/1888 [00:00<00:00, 3443.52 examples/s]Generating full split: 100%|██████████| 1888/1888 [00:00<00:00, 3281.37 examples/s]Generating full split: 100%|██████████| 1888/1888 [00:00<00:00, 3299.63 examples/s]
+loaded 1888 tasks
+freshness gate: 1884 admitted, 4 rejected
+wrote 1884 tasks -> corpus/tasks.jsonl
