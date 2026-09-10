@@ -74,6 +74,13 @@ class ModelClient(Protocol):
     def complete(self, req: ModelRequest) -> str: ...
 
 
+class TransientError(RuntimeError):
+    """Rate limit / upstream outage: retry, do not change response mode."""
+
+
+TRANSIENT_HTTP = {408, 409, 425, 429, 500, 502, 503, 504, 529}
+
+
 class AnthropicClient:
     """Claude via the official SDK with a JSON-schema output constraint."""
 
@@ -106,12 +113,17 @@ class OpenAICompatibleClient:
     JSON with a `files` list before it is cached. Standard library only.
     """
 
-    def __init__(self, base_url: str, api_key: str, timeout: float = 180.0, extra: Optional[dict] = None) -> None:
+    def __init__(self, base_url: str, api_key: str, timeout: float = 180.0, extra: Optional[dict] = None,
+                 max_attempts: int = 6, backoff_s: float = 2.0, sleep=None) -> None:
         self.base_url = base_url.rstrip("/")
         self.api_key = api_key
         self.timeout = timeout
         self.extra = extra or {}          # e.g. {"seed": 0, "provider": {...}}
         self._mode: Optional[str] = None  # remembered after the first success
+        self.max_attempts = max_attempts
+        self.backoff_s = backoff_s
+        self._sleep = sleep or __import__("time").sleep
+        self.last_meta: dict = {}         # provider / model / usage of the last successful call
 
     def _post(self, body: dict) -> dict:
         import urllib.error
@@ -125,7 +137,24 @@ class OpenAICompatibleClient:
             with urllib.request.urlopen(req, timeout=self.timeout) as r:
                 return json.loads(r.read().decode())
         except urllib.error.HTTPError as e:
-            raise RuntimeError(f"HTTP {e.code} from {self.base_url}: {e.read().decode()[:500]}") from None
+            body = e.read().decode()[:500]
+            if e.code in TRANSIENT_HTTP:
+                raise TransientError(f"HTTP {e.code} from {self.base_url}: {body}") from None
+            raise RuntimeError(f"HTTP {e.code} from {self.base_url}: {body}") from None
+        except (urllib.error.URLError, TimeoutError, OSError) as e:
+            raise TransientError(f"network error to {self.base_url}: {e}") from None
+
+    def _post_with_retry(self, body: dict) -> dict:
+        delay = self.backoff_s
+        for attempt in range(1, self.max_attempts + 1):
+            try:
+                return self._post(body)
+            except TransientError:
+                if attempt == self.max_attempts:
+                    raise
+                self._sleep(delay)
+                delay = min(delay * 2, 60.0)
+        raise AssertionError("unreachable")
 
     def _body(self, req: ModelRequest, mode: str) -> dict:
         body = {
@@ -143,6 +172,12 @@ class OpenAICompatibleClient:
         else:
             body["messages"][0]["content"] += "\nRespond with only a JSON object matching this schema, no prose: " + json.dumps(req.schema)
         return body
+
+    @staticmethod
+    def _meta(resp: dict) -> dict:
+        u = resp.get("usage") or {}
+        return {"provider": resp.get("provider"), "model": resp.get("model"),
+                "prompt_tokens": u.get("prompt_tokens"), "completion_tokens": u.get("completion_tokens")}
 
     @staticmethod
     def _extract(resp: dict) -> str:
@@ -163,9 +198,13 @@ class OpenAICompatibleClient:
         last: Optional[Exception] = None
         for mode in modes:
             try:
-                out = self._extract(self._post(self._body(req, mode)))
+                resp = self._post_with_retry(self._body(req, mode))   # TransientError propagates: not a mode problem
+                out = self._extract(resp)
                 self._mode = mode
+                self.last_meta = self._meta(resp)
                 return out
+            except TransientError:
+                raise
             except (RuntimeError, ValueError, KeyError, json.JSONDecodeError) as e:
                 last = e
                 continue
@@ -202,26 +241,33 @@ class CachedClient:
         self.offline = offline
         self.hits = 0
         self.misses = 0
+        self.last_meta: dict = {}
         self._mem: dict[str, str] = {}
+        self._meta: dict[str, dict] = {}
         if self.path.exists():
             for line in self.path.read_text().splitlines():
                 if line.strip():
                     row = json.loads(line)
                     self._mem[row["key"]] = row["response"]
+                    self._meta[row["key"]] = row.get("meta", {})
 
     def complete(self, req: ModelRequest) -> str:
         k = req.key()
         if k in self._mem:
             self.hits += 1
+            self.last_meta = self._meta.get(k, {})
             return self._mem[k]
         if self.offline or self.inner is None:
             raise LookupError(f"cache miss in offline mode for request {k[:12]}")
         self.misses += 1
         out = self.inner.complete(req)
+        meta = dict(getattr(self.inner, "last_meta", {}) or {})
         self._mem[k] = out
+        self._meta[k] = meta
+        self.last_meta = meta
         self.path.parent.mkdir(parents=True, exist_ok=True)
         with self.path.open("a") as f:
-            f.write(json.dumps({"key": k, "model": req.model, "response": out}) + "\n")
+            f.write(json.dumps({"key": k, "model": req.model, "response": out, "meta": meta}) + "\n")
         return out
 
 
@@ -241,10 +287,11 @@ class ScriptedClient:
 # Repository structure
 # --------------------------------------------------------------------------
 SOURCE_SUFFIXES = (".py",)
+MAX_FILES = 4000          # ~80k tokens of paths; repos above this are truncated (recorded per task)
 SKIP_DIRS = {".git", "__pycache__", "node_modules", ".tox", ".eggs", "build", "dist", ".venv", "venv"}
 
 
-def repo_file_tree(root: str | Path, suffixes: Sequence[str] = SOURCE_SUFFIXES, max_files: int = 4000) -> list[str]:
+def repo_file_tree(root: str | Path, suffixes: Sequence[str] = SOURCE_SUFFIXES, max_files: int = MAX_FILES) -> list[str]:
     root = Path(root)
     out: list[str] = []
     for dirpath, dirnames, filenames in os.walk(root):
@@ -285,6 +332,8 @@ class LocalizationResult:
     ranked: tuple[tuple[str, str], ...]   # (path, reason), most likely first
     request_key: str
     raw: str
+    meta: dict = None                     # provider / model / usage that served this request
+    n_files: int = 0                      # size of the file list shown to the verifier
 
     def flags(self) -> tuple[Flag, ...]:
         return tuple(Flag(self.instance_id, file_location(p), reason) for p, reason in self.ranked)
@@ -315,4 +364,5 @@ class Localizer:
                 ranked.append((p, str(item.get("reason", ""))))
             if len(ranked) >= self.k:
                 break
-        return LocalizationResult(instance_id, tuple(ranked), req.key(), raw)
+        return LocalizationResult(instance_id, tuple(ranked), req.key(), raw,
+                                  dict(getattr(self.client, "last_meta", {}) or {}), len(files))

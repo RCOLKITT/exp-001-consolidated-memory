@@ -75,3 +75,57 @@ def test_factory(monkeypatch):
         make_client("openai-compatible", "http://h/v1")
     with pytest.raises(ValueError):
         make_client("nope")
+
+
+def test_transient_429_is_retried_then_succeeds(server):
+    class Flaky(Stub):
+        pass
+    calls = {"n": 0}
+    orig = Stub.do_POST
+    def do_POST(self):
+        calls["n"] += 1
+        if calls["n"] <= 2:
+            self.send_response(429); self.end_headers(); self.wfile.write(b'{"error":{"code":429,"message":"rate-limited upstream"}}'); return
+        orig(self)
+    Stub.do_POST = do_POST
+    try:
+        slept = []
+        c = OpenAICompatibleClient(server, "k", max_attempts=4, backoff_s=1.0, sleep=slept.append)
+        out = c.complete(_req())
+        assert "pkg/a.py" in out and slept == [1.0, 2.0] and c._mode == "json_schema"   # mode not abandoned on 429
+        assert c.last_meta["provider"] is None  # stub sends no provider field
+    finally:
+        Stub.do_POST = orig
+
+
+def test_transient_exhausted_raises_transient(server):
+    from phase0.verifier import TransientError
+    orig = Stub.do_POST
+    def do_POST(self):
+        self.send_response(503); self.end_headers(); self.wfile.write(b'{}')
+    Stub.do_POST = do_POST
+    try:
+        c = OpenAICompatibleClient(server, "k", max_attempts=2, backoff_s=0.0, sleep=lambda s: None)
+        with pytest.raises(TransientError):
+            c.complete(_req())
+    finally:
+        Stub.do_POST = orig
+
+
+def test_cache_records_provider_meta(server, tmp_path):
+    from phase0.verifier import CachedClient
+    orig = Stub.do_POST
+    def do_POST(self):
+        body = json.loads(self.rfile.read(int(self.headers["content-length"])))
+        content = json.dumps({"files": [{"path": "pkg/a.py", "reason": "r"}]})
+        out = json.dumps({"provider": "Crusoe", "model": "m", "usage": {"prompt_tokens": 10, "completion_tokens": 5},
+                          "choices": [{"message": {"content": content}}]}).encode()
+        self.send_response(200); self.send_header("content-type", "application/json"); self.end_headers(); self.wfile.write(out)
+    Stub.do_POST = do_POST
+    try:
+        cc = CachedClient(OpenAICompatibleClient(server, "k"), tmp_path / "c.jsonl")
+        cc.complete(_req()); assert cc.last_meta["provider"] == "Crusoe" and cc.last_meta["prompt_tokens"] == 10
+        cc2 = CachedClient(None, tmp_path / "c.jsonl", offline=True)
+        cc2.complete(_req()); assert cc2.last_meta["provider"] == "Crusoe"          # provenance survives the cache
+    finally:
+        Stub.do_POST = orig
