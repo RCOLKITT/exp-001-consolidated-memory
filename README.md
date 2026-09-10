@@ -13,9 +13,12 @@ corpus runs done on GitHub Actions (`results/phase0/`): no Claude model
 still served passes the freshness gate on the Python corpus, so the
 verifier will be an open-weights model with a documented cutoff (option A,
 recommended Llama 3.3 70B; [docs/phase0-findings.md](docs/phase0-findings.md) §6).
-Control arm measured on the pinned verifier across the 13 draft repos:
-hit@3 0.673, determinism identical (`results/phase0/18/`, findings §8).
-Nothing pre-registered yet.
+Control arm measured on the pinned verifier across the 13 draft repos
+(hit@3 0.673, determinism identical, `results/phase0/18/`); seam built and
+tuned; learn → freeze → evaluate demonstrated end to end on real data
+(`results/experiment/4/`). Recurrence analysis shows the spec's 15-point
+kill number exceeds the ceiling of file-level memory on this corpus
+(findings §10–11); the pre-registration design awaits the owner's decision.
 Similarity seam is still the Jaccard placeholder (D14).
 
 ## Layout

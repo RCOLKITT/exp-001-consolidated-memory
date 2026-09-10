@@ -317,3 +317,30 @@ Recommended pre-registration design (owner to confirm):
 - kill number: ≥ 10 points aggregate lift (MDE ≈ 10.5 at that pool) with
   the ceiling (~15 at that mix) stated next to it; FP ceiling unchanged;
 - per-repo reporting of lift / ceiling; negative control unchanged.
+
+## 12. End-to-end smoke with file-keyed consolidation (experiment run 4)
+
+pvlib, pdm, haystack; build 20, eval 8 per repo; pinned verifier and seam;
+promotion at ≥ 3 (the pre-D24 setting). Cost: ~110 model calls.
+
+| repo | candidates | discard rate | promoted | memories |
+|---|---:|---:|---:|---|
+| pvlib | 56 | 0.57 | 3 | spectrum/__init__, spectrum/mismatch, solarposition |
+| pdm | 60 | 0.47 | 1 | cli/commands/run |
+| haystack | 60 | 0.38 | 1 | core/pipeline/pipeline |
+
+Every promoted memory carries only `bad` records (§6.5 held), three
+supports from three distinct tasks, and reads as a defect pattern
+(`symptom => file :: reason`). In evaluation the treatment arm retrieved
+memory on 24 / 24 tasks and its flags differed from control on 17 / 24.
+Aggregate on 24 tasks: lift +4.2 pts, FP −3.2 pts (pdm +12.5, others 0) —
+a smoke, not a result. The mechanism the experiment needs is now
+demonstrated on real traffic: consolidate → freeze → pin → retrieve →
+paired arms.
+
+Gate 3 note: with file-keyed consolidation the discard rate is the share
+of candidates that repeat an already-seen file. On 20-task builds it is
+0.38–0.57, below the spec's "> 60%" expectation, which was written for a
+semantic seam; longer builds raise it (a repeat is only possible once a
+file has been seen). The pre-registration should restate Gate 3's floor
+for the file-keyed seam or tie it to build length.

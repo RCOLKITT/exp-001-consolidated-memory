@@ -36,12 +36,13 @@ Tooling: `phase2/power.py` (n per arm / MDE), `phase2/handcheck.py` (oracle vs m
 - [ ] Pre-registration published and timestamped — `docs/PREREGISTRATION.md`
 - [ ] Per-repo chains ≥ power-calc minimum in the build split — `python -m phase2.power --p0 <Gate 0 rate> --mde 0.15` vs `docs/chain-report.md`
 - [ ] Oracle agreement with manual labels ≥ 95% on a 50-instance hand-check — sample ready at `results/phase0/19/control/handcheck.csv` (fill `manual`), then `python -m phase2.handcheck score …`
-- [x] Similarity seam replaced with pinned embedding cosine and Θ re-tuned (D14, D20, D23) — `results/phase2/4/`, operating point Θ 0.45 / ρ 0.70 / cluster 0.60; robustness across seeds: phase2 run 5
+- [x] Similarity seam: retrieval by pinned MiniLM cosine, consolidation by file (D20, D23, D24); Θ/ρ/cluster from `results/phase2/4–5` for the semantic variant; end-to-end on real data `results/experiment/4/`
+- [ ] Promotion threshold and build split fixed from the recurrence ceilings (`results/phase0/21/recurrence.md`, findings §11.1) — owner decision
 
 ## Gate 3 — Learning (Phase 3) — expected failure point
 Run: `python -m phase3.learn …` → `runs/learn-*/<repo>/gate3.json`
 
-- [ ] Surprise gate discards > 60% of candidate writes — `gate3.json: discard_rate`
+- [ ] Surprise gate discards > 60% of candidate writes — `gate3.json: discard_rate` (floor to be restated for the file-keyed seam, findings §12)
 - [ ] ≥ floor promoted memories per repo (floor from pre-registration) — `gate3.json: promoted`
 - [ ] Promoted memories human-legible on inspection — read `kernel.json: objects[].content`
 
