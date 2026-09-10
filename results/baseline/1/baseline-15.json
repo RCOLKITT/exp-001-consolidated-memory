@@ -1,0 +1,35 @@
+{
+ "1": {
+  "k": 1,
+  "n": 300,
+  "hit": 196,
+  "hit_at_k": 0.6533,
+  "flags": 296,
+  "false_positive_rate": 0.3378,
+  "missing_gold": 0
+ },
+ "3": {
+  "k": 3,
+  "n": 300,
+  "hit": 233,
+  "hit_at_k": 0.7767,
+  "flags": 861,
+  "false_positive_rate": 0.7294,
+  "missing_gold": 0
+ },
+ "5": {
+  "k": 5,
+  "n": 300,
+  "hit": 248,
+  "hit_at_k": 0.8267,
+  "flags": 1337,
+  "false_positive_rate": 0.8145,
+  "missing_gold": 0
+ },
+ "source": {
+  "loc_outputs": "dl/v0.1.0/agentless_logs_x/artifact/location/loc_outputs.jsonl",
+  "tasks": "swebench_lite.jsonl",
+  "n_loc_rows": 300,
+  "n_tasks": 300
+ }
+}

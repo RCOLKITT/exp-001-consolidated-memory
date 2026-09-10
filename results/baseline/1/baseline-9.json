@@ -1,0 +1,35 @@
+{
+ "1": {
+  "k": 1,
+  "n": 300,
+  "hit": 189,
+  "hit_at_k": 0.63,
+  "flags": 300,
+  "false_positive_rate": 0.37,
+  "missing_gold": 0
+ },
+ "3": {
+  "k": 3,
+  "n": 300,
+  "hit": 245,
+  "hit_at_k": 0.8167,
+  "flags": 900,
+  "false_positive_rate": 0.7278,
+  "missing_gold": 0
+ },
+ "5": {
+  "k": 5,
+  "n": 300,
+  "hit": 255,
+  "hit_at_k": 0.85,
+  "flags": 1500,
+  "false_positive_rate": 0.83,
+  "missing_gold": 0
+ },
+ "source": {
+  "loc_outputs": "dl/v1.5.0/agentless_swebench_lite_x/agentless_swebench_lite/edit_location_samples/loc_outputs.jsonl",
+  "tasks": "swebench_lite.jsonl",
+  "n_loc_rows": 300,
+  "n_tasks": 300
+ }
+}
