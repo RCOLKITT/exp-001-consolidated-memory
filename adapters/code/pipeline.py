@@ -76,6 +76,7 @@ class RepoPipeline:
         config: KernelConfig,
         list_files: FileLister,
         clock: Callable[[], float],
+        retrieval_similarity: Optional[Similarity] = None,
     ) -> None:
         self.repo = repo
         self.localizer = localizer
@@ -83,7 +84,7 @@ class RepoPipeline:
         self.list_files = list_files
         self._flags: dict[str, Flag] = {}                       # record id -> Flag (oracle input)
         self.oracle = LocationOracle(truth, self._flags)
-        self.kernel = Kernel(config, similarity, self.oracle, clock=clock)
+        self.kernel = Kernel(config, similarity, self.oracle, clock=clock, retrieval_similarity=retrieval_similarity)
         self.agent_id = f"verifier:{localizer.model}"
         self.agent_clock = VectorClock.zero()
         self.frozen_version: Optional[str] = None

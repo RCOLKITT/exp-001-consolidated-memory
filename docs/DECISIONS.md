@@ -263,3 +263,30 @@ component, which in real records carries the file path — the thing
 localization needs. The pre-registration commits to component-level purity
 (≥ 0.90 on the synthetic check) and to these three constants; Gate 3's
 "> 60% discard" is consistent with this regime.
+
+### D24. Code adapter consolidates by file; retrieval stays semantic
+Real-data diagnostics (experiment run 3: pvlib, pdm, haystack, 20 build
+tasks each, `results/experiment/3/learn/*.diagnose.json`): same-file record
+pairs have median cosine 0.59–0.64 and different-file pairs 0.37–0.47 under
+the pinned MiniLM seam, with heavy overlap; at Θ 0.45 / ρ 0.70 between 16
+and 30 of ~60 records per repo fell in the "neither admitted nor
+reinforced" band and were lost, and nothing promoted although 1–3 files
+per repo were true defect locations ≥ 3 times. Reinforcement also went
+mostly to false-positive flags (pvlib: 25 good vs 4 bad), which the
+label-eligibility rule (§6.5) correctly kept out of memory.
+
+Decision: the seam is split. **Consolidation** (surprise gate,
+reinforcement, promotion clustering) uses `FileKeyedSimilarity`: same file
+⇒ 1.0, different file ⇒ 0.0, so the unit of memory is the file — the
+"component" D23 already identified — and purity is 1.0 by construction.
+**Retrieval** uses the pinned embedding cosine between the new issue's
+text and each memory's `symptom => file :: reason` content, so what is
+recalled is chosen semantically. Θ and ρ then govern only the synthetic
+Gate 1 checks and the embedding-consolidation variant, which remains
+available (`--consolidation embedding`) as the comparison condition.
+Promotion still requires three `bad` records from three distinct tasks.
+
+What this makes the treatment arm: a consolidated, provenance-tracked
+prior over recurring defect locations, recalled by symptom. Whether that
+lifts localization is exactly the efficacy question; the recurrence
+report (`results/phase0/20/recurrence.md`) bounds how much it could.

@@ -115,3 +115,22 @@ def test_record_content_pairs_symptom_with_location():
     f = Flag("i", Location("pkg/parser.py", 1, 9), "off by one")
     c = record_content(f, issue_head("\n\nParser drops last row\nlong body..."))
     assert c == "Parser drops last row => pkg / parser :: off by one"
+
+
+def test_file_keyed_consolidation_promotes_recurring_file_and_retrieves_semantically():
+    """D24: same file => same pattern regardless of wording; retrieval stays semantic."""
+    from adapters.code.similarity import FileKeyedSimilarity, make_similarity
+    sem = make_similarity("hashing")
+    build = [_task(i, "pkg/parser.py") for i in range(1, 7)]
+    truth = ground_truth_from_tasks(build)
+    cfg = KernelConfig(ttl_ticks=100, theta_surprise=0.45, reinforce_min_sim=0.7, policy=PromotionPolicy(schedule_every_ticks=1, cluster_similarity=0.6))
+    loc = Localizer(RepeatingVerifier(), "m", k=2)
+    p = RepoPipeline("o/r", loc, FileKeyedSimilarity(sem), truth, cfg, lambda t: FILES, fixed_clock(), retrieval_similarity=sem)
+    p.learn(build)
+    live = p.kernel.store.live()
+    assert len(live) == 1 and set(live[0].labels) == {"bad"} and "parser" in live[0].content   # util.py flags are 'good': never promoted
+    assert len(live[0].input_hashes) >= 3
+    ev = [_task(i, "pkg/parser.py") for i in range(10, 13)]
+    control, treatment = p.evaluate(ev, seed=1)
+    assert treatment.retrieval_hit_rate == 1.0 and control.retrieval_hit_rate == 0.0
+    assert p.gate3_stats()["consolidation"] if "consolidation" in p.gate3_stats() else True

@@ -95,9 +95,11 @@ class Kernel:
         store: Optional[MemoryStore] = None,
         ledger: Optional[Ledger] = None,
         clock: Callable[[], float] = time.time,
+        retrieval_similarity: Optional[Similarity] = None,
     ) -> None:
         self.config = config
-        self.similarity = similarity
+        self.similarity = similarity                          # consolidation: surprise gate, reinforcement, clustering
+        self.retrieval_similarity = retrieval_similarity or similarity   # what a query is matched against memory with
         self.oracle = oracle
         self.store = store or MemoryStore()
         self.ledger = ledger or Ledger()
@@ -128,7 +130,7 @@ class Kernel:
         """Top-k promoted memories from the pinned version. Empty if unpinned
         (control arm: memory_version = None)."""
         k = k or self.config.retrieval_k
-        scored = [(m, self.similarity.sim(query, m.content)) for m in self._visible_memory()]
+        scored = [(m, self.retrieval_similarity.sim(query, m.content)) for m in self._visible_memory()]
         scored.sort(key=lambda ms: (-ms[1], ms[0].id))
         hits = tuple(scored[:k])
         self.ledger.append(

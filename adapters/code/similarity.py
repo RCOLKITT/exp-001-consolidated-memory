@@ -127,3 +127,30 @@ def make_similarity(kind: str, cache_path: Optional[str | Path] = None, model: O
     if kind == "embedding":
         return EmbeddingCosineSimilarity(SentenceTransformerEmbedder(model or "sentence-transformers/all-MiniLM-L6-v2", revision), cache_path)
     raise ValueError(f"unknown similarity kind {kind!r}")
+
+
+_LOC = re.compile(r"=> (.+?) ::")
+
+
+def location_of(content: str) -> str:
+    """The location part of a code-adapter record (`symptom => path :: reason`)."""
+    m = _LOC.search(content)
+    return m.group(1).strip() if m else ""
+
+
+class FileKeyedSimilarity:
+    """Consolidation seam for the code adapter (D24): two records are the same
+    pattern iff they point at the same file. sim = 1.0 for the same file, else
+    0.0, so the surprise gate admits each new file once, every repeat of a
+    file reinforces it, and promotion clusters never mix files (purity 1.0 by
+    construction). Records without a location fall back to `inner`."""
+
+    def __init__(self, inner=None) -> None:
+        self.inner = inner
+        self.name = "file-keyed" + (f"+{getattr(inner, 'name', type(inner).__name__)}" if inner else "")
+
+    def sim(self, a: str, b: str) -> float:
+        la, lb = location_of(a), location_of(b)
+        if la and lb:
+            return 1.0 if la == lb else 0.0
+        return self.inner.sim(a, b) if self.inner else 0.0
