@@ -221,3 +221,14 @@ response cache, so replay never re-embeds. Θ_surprise and cluster_similarity
 for the embedding seam come from `phase2.tune` on synthetic streams (D14);
 the Jaccard defaults do not transfer. The embedding model never sees gold
 patches or produces flags, so it is outside the freshness gate's scope.
+
+### D21. Synthetic streams for semantic seams must be natural language
+Phase 2 run 1 swept Θ with the pinned MiniLM model on the Phase 1 token
+streams (`p12t3 …`): no cell reached discard ≈ injected with pure
+promotions, because a sentence embedder cannot separate one gibberish
+pattern from another (purity ≤ 0.2 at any Θ that discards enough). That is
+a property of the test stream, not the seam. `memkernel.synthetic` now has
+an `nl` mode: a pattern is (component, symptom) rendered as paraphrased
+defect sentences with prefix/suffix noise, 450 distinct patterns. Gate 1's
+discard assertion for the embedding seam is evaluated on `nl` streams; the
+token streams remain for lexical seams.

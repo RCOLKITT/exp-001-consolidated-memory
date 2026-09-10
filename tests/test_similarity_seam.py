@@ -44,3 +44,22 @@ def test_pinned_embedding_model_if_available(tmp_path):
         pytest.skip(f"model not loadable here: {e}")
     b = sim.sim("parser drops the last row of a CSV", "docker build fails on arm64")
     assert a > b
+
+
+def test_nl_stream_is_paraphrased_and_pattern_recoverable():
+    from memkernel.synthetic import PATTERN_OF, StreamSpec, generate, pattern_of
+    recs = generate(StreamSpec(mode="nl", n_records=120, n_patterns=120, redundant_fraction=0.5, seed=11))
+    keys = [pattern_of(r) for r in recs]
+    assert len(set(keys)) == 60 and all(r.id in PATTERN_OF for r in recs)
+    same = [(a, b) for a in recs for b in recs if a is not b and pattern_of(a) == pattern_of(b)]
+    assert same and any(a.content != b.content for a, b in same)     # paraphrases, not copies
+    assert all(len(r.content.split()) >= 3 for r in recs)
+
+
+def test_nl_stream_sweep_with_hashing_has_a_working_cell():
+    from memkernel.synthetic import StreamSpec
+    sim = make_similarity("hashing")
+    spec = StreamSpec(mode="nl", n_records=200, n_patterns=200, redundant_fraction=0.6, seed=5)
+    rows = sweep(sim, [0.3, 0.4, 0.5, 0.6, 0.7], [0.3, 0.4, 0.5], spec)
+    best = min(rows, key=lambda r: abs(r["discard_rate"] - 0.6))
+    assert abs(best["discard_rate"] - 0.6) <= 0.15    # lexical hashing is a rough proxy; the runner tunes the real seam

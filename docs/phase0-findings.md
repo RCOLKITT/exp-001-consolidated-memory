@@ -180,3 +180,13 @@ result; it must still be written down before Phase 3 starts (D19).
 Gate 0 after run 18: freshness ✓, determinism ✓ on 310 real model calls,
 baseline comparison open (D10) — our number is 0.673 hit@3 with Llama 3.3
 70B on 13 SWE-bench-Live repos, file level, no hints.
+
+## 9. Cross-run determinism and the hand-check sample (run 19)
+
+Run 19 re-scored run 18 entirely from run 18's cached responses on a
+different runner, offline (260 cache hits, 0 misses): flags sha256
+`86ede91e…`, identical to run 18. It also wrote
+`results/phase0/19/control/handcheck.csv`: 50 flags sampled with seed 1,
+each with the oracle's label and the gold files. Gate 2.3 needs a human to
+fill the `manual` column by reading each gold patch, then
+`python -m phase2.handcheck score handcheck.csv` (≥ 0.95 required).

@@ -21,11 +21,7 @@ from adapters.code.similarity import make_similarity
 from memkernel import Kernel, KernelConfig, PromotionPolicy
 from memkernel.kernel import counting_clock
 from memkernel.seams import PassthroughOracle
-from memkernel.synthetic import StreamSpec, expected_redundant, generate
-
-
-def pattern_of(content: str) -> str:
-    return content.split()[0]  # first signal token identifies the synthetic pattern
+from memkernel.synthetic import StreamSpec, expected_redundant, generate, pattern_of
 
 
 def run_cell(similarity, theta: float, cluster: float, spec: StreamSpec, ttl: int = 10_000) -> dict:
@@ -33,7 +29,7 @@ def run_cell(similarity, theta: float, cluster: float, spec: StreamSpec, ttl: in
     cfg = KernelConfig(theta_surprise=theta, ttl_ticks=ttl,
                        policy=PromotionPolicy(schedule_every_ticks=1, cluster_similarity=cluster))
     k = Kernel(cfg, similarity, PassthroughOracle(), clock=counting_clock())
-    id2pat = {r.id: pattern_of(r.content) for r in records}
+    id2pat = {r.id: pattern_of(r) for r in records}
     buffered = 0
     for r in records:
         if k.ingest(r).outcome == "buffered":
@@ -79,11 +75,12 @@ def _main(argv):
     ap.add_argument("--embedding-revision", default=None)
     ap.add_argument("--thetas", default="0.15,0.2,0.25,0.3,0.35,0.4,0.5,0.6")
     ap.add_argument("--clusters", default="0.5,0.6,0.7,0.8,0.9")
+    ap.add_argument("--mode", default="tokens", choices=["tokens", "nl"], help="nl = defect-like sentences with paraphrase (for semantic seams)")
     ap.add_argument("--n-records", type=int, default=300); ap.add_argument("--redundant", type=float, default=0.7); ap.add_argument("--seed", type=int, default=7)
     ap.add_argument("--out", help="markdown path; a .json twin is written alongside")
     a = ap.parse_args(argv)
     sim = make_similarity(a.similarity, None, a.embedding_model, a.embedding_revision)
-    spec = StreamSpec(n_records=a.n_records, n_patterns=a.n_records, redundant_fraction=a.redundant, seed=a.seed)
+    spec = StreamSpec(mode=a.mode, n_records=a.n_records, n_patterns=a.n_records, redundant_fraction=a.redundant, seed=a.seed)
     rows = sweep(sim, [float(x) for x in a.thetas.split(",")], [float(x) for x in a.clusters.split(",")], spec)
     rec = recommend(rows)
     md = markdown(rows, getattr(sim, "name", a.similarity)) + "\nRecommended (discard within 0.05 of injected, purity 1.0, most promotions): " + (json.dumps(rec) if rec else "none") + "\n"
