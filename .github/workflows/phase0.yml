@@ -157,16 +157,9 @@ jobs:
         with:
           name: corpus-${{ github.run_number }}
           path: corpus/
-      - name: Diagnostic — names of secrets visible to this job (values are masked by GitHub)
-        env:
-          SECRET_NAMES: ${{ toJSON(secrets) }}
+      - name: Key present?
         run: |
-          python - <<'PY'
-          import json, os
-          names = sorted(json.loads(os.environ["SECRET_NAMES"]).keys())
-          print("secrets visible to this job:", names)
-          print("MODEL_API_KEY resolved:", "yes" if os.environ.get("MODEL_API_KEY") else "NO")
-          PY
+          if [ -n "$MODEL_API_KEY" ]; then echo "MODEL_API_KEY resolved: yes (${#MODEL_API_KEY} chars)"; else echo "MODEL_API_KEY resolved: NO"; fi
       - name: Record the host's serving endpoints for the model (pre-registration pinning)
         if: needs.corpus.outputs.provider == 'openai-compatible'
         run: |
