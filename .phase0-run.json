@@ -1,5 +1,0 @@
-{"dataset": "SWE-bench-Live/SWE-bench-Live", "split": "full", "cutoff": "2023-12-31",
- "model": "meta-llama/llama-3.3-70b-instruct", "provider": "openai-compatible", "base_url": "https://openrouter.ai/api/v1",
- "model_extra": {"provider": {"order": ["Crusoe", "CoreWeave"], "allow_fallbacks": false}},
- "repos": ["conan-io/conan", "aws-cloudformation/cfn-lint", "matplotlib/matplotlib", "deepset-ai/haystack", "pylint-dev/pylint", "instructlab/instructlab", "keras-team/keras", "reflex-dev/reflex", "streamlink/streamlink", "sphinx-doc/sphinx", "pdm-project/pdm", "sissbruecker/linkding", "pvlib/pvlib-python"],
- "run_control": true, "limit": 0, "per_repo_limit": 20, "top_k": 3}
