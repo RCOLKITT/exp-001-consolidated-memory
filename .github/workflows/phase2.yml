@@ -1,0 +1,66 @@
+# Phase 2 seam work on a hosted runner (needs Hugging Face for the embedding
+# model). Start by pushing a branch run/phase2-<n> carrying .phase2-run.json:
+#   {"embedding_model": "sentence-transformers/all-MiniLM-L6-v2", "embedding_revision": "",
+#    "n_records": 300, "redundant": 0.7, "seed": 7}
+# Results: results/phase2/<run_number>/ (sweep table + json, resolved model revision, seam test log).
+name: phase2
+on:
+  push:
+    branches: ["run/phase2-*"]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: phase2-${{ github.ref }}
+jobs:
+  seam:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install -e ".[dev]" "sentence-transformers>=3" "huggingface_hub>=0.25"
+      - id: cfg
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, os
+          cfg = json.load(open(".phase2-run.json")) if os.path.exists(".phase2-run.json") else {}
+          print("model=" + cfg.get("embedding_model", "sentence-transformers/all-MiniLM-L6-v2"))
+          print("revision=" + cfg.get("embedding_revision", ""))
+          print("n_records=" + str(cfg.get("n_records", 300)))
+          print("redundant=" + str(cfg.get("redundant", 0.7)))
+          print("seed=" + str(cfg.get("seed", 7)))
+          print("dir=results/phase2/${{ github.run_number }}")
+          PY
+      - name: Resolve and record the model revision (pre-registration value)
+        run: |
+          set -euo pipefail
+          mkdir -p "${{ steps.cfg.outputs.dir }}"
+          python - <<'PY'
+          import json
+          from huggingface_hub import HfApi
+          info = HfApi().model_info("${{ steps.cfg.outputs.model }}", revision="${{ steps.cfg.outputs.revision }}" or None)
+          rec = {"model": info.id, "sha": info.sha, "requested_revision": "${{ steps.cfg.outputs.revision }}" or None,
+                 "last_modified": str(info.last_modified)}
+          json.dump(rec, open("${{ steps.cfg.outputs.dir }}/embedding-model.json", "w"), indent=1)
+          print(rec)
+          PY
+      - name: Threshold sweep with the pinned embedding model
+        run: |
+          set -euo pipefail
+          SHA=$(python -c "import json; print(json.load(open('${{ steps.cfg.outputs.dir }}/embedding-model.json'))['sha'])")
+          python -m phase2.tune --similarity embedding --embedding-model "${{ steps.cfg.outputs.model }}" --embedding-revision "$SHA" \
+            --n-records "${{ steps.cfg.outputs.n_records }}" --redundant "${{ steps.cfg.outputs.redundant }}" --seed "${{ steps.cfg.outputs.seed }}" \
+            --out "${{ steps.cfg.outputs.dir }}/tune-embedding.md" | tail -3
+          python -m phase2.tune --similarity hashing --n-records "${{ steps.cfg.outputs.n_records }}" --redundant "${{ steps.cfg.outputs.redundant }}" --seed "${{ steps.cfg.outputs.seed }}" \
+            --out "${{ steps.cfg.outputs.dir }}/tune-hashing.md" | tail -1
+      - name: Seam tests with the real model
+        run: python -m pytest -q -rs tests/test_similarity_seam.py 2>&1 | tee "${{ steps.cfg.outputs.dir }}/seam-tests.log"
+      - name: Commit results
+        run: |
+          set -euo pipefail
+          git config user.name "phase2-bot"; git config user.email "phase2-bot@users.noreply.github.com"
+          git add results/
+          git commit -m "results(phase2): run ${{ github.run_number }} embedding sweep [skip ci]" || exit 0
+          git pull --rebase origin "$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME"

@@ -20,7 +20,7 @@ from adapters.code.policy import CODE_PROMOTION_POLICY, THETA_SURPRISE
 from memkernel import KernelConfig
 from memkernel.kernel import counting_clock
 from memkernel.persist import save_kernel
-from memkernel.seams import TokenJaccardSimilarity
+from adapters.code.similarity import make_similarity
 from phase0.chains import build_chains
 from phase0.corpus import apply_freshness, read_tasks
 from phase0.ground_truth import ground_truth_from_tasks
@@ -28,13 +28,23 @@ from phase0.run_control import ensure_checkout, repo_dir
 from phase0.verifier import CachedClient, Localizer, make_client, repo_file_tree
 
 
-def similarity():
-    # TODO(Phase 2): replace with EmbeddingCosineSimilarity over a pinned, cached embedding model.
-    return TokenJaccardSimilarity()
+def similarity(args, cache_path=None):
+    """The similarity seam, chosen on the command line. `embedding` is the
+    pre-registered seam (pinned model + revision, vectors cached with the run)."""
+    return make_similarity(args.similarity, cache_path, args.embedding_model, args.embedding_revision)
 
 
-def kernel_config(ttl_ticks: int) -> KernelConfig:
-    return KernelConfig(theta_surprise=THETA_SURPRISE, ttl_ticks=ttl_ticks, policy=CODE_PROMOTION_POLICY)
+def kernel_config(ttl_ticks: int, theta: float = THETA_SURPRISE, cluster: float = CODE_PROMOTION_POLICY.cluster_similarity) -> KernelConfig:
+    from dataclasses import replace
+    return KernelConfig(theta_surprise=theta, ttl_ticks=ttl_ticks, policy=replace(CODE_PROMOTION_POLICY, cluster_similarity=cluster))
+
+
+def add_seam_args(ap):
+    ap.add_argument("--similarity", default="embedding", choices=["jaccard", "hashing", "embedding"])
+    ap.add_argument("--embedding-model", default="sentence-transformers/all-MiniLM-L6-v2")
+    ap.add_argument("--embedding-revision", default=None, help="Hub commit sha — pre-registration value")
+    ap.add_argument("--theta", type=float, default=THETA_SURPRISE, help="Θ_surprise (pre-registration value, from phase2.tune)")
+    ap.add_argument("--cluster-similarity", type=float, default=CODE_PROMOTION_POLICY.cluster_similarity)
 
 
 def make_pipeline(repo, tasks, args, cache_path):
@@ -43,7 +53,8 @@ def make_pipeline(repo, tasks, args, cache_path):
     loc = Localizer(client, args.model, k=args.top_k, effort=args.effort)
     repos_dir = Path(args.repos_dir)
     list_files = lambda t: repo_file_tree(ensure_checkout(repos_dir, t))
-    return RepoPipeline(repo, loc, similarity(), truth, kernel_config(args.ttl), list_files, counting_clock())
+    sim = similarity(args, Path(cache_path).with_name("embeddings.jsonl"))
+    return RepoPipeline(repo, loc, sim, truth, kernel_config(args.ttl, args.theta, args.cluster_similarity), list_files, counting_clock())
 
 
 def _main(argv):
@@ -69,6 +80,7 @@ def _main(argv):
         version = p.learn(build)
         save_kernel(p.kernel, rd / "kernel.json")
         stats = p.gate3_stats(); stats["n_build"] = len(build)
+        stats["similarity"] = getattr(p.kernel.similarity, "name", args.similarity); stats["theta"] = args.theta; stats["cluster_similarity"] = args.cluster_similarity
         write_json(stats, rd / "gate3.json")
         sys.stderr.write(f"{chain.repo}: {len(build)} build tasks, discard_rate={stats['discard_rate']}, promoted={stats['promoted']}, version={version[:12]}\n")
     return 0

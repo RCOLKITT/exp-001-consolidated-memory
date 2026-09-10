@@ -210,3 +210,14 @@ Separately, two of the 13 draft repos sit at ≥ 0.95 control hit@3. Whether
 to exclude repos at the ceiling is a pre-registration decision (findings
 §8, options a–c); it must be fixed before Phase 3 and justified only with
 Phase 0 control data.
+
+### D20. Similarity seam: pinned sentence-transformers model, vectors saved with the run
+`adapters/code/similarity.py` now has three seams: Jaccard (Phase 1 placeholder),
+a feature-hashing embedder (no model; used by tests and to sanity-check the
+sweep anywhere), and `sentence-transformers/all-MiniLM-L6-v2` pinned to a Hub
+commit sha resolved and recorded by the phase2 workflow. Vectors are cached
+by sha256(embedder name + text) in `embeddings.jsonl` next to the run's
+response cache, so replay never re-embeds. Θ_surprise and cluster_similarity
+for the embedding seam come from `phase2.tune` on synthetic streams (D14);
+the Jaccard defaults do not transfer. The embedding model never sees gold
+patches or produces flags, so it is outside the freshness gate's scope.

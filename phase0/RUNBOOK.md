@@ -34,6 +34,12 @@ carries a `.phase0-run.json`:
   `{"provider": {"order": ["Crusoe"], "allow_fallbacks": false}}` (chosen in D17).
   Unpinned OpenRouter routing can change the verifier between runs.
 
+- `"reuse_cache_run": 18` reruns a control arm offline from that run's cached
+  responses (no spend) and also writes `handcheck.csv` for Gate 2.3.
+- Phase 2 seam work: push `run/phase2-<n>` with `.phase2-run.json`
+  (`.github/workflows/phase2.yml`): resolves the embedding model's Hub sha,
+  runs the Θ sweep with it, commits `results/phase2/<n>/`.
+
 ## B. On your machine
 Everything below is the same pipeline, run locally.
 

@@ -36,7 +36,7 @@ Tooling: `phase2/power.py` (n per arm / MDE), `phase2/handcheck.py` (oracle vs m
 - [ ] Pre-registration published and timestamped — `docs/PREREGISTRATION.md`
 - [ ] Per-repo chains ≥ power-calc minimum in the build split — `python -m phase2.power --p0 <Gate 0 rate> --mde 0.15` vs `docs/chain-report.md`
 - [ ] Oracle agreement with manual labels ≥ 95% on a 50-instance hand-check — `python -m phase2.handcheck score handcheck.csv`
-- [ ] Similarity seam replaced with pinned embedding cosine and Θ re-tuned (D14)
+- [ ] Similarity seam replaced with pinned embedding cosine and Θ re-tuned (D14, D20) — `results/phase2/<n>/tune-embedding.md`, model sha in `embedding-model.json`
 
 ## Gate 3 — Learning (Phase 3) — expected failure point
 Run: `python -m phase3.learn …` → `runs/learn-*/<repo>/gate3.json`

@@ -18,7 +18,7 @@ from memkernel.persist import load_kernel
 from phase0.chains import build_chains
 from phase0.corpus import apply_freshness, read_tasks
 from phase0.metrics import ArmMetrics, lift
-from phase3.learn import make_pipeline
+from phase3.learn import add_seam_args, make_pipeline
 
 
 def _merge(ms: list[ArmMetrics]) -> ArmMetrics:
