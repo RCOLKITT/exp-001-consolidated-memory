@@ -1,0 +1,64 @@
+{
+ "repo_dir": "runs/learn/deepset-ai__haystack",
+ "theta": 0.45,
+ "rho": 0.7,
+ "n_ingested": 60,
+ "outcomes_by_label": {
+  "buffered": {
+   "bad": 5,
+   "good": 9
+  },
+  "reinforced": {
+   "good": 20,
+   "bad": 6
+  },
+  "discarded": {
+   "good": 12,
+   "bad": 8
+  }
+ },
+ "discarded_in_theta_rho_band": 20,
+ "same_file_cosine": {
+  "n": 40,
+  "p05": 0.4627734596853937,
+  "p25": 0.5510701875099835,
+  "med": 0.6396357811242871,
+  "p75": 0.7552149249958254,
+  "p95": 0.882916681674374
+ },
+ "diff_file_cosine": {
+  "n": 1730,
+  "p05": 0.1095367949169443,
+  "p25": 0.23493728724456422,
+  "med": 0.3698526661312971,
+  "p75": 0.46846607010016045,
+  "p95": 0.6874108356782063
+ },
+ "share_of_pairs_at_or_above": {
+  "0.5": {
+   "same_file": 0.875,
+   "diff_file": 0.187
+  },
+  "0.55": {
+   "same_file": 0.75,
+   "diff_file": 0.12
+  },
+  "0.6": {
+   "same_file": 0.625,
+   "diff_file": 0.082
+  },
+  "0.65": {
+   "same_file": 0.45,
+   "diff_file": 0.06
+  },
+  "0.7": {
+   "same_file": 0.375,
+   "diff_file": 0.045
+  },
+  "0.75": {
+   "same_file": 0.25,
+   "diff_file": 0.035
+  }
+ },
+ "promoted": 0
+}

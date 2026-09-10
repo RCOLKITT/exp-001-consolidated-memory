@@ -1,0 +1,64 @@
+{
+ "repo_dir": "runs/learn/pdm-project__pdm",
+ "theta": 0.45,
+ "rho": 0.7,
+ "n_ingested": 59,
+ "outcomes_by_label": {
+  "buffered": {
+   "bad": 3,
+   "good": 8
+  },
+  "reinforced": {
+   "good": 14,
+   "bad": 4
+  },
+  "discarded": {
+   "bad": 11,
+   "good": 19
+  }
+ },
+ "discarded_in_theta_rho_band": 30,
+ "same_file_cosine": {
+  "n": 60,
+  "p05": 0.39844663977932654,
+  "p25": 0.533652106646999,
+  "med": 0.6189635509958059,
+  "p75": 0.6812573595284684,
+  "p95": 0.7603862694712361
+ },
+ "diff_file_cosine": {
+  "n": 1651,
+  "p05": 0.2986575607116869,
+  "p25": 0.398548850214208,
+  "med": 0.46994477239635324,
+  "p75": 0.5339595122743266,
+  "p95": 0.6674673343423827
+ },
+ "share_of_pairs_at_or_above": {
+  "0.5": {
+   "same_file": 0.833,
+   "diff_file": 0.378
+  },
+  "0.55": {
+   "same_file": 0.683,
+   "diff_file": 0.207
+  },
+  "0.6": {
+   "same_file": 0.567,
+   "diff_file": 0.113
+  },
+  "0.65": {
+   "same_file": 0.333,
+   "diff_file": 0.059
+  },
+  "0.7": {
+   "same_file": 0.2,
+   "diff_file": 0.043
+  },
+  "0.75": {
+   "same_file": 0.067,
+   "diff_file": 0.031
+  }
+ },
+ "promoted": 0
+}
