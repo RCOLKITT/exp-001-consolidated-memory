@@ -1,0 +1,20 @@
+{
+ "base_url": "https://openrouter.ai/api/v1",
+ "cache": "runs/reused-cache.jsonl",
+ "cache_hits": 260,
+ "cache_misses": 0,
+ "effort": "high",
+ "elapsed_s": 126.8,
+ "error_ids": [],
+ "flags_sha256": "86ede91ebc8426ba09187687f0d94b2cdf43a2642bee15b2dc29316b4eeb7750",
+ "model": "meta-llama/llama-3.3-70b-instruct",
+ "model_extra": "{\"provider\": {\"order\": [\"Crusoe\", \"CoreWeave\"], \"allow_fallbacks\": false}}",
+ "n_errors": 0,
+ "n_scored": 260,
+ "n_tasks": 260,
+ "offline": true,
+ "per_repo_limit": 20,
+ "provider": "openai-compatible",
+ "repos_filter": "conan-io/conan,aws-cloudformation/cfn-lint,matplotlib/matplotlib,deepset-ai/haystack,pylint-dev/pylint,instructlab/instructlab,keras-team/keras,reflex-dev/reflex,streamlink/streamlink,sphinx-doc/sphinx,pdm-project/pdm,sissbruecker/linkding,pvlib/pvlib-python",
+ "top_k": 3
+}
