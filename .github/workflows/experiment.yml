@@ -81,7 +81,13 @@ jobs:
           set -euo pipefail
           test -n "$MODEL_API_KEY" || { echo "MODEL_API_KEY secret is not set"; exit 2; }
           python -m phase3.learn --tasks corpus/tasks.jsonl --models corpus/models.json --split corpus/split.json --repos-dir corpus/repos --out runs/learn $COMMON --model-extra "$MX"
-          mkdir -p "${{ steps.cfg.outputs.dir }}/learn"; for d in runs/learn/*/; do r=$(basename "$d"); cp "$d/gate3.json" "${{ steps.cfg.outputs.dir }}/learn/$r.gate3.json"; done
+          mkdir -p "${{ steps.cfg.outputs.dir }}/learn"
+          for d in runs/learn/*/; do
+            r=$(basename "$d"); cp "$d/gate3.json" "${{ steps.cfg.outputs.dir }}/learn/$r.gate3.json"; cp "$d/kernel.json" "${{ steps.cfg.outputs.dir }}/learn/$r.kernel.json"
+            python -m phase3.diagnose "$d" --out "${{ steps.cfg.outputs.dir }}/learn/$r.diagnose.json" | head -40
+          done
+          # vectors are small for smoke runs; keep them with the results when the total is under 8 MB
+          if [ "$(du -sm runs/learn | cut -f1)" -lt 8 ]; then for d in runs/learn/*/; do r=$(basename "$d"); [ -f "$d/embeddings.jsonl" ] && cp "$d/embeddings.jsonl" "${{ steps.cfg.outputs.dir }}/learn/$r.embeddings.jsonl"; done; fi; true
       - name: Reuse an earlier learn artifact
         if: steps.cfg.outputs.stage == 'evaluate'
         run: |
