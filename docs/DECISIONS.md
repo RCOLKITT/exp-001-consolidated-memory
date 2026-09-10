@@ -189,3 +189,11 @@ outputs supported, $0.25 / $0.75 per M tokens at the time of listing), via
 Fallback if Crusoe is unavailable during a run: CoreWeave fp16 (128k,
 structured outputs), recorded as a deviation if used. Never fp8 for
 pre-registered runs.
+
+### D18. False-positive rate is a paired metric, not a level
+With k flags per task and g gold files (g is usually 1), the flag-level FP
+rate cannot go below (k - g) / k, i.e. ~0.67 at k = 3. Run 17's 0.88 sits
+above that floor by 0.21, which is the interpretable part. Gate 4 compares
+the two arms' FP rates at the same k on the same tasks, so the floor
+cancels. Report the level alongside precision@1 in Phase 4 so readers can
+see the floor; do not "fix" the metric after seeing data (§7).

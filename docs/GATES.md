@@ -5,9 +5,9 @@ Any gate can end the experiment. Tick boxes only with evidence linked.
 ## Gate 0 — Baseline (Phase 0)
 Harness: `phase0/` (see `phase0/RUNBOOK.md`). Built and unit-tested; not yet run on the corpus.
 
-- [ ] Control-arm localization rate within a defensible margin of a published baseline — reference: ______ (metric, k, model, corpus) · our number: ______ (`runs/control-001/metrics.json`)
+- [ ] Control-arm localization rate within a defensible margin of a published baseline — reference: ______ (metric, k, model, corpus) · our number: 0.34 hit@3 on 50 cfn-lint tasks (`results/phase0/17/control/metrics.json`); all-repo sample pending (run 18)
 - [x] Freshness gate enforced in code, not by convention — `phase0/freshness_gate.py`, applied at import in `phase0/corpus.py`; `tests/test_freshness_gate.py`
-- [ ] Harness reruns produce identical results on identical inputs — `run_control --compare` exit 0 on an `--offline` rerun (mechanism: content-addressed response cache, `tests/test_verifier.py::test_cache_makes_rerun_identical_and_offline`)
+- [x] Harness reruns produce identical results on identical inputs — run 17: `--offline` rerun identical (`results/phase0/17/control/compare.txt`); mechanism: content-addressed response cache
 - [x] Corpus decision (§9.1) — SWE-bench-Live Python `full`, verifier chosen to fit the gate (option A, D16): Llama 3.3 70B → 13 eligible repos (`results/phase0/7`); fallback Llama 4 → 4 (`results/phase0/10`). See `docs/phase0-findings.md` §6
 
 ## Gate 1 — Mechanism (Phase 1)

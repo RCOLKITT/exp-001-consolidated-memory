@@ -56,6 +56,13 @@ def run(args: argparse.Namespace) -> int:
         tasks = [t for t in tasks if t.repo in wanted]
         sys.stderr.write(f"repo filter: {len(tasks)} tasks in {len(wanted)} repos\n")
     tasks.sort(key=lambda t: (t.repo, t.created_at, t.instance_id))
+    if args.per_repo_limit:
+        seen: dict[str, int] = {}
+        kept = []
+        for t in tasks:                       # chronological within repo, so this is each repo's earliest N
+            if seen.get(t.repo, 0) < args.per_repo_limit:
+                kept.append(t); seen[t.repo] = seen.get(t.repo, 0) + 1
+        tasks = kept
     if args.limit:
         tasks = tasks[: args.limit]
     truth = ground_truth_from_tasks(tasks)
@@ -91,7 +98,7 @@ def run(args: argparse.Namespace) -> int:
     dump(m, out / "metrics.json")
     manifest = {
         "model": args.model, "provider": args.provider, "base_url": args.base_url, "model_extra": args.model_extra, "effort": args.effort, "top_k": args.top_k,
-        "n_tasks": len(tasks), "n_scored": len(flags_by_task), "n_errors": len(errors), "error_ids": errors, "repos_filter": args.repos,
+        "per_repo_limit": args.per_repo_limit, "n_tasks": len(tasks), "n_scored": len(flags_by_task), "n_errors": len(errors), "error_ids": errors, "repos_filter": args.repos,
         "offline": args.offline, "cache": str(cache_path), "cache_hits": client.hits, "cache_misses": client.misses,
         "flags_sha256": hashlib.sha256(flags_path.read_bytes()).hexdigest(),
         "elapsed_s": round(time.time() - t0, 1),
@@ -123,6 +130,7 @@ def _main(argv: list[str]) -> int:
     ap.add_argument("--effort", default="high")
     ap.add_argument("--top-k", type=int, default=3)
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--per-repo-limit", type=int, default=0, help="at most N tasks per repo (earliest N), applied before --limit")
     ap.add_argument("--repos", default="", help="restrict to these repos: comma list or a file with one owner/name per line")
     ap.add_argument("--cache", help="reuse an existing cache file (default: <out>/cache.jsonl)")
     ap.add_argument("--offline", action="store_true", help="never call the model; fail on cache miss")

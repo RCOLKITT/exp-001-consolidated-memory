@@ -13,7 +13,8 @@ corpus runs done on GitHub Actions (`results/phase0/`): no Claude model
 still served passes the freshness gate on the Python corpus, so the
 verifier will be an open-weights model with a documented cutoff (option A,
 recommended Llama 3.3 70B; [docs/phase0-findings.md](docs/phase0-findings.md) §6).
-Control arm not yet run (needs a hosting provider key). Nothing pre-registered.
+First control-arm run done on the pinned verifier with the determinism check
+passing (`results/phase0/17/`, findings §7). Nothing pre-registered.
 Similarity seam is still the Jaccard placeholder (D14).
 
 ## Layout

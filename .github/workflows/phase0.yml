@@ -44,6 +44,9 @@ on:
         default: "50"
       top_k:
         default: "3"
+      per_repo_limit:
+        description: "at most N tasks per repo (0 = no cap)"
+        default: "0"
 permissions:
   contents: write
 concurrency:
@@ -64,6 +67,7 @@ jobs:
       limit: ${{ steps.cfg.outputs.limit }}
       top_k: ${{ steps.cfg.outputs.top_k }}
       repos: ${{ steps.cfg.outputs.repos }}
+      per_repo_limit: ${{ steps.cfg.outputs.per_repo_limit }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -79,6 +83,7 @@ jobs:
           IN_RUN_CONTROL: ${{ inputs.run_control }}
           IN_LIMIT: ${{ inputs.limit }}
           IN_TOP_K: ${{ inputs.top_k }}
+          IN_PER_REPO_LIMIT: ${{ inputs.per_repo_limit }}
         run: |
           python - <<'PY' >> "$GITHUB_OUTPUT"
           import json, os
@@ -89,7 +94,7 @@ jobs:
           out = {"dataset": pick("IN_DATASET", "dataset", "SWE-bench-Live/SWE-bench-Live"), "split": pick("IN_SPLIT", "split", "full"), "cutoff": pick("IN_CUTOFF", "cutoff", ""),
                  "model": pick("IN_MODEL", "model", "claude-opus-5"), "provider": pick("IN_PROVIDER", "provider", "anthropic"),
                  "base_url": pick("IN_BASE_URL", "base_url", ""), "model_extra": json.dumps(cfg["model_extra"]) if isinstance(cfg.get("model_extra"), dict) else pick("IN_MODEL_EXTRA", "model_extra", ""), "run_control": str(pick("IN_RUN_CONTROL", "run_control", False)).lower(),
-                 "limit": str(pick("IN_LIMIT", "limit", 50)), "top_k": str(pick("IN_TOP_K", "top_k", 3)),
+                 "limit": str(pick("IN_LIMIT", "limit", 50)), "top_k": str(pick("IN_TOP_K", "top_k", 3)), "per_repo_limit": str(pick("IN_PER_REPO_LIMIT", "per_repo_limit", 0)),
                  "repos": ",".join(cfg["repos"]) if isinstance(cfg.get("repos"), list) else pick("IN_REPOS", "repos", "")}
           for k, v in out.items(): print(f"{k}={v}")
           import sys; print(json.dumps(out), file=sys.stderr)
@@ -193,8 +198,8 @@ jobs:
           fi
           M=""; [ -f corpus/models.json ] && M="--models corpus/models.json"
           R=""; [ -n "${{ needs.corpus.outputs.repos }}" ] && R="--repos ${{ needs.corpus.outputs.repos }}"
-          python -m phase0.run_control --tasks corpus/tasks.jsonl $M --repos-dir corpus/repos --out runs/control-a $P ${MX:+"$MX"} $R --model "${{ needs.corpus.outputs.model }}" --top-k "${{ needs.corpus.outputs.top_k }}" --limit "${{ needs.corpus.outputs.limit }}"
-          python -m phase0.run_control --tasks corpus/tasks.jsonl $M --repos-dir corpus/repos --out runs/control-b $P ${MX:+"$MX"} $R --model "${{ needs.corpus.outputs.model }}" --top-k "${{ needs.corpus.outputs.top_k }}" --limit "${{ needs.corpus.outputs.limit }}" --cache runs/control-a/cache.jsonl --offline
+          python -m phase0.run_control --tasks corpus/tasks.jsonl $M --repos-dir corpus/repos --out runs/control-a $P ${MX:+"$MX"} $R --model "${{ needs.corpus.outputs.model }}" --top-k "${{ needs.corpus.outputs.top_k }}" --limit "${{ needs.corpus.outputs.limit }}" --per-repo-limit "${{ needs.corpus.outputs.per_repo_limit }}"
+          python -m phase0.run_control --tasks corpus/tasks.jsonl $M --repos-dir corpus/repos --out runs/control-b $P ${MX:+"$MX"} $R --model "${{ needs.corpus.outputs.model }}" --top-k "${{ needs.corpus.outputs.top_k }}" --limit "${{ needs.corpus.outputs.limit }}" --per-repo-limit "${{ needs.corpus.outputs.per_repo_limit }}" --cache runs/control-a/cache.jsonl --offline
           python -m phase0.run_control --compare runs/control-a runs/control-b | tee runs/compare.txt
       - uses: actions/upload-artifact@v4
         if: always()

@@ -99,3 +99,28 @@ Hosting: any OpenAI-compatible provider serving the open weights
 (`--provider openai-compatible`); pin the provider's exact model id and
 quantisation in the pre-registration block, because different quantised
 builds are different verifiers.
+
+## 7. First control-arm run (run 17, 2026-09-10)
+
+Verifier: Llama 3.3 70B Instruct via OpenRouter, pinned to Crusoe bf16
+(every one of the 50 requests reports `served_by: Crusoe`). Corpus: Python
+`full`, gate 2023-12-31, restricted to the 13 draft repos; the first 50
+tasks by (repo, date) are all aws-cloudformation/cfn-lint. k = 3.
+
+| Metric | Value |
+|---|---|
+| Tasks scored / attempted | 50 / 50 (0 errors, 0 truncated file lists; ~1,010 files each) |
+| Localization rate (task hit@3, file level) | **0.34** |
+| False-positive rate (flags with no gold overlap / flags) | 0.879 (141 flags, 124 FP) |
+| Determinism: offline rerun vs original | **identical** (`compare.txt`, flags sha256 b2454e09…) |
+| Wall time | 263 s for 50 tasks |
+
+Two cautions. (1) One repo: cfn-lint issues map to rule files, a hard
+target; this number is not the corpus rate. Run 18 samples every repo. (2)
+At fixed k = 3 with mostly single-file gold patches the flag-level FP rate
+has a floor near 0.67 even for a perfect verifier; it is meaningful only as
+the paired difference between arms (Gate 4), never as a level (D18).
+
+Gate 0 status after run 17: freshness gate ✓ (in code), determinism ✓
+(mechanism demonstrated on real model traffic), published-baseline
+comparison still open (reference number not yet pinned, D10).
