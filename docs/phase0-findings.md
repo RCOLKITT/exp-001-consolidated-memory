@@ -190,3 +190,66 @@ different runner, offline (260 cache hits, 0 misses): flags sha256
 each with the oracle's label and the gold files. Gate 2.3 needs a human to
 fill the `manual` column by reading each gold patch, then
 `python -m phase2.handcheck score handcheck.csv` (≥ 0.95 required).
+
+## 10. Gold-location recurrence — the ceiling on file-level memory (run 20)
+
+`python -m phase2.recurrence` on the gated corpus, 13 draft repos. For each
+build prefix N: how many gold files recur ≥ 3 times among the first N tasks
+(the only patterns the §6 promotion rule can consolidate), and the share of
+the remaining tasks whose gold file is one of them (`seen3`). A promoted
+file memory can only help a task whose gold file it names, and only if the
+control arm missed it, so **ceiling ≈ seen3 × (1 − p0)** with p0 the
+repo's control hit@3 from run 18.
+
+| repo | chain | build N | eval n | files ≥ 3 in build | seen3 | p0 | ceiling (pts) |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| conan-io/conan | 165 | 20 | 145 | 0 | 0.00 | 0.55 | 0.0 |
+| conan-io/conan | 165 | 40 | 125 | 3 | 0.05 | 0.55 | 2.2 |
+| conan-io/conan | 165 | 60 | 105 | 10 | 0.11 | 0.55 | 5.1 |
+| aws-cloudformation/cfn-lint | 109 | 20 | 89 | 2 | 0.17 | 0.20 | 13.5 |
+| aws-cloudformation/cfn-lint | 109 | 40 | 69 | 4 | 0.22 | 0.20 | 17.4 |
+| aws-cloudformation/cfn-lint | 109 | 60 | 49 | 14 | 0.39 | 0.20 | 31.0 |
+| matplotlib/matplotlib | 101 | 20 | 81 | 2 | 0.18 | 0.75 | 4.6 |
+| matplotlib/matplotlib | 101 | 40 | 61 | 4 | 0.31 | 0.75 | 7.8 |
+| matplotlib/matplotlib | 101 | 60 | 41 | 13 | 0.54 | 0.75 | 13.4 |
+| deepset-ai/haystack | 88 | 20 | 68 | 1 | 0.06 | 0.80 | 1.2 |
+| deepset-ai/haystack | 88 | 40 | 48 | 7 | 0.25 | 0.80 | 5.0 |
+| deepset-ai/haystack | 88 | 60 | 28 | 11 | 0.36 | 0.80 | 7.1 |
+| pylint-dev/pylint | 62 | 20 | 42 | 2 | 0.29 | 0.45 | 15.7 |
+| pylint-dev/pylint | 62 | 40 | 22 | 9 | 0.32 | 0.45 | 17.5 |
+| instructlab/instructlab | 52 | 20 | 32 | 6 | 0.62 | 0.80 | 12.5 |
+| instructlab/instructlab | 52 | 40 | 12 | 14 | 0.50 | 0.80 | 10.0 |
+| keras-team/keras | 48 | 20 | 28 | 0 | 0.00 | 0.55 | 0.0 |
+| reflex-dev/reflex | 44 | 20 | 24 | 5 | 0.54 | 0.65 | 19.0 |
+| streamlink/streamlink | 41 | 20 | 21 | 0 | 0.00 | 1.00 | 0.0 |
+| sphinx-doc/sphinx | 39 | 20 | 19 | 3 | 0.95 | 0.60 | 37.9 |
+| pdm-project/pdm | 35 | 20 | 15 | 5 | 0.53 | 0.75 | 13.3 |
+| sissbruecker/linkding | 34 | 20 | 14 | 9 | 0.43 | 0.70 | 12.9 |
+| pvlib/pvlib-python | 30 | 20 | 10 | 8 | 0.40 | 0.95 | 2.0 |
+
+Aggregate over repos with ≥ 10 eval tasks at that prefix:
+
+| design | eval pool | ceiling |
+|---|---|---|
+| build = 20 | 588 eval tasks | ceiling on aggregate lift ≈ 7.3 pts |
+| build = 40 | 337 eval tasks | ceiling on aggregate lift ≈ 8.0 pts |
+| build = 60 | 223 eval tasks | ceiling on aggregate lift ≈ 12.6 pts |
+
+Reading: at build = 20 the pre-registered 15-point kill number is above
+the ceiling in most repos and in aggregate — Gate 4 would fail by
+construction, not by evidence. Directory-level recurrence is far higher
+(`recurrence.md`, `dir seen3` 0.4–1.0) but a directory hint is weak
+localization information when the verifier already sees the whole tree.
+
+What this changes before pre-registration:
+1. Build split per repo should be as long as the chain allows while
+   leaving ≥ 20 eval tasks: 60 for conan, cfn-lint, matplotlib, haystack,
+   pylint; 40 for instructlab, keras, reflex, streamlink; 20 for sphinx,
+   pdm, linkding, pvlib. The eval pool shrinks (fewer tasks per arm) and
+   the MDE rises accordingly — recompute with `phase2.power`.
+2. The Gate 4 kill number must be compared with the ceiling *before* it is
+   fixed; "15 points" was written without this bound. Lowering a kill
+   number before pre-registration on Phase 0 evidence is legitimate;
+   lowering it after Phase 4 is not (§7).
+3. The unit of memory is the file (D24); a symptom-level memory would have
+   a strictly lower ceiling.
