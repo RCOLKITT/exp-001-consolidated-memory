@@ -1,0 +1,3884 @@
+[
+ {
+  "repo": "conan-io/conan",
+  "n": 165,
+  "first": "2024-01-03",
+  "last": "2025-08-28",
+  "span_days": 603,
+  "instance_ids": [
+   "conan-io__conan-15377",
+   "conan-io__conan-15422",
+   "conan-io__conan-15439",
+   "conan-io__conan-15453",
+   "conan-io__conan-15457",
+   "conan-io__conan-15485",
+   "conan-io__conan-15499",
+   "conan-io__conan-15504",
+   "conan-io__conan-15505",
+   "conan-io__conan-15513",
+   "conan-io__conan-15516",
+   "conan-io__conan-15538",
+   "conan-io__conan-15553",
+   "conan-io__conan-15564",
+   "conan-io__conan-15571",
+   "conan-io__conan-15573",
+   "conan-io__conan-15575",
+   "conan-io__conan-15616",
+   "conan-io__conan-15626",
+   "conan-io__conan-15651",
+   "conan-io__conan-15652",
+   "conan-io__conan-15653",
+   "conan-io__conan-15665",
+   "conan-io__conan-15697",
+   "conan-io__conan-15699",
+   "conan-io__conan-15705",
+   "conan-io__conan-15737",
+   "conan-io__conan-15747",
+   "conan-io__conan-15763",
+   "conan-io__conan-15779",
+   "conan-io__conan-15823",
+   "conan-io__conan-15838",
+   "conan-io__conan-15845",
+   "conan-io__conan-15876",
+   "conan-io__conan-15914",
+   "conan-io__conan-15931",
+   "conan-io__conan-15933",
+   "conan-io__conan-15946",
+   "conan-io__conan-15965",
+   "conan-io__conan-15999",
+   "conan-io__conan-16011",
+   "conan-io__conan-16013",
+   "conan-io__conan-16015",
+   "conan-io__conan-16022",
+   "conan-io__conan-16025",
+   "conan-io__conan-16028",
+   "conan-io__conan-16034",
+   "conan-io__conan-16038",
+   "conan-io__conan-16065",
+   "conan-io__conan-16069",
+   "conan-io__conan-16102",
+   "conan-io__conan-16103",
+   "conan-io__conan-16126",
+   "conan-io__conan-16170",
+   "conan-io__conan-16172",
+   "conan-io__conan-16196",
+   "conan-io__conan-16213",
+   "conan-io__conan-16214",
+   "conan-io__conan-16289",
+   "conan-io__conan-16308",
+   "conan-io__conan-16317",
+   "conan-io__conan-16335",
+   "conan-io__conan-16350",
+   "conan-io__conan-16362",
+   "conan-io__conan-16415",
+   "conan-io__conan-16443",
+   "conan-io__conan-16454",
+   "conan-io__conan-16552",
+   "conan-io__conan-16559",
+   "conan-io__conan-16563",
+   "conan-io__conan-16573",
+   "conan-io__conan-16613",
+   "conan-io__conan-16633",
+   "conan-io__conan-16646",
+   "conan-io__conan-16720",
+   "conan-io__conan-16742",
+   "conan-io__conan-16776",
+   "conan-io__conan-16789",
+   "conan-io__conan-16847",
+   "conan-io__conan-16849",
+   "conan-io__conan-16870",
+   "conan-io__conan-16871",
+   "conan-io__conan-16942",
+   "conan-io__conan-16964",
+   "conan-io__conan-16986",
+   "conan-io__conan-16987",
+   "conan-io__conan-17051",
+   "conan-io__conan-17092",
+   "conan-io__conan-17102",
+   "conan-io__conan-17117",
+   "conan-io__conan-17123",
+   "conan-io__conan-17127",
+   "conan-io__conan-17129",
+   "conan-io__conan-17132",
+   "conan-io__conan-17183",
+   "conan-io__conan-17186",
+   "conan-io__conan-17266",
+   "conan-io__conan-17292",
+   "conan-io__conan-17300",
+   "conan-io__conan-17301",
+   "conan-io__conan-17302",
+   "conan-io__conan-17326",
+   "conan-io__conan-17346",
+   "conan-io__conan-17366",
+   "conan-io__conan-17382",
+   "conan-io__conan-17387",
+   "conan-io__conan-17408",
+   "conan-io__conan-17514",
+   "conan-io__conan-17517",
+   "conan-io__conan-17520",
+   "conan-io__conan-17532",
+   "conan-io__conan-17538",
+   "conan-io__conan-17577",
+   "conan-io__conan-17591",
+   "conan-io__conan-17613",
+   "conan-io__conan-17708",
+   "conan-io__conan-17725",
+   "conan-io__conan-17781",
+   "conan-io__conan-17819",
+   "conan-io__conan-17838",
+   "conan-io__conan-17848",
+   "conan-io__conan-17851",
+   "conan-io__conan-17863",
+   "conan-io__conan-17877",
+   "conan-io__conan-17917",
+   "conan-io__conan-17923",
+   "conan-io__conan-17954",
+   "conan-io__conan-17964",
+   "conan-io__conan-17967",
+   "conan-io__conan-18012",
+   "conan-io__conan-18028",
+   "conan-io__conan-18037",
+   "conan-io__conan-18051",
+   "conan-io__conan-18083",
+   "conan-io__conan-18089",
+   "conan-io__conan-18097",
+   "conan-io__conan-18101",
+   "conan-io__conan-18153",
+   "conan-io__conan-18153",
+   "conan-io__conan-18219",
+   "conan-io__conan-18226",
+   "conan-io__conan-18243",
+   "conan-io__conan-18244",
+   "conan-io__conan-18280",
+   "conan-io__conan-18333",
+   "conan-io__conan-18334",
+   "conan-io__conan-18410",
+   "conan-io__conan-18442",
+   "conan-io__conan-18517",
+   "conan-io__conan-18518",
+   "conan-io__conan-18538",
+   "conan-io__conan-18541",
+   "conan-io__conan-18544",
+   "conan-io__conan-18552",
+   "conan-io__conan-18562",
+   "conan-io__conan-18608",
+   "conan-io__conan-18621",
+   "conan-io__conan-18642",
+   "conan-io__conan-18655",
+   "conan-io__conan-18661",
+   "conan-io__conan-18676",
+   "conan-io__conan-18693",
+   "conan-io__conan-18832",
+   "conan-io__conan-18840",
+   "conan-io__conan-18842"
+  ]
+ },
+ {
+  "repo": "aws-cloudformation/cfn-lint",
+  "n": 109,
+  "first": "2024-06-20",
+  "last": "2025-08-26",
+  "span_days": 432,
+  "instance_ids": [
+   "aws-cloudformation__cfn-lint-3335",
+   "aws-cloudformation__cfn-lint-3337",
+   "aws-cloudformation__cfn-lint-3340",
+   "aws-cloudformation__cfn-lint-3341",
+   "aws-cloudformation__cfn-lint-3342",
+   "aws-cloudformation__cfn-lint-3344",
+   "aws-cloudformation__cfn-lint-3346",
+   "aws-cloudformation__cfn-lint-3357",
+   "aws-cloudformation__cfn-lint-3367",
+   "aws-cloudformation__cfn-lint-3372",
+   "aws-cloudformation__cfn-lint-3386",
+   "aws-cloudformation__cfn-lint-3388",
+   "aws-cloudformation__cfn-lint-3389",
+   "aws-cloudformation__cfn-lint-3390",
+   "aws-cloudformation__cfn-lint-3392",
+   "aws-cloudformation__cfn-lint-3399",
+   "aws-cloudformation__cfn-lint-3400",
+   "aws-cloudformation__cfn-lint-3402",
+   "aws-cloudformation__cfn-lint-3410",
+   "aws-cloudformation__cfn-lint-3419",
+   "aws-cloudformation__cfn-lint-3425",
+   "aws-cloudformation__cfn-lint-3442",
+   "aws-cloudformation__cfn-lint-3450",
+   "aws-cloudformation__cfn-lint-3461",
+   "aws-cloudformation__cfn-lint-3475",
+   "aws-cloudformation__cfn-lint-3481",
+   "aws-cloudformation__cfn-lint-3498",
+   "aws-cloudformation__cfn-lint-3501",
+   "aws-cloudformation__cfn-lint-3508",
+   "aws-cloudformation__cfn-lint-3528",
+   "aws-cloudformation__cfn-lint-3548",
+   "aws-cloudformation__cfn-lint-3552",
+   "aws-cloudformation__cfn-lint-3557",
+   "aws-cloudformation__cfn-lint-3563",
+   "aws-cloudformation__cfn-lint-3579",
+   "aws-cloudformation__cfn-lint-3582",
+   "aws-cloudformation__cfn-lint-3593",
+   "aws-cloudformation__cfn-lint-3596",
+   "aws-cloudformation__cfn-lint-3605",
+   "aws-cloudformation__cfn-lint-3607",
+   "aws-cloudformation__cfn-lint-3621",
+   "aws-cloudformation__cfn-lint-3629",
+   "aws-cloudformation__cfn-lint-3633",
+   "aws-cloudformation__cfn-lint-3639",
+   "aws-cloudformation__cfn-lint-3650",
+   "aws-cloudformation__cfn-lint-3653",
+   "aws-cloudformation__cfn-lint-3659",
+   "aws-cloudformation__cfn-lint-3663",
+   "aws-cloudformation__cfn-lint-3684",
+   "aws-cloudformation__cfn-lint-3686",
+   "aws-cloudformation__cfn-lint-3688",
+   "aws-cloudformation__cfn-lint-3700",
+   "aws-cloudformation__cfn-lint-3707",
+   "aws-cloudformation__cfn-lint-3712",
+   "aws-cloudformation__cfn-lint-3714",
+   "aws-cloudformation__cfn-lint-3731",
+   "aws-cloudformation__cfn-lint-3734",
+   "aws-cloudformation__cfn-lint-3749",
+   "aws-cloudformation__cfn-lint-3759",
+   "aws-cloudformation__cfn-lint-3764",
+   "aws-cloudformation__cfn-lint-3767",
+   "aws-cloudformation__cfn-lint-3768",
+   "aws-cloudformation__cfn-lint-3770",
+   "aws-cloudformation__cfn-lint-3779",
+   "aws-cloudformation__cfn-lint-3785",
+   "aws-cloudformation__cfn-lint-3789",
+   "aws-cloudformation__cfn-lint-3798",
+   "aws-cloudformation__cfn-lint-3805",
+   "aws-cloudformation__cfn-lint-3817",
+   "aws-cloudformation__cfn-lint-3821",
+   "aws-cloudformation__cfn-lint-3854",
+   "aws-cloudformation__cfn-lint-3855",
+   "aws-cloudformation__cfn-lint-3856",
+   "aws-cloudformation__cfn-lint-3861",
+   "aws-cloudformation__cfn-lint-3862",
+   "aws-cloudformation__cfn-lint-3866",
+   "aws-cloudformation__cfn-lint-3875",
+   "aws-cloudformation__cfn-lint-3890",
+   "aws-cloudformation__cfn-lint-3900",
+   "aws-cloudformation__cfn-lint-3908",
+   "aws-cloudformation__cfn-lint-3915",
+   "aws-cloudformation__cfn-lint-3920",
+   "aws-cloudformation__cfn-lint-3931",
+   "aws-cloudformation__cfn-lint-3937",
+   "aws-cloudformation__cfn-lint-3940",
+   "aws-cloudformation__cfn-lint-3947",
+   "aws-cloudformation__cfn-lint-3965",
+   "aws-cloudformation__cfn-lint-3969",
+   "aws-cloudformation__cfn-lint-3972",
+   "aws-cloudformation__cfn-lint-3981",
+   "aws-cloudformation__cfn-lint-3982",
+   "aws-cloudformation__cfn-lint-4002",
+   "aws-cloudformation__cfn-lint-4008",
+   "aws-cloudformation__cfn-lint-4009",
+   "aws-cloudformation__cfn-lint-4016",
+   "aws-cloudformation__cfn-lint-4023",
+   "aws-cloudformation__cfn-lint-4026",
+   "aws-cloudformation__cfn-lint-4032",
+   "aws-cloudformation__cfn-lint-4045",
+   "aws-cloudformation__cfn-lint-4051",
+   "aws-cloudformation__cfn-lint-4081",
+   "aws-cloudformation__cfn-lint-4116",
+   "aws-cloudformation__cfn-lint-4137",
+   "aws-cloudformation__cfn-lint-4138",
+   "aws-cloudformation__cfn-lint-4149",
+   "aws-cloudformation__cfn-lint-4162",
+   "aws-cloudformation__cfn-lint-4168",
+   "aws-cloudformation__cfn-lint-4197",
+   "aws-cloudformation__cfn-lint-4236"
+  ]
+ },
+ {
+  "repo": "matplotlib/matplotlib",
+  "n": 101,
+  "first": "2024-01-06",
+  "last": "2025-08-26",
+  "span_days": 598,
+  "instance_ids": [
+   "matplotlib__matplotlib-27605",
+   "matplotlib__matplotlib-27613",
+   "matplotlib__matplotlib-27647",
+   "matplotlib__matplotlib-27692",
+   "matplotlib__matplotlib-27767",
+   "matplotlib__matplotlib-27773",
+   "matplotlib__matplotlib-27818",
+   "matplotlib__matplotlib-27833",
+   "matplotlib__matplotlib-27840",
+   "matplotlib__matplotlib-27845",
+   "matplotlib__matplotlib-27848",
+   "matplotlib__matplotlib-27850",
+   "matplotlib__matplotlib-27906",
+   "matplotlib__matplotlib-27943",
+   "matplotlib__matplotlib-27992",
+   "matplotlib__matplotlib-27998",
+   "matplotlib__matplotlib-28032",
+   "matplotlib__matplotlib-28033",
+   "matplotlib__matplotlib-28039",
+   "matplotlib__matplotlib-28073",
+   "matplotlib__matplotlib-28104",
+   "matplotlib__matplotlib-28116",
+   "matplotlib__matplotlib-28177",
+   "matplotlib__matplotlib-28261",
+   "matplotlib__matplotlib-28292",
+   "matplotlib__matplotlib-28306",
+   "matplotlib__matplotlib-28363",
+   "matplotlib__matplotlib-28388",
+   "matplotlib__matplotlib-28397",
+   "matplotlib__matplotlib-28401",
+   "matplotlib__matplotlib-28436",
+   "matplotlib__matplotlib-28437",
+   "matplotlib__matplotlib-28458",
+   "matplotlib__matplotlib-28465",
+   "matplotlib__matplotlib-28473",
+   "matplotlib__matplotlib-28478",
+   "matplotlib__matplotlib-28486",
+   "matplotlib__matplotlib-28487",
+   "matplotlib__matplotlib-28501",
+   "matplotlib__matplotlib-28504",
+   "matplotlib__matplotlib-28525",
+   "matplotlib__matplotlib-28573",
+   "matplotlib__matplotlib-28577",
+   "matplotlib__matplotlib-28584",
+   "matplotlib__matplotlib-28609",
+   "matplotlib__matplotlib-28629",
+   "matplotlib__matplotlib-28649",
+   "matplotlib__matplotlib-28734",
+   "matplotlib__matplotlib-28786",
+   "matplotlib__matplotlib-28830",
+   "matplotlib__matplotlib-28841",
+   "matplotlib__matplotlib-28853",
+   "matplotlib__matplotlib-28881",
+   "matplotlib__matplotlib-28933",
+   "matplotlib__matplotlib-28970",
+   "matplotlib__matplotlib-29007",
+   "matplotlib__matplotlib-29013",
+   "matplotlib__matplotlib-29052",
+   "matplotlib__matplotlib-29054",
+   "matplotlib__matplotlib-29209",
+   "matplotlib__matplotlib-29249",
+   "matplotlib__matplotlib-29258",
+   "matplotlib__matplotlib-29285",
+   "matplotlib__matplotlib-29317",
+   "matplotlib__matplotlib-29388",
+   "matplotlib__matplotlib-29401",
+   "matplotlib__matplotlib-29411",
+   "matplotlib__matplotlib-29431",
+   "matplotlib__matplotlib-29481",
+   "matplotlib__matplotlib-29486",
+   "matplotlib__matplotlib-29503",
+   "matplotlib__matplotlib-29520",
+   "matplotlib__matplotlib-29537",
+   "matplotlib__matplotlib-29612",
+   "matplotlib__matplotlib-29689",
+   "matplotlib__matplotlib-29696",
+   "matplotlib__matplotlib-29698",
+   "matplotlib__matplotlib-29719",
+   "matplotlib__matplotlib-29721",
+   "matplotlib__matplotlib-29781",
+   "matplotlib__matplotlib-29783",
+   "matplotlib__matplotlib-29798",
+   "matplotlib__matplotlib-29808",
+   "matplotlib__matplotlib-29873",
+   "matplotlib__matplotlib-29879",
+   "matplotlib__matplotlib-29892",
+   "matplotlib__matplotlib-29919",
+   "matplotlib__matplotlib-29958",
+   "matplotlib__matplotlib-29993",
+   "matplotlib__matplotlib-30030",
+   "matplotlib__matplotlib-30079",
+   "matplotlib__matplotlib-30089",
+   "matplotlib__matplotlib-30098",
+   "matplotlib__matplotlib-30186",
+   "matplotlib__matplotlib-30198",
+   "matplotlib__matplotlib-30223",
+   "matplotlib__matplotlib-30328",
+   "matplotlib__matplotlib-30363",
+   "matplotlib__matplotlib-30423",
+   "matplotlib__matplotlib-30467",
+   "matplotlib__matplotlib-30475"
+  ]
+ },
+ {
+  "repo": "deepset-ai/haystack",
+  "n": 88,
+  "first": "2024-01-08",
+  "last": "2025-08-28",
+  "span_days": 598,
+  "instance_ids": [
+   "deepset-ai__haystack-6701",
+   "deepset-ai__haystack-6713",
+   "deepset-ai__haystack-6717",
+   "deepset-ai__haystack-6753",
+   "deepset-ai__haystack-6758",
+   "deepset-ai__haystack-6847",
+   "deepset-ai__haystack-6857",
+   "deepset-ai__haystack-6877",
+   "deepset-ai__haystack-6887",
+   "deepset-ai__haystack-6889",
+   "deepset-ai__haystack-6922",
+   "deepset-ai__haystack-6973",
+   "deepset-ai__haystack-6987",
+   "deepset-ai__haystack-7038",
+   "deepset-ai__haystack-7042",
+   "deepset-ai__haystack-7303",
+   "deepset-ai__haystack-7362",
+   "deepset-ai__haystack-7375",
+   "deepset-ai__haystack-7599",
+   "deepset-ai__haystack-7681",
+   "deepset-ai__haystack-8078",
+   "deepset-ai__haystack-8489",
+   "deepset-ai__haystack-8525",
+   "deepset-ai__haystack-8609",
+   "deepset-ai__haystack-8619",
+   "deepset-ai__haystack-8670",
+   "deepset-ai__haystack-8708",
+   "deepset-ai__haystack-8725",
+   "deepset-ai__haystack-8799",
+   "deepset-ai__haystack-8804",
+   "deepset-ai__haystack-8838",
+   "deepset-ai__haystack-8875",
+   "deepset-ai__haystack-8879",
+   "deepset-ai__haystack-8880",
+   "deepset-ai__haystack-8885",
+   "deepset-ai__haystack-8940",
+   "deepset-ai__haystack-8941",
+   "deepset-ai__haystack-8943",
+   "deepset-ai__haystack-8948",
+   "deepset-ai__haystack-8969",
+   "deepset-ai__haystack-8973",
+   "deepset-ai__haystack-8981",
+   "deepset-ai__haystack-8992",
+   "deepset-ai__haystack-8993",
+   "deepset-ai__haystack-8997",
+   "deepset-ai__haystack-9026",
+   "deepset-ai__haystack-9027",
+   "deepset-ai__haystack-9033",
+   "deepset-ai__haystack-9066",
+   "deepset-ai__haystack-9069",
+   "deepset-ai__haystack-9132",
+   "deepset-ai__haystack-9144",
+   "deepset-ai__haystack-9182",
+   "deepset-ai__haystack-9189",
+   "deepset-ai__haystack-9218",
+   "deepset-ai__haystack-9226",
+   "deepset-ai__haystack-9227",
+   "deepset-ai__haystack-9230",
+   "deepset-ai__haystack-9239",
+   "deepset-ai__haystack-9240",
+   "deepset-ai__haystack-9242",
+   "deepset-ai__haystack-9251",
+   "deepset-ai__haystack-9270",
+   "deepset-ai__haystack-9284",
+   "deepset-ai__haystack-9322",
+   "deepset-ai__haystack-9336",
+   "deepset-ai__haystack-9524",
+   "deepset-ai__haystack-9525",
+   "deepset-ai__haystack-9568",
+   "deepset-ai__haystack-9574",
+   "deepset-ai__haystack-9582",
+   "deepset-ai__haystack-9608",
+   "deepset-ai__haystack-9622",
+   "deepset-ai__haystack-9649",
+   "deepset-ai__haystack-9667",
+   "deepset-ai__haystack-9679",
+   "deepset-ai__haystack-9680",
+   "deepset-ai__haystack-9682",
+   "deepset-ai__haystack-9688",
+   "deepset-ai__haystack-9693",
+   "deepset-ai__haystack-9699",
+   "deepset-ai__haystack-9703",
+   "deepset-ai__haystack-9704",
+   "deepset-ai__haystack-9712",
+   "deepset-ai__haystack-9726",
+   "deepset-ai__haystack-9729",
+   "deepset-ai__haystack-9742",
+   "deepset-ai__haystack-9748"
+  ]
+ },
+ {
+  "repo": "pylint-dev/pylint",
+  "n": 62,
+  "first": "2024-01-04",
+  "last": "2025-05-22",
+  "span_days": 504,
+  "instance_ids": [
+   "pylint-dev__pylint-9346",
+   "pylint-dev__pylint-9374",
+   "pylint-dev__pylint-9419",
+   "pylint-dev__pylint-9452",
+   "pylint-dev__pylint-9491",
+   "pylint-dev__pylint-9504",
+   "pylint-dev__pylint-9534",
+   "pylint-dev__pylint-9592",
+   "pylint-dev__pylint-9594",
+   "pylint-dev__pylint-9599",
+   "pylint-dev__pylint-9632",
+   "pylint-dev__pylint-9634",
+   "pylint-dev__pylint-9654",
+   "pylint-dev__pylint-9670",
+   "pylint-dev__pylint-9678",
+   "pylint-dev__pylint-9697",
+   "pylint-dev__pylint-9700",
+   "pylint-dev__pylint-9704",
+   "pylint-dev__pylint-9705",
+   "pylint-dev__pylint-9709",
+   "pylint-dev__pylint-9714",
+   "pylint-dev__pylint-9744",
+   "pylint-dev__pylint-9753",
+   "pylint-dev__pylint-9771",
+   "pylint-dev__pylint-9772",
+   "pylint-dev__pylint-9785",
+   "pylint-dev__pylint-9802",
+   "pylint-dev__pylint-9817",
+   "pylint-dev__pylint-9838",
+   "pylint-dev__pylint-9842",
+   "pylint-dev__pylint-9844",
+   "pylint-dev__pylint-9866",
+   "pylint-dev__pylint-9868",
+   "pylint-dev__pylint-9876",
+   "pylint-dev__pylint-9882",
+   "pylint-dev__pylint-9917",
+   "pylint-dev__pylint-9990",
+   "pylint-dev__pylint-10034",
+   "pylint-dev__pylint-10036",
+   "pylint-dev__pylint-10044",
+   "pylint-dev__pylint-10045",
+   "pylint-dev__pylint-10062",
+   "pylint-dev__pylint-10075",
+   "pylint-dev__pylint-10089",
+   "pylint-dev__pylint-10097",
+   "pylint-dev__pylint-10141",
+   "pylint-dev__pylint-10170",
+   "pylint-dev__pylint-10209",
+   "pylint-dev__pylint-10225",
+   "pylint-dev__pylint-10228",
+   "pylint-dev__pylint-10232",
+   "pylint-dev__pylint-10240",
+   "pylint-dev__pylint-10246",
+   "pylint-dev__pylint-10250",
+   "pylint-dev__pylint-10275",
+   "pylint-dev__pylint-10300",
+   "pylint-dev__pylint-10328",
+   "pylint-dev__pylint-10344",
+   "pylint-dev__pylint-10350",
+   "pylint-dev__pylint-10362",
+   "pylint-dev__pylint-10379",
+   "pylint-dev__pylint-10403"
+  ]
+ },
+ {
+  "repo": "instructlab/instructlab",
+  "n": 52,
+  "first": "2024-03-07",
+  "last": "2025-02-25",
+  "span_days": 355,
+  "instance_ids": [
+   "instructlab__instructlab-367",
+   "instructlab__instructlab-612",
+   "instructlab__instructlab-615",
+   "instructlab__instructlab-756",
+   "instructlab__instructlab-849",
+   "instructlab__instructlab-893",
+   "instructlab__instructlab-959",
+   "instructlab__instructlab-969",
+   "instructlab__instructlab-1002",
+   "instructlab__instructlab-1088",
+   "instructlab__instructlab-1102",
+   "instructlab__instructlab-1413",
+   "instructlab__instructlab-1417",
+   "instructlab__instructlab-1443",
+   "instructlab__instructlab-1576",
+   "instructlab__instructlab-1639",
+   "instructlab__instructlab-1662",
+   "instructlab__instructlab-1677",
+   "instructlab__instructlab-1732",
+   "instructlab__instructlab-1741",
+   "instructlab__instructlab-1762",
+   "instructlab__instructlab-1847",
+   "instructlab__instructlab-1923",
+   "instructlab__instructlab-1945",
+   "instructlab__instructlab-2004",
+   "instructlab__instructlab-2005",
+   "instructlab__instructlab-2055",
+   "instructlab__instructlab-2065",
+   "instructlab__instructlab-2119",
+   "instructlab__instructlab-2144",
+   "instructlab__instructlab-2208",
+   "instructlab__instructlab-2236",
+   "instructlab__instructlab-2247",
+   "instructlab__instructlab-2316",
+   "instructlab__instructlab-2526",
+   "instructlab__instructlab-2540",
+   "instructlab__instructlab-2548",
+   "instructlab__instructlab-2572",
+   "instructlab__instructlab-2579",
+   "instructlab__instructlab-2585",
+   "instructlab__instructlab-2592",
+   "instructlab__instructlab-2741",
+   "instructlab__instructlab-2789",
+   "instructlab__instructlab-2825",
+   "instructlab__instructlab-2886",
+   "instructlab__instructlab-2927",
+   "instructlab__instructlab-3045",
+   "instructlab__instructlab-3060",
+   "instructlab__instructlab-3118",
+   "instructlab__instructlab-3125",
+   "instructlab__instructlab-3135",
+   "instructlab__instructlab-3184"
+  ]
+ },
+ {
+  "repo": "keras-team/keras",
+  "n": 48,
+  "first": "2024-03-11",
+  "last": "2025-03-19",
+  "span_days": 373,
+  "instance_ids": [
+   "keras-team__keras-19284",
+   "keras-team__keras-19300",
+   "keras-team__keras-19313",
+   "keras-team__keras-19331",
+   "keras-team__keras-19385",
+   "keras-team__keras-19387",
+   "keras-team__keras-19459",
+   "keras-team__keras-19484",
+   "keras-team__keras-19564",
+   "keras-team__keras-19641",
+   "keras-team__keras-19685",
+   "keras-team__keras-19773",
+   "keras-team__keras-19775",
+   "keras-team__keras-19826",
+   "keras-team__keras-19838",
+   "keras-team__keras-19844",
+   "keras-team__keras-19863",
+   "keras-team__keras-19883",
+   "keras-team__keras-19903",
+   "keras-team__keras-19911",
+   "keras-team__keras-19915",
+   "keras-team__keras-19924",
+   "keras-team__keras-19931",
+   "keras-team__keras-19937",
+   "keras-team__keras-19955",
+   "keras-team__keras-19973",
+   "keras-team__keras-19998",
+   "keras-team__keras-20064",
+   "keras-team__keras-20079",
+   "keras-team__keras-20120",
+   "keras-team__keras-20122",
+   "keras-team__keras-20123",
+   "keras-team__keras-20125",
+   "keras-team__keras-20168",
+   "keras-team__keras-20197",
+   "keras-team__keras-20206",
+   "keras-team__keras-20296",
+   "keras-team__keras-20383",
+   "keras-team__keras-20389",
+   "keras-team__keras-20396",
+   "keras-team__keras-20443",
+   "keras-team__keras-20534",
+   "keras-team__keras-20609",
+   "keras-team__keras-20703",
+   "keras-team__keras-20765",
+   "keras-team__keras-20824",
+   "keras-team__keras-20880",
+   "keras-team__keras-21072"
+  ]
+ },
+ {
+  "repo": "reflex-dev/reflex",
+  "n": 44,
+  "first": "2024-01-02",
+  "last": "2025-04-02",
+  "span_days": 456,
+  "instance_ids": [
+   "reflex-dev__reflex-2350",
+   "reflex-dev__reflex-2391",
+   "reflex-dev__reflex-2439",
+   "reflex-dev__reflex-2457",
+   "reflex-dev__reflex-2617",
+   "reflex-dev__reflex-2936",
+   "reflex-dev__reflex-2985",
+   "reflex-dev__reflex-3006",
+   "reflex-dev__reflex-3037",
+   "reflex-dev__reflex-3160",
+   "reflex-dev__reflex-3179",
+   "reflex-dev__reflex-3336",
+   "reflex-dev__reflex-3435",
+   "reflex-dev__reflex-3449",
+   "reflex-dev__reflex-3462",
+   "reflex-dev__reflex-3475",
+   "reflex-dev__reflex-3580",
+   "reflex-dev__reflex-3625",
+   "reflex-dev__reflex-3696",
+   "reflex-dev__reflex-3833",
+   "reflex-dev__reflex-3842",
+   "reflex-dev__reflex-3895",
+   "reflex-dev__reflex-3982",
+   "reflex-dev__reflex-4087",
+   "reflex-dev__reflex-4129",
+   "reflex-dev__reflex-4205",
+   "reflex-dev__reflex-4230",
+   "reflex-dev__reflex-4256",
+   "reflex-dev__reflex-4266",
+   "reflex-dev__reflex-4347",
+   "reflex-dev__reflex-4371",
+   "reflex-dev__reflex-4427",
+   "reflex-dev__reflex-4510",
+   "reflex-dev__reflex-4563",
+   "reflex-dev__reflex-4620",
+   "reflex-dev__reflex-4688",
+   "reflex-dev__reflex-4708",
+   "reflex-dev__reflex-4711",
+   "reflex-dev__reflex-4717",
+   "reflex-dev__reflex-4720",
+   "reflex-dev__reflex-4958",
+   "reflex-dev__reflex-5039",
+   "reflex-dev__reflex-5077",
+   "reflex-dev__reflex-5081"
+  ]
+ },
+ {
+  "repo": "streamlink/streamlink",
+  "n": 41,
+  "first": "2024-01-08",
+  "last": "2025-05-29",
+  "span_days": 507,
+  "instance_ids": [
+   "streamlink__streamlink-5762",
+   "streamlink__streamlink-5774",
+   "streamlink__streamlink-5782",
+   "streamlink__streamlink-5792",
+   "streamlink__streamlink-5822",
+   "streamlink__streamlink-5844",
+   "streamlink__streamlink-5858",
+   "streamlink__streamlink-5861",
+   "streamlink__streamlink-5869",
+   "streamlink__streamlink-5881",
+   "streamlink__streamlink-5890",
+   "streamlink__streamlink-5908",
+   "streamlink__streamlink-5910",
+   "streamlink__streamlink-5926",
+   "streamlink__streamlink-5932",
+   "streamlink__streamlink-6016",
+   "streamlink__streamlink-6022",
+   "streamlink__streamlink-6048",
+   "streamlink__streamlink-6085",
+   "streamlink__streamlink-6111",
+   "streamlink__streamlink-6127",
+   "streamlink__streamlink-6178",
+   "streamlink__streamlink-6205",
+   "streamlink__streamlink-6207",
+   "streamlink__streamlink-6242",
+   "streamlink__streamlink-6328",
+   "streamlink__streamlink-6338",
+   "streamlink__streamlink-6353",
+   "streamlink__streamlink-6361",
+   "streamlink__streamlink-6381",
+   "streamlink__streamlink-6389",
+   "streamlink__streamlink-6397",
+   "streamlink__streamlink-6420",
+   "streamlink__streamlink-6433",
+   "streamlink__streamlink-6439",
+   "streamlink__streamlink-6452",
+   "streamlink__streamlink-6455",
+   "streamlink__streamlink-6479",
+   "streamlink__streamlink-6491",
+   "streamlink__streamlink-6535",
+   "streamlink__streamlink-6544"
+  ]
+ },
+ {
+  "repo": "sphinx-doc/sphinx",
+  "n": 39,
+  "first": "2024-01-12",
+  "last": "2025-02-09",
+  "span_days": 394,
+  "instance_ids": [
+   "sphinx-doc__sphinx-11876",
+   "sphinx-doc__sphinx-11879",
+   "sphinx-doc__sphinx-11888",
+   "sphinx-doc__sphinx-11904",
+   "sphinx-doc__sphinx-11905",
+   "sphinx-doc__sphinx-11914",
+   "sphinx-doc__sphinx-11989",
+   "sphinx-doc__sphinx-12003",
+   "sphinx-doc__sphinx-12033",
+   "sphinx-doc__sphinx-12047",
+   "sphinx-doc__sphinx-12087",
+   "sphinx-doc__sphinx-12131",
+   "sphinx-doc__sphinx-12183",
+   "sphinx-doc__sphinx-12196",
+   "sphinx-doc__sphinx-12197",
+   "sphinx-doc__sphinx-12344",
+   "sphinx-doc__sphinx-12417",
+   "sphinx-doc__sphinx-12470",
+   "sphinx-doc__sphinx-12495",
+   "sphinx-doc__sphinx-12516",
+   "sphinx-doc__sphinx-12583",
+   "sphinx-doc__sphinx-12586",
+   "sphinx-doc__sphinx-12598",
+   "sphinx-doc__sphinx-12615",
+   "sphinx-doc__sphinx-12622",
+   "sphinx-doc__sphinx-12647",
+   "sphinx-doc__sphinx-12726",
+   "sphinx-doc__sphinx-12737",
+   "sphinx-doc__sphinx-12745",
+   "sphinx-doc__sphinx-12807",
+   "sphinx-doc__sphinx-12875",
+   "sphinx-doc__sphinx-12975",
+   "sphinx-doc__sphinx-13127",
+   "sphinx-doc__sphinx-13172",
+   "sphinx-doc__sphinx-13200",
+   "sphinx-doc__sphinx-13253",
+   "sphinx-doc__sphinx-13261",
+   "sphinx-doc__sphinx-13318",
+   "sphinx-doc__sphinx-13319"
+  ]
+ },
+ {
+  "repo": "pdm-project/pdm",
+  "n": 35,
+  "first": "2024-01-05",
+  "last": "2025-06-25",
+  "span_days": 537,
+  "instance_ids": [
+   "pdm-project__pdm-2539",
+   "pdm-project__pdm-2544",
+   "pdm-project__pdm-2551",
+   "pdm-project__pdm-2554",
+   "pdm-project__pdm-2687",
+   "pdm-project__pdm-2688",
+   "pdm-project__pdm-2743",
+   "pdm-project__pdm-2750",
+   "pdm-project__pdm-2781",
+   "pdm-project__pdm-2800",
+   "pdm-project__pdm-2817",
+   "pdm-project__pdm-2819",
+   "pdm-project__pdm-2830",
+   "pdm-project__pdm-2850",
+   "pdm-project__pdm-2858",
+   "pdm-project__pdm-2886",
+   "pdm-project__pdm-2909",
+   "pdm-project__pdm-2928",
+   "pdm-project__pdm-3039",
+   "pdm-project__pdm-3109",
+   "pdm-project__pdm-3136",
+   "pdm-project__pdm-3170",
+   "pdm-project__pdm-3191",
+   "pdm-project__pdm-3237",
+   "pdm-project__pdm-3250",
+   "pdm-project__pdm-3255",
+   "pdm-project__pdm-3314",
+   "pdm-project__pdm-3374",
+   "pdm-project__pdm-3393",
+   "pdm-project__pdm-3419",
+   "pdm-project__pdm-3420",
+   "pdm-project__pdm-3435",
+   "pdm-project__pdm-3440",
+   "pdm-project__pdm-3455",
+   "pdm-project__pdm-3555"
+  ]
+ },
+ {
+  "repo": "sissbruecker/linkding",
+  "n": 34,
+  "first": "2024-01-28",
+  "last": "2025-08-26",
+  "span_days": 576,
+  "instance_ids": [
+   "sissbruecker__linkding-613",
+   "sissbruecker__linkding-652",
+   "sissbruecker__linkding-655",
+   "sissbruecker__linkding-656",
+   "sissbruecker__linkding-687",
+   "sissbruecker__linkding-688",
+   "sissbruecker__linkding-691",
+   "sissbruecker__linkding-696",
+   "sissbruecker__linkding-703",
+   "sissbruecker__linkding-706",
+   "sissbruecker__linkding-763",
+   "sissbruecker__linkding-804",
+   "sissbruecker__linkding-810",
+   "sissbruecker__linkding-811",
+   "sissbruecker__linkding-812",
+   "sissbruecker__linkding-819",
+   "sissbruecker__linkding-820",
+   "sissbruecker__linkding-835",
+   "sissbruecker__linkding-847",
+   "sissbruecker__linkding-863",
+   "sissbruecker__linkding-866",
+   "sissbruecker__linkding-971",
+   "sissbruecker__linkding-984",
+   "sissbruecker__linkding-989",
+   "sissbruecker__linkding-993",
+   "sissbruecker__linkding-995",
+   "sissbruecker__linkding-999",
+   "sissbruecker__linkding-1014",
+   "sissbruecker__linkding-1045",
+   "sissbruecker__linkding-1051",
+   "sissbruecker__linkding-1101",
+   "sissbruecker__linkding-1114",
+   "sissbruecker__linkding-1153",
+   "sissbruecker__linkding-1175"
+  ]
+ },
+ {
+  "repo": "pvlib/pvlib-python",
+  "n": 30,
+  "first": "2024-01-11",
+  "last": "2025-04-30",
+  "span_days": 475,
+  "instance_ids": [
+   "pvlib__pvlib-python-1947",
+   "pvlib__pvlib-python-1948",
+   "pvlib__pvlib-python-1971",
+   "pvlib__pvlib-python-1977",
+   "pvlib__pvlib-python-2019",
+   "pvlib__pvlib-python-2032",
+   "pvlib__pvlib-python-2039",
+   "pvlib__pvlib-python-2041",
+   "pvlib__pvlib-python-2046",
+   "pvlib__pvlib-python-2048",
+   "pvlib__pvlib-python-2055",
+   "pvlib__pvlib-python-2088",
+   "pvlib__pvlib-python-2100",
+   "pvlib__pvlib-python-2124",
+   "pvlib__pvlib-python-2133",
+   "pvlib__pvlib-python-2140",
+   "pvlib__pvlib-python-2190",
+   "pvlib__pvlib-python-2217",
+   "pvlib__pvlib-python-2227",
+   "pvlib__pvlib-python-2249",
+   "pvlib__pvlib-python-2281",
+   "pvlib__pvlib-python-2286",
+   "pvlib__pvlib-python-2291",
+   "pvlib__pvlib-python-2292",
+   "pvlib__pvlib-python-2341",
+   "pvlib__pvlib-python-2347",
+   "pvlib__pvlib-python-2393",
+   "pvlib__pvlib-python-2400",
+   "pvlib__pvlib-python-2429",
+   "pvlib__pvlib-python-2451"
+  ]
+ },
+ {
+  "repo": "pydata/xarray",
+  "n": 29,
+  "first": "2024-02-25",
+  "last": "2025-03-29",
+  "span_days": 398,
+  "instance_ids": [
+   "pydata__xarray-8784",
+   "pydata__xarray-8840",
+   "pydata__xarray-8846",
+   "pydata__xarray-8877",
+   "pydata__xarray-8886",
+   "pydata__xarray-8946",
+   "pydata__xarray-9042",
+   "pydata__xarray-9070",
+   "pydata__xarray-9079",
+   "pydata__xarray-9099",
+   "pydata__xarray-9109",
+   "pydata__xarray-9369",
+   "pydata__xarray-9414",
+   "pydata__xarray-9498",
+   "pydata__xarray-9552",
+   "pydata__xarray-9586",
+   "pydata__xarray-9619",
+   "pydata__xarray-9636",
+   "pydata__xarray-9682",
+   "pydata__xarray-9760",
+   "pydata__xarray-9765",
+   "pydata__xarray-9861",
+   "pydata__xarray-9971",
+   "pydata__xarray-9974",
+   "pydata__xarray-10001",
+   "pydata__xarray-10066",
+   "pydata__xarray-10076",
+   "pydata__xarray-10141",
+   "pydata__xarray-10185"
+  ]
+ },
+ {
+  "repo": "beeware/briefcase",
+  "n": 28,
+  "first": "2024-01-11",
+  "last": "2025-06-25",
+  "span_days": 531,
+  "instance_ids": [
+   "beeware__briefcase-1598",
+   "beeware__briefcase-1638",
+   "beeware__briefcase-1640",
+   "beeware__briefcase-1689",
+   "beeware__briefcase-1724",
+   "beeware__briefcase-1751",
+   "beeware__briefcase-1785",
+   "beeware__briefcase-1811",
+   "beeware__briefcase-1823",
+   "beeware__briefcase-1824",
+   "beeware__briefcase-1827",
+   "beeware__briefcase-1867",
+   "beeware__briefcase-1910",
+   "beeware__briefcase-1972",
+   "beeware__briefcase-2035",
+   "beeware__briefcase-2075",
+   "beeware__briefcase-2085",
+   "beeware__briefcase-2088",
+   "beeware__briefcase-2089",
+   "beeware__briefcase-2114",
+   "beeware__briefcase-2125",
+   "beeware__briefcase-2214",
+   "beeware__briefcase-2239",
+   "beeware__briefcase-2241",
+   "beeware__briefcase-2302",
+   "beeware__briefcase-2308",
+   "beeware__briefcase-2333",
+   "beeware__briefcase-2355"
+  ]
+ },
+ {
+  "repo": "kedro-org/kedro",
+  "n": 28,
+  "first": "2024-02-07",
+  "last": "2025-07-25",
+  "span_days": 534,
+  "instance_ids": [
+   "kedro-org__kedro-3604",
+   "kedro-org__kedro-3680",
+   "kedro-org__kedro-3693",
+   "kedro-org__kedro-3701",
+   "kedro-org__kedro-3715",
+   "kedro-org__kedro-3716",
+   "kedro-org__kedro-3731",
+   "kedro-org__kedro-3823",
+   "kedro-org__kedro-3838",
+   "kedro-org__kedro-3859",
+   "kedro-org__kedro-3920",
+   "kedro-org__kedro-3944",
+   "kedro-org__kedro-3947",
+   "kedro-org__kedro-3950",
+   "kedro-org__kedro-3998",
+   "kedro-org__kedro-4030",
+   "kedro-org__kedro-4075",
+   "kedro-org__kedro-4092",
+   "kedro-org__kedro-4121",
+   "kedro-org__kedro-4178",
+   "kedro-org__kedro-4321",
+   "kedro-org__kedro-4387",
+   "kedro-org__kedro-4406",
+   "kedro-org__kedro-4408",
+   "kedro-org__kedro-4427",
+   "kedro-org__kedro-4540",
+   "kedro-org__kedro-4580",
+   "kedro-org__kedro-5019"
+  ]
+ },
+ {
+  "repo": "bridgecrewio/checkov",
+  "n": 25,
+  "first": "2024-01-12",
+  "last": "2025-05-22",
+  "span_days": 496,
+  "instance_ids": [
+   "bridgecrewio__checkov-5936",
+   "bridgecrewio__checkov-6144",
+   "bridgecrewio__checkov-6301",
+   "bridgecrewio__checkov-6314",
+   "bridgecrewio__checkov-6354",
+   "bridgecrewio__checkov-6383",
+   "bridgecrewio__checkov-6413",
+   "bridgecrewio__checkov-6612",
+   "bridgecrewio__checkov-6630",
+   "bridgecrewio__checkov-6657",
+   "bridgecrewio__checkov-6687",
+   "bridgecrewio__checkov-6695",
+   "bridgecrewio__checkov-6714",
+   "bridgecrewio__checkov-6893",
+   "bridgecrewio__checkov-6895",
+   "bridgecrewio__checkov-6922",
+   "bridgecrewio__checkov-6933",
+   "bridgecrewio__checkov-6999",
+   "bridgecrewio__checkov-7002",
+   "bridgecrewio__checkov-7010",
+   "bridgecrewio__checkov-7022",
+   "bridgecrewio__checkov-7097",
+   "bridgecrewio__checkov-7119",
+   "bridgecrewio__checkov-7124",
+   "bridgecrewio__checkov-7178"
+  ]
+ },
+ {
+  "repo": "jlowin/fastmcp",
+  "n": 25,
+  "first": "2025-04-25",
+  "last": "2025-08-26",
+  "span_days": 123,
+  "instance_ids": [
+   "jlowin__fastmcp-252",
+   "jlowin__fastmcp-263",
+   "jlowin__fastmcp-279",
+   "jlowin__fastmcp-299",
+   "jlowin__fastmcp-301",
+   "jlowin__fastmcp-309",
+   "jlowin__fastmcp-317",
+   "jlowin__fastmcp-336",
+   "jlowin__fastmcp-434",
+   "jlowin__fastmcp-455",
+   "jlowin__fastmcp-605",
+   "jlowin__fastmcp-620",
+   "jlowin__fastmcp-677",
+   "jlowin__fastmcp-690",
+   "jlowin__fastmcp-754",
+   "jlowin__fastmcp-954",
+   "jlowin__fastmcp-1135",
+   "jlowin__fastmcp-1254",
+   "jlowin__fastmcp-1293",
+   "jlowin__fastmcp-1333",
+   "jlowin__fastmcp-1397",
+   "jlowin__fastmcp-1559",
+   "jlowin__fastmcp-1578",
+   "jlowin__fastmcp-1604",
+   "jlowin__fastmcp-1632"
+  ]
+ },
+ {
+  "repo": "koxudaxi/datamodel-code-generator",
+  "n": 24,
+  "first": "2024-06-10",
+  "last": "2025-08-03",
+  "span_days": 419,
+  "instance_ids": [
+   "koxudaxi__datamodel-code-generator-1999",
+   "koxudaxi__datamodel-code-generator-2185",
+   "koxudaxi__datamodel-code-generator-2257",
+   "koxudaxi__datamodel-code-generator-2259",
+   "koxudaxi__datamodel-code-generator-2260",
+   "koxudaxi__datamodel-code-generator-2293",
+   "koxudaxi__datamodel-code-generator-2305",
+   "koxudaxi__datamodel-code-generator-2327",
+   "koxudaxi__datamodel-code-generator-2334",
+   "koxudaxi__datamodel-code-generator-2349",
+   "koxudaxi__datamodel-code-generator-2389",
+   "koxudaxi__datamodel-code-generator-2396",
+   "koxudaxi__datamodel-code-generator-2400",
+   "koxudaxi__datamodel-code-generator-2408",
+   "koxudaxi__datamodel-code-generator-2412",
+   "koxudaxi__datamodel-code-generator-2418",
+   "koxudaxi__datamodel-code-generator-2420",
+   "koxudaxi__datamodel-code-generator-2423",
+   "koxudaxi__datamodel-code-generator-2425",
+   "koxudaxi__datamodel-code-generator-2446",
+   "koxudaxi__datamodel-code-generator-2454",
+   "koxudaxi__datamodel-code-generator-2461",
+   "koxudaxi__datamodel-code-generator-2465",
+   "koxudaxi__datamodel-code-generator-2467"
+  ]
+ },
+ {
+  "repo": "Kozea/WeasyPrint",
+  "n": 22,
+  "first": "2024-01-15",
+  "last": "2025-07-06",
+  "span_days": 538,
+  "instance_ids": [
+   "kozea__weasyprint-2041",
+   "kozea__weasyprint-2051",
+   "kozea__weasyprint-2058",
+   "kozea__weasyprint-2087",
+   "kozea__weasyprint-2121",
+   "kozea__weasyprint-2143",
+   "kozea__weasyprint-2231",
+   "kozea__weasyprint-2233",
+   "kozea__weasyprint-2252",
+   "kozea__weasyprint-2300",
+   "kozea__weasyprint-2301",
+   "kozea__weasyprint-2303",
+   "kozea__weasyprint-2326",
+   "kozea__weasyprint-2387",
+   "kozea__weasyprint-2398",
+   "kozea__weasyprint-2404",
+   "kozea__weasyprint-2405",
+   "kozea__weasyprint-2416",
+   "kozea__weasyprint-2425",
+   "Kozea__WeasyPrint-2437",
+   "Kozea__WeasyPrint-2454",
+   "Kozea__WeasyPrint-2494"
+  ]
+ },
+ {
+  "repo": "geopandas/geopandas",
+  "n": 22,
+  "first": "2024-01-05",
+  "last": "2025-06-22",
+  "span_days": 534,
+  "instance_ids": [
+   "geopandas__geopandas-3132",
+   "geopandas__geopandas-3202",
+   "geopandas__geopandas-3212",
+   "geopandas__geopandas-3214",
+   "geopandas__geopandas-3224",
+   "geopandas__geopandas-3226",
+   "geopandas__geopandas-3233",
+   "geopandas__geopandas-3237",
+   "geopandas__geopandas-3240",
+   "geopandas__geopandas-3271",
+   "geopandas__geopandas-3318",
+   "geopandas__geopandas-3368",
+   "geopandas__geopandas-3378",
+   "geopandas__geopandas-3383",
+   "geopandas__geopandas-3416",
+   "geopandas__geopandas-3419",
+   "geopandas__geopandas-3424",
+   "geopandas__geopandas-3438",
+   "geopandas__geopandas-3471",
+   "geopandas__geopandas-3502",
+   "geopandas__geopandas-3513",
+   "geopandas__geopandas-3599"
+  ]
+ },
+ {
+  "repo": "joke2k/faker",
+  "n": 21,
+  "first": "2024-01-19",
+  "last": "2025-07-01",
+  "span_days": 529,
+  "instance_ids": [
+   "joke2k__faker-1979",
+   "joke2k__faker-1991",
+   "joke2k__faker-2007",
+   "joke2k__faker-2018",
+   "joke2k__faker-2074",
+   "joke2k__faker-2091",
+   "joke2k__faker-2093",
+   "joke2k__faker-2096",
+   "joke2k__faker-2099",
+   "joke2k__faker-2101",
+   "joke2k__faker-2104",
+   "joke2k__faker-2109",
+   "joke2k__faker-2142",
+   "joke2k__faker-2147",
+   "joke2k__faker-2155",
+   "joke2k__faker-2162",
+   "joke2k__faker-2173",
+   "joke2k__faker-2175",
+   "joke2k__faker-2190",
+   "joke2k__faker-2203",
+   "joke2k__faker-2232"
+  ]
+ },
+ {
+  "repo": "patroni/patroni",
+  "n": 21,
+  "first": "2024-01-02",
+  "last": "2025-08-14",
+  "span_days": 590,
+  "instance_ids": [
+   "patroni__patroni-2998",
+   "patroni__patroni-3018",
+   "patroni__patroni-3026",
+   "patroni__patroni-3045",
+   "patroni__patroni-3072",
+   "patroni__patroni-3079",
+   "patroni__patroni-3094",
+   "patroni__patroni-3112",
+   "patroni__patroni-3119",
+   "patroni__patroni-3139",
+   "patroni__patroni-3148",
+   "patroni__patroni-3152",
+   "patroni__patroni-3198",
+   "patroni__patroni-3207",
+   "patroni__patroni-3216",
+   "patroni__patroni-3310",
+   "patroni__patroni-3318",
+   "patroni__patroni-3338",
+   "patroni__patroni-3370",
+   "patroni__patroni-3373",
+   "patroni__patroni-3426"
+  ]
+ },
+ {
+  "repo": "stanfordnlp/dspy",
+  "n": 21,
+  "first": "2024-04-05",
+  "last": "2025-08-30",
+  "span_days": 512,
+  "instance_ids": [
+   "stanfordnlp__dspy-779",
+   "stanfordnlp__dspy-848",
+   "stanfordnlp__dspy-987",
+   "stanfordnlp__dspy-1472",
+   "stanfordnlp__dspy-1556",
+   "stanfordnlp__dspy-1609",
+   "stanfordnlp__dspy-1651",
+   "stanfordnlp__dspy-1741",
+   "stanfordnlp__dspy-1801",
+   "stanfordnlp__dspy-8053",
+   "stanfordnlp__dspy-8146",
+   "stanfordnlp__dspy-8255",
+   "stanfordnlp__dspy-8340",
+   "stanfordnlp__dspy-8360",
+   "stanfordnlp__dspy-8394",
+   "stanfordnlp__dspy-8432",
+   "stanfordnlp__dspy-8566",
+   "stanfordnlp__dspy-8605",
+   "stanfordnlp__dspy-8607",
+   "stanfordnlp__dspy-8718",
+   "stanfordnlp__dspy-8739"
+  ]
+ },
+ {
+  "repo": "reata/sqllineage",
+  "n": 18,
+  "first": "2024-01-01",
+  "last": "2025-03-09",
+  "span_days": 433,
+  "instance_ids": [
+   "reata__sqllineage-521",
+   "reata__sqllineage-524",
+   "reata__sqllineage-540",
+   "reata__sqllineage-543",
+   "reata__sqllineage-550",
+   "reata__sqllineage-555",
+   "reata__sqllineage-557",
+   "reata__sqllineage-561",
+   "reata__sqllineage-565",
+   "reata__sqllineage-572",
+   "reata__sqllineage-581",
+   "reata__sqllineage-582",
+   "reata__sqllineage-593",
+   "reata__sqllineage-617",
+   "reata__sqllineage-619",
+   "reata__sqllineage-637",
+   "reata__sqllineage-661",
+   "reata__sqllineage-694"
+  ]
+ },
+ {
+  "repo": "ipython/ipython",
+  "n": 17,
+  "first": "2024-06-20",
+  "last": "2025-08-26",
+  "span_days": 432,
+  "instance_ids": [
+   "ipython__ipython-14466",
+   "ipython__ipython-14474",
+   "ipython__ipython-14486",
+   "ipython__ipython-14503",
+   "ipython__ipython-14555",
+   "ipython__ipython-14693",
+   "ipython__ipython-14695",
+   "ipython__ipython-14798",
+   "ipython__ipython-14822",
+   "ipython__ipython-14838",
+   "ipython__ipython-14872",
+   "ipython__ipython-14941",
+   "ipython__ipython-14943",
+   "ipython__ipython-14964",
+   "ipython__ipython-14966",
+   "ipython__ipython-14969",
+   "ipython__ipython-14970"
+  ]
+ },
+ {
+  "repo": "mikedh/trimesh",
+  "n": 17,
+  "first": "2024-01-24",
+  "last": "2025-05-22",
+  "span_days": 484,
+  "instance_ids": [
+   "mikedh__trimesh-2126",
+   "mikedh__trimesh-2133",
+   "mikedh__trimesh-2136",
+   "mikedh__trimesh-2142",
+   "mikedh__trimesh-2152",
+   "mikedh__trimesh-2201",
+   "mikedh__trimesh-2205",
+   "mikedh__trimesh-2215",
+   "mikedh__trimesh-2238",
+   "mikedh__trimesh-2265",
+   "mikedh__trimesh-2290",
+   "mikedh__trimesh-2354",
+   "mikedh__trimesh-2360",
+   "mikedh__trimesh-2363",
+   "mikedh__trimesh-2397",
+   "mikedh__trimesh-2406",
+   "mikedh__trimesh-2411"
+  ]
+ },
+ {
+  "repo": "python-telegram-bot/python-telegram-bot",
+  "n": 17,
+  "first": "2024-02-17",
+  "last": "2025-05-25",
+  "span_days": 463,
+  "instance_ids": [
+   "python-telegram-bot__python-telegram-bot-4120",
+   "python-telegram-bot__python-telegram-bot-4151",
+   "python-telegram-bot__python-telegram-bot-4161",
+   "python-telegram-bot__python-telegram-bot-4288",
+   "python-telegram-bot__python-telegram-bot-4290",
+   "python-telegram-bot__python-telegram-bot-4323",
+   "python-telegram-bot__python-telegram-bot-4353",
+   "python-telegram-bot__python-telegram-bot-4365",
+   "python-telegram-bot__python-telegram-bot-4375",
+   "python-telegram-bot__python-telegram-bot-4605",
+   "python-telegram-bot__python-telegram-bot-4613",
+   "python-telegram-bot__python-telegram-bot-4617",
+   "python-telegram-bot__python-telegram-bot-4626",
+   "python-telegram-bot__python-telegram-bot-4632",
+   "python-telegram-bot__python-telegram-bot-4654",
+   "python-telegram-bot__python-telegram-bot-4673",
+   "python-telegram-bot__python-telegram-bot-4802"
+  ]
+ },
+ {
+  "repo": "beetbox/beets",
+  "n": 16,
+  "first": "2024-03-18",
+  "last": "2025-07-21",
+  "span_days": 490,
+  "instance_ids": [
+   "beetbox__beets-5152",
+   "beetbox__beets-5153",
+   "beetbox__beets-5224",
+   "beetbox__beets-5326",
+   "beetbox__beets-5406",
+   "beetbox__beets-5437",
+   "beetbox__beets-5442",
+   "beetbox__beets-5457",
+   "beetbox__beets-5495",
+   "beetbox__beets-5561",
+   "beetbox__beets-5682",
+   "beetbox__beets-5705",
+   "beetbox__beets-5774",
+   "beetbox__beets-5789",
+   "beetbox__beets-5803",
+   "beetbox__beets-5890"
+  ]
+ },
+ {
+  "repo": "falconry/falcon",
+  "n": 16,
+  "first": "2024-07-13",
+  "last": "2025-07-22",
+  "span_days": 374,
+  "instance_ids": [
+   "falconry__falcon-2248",
+   "falconry__falcon-2254",
+   "falconry__falcon-2282",
+   "falconry__falcon-2322",
+   "falconry__falcon-2326",
+   "falconry__falcon-2348",
+   "falconry__falcon-2356",
+   "falconry__falcon-2366",
+   "falconry__falcon-2404",
+   "falconry__falcon-2419",
+   "falconry__falcon-2426",
+   "falconry__falcon-2450",
+   "falconry__falcon-2459",
+   "falconry__falcon-2475",
+   "falconry__falcon-2477",
+   "falconry__falcon-2498"
+  ]
+ },
+ {
+  "repo": "fonttools/fonttools",
+  "n": 15,
+  "first": "2024-01-24",
+  "last": "2025-08-18",
+  "span_days": 572,
+  "instance_ids": [
+   "fonttools__fonttools-3429",
+   "fonttools__fonttools-3437",
+   "fonttools__fonttools-3457",
+   "fonttools__fonttools-3509",
+   "fonttools__fonttools-3510",
+   "fonttools__fonttools-3520",
+   "fonttools__fonttools-3559",
+   "fonttools__fonttools-3581",
+   "fonttools__fonttools-3679",
+   "fonttools__fonttools-3682",
+   "fonttools__fonttools-3726",
+   "fonttools__fonttools-3749",
+   "fonttools__fonttools-3850",
+   "fonttools__fonttools-3874",
+   "fonttools__fonttools-3907"
+  ]
+ },
+ {
+  "repo": "python-control/python-control",
+  "n": 15,
+  "first": "2024-06-17",
+  "last": "2025-04-17",
+  "span_days": 304,
+  "instance_ids": [
+   "python-control__python-control-1012",
+   "python-control__python-control-1017",
+   "python-control__python-control-1030",
+   "python-control__python-control-1064",
+   "python-control__python-control-1065",
+   "python-control__python-control-1092",
+   "python-control__python-control-1096",
+   "python-control__python-control-1099",
+   "python-control__python-control-1104",
+   "python-control__python-control-1111",
+   "python-control__python-control-1116",
+   "python-control__python-control-1133",
+   "python-control__python-control-1138",
+   "python-control__python-control-1142",
+   "python-control__python-control-1145"
+  ]
+ },
+ {
+  "repo": "sdv-dev/SDV",
+  "n": 15,
+  "first": "2025-04-17",
+  "last": "2025-08-27",
+  "span_days": 132,
+  "instance_ids": [
+   "sdv-dev__SDV-2472",
+   "sdv-dev__SDV-2502",
+   "sdv-dev__SDV-2523",
+   "sdv-dev__SDV-2532",
+   "sdv-dev__SDV-2546",
+   "sdv-dev__SDV-2558",
+   "sdv-dev__SDV-2566",
+   "sdv-dev__SDV-2570",
+   "sdv-dev__SDV-2571",
+   "sdv-dev__SDV-2573",
+   "sdv-dev__SDV-2634",
+   "sdv-dev__SDV-2636",
+   "sdv-dev__SDV-2646",
+   "sdv-dev__SDV-2656",
+   "sdv-dev__SDV-2658"
+  ]
+ },
+ {
+  "repo": "python/mypy",
+  "n": 14,
+  "first": "2025-04-25",
+  "last": "2025-08-31",
+  "span_days": 128,
+  "instance_ids": [
+   "python__mypy-18966",
+   "python__mypy-19097",
+   "python__mypy-19190",
+   "python__mypy-19216",
+   "python__mypy-19249",
+   "python__mypy-19290",
+   "python__mypy-19573",
+   "python__mypy-19577",
+   "python__mypy-19592",
+   "python__mypy-19615",
+   "python__mypy-19648",
+   "python__mypy-19705",
+   "python__mypy-19718",
+   "python__mypy-19767"
+  ]
+ },
+ {
+  "repo": "pytorch/torchtune",
+  "n": 14,
+  "first": "2024-02-02",
+  "last": "2025-04-04",
+  "span_days": 427,
+  "instance_ids": [
+   "pytorch__torchtune-293",
+   "pytorch__torchtune-997",
+   "pytorch__torchtune-1109",
+   "pytorch__torchtune-1368",
+   "pytorch__torchtune-1477",
+   "pytorch__torchtune-1697",
+   "pytorch__torchtune-1778",
+   "pytorch__torchtune-1806",
+   "pytorch__torchtune-1832",
+   "pytorch__torchtune-2066",
+   "pytorch__torchtune-2110",
+   "pytorch__torchtune-2139",
+   "pytorch__torchtune-2342",
+   "pytorch__torchtune-2560"
+  ]
+ },
+ {
+  "repo": "PyPSA/PyPSA",
+  "n": 13,
+  "first": "2024-05-16",
+  "last": "2025-08-12",
+  "span_days": 453,
+  "instance_ids": [
+   "pypsa__pypsa-891",
+   "pypsa__pypsa-896",
+   "pypsa__pypsa-924",
+   "pypsa__pypsa-964",
+   "pypsa__pypsa-1012",
+   "pypsa__pypsa-1091",
+   "pypsa__pypsa-1112",
+   "pypsa__pypsa-1130",
+   "pypsa__pypsa-1172",
+   "pypsa__pypsa-1195",
+   "PyPSA__PyPSA-1265",
+   "PyPSA__PyPSA-1310",
+   "PyPSA__PyPSA-1325"
+  ]
+ },
+ {
+  "repo": "jupyterlab/jupyter-ai",
+  "n": 13,
+  "first": "2024-01-21",
+  "last": "2025-03-25",
+  "span_days": 429,
+  "instance_ids": [
+   "jupyterlab__jupyter-ai-592",
+   "jupyterlab__jupyter-ai-711",
+   "jupyterlab__jupyter-ai-717",
+   "jupyterlab__jupyter-ai-879",
+   "jupyterlab__jupyter-ai-887",
+   "jupyterlab__jupyter-ai-888",
+   "jupyterlab__jupyter-ai-943",
+   "jupyterlab__jupyter-ai-962",
+   "jupyterlab__jupyter-ai-989",
+   "jupyterlab__jupyter-ai-1022",
+   "jupyterlab__jupyter-ai-1125",
+   "jupyterlab__jupyter-ai-1257",
+   "jupyterlab__jupyter-ai-1294"
+  ]
+ },
+ {
+  "repo": "openai/openai-agents-python",
+  "n": 13,
+  "first": "2025-03-26",
+  "last": "2025-09-02",
+  "span_days": 160,
+  "instance_ids": [
+   "openai__openai-agents-python-357",
+   "openai__openai-agents-python-737",
+   "openai__openai-agents-python-920",
+   "openai__openai-agents-python-998",
+   "openai__openai-agents-python-999",
+   "openai__openai-agents-python-1043",
+   "openai__openai-agents-python-1124",
+   "openai__openai-agents-python-1192",
+   "openai__openai-agents-python-1193",
+   "openai__openai-agents-python-1601",
+   "openai__openai-agents-python-1619",
+   "openai__openai-agents-python-1633",
+   "openai__openai-agents-python-1636"
+  ]
+ },
+ {
+  "repo": "python-attrs/attrs",
+  "n": 13,
+  "first": "2024-03-05",
+  "last": "2025-08-01",
+  "span_days": 514,
+  "instance_ids": [
+   "python-attrs__attrs-1253",
+   "python-attrs__attrs-1285",
+   "python-attrs__attrs-1303",
+   "python-attrs__attrs-1319",
+   "python-attrs__attrs-1320",
+   "python-attrs__attrs-1321",
+   "python-attrs__attrs-1372",
+   "python-attrs__attrs-1401",
+   "python-attrs__attrs-1410",
+   "python-attrs__attrs-1417",
+   "python-attrs__attrs-1428",
+   "python-attrs__attrs-1448",
+   "python-attrs__attrs-1457"
+  ]
+ },
+ {
+  "repo": "run-llama/llama_deploy",
+  "n": 13,
+  "first": "2024-07-01",
+  "last": "2025-05-14",
+  "span_days": 317,
+  "instance_ids": [
+   "run-llama__llama_deploy-83",
+   "run-llama__llama_deploy-301",
+   "run-llama__llama_deploy-330",
+   "run-llama__llama_deploy-356",
+   "run-llama__llama_deploy-372",
+   "run-llama__llama_deploy-384",
+   "run-llama__llama_deploy-397",
+   "run-llama__llama_deploy-399",
+   "run-llama__llama_deploy-423",
+   "run-llama__llama_deploy-438",
+   "run-llama__llama_deploy-457",
+   "run-llama__llama_deploy-458",
+   "run-llama__llama_deploy-500"
+  ]
+ },
+ {
+  "repo": "privacyidea/privacyidea",
+  "n": 12,
+  "first": "2024-01-29",
+  "last": "2025-08-22",
+  "span_days": 571,
+  "instance_ids": [
+   "privacyidea__privacyidea-3852",
+   "privacyidea__privacyidea-4059",
+   "privacyidea__privacyidea-4159",
+   "privacyidea__privacyidea-4206",
+   "privacyidea__privacyidea-4218",
+   "privacyidea__privacyidea-4223",
+   "privacyidea__privacyidea-4226",
+   "privacyidea__privacyidea-4233",
+   "privacyidea__privacyidea-4247",
+   "privacyidea__privacyidea-4251",
+   "privacyidea__privacyidea-4542",
+   "privacyidea__privacyidea-4613"
+  ]
+ },
+ {
+  "repo": "python-babel/babel",
+  "n": 12,
+  "first": "2024-04-24",
+  "last": "2025-03-04",
+  "span_days": 314,
+  "instance_ids": [
+   "python-babel__babel-1075",
+   "python-babel__babel-1104",
+   "python-babel__babel-1120",
+   "python-babel__babel-1126",
+   "python-babel__babel-1131",
+   "python-babel__babel-1132",
+   "python-babel__babel-1141",
+   "python-babel__babel-1163",
+   "python-babel__babel-1164",
+   "python-babel__babel-1179",
+   "python-babel__babel-1194",
+   "python-babel__babel-1196"
+  ]
+ },
+ {
+  "repo": "aiogram/aiogram",
+  "n": 11,
+  "first": "2024-04-23",
+  "last": "2025-04-15",
+  "span_days": 357,
+  "instance_ids": [
+   "aiogram__aiogram-1469",
+   "aiogram__aiogram-1474",
+   "aiogram__aiogram-1497",
+   "aiogram__aiogram-1539",
+   "aiogram__aiogram-1575",
+   "aiogram__aiogram-1585",
+   "aiogram__aiogram-1594",
+   "aiogram__aiogram-1657",
+   "aiogram__aiogram-1665",
+   "aiogram__aiogram-1670",
+   "aiogram__aiogram-1674"
+  ]
+ },
+ {
+  "repo": "urllib3/urllib3",
+  "n": 11,
+  "first": "2024-01-06",
+  "last": "2025-04-26",
+  "span_days": 476,
+  "instance_ids": [
+   "urllib3__urllib3-3266",
+   "urllib3__urllib3-3273",
+   "urllib3__urllib3-3311",
+   "urllib3__urllib3-3321",
+   "urllib3__urllib3-3326",
+   "urllib3__urllib3-3402",
+   "urllib3__urllib3-3428",
+   "urllib3__urllib3-3434",
+   "urllib3__urllib3-3441",
+   "urllib3__urllib3-3527",
+   "urllib3__urllib3-3601"
+  ]
+ },
+ {
+  "repo": "IBM/mcp-context-forge",
+  "n": 10,
+  "first": "2025-07-21",
+  "last": "2025-08-18",
+  "span_days": 28,
+  "instance_ids": [
+   "IBM__mcp-context-forge-555",
+   "IBM__mcp-context-forge-561",
+   "IBM__mcp-context-forge-562",
+   "IBM__mcp-context-forge-632",
+   "IBM__mcp-context-forge-678",
+   "IBM__mcp-context-forge-691",
+   "IBM__mcp-context-forge-695",
+   "IBM__mcp-context-forge-710",
+   "IBM__mcp-context-forge-754",
+   "IBM__mcp-context-forge-780"
+  ]
+ },
+ {
+  "repo": "iterative/dvc",
+  "n": 10,
+  "first": "2025-03-26",
+  "last": "2025-08-15",
+  "span_days": 142,
+  "instance_ids": [
+   "iterative__dvc-10711",
+   "iterative__dvc-10749",
+   "iterative__dvc-10776",
+   "iterative__dvc-10778",
+   "iterative__dvc-10798",
+   "iterative__dvc-10822",
+   "iterative__dvc-10831",
+   "iterative__dvc-10842",
+   "iterative__dvc-10843",
+   "iterative__dvc-10844"
+  ]
+ },
+ {
+  "repo": "networkx/networkx",
+  "n": 10,
+  "first": "2025-04-30",
+  "last": "2025-08-29",
+  "span_days": 121,
+  "instance_ids": [
+   "networkx__networkx-8013",
+   "networkx__networkx-8043",
+   "networkx__networkx-8055",
+   "networkx__networkx-8057",
+   "networkx__networkx-8105",
+   "networkx__networkx-8174",
+   "networkx__networkx-8184",
+   "networkx__networkx-8196",
+   "networkx__networkx-8207",
+   "networkx__networkx-8211"
+  ]
+ },
+ {
+  "repo": "Textualize/textual",
+  "n": 9,
+  "first": "2025-04-12",
+  "last": "2025-06-13",
+  "span_days": 62,
+  "instance_ids": [
+   "Textualize__textual-5743",
+   "Textualize__textual-5782",
+   "Textualize__textual-5795",
+   "Textualize__textual-5799",
+   "Textualize__textual-5812",
+   "Textualize__textual-5823",
+   "Textualize__textual-5829",
+   "Textualize__textual-5851",
+   "Textualize__textual-5863"
+  ]
+ },
+ {
+  "repo": "projectmesa/mesa",
+  "n": 9,
+  "first": "2024-09-04",
+  "last": "2025-04-14",
+  "span_days": 222,
+  "instance_ids": [
+   "projectmesa__mesa-2279",
+   "projectmesa__mesa-2351",
+   "projectmesa__mesa-2394",
+   "projectmesa__mesa-2418",
+   "projectmesa__mesa-2463",
+   "projectmesa__mesa-2523",
+   "projectmesa__mesa-2605",
+   "projectmesa__mesa-2632",
+   "projectmesa__mesa-2755"
+  ]
+ },
+ {
+  "repo": "pybamm-team/PyBaMM",
+  "n": 9,
+  "first": "2024-01-15",
+  "last": "2025-07-21",
+  "span_days": 553,
+  "instance_ids": [
+   "pybamm-team__pybamm-3723",
+   "pybamm-team__pybamm-3846",
+   "pybamm-team__pybamm-4644",
+   "pybamm-team__pybamm-4735",
+   "pybamm-team__pybamm-4816",
+   "pybamm-team__pybamm-4865",
+   "pybamm-team__PyBaMM-5090",
+   "pybamm-team__PyBaMM-5122",
+   "pybamm-team__PyBaMM-5129"
+  ]
+ },
+ {
+  "repo": "shapely/shapely",
+  "n": 9,
+  "first": "2024-01-20",
+  "last": "2025-03-08",
+  "span_days": 413,
+  "instance_ids": [
+   "shapely__shapely-1968",
+   "shapely__shapely-2074",
+   "shapely__shapely-2094",
+   "shapely__shapely-2120",
+   "shapely__shapely-2206",
+   "shapely__shapely-2223",
+   "shapely__shapely-2224",
+   "shapely__shapely-2226",
+   "shapely__shapely-2255"
+  ]
+ },
+ {
+  "repo": "sooperset/mcp-atlassian",
+  "n": 9,
+  "first": "2025-04-21",
+  "last": "2025-06-29",
+  "span_days": 69,
+  "instance_ids": [
+   "sooperset__mcp-atlassian-298",
+   "sooperset__mcp-atlassian-299",
+   "sooperset__mcp-atlassian-309",
+   "sooperset__mcp-atlassian-407",
+   "sooperset__mcp-atlassian-450",
+   "sooperset__mcp-atlassian-531",
+   "sooperset__mcp-atlassian-533",
+   "sooperset__mcp-atlassian-536",
+   "sooperset__mcp-atlassian-581"
+  ]
+ },
+ {
+  "repo": "tox-dev/tox",
+  "n": 9,
+  "first": "2024-03-06",
+  "last": "2025-06-01",
+  "span_days": 452,
+  "instance_ids": [
+   "tox-dev__tox-3237",
+   "tox-dev__tox-3246",
+   "tox-dev__tox-3250",
+   "tox-dev__tox-3259",
+   "tox-dev__tox-3274",
+   "tox-dev__tox-3388",
+   "tox-dev__tox-3409",
+   "tox-dev__tox-3526",
+   "tox-dev__tox-3540"
+  ]
+ },
+ {
+  "repo": "huggingface/smolagents",
+  "n": 8,
+  "first": "2025-01-16",
+  "last": "2025-06-06",
+  "span_days": 141,
+  "instance_ids": [
+   "huggingface__smolagents-226",
+   "huggingface__smolagents-285",
+   "huggingface__smolagents-405",
+   "huggingface__smolagents-731",
+   "huggingface__smolagents-843",
+   "huggingface__smolagents-1302",
+   "huggingface__smolagents-1334",
+   "huggingface__smolagents-1416"
+  ]
+ },
+ {
+  "repo": "Archmonger/django-dbbackup",
+  "n": 7,
+  "first": "2025-08-18",
+  "last": "2025-08-23",
+  "span_days": 5,
+  "instance_ids": [
+   "Archmonger__django-dbbackup-601",
+   "Archmonger__django-dbbackup-604",
+   "Archmonger__django-dbbackup-605",
+   "Archmonger__django-dbbackup-606",
+   "Archmonger__django-dbbackup-623",
+   "Archmonger__django-dbbackup-626",
+   "Archmonger__django-dbbackup-631"
+  ]
+ },
+ {
+  "repo": "a2aproject/a2a-python",
+  "n": 7,
+  "first": "2025-06-19",
+  "last": "2025-08-28",
+  "span_days": 70,
+  "instance_ids": [
+   "a2aproject__a2a-python-219",
+   "a2aproject__a2a-python-226",
+   "a2aproject__a2a-python-279",
+   "a2aproject__a2a-python-302",
+   "a2aproject__a2a-python-394",
+   "a2aproject__a2a-python-414",
+   "a2aproject__a2a-python-443"
+  ]
+ },
+ {
+  "repo": "ag2ai/faststream",
+  "n": 7,
+  "first": "2024-03-05",
+  "last": "2025-07-15",
+  "span_days": 497,
+  "instance_ids": [
+   "ag2ai__faststream-1288",
+   "ag2ai__faststream-1519",
+   "ag2ai__faststream-1589",
+   "ag2ai__faststream-1619",
+   "ag2ai__faststream-1796",
+   "ag2ai__faststream-2170",
+   "ag2ai__faststream-2366"
+  ]
+ },
+ {
+  "repo": "albumentations-team/albumentations",
+  "n": 7,
+  "first": "2025-05-13",
+  "last": "2025-06-08",
+  "span_days": 26,
+  "instance_ids": [
+   "albumentations-team__albumentations-2516",
+   "albumentations-team__albumentations-2520",
+   "albumentations-team__albumentations-2521",
+   "albumentations-team__albumentations-2529",
+   "albumentations-team__albumentations-2539",
+   "albumentations-team__albumentations-2552",
+   "albumentations-team__albumentations-2553"
+  ]
+ },
+ {
+  "repo": "dynaconf/dynaconf",
+  "n": 7,
+  "first": "2024-01-12",
+  "last": "2025-05-06",
+  "span_days": 480,
+  "instance_ids": [
+   "dynaconf__dynaconf-1040",
+   "dynaconf__dynaconf-1115",
+   "dynaconf__dynaconf-1225",
+   "dynaconf__dynaconf-1238",
+   "dynaconf__dynaconf-1241",
+   "dynaconf__dynaconf-1249",
+   "dynaconf__dynaconf-1295"
+  ]
+ },
+ {
+  "repo": "networktocode/ntc-templates",
+  "n": 7,
+  "first": "2025-04-11",
+  "last": "2025-07-25",
+  "span_days": 105,
+  "instance_ids": [
+   "networktocode__ntc-templates-2101",
+   "networktocode__ntc-templates-2112",
+   "networktocode__ntc-templates-2113",
+   "networktocode__ntc-templates-2115",
+   "networktocode__ntc-templates-2118",
+   "networktocode__ntc-templates-2143",
+   "networktocode__ntc-templates-2163"
+  ]
+ },
+ {
+  "repo": "piskvorky/smart_open",
+  "n": 7,
+  "first": "2024-01-26",
+  "last": "2025-06-05",
+  "span_days": 496,
+  "instance_ids": [
+   "piskvorky__smart_open-796",
+   "piskvorky__smart_open-815",
+   "piskvorky__smart_open-817",
+   "piskvorky__smart_open-820",
+   "piskvorky__smart_open-833",
+   "piskvorky__smart_open-849",
+   "piskvorky__smart_open-863"
+  ]
+ },
+ {
+  "repo": "pypa/twine",
+  "n": 7,
+  "first": "2024-03-08",
+  "last": "2025-06-06",
+  "span_days": 455,
+  "instance_ids": [
+   "pypa__twine-1066",
+   "pypa__twine-1106",
+   "pypa__twine-1112",
+   "pypa__twine-1188",
+   "pypa__twine-1225",
+   "pypa__twine-1240",
+   "pypa__twine-1249"
+  ]
+ },
+ {
+  "repo": "spesmilo/electrum",
+  "n": 7,
+  "first": "2025-05-18",
+  "last": "2025-08-23",
+  "span_days": 97,
+  "instance_ids": [
+   "spesmilo__electrum-9837",
+   "spesmilo__electrum-10026",
+   "spesmilo__electrum-10059",
+   "spesmilo__electrum-10067",
+   "spesmilo__electrum-10082",
+   "spesmilo__electrum-10143",
+   "spesmilo__electrum-10172"
+  ]
+ },
+ {
+  "repo": "Delgan/loguru",
+  "n": 6,
+  "first": "2024-11-21",
+  "last": "2025-02-20",
+  "span_days": 91,
+  "instance_ids": [
+   "delgan__loguru-1236",
+   "delgan__loguru-1240",
+   "delgan__loguru-1297",
+   "delgan__loguru-1299",
+   "delgan__loguru-1304",
+   "delgan__loguru-1306"
+  ]
+ },
+ {
+  "repo": "qtile/qtile",
+  "n": 6,
+  "first": "2024-07-02",
+  "last": "2025-03-09",
+  "span_days": 250,
+  "instance_ids": [
+   "qtile__qtile-4909",
+   "qtile__qtile-4953",
+   "qtile__qtile-4991",
+   "qtile__qtile-5100",
+   "qtile__qtile-5154",
+   "qtile__qtile-5206"
+  ]
+ },
+ {
+  "repo": "wemake-services/wemake-python-styleguide",
+  "n": 6,
+  "first": "2024-12-11",
+  "last": "2024-12-24",
+  "span_days": 13,
+  "instance_ids": [
+   "wemake-services__wemake-python-styleguide-3114",
+   "wemake-services__wemake-python-styleguide-3117",
+   "wemake-services__wemake-python-styleguide-3128",
+   "wemake-services__wemake-python-styleguide-3129",
+   "wemake-services__wemake-python-styleguide-3195",
+   "wemake-services__wemake-python-styleguide-3216"
+  ]
+ },
+ {
+  "repo": "AgentOps-AI/agentops",
+  "n": 5,
+  "first": "2025-05-16",
+  "last": "2025-06-18",
+  "span_days": 33,
+  "instance_ids": [
+   "AgentOps-AI__agentops-983",
+   "AgentOps-AI__agentops-1002",
+   "AgentOps-AI__agentops-1005",
+   "AgentOps-AI__agentops-1047",
+   "AgentOps-AI__agentops-1091"
+  ]
+ },
+ {
+  "repo": "BerriAI/litellm",
+  "n": 5,
+  "first": "2025-04-22",
+  "last": "2025-08-16",
+  "span_days": 116,
+  "instance_ids": [
+   "BerriAI__litellm-10198",
+   "BerriAI__litellm-10284",
+   "BerriAI__litellm-12188",
+   "BerriAI__litellm-13469",
+   "BerriAI__litellm-13675"
+  ]
+ },
+ {
+  "repo": "Pyomo/pyomo",
+  "n": 5,
+  "first": "2025-03-28",
+  "last": "2025-08-05",
+  "span_days": 130,
+  "instance_ids": [
+   "Pyomo__pyomo-3546",
+   "Pyomo__pyomo-3588",
+   "Pyomo__pyomo-3597",
+   "Pyomo__pyomo-3633",
+   "Pyomo__pyomo-3679"
+  ]
+ },
+ {
+  "repo": "encode/starlette",
+  "n": 5,
+  "first": "2024-06-13",
+  "last": "2025-03-16",
+  "span_days": 276,
+  "instance_ids": [
+   "encode__starlette-2620",
+   "encode__starlette-2697",
+   "encode__starlette-2711",
+   "encode__starlette-2812",
+   "encode__starlette-2909"
+  ]
+ },
+ {
+  "repo": "psf/black",
+  "n": 5,
+  "first": "2025-04-26",
+  "last": "2025-07-29",
+  "span_days": 94,
+  "instance_ids": [
+   "psf__black-4657",
+   "psf__black-4670",
+   "psf__black-4676",
+   "psf__black-4684",
+   "psf__black-4720"
+  ]
+ },
+ {
+  "repo": "scrapinghub/dateparser",
+  "n": 5,
+  "first": "2024-02-15",
+  "last": "2025-08-07",
+  "span_days": 539,
+  "instance_ids": [
+   "scrapinghub__dateparser-1219",
+   "scrapinghub__dateparser-1224",
+   "scrapinghub__dateparser-1274",
+   "scrapinghub__dateparser-1283",
+   "scrapinghub__dateparser-1284"
+  ]
+ },
+ {
+  "repo": "yt-dlp/yt-dlp",
+  "n": 5,
+  "first": "2024-10-08",
+  "last": "2025-03-23",
+  "span_days": 166,
+  "instance_ids": [
+   "yt-dlp__yt-dlp-11198",
+   "yt-dlp__yt-dlp-11425",
+   "yt-dlp__yt-dlp-11880",
+   "yt-dlp__yt-dlp-12684",
+   "yt-dlp__yt-dlp-12714"
+  ]
+ },
+ {
+  "repo": "Flexget/Flexget",
+  "n": 4,
+  "first": "2025-02-12",
+  "last": "2025-08-01",
+  "span_days": 170,
+  "instance_ids": [
+   "flexget__flexget-4244",
+   "flexget__flexget-4306",
+   "Flexget__Flexget-4441",
+   "Flexget__Flexget-4518"
+  ]
+ },
+ {
+  "repo": "Lightning-AI/LitServe",
+  "n": 4,
+  "first": "2025-06-04",
+  "last": "2025-07-21",
+  "span_days": 47,
+  "instance_ids": [
+   "Lightning-AI__LitServe-525",
+   "Lightning-AI__LitServe-548",
+   "Lightning-AI__LitServe-577",
+   "Lightning-AI__LitServe-582"
+  ]
+ },
+ {
+  "repo": "MDAnalysis/mdanalysis",
+  "n": 4,
+  "first": "2024-12-29",
+  "last": "2025-07-19",
+  "span_days": 202,
+  "instance_ids": [
+   "MDAnalysis__mdanalysis-4873",
+   "MDAnalysis__mdanalysis-5066",
+   "MDAnalysis__mdanalysis-5071",
+   "MDAnalysis__mdanalysis-5086"
+  ]
+ },
+ {
+  "repo": "apify/crawlee-python",
+  "n": 4,
+  "first": "2025-04-16",
+  "last": "2025-05-03",
+  "span_days": 17,
+  "instance_ids": [
+   "apify__crawlee-python-1155",
+   "apify__crawlee-python-1172",
+   "apify__crawlee-python-1181",
+   "apify__crawlee-python-1186"
+  ]
+ },
+ {
+  "repo": "astronomer/dag-factory",
+  "n": 4,
+  "first": "2025-07-23",
+  "last": "2025-08-05",
+  "span_days": 13,
+  "instance_ids": [
+   "astronomer__dag-factory-488",
+   "astronomer__dag-factory-495",
+   "astronomer__dag-factory-519",
+   "astronomer__dag-factory-544"
+  ]
+ },
+ {
+  "repo": "fsspec/filesystem_spec",
+  "n": 4,
+  "first": "2025-04-26",
+  "last": "2025-07-25",
+  "span_days": 90,
+  "instance_ids": [
+   "fsspec__filesystem_spec-1829",
+   "fsspec__filesystem_spec-1839",
+   "fsspec__filesystem_spec-1862",
+   "fsspec__filesystem_spec-1897"
+  ]
+ },
+ {
+  "repo": "google/adk-python",
+  "n": 4,
+  "first": "2025-04-12",
+  "last": "2025-08-13",
+  "span_days": 123,
+  "instance_ids": [
+   "google__adk-python-120",
+   "google__adk-python-547",
+   "google__adk-python-1305",
+   "google__adk-python-2502"
+  ]
+ },
+ {
+  "repo": "hgrecco/pint",
+  "n": 4,
+  "first": "2025-01-03",
+  "last": "2025-08-05",
+  "span_days": 214,
+  "instance_ids": [
+   "hgrecco__pint-2108",
+   "hgrecco__pint-2170",
+   "hgrecco__pint-2194",
+   "hgrecco__pint-2203"
+  ]
+ },
+ {
+  "repo": "icloud-photos-downloader/icloud_photos_downloader",
+  "n": 4,
+  "first": "2024-09-19",
+  "last": "2025-02-21",
+  "span_days": 155,
+  "instance_ids": [
+   "icloud-photos-downloader__icloud_photos_downloader-956",
+   "icloud-photos-downloader__icloud_photos_downloader-1060",
+   "icloud-photos-downloader__icloud_photos_downloader-1061",
+   "icloud-photos-downloader__icloud_photos_downloader-1082"
+  ]
+ },
+ {
+  "repo": "llamastack/llama-stack",
+  "n": 4,
+  "first": "2025-07-09",
+  "last": "2025-08-21",
+  "span_days": 43,
+  "instance_ids": [
+   "llamastack__llama-stack-2686",
+   "llamastack__llama-stack-2772",
+   "llamastack__llama-stack-2979",
+   "llamastack__llama-stack-3224"
+  ]
+ },
+ {
+  "repo": "pyinfra-dev/pyinfra",
+  "n": 4,
+  "first": "2025-06-03",
+  "last": "2025-08-07",
+  "span_days": 65,
+  "instance_ids": [
+   "pyinfra-dev__pyinfra-1367",
+   "pyinfra-dev__pyinfra-1409",
+   "pyinfra-dev__pyinfra-1413",
+   "pyinfra-dev__pyinfra-1414"
+  ]
+ },
+ {
+  "repo": "python-poetry/poetry",
+  "n": 4,
+  "first": "2025-04-06",
+  "last": "2025-08-01",
+  "span_days": 117,
+  "instance_ids": [
+   "python-poetry__poetry-10324",
+   "python-poetry__poetry-10353",
+   "python-poetry__poetry-10404",
+   "python-poetry__poetry-10487"
+  ]
+ },
+ {
+  "repo": "quantumlib/Cirq",
+  "n": 4,
+  "first": "2025-04-21",
+  "last": "2025-08-21",
+  "span_days": 122,
+  "instance_ids": [
+   "quantumlib__Cirq-7293",
+   "quantumlib__Cirq-7434",
+   "quantumlib__Cirq-7538",
+   "quantumlib__Cirq-7595"
+  ]
+ },
+ {
+  "repo": "theOehrly/Fast-F1",
+  "n": 4,
+  "first": "2024-03-10",
+  "last": "2025-03-05",
+  "span_days": 360,
+  "instance_ids": [
+   "theoehrly__fast-f1-546",
+   "theoehrly__fast-f1-645",
+   "theoehrly__fast-f1-699",
+   "theoehrly__fast-f1-701"
+  ]
+ },
+ {
+  "repo": "vacanza/holidays",
+  "n": 4,
+  "first": "2025-07-24",
+  "last": "2025-08-26",
+  "span_days": 33,
+  "instance_ids": [
+   "vacanza__holidays-2750",
+   "vacanza__holidays-2751",
+   "vacanza__holidays-2780",
+   "vacanza__holidays-2859"
+  ]
+ },
+ {
+  "repo": "Azure/azure-sdk-for-python",
+  "n": 3,
+  "first": "2025-04-12",
+  "last": "2025-05-20",
+  "span_days": 38,
+  "instance_ids": [
+   "Azure__azure-sdk-for-python-40487",
+   "Azure__azure-sdk-for-python-40613",
+   "Azure__azure-sdk-for-python-41227"
+  ]
+ },
+ {
+  "repo": "HypothesisWorks/hypothesis",
+  "n": 3,
+  "first": "2025-05-30",
+  "last": "2025-09-01",
+  "span_days": 94,
+  "instance_ids": [
+   "HypothesisWorks__hypothesis-4419",
+   "HypothesisWorks__hypothesis-4479",
+   "HypothesisWorks__hypothesis-4532"
+  ]
+ },
+ {
+  "repo": "ansible/ansible-lint",
+  "n": 3,
+  "first": "2025-03-31",
+  "last": "2025-06-24",
+  "span_days": 85,
+  "instance_ids": [
+   "ansible__ansible-lint-4566",
+   "ansible__ansible-lint-4624",
+   "ansible__ansible-lint-4662"
+  ]
+ },
+ {
+  "repo": "arviz-devs/arviz",
+  "n": 3,
+  "first": "2024-12-20",
+  "last": "2025-01-19",
+  "span_days": 30,
+  "instance_ids": [
+   "arviz-devs__arviz-2404",
+   "arviz-devs__arviz-2408",
+   "arviz-devs__arviz-2413"
+  ]
+ },
+ {
+  "repo": "celery/celery",
+  "n": 3,
+  "first": "2025-06-19",
+  "last": "2025-08-08",
+  "span_days": 50,
+  "instance_ids": [
+   "celery__celery-9774",
+   "celery__celery-9806",
+   "celery__celery-9853"
+  ]
+ },
+ {
+  "repo": "certbot/certbot",
+  "n": 3,
+  "first": "2025-05-06",
+  "last": "2025-07-25",
+  "span_days": 80,
+  "instance_ids": [
+   "certbot__certbot-10283",
+   "certbot__certbot-10317",
+   "certbot__certbot-10374"
+  ]
+ },
+ {
+  "repo": "cyclotruc/gitingest",
+  "n": 3,
+  "first": "2025-01-01",
+  "last": "2025-01-14",
+  "span_days": 13,
+  "instance_ids": [
+   "cyclotruc__gitingest-94",
+   "cyclotruc__gitingest-115",
+   "cyclotruc__gitingest-134"
+  ]
+ },
+ {
+  "repo": "django-json-api/django-rest-framework-json-api",
+  "n": 3,
+  "first": "2025-07-14",
+  "last": "2025-08-20",
+  "span_days": 37,
+  "instance_ids": [
+   "django-json-api__django-rest-framework-json-api-1283",
+   "django-json-api__django-rest-framework-json-api-1286",
+   "django-json-api__django-rest-framework-json-api-1301"
+  ]
+ },
+ {
+  "repo": "kubernetes-client/python",
+  "n": 3,
+  "first": "2024-01-31",
+  "last": "2025-01-29",
+  "span_days": 364,
+  "instance_ids": [
+   "kubernetes-client__python-2187",
+   "kubernetes-client__python-2303",
+   "kubernetes-client__python-2340"
+  ]
+ },
+ {
+  "repo": "mesonbuild/meson",
+  "n": 3,
+  "first": "2025-05-02",
+  "last": "2025-06-10",
+  "span_days": 39,
+  "instance_ids": [
+   "mesonbuild__meson-14549",
+   "mesonbuild__meson-14611",
+   "mesonbuild__meson-14698"
+  ]
+ },
+ {
+  "repo": "pallets/flask",
+  "n": 3,
+  "first": "2024-11-01",
+  "last": "2025-05-17",
+  "span_days": 197,
+  "instance_ids": [
+   "pallets__flask-5626",
+   "pallets__flask-5637",
+   "pallets__flask-5736"
+  ]
+ },
+ {
+  "repo": "pwr-Solaar/Solaar",
+  "n": 3,
+  "first": "2024-04-19",
+  "last": "2025-01-01",
+  "span_days": 257,
+  "instance_ids": [
+   "pwr-solaar__solaar-2438",
+   "pwr-solaar__solaar-2463",
+   "pwr-solaar__solaar-2745"
+  ]
+ },
+ {
+  "repo": "py-pdf/pypdf",
+  "n": 3,
+  "first": "2025-05-08",
+  "last": "2025-06-18",
+  "span_days": 41,
+  "instance_ids": [
+   "py-pdf__pypdf-3280",
+   "py-pdf__pypdf-3282",
+   "py-pdf__pypdf-3317"
+  ]
+ },
+ {
+  "repo": "pymodbus-dev/pymodbus",
+  "n": 3,
+  "first": "2025-05-09",
+  "last": "2025-06-02",
+  "span_days": 24,
+  "instance_ids": [
+   "pymodbus-dev__pymodbus-2665",
+   "pymodbus-dev__pymodbus-2670",
+   "pymodbus-dev__pymodbus-2678"
+  ]
+ },
+ {
+  "repo": "python-pillow/Pillow",
+  "n": 3,
+  "first": "2025-06-30",
+  "last": "2025-07-23",
+  "span_days": 23,
+  "instance_ids": [
+   "python-pillow__Pillow-9048",
+   "python-pillow__Pillow-9083",
+   "python-pillow__Pillow-9105"
+  ]
+ },
+ {
+  "repo": "wireservice/csvkit",
+  "n": 3,
+  "first": "2024-04-27",
+  "last": "2025-02-24",
+  "span_days": 303,
+  "instance_ids": [
+   "wireservice__csvkit-1241",
+   "wireservice__csvkit-1274",
+   "wireservice__csvkit-1281"
+  ]
+ },
+ {
+  "repo": "Aider-AI/aider",
+  "n": 2,
+  "first": "2025-04-14",
+  "last": "2025-06-24",
+  "span_days": 71,
+  "instance_ids": [
+   "Aider-AI__aider-3806",
+   "Aider-AI__aider-4269"
+  ]
+ },
+ {
+  "repo": "Azure-Samples/azure-search-openai-demo",
+  "n": 2,
+  "first": "2025-04-01",
+  "last": "2025-08-16",
+  "span_days": 137,
+  "instance_ids": [
+   "Azure-Samples__azure-search-openai-demo-2470",
+   "Azure-Samples__azure-search-openai-demo-2682"
+  ]
+ },
+ {
+  "repo": "Kinto/kinto",
+  "n": 2,
+  "first": "2025-07-21",
+  "last": "2025-08-02",
+  "span_days": 12,
+  "instance_ids": [
+   "Kinto__kinto-3566",
+   "Kinto__kinto-3572"
+  ]
+ },
+ {
+  "repo": "Kozea/Radicale",
+  "n": 2,
+  "first": "2025-04-22",
+  "last": "2025-08-12",
+  "span_days": 112,
+  "instance_ids": [
+   "Kozea__Radicale-1766",
+   "Kozea__Radicale-1844"
+  ]
+ },
+ {
+  "repo": "MervinPraison/PraisonAI",
+  "n": 2,
+  "first": "2025-05-27",
+  "last": "2025-07-10",
+  "span_days": 44,
+  "instance_ids": [
+   "MervinPraison__PraisonAI-518",
+   "MervinPraison__PraisonAI-801"
+  ]
+ },
+ {
+  "repo": "PriorLabs/TabPFN",
+  "n": 2,
+  "first": "2025-04-05",
+  "last": "2025-08-11",
+  "span_days": 128,
+  "instance_ids": [
+   "PriorLabs__TabPFN-263",
+   "PriorLabs__TabPFN-446"
+  ]
+ },
+ {
+  "repo": "QuantEcon/QuantEcon.py",
+  "n": 2,
+  "first": "2025-06-22",
+  "last": "2025-08-27",
+  "span_days": 66,
+  "instance_ids": [
+   "QuantEcon__QuantEcon.py-769",
+   "QuantEcon__QuantEcon.py-797"
+  ]
+ },
+ {
+  "repo": "Tuxemon/Tuxemon",
+  "n": 2,
+  "first": "2025-05-24",
+  "last": "2025-08-18",
+  "span_days": 86,
+  "instance_ids": [
+   "Tuxemon__Tuxemon-2812",
+   "Tuxemon__Tuxemon-3068"
+  ]
+ },
+ {
+  "repo": "Unidata/MetPy",
+  "n": 2,
+  "first": "2025-04-19",
+  "last": "2025-07-24",
+  "span_days": 96,
+  "instance_ids": [
+   "Unidata__MetPy-3796",
+   "Unidata__MetPy-3881"
+  ]
+ },
+ {
+  "repo": "amoffat/sh",
+  "n": 2,
+  "first": "2025-01-08",
+  "last": "2025-02-23",
+  "span_days": 46,
+  "instance_ids": [
+   "amoffat__sh-744",
+   "amoffat__sh-750"
+  ]
+ },
+ {
+  "repo": "ansible/molecule",
+  "n": 2,
+  "first": "2025-05-20",
+  "last": "2025-08-18",
+  "span_days": 90,
+  "instance_ids": [
+   "ansible__molecule-4443",
+   "ansible__molecule-4534"
+  ]
+ },
+ {
+  "repo": "authlib/authlib",
+  "n": 2,
+  "first": "2025-08-22",
+  "last": "2025-08-25",
+  "span_days": 3,
+  "instance_ids": [
+   "authlib__authlib-800",
+   "authlib__authlib-802"
+  ]
+ },
+ {
+  "repo": "aws-powertools/powertools-lambda-python",
+  "n": 2,
+  "first": "2025-05-13",
+  "last": "2025-06-05",
+  "span_days": 23,
+  "instance_ids": [
+   "aws-powertools__powertools-lambda-python-6656",
+   "aws-powertools__powertools-lambda-python-6777"
+  ]
+ },
+ {
+  "repo": "beancount/beancount",
+  "n": 2,
+  "first": "2024-01-06",
+  "last": "2025-01-14",
+  "span_days": 374,
+  "instance_ids": [
+   "beancount__beancount-799",
+   "beancount__beancount-931"
+  ]
+ },
+ {
+  "repo": "braindecode/braindecode",
+  "n": 2,
+  "first": "2025-08-01",
+  "last": "2025-08-11",
+  "span_days": 10,
+  "instance_ids": [
+   "braindecode__braindecode-752",
+   "braindecode__braindecode-760"
+  ]
+ },
+ {
+  "repo": "browser-use/browser-use",
+  "n": 2,
+  "first": "2025-05-04",
+  "last": "2025-07-18",
+  "span_days": 75,
+  "instance_ids": [
+   "browser-use__browser-use-1570",
+   "browser-use__browser-use-2480"
+  ]
+ },
+ {
+  "repo": "camel-ai/camel",
+  "n": 2,
+  "first": "2024-04-20",
+  "last": "2025-03-25",
+  "span_days": 339,
+  "instance_ids": [
+   "camel-ai__camel-516",
+   "camel-ai__camel-1994"
+  ]
+ },
+ {
+  "repo": "coderamp-labs/gitingest",
+  "n": 2,
+  "first": "2025-06-23",
+  "last": "2025-07-03",
+  "span_days": 10,
+  "instance_ids": [
+   "coderamp-labs__gitingest-314",
+   "coderamp-labs__gitingest-366"
+  ]
+ },
+ {
+  "repo": "commaai/opendbc",
+  "n": 2,
+  "first": "2025-05-28",
+  "last": "2025-07-23",
+  "span_days": 56,
+  "instance_ids": [
+   "commaai__opendbc-2318",
+   "commaai__opendbc-2539"
+  ]
+ },
+ {
+  "repo": "dbt-labs/dbt-core",
+  "n": 2,
+  "first": "2025-05-20",
+  "last": "2025-06-20",
+  "span_days": 31,
+  "instance_ids": [
+   "dbt-labs__dbt-core-11645",
+   "dbt-labs__dbt-core-11759"
+  ]
+ },
+ {
+  "repo": "django-guardian/django-guardian",
+  "n": 2,
+  "first": "2025-08-28",
+  "last": "2025-08-29",
+  "span_days": 1,
+  "instance_ids": [
+   "django-guardian__django-guardian-896",
+   "django-guardian__django-guardian-899"
+  ]
+ },
+ {
+  "repo": "dpkp/kafka-python",
+  "n": 2,
+  "first": "2025-05-01",
+  "last": "2025-05-22",
+  "span_days": 21,
+  "instance_ids": [
+   "dpkp__kafka-python-2608",
+   "dpkp__kafka-python-2631"
+  ]
+ },
+ {
+  "repo": "facebookresearch/hydra",
+  "n": 2,
+  "first": "2024-02-22",
+  "last": "2025-01-06",
+  "span_days": 319,
+  "instance_ids": [
+   "facebookresearch__hydra-2854",
+   "facebookresearch__hydra-3005"
+  ]
+ },
+ {
+  "repo": "facelessuser/pymdown-extensions",
+  "n": 2,
+  "first": "2025-04-27",
+  "last": "2025-05-28",
+  "span_days": 31,
+  "instance_ids": [
+   "facelessuser__pymdown-extensions-2651",
+   "facelessuser__pymdown-extensions-2679"
+  ]
+ },
+ {
+  "repo": "feast-dev/feast",
+  "n": 2,
+  "first": "2024-05-02",
+  "last": "2025-02-09",
+  "span_days": 283,
+  "instance_ids": [
+   "feast-dev__feast-4172",
+   "feast-dev__feast-5036"
+  ]
+ },
+ {
+  "repo": "feature-engine/feature_engine",
+  "n": 2,
+  "first": "2025-04-27",
+  "last": "2025-04-27",
+  "span_days": 0,
+  "instance_ids": [
+   "feature-engine__feature_engine-856",
+   "feature-engine__feature_engine-857"
+  ]
+ },
+ {
+  "repo": "freqtrade/freqtrade",
+  "n": 2,
+  "first": "2024-05-13",
+  "last": "2025-07-12",
+  "span_days": 425,
+  "instance_ids": [
+   "freqtrade__freqtrade-10208",
+   "freqtrade__freqtrade-11974"
+  ]
+ },
+ {
+  "repo": "gboeing/osmnx",
+  "n": 2,
+  "first": "2025-07-01",
+  "last": "2025-08-10",
+  "span_days": 40,
+  "instance_ids": [
+   "gboeing__osmnx-1324",
+   "gboeing__osmnx-1334"
+  ]
+ },
+ {
+  "repo": "gitpython-developers/GitPython",
+  "n": 2,
+  "first": "2025-06-06",
+  "last": "2025-07-22",
+  "span_days": 46,
+  "instance_ids": [
+   "gitpython-developers__GitPython-2035",
+   "gitpython-developers__GitPython-2062"
+  ]
+ },
+ {
+  "repo": "gptme/gptme",
+  "n": 2,
+  "first": "2024-01-22",
+  "last": "2025-07-13",
+  "span_days": 538,
+  "instance_ids": [
+   "gptme__gptme-70",
+   "gptme__gptme-595"
+  ]
+ },
+ {
+  "repo": "hiyouga/LLaMA-Factory",
+  "n": 2,
+  "first": "2025-03-27",
+  "last": "2025-04-07",
+  "span_days": 11,
+  "instance_ids": [
+   "hiyouga__llama-factory-7505",
+   "hiyouga__llama-factory-7623"
+  ]
+ },
+ {
+  "repo": "home-assistant/supervisor",
+  "n": 2,
+  "first": "2025-03-01",
+  "last": "2025-03-12",
+  "span_days": 11,
+  "instance_ids": [
+   "home-assistant__supervisor-5701",
+   "home-assistant__supervisor-5747"
+  ]
+ },
+ {
+  "repo": "huggingface/datasets",
+  "n": 2,
+  "first": "2025-01-04",
+  "last": "2025-04-16",
+  "span_days": 102,
+  "instance_ids": [
+   "huggingface__datasets-7353",
+   "huggingface__datasets-7522"
+  ]
+ },
+ {
+  "repo": "huggingface/huggingface_hub",
+  "n": 2,
+  "first": "2025-07-03",
+  "last": "2025-07-28",
+  "span_days": 25,
+  "instance_ids": [
+   "huggingface__huggingface_hub-3199",
+   "huggingface__huggingface_hub-3271"
+  ]
+ },
+ {
+  "repo": "huggingface/lerobot",
+  "n": 2,
+  "first": "2025-07-17",
+  "last": "2025-08-04",
+  "span_days": 18,
+  "instance_ids": [
+   "huggingface__lerobot-1524",
+   "huggingface__lerobot-1665"
+  ]
+ },
+ {
+  "repo": "ibis-project/ibis",
+  "n": 2,
+  "first": "2025-07-12",
+  "last": "2025-07-27",
+  "span_days": 15,
+  "instance_ids": [
+   "ibis-project__ibis-11455",
+   "ibis-project__ibis-11506"
+  ]
+ },
+ {
+  "repo": "jarun/buku",
+  "n": 2,
+  "first": "2024-09-06",
+  "last": "2025-04-13",
+  "span_days": 219,
+  "instance_ids": [
+   "jarun__buku-778",
+   "jarun__buku-829"
+  ]
+ },
+ {
+  "repo": "jazzband/tablib",
+  "n": 2,
+  "first": "2024-07-10",
+  "last": "2025-02-19",
+  "span_days": 224,
+  "instance_ids": [
+   "jazzband__tablib-596",
+   "jazzband__tablib-613"
+  ]
+ },
+ {
+  "repo": "lastmile-ai/mcp-agent",
+  "n": 2,
+  "first": "2025-06-25",
+  "last": "2025-08-09",
+  "span_days": 45,
+  "instance_ids": [
+   "lastmile-ai__mcp-agent-282",
+   "lastmile-ai__mcp-agent-367"
+  ]
+ },
+ {
+  "repo": "modelcontextprotocol/python-sdk",
+  "n": 2,
+  "first": "2025-01-23",
+  "last": "2025-02-20",
+  "span_days": 28,
+  "instance_ids": [
+   "modelcontextprotocol__python-sdk-167",
+   "modelcontextprotocol__python-sdk-222"
+  ]
+ },
+ {
+  "repo": "olofk/fusesoc",
+  "n": 2,
+  "first": "2025-01-08",
+  "last": "2025-01-18",
+  "span_days": 10,
+  "instance_ids": [
+   "olofk__fusesoc-720",
+   "olofk__fusesoc-724"
+  ]
+ },
+ {
+  "repo": "pyca/cryptography",
+  "n": 2,
+  "first": "2025-04-27",
+  "last": "2025-06-03",
+  "span_days": 37,
+  "instance_ids": [
+   "pyca__cryptography-12812",
+   "pyca__cryptography-13032"
+  ]
+ },
+ {
+  "repo": "pypa/cibuildwheel",
+  "n": 2,
+  "first": "2025-06-09",
+  "last": "2025-08-03",
+  "span_days": 55,
+  "instance_ids": [
+   "pypa__cibuildwheel-2458",
+   "pypa__cibuildwheel-2541"
+  ]
+ },
+ {
+  "repo": "pytorch/torchtitan",
+  "n": 2,
+  "first": "2025-05-29",
+  "last": "2025-05-29",
+  "span_days": 0,
+  "instance_ids": [
+   "pytorch__torchtitan-1238",
+   "pytorch__torchtitan-1244"
+  ]
+ },
+ {
+  "repo": "pytransitions/transitions",
+  "n": 2,
+  "first": "2024-05-13",
+  "last": "2025-03-25",
+  "span_days": 316,
+  "instance_ids": [
+   "pytransitions__transitions-666",
+   "pytransitions__transitions-694"
+  ]
+ },
+ {
+  "repo": "simonw/llm",
+  "n": 2,
+  "first": "2025-05-18",
+  "last": "2025-06-01",
+  "span_days": 14,
+  "instance_ids": [
+   "simonw__llm-1048",
+   "simonw__llm-1149"
+  ]
+ },
+ {
+  "repo": "spulec/freezegun",
+  "n": 2,
+  "first": "2025-06-07",
+  "last": "2025-08-09",
+  "span_days": 63,
+  "instance_ids": [
+   "spulec__freezegun-576",
+   "spulec__freezegun-582"
+  ]
+ },
+ {
+  "repo": "sympy/sympy",
+  "n": 2,
+  "first": "2024-12-23",
+  "last": "2025-01-08",
+  "span_days": 16,
+  "instance_ids": [
+   "sympy__sympy-27395",
+   "sympy__sympy-27462"
+  ]
+ },
+ {
+  "repo": "traceloop/openllmetry",
+  "n": 2,
+  "first": "2025-06-05",
+  "last": "2025-07-31",
+  "span_days": 56,
+  "instance_ids": [
+   "traceloop__openllmetry-2979",
+   "traceloop__openllmetry-3205"
+  ]
+ },
+ {
+  "repo": "typeddjango/django-stubs",
+  "n": 2,
+  "first": "2025-07-16",
+  "last": "2025-07-17",
+  "span_days": 1,
+  "instance_ids": [
+   "typeddjango__django-stubs-2746",
+   "typeddjango__django-stubs-2748"
+  ]
+ },
+ {
+  "repo": "vega/altair",
+  "n": 2,
+  "first": "2025-07-13",
+  "last": "2025-07-13",
+  "span_days": 0,
+  "instance_ids": [
+   "vega__altair-3851",
+   "vega__altair-3853"
+  ]
+ },
+ {
+  "repo": "FreeOpcUa/opcua-asyncio",
+  "n": 1,
+  "first": "2024-02-13",
+  "last": "2024-02-13",
+  "span_days": 0,
+  "instance_ids": [
+   "freeopcua__opcua-asyncio-1578"
+  ]
+ },
+ {
+  "repo": "MechanicalSoup/MechanicalSoup",
+  "n": 1,
+  "first": "2025-07-27",
+  "last": "2025-07-27",
+  "span_days": 0,
+  "instance_ids": [
+   "MechanicalSoup__MechanicalSoup-455"
+  ]
+ },
+ {
+  "repo": "NVIDIA/NeMo-Guardrails",
+  "n": 1,
+  "first": "2025-08-13",
+  "last": "2025-08-13",
+  "span_days": 0,
+  "instance_ids": [
+   "NVIDIA__NeMo-Guardrails-1328"
+  ]
+ },
+ {
+  "repo": "NVIDIA/garak",
+  "n": 1,
+  "first": "2025-08-18",
+  "last": "2025-08-18",
+  "span_days": 0,
+  "instance_ids": [
+   "NVIDIA__garak-1337"
+  ]
+ },
+ {
+  "repo": "NewFuture/DDNS",
+  "n": 1,
+  "first": "2025-07-12",
+  "last": "2025-07-12",
+  "span_days": 0,
+  "instance_ids": [
+   "NewFuture__DDNS-512"
+  ]
+ },
+ {
+  "repo": "SYSTRAN/faster-whisper",
+  "n": 1,
+  "first": "2025-08-16",
+  "last": "2025-08-16",
+  "span_days": 0,
+  "instance_ids": [
+   "SYSTRAN__faster-whisper-1345"
+  ]
+ },
+ {
+  "repo": "TobikoData/sqlmesh",
+  "n": 1,
+  "first": "2025-04-25",
+  "last": "2025-04-25",
+  "span_days": 0,
+  "instance_ids": [
+   "TobikoData__sqlmesh-4256"
+  ]
+ },
+ {
+  "repo": "TorchIO-project/torchio",
+  "n": 1,
+  "first": "2025-04-26",
+  "last": "2025-04-26",
+  "span_days": 0,
+  "instance_ids": [
+   "TorchIO-project__torchio-1295"
+  ]
+ },
+ {
+  "repo": "alandtse/alexa_media_player",
+  "n": 1,
+  "first": "2025-07-20",
+  "last": "2025-07-20",
+  "span_days": 0,
+  "instance_ids": [
+   "alandtse__alexa_media_player-2973"
+  ]
+ },
+ {
+  "repo": "arrow-py/arrow",
+  "n": 1,
+  "first": "2025-07-08",
+  "last": "2025-07-08",
+  "span_days": 0,
+  "instance_ids": [
+   "arrow-py__arrow-1217"
+  ]
+ },
+ {
+  "repo": "awslabs/mcp",
+  "n": 1,
+  "first": "2025-08-21",
+  "last": "2025-08-21",
+  "span_days": 0,
+  "instance_ids": [
+   "awslabs__mcp-1154"
+  ]
+ },
+ {
+  "repo": "bit-team/backintime",
+  "n": 1,
+  "first": "2025-08-06",
+  "last": "2025-08-06",
+  "span_days": 0,
+  "instance_ids": [
+   "bit-team__backintime-2238"
+  ]
+ },
+ {
+  "repo": "casbin/pycasbin",
+  "n": 1,
+  "first": "2025-08-06",
+  "last": "2025-08-06",
+  "span_days": 0,
+  "instance_ids": [
+   "casbin__pycasbin-392"
+  ]
+ },
+ {
+  "repo": "celery/django-celery-beat",
+  "n": 1,
+  "first": "2025-05-16",
+  "last": "2025-05-16",
+  "span_days": 0,
+  "instance_ids": [
+   "celery__django-celery-beat-900"
+  ]
+ },
+ {
+  "repo": "celery/kombu",
+  "n": 1,
+  "first": "2025-05-16",
+  "last": "2025-05-16",
+  "span_days": 0,
+  "instance_ids": [
+   "celery__kombu-2300"
+  ]
+ },
+ {
+  "repo": "certtools/intelmq",
+  "n": 1,
+  "first": "2025-08-12",
+  "last": "2025-08-12",
+  "span_days": 0,
+  "instance_ids": [
+   "certtools__intelmq-2632"
+  ]
+ },
+ {
+  "repo": "cloud-custodian/cloud-custodian",
+  "n": 1,
+  "first": "2025-07-09",
+  "last": "2025-07-09",
+  "span_days": 0,
+  "instance_ids": [
+   "cloud-custodian__cloud-custodian-10255"
+  ]
+ },
+ {
+  "repo": "cloudtools/troposphere",
+  "n": 1,
+  "first": "2025-06-12",
+  "last": "2025-06-12",
+  "span_days": 0,
+  "instance_ids": [
+   "cloudtools__troposphere-2314"
+  ]
+ },
+ {
+  "repo": "copier-org/copier",
+  "n": 1,
+  "first": "2025-07-30",
+  "last": "2025-07-30",
+  "span_days": 0,
+  "instance_ids": [
+   "copier-org__copier-2254"
+  ]
+ },
+ {
+  "repo": "dbcli/mycli",
+  "n": 1,
+  "first": "2025-06-03",
+  "last": "2025-06-03",
+  "span_days": 0,
+  "instance_ids": [
+   "dbcli__mycli-1238"
+  ]
+ },
+ {
+  "repo": "dbcli/pgcli",
+  "n": 1,
+  "first": "2025-06-07",
+  "last": "2025-06-07",
+  "span_days": 0,
+  "instance_ids": [
+   "dbcli__pgcli-1513"
+  ]
+ },
+ {
+  "repo": "django/asgiref",
+  "n": 1,
+  "first": "2025-07-07",
+  "last": "2025-07-07",
+  "span_days": 0,
+  "instance_ids": [
+   "django__asgiref-523"
+  ]
+ },
+ {
+  "repo": "docling-project/docling",
+  "n": 1,
+  "first": "2025-08-19",
+  "last": "2025-08-19",
+  "span_days": 0,
+  "instance_ids": [
+   "docling-project__docling-2100"
+  ]
+ },
+ {
+  "repo": "dottxt-ai/outlines",
+  "n": 1,
+  "first": "2025-07-04",
+  "last": "2025-07-04",
+  "span_days": 0,
+  "instance_ids": [
+   "dottxt-ai__outlines-1679"
+  ]
+ },
+ {
+  "repo": "encode/django-rest-framework",
+  "n": 1,
+  "first": "2025-05-31",
+  "last": "2025-05-31",
+  "span_days": 0,
+  "instance_ids": [
+   "encode__django-rest-framework-9712"
+  ]
+ },
+ {
+  "repo": "eventlet/eventlet",
+  "n": 1,
+  "first": "2025-06-11",
+  "last": "2025-06-11",
+  "span_days": 0,
+  "instance_ids": [
+   "eventlet__eventlet-1047"
+  ]
+ },
+ {
+  "repo": "gaphor/gaphor",
+  "n": 1,
+  "first": "2025-07-09",
+  "last": "2025-07-09",
+  "span_days": 0,
+  "instance_ids": [
+   "gaphor__gaphor-3959"
+  ]
+ },
+ {
+  "repo": "graphistry/pygraphistry",
+  "n": 1,
+  "first": "2025-05-31",
+  "last": "2025-05-31",
+  "span_days": 0,
+  "instance_ids": [
+   "graphistry__pygraphistry-661"
+  ]
+ },
+ {
+  "repo": "hardbyte/python-can",
+  "n": 1,
+  "first": "2024-11-06",
+  "last": "2024-11-06",
+  "span_days": 0,
+  "instance_ids": [
+   "hardbyte__python-can-1890"
+  ]
+ },
+ {
+  "repo": "huggingface/lighteval",
+  "n": 1,
+  "first": "2025-05-20",
+  "last": "2025-05-20",
+  "span_days": 0,
+  "instance_ids": [
+   "huggingface__lighteval-755"
+  ]
+ },
+ {
+  "repo": "huggingface/open-r1",
+  "n": 1,
+  "first": "2025-03-31",
+  "last": "2025-03-31",
+  "span_days": 0,
+  "instance_ids": [
+   "huggingface__open-r1-566"
+  ]
+ },
+ {
+  "repo": "hynek/structlog",
+  "n": 1,
+  "first": "2025-04-16",
+  "last": "2025-04-16",
+  "span_days": 0,
+  "instance_ids": [
+   "hynek__structlog-720"
+  ]
+ },
+ {
+  "repo": "jazzband/djangorestframework-simplejwt",
+  "n": 1,
+  "first": "2025-08-13",
+  "last": "2025-08-13",
+  "span_days": 0,
+  "instance_ids": [
+   "jazzband__djangorestframework-simplejwt-928"
+  ]
+ },
+ {
+  "repo": "jpadilla/pyjwt",
+  "n": 1,
+  "first": "2024-04-05",
+  "last": "2024-04-05",
+  "span_days": 0,
+  "instance_ids": [
+   "jpadilla__pyjwt-952"
+  ]
+ },
+ {
+  "repo": "keephq/keep",
+  "n": 1,
+  "first": "2025-06-25",
+  "last": "2025-06-25",
+  "span_days": 0,
+  "instance_ids": [
+   "keephq__keep-5101"
+  ]
+ },
+ {
+  "repo": "keon/algorithms",
+  "n": 1,
+  "first": "2025-02-18",
+  "last": "2025-02-18",
+  "span_days": 0,
+  "instance_ids": [
+   "keon__algorithms-2130"
+  ]
+ },
+ {
+  "repo": "lektor/lektor",
+  "n": 1,
+  "first": "2025-04-21",
+  "last": "2025-04-21",
+  "span_days": 0,
+  "instance_ids": [
+   "lektor__lektor-1224"
+  ]
+ },
+ {
+  "repo": "lss233/kirara-ai",
+  "n": 1,
+  "first": "2025-03-31",
+  "last": "2025-03-31",
+  "span_days": 0,
+  "instance_ids": [
+   "lss233__kirara-ai-1445"
+  ]
+ },
+ {
+  "repo": "magic-wormhole/magic-wormhole",
+  "n": 1,
+  "first": "2025-07-14",
+  "last": "2025-07-14",
+  "span_days": 0,
+  "instance_ids": [
+   "magic-wormhole__magic-wormhole-659"
+  ]
+ },
+ {
+  "repo": "meta-llama/llama-stack",
+  "n": 1,
+  "first": "2025-02-14",
+  "last": "2025-02-14",
+  "span_days": 0,
+  "instance_ids": [
+   "meta-llama__llama-stack-1105"
+  ]
+ },
+ {
+  "repo": "microsoft/graphrag",
+  "n": 1,
+  "first": "2025-05-21",
+  "last": "2025-05-21",
+  "span_days": 0,
+  "instance_ids": [
+   "microsoft__graphrag-1944"
+  ]
+ },
+ {
+  "repo": "mlco2/codecarbon",
+  "n": 1,
+  "first": "2025-05-01",
+  "last": "2025-05-01",
+  "span_days": 0,
+  "instance_ids": [
+   "mlco2__codecarbon-831"
+  ]
+ },
+ {
+  "repo": "nonebot/nonebot2",
+  "n": 1,
+  "first": "2025-07-02",
+  "last": "2025-07-02",
+  "span_days": 0,
+  "instance_ids": [
+   "nonebot__nonebot2-3560"
+  ]
+ },
+ {
+  "repo": "octodns/octodns",
+  "n": 1,
+  "first": "2025-08-25",
+  "last": "2025-08-25",
+  "span_days": 0,
+  "instance_ids": [
+   "octodns__octodns-1298"
+  ]
+ },
+ {
+  "repo": "open-telemetry/opentelemetry-python",
+  "n": 1,
+  "first": "2025-06-23",
+  "last": "2025-06-23",
+  "span_days": 0,
+  "instance_ids": [
+   "open-telemetry__opentelemetry-python-4652"
+  ]
+ },
+ {
+  "repo": "oumi-ai/oumi",
+  "n": 1,
+  "first": "2025-07-30",
+  "last": "2025-07-30",
+  "span_days": 0,
+  "instance_ids": [
+   "oumi-ai__oumi-1885"
+  ]
+ },
+ {
+  "repo": "pdfminer/pdfminer.six",
+  "n": 1,
+  "first": "2025-04-23",
+  "last": "2025-04-23",
+  "span_days": 0,
+  "instance_ids": [
+   "pdfminer__pdfminer.six-1121"
+  ]
+ },
+ {
+  "repo": "pex-tool/pex",
+  "n": 1,
+  "first": "2025-08-27",
+  "last": "2025-08-27",
+  "span_days": 0,
+  "instance_ids": [
+   "pex-tool__pex-2888"
+  ]
+ },
+ {
+  "repo": "pgmpy/pgmpy",
+  "n": 1,
+  "first": "2025-08-22",
+  "last": "2025-08-22",
+  "span_days": 0,
+  "instance_ids": [
+   "pgmpy__pgmpy-2314"
+  ]
+ },
+ {
+  "repo": "pipecat-ai/pipecat",
+  "n": 1,
+  "first": "2025-08-11",
+  "last": "2025-08-11",
+  "span_days": 0,
+  "instance_ids": [
+   "pipecat-ai__pipecat-2413"
+  ]
+ },
+ {
+  "repo": "praw-dev/praw",
+  "n": 1,
+  "first": "2025-05-06",
+  "last": "2025-05-06",
+  "span_days": 0,
+  "instance_ids": [
+   "praw-dev__praw-2067"
+  ]
+ },
+ {
+  "repo": "psf/requests",
+  "n": 1,
+  "first": "2024-02-22",
+  "last": "2024-02-22",
+  "span_days": 0,
+  "instance_ids": [
+   "psf__requests-6644"
+  ]
+ },
+ {
+  "repo": "pydicom/pydicom",
+  "n": 1,
+  "first": "2025-05-12",
+  "last": "2025-05-12",
+  "span_days": 0,
+  "instance_ids": [
+   "pydicom__pydicom-2229"
+  ]
+ },
+ {
+  "repo": "pyinstaller/pyinstaller",
+  "n": 1,
+  "first": "2025-08-02",
+  "last": "2025-08-02",
+  "span_days": 0,
+  "instance_ids": [
+   "pyinstaller__pyinstaller-9197"
+  ]
+ },
+ {
+  "repo": "pynamodb/PynamoDB",
+  "n": 1,
+  "first": "2025-05-21",
+  "last": "2025-05-21",
+  "span_days": 0,
+  "instance_ids": [
+   "pynamodb__PynamoDB-1271"
+  ]
+ },
+ {
+  "repo": "pypa/pipenv",
+  "n": 1,
+  "first": "2025-04-22",
+  "last": "2025-04-22",
+  "span_days": 0,
+  "instance_ids": [
+   "pypa__pipenv-6380"
+  ]
+ },
+ {
+  "repo": "pypa/pipx",
+  "n": 1,
+  "first": "2025-04-30",
+  "last": "2025-04-30",
+  "span_days": 0,
+  "instance_ids": [
+   "pypa__pipx-1625"
+  ]
+ },
+ {
+  "repo": "pytest-dev/pytest",
+  "n": 1,
+  "first": "2024-06-20",
+  "last": "2024-06-20",
+  "span_days": 0,
+  "instance_ids": [
+   "pytest-dev__pytest-12500"
+  ]
+ },
+ {
+  "repo": "qubvel-org/segmentation_models.pytorch",
+  "n": 1,
+  "first": "2025-03-27",
+  "last": "2025-03-27",
+  "span_days": 0,
+  "instance_ids": [
+   "qubvel-org__segmentation_models.pytorch-1108"
+  ]
+ },
+ {
+  "repo": "rthalley/dnspython",
+  "n": 1,
+  "first": "2025-07-01",
+  "last": "2025-07-01",
+  "span_days": 0,
+  "instance_ids": [
+   "rthalley__dnspython-1206"
+  ]
+ },
+ {
+  "repo": "scikit-learn-contrib/category_encoders",
+  "n": 1,
+  "first": "2024-04-05",
+  "last": "2024-04-05",
+  "span_days": 0,
+  "instance_ids": [
+   "scikit-learn-contrib__category_encoders-438"
+  ]
+ },
+ {
+  "repo": "scrapy-plugins/scrapy-splash",
+  "n": 1,
+  "first": "2025-01-29",
+  "last": "2025-01-29",
+  "span_days": 0,
+  "instance_ids": [
+   "scrapy-plugins__scrapy-splash-324"
+  ]
+ },
+ {
+  "repo": "slackapi/bolt-python",
+  "n": 1,
+  "first": "2025-03-17",
+  "last": "2025-03-17",
+  "span_days": 0,
+  "instance_ids": [
+   "slackapi__bolt-python-1272"
+  ]
+ },
+ {
+  "repo": "slackapi/python-slack-sdk",
+  "n": 1,
+  "first": "2025-06-17",
+  "last": "2025-06-17",
+  "span_days": 0,
+  "instance_ids": [
+   "slackapi__python-slack-sdk-1703"
+  ]
+ },
+ {
+  "repo": "stanford-crfm/helm",
+  "n": 1,
+  "first": "2025-03-24",
+  "last": "2025-03-24",
+  "span_days": 0,
+  "instance_ids": [
+   "stanford-crfm__helm-3467"
+  ]
+ },
+ {
+  "repo": "theskumar/python-dotenv",
+  "n": 1,
+  "first": "2025-05-30",
+  "last": "2025-05-30",
+  "span_days": 0,
+  "instance_ids": [
+   "theskumar__python-dotenv-563"
+  ]
+ },
+ {
+  "repo": "trailofbits/algo",
+  "n": 1,
+  "first": "2025-08-03",
+  "last": "2025-08-03",
+  "span_days": 0,
+  "instance_ids": [
+   "trailofbits__algo-14801"
+  ]
+ }
+]
