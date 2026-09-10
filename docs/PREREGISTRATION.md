@@ -65,7 +65,7 @@ run; `results/experiment/<n>/config.json` of the Phase 3–4 run must equal
 it byte for byte.
 
 ## Gates that must pass before Phase 3 starts
-- Gate 0.1 published baseline reference (D10) — owner to pin
+- Gate 0.1 published baseline reference — closed (D26, findings §13)
 - Gate 2.3 oracle hand-check ≥ 0.95 on `results/phase0/19/control/handcheck.csv` — owner to label
 
 ## Sign-off

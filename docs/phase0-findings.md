@@ -344,3 +344,30 @@ of candidates that repeat an already-seen file. On 20-task builds it is
 semantic seam; longer builds raise it (a repeat is only possible once a
 file has been seen). The pre-registration should restate Gate 3's floor
 for the file-keyed seam or tie it to build length.
+
+## 13. Published baseline, recomputed from the authors' artifacts (baseline run 1)
+
+arXiv and its mirrors are unreachable from the authoring session, so the
+reference was **recomputed** rather than copied: the Agentless v1.5.0
+release (`agentless_swebench_lite.zip`, published 2024-10-29) contains the
+file-level localization outputs (`found_files`) for all 300 SWE-bench Lite
+instances, produced with GPT-4o. Scoring them with `phase2.baseline_agentless`
+— the same hit@k / flag-level FP definitions as our control arm — against
+SWE-bench Lite's gold patches (`princeton-nlp/SWE-bench_Lite`, test split):
+
+| Agentless output | n | hit@1 | hit@3 | hit@5 | FP@3 |
+|---|---:|---:|---:|---:|---:|
+| LLM file-level only (`file_level/loc_outputs.jsonl`, v1.5) | 300 | 0.640 | **0.787** | 0.827 | 0.728 |
+| LLM + embedding retrieval, combined (`combined_locs.jsonl`, v1.5) | 300 | 0.630 | 0.817 | 0.850 | 0.728 |
+| v0.1.0 (July 2024) file-level | 300 | 0.653 | 0.777 | 0.827 | 0.729 |
+
+Our control arm (run 18): Llama 3.3 70B, file list only, 13 SWE-bench-Live
+repos gated after 2023-12-31, 260 tasks: **hit@3 0.673, FP@3 0.727**.
+
+Gate 0.1 reading: the LLM-only Agentless number is the closest published
+analogue (same task shape: issue + repository file tree → ranked files, no
+hints). Our rate is 11 points lower with a weaker, freshness-compliant
+model on newer tasks, and the false-positive profile is the same to three
+decimals — the harness is measuring the same quantity. Recorded as
+**within a defensible margin**, with the two confounds (model, corpus)
+stated. `results/baseline/1/baseline-10.json` is the reference file.

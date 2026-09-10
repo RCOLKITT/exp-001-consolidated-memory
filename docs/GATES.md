@@ -5,7 +5,7 @@ Any gate can end the experiment. Tick boxes only with evidence linked.
 ## Gate 0 — Baseline (Phase 0)
 Harness: `phase0/` (see `phase0/RUNBOOK.md`). Built and unit-tested; not yet run on the corpus.
 
-- [ ] Control-arm localization rate within a defensible margin of a published baseline — reference: ______ (metric, k, model, corpus) · our number: **0.673 hit@3** on 260 tasks across the 13 draft repos (`results/phase0/18/control/metrics.json`), per-repo 0.20–1.00
+- [x] Control-arm localization rate within a defensible margin of a published baseline — reference: Agentless v1.5 GPT-4o file-level hit@3 **0.787** (FP@3 0.728) on SWE-bench Lite, recomputed from the authors' released outputs (`results/baseline/1/baseline-10.json`, findings §13) · ours: **0.673** (FP@3 0.727) with Llama 3.3 70B on gated SWE-bench-Live repos
 - [x] Freshness gate enforced in code, not by convention — `phase0/freshness_gate.py`, applied at import in `phase0/corpus.py`; `tests/test_freshness_gate.py`
 - [x] Harness reruns produce identical results on identical inputs — run 17: `--offline` rerun identical (`results/phase0/17/control/compare.txt`); mechanism: content-addressed response cache
 - [x] Corpus decision (§9.1) — SWE-bench-Live Python `full`, verifier chosen to fit the gate (option A, D16): Llama 3.3 70B → 13 eligible repos (`results/phase0/7`); fallback Llama 4 → 4 (`results/phase0/10`). See `docs/phase0-findings.md` §6

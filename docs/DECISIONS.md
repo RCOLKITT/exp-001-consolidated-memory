@@ -302,3 +302,11 @@ Build split by chain length, ceiling rule at 0.90 control hit@3
 10 pts against a ceiling of ~17.9 and an MDE of ~9.2 on 373 eval tasks.
 All values in docs/PREREGISTRATION.md; run config in docs/exp-run.prereg.json.
 Nothing here changes after the tag.
+
+### D26. Gate 0.1 closed with a recomputed reference, not a quoted one
+The published baseline is Agentless's file-level localization, recomputed
+from the authors' released `loc_outputs.jsonl` with our own metric code
+against SWE-bench Lite gold (findings §13). This is stronger than quoting
+a table because the metric definition is provably identical; it is weaker
+in that model and corpus differ from ours, which is stated. The
+pre-registration is unaffected (§7 lists no baseline value).
