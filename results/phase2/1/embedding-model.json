@@ -1,0 +1,6 @@
+{
+ "model": "sentence-transformers/all-MiniLM-L6-v2",
+ "sha": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+ "requested_revision": null,
+ "last_modified": "2026-06-01 06:29:13+00:00"
+}
