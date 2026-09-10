@@ -42,6 +42,12 @@ def counting_clock(start: float = 1_700_000_000.0, step: float = 1.0) -> Callabl
 @dataclass(frozen=True)
 class KernelConfig:
     theta_surprise: float = 0.35
+    # A non-admitted candidate reinforces its nearest buffered entry only if
+    # max_similarity >= reinforce_min_sim; otherwise it is discarded outright.
+    # None means "same bar as admission" (1 - theta): every redundant candidate
+    # reinforces. A higher bar keeps promoted memories purer at the cost of
+    # fewer reinforcements (docs/DECISIONS.md D22).
+    reinforce_min_sim: Optional[float] = None
     ttl_ticks: int = 50
     retrieval_k: int = 5
     agent_id: str = "kernel"
@@ -51,6 +57,7 @@ class KernelConfig:
     def to_canonical(self) -> dict:
         return {
             "theta_surprise": self.theta_surprise,
+            "reinforce_min_sim": self.reinforce_min_sim,
             "ttl_ticks": self.ttl_ticks,
             "retrieval_k": self.retrieval_k,
             "agent_id": self.agent_id,
@@ -145,8 +152,9 @@ class Kernel:
         if decision.admitted:
             self.buffer.add(labeled, self.tick_count, decision.surprise)
             outcome = "buffered"
-        elif decision.nearest_id is not None and decision.nearest_id in self.buffer:
-            # Redundant to a buffered entry: not a new write, but evidence.
+        elif (decision.nearest_id is not None and decision.nearest_id in self.buffer
+              and decision.max_similarity >= (self.config.reinforce_min_sim if self.config.reinforce_min_sim is not None else 1.0 - self.config.theta_surprise)):
+            # Redundant to a buffered entry and similar enough to count as the same pattern: evidence.
             self.buffer.reinforce(decision.nearest_id, labeled)
             outcome = "reinforced"
         # Redundant to promoted memory: discarded; the ledger keeps nearest_id

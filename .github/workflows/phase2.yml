@@ -34,6 +34,7 @@ jobs:
           print("mode=" + str(cfg.get("mode", "tokens")))
           print("thetas=" + str(cfg.get("thetas", "0.15,0.2,0.25,0.3,0.35,0.4,0.5,0.6")))
           print("clusters=" + str(cfg.get("clusters", "0.5,0.6,0.7,0.8,0.9")))
+          print("rhos=" + str(cfg.get("rhos", "")))
           print("dir=results/phase2/${{ github.run_number }}")
           PY
       - name: Resolve and record the model revision (pre-registration value)
@@ -54,10 +55,11 @@ jobs:
           set -euo pipefail
           SHA=$(python -c "import json; print(json.load(open('${{ steps.cfg.outputs.dir }}/embedding-model.json'))['sha'])")
           python -m phase2.tune --similarity embedding --mode "${{ steps.cfg.outputs.mode }}" --embedding-model "${{ steps.cfg.outputs.model }}" --embedding-revision "$SHA" \
-            --thetas "${{ steps.cfg.outputs.thetas }}" --clusters "${{ steps.cfg.outputs.clusters }}" \
+            --thetas "${{ steps.cfg.outputs.thetas }}" --clusters "${{ steps.cfg.outputs.clusters }}" --rhos "${{ steps.cfg.outputs.rhos }}" \
+            --embedding-cache "${{ steps.cfg.outputs.dir }}/embeddings.jsonl" \
             --n-records "${{ steps.cfg.outputs.n_records }}" --redundant "${{ steps.cfg.outputs.redundant }}" --seed "${{ steps.cfg.outputs.seed }}" \
             --out "${{ steps.cfg.outputs.dir }}/tune-embedding.md" | tail -3
-          python -m phase2.tune --similarity hashing --mode "${{ steps.cfg.outputs.mode }}" --thetas "${{ steps.cfg.outputs.thetas }}" --clusters "${{ steps.cfg.outputs.clusters }}" --n-records "${{ steps.cfg.outputs.n_records }}" --redundant "${{ steps.cfg.outputs.redundant }}" --seed "${{ steps.cfg.outputs.seed }}" \
+          python -m phase2.tune --similarity hashing --mode "${{ steps.cfg.outputs.mode }}" --thetas "${{ steps.cfg.outputs.thetas }}" --clusters "${{ steps.cfg.outputs.clusters }}" --rhos "${{ steps.cfg.outputs.rhos }}" --n-records "${{ steps.cfg.outputs.n_records }}" --redundant "${{ steps.cfg.outputs.redundant }}" --seed "${{ steps.cfg.outputs.seed }}" \
             --out "${{ steps.cfg.outputs.dir }}/tune-hashing.md" | tail -1
       - name: Seam tests with the real model
         run: python -m pytest -q -rs tests/test_similarity_seam.py 2>&1 | tee "${{ steps.cfg.outputs.dir }}/seam-tests.log"

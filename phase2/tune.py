@@ -42,9 +42,13 @@ class MemoSimilarity:
         return v
 
 
-def run_cell(similarity, theta: float, cluster: float, spec: StreamSpec, ttl: int = 10_000, schedule: int = 10, records=None) -> dict:
+def component_of(key: str) -> str:
+    return key.split("s")[0] if key.startswith("c") else key
+
+
+def run_cell(similarity, theta: float, cluster: float, spec: StreamSpec, ttl: int = 10_000, schedule: int = 10, records=None, rho=None) -> dict:
     records = records if records is not None else generate(spec)
-    cfg = KernelConfig(theta_surprise=theta, ttl_ticks=ttl,
+    cfg = KernelConfig(theta_surprise=theta, reinforce_min_sim=rho, ttl_ticks=ttl,
                        policy=PromotionPolicy(schedule_every_ticks=schedule, cluster_similarity=cluster))
     k = Kernel(cfg, similarity, PassthroughOracle(), clock=counting_clock())
     id2pat = {r.id: pattern_of(r) for r in records}
@@ -57,33 +61,38 @@ def run_cell(similarity, theta: float, cluster: float, spec: StreamSpec, ttl: in
             k.pin(k.snapshot())          # promoted memory stays visible, as in RepoPipeline.learn
     live = k.store.live()
     pure = sum(1 for m in live if len({id2pat[i] for i in m.provenance}) == 1)
+    pure_c = sum(1 for m in live if len({component_of(id2pat[i]) for i in m.provenance}) == 1)
+    reinforced = sum(1 for e in k.ledger.events("ingest") if e.payload["outcome"] == "reinforced")
     n = len(records)
-    return {"theta": theta, "cluster": cluster, "candidates": n, "injected_redundant": expected_redundant(records) / n,
-            "discard_rate": (n - buffered) / n, "promoted": len(live), "purity": pure / len(live) if live else None,
+    return {"theta": theta, "rho": rho, "cluster": cluster, "candidates": n, "injected_redundant": expected_redundant(records) / n,
+            "discard_rate": (n - buffered) / n, "reinforced": reinforced, "promoted": len(live),
+            "purity": pure / len(live) if live else None, "purity_component": pure_c / len(live) if live else None,
             "merged": (len(live) - pure) / len(live) if live else None}
 
 
-def sweep(similarity, thetas, clusters, spec: StreamSpec, schedule: int = 10) -> list[dict]:
+def sweep(similarity, thetas, clusters, spec: StreamSpec, schedule: int = 10, rhos=(None,)) -> list[dict]:
     memo = MemoSimilarity(similarity)
     records = generate(spec)                     # one stream, shared by every cell
-    return [run_cell(memo, t, c, spec, schedule=schedule, records=records) for t in thetas for c in clusters]
+    return [run_cell(memo, t, c, spec, schedule=schedule, records=records, rho=r) for t in thetas for r in rhos for c in clusters]
 
 
 def markdown(rows: list[dict], name: str) -> str:
     out = [f"# Threshold sweep — similarity: {name}", "",
            f"injected redundant fraction: {rows[0]['injected_redundant']:.3f}; candidates: {rows[0]['candidates']}", "",
-           "| Θ_surprise | cluster_sim | discard_rate | promoted | purity | merged |", "|---:|---:|---:|---:|---:|---:|"]
+           "| Θ_surprise | ρ_reinforce | cluster_sim | discard_rate | reinforced | promoted | purity (pattern) | purity (component) |", "|---:|---:|---:|---:|---:|---:|---:|---:|"]
     for r in rows:
         pu = "—" if r["purity"] is None else f"{r['purity']:.2f}"
-        me = "—" if r["merged"] is None else f"{r['merged']:.2f}"
-        out.append(f"| {r['theta']:.2f} | {r['cluster']:.2f} | {r['discard_rate']:.3f} | {r['promoted']} | {pu} | {me} |")
+        pc = "—" if r.get("purity_component") is None else f"{r['purity_component']:.2f}"
+        rho = "1-Θ" if r.get("rho") is None else f"{r['rho']:.2f}"
+        out.append(f"| {r['theta']:.2f} | {rho} | {r['cluster']:.2f} | {r['discard_rate']:.3f} | {r.get('reinforced', 0)} | {r['promoted']} | {pu} | {pc} |")
     return "\n".join(out) + "\n"
 
 
-def recommend(rows: list[dict], tol: float = 0.05) -> dict | None:
+def recommend(rows: list[dict], tol: float = 0.05, min_purity: float = 1.0, level: str = "purity") -> dict | None:
     """Cells whose discard rate is within tol of the injected fraction and whose
-    promoted memories are all pure; pick the one with the most promotions."""
-    ok = [r for r in rows if abs(r["discard_rate"] - r["injected_redundant"]) <= tol and r["purity"] == 1.0 and r["promoted"] > 0]
+    promoted memories reach min_purity at `level` (purity | purity_component);
+    pick the one with the most promotions."""
+    ok = [r for r in rows if abs(r["discard_rate"] - r["injected_redundant"]) <= tol and (r.get(level) or 0) >= min_purity and r["promoted"] > 0]
     # closest to the injected fraction first, then most promotions, then the more conservative (higher) Θ
     return max(ok, key=lambda r: (-abs(r["discard_rate"] - r["injected_redundant"]), r["promoted"], r["theta"])) if ok else None
 
@@ -94,20 +103,26 @@ def _main(argv):
     ap.add_argument("--embedding-model", default="sentence-transformers/all-MiniLM-L6-v2")
     ap.add_argument("--embedding-revision", default=None)
     ap.add_argument("--thetas", default="0.15,0.2,0.25,0.3,0.35,0.4,0.5,0.6")
+    ap.add_argument("--rhos", default="", help="reinforcement thresholds to sweep, e.g. 0.6,0.7,0.8,0.9 (blank = 1-Θ only)")
+    ap.add_argument("--embedding-cache", default=None, help="persist vectors here (commit it to analyse offline)")
     ap.add_argument("--clusters", default="0.5,0.6,0.7,0.8,0.9")
     ap.add_argument("--mode", default="tokens", choices=["tokens", "nl"], help="nl = defect-like sentences with paraphrase (for semantic seams)")
     ap.add_argument("--n-records", type=int, default=300); ap.add_argument("--redundant", type=float, default=0.7); ap.add_argument("--seed", type=int, default=7)
     ap.add_argument("--schedule", type=int, default=10, help="promotion every N ticks (spec: on a schedule, not continuously)")
     ap.add_argument("--out", help="markdown path; a .json twin is written alongside")
     a = ap.parse_args(argv)
-    sim = make_similarity(a.similarity, None, a.embedding_model, a.embedding_revision)
+    sim = make_similarity(a.similarity, a.embedding_cache, a.embedding_model, a.embedding_revision)
     spec = StreamSpec(mode=a.mode, n_records=a.n_records, n_patterns=a.n_records, redundant_fraction=a.redundant, seed=a.seed)
-    rows = sweep(sim, [float(x) for x in a.thetas.split(",")], [float(x) for x in a.clusters.split(",")], spec, schedule=a.schedule)
+    rhos = [None] + [float(x) for x in a.rhos.split(",") if x]
+    rows = sweep(sim, [float(x) for x in a.thetas.split(",")], [float(x) for x in a.clusters.split(",")], spec, schedule=a.schedule, rhos=rhos)
     rec = recommend(rows)
-    md = markdown(rows, getattr(sim, "name", a.similarity)) + "\nRecommended (discard within 0.05 of injected, purity 1.0, most promotions): " + (json.dumps(rec) if rec else "none") + "\n"
+    rec_c = recommend(rows, min_purity=0.95, level="purity_component")
+    md = (markdown(rows, getattr(sim, "name", a.similarity))
+          + "\nRecommended, pattern purity 1.0 (discard within 0.05 of injected, most promotions): " + (json.dumps(rec) if rec else "none")
+          + "\nRecommended, component purity >= 0.95: " + (json.dumps(rec_c) if rec_c else "none") + "\n")
     if a.out:
         Path(a.out).parent.mkdir(parents=True, exist_ok=True); Path(a.out).write_text(md)
-        Path(a.out).with_suffix(".json").write_text(json.dumps({"similarity": getattr(sim, "name", a.similarity), "rows": rows, "recommended": rec}, indent=1))
+        Path(a.out).with_suffix(".json").write_text(json.dumps({"similarity": getattr(sim, "name", a.similarity), "rows": rows, "recommended": rec, "recommended_component": rec_c}, indent=1))
     sys.stdout.write(md)
     return 0
 

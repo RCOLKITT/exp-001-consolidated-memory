@@ -232,3 +232,16 @@ an `nl` mode: a pattern is (component, symptom) rendered as paraphrased
 defect sentences with prefix/suffix noise, 450 distinct patterns. Gate 1's
 discard assertion for the embedding seam is evaluated on `nl` streams; the
 token streams remain for lexical seams.
+
+### D22. Reinforcement has its own threshold (ρ), separate from admission (Θ)
+Phase 2 run 3 (pinned MiniLM, natural-language streams): at every Θ that
+discards the injected 70% of redundancy, promoted memories were almost
+never pure (≤ 0.05) — paraphrases of two different symptoms in the same
+component sit closer in embedding space than the admission bar. One
+threshold cannot separate "same defect" from "same component". The kernel
+now takes `reinforce_min_sim` (ρ): a non-admitted candidate reinforces its
+nearest buffered entry only if similarity ≥ ρ, otherwise it is discarded
+without becoming evidence. ρ = None keeps the old behaviour (ρ = 1 − Θ).
+The sweep reports purity at pattern and at component level, because for
+localization a merge within one component mostly points at the same
+files; the pre-registration must state which purity it commits to.

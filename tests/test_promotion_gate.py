@@ -99,3 +99,18 @@ def test_promotion_disabled_after_freeze(make_kernel):
     with pytest.raises(KernelError):
         k.promote()
     assert k.tick().promotion is None
+
+
+def test_reinforce_threshold_discards_ambiguous_neighbours(make_kernel):
+    """D22: with rho above 1-theta, a near-but-not-same candidate is discarded instead of merged."""
+    from memkernel import KernelConfig, PromotionPolicy
+    from memkernel.seams import PassthroughOracle, TokenJaccardSimilarity
+    from memkernel import Kernel
+    from memkernel.kernel import counting_clock
+    from memkernel.synthetic import make_record
+    cfg = KernelConfig(theta_surprise=0.6, reinforce_min_sim=0.9, ttl_ticks=100, policy=PromotionPolicy(schedule_every_ticks=1, cluster_similarity=0.5))
+    k = Kernel(cfg, TokenJaccardSimilarity(), PassthroughOracle(), clock=counting_clock())
+    assert k.ingest(make_record(1, 0)).outcome == "buffered"
+    assert k.ingest(make_record(1, 1)).outcome == "reinforced"                    # identical content: sim 1.0
+    assert k.ingest(make_record(1, 2, noise=("z1", "z2", "z3"))).outcome == "discarded"   # sim 10/13 = 0.77 < 0.9, surprise 0.23 < 0.6
+    assert k.buffer.entries()[0].occurrences == 2
