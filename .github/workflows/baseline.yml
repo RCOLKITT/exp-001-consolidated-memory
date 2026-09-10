@@ -1,0 +1,65 @@
+# Gate 0.1 — published baseline, recomputed from the Agentless authors' artifacts.
+# Push a branch run/baseline-<n> to start. Results: results/baseline/<run_number>/.
+name: baseline
+on:
+  push:
+    branches: ["run/baseline-*"]
+permissions:
+  contents: write
+jobs:
+  agentless:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install -e ".[dev]" "datasets>=3"
+      - name: Discover Agentless release assets
+        run: |
+          set -euo pipefail
+          D="results/baseline/${{ github.run_number }}"; mkdir -p "$D"
+          gh release view v1.5.0 -R OpenAutoCoder/Agentless --json tagName,publishedAt,assets --jq '{tag: .tagName, published: .publishedAt, assets: [.assets[] | {name, size}]}' | tee "$D/agentless-release.json"
+          gh release view v0.1.0 -R OpenAutoCoder/Agentless --json tagName,publishedAt,assets --jq '{tag: .tagName, published: .publishedAt, assets: [.assets[] | {name, size}]}' | tee "$D/agentless-release-v0.1.0.json"
+      - name: Download result/localization assets and inspect
+        run: |
+          set -euo pipefail
+          D="results/baseline/${{ github.run_number }}"; mkdir -p dl
+          for TAG in v1.5.0 v0.1.0; do
+            for A in $(gh release view $TAG -R OpenAutoCoder/Agentless --json assets --jq '.assets[].name' | grep -viE 'repo_structure' || true); do
+              gh release download $TAG -R OpenAutoCoder/Agentless -p "$A" -D "dl/$TAG" || true
+            done
+          done
+          find dl -type f | head -50 | tee "$D/downloaded.txt"
+          for Z in $(find dl -name '*.zip' -o -name '*.tar.gz' -o -name '*.tgz'); do
+            case "$Z" in *.zip) unzip -q -o "$Z" -d "${Z%.zip}_x" ;; *) mkdir -p "${Z}_x" && tar xzf "$Z" -C "${Z}_x" ;; esac
+          done
+          echo "--- candidate localization files"; find dl -type f -name '*.jsonl' | grep -iE 'file_level|loc_outputs|combined' | tee "$D/loc-candidates.txt" || true
+      - name: SWE-bench Lite gold and the metric
+        run: |
+          set -euo pipefail
+          D="results/baseline/${{ github.run_number }}"
+          python - <<'PY'
+          import json
+          from datasets import load_dataset
+          ds = load_dataset("princeton-nlp/SWE-bench_Lite", split="test")
+          with open("swebench_lite.jsonl", "w") as f:
+              for r in ds: f.write(json.dumps({"instance_id": r["instance_id"], "patch": r["patch"], "repo": r["repo"], "created_at": r["created_at"]}) + "\n")
+          print("swe-bench lite test rows:", len(ds))
+          PY
+          i=0
+          for L in $(cat "$D/loc-candidates.txt"); do
+            i=$((i+1)); echo "=== $L"; head -c 400 "$L"; echo
+            python -m phase2.baseline_agentless "$L" swebench_lite.jsonl --out "$D/baseline-$i.json" | head -30 || true
+          done
+          [ "$i" -gt 0 ] || echo "no localization file found in the release assets" | tee "$D/NOT_FOUND.txt"
+      - name: Commit results
+        if: always()
+        run: |
+          set -euo pipefail
+          git config user.name "baseline-bot"; git config user.email "baseline-bot@users.noreply.github.com"
+          git add results/
+          git commit -m "results(baseline): run ${{ github.run_number }} [skip ci]" || exit 0
+          git pull --rebase origin "$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME"
