@@ -16,7 +16,7 @@ recommended Llama 3.3 70B; [docs/phase0-findings.md](docs/phase0-findings.md) §
 Control arm measured on the pinned verifier across the 13 draft repos
 (hit@3 0.673, determinism identical, `results/phase0/18/`); seam built and
 tuned; learn → freeze → evaluate demonstrated end to end on real data
-(`results/experiment/4/`). **Pre-registered** at tag `prereg-v1` (docs/PREREGISTRATION.md, run config
+(`results/experiment/4/`). **Pre-registered** at commit `a58d7e20ca6b` (branch `prereg/v1`) (docs/PREREGISTRATION.md, run config
 docs/exp-run.prereg.json). Phase 3 starts once Gate 0.1 (published
 baseline) and Gate 2.3 (oracle hand-check) are closed by the owner.
 Similarity seam is still the Jaccard placeholder (D14).
