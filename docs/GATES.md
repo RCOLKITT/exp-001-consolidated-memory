@@ -42,9 +42,13 @@ Tooling: `phase2/power.py` (n per arm / MDE), `phase2/handcheck.py` (oracle vs m
 ## Gate 3 — Learning (Phase 3) — expected failure point
 Run: `python -m phase3.learn …` → `runs/learn-*/<repo>/gate3.json`
 
-- [ ] Surprise gate discard rate ≥ 0.40 per repo (registered floor for the file-keyed seam) — `gate3.json: discard_rate`
-- [ ] ≥ floor promoted memories per repo (floor from pre-registration) — `gate3.json: promoted`
-- [ ] Promoted memories human-legible on inspection — read `kernel.json: objects[].content`
+- [x] Surprise gate discard rate ≥ 0.40 per repo — `gate3.json: discard_rate` — **7/10 pass** (run 5; conan 0.35, keras 0.23, sphinx 0.32 fail) — findings §14
+- [x] ≥ 2 promoted memories per repo — `gate3.json: promoted` — **8/10 pass** (conan 1, keras 1 fail) — findings §14
+- [x] Promoted memories human-legible on inspection — 45/45 read as `symptom => file :: reason`, bad-only, ≥ 2 tasks — findings §14
+
+Outcome: partial pass, recorded per repo. Primary Gate 4 analysis unchanged
+(all 10 treatment repos, as registered); passed-Gate-3 subset reported as a
+labeled secondary (D28).
 
 ## Gate 4 — Result (Phase 4)
 Run: `python -m phase4.evaluate …` → `runs/eval-*/gate4.json`

@@ -371,3 +371,55 @@ model on newer tasks, and the false-positive profile is the same to three
 decimals — the harness is measuring the same quantity. Recorded as
 **within a defensible margin**, with the two confounds (model, corpus)
 stated. `results/baseline/1/baseline-10.json` is the reference file.
+
+## 14. Gate 3 on the registered run (experiment run 5, 2026-09-10)
+
+Registered config (`docs/exp-run.prereg.json`, sha256 a7846653…), byte-identical
+to the tagged block. Ceiling rule dropped streamlink (1.00) and pvlib (0.95)
+as registered; linkding is the negative control and built no memory.
+Learning ran on 10 treatment repos, 370 build tasks, one kernel per repo.
+
+| repo | build | candidates | discard rate | promoted | floor (≥0.40, ≥2) |
+|---|---:|---:|---:|---:|---|
+| aws-cloudformation/cfn-lint | 50 | 143 | 0.41 | 3 | pass |
+| conan-io/conan | 50 | 129 | 0.35 | 1 | **fail** (both) |
+| deepset-ai/haystack | 50 | 150 | 0.46 | 11 | pass |
+| instructlab/instructlab | 30 | 89 | 0.60 | 7 | pass |
+| keras-team/keras | 30 | 86 | 0.23 | 1 | **fail** (both) |
+| matplotlib/matplotlib | 50 | 135 | 0.64 | 7 | pass |
+| pdm-project/pdm | 20 | 60 | 0.45 | 4 | pass |
+| pylint-dev/pylint | 40 | 113 | 0.73 | 4 | pass |
+| reflex-dev/reflex | 30 | 88 | 0.57 | 4 | pass |
+| sphinx-doc/sphinx | 20 | 56 | 0.32 | 3 | **fail** (discard) |
+
+Gate 3 passes on 7 of 10 treatment repos and fails on conan, keras and
+sphinx. Every promoted memory (45 in total) carries only `bad` records
+from ≥ 2 distinct tasks, was proposed by `verifier:<model>` and approved
+by `promotion-gate` (separation of duties held), and reads as a defect
+pattern, e.g. pylint: "Crash on `enumerate(x, int(y))` =>
+pylint/checkers/refactoring/refactoring_checker :: the stacktrace points to
+this file". Kernels, diagnose and gate3 files:
+`results/experiment/5/learn/<repo>.{kernel,diagnose,gate3}.json`.
+
+What the failures mean. Discard rate under file-keyed consolidation is
+the share of candidates that name an already-seen file; a low rate means
+the verifier's wrong guesses on that repo are spread over many files, so
+few files recur and few memories can form. conan (large, flat `conans/`
+tree) and keras (per-backend `numpy.py` duplicates) both show this; sphinx
+sits on the shortest build (20 tasks) where a repeat is rarely possible.
+These are properties of the repo and the build length, not of the gate
+thresholds — Θ/ρ are inert under the file-keyed seam (D24).
+
+Consequence for Gate 4 (fixed before any further Gate 4 numbers were read;
+see D28): the primary analysis stays as registered — aggregate lift over
+all 10 treatment repos, kill number 10 pts. A secondary, clearly labeled
+breakdown reports the same metrics over the 7 repos that passed Gate 3.
+Nothing is excluded from the primary analysis after the fact.
+
+Evaluation on run 5 completed only conan (n = 115: control 0.561, treatment
+0.596, lift +3.5 pts, FP −0.6 pts) before the verifier returned truncated
+JSON on cfn-lint and the run aborted. The fix (salvage the ordered path
+list from truncated output; a task whose call fails is dropped from both
+arms, never one) is in main, and run 6 resumes evaluation from the run 5
+kernels and caches (`learn_run = 5`, `resume.json`), so the registered
+learning phase is not repeated or re-randomized.

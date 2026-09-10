@@ -323,3 +323,25 @@ gold sets on every row (`results/phase0/22/control/handcheck-verify.txt`).
 The oracle is a deterministic file-overlap rule, so its only failure mode
 is gold extraction, which (2) tests directly. The owner may repeat the
 manual read at any time; the file is unchanged.
+
+### D28. Gate 3 failures do not change the primary analysis
+Run 5 (registered) passed Gate 3 on 7 of 10 treatment repos; conan, keras
+and sphinx fell below the registered floors (findings §14). The
+pre-registration set the floors but did not say what to do with a repo
+that misses them, so the rule is fixed here, before any Gate 4 number
+beyond the already-seen conan arm was read: the primary result is the
+registered aggregate over all 10 treatment repos against the 10-pt kill
+number; the 7-repo passed-Gate-3 subset is reported alongside as a
+labeled secondary, never substituted for the primary. Dropping repos
+whose memory failed to form would select on the mechanism working and
+bias the headline upward; keeping them reports what the design as
+registered actually delivers.
+
+### D29. Resume, don't re-learn, after the truncated-JSON abort
+Run 5's evaluation aborted on cfn-lint when the verifier returned
+truncated JSON. The fix salvages the ordered path list from truncated
+output and drops a task whose call still fails from both arms (pairing
+preserved, count recorded in `arms.json: errors`). Run 6 resumes at
+`stage = evaluate` from run 5's kernels and caches (`learn_run = 5`,
+`resume.json`), so the frozen memory versions evaluated are the ones run
+5 produced; the run 5 conan arm is reproduced from cache, not re-sampled.
