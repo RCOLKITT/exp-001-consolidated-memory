@@ -124,3 +124,59 @@ the paired difference between arms (Gate 4), never as a level (D18).
 Gate 0 status after run 17: freshness gate ✓ (in code), determinism ✓
 (mechanism demonstrated on real model traffic), published-baseline
 comparison still open (reference number not yet pinned, D10).
+
+## 8. Control arm across the 13 draft repos (run 18, 2026-09-10)
+
+Same verifier and gate as run 17; the 20 earliest tasks of each repo (260
+tasks). 260 / 260 scored, 0 errors, 0 truncated file lists (largest tree:
+pylint, 2,284 files). Offline rerun byte-identical. Wall time 20.5 min.
+
+| Overall | Value |
+|---|---|
+| Localization rate (hit@3, file level) | **0.673** |
+| False-positive rate (flag level, k = 3; floor ≈ 0.67, D18) | 0.727 |
+
+| Repo | n | hit@3 | FP | note |
+|---|---:|---:|---:|---|
+| streamlink/streamlink | 20 | 1.00 | 0.63 | ceiling |
+| pvlib/pvlib-python | 20 | 0.95 | 0.62 | ceiling |
+| deepset-ai/haystack | 20 | 0.80 | 0.71 |  |
+| instructlab/instructlab | 20 | 0.80 | 0.58 |  |
+| matplotlib/matplotlib | 20 | 0.75 | 0.72 |  |
+| pdm-project/pdm | 20 | 0.75 | 0.70 |  |
+| sissbruecker/linkding | 20 | 0.70 | 0.68 |  |
+| reflex-dev/reflex | 20 | 0.65 | 0.75 |  |
+| sphinx-doc/sphinx | 20 | 0.60 | 0.76 |  |
+| conan-io/conan | 20 | 0.55 | 0.79 |  |
+| keras-team/keras | 20 | 0.55 | 0.76 |  |
+| pylint-dev/pylint | 20 | 0.45 | 0.82 |  |
+| aws-cloudformation/cfn-lint | 20 | 0.20 | 0.93 |  |
+
+**Provider deviation.** 206 requests were served by Crusoe (bf16) and 54 by
+CoreWeave (fp16), the pre-registered fallback, because Crusoe's shared pool
+rate-limited during the run. Both are unquantised; every flags row records
+`served_by`, so the split is auditable per task. The pre-registered
+verifier is therefore "Llama 3.3 70B Instruct, bf16/fp16, served by Crusoe
+or CoreWeave in that order, no other providers" (D19).
+
+**Power, from the measured rate.** With p0 = 0.673 and a 15-point lift,
+the two-proportion floor is 111 tasks per arm; the 13-repo eval split
+(~588 tasks at build = 20) detects ~6.5 points, the 4-repo alternative
+(~188) ~11 points. The Gate 4 kill number of 15 points stands; it is
+comfortably above the MDE.
+
+**Ceiling.** streamlink (1.00) and pvlib (0.95) leave no room for a 15-point
+lift, and haystack/instructlab (0.80) leave exactly 15. A repo at the
+ceiling can only show "no lift", which drags the majority-of-repos
+criterion regardless of whether memory helps. Options for the
+pre-registration, to be decided before publishing it and stated as such:
+(a) keep all 13 and accept that the majority criterion is conservative;
+(b) drop repos with control hit@3 ≥ 0.90 on Phase 0 data, stating the rule
+and the Phase 0 numbers that triggered it; (c) raise k's difficulty by
+moving to hit@1 for all repos. (b) is a rule set before the efficacy data
+exist, using only control-arm data, so it is not cherry-picking on the
+result; it must still be written down before Phase 3 starts (D19).
+
+Gate 0 after run 18: freshness ✓, determinism ✓ on 310 real model calls,
+baseline comparison open (D10) — our number is 0.673 hit@3 with Llama 3.3
+70B on 13 SWE-bench-Live repos, file level, no hints.

@@ -197,3 +197,16 @@ above that floor by 0.21, which is the interpretable part. Gate 4 compares
 the two arms' FP rates at the same k on the same tasks, so the floor
 cancels. Report the level alongside precision@1 in Phase 4 so readers can
 see the floor; do not "fix" the metric after seeing data (§7).
+
+### D19. Verifier definition includes the ordered fallback; ceiling rule to be pre-registered
+Run 18 showed the single-provider pin (D17) is not operationally stable:
+21% of requests fell through to CoreWeave under Crusoe rate limits. The
+verifier is redefined as the ordered pair Crusoe bf16 → CoreWeave fp16
+with `allow_fallbacks: false` (no third provider, no quantised build), and
+`served_by` is recorded per request. A run where any request is served by
+another provider is invalid.
+
+Separately, two of the 13 draft repos sit at ≥ 0.95 control hit@3. Whether
+to exclude repos at the ceiling is a pre-registration decision (findings
+§8, options a–c); it must be fixed before Phase 3 and justified only with
+Phase 0 control data.
