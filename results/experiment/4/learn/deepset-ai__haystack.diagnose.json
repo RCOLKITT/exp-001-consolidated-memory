@@ -1,0 +1,49 @@
+{
+ "repo_dir": "runs/learn/deepset-ai__haystack",
+ "theta": 0.45,
+ "rho": 0.7,
+ "n_ingested": 60,
+ "outcomes_by_label": {
+  "buffered": {
+   "bad": 12,
+   "good": 25
+  },
+  "reinforced": {
+   "good": 12,
+   "bad": 7
+  },
+  "discarded": {
+   "good": 4
+  }
+ },
+ "discarded_in_theta_rho_band": 4,
+ "same_file_cosine": null,
+ "diff_file_cosine": null,
+ "share_of_pairs_at_or_above": {
+  "0.5": {
+   "same_file": null,
+   "diff_file": null
+  },
+  "0.55": {
+   "same_file": null,
+   "diff_file": null
+  },
+  "0.6": {
+   "same_file": null,
+   "diff_file": null
+  },
+  "0.65": {
+   "same_file": null,
+   "diff_file": null
+  },
+  "0.7": {
+   "same_file": null,
+   "diff_file": null
+  },
+  "0.75": {
+   "same_file": null,
+   "diff_file": null
+  }
+ },
+ "promoted": 1
+}
