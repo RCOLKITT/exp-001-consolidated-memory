@@ -24,10 +24,28 @@ from memkernel.seams import PassthroughOracle
 from memkernel.synthetic import StreamSpec, expected_redundant, generate, pattern_of
 
 
-def run_cell(similarity, theta: float, cluster: float, spec: StreamSpec, ttl: int = 10_000) -> dict:
-    records = generate(spec)
+class MemoSimilarity:
+    """Pairwise memo around any seam. The stream is identical across sweep
+    cells, so every (a, b) pair is computed once for the whole sweep."""
+
+    def __init__(self, inner) -> None:
+        self.inner = inner
+        self.name = getattr(inner, "name", type(inner).__name__)
+        self._memo: dict[tuple[str, str], float] = {}
+
+    def sim(self, a: str, b: str) -> float:
+        k = (a, b) if a <= b else (b, a)
+        v = self._memo.get(k)
+        if v is None:
+            v = self.inner.sim(a, b)
+            self._memo[k] = v
+        return v
+
+
+def run_cell(similarity, theta: float, cluster: float, spec: StreamSpec, ttl: int = 10_000, schedule: int = 10, records=None) -> dict:
+    records = records if records is not None else generate(spec)
     cfg = KernelConfig(theta_surprise=theta, ttl_ticks=ttl,
-                       policy=PromotionPolicy(schedule_every_ticks=1, cluster_similarity=cluster))
+                       policy=PromotionPolicy(schedule_every_ticks=schedule, cluster_similarity=cluster))
     k = Kernel(cfg, similarity, PassthroughOracle(), clock=counting_clock())
     id2pat = {r.id: pattern_of(r) for r in records}
     buffered = 0
@@ -45,8 +63,10 @@ def run_cell(similarity, theta: float, cluster: float, spec: StreamSpec, ttl: in
             "merged": (len(live) - pure) / len(live) if live else None}
 
 
-def sweep(similarity, thetas, clusters, spec: StreamSpec) -> list[dict]:
-    return [run_cell(similarity, t, c, spec) for t in thetas for c in clusters]
+def sweep(similarity, thetas, clusters, spec: StreamSpec, schedule: int = 10) -> list[dict]:
+    memo = MemoSimilarity(similarity)
+    records = generate(spec)                     # one stream, shared by every cell
+    return [run_cell(memo, t, c, spec, schedule=schedule, records=records) for t in thetas for c in clusters]
 
 
 def markdown(rows: list[dict], name: str) -> str:
@@ -77,11 +97,12 @@ def _main(argv):
     ap.add_argument("--clusters", default="0.5,0.6,0.7,0.8,0.9")
     ap.add_argument("--mode", default="tokens", choices=["tokens", "nl"], help="nl = defect-like sentences with paraphrase (for semantic seams)")
     ap.add_argument("--n-records", type=int, default=300); ap.add_argument("--redundant", type=float, default=0.7); ap.add_argument("--seed", type=int, default=7)
+    ap.add_argument("--schedule", type=int, default=10, help="promotion every N ticks (spec: on a schedule, not continuously)")
     ap.add_argument("--out", help="markdown path; a .json twin is written alongside")
     a = ap.parse_args(argv)
     sim = make_similarity(a.similarity, None, a.embedding_model, a.embedding_revision)
     spec = StreamSpec(mode=a.mode, n_records=a.n_records, n_patterns=a.n_records, redundant_fraction=a.redundant, seed=a.seed)
-    rows = sweep(sim, [float(x) for x in a.thetas.split(",")], [float(x) for x in a.clusters.split(",")], spec)
+    rows = sweep(sim, [float(x) for x in a.thetas.split(",")], [float(x) for x in a.clusters.split(",")], spec, schedule=a.schedule)
     rec = recommend(rows)
     md = markdown(rows, getattr(sim, "name", a.similarity)) + "\nRecommended (discard within 0.05 of injected, purity 1.0, most promotions): " + (json.dumps(rec) if rec else "none") + "\n"
     if a.out:

@@ -23,6 +23,11 @@ from typing import Callable, Optional, Sequence
 
 from memkernel.canon import digest
 
+try:  # optional acceleration; results identical to the pure-Python path within float rounding
+    import numpy as _np  # type: ignore
+except ImportError:  # pragma: no cover
+    _np = None
+
 _TOKEN = re.compile(r"[A-Za-z_][A-Za-z0-9_]*|\d+|[^\sA-Za-z0-9_]")
 
 
@@ -99,6 +104,12 @@ class EmbeddingCosineSimilarity:
 
     def sim(self, a: str, b: str) -> float:
         va, vb = self.vector(a), self.vector(b)
+        if _np is not None:
+            xa, xb = _np.asarray(va), _np.asarray(vb)
+            na, nb = float(_np.linalg.norm(xa)), float(_np.linalg.norm(xb))
+            if na == 0.0 or nb == 0.0:
+                return 0.0
+            return max(0.0, min(1.0, float(xa @ xb) / (na * nb)))
         dot = sum(x * y for x, y in zip(va, vb))
         na, nb = math.sqrt(sum(x * x for x in va)), math.sqrt(sum(y * y for y in vb))
         if na == 0.0 or nb == 0.0:
