@@ -171,8 +171,8 @@ wording. Access is through the `openai-compatible` provider in
 `phase0/verifier.py` (chat-completions, `response_format` json_schema with
 fallbacks, temperature 0). The cache remains the determinism mechanism (D11).
 
-Preference: Llama 4 Maverick (later cutoff still leaves the long chains;
-stronger coder) unless run 8 shows the August 2024 gate costs a needed repo,
-in which case Llama 3.3 70B. Localization level will be below Opus 5; the
+Measured (runs 7, 10): the August 2024 gate keeps 4 eligible repos, the
+December 2023 gate keeps 13. Recommendation is therefore **Llama 3.3 70B**,
+with Llama 4 Maverick pre-registered as the fallback (docs/phase0-findings.md §6). Localization level will be below Opus 5; the
 experiment measures lift, and Gate 0 compares against a baseline reported
 for a comparable model, not a frontier one.

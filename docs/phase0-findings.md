@@ -71,3 +71,31 @@ experiment is worth several extra weeks.
   the `ANTHROPIC_API_KEY` secret, or the option-A model's client).
 - Published baseline reference number (D10).
 - Docker images and time-machine pinning (deferred, D8).
+
+## 6. Option A, measured (2026-09-10)
+
+Owner chose option A. Candidate models with vendor-documented cutoffs were
+gated against the Python corpus (runs 7, 9, 10; D16 has the sources).
+
+| Gate (model) | Tasks | Repos >= 20 | Eligible at 20 build / 10 eval | Eval tasks available (build = 20) |
+|---|---:|---:|---:|---:|
+| 2023-12-31 (Llama 3.3 70B, "data freshness December 2023") | 1,884 | 24 | **13** - conan 165, cfn-lint 109, matplotlib 101, haystack 88, pylint 62, instructlab 52, keras 48, reflex 44, streamlink 41, sphinx 39, pdm 35, linkding 34, pvlib 30 | ~588 |
+| 2024-08-31 (Llama 4 Maverick/Scout, "knowledge cutoff August 2024") | 1,215 | 10 | **4** - conan 83, haystack 67, cfn-lint 65, matplotlib 53 (then pylint 27, fastmcp 25, datamodel-code-generator 23, reflex 23, instructlab 22, streamlink 20) | ~188 |
+| 2025-03-31 (Claude Sonnet 4 / Opus 4, cutoff unverified) | 595 | 3 | 2 - haystack 36, conan 33 | ~29 |
+
+Both Llama gates clear the power floor (~163 eval tasks per arm at a
+15-point MDE from a 55% baseline; arms share tasks). The Claude 4 gate does not.
+
+**Recommendation: Llama 3.3 70B Instruct.** The design leans on per-repo
+reporting, a majority-of-repos criterion, and a negative-control repo; 13
+eligible repos make those meaningful, 4 make them fragile (one negative
+control leaves three treatment repos). Llama 4 Maverick is the stronger
+coder, but the experiment measures lift, not level, and a weaker verifier
+with more room to improve is not a disadvantage for the efficacy claim.
+If Gate 0's published-baseline comparison needs a stronger verifier, Llama 4
+with the four long-chain repos is the fallback, pre-registered as such.
+
+Hosting: any OpenAI-compatible provider serving the open weights
+(`--provider openai-compatible`); pin the provider's exact model id and
+quantisation in the pre-registration block, because different quantised
+builds are different verifiers.

@@ -8,7 +8,7 @@ Harness: `phase0/` (see `phase0/RUNBOOK.md`). Built and unit-tested; not yet run
 - [ ] Control-arm localization rate within a defensible margin of a published baseline — reference: ______ (metric, k, model, corpus) · our number: ______ (`runs/control-001/metrics.json`)
 - [x] Freshness gate enforced in code, not by convention — `phase0/freshness_gate.py`, applied at import in `phase0/corpus.py`; `tests/test_freshness_gate.py`
 - [ ] Harness reruns produce identical results on identical inputs — `run_control --compare` exit 0 on an `--offline` rerun (mechanism: content-addressed response cache, `tests/test_verifier.py::test_cache_makes_rerun_identical_and_offline`)
-- [ ] Corpus decision (§9.1) — measured, not yet decided: see `docs/phase0-findings.md` (public corpora vs freshness gate; options A–D for the owner)
+- [x] Corpus decision (§9.1) — SWE-bench-Live Python `full`, verifier chosen to fit the gate (option A, D16): Llama 3.3 70B → 13 eligible repos (`results/phase0/7`); fallback Llama 4 → 4 (`results/phase0/10`). See `docs/phase0-findings.md` §6
 
 ## Gate 1 — Mechanism (Phase 1)
 Run: `make gate1`

@@ -9,10 +9,11 @@ Full spec: [docs/EXP-001.md](docs/EXP-001.md). Gate tracker:
 
 **Status:** Phase 1 kernel passes its mechanism assertions on synthetic
 streams. Phase 0–4 harness built and tested offline end to end. Phase 0
-corpus runs done on GitHub Actions (`results/phase0/`): the public corpora
-and the freshness gate conflict for every Claude 5 model — see
-[docs/phase0-findings.md](docs/phase0-findings.md) for the numbers and the
-options. Control arm not run (model choice pending). Nothing pre-registered.
+corpus runs done on GitHub Actions (`results/phase0/`): no Claude model
+still served passes the freshness gate on the Python corpus, so the
+verifier will be an open-weights model with a documented cutoff (option A,
+recommended Llama 3.3 70B; [docs/phase0-findings.md](docs/phase0-findings.md) §6).
+Control arm not yet run (needs a hosting provider key). Nothing pre-registered.
 Similarity seam is still the Jaccard placeholder (D14).
 
 ## Layout
