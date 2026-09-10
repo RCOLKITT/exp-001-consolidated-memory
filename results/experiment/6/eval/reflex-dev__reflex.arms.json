@@ -1,0 +1,271 @@
+{
+ "control": {
+  "false_positive_rate": 0.7179,
+  "localization_rate": 0.7143,
+  "n_false_positive": 28,
+  "n_flags": 39,
+  "n_localized": 10,
+  "n_tasks": 14,
+  "per_repo": {
+   "reflex-dev/reflex": {
+    "false_positive_rate": 0.7179,
+    "localization_rate": 0.7143,
+    "n_false_positive": 28,
+    "n_flags": 39,
+    "n_localized": 10,
+    "n_tasks": 14
+   }
+  }
+ },
+ "control_flags": {
+  "reflex-dev__reflex-4371": [
+   "reflex/state.py",
+   "reflex/constants/state.py"
+  ],
+  "reflex-dev__reflex-4427": [
+   "reflex/state.py",
+   "reflex/model.py",
+   "reflex/app.py"
+  ],
+  "reflex-dev__reflex-4510": [
+   "reflex/state.py",
+   "reflex/components/core/__init__.py",
+   "reflex/components/core/foreach.py"
+  ],
+  "reflex-dev__reflex-4563": [
+   "reflex/app.py",
+   "reflex/model.py",
+   "reflex/config.py"
+  ],
+  "reflex-dev__reflex-4620": [
+   "reflex/components/core/cond.py",
+   "reflex/compiler/compiler.py",
+   "reflex/components/tags/cond_tag.py"
+  ],
+  "reflex-dev__reflex-4688": [
+   "reflex/utils/prerequisites.py"
+  ],
+  "reflex-dev__reflex-4708": [
+   "reflex/components/core/match.py",
+   "tests/units/components/core/test_match.py",
+   "reflex/compiler/compiler.py"
+  ],
+  "reflex-dev__reflex-4711": [
+   "reflex/state.py",
+   "reflex/utils/__init__.py",
+   "reflex/experimental/hooks.py"
+  ],
+  "reflex-dev__reflex-4717": [
+   "reflex/components/literals.py",
+   "reflex/event.py",
+   "reflex/vars/__init__.py"
+  ],
+  "reflex-dev__reflex-4720": [
+   "reflex/event.py",
+   "reflex/app.py",
+   "reflex/state.py"
+  ],
+  "reflex-dev__reflex-4958": [
+   "reflex/state.py",
+   "reflex/app.py",
+   "reflex/route.py"
+  ],
+  "reflex-dev__reflex-5039": [
+   "reflex/components/core/__init__.py",
+   "reflex/components/core/foreach.py",
+   "reflex/components/core/match.py"
+  ],
+  "reflex-dev__reflex-5077": [
+   "reflex/compiler/compiler.py",
+   "reflex/app.py",
+   "reflex/assets.py"
+  ],
+  "reflex-dev__reflex-5081": [
+   "reflex/components/props.py",
+   "reflex/compiler/compiler.py",
+   "reflex/utils/types.py"
+  ]
+ },
+ "errors": {},
+ "lift": {
+  "false_positive_rise_pts": 3.81,
+  "localization_lift_pts": -7.14
+ },
+ "n_errors": 0,
+ "retrieval_hit_rate": 1.0,
+ "retrieved": {
+  "reflex-dev__reflex-4371": [
+   "ce607a90aa634e38010b8dccadc8ed2eab6f6c0905870cac45cbd808e5ead70e",
+   "5236eaf8cf2e13c1909d5f2fdd942746133bfaffcd505eb7617f866f0f73ff27",
+   "973c660c04188ecb85fe1f93733ce62343b8beb58d9679b664ed9c5a8f7177ac",
+   "8c6edb02f6505fd6205e91748de89b7ada9e622cdcb49567d4e30284c180d880"
+  ],
+  "reflex-dev__reflex-4427": [
+   "ce607a90aa634e38010b8dccadc8ed2eab6f6c0905870cac45cbd808e5ead70e",
+   "8c6edb02f6505fd6205e91748de89b7ada9e622cdcb49567d4e30284c180d880",
+   "973c660c04188ecb85fe1f93733ce62343b8beb58d9679b664ed9c5a8f7177ac",
+   "5236eaf8cf2e13c1909d5f2fdd942746133bfaffcd505eb7617f866f0f73ff27"
+  ],
+  "reflex-dev__reflex-4510": [
+   "ce607a90aa634e38010b8dccadc8ed2eab6f6c0905870cac45cbd808e5ead70e",
+   "5236eaf8cf2e13c1909d5f2fdd942746133bfaffcd505eb7617f866f0f73ff27",
+   "973c660c04188ecb85fe1f93733ce62343b8beb58d9679b664ed9c5a8f7177ac",
+   "8c6edb02f6505fd6205e91748de89b7ada9e622cdcb49567d4e30284c180d880"
+  ],
+  "reflex-dev__reflex-4563": [
+   "ce607a90aa634e38010b8dccadc8ed2eab6f6c0905870cac45cbd808e5ead70e",
+   "8c6edb02f6505fd6205e91748de89b7ada9e622cdcb49567d4e30284c180d880",
+   "5236eaf8cf2e13c1909d5f2fdd942746133bfaffcd505eb7617f866f0f73ff27",
+   "973c660c04188ecb85fe1f93733ce62343b8beb58d9679b664ed9c5a8f7177ac"
+  ],
+  "reflex-dev__reflex-4620": [
+   "5236eaf8cf2e13c1909d5f2fdd942746133bfaffcd505eb7617f866f0f73ff27",
+   "ce607a90aa634e38010b8dccadc8ed2eab6f6c0905870cac45cbd808e5ead70e",
+   "973c660c04188ecb85fe1f93733ce62343b8beb58d9679b664ed9c5a8f7177ac",
+   "8c6edb02f6505fd6205e91748de89b7ada9e622cdcb49567d4e30284c180d880"
+  ],
+  "reflex-dev__reflex-4688": [
+   "8c6edb02f6505fd6205e91748de89b7ada9e622cdcb49567d4e30284c180d880",
+   "ce607a90aa634e38010b8dccadc8ed2eab6f6c0905870cac45cbd808e5ead70e",
+   "973c660c04188ecb85fe1f93733ce62343b8beb58d9679b664ed9c5a8f7177ac",
+   "5236eaf8cf2e13c1909d5f2fdd942746133bfaffcd505eb7617f866f0f73ff27"
+  ],
+  "reflex-dev__reflex-4708": [
+   "973c660c04188ecb85fe1f93733ce62343b8beb58d9679b664ed9c5a8f7177ac",
+   "5236eaf8cf2e13c1909d5f2fdd942746133bfaffcd505eb7617f866f0f73ff27",
+   "ce607a90aa634e38010b8dccadc8ed2eab6f6c0905870cac45cbd808e5ead70e",
+   "8c6edb02f6505fd6205e91748de89b7ada9e622cdcb49567d4e30284c180d880"
+  ],
+  "reflex-dev__reflex-4711": [
+   "ce607a90aa634e38010b8dccadc8ed2eab6f6c0905870cac45cbd808e5ead70e",
+   "8c6edb02f6505fd6205e91748de89b7ada9e622cdcb49567d4e30284c180d880",
+   "5236eaf8cf2e13c1909d5f2fdd942746133bfaffcd505eb7617f866f0f73ff27",
+   "973c660c04188ecb85fe1f93733ce62343b8beb58d9679b664ed9c5a8f7177ac"
+  ],
+  "reflex-dev__reflex-4717": [
+   "5236eaf8cf2e13c1909d5f2fdd942746133bfaffcd505eb7617f866f0f73ff27",
+   "ce607a90aa634e38010b8dccadc8ed2eab6f6c0905870cac45cbd808e5ead70e",
+   "973c660c04188ecb85fe1f93733ce62343b8beb58d9679b664ed9c5a8f7177ac",
+   "8c6edb02f6505fd6205e91748de89b7ada9e622cdcb49567d4e30284c180d880"
+  ],
+  "reflex-dev__reflex-4720": [
+   "ce607a90aa634e38010b8dccadc8ed2eab6f6c0905870cac45cbd808e5ead70e",
+   "5236eaf8cf2e13c1909d5f2fdd942746133bfaffcd505eb7617f866f0f73ff27",
+   "973c660c04188ecb85fe1f93733ce62343b8beb58d9679b664ed9c5a8f7177ac",
+   "8c6edb02f6505fd6205e91748de89b7ada9e622cdcb49567d4e30284c180d880"
+  ],
+  "reflex-dev__reflex-4958": [
+   "ce607a90aa634e38010b8dccadc8ed2eab6f6c0905870cac45cbd808e5ead70e",
+   "5236eaf8cf2e13c1909d5f2fdd942746133bfaffcd505eb7617f866f0f73ff27",
+   "973c660c04188ecb85fe1f93733ce62343b8beb58d9679b664ed9c5a8f7177ac",
+   "8c6edb02f6505fd6205e91748de89b7ada9e622cdcb49567d4e30284c180d880"
+  ],
+  "reflex-dev__reflex-5039": [
+   "ce607a90aa634e38010b8dccadc8ed2eab6f6c0905870cac45cbd808e5ead70e",
+   "973c660c04188ecb85fe1f93733ce62343b8beb58d9679b664ed9c5a8f7177ac",
+   "5236eaf8cf2e13c1909d5f2fdd942746133bfaffcd505eb7617f866f0f73ff27",
+   "8c6edb02f6505fd6205e91748de89b7ada9e622cdcb49567d4e30284c180d880"
+  ],
+  "reflex-dev__reflex-5077": [
+   "5236eaf8cf2e13c1909d5f2fdd942746133bfaffcd505eb7617f866f0f73ff27",
+   "973c660c04188ecb85fe1f93733ce62343b8beb58d9679b664ed9c5a8f7177ac",
+   "8c6edb02f6505fd6205e91748de89b7ada9e622cdcb49567d4e30284c180d880",
+   "ce607a90aa634e38010b8dccadc8ed2eab6f6c0905870cac45cbd808e5ead70e"
+  ],
+  "reflex-dev__reflex-5081": [
+   "ce607a90aa634e38010b8dccadc8ed2eab6f6c0905870cac45cbd808e5ead70e",
+   "5236eaf8cf2e13c1909d5f2fdd942746133bfaffcd505eb7617f866f0f73ff27",
+   "973c660c04188ecb85fe1f93733ce62343b8beb58d9679b664ed9c5a8f7177ac",
+   "8c6edb02f6505fd6205e91748de89b7ada9e622cdcb49567d4e30284c180d880"
+  ]
+ },
+ "treatment": {
+  "false_positive_rate": 0.7561,
+  "localization_rate": 0.6429,
+  "n_false_positive": 31,
+  "n_flags": 41,
+  "n_localized": 9,
+  "n_tasks": 14,
+  "per_repo": {
+   "reflex-dev/reflex": {
+    "false_positive_rate": 0.7561,
+    "localization_rate": 0.6429,
+    "n_false_positive": 31,
+    "n_flags": 41,
+    "n_localized": 9,
+    "n_tasks": 14
+   }
+  }
+ },
+ "treatment_flags": {
+  "reflex-dev__reflex-4371": [
+   "reflex/state.py",
+   "reflex/constants/state.py"
+  ],
+  "reflex-dev__reflex-4427": [
+   "reflex/state.py",
+   "reflex/model.py",
+   "reflex/components/component.py"
+  ],
+  "reflex-dev__reflex-4510": [
+   "reflex/state.py",
+   "reflex/components/core/foreach.py",
+   "reflex/components/component.py"
+  ],
+  "reflex-dev__reflex-4563": [
+   "reflex/app.py",
+   "reflex/model.py",
+   "reflex/config.py"
+  ],
+  "reflex-dev__reflex-4620": [
+   "reflex/components/core/cond.py",
+   "reflex/compiler/compiler.py",
+   "reflex/vars/base.py"
+  ],
+  "reflex-dev__reflex-4688": [
+   "reflex/utils/prerequisites.py",
+   "reflex/constants/__init__.py",
+   "reflex/config.py"
+  ],
+  "reflex-dev__reflex-4708": [
+   "reflex/components/core/match.py",
+   "reflex/components/tags/match_tag.py",
+   "tests/units/components/core/test_match.py"
+  ],
+  "reflex-dev__reflex-4711": [
+   "reflex/state.py",
+   "reflex/utils/__init__.py",
+   "reflex/constants/state.py"
+  ],
+  "reflex-dev__reflex-4717": [
+   "reflex/components/literals.py",
+   "reflex/vars/__init__.py",
+   "reflex/event.py"
+  ],
+  "reflex-dev__reflex-4720": [
+   "reflex/state.py",
+   "reflex/event.py",
+   "reflex/app.py"
+  ],
+  "reflex-dev__reflex-4958": [
+   "reflex/state.py",
+   "reflex/app.py",
+   "reflex/route.py"
+  ],
+  "reflex-dev__reflex-5039": [
+   "reflex/components/core/__init__.py",
+   "reflex/components/core/foreach.py",
+   "reflex/components/core/match.py"
+  ],
+  "reflex-dev__reflex-5077": [
+   "reflex/compiler/compiler.py",
+   "reflex/app.py",
+   "reflex/utils/path_ops.py"
+  ],
+  "reflex-dev__reflex-5081": [
+   "reflex/components/component.py",
+   "reflex/vars/__init__.py",
+   "reflex/components/props.py"
+  ]
+ }
+}

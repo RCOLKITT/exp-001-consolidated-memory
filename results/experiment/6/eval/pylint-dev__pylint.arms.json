@@ -1,0 +1,398 @@
+{
+ "control": {
+  "false_positive_rate": 0.7692,
+  "localization_rate": 0.6364,
+  "n_false_positive": 50,
+  "n_flags": 65,
+  "n_localized": 14,
+  "n_tasks": 22,
+  "per_repo": {
+   "pylint-dev/pylint": {
+    "false_positive_rate": 0.7692,
+    "localization_rate": 0.6364,
+    "n_false_positive": 50,
+    "n_flags": 65,
+    "n_localized": 14,
+    "n_tasks": 22
+   }
+  }
+ },
+ "control_flags": {
+  "pylint-dev__pylint-10045": [
+   "doc/conf.py",
+   "pylint/pyreverse/main.py"
+  ],
+  "pylint-dev__pylint-10062": [
+   "pylint/checkers/variables.py",
+   "pylint/checkers/base_checker.py",
+   "pylint/lint/pylinter.py"
+  ],
+  "pylint-dev__pylint-10075": [
+   "pylint/checkers/variables.py",
+   "pylint/checkers/utils.py",
+   "pylint/lint/pylinter.py"
+  ],
+  "pylint-dev__pylint-10089": [
+   "pylint/lint/parallel.py",
+   "pylint/checkers/utils.py",
+   "pylint/lint/pylinter.py"
+  ],
+  "pylint-dev__pylint-10097": [
+   "pylint/checkers/typecheck.py",
+   "pylint/lint/pylinter.py",
+   "pylint/utils/utils.py"
+  ],
+  "pylint-dev__pylint-10141": [
+   "pylint/lint/pylinter.py",
+   "pylint/lint/report_functions.py",
+   "pylint/utils/utils.py"
+  ],
+  "pylint-dev__pylint-10170": [
+   "pylint/checkers/typecheck.py",
+   "tests/functional/u/unidiomatic_typecheck.py",
+   "pylint/lint/pylinter.py"
+  ],
+  "pylint-dev__pylint-10209": [
+   "pylint/checkers/typecheck.py",
+   "pylint/checkers/exceptions.py",
+   "pylint/lint/pylinter.py"
+  ],
+  "pylint-dev__pylint-10225": [
+   "pylint/checkers/typecheck.py",
+   "tests/functional/u/unidiomatic_typecheck.py",
+   "pylint/lint/pylinter.py"
+  ],
+  "pylint-dev__pylint-10228": [
+   "pylint/checkers/base/name_checker/naming_style.py",
+   "pylint/config/_pylint_config/generate_command.py",
+   "pylint/lint/pylinter.py"
+  ],
+  "pylint-dev__pylint-10232": [
+   "pylint/checkers/exceptions.py",
+   "pylint/utils/ast_walker.py",
+   "pylint/checkers/utils.py"
+  ],
+  "pylint-dev__pylint-10240": [
+   "pylint/checkers/variables.py",
+   "pylint/lint/pylinter.py",
+   "pylint/utils/ast_walker.py"
+  ],
+  "pylint-dev__pylint-10246": [
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py",
+   "pylint/checkers/base_checker.py",
+   "tests/functional/u/use/use_implicit_booleaness_not_comparison.py"
+  ],
+  "pylint-dev__pylint-10250": [
+   "pylint/pyreverse/diagrams.py",
+   "pylint/pyreverse/utils.py",
+   "pylint/pyreverse/printer.py"
+  ],
+  "pylint-dev__pylint-10275": [
+   "pylint/checkers/typecheck.py",
+   "pylint/lint/pylinter.py",
+   "pylint/utils/utils.py"
+  ],
+  "pylint-dev__pylint-10300": [
+   "pylint/checkers/utils.py",
+   "pylint/lint/pylinter.py",
+   "pylint/checkers/refactoring/recommendation_checker.py"
+  ],
+  "pylint-dev__pylint-10328": [
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py",
+   "pylint/lint/pylinter.py",
+   "pylint/utils/utils.py"
+  ],
+  "pylint-dev__pylint-10344": [
+   "pylint/pyreverse/inspector.py",
+   "pylint/pyreverse/diadefslib.py",
+   "pylint/pyreverse/main.py"
+  ],
+  "pylint-dev__pylint-10350": [
+   "pylint/checkers/base/basic_error_checker.py",
+   "pylint/checkers/utils.py",
+   "pylint/utils/ast_walker.py"
+  ],
+  "pylint-dev__pylint-10362": [
+   "pylint/checkers/variables.py",
+   "pylint/utils/ast_walker.py",
+   "pylint/lint/pylinter.py"
+  ],
+  "pylint-dev__pylint-10379": [
+   "pylint/pyreverse/inspector.py",
+   "pylint/pyreverse/diadefslib.py",
+   "pylint/pyreverse/main.py"
+  ],
+  "pylint-dev__pylint-10403": [
+   "pylint/pyreverse/mermaidjs_printer.py",
+   "pylint/pyreverse/diagrams.py",
+   "pylint/pyreverse/inspector.py"
+  ]
+ },
+ "errors": {},
+ "lift": {
+  "false_positive_rise_pts": -5.96,
+  "localization_lift_pts": 13.64
+ },
+ "n_errors": 0,
+ "retrieval_hit_rate": 1.0,
+ "retrieved": {
+  "pylint-dev__pylint-10045": [
+   "bd67572cd249c5e01c1b36ad51c2f194c80614a560a91e8daa251e28321184fb",
+   "83cf9041e4812c8de5e8dfe2c804192f61ba009b8be0d394d451bede04b45107",
+   "08237d3c885839154e2eeef3c6544c460c52aedef991685939783c35b9921b55",
+   "93f7a1b668465597bda6db7c4ffd94aa8f585789ffac358c224c5eb15e812d25"
+  ],
+  "pylint-dev__pylint-10062": [
+   "bd67572cd249c5e01c1b36ad51c2f194c80614a560a91e8daa251e28321184fb",
+   "08237d3c885839154e2eeef3c6544c460c52aedef991685939783c35b9921b55",
+   "93f7a1b668465597bda6db7c4ffd94aa8f585789ffac358c224c5eb15e812d25",
+   "83cf9041e4812c8de5e8dfe2c804192f61ba009b8be0d394d451bede04b45107"
+  ],
+  "pylint-dev__pylint-10075": [
+   "bd67572cd249c5e01c1b36ad51c2f194c80614a560a91e8daa251e28321184fb",
+   "08237d3c885839154e2eeef3c6544c460c52aedef991685939783c35b9921b55",
+   "93f7a1b668465597bda6db7c4ffd94aa8f585789ffac358c224c5eb15e812d25",
+   "83cf9041e4812c8de5e8dfe2c804192f61ba009b8be0d394d451bede04b45107"
+  ],
+  "pylint-dev__pylint-10089": [
+   "93f7a1b668465597bda6db7c4ffd94aa8f585789ffac358c224c5eb15e812d25",
+   "bd67572cd249c5e01c1b36ad51c2f194c80614a560a91e8daa251e28321184fb",
+   "08237d3c885839154e2eeef3c6544c460c52aedef991685939783c35b9921b55",
+   "83cf9041e4812c8de5e8dfe2c804192f61ba009b8be0d394d451bede04b45107"
+  ],
+  "pylint-dev__pylint-10097": [
+   "93f7a1b668465597bda6db7c4ffd94aa8f585789ffac358c224c5eb15e812d25",
+   "08237d3c885839154e2eeef3c6544c460c52aedef991685939783c35b9921b55",
+   "bd67572cd249c5e01c1b36ad51c2f194c80614a560a91e8daa251e28321184fb",
+   "83cf9041e4812c8de5e8dfe2c804192f61ba009b8be0d394d451bede04b45107"
+  ],
+  "pylint-dev__pylint-10141": [
+   "bd67572cd249c5e01c1b36ad51c2f194c80614a560a91e8daa251e28321184fb",
+   "08237d3c885839154e2eeef3c6544c460c52aedef991685939783c35b9921b55",
+   "93f7a1b668465597bda6db7c4ffd94aa8f585789ffac358c224c5eb15e812d25",
+   "83cf9041e4812c8de5e8dfe2c804192f61ba009b8be0d394d451bede04b45107"
+  ],
+  "pylint-dev__pylint-10170": [
+   "bd67572cd249c5e01c1b36ad51c2f194c80614a560a91e8daa251e28321184fb",
+   "08237d3c885839154e2eeef3c6544c460c52aedef991685939783c35b9921b55",
+   "93f7a1b668465597bda6db7c4ffd94aa8f585789ffac358c224c5eb15e812d25",
+   "83cf9041e4812c8de5e8dfe2c804192f61ba009b8be0d394d451bede04b45107"
+  ],
+  "pylint-dev__pylint-10209": [
+   "bd67572cd249c5e01c1b36ad51c2f194c80614a560a91e8daa251e28321184fb",
+   "93f7a1b668465597bda6db7c4ffd94aa8f585789ffac358c224c5eb15e812d25",
+   "08237d3c885839154e2eeef3c6544c460c52aedef991685939783c35b9921b55",
+   "83cf9041e4812c8de5e8dfe2c804192f61ba009b8be0d394d451bede04b45107"
+  ],
+  "pylint-dev__pylint-10225": [
+   "08237d3c885839154e2eeef3c6544c460c52aedef991685939783c35b9921b55",
+   "bd67572cd249c5e01c1b36ad51c2f194c80614a560a91e8daa251e28321184fb",
+   "93f7a1b668465597bda6db7c4ffd94aa8f585789ffac358c224c5eb15e812d25",
+   "83cf9041e4812c8de5e8dfe2c804192f61ba009b8be0d394d451bede04b45107"
+  ],
+  "pylint-dev__pylint-10228": [
+   "83cf9041e4812c8de5e8dfe2c804192f61ba009b8be0d394d451bede04b45107",
+   "bd67572cd249c5e01c1b36ad51c2f194c80614a560a91e8daa251e28321184fb",
+   "08237d3c885839154e2eeef3c6544c460c52aedef991685939783c35b9921b55",
+   "93f7a1b668465597bda6db7c4ffd94aa8f585789ffac358c224c5eb15e812d25"
+  ],
+  "pylint-dev__pylint-10232": [
+   "bd67572cd249c5e01c1b36ad51c2f194c80614a560a91e8daa251e28321184fb",
+   "93f7a1b668465597bda6db7c4ffd94aa8f585789ffac358c224c5eb15e812d25",
+   "08237d3c885839154e2eeef3c6544c460c52aedef991685939783c35b9921b55",
+   "83cf9041e4812c8de5e8dfe2c804192f61ba009b8be0d394d451bede04b45107"
+  ],
+  "pylint-dev__pylint-10240": [
+   "bd67572cd249c5e01c1b36ad51c2f194c80614a560a91e8daa251e28321184fb",
+   "93f7a1b668465597bda6db7c4ffd94aa8f585789ffac358c224c5eb15e812d25",
+   "08237d3c885839154e2eeef3c6544c460c52aedef991685939783c35b9921b55",
+   "83cf9041e4812c8de5e8dfe2c804192f61ba009b8be0d394d451bede04b45107"
+  ],
+  "pylint-dev__pylint-10246": [
+   "bd67572cd249c5e01c1b36ad51c2f194c80614a560a91e8daa251e28321184fb",
+   "08237d3c885839154e2eeef3c6544c460c52aedef991685939783c35b9921b55",
+   "93f7a1b668465597bda6db7c4ffd94aa8f585789ffac358c224c5eb15e812d25",
+   "83cf9041e4812c8de5e8dfe2c804192f61ba009b8be0d394d451bede04b45107"
+  ],
+  "pylint-dev__pylint-10250": [
+   "83cf9041e4812c8de5e8dfe2c804192f61ba009b8be0d394d451bede04b45107",
+   "bd67572cd249c5e01c1b36ad51c2f194c80614a560a91e8daa251e28321184fb",
+   "08237d3c885839154e2eeef3c6544c460c52aedef991685939783c35b9921b55",
+   "93f7a1b668465597bda6db7c4ffd94aa8f585789ffac358c224c5eb15e812d25"
+  ],
+  "pylint-dev__pylint-10275": [
+   "bd67572cd249c5e01c1b36ad51c2f194c80614a560a91e8daa251e28321184fb",
+   "08237d3c885839154e2eeef3c6544c460c52aedef991685939783c35b9921b55",
+   "93f7a1b668465597bda6db7c4ffd94aa8f585789ffac358c224c5eb15e812d25",
+   "83cf9041e4812c8de5e8dfe2c804192f61ba009b8be0d394d451bede04b45107"
+  ],
+  "pylint-dev__pylint-10300": [
+   "bd67572cd249c5e01c1b36ad51c2f194c80614a560a91e8daa251e28321184fb",
+   "93f7a1b668465597bda6db7c4ffd94aa8f585789ffac358c224c5eb15e812d25",
+   "08237d3c885839154e2eeef3c6544c460c52aedef991685939783c35b9921b55",
+   "83cf9041e4812c8de5e8dfe2c804192f61ba009b8be0d394d451bede04b45107"
+  ],
+  "pylint-dev__pylint-10328": [
+   "bd67572cd249c5e01c1b36ad51c2f194c80614a560a91e8daa251e28321184fb",
+   "08237d3c885839154e2eeef3c6544c460c52aedef991685939783c35b9921b55",
+   "93f7a1b668465597bda6db7c4ffd94aa8f585789ffac358c224c5eb15e812d25",
+   "83cf9041e4812c8de5e8dfe2c804192f61ba009b8be0d394d451bede04b45107"
+  ],
+  "pylint-dev__pylint-10344": [
+   "83cf9041e4812c8de5e8dfe2c804192f61ba009b8be0d394d451bede04b45107",
+   "93f7a1b668465597bda6db7c4ffd94aa8f585789ffac358c224c5eb15e812d25",
+   "bd67572cd249c5e01c1b36ad51c2f194c80614a560a91e8daa251e28321184fb",
+   "08237d3c885839154e2eeef3c6544c460c52aedef991685939783c35b9921b55"
+  ],
+  "pylint-dev__pylint-10350": [
+   "bd67572cd249c5e01c1b36ad51c2f194c80614a560a91e8daa251e28321184fb",
+   "93f7a1b668465597bda6db7c4ffd94aa8f585789ffac358c224c5eb15e812d25",
+   "08237d3c885839154e2eeef3c6544c460c52aedef991685939783c35b9921b55",
+   "83cf9041e4812c8de5e8dfe2c804192f61ba009b8be0d394d451bede04b45107"
+  ],
+  "pylint-dev__pylint-10362": [
+   "bd67572cd249c5e01c1b36ad51c2f194c80614a560a91e8daa251e28321184fb",
+   "93f7a1b668465597bda6db7c4ffd94aa8f585789ffac358c224c5eb15e812d25",
+   "08237d3c885839154e2eeef3c6544c460c52aedef991685939783c35b9921b55",
+   "83cf9041e4812c8de5e8dfe2c804192f61ba009b8be0d394d451bede04b45107"
+  ],
+  "pylint-dev__pylint-10379": [
+   "83cf9041e4812c8de5e8dfe2c804192f61ba009b8be0d394d451bede04b45107",
+   "bd67572cd249c5e01c1b36ad51c2f194c80614a560a91e8daa251e28321184fb",
+   "08237d3c885839154e2eeef3c6544c460c52aedef991685939783c35b9921b55",
+   "93f7a1b668465597bda6db7c4ffd94aa8f585789ffac358c224c5eb15e812d25"
+  ],
+  "pylint-dev__pylint-10403": [
+   "08237d3c885839154e2eeef3c6544c460c52aedef991685939783c35b9921b55",
+   "83cf9041e4812c8de5e8dfe2c804192f61ba009b8be0d394d451bede04b45107",
+   "bd67572cd249c5e01c1b36ad51c2f194c80614a560a91e8daa251e28321184fb",
+   "93f7a1b668465597bda6db7c4ffd94aa8f585789ffac358c224c5eb15e812d25"
+  ]
+ },
+ "treatment": {
+  "false_positive_rate": 0.7097,
+  "localization_rate": 0.7727,
+  "n_false_positive": 44,
+  "n_flags": 62,
+  "n_localized": 17,
+  "n_tasks": 22,
+  "per_repo": {
+   "pylint-dev/pylint": {
+    "false_positive_rate": 0.7097,
+    "localization_rate": 0.7727,
+    "n_false_positive": 44,
+    "n_flags": 62,
+    "n_localized": 17,
+    "n_tasks": 22
+   }
+  }
+ },
+ "treatment_flags": {
+  "pylint-dev__pylint-10045": [
+   "doc/conf.py",
+   "pylint/pyreverse/main.py",
+   "pylint/pyreverse/diadefslib.py"
+  ],
+  "pylint-dev__pylint-10062": [
+   "pylint/checkers/variables.py",
+   "pylint/lint/pylinter.py",
+   "pylint/checkers/typecheck.py"
+  ],
+  "pylint-dev__pylint-10075": [
+   "pylint/checkers/variables.py",
+   "pylint/checkers/typecheck.py",
+   "pylint/lint/pylinter.py"
+  ],
+  "pylint-dev__pylint-10089": [
+   "pylint/lint/pylinter.py",
+   "pylint/checkers/variables.py",
+   "pylint/utils/utils.py"
+  ],
+  "pylint-dev__pylint-10097": [
+   "pylint/checkers/typecheck.py",
+   "pylint/lint/pylinter.py",
+   "pylint/checkers/variables.py"
+  ],
+  "pylint-dev__pylint-10141": [
+   "pylint/lint/pylinter.py",
+   "pylint/checkers/base_checker.py",
+   "pylint/utils/utils.py"
+  ],
+  "pylint-dev__pylint-10170": [
+   "pylint/checkers/typecheck.py"
+  ],
+  "pylint-dev__pylint-10209": [
+   "pylint/checkers/typecheck.py",
+   "pylint/lint/pylinter.py",
+   "pylint/checkers/utils.py"
+  ],
+  "pylint-dev__pylint-10225": [
+   "pylint/checkers/typecheck.py",
+   "pylint/lint/pylinter.py",
+   "tests/functional/u/unidiomatic_typecheck.py"
+  ],
+  "pylint-dev__pylint-10228": [
+   "pylint/checkers/base/name_checker/naming_style.py",
+   "pylint/checkers/base_checker.py",
+   "pylint/lint/pylinter.py"
+  ],
+  "pylint-dev__pylint-10232": [
+   "pylint/checkers/exceptions.py",
+   "pylint/checkers/utils.py",
+   "pylint/utils/ast_walker.py"
+  ],
+  "pylint-dev__pylint-10240": [
+   "pylint/checkers/variables.py",
+   "pylint/lint/pylinter.py",
+   "pylint/checkers/typecheck.py"
+  ],
+  "pylint-dev__pylint-10246": [
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py"
+  ],
+  "pylint-dev__pylint-10250": [
+   "pylint/pyreverse/diagrams.py",
+   "pylint/pyreverse/utils.py",
+   "pylint/pyreverse/printer.py"
+  ],
+  "pylint-dev__pylint-10275": [
+   "pylint/checkers/variables.py",
+   "pylint/lint/pylinter.py",
+   "pylint/checkers/typecheck.py"
+  ],
+  "pylint-dev__pylint-10300": [
+   "pylint/checkers/utils.py",
+   "pylint/lint/pylinter.py",
+   "pylint/checkers/refactoring/recommendation_checker.py"
+  ],
+  "pylint-dev__pylint-10328": [
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py",
+   "pylint/lint/pylinter.py",
+   "tests/functional/u/use/use_implicit_booleaness_not_comparison.py"
+  ],
+  "pylint-dev__pylint-10344": [
+   "pylint/checkers/classes/class_checker.py",
+   "pylint/pyreverse/inspector.py",
+   "pylint/checkers/typecheck.py"
+  ],
+  "pylint-dev__pylint-10350": [
+   "pylint/checkers/utils.py",
+   "pylint/checkers/base/basic_error_checker.py",
+   "pylint/utils/ast_walker.py"
+  ],
+  "pylint-dev__pylint-10362": [
+   "pylint/checkers/variables.py",
+   "pylint/utils/ast_walker.py",
+   "pylint/lint/pylinter.py"
+  ],
+  "pylint-dev__pylint-10379": [
+   "pylint/pyreverse/diagrams.py",
+   "pylint/pyreverse/inspector.py",
+   "pylint/pyreverse/main.py"
+  ],
+  "pylint-dev__pylint-10403": [
+   "pylint/pyreverse/mermaidjs_printer.py",
+   "pylint/pyreverse/diagrams.py",
+   "pylint/pyreverse/utils.py"
+  ]
+ }
+}

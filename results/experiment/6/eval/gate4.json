@@ -1,0 +1,231 @@
+{
+ "control": {
+  "false_positive_rate": 0.7413,
+  "localization_rate": 0.6442,
+  "n_false_positive": 768,
+  "n_flags": 1036,
+  "n_localized": 239,
+  "n_tasks": 371,
+  "per_repo": {
+   "aws-cloudformation/cfn-lint": {
+    "false_positive_rate": 0.8599,
+    "localization_rate": 0.3621,
+    "n_false_positive": 135,
+    "n_flags": 157,
+    "n_localized": 21,
+    "n_tasks": 58
+   },
+   "conan-io/conan": {
+    "false_positive_rate": 0.7643,
+    "localization_rate": 0.5614,
+    "n_false_positive": 240,
+    "n_flags": 314,
+    "n_localized": 64,
+    "n_tasks": 114
+   },
+   "deepset-ai/haystack": {
+    "false_positive_rate": 0.6273,
+    "localization_rate": 0.9737,
+    "n_false_positive": 69,
+    "n_flags": 110,
+    "n_localized": 37,
+    "n_tasks": 38
+   },
+   "instructlab/instructlab": {
+    "false_positive_rate": 0.7049,
+    "localization_rate": 0.6818,
+    "n_false_positive": 43,
+    "n_flags": 61,
+    "n_localized": 15,
+    "n_tasks": 22
+   },
+   "keras-team/keras": {
+    "false_positive_rate": 0.7547,
+    "localization_rate": 0.6667,
+    "n_false_positive": 40,
+    "n_flags": 53,
+    "n_localized": 12,
+    "n_tasks": 18
+   },
+   "matplotlib/matplotlib": {
+    "false_positive_rate": 0.6667,
+    "localization_rate": 0.8431,
+    "n_false_positive": 94,
+    "n_flags": 141,
+    "n_localized": 43,
+    "n_tasks": 51
+   },
+   "pdm-project/pdm": {
+    "false_positive_rate": 0.7556,
+    "localization_rate": 0.6,
+    "n_false_positive": 34,
+    "n_flags": 45,
+    "n_localized": 9,
+    "n_tasks": 15
+   },
+   "pylint-dev/pylint": {
+    "false_positive_rate": 0.7692,
+    "localization_rate": 0.6364,
+    "n_false_positive": 50,
+    "n_flags": 65,
+    "n_localized": 14,
+    "n_tasks": 22
+   },
+   "reflex-dev/reflex": {
+    "false_positive_rate": 0.7179,
+    "localization_rate": 0.7143,
+    "n_false_positive": 28,
+    "n_flags": 39,
+    "n_localized": 10,
+    "n_tasks": 14
+   },
+   "sphinx-doc/sphinx": {
+    "false_positive_rate": 0.6863,
+    "localization_rate": 0.7368,
+    "n_false_positive": 35,
+    "n_flags": 51,
+    "n_localized": 14,
+    "n_tasks": 19
+   }
+  }
+ },
+ "effect_in_majority_of_repos": false,
+ "false_positive_rise_pts": 0.1,
+ "localization_lift_pts": 1.08,
+ "negative_control_lift": {
+  "false_positive_rise_pts": 0.0,
+  "localization_lift_pts": 0.0
+ },
+ "per_repo_lift": {
+  "aws-cloudformation/cfn-lint": {
+   "false_positive_rise_pts": 1.82,
+   "localization_lift_pts": -3.45
+  },
+  "conan-io/conan": {
+   "false_positive_rise_pts": -0.57,
+   "localization_lift_pts": 3.51
+  },
+  "deepset-ai/haystack": {
+   "false_positive_rise_pts": 3.06,
+   "localization_lift_pts": 0.0
+  },
+  "instructlab/instructlab": {
+   "false_positive_rise_pts": -2.16,
+   "localization_lift_pts": 0.0
+  },
+  "keras-team/keras": {
+   "false_positive_rise_pts": -3.47,
+   "localization_lift_pts": 5.56
+  },
+  "matplotlib/matplotlib": {
+   "false_positive_rise_pts": 0.23,
+   "localization_lift_pts": 0.0
+  },
+  "pdm-project/pdm": {
+   "false_positive_rise_pts": 4.44,
+   "localization_lift_pts": -6.67
+  },
+  "pylint-dev/pylint": {
+   "false_positive_rise_pts": -5.96,
+   "localization_lift_pts": 13.64
+  },
+  "reflex-dev/reflex": {
+   "false_positive_rise_pts": 3.81,
+   "localization_lift_pts": -7.14
+  },
+  "sphinx-doc/sphinx": {
+   "false_positive_rise_pts": -2.67,
+   "localization_lift_pts": 0.0
+  }
+ },
+ "treatment": {
+  "false_positive_rate": 0.7423,
+  "localization_rate": 0.655,
+  "n_false_positive": 775,
+  "n_flags": 1044,
+  "n_localized": 243,
+  "n_tasks": 371,
+  "per_repo": {
+   "aws-cloudformation/cfn-lint": {
+    "false_positive_rate": 0.878,
+    "localization_rate": 0.3276,
+    "n_false_positive": 144,
+    "n_flags": 164,
+    "n_localized": 19,
+    "n_tasks": 58
+   },
+   "conan-io/conan": {
+    "false_positive_rate": 0.7586,
+    "localization_rate": 0.5965,
+    "n_false_positive": 242,
+    "n_flags": 319,
+    "n_localized": 68,
+    "n_tasks": 114
+   },
+   "deepset-ai/haystack": {
+    "false_positive_rate": 0.6579,
+    "localization_rate": 0.9737,
+    "n_false_positive": 75,
+    "n_flags": 114,
+    "n_localized": 37,
+    "n_tasks": 38
+   },
+   "instructlab/instructlab": {
+    "false_positive_rate": 0.6833,
+    "localization_rate": 0.6818,
+    "n_false_positive": 41,
+    "n_flags": 60,
+    "n_localized": 15,
+    "n_tasks": 22
+   },
+   "keras-team/keras": {
+    "false_positive_rate": 0.72,
+    "localization_rate": 0.7222,
+    "n_false_positive": 36,
+    "n_flags": 50,
+    "n_localized": 13,
+    "n_tasks": 18
+   },
+   "matplotlib/matplotlib": {
+    "false_positive_rate": 0.669,
+    "localization_rate": 0.8431,
+    "n_false_positive": 95,
+    "n_flags": 142,
+    "n_localized": 43,
+    "n_tasks": 51
+   },
+   "pdm-project/pdm": {
+    "false_positive_rate": 0.8,
+    "localization_rate": 0.5333,
+    "n_false_positive": 36,
+    "n_flags": 45,
+    "n_localized": 8,
+    "n_tasks": 15
+   },
+   "pylint-dev/pylint": {
+    "false_positive_rate": 0.7097,
+    "localization_rate": 0.7727,
+    "n_false_positive": 44,
+    "n_flags": 62,
+    "n_localized": 17,
+    "n_tasks": 22
+   },
+   "reflex-dev/reflex": {
+    "false_positive_rate": 0.7561,
+    "localization_rate": 0.6429,
+    "n_false_positive": 31,
+    "n_flags": 41,
+    "n_localized": 9,
+    "n_tasks": 14
+   },
+   "sphinx-doc/sphinx": {
+    "false_positive_rate": 0.6596,
+    "localization_rate": 0.7368,
+    "n_false_positive": 31,
+    "n_flags": 47,
+    "n_localized": 14,
+    "n_tasks": 19
+   }
+  }
+ }
+}

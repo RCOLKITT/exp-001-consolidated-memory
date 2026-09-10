@@ -1,0 +1,1481 @@
+{
+ "control": {
+  "false_positive_rate": 0.7643,
+  "localization_rate": 0.5614,
+  "n_false_positive": 240,
+  "n_flags": 314,
+  "n_localized": 64,
+  "n_tasks": 114,
+  "per_repo": {
+   "conan-io/conan": {
+    "false_positive_rate": 0.7643,
+    "localization_rate": 0.5614,
+    "n_false_positive": 240,
+    "n_flags": 314,
+    "n_localized": 64,
+    "n_tasks": 114
+   }
+  }
+ },
+ "control_flags": {
+  "conan-io__conan-16102": [
+   "conan/cli/cli.py",
+   "conan/cli/commands/__init__.py",
+   "conan/cli/formatters/__init__.py"
+  ],
+  "conan-io__conan-16103": [
+   "conan/cli/commands/upload.py",
+   "conans/client/cmd/uploader.py",
+   "conans/client/rest/file_uploader.py"
+  ],
+  "conan-io__conan-16126": [
+   "conans/client/rest/rest_client.py",
+   "conans/client/rest/rest_client_v2.py"
+  ],
+  "conan-io__conan-16170": [
+   "conans/client/cache/editable.py",
+   "conan/cli/commands/editable.py",
+   "conans/test/integration/editable/editable_remove_test.py"
+  ],
+  "conan-io__conan-16172": [
+   "conan/tools/meson/toolchain.py",
+   "conan/internal/api/new/meson_lib.py",
+   "conans/client/conanfile/build.py"
+  ],
+  "conan-io__conan-16196": [
+   "conan/tools/google/bazel.py",
+   "conan/internal/api/new/bazel_exe.py",
+   "conan/internal/api/new/bazel_lib.py"
+  ],
+  "conan-io__conan-16213": [
+   "conan/api/conan_api.py",
+   "conans/client/cmd/__init__.py"
+  ],
+  "conan-io__conan-16214": [
+   "conan/tools/cmake/cmake.py",
+   "conan/tools/cmake/cmakedeps/cmakedeps.py",
+   "conan/api/subapi/export.py"
+  ],
+  "conan-io__conan-16289": [
+   "conans/model/version_range.py",
+   "conans/test/unittests/model/version/__init__.py",
+   "conans/client/rest/rest_client.py"
+  ],
+  "conan-io__conan-16308": [
+   "conan/cli/commands/install.py",
+   "conans/client/graph/install_graph.py"
+  ],
+  "conan-io__conan-16317": [
+   "conan/tools/gnu/__init__.py",
+   "conan/tools/gnu/get_gnu_triplet.py",
+   "conan/tools/gnu/gnutoolchain.py"
+  ],
+  "conan-io__conan-16335": [
+   "conan/tools/cmake/toolchain/blocks.py"
+  ],
+  "conan-io__conan-16350": [
+   "conan/tools/files/__init__.py",
+   "conan/tools/files/files.py",
+   "conan/api/subapi/remove.py"
+  ],
+  "conan-io__conan-16362": [
+   "conan/internal/api/detect_api.py",
+   "conans/client/conf/detect.py",
+   "conans/client/conf/detect_vs.py"
+  ],
+  "conan-io__conan-16415": [
+   "conan/cli/commands/graph.py",
+   "conan/api/subapi/graph.py",
+   "conans/client/graph/__init__.py"
+  ],
+  "conan-io__conan-16443": [
+   "conan/api/subapi/install.py",
+   "conans/client/graph/install_graph.py",
+   "conans/client/graph/graph.py"
+  ],
+  "conan-io__conan-16454": [
+   "conans/client/profile_loader.py",
+   "conans/model/profile.py",
+   "conan/api/subapi/profiles.py"
+  ],
+  "conan-io__conan-16552": [
+   "conan/tools/gnu/pkgconfigdeps.py",
+   "conan/cli/commands/install.py",
+   "conan/internal/deploy.py"
+  ],
+  "conan-io__conan-16559": [
+   "conan/cli/commands/install.py",
+   "conan/cli/args.py",
+   "conan/api/subapi/install.py"
+  ],
+  "conan-io__conan-16563": [
+   "conan/tools/cmake/cmakedeps/cmakedeps.py",
+   "conan/tools/cmake/toolchain/toolchain.py",
+   "conans/client/conanfile/package.py"
+  ],
+  "conan-io__conan-16573": [
+   "conans/client/conf/__init__.py",
+   "conans/client/conf/config_installer.py",
+   "conans/client/conf/detect.py"
+  ],
+  "conan-io__conan-16613": [
+   "conans/client/generators/__init__.py",
+   "conans/client/conanfile/__init__.py",
+   "conan/tools/gnu/makedeps.py"
+  ],
+  "conan-io__conan-16633": [
+   "conan/tools/cmake/presets.py",
+   "conan/api/subapi/profiles.py",
+   "conan/internal/api/profile/profile_loader.py"
+  ],
+  "conan-io__conan-16646": [
+   "conan/internal/cache/integrity_check.py",
+   "conan/api/subapi/install.py",
+   "conan/internal/cache/cache.py"
+  ],
+  "conan-io__conan-16720": [
+   "conan/api/subapi/profiles.py",
+   "conan/internal/api/profile/__init__.py",
+   "conan/internal/api/profile/profile_loader.py"
+  ],
+  "conan-io__conan-16742": [
+   "conan/internal/api/install/generators.py",
+   "conan/tools/qbs/qbs.py",
+   "conan/tools/qbs/qbsdeps.py"
+  ],
+  "conan-io__conan-16776": [
+   "conans/client/cmd/export.py",
+   "conan/api/subapi/export.py",
+   "conan/internal/api/install/__init__.py"
+  ],
+  "conan-io__conan-16789": [
+   "conan/tools/cmake/cmakedeps/cmakedeps.py",
+   "conan/api/subapi/install.py",
+   "conans/client/conanfile/package.py"
+  ],
+  "conan-io__conan-16847": [
+   "conans/model/build_info.py",
+   "conan/api/subapi/install.py",
+   "conan/internal/deploy.py"
+  ],
+  "conan-io__conan-16849": [
+   "conan/api/subapi/install.py",
+   "conan/internal/api/install/__init__.py",
+   "conan/cli/commands/install.py"
+  ],
+  "conan-io__conan-16870": [
+   "conans/client/graph/graph.py",
+   "conans/client/graph/install_graph.py",
+   "conans/client/graph/graph_error.py"
+  ],
+  "conan-io__conan-16871": [
+   "conans/client/graph/compatibility.py",
+   "conan/cli/commands/install.py",
+   "conan/cli/commands/build.py"
+  ],
+  "conan-io__conan-16942": [
+   "conans/client/conf/__init__.py",
+   "conans/client/rest/auth_manager.py",
+   "conans/client/rest/remote_credentials.py"
+  ],
+  "conan-io__conan-16964": [
+   "conan/tools/cmake/cmakedeps/templates/macros.py",
+   "conan/tools/cmake/cmakedeps/cmakedeps.py",
+   "conan/internal/api/install/generators.py"
+  ],
+  "conan-io__conan-16986": [
+   "conans/model/version_range.py",
+   "conans/client/graph/range_resolver.py",
+   "conans/client/graph/install_graph.py"
+  ],
+  "conan-io__conan-16987": [
+   "conans/client/conanfile/implementations.py",
+   "conans/client/graph/graph.py",
+   "conans/client/graph/install_graph.py"
+  ],
+  "conan-io__conan-17051": [
+   "conan/tools/gnu/pkgconfigdeps.py"
+  ],
+  "conan-io__conan-17092": [
+   "conans/client/conanfile/__init__.py",
+   "conan/tools/cmake/__init__.py"
+  ],
+  "conan-io__conan-17102": [
+   "conans/client/conanfile/package.py",
+   "conans/client/graph/install_graph.py",
+   "conans/model/profile.py"
+  ],
+  "conan-io__conan-17117": [
+   "conans/client/conanfile/__init__.py",
+   "conans/client/conanfile/implementations.py",
+   "conan/api/model.py"
+  ],
+  "conan-io__conan-17123": [
+   "conans/client/installer.py",
+   "conans/client/loader.py",
+   "conans/util/files.py"
+  ],
+  "conan-io__conan-17127": [
+   "conan/api/subapi/remotes.py",
+   "conans/client/remote_manager.py",
+   "conans/client/rest/auth_manager.py"
+  ],
+  "conan-io__conan-17129": [
+   "conans/client/conanfile/__init__.py",
+   "conan/internal/api/install/__init__.py"
+  ],
+  "conan-io__conan-17132": [
+   "conans/server/service/authorize.py",
+   "conans/server/conf/__init__.py",
+   "conans/server/service/user_service.py"
+  ],
+  "conan-io__conan-17183": [
+   "conan/tools/google/bazel.py"
+  ],
+  "conan-io__conan-17186": [
+   "conan/cli/commands/new.py",
+   "conan/internal/api/new/__init__.py",
+   "conan/api/subapi/new.py"
+  ],
+  "conan-io__conan-17266": [
+   "conan/tools/meson/toolchain.py",
+   "conan/internal/api/install/generators.py",
+   "conan/api/subapi/install.py"
+  ],
+  "conan-io__conan-17292": [
+   "conan/cli/commands/build.py",
+   "conan/tools/microsoft/msbuild.py",
+   "conan/internal/api/install/__init__.py"
+  ],
+  "conan-io__conan-17300": [
+   "conan/cli/commands/list.py",
+   "conan/cli/cli.py",
+   "conan/api/subapi/list.py"
+  ],
+  "conan-io__conan-17301": [
+   "conan/cli/commands/build.py",
+   "conan/tools/microsoft/msbuild.py",
+   "conan/internal/api/install/__init__.py"
+  ],
+  "conan-io__conan-17302": [
+   "conan/tools/cmake/cmakedeps/cmakedeps.py",
+   "conan/tools/cmake/cmakedeps/templates/targets.py",
+   "conan/tools/cmake/cmakedeps2/cmakedeps.py"
+  ],
+  "conan-io__conan-17326": [
+   "conans/client/graph/__init__.py",
+   "conans/client/graph/graph.py",
+   "conans/model/dependencies.py"
+  ],
+  "conan-io__conan-17346": [
+   "conan/api/subapi/profiles.py",
+   "conans/client/graph/proxy.py",
+   "conans/client/graph/profile_node_definer.py"
+  ],
+  "conan-io__conan-17366": [
+   "conans/client/installer.py",
+   "conans/client/graph/__init__.py",
+   "conans/model/options.py"
+  ],
+  "conan-io__conan-17382": [
+   "conan/tools/system/package_manager.py",
+   "test/functional/tools/system/package_manager_test.py",
+   "conans/client/installer.py"
+  ],
+  "conan-io__conan-17387": [
+   "conan/tools/gnu/autotools.py",
+   "conan/tools/gnu/gnutoolchain.py"
+  ],
+  "conan-io__conan-17408": [
+   "conan/api/subapi/install.py",
+   "conan/internal/api/install/__init__.py",
+   "conans/client/installer.py"
+  ],
+  "conan-io__conan-17514": [
+   "conan/api/subapi/config.py",
+   "conan/cli/commands/config.py",
+   "conan/internal/api/config/config_installer.py"
+  ],
+  "conan-io__conan-17517": [
+   "conans/client/rest/rest_client.py",
+   "conans/client/rest_client_local_recipe_index.py",
+   "conan/cli/commands/remote.py"
+  ],
+  "conan-io__conan-17520": [
+   "conan/api/subapi/export.py",
+   "conan/internal/api/export.py",
+   "conan/tools/files/patches.py"
+  ],
+  "conan-io__conan-17532": [
+   "conan/tools/gnu/gnutoolchain.py",
+   "conan/internal/api/install/generators.py"
+  ],
+  "conan-io__conan-17538": [
+   "conan/cli/commands/workspace.py",
+   "conan/api/subapi/workspace.py",
+   "conan/internal/workspace.py"
+  ],
+  "conan-io__conan-17577": [
+   "conan/api/subapi/lockfile.py",
+   "conan/cli/commands/lock.py",
+   "conan/internal/model/lockfile.py"
+  ],
+  "conan-io__conan-17591": [
+   "conan/tools/files/files.py",
+   "conan/tools/__init__.py",
+   "test/unittests/util/files/strip_root_extract_test.py"
+  ],
+  "conan-io__conan-17613": [
+   "conan/tools/cmake/presets.py",
+   "conan/internal/api/install/generators.py"
+  ],
+  "conan-io__conan-17708": [
+   "conans/client/installer.py",
+   "conans/client/downloaders/file_downloader.py",
+   "conan/internal/api/install/__init__.py"
+  ],
+  "conan-io__conan-17725": [],
+  "conan-io__conan-17781": [
+   "conan/tools/env/environment.py"
+  ],
+  "conan-io__conan-17819": [
+   "conans/client/rest_client_local_recipe_index.py",
+   "conan/internal/api/local/__init__.py",
+   "conan/internal/api/new/local_recipes_index.py"
+  ],
+  "conan-io__conan-17838": [
+   "conan/tools/cmake/cmakedeps/cmakedeps.py",
+   "conan/tools/cmake/cmakedeps2/cmakedeps.py",
+   "conan/internal/api/install/generators.py"
+  ],
+  "conan-io__conan-17848": [
+   "conan/internal/deploy.py",
+   "conan/tools/files/symlinks/symlinks.py",
+   "conan/tools/files/files.py"
+  ],
+  "conan-io__conan-17851": [
+   "conans/client/loader.py",
+   "conan/api/subapi/profiles.py",
+   "conan/internal/api/profile/profile_loader.py"
+  ],
+  "conan-io__conan-17863": [
+   "conan/api/subapi/profiles.py",
+   "conan/internal/api/profile/__init__.py",
+   "conan/tools/env/environment.py"
+  ],
+  "conan-io__conan-17877": [
+   "conans/client/graph/graph_builder.py",
+   "conans/client/graph/install_graph.py",
+   "conans/client/graph/range_resolver.py"
+  ],
+  "conan-io__conan-17917": [
+   "conan/tools/cmake/cmakedeps/cmakedeps.py",
+   "conan/tools/cmake/cmakedeps2/cmakedeps.py",
+   "conan/internal/api/install/generators.py"
+  ],
+  "conan-io__conan-17923": [
+   "conan/tools/cmake/cmakedeps/cmakedeps.py",
+   "conan/tools/cmake/cmakedeps2/cmakedeps.py",
+   "conan/internal/api/install/generators.py"
+  ],
+  "conan-io__conan-17954": [
+   "conan/internal/api/install/__init__.py",
+   "conan/cli/formatters/__init__.py"
+  ],
+  "conan-io__conan-17964": [
+   "conan/internal/api/install/__init__.py",
+   "conan/tools/google/bazel.py",
+   "conan/internal/model/conan_file.py"
+  ],
+  "conan-io__conan-17967": [
+   "conan/internal/api/install/generators.py",
+   "conan/tools/microsoft/msbuilddeps.py"
+  ],
+  "conan-io__conan-18012": [
+   "conan/internal/model/version_range.py",
+   "conan/api/model/refs.py",
+   "conan/internal/model/conan_file.py"
+  ],
+  "conan-io__conan-18028": [
+   "conan/api/subapi/install.py",
+   "conan/cli/commands/install.py"
+  ],
+  "conan-io__conan-18037": [
+   "conan/errors.py",
+   "conan/cli/commands/pkglist.py",
+   "conan/internal/errors.py"
+  ],
+  "conan-io__conan-18051": [
+   "conan/internal/model/settings.py",
+   "conan/internal/default_settings.py",
+   "conan/api/subapi/install.py"
+  ],
+  "conan-io__conan-18083": [
+   "conan/cli/formatters/graph/graph.py",
+   "conan/internal/model/options.py",
+   "conan/cli/cli.py"
+  ],
+  "conan-io__conan-18089": [
+   "conan/cli/commands/remote.py",
+   "conan/internal/api/remotes/localdb.py",
+   "conans/client/remote_manager.py"
+  ],
+  "conan-io__conan-18097": [
+   "conans/client/graph/install_graph.py",
+   "conan/api/subapi/install.py",
+   "test/integration/editable/editable_add_test.py"
+  ],
+  "conan-io__conan-18101": [
+   "conan/api/model/refs.py",
+   "conan/internal/model/dependencies.py",
+   "conan/internal/model/requires.py"
+  ],
+  "conan-io__conan-18153": [
+   "conan/internal/cache/conan_reference_layout.py",
+   "conan/internal/cache/cache.py"
+  ],
+  "conan-io__conan-18219": [
+   "conan/cli/commands/cache.py",
+   "conan/internal/cache/cache.py",
+   "conan/api/subapi/cache.py"
+  ],
+  "conan-io__conan-18226": [
+   "conan/api/subapi/graph.py",
+   "conan/internal/graph/graph.py",
+   "conan/cli/commands/test.py"
+  ],
+  "conan-io__conan-18243": [
+   "conan/cli/commands/cache.py",
+   "conan/internal/cache/cache.py",
+   "conan/api/subapi/cache.py"
+  ],
+  "conan-io__conan-18244": [
+   "conan/internal/model/settings.py",
+   "conan/internal/api/profile/__init__.py",
+   "conan/internal/api/profile/detect.py"
+  ],
+  "conan-io__conan-18280": [
+   "conan/internal/api/install/__init__.py",
+   "conan/tools/cmake/presets.py",
+   "conan/internal/api/profile/__init__.py"
+  ],
+  "conan-io__conan-18333": [
+   "conan/tools/gnu/autotoolstoolchain.py",
+   "conan/api/subapi/config.py",
+   "conan/internal/api/config/config_installer.py"
+  ],
+  "conan-io__conan-18334": [
+   "conan/cli/commands/workspace.py",
+   "conan/internal/api/new/workspace.py",
+   "conan/internal/model/workspace.py"
+  ],
+  "conan-io__conan-18410": [
+   "conan/internal/api/profile/detect.py"
+  ],
+  "conan-io__conan-18442": [
+   "conan/tools/gnu/autotools.py",
+   "conan/internal/api/new/autoools_exe.py",
+   "conan/internal/api/new/autotools_lib.py"
+  ],
+  "conan-io__conan-18517": [
+   "conan/tools/system/package_manager.py"
+  ],
+  "conan-io__conan-18518": [
+   "conan/internal/cache/__init__.py",
+   "conan/internal/cache/cache.py",
+   "conan/internal/cache/conan_reference_layout.py"
+  ],
+  "conan-io__conan-18538": [
+   "conan/internal/model/settings.py",
+   "conan/internal/api/profile/profile_loader.py",
+   "conan/internal/util/config_parser.py"
+  ],
+  "conan-io__conan-18541": [
+   "conan/internal/model/conf.py",
+   "conan/api/subapi/config.py",
+   "conan/internal/api/config/__init__.py"
+  ],
+  "conan-io__conan-18544": [
+   "conan/cli/commands/cache.py",
+   "conan/internal/cache/integrity_check.py",
+   "conan/cli/formatters/list/__init__.py"
+  ],
+  "conan-io__conan-18552": [
+   "conan/internal/api/install/generators.py",
+   "conan/tools/cmake/cmakedeps/cmakedeps.py",
+   "conan/internal/model/conanfile_interface.py"
+  ],
+  "conan-io__conan-18562": [
+   "conan/tools/cmake/cmakedeps2/cmakedeps.py",
+   "conan/tools/cmake/cmakedeps2/target_configuration.py",
+   "conan/internal/api/install/generators.py"
+  ],
+  "conan-io__conan-18608": [
+   "conan/api/subapi/workspace.py",
+   "conan/internal/api/install/__init__.py",
+   "conan/tools/cmake/toolchain/__init__.py"
+  ],
+  "conan-io__conan-18621": [
+   "conan/cli/commands/export_pkg.py",
+   "conan/internal/api/export.py",
+   "conan/api/subapi/export.py"
+  ],
+  "conan-io__conan-18642": [
+   "conan/internal/rest/auth_manager.py",
+   "conan/cli/commands/build.py",
+   "conan/internal/rest/remote_credentials.py"
+  ],
+  "conan-io__conan-18655": [
+   "conan/internal/api/upload.py",
+   "conan/cli/commands/upload.py",
+   "conan/internal/source.py"
+  ],
+  "conan-io__conan-18661": [
+   "conan/cli/commands/create.py",
+   "conan/cli/commands/export_pkg.py",
+   "conan/api/subapi/export.py"
+  ],
+  "conan-io__conan-18676": [
+   "conan/internal/api/install/__init__.py",
+   "conan/tools/meson/meson.py"
+  ],
+  "conan-io__conan-18693": [
+   "conan/api/subapi/workspace.py",
+   "conan/internal/graph/install_graph.py",
+   "conan/internal/graph/graph_builder.py"
+  ],
+  "conan-io__conan-18832": [
+   "conan/tools/cmake/toolchain/toolchain.py",
+   "conan/internal/api/install/__init__.py",
+   "conan/internal/api/new/cmake_lib.py"
+  ],
+  "conan-io__conan-18840": [
+   "conan/internal/api/install/__init__.py",
+   "conan/tools/cmake/toolchain/__init__.py",
+   "conan/internal/api/profile/__init__.py"
+  ],
+  "conan-io__conan-18842": [
+   "conan/internal/api/install/__init__.py",
+   "conan/internal/api/install/generators.py",
+   "conan/internal/util/files.py"
+  ]
+ },
+ "errors": {},
+ "lift": {
+  "false_positive_rise_pts": -0.57,
+  "localization_lift_pts": 3.51
+ },
+ "n_errors": 0,
+ "retrieval_hit_rate": 1.0,
+ "retrieved": {
+  "conan-io__conan-16102": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16103": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16126": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16170": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16172": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16196": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16213": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16214": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16289": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16308": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16317": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16335": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16350": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16362": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16415": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16443": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16454": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16552": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16559": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16563": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16573": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16613": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16633": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16646": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16720": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16742": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16776": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16789": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16847": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16849": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16870": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16871": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16942": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16964": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16986": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-16987": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17051": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17092": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17102": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17117": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17123": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17127": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17129": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17132": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17183": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17186": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17266": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17292": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17300": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17301": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17302": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17326": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17346": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17366": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17382": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17387": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17408": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17514": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17517": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17520": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17532": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17538": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17577": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17591": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17613": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17708": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17725": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17781": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17819": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17838": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17848": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17851": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17863": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17877": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17917": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17923": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17954": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17964": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-17967": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18012": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18028": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18037": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18051": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18083": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18089": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18097": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18101": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18153": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18219": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18226": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18243": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18244": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18280": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18333": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18334": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18410": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18442": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18517": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18518": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18538": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18541": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18544": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18552": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18562": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18608": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18621": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18642": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18655": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18661": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18676": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18693": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18832": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18840": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ],
+  "conan-io__conan-18842": [
+   "ae35c0a509f0ea93abda2c54fc3ce50636e6761df98751f048cb67da13c8ff76"
+  ]
+ },
+ "treatment": {
+  "false_positive_rate": 0.7586,
+  "localization_rate": 0.5965,
+  "n_false_positive": 242,
+  "n_flags": 319,
+  "n_localized": 68,
+  "n_tasks": 114,
+  "per_repo": {
+   "conan-io/conan": {
+    "false_positive_rate": 0.7586,
+    "localization_rate": 0.5965,
+    "n_false_positive": 242,
+    "n_flags": 319,
+    "n_localized": 68,
+    "n_tasks": 114
+   }
+  }
+ },
+ "treatment_flags": {
+  "conan-io__conan-16102": [
+   "conan/cli/commands/__init__.py",
+   "conan/cli/command.py",
+   "conan/cli/cli.py"
+  ],
+  "conan-io__conan-16103": [
+   "conan/cli/commands/upload.py",
+   "conans/client/cmd/uploader.py",
+   "conan/cli/formatters/list/list.py"
+  ],
+  "conan-io__conan-16126": [
+   "conans/client/rest/rest_client.py",
+   "conans/client/rest/rest_client_v2.py",
+   "conans/client/remote_manager.py"
+  ],
+  "conan-io__conan-16170": [
+   "conans/client/cache/editable.py",
+   "conan/cli/commands/editable.py",
+   "conans/client/cmd/__init__.py"
+  ],
+  "conan-io__conan-16172": [
+   "conan/tools/meson/toolchain.py",
+   "conan/api/model.py",
+   "conans/client/conanfile/build.py"
+  ],
+  "conan-io__conan-16196": [
+   "conan/tools/google/bazel.py"
+  ],
+  "conan-io__conan-16213": [
+   "conans/client/cmd/__init__.py",
+   "conan/api/conan_api.py"
+  ],
+  "conan-io__conan-16214": [
+   "conan/tools/cmake/cmakedeps/cmakedeps.py",
+   "conan/tools/cmake/cmake.py",
+   "conans/client/conanfile/package.py"
+  ],
+  "conan-io__conan-16289": [
+   "conans/model/version_range.py",
+   "conans/client/graph/graph_error.py",
+   "conans/test/unittests/model/version/__init__.py"
+  ],
+  "conan-io__conan-16308": [
+   "conan/cli/commands/install.py",
+   "conan/cli/formatters/graph/graph.py"
+  ],
+  "conan-io__conan-16317": [
+   "conan/tools/gnu/__init__.py",
+   "conan/internal/api/new/basic.py",
+   "conan/tools/layout/__init__.py"
+  ],
+  "conan-io__conan-16335": [
+   "conan/tools/cmake/toolchain/blocks.py"
+  ],
+  "conan-io__conan-16350": [
+   "conan/tools/files/__init__.py",
+   "conan/tools/files/files.py",
+   "conan/api/subapi/remove.py"
+  ],
+  "conan-io__conan-16362": [
+   "conan/internal/api/detect_api.py"
+  ],
+  "conan-io__conan-16415": [
+   "conan/cli/commands/graph.py",
+   "conans/client/graph/__init__.py",
+   "conans/client/graph/graph.py"
+  ],
+  "conan-io__conan-16443": [
+   "conan/api/subapi/install.py",
+   "conans/client/graph/install_graph.py",
+   "conans/client/graph/graph_builder.py"
+  ],
+  "conan-io__conan-16454": [
+   "conans/client/profile_loader.py",
+   "conans/model/profile.py",
+   "conans/client/conf/__init__.py"
+  ],
+  "conan-io__conan-16552": [
+   "conan/tools/gnu/pkgconfigdeps.py",
+   "conan/api/subapi/install.py",
+   "conan/internal/deploy.py"
+  ],
+  "conan-io__conan-16559": [
+   "conan/cli/commands/install.py",
+   "conan/api/subapi/install.py",
+   "conans/client/installer.py"
+  ],
+  "conan-io__conan-16563": [
+   "conan/tools/cmake/cmakedeps/cmakedeps.py",
+   "conan/api/model.py",
+   "conan/cli/commands/install.py"
+  ],
+  "conan-io__conan-16573": [
+   "conans/client/conf/__init__.py",
+   "conans/client/conf/config_installer.py",
+   "conans/client/graph/compatibility.py"
+  ],
+  "conan-io__conan-16613": [
+   "conans/client/generators/__init__.py",
+   "conan/tools/gnu/makedeps.py",
+   "conans/client/conanfile/__init__.py"
+  ],
+  "conan-io__conan-16633": [
+   "conan/tools/cmake/presets.py"
+  ],
+  "conan-io__conan-16646": [
+   "conan/internal/cache/integrity_check.py",
+   "conan/api/subapi/install.py",
+   "conan/internal/cache/cache.py"
+  ],
+  "conan-io__conan-16720": [
+   "conan/api/subapi/profiles.py",
+   "conan/internal/api/profile/__init__.py",
+   "conans/model/profile.py"
+  ],
+  "conan-io__conan-16742": [
+   "conan/internal/api/install/generators.py",
+   "conan/tools/qbs/qbs.py",
+   "conan/tools/qbs/qbsdeps.py"
+  ],
+  "conan-io__conan-16776": [
+   "conans/client/cmd/export.py",
+   "conan/api/subapi/export.py",
+   "conans/client/rest/client_routes.py"
+  ],
+  "conan-io__conan-16789": [
+   "conan/tools/gnu/pkgconfigdeps.py",
+   "conan/api/subapi/install.py",
+   "conan/internal/api/install/generators.py"
+  ],
+  "conan-io__conan-16847": [
+   "conans/model/build_info.py",
+   "conan/api/subapi/install.py",
+   "conan/internal/deploy.py"
+  ],
+  "conan-io__conan-16849": [
+   "conan/api/subapi/install.py",
+   "conan/internal/api/install/__init__.py",
+   "conans/client/graph/install_graph.py"
+  ],
+  "conan-io__conan-16870": [
+   "conans/client/graph/__init__.py",
+   "conans/client/graph/graph.py",
+   "conans/client/graph/install_graph.py"
+  ],
+  "conan-io__conan-16871": [
+   "conans/client/graph/compatibility.py",
+   "conans/client/graph/install_graph.py",
+   "conan/cli/commands/install.py"
+  ],
+  "conan-io__conan-16942": [
+   "conans/client/conf/__init__.py",
+   "conans/client/rest/remote_credentials.py",
+   "conans/client/rest/auth_manager.py"
+  ],
+  "conan-io__conan-16964": [
+   "conan/tools/cmake/cmakedeps/templates/macros.py",
+   "conan/tools/cmake/cmakedeps/cmakedeps.py",
+   "conan/internal/api/install/generators.py"
+  ],
+  "conan-io__conan-16986": [
+   "conans/model/version_range.py",
+   "conans/client/graph/range_resolver.py",
+   "conans/client/graph/install_graph.py"
+  ],
+  "conan-io__conan-16987": [
+   "conans/client/graph/__init__.py",
+   "conans/client/graph/graph.py",
+   "conans/model/dependencies.py"
+  ],
+  "conan-io__conan-17051": [
+   "conan/tools/gnu/pkgconfigdeps.py",
+   "conan/internal/api/install/generators.py",
+   "test/functional/toolchains/gnu/test_pkgconfigdeps.py"
+  ],
+  "conan-io__conan-17092": [
+   "conans/model/conf.py",
+   "conan/internal/default_settings.py",
+   "conan/tools/cmake/utils.py"
+  ],
+  "conan-io__conan-17102": [
+   "conan/api/subapi/install.py",
+   "conans/client/conanfile/package.py",
+   "conan/internal/api/install/__init__.py"
+  ],
+  "conan-io__conan-17117": [
+   "conans/client/conanfile/__init__.py",
+   "conans/model/requires.py",
+   "conans/client/graph/__init__.py"
+  ],
+  "conan-io__conan-17123": [
+   "conan/tools/files/__init__.py",
+   "conans/client/conanfile/__init__.py",
+   "conans/util/files.py"
+  ],
+  "conan-io__conan-17127": [
+   "conans/client/rest/auth_manager.py",
+   "conans/client/rest/remote_credentials.py",
+   "conan/internal/api/remotes/__init__.py"
+  ],
+  "conan-io__conan-17129": [
+   "conan/internal/api/install/__init__.py",
+   "conan/internal/api/install/generators.py",
+   "conans/client/conanfile/__init__.py"
+  ],
+  "conan-io__conan-17132": [
+   "conans/server/service/authorize.py",
+   "conans/server/rest/controller/v2/search.py",
+   "conans/server/conf/__init__.py"
+  ],
+  "conan-io__conan-17183": [
+   "conan/tools/google/bazel.py",
+   "conan/tools/google/toolchain.py"
+  ],
+  "conan-io__conan-17186": [
+   "conan/cli/commands/new.py",
+   "conan/internal/api/new/__init__.py",
+   "conan/api/subapi/new.py"
+  ],
+  "conan-io__conan-17266": [
+   "conan/tools/meson/toolchain.py",
+   "conan/internal/api/install/generators.py"
+  ],
+  "conan-io__conan-17292": [
+   "conan/tools/microsoft/msbuild.py",
+   "conan/cli/commands/build.py",
+   "conan/internal/api/install/generators.py"
+  ],
+  "conan-io__conan-17300": [
+   "conan/cli/commands/list.py",
+   "conan/api/subapi/list.py",
+   "conan/internal/api/list/__init__.py"
+  ],
+  "conan-io__conan-17301": [
+   "conan/tools/microsoft/msbuild.py",
+   "conan/cli/commands/build.py",
+   "conan/internal/api/install/generators.py"
+  ],
+  "conan-io__conan-17302": [
+   "conan/tools/cmake/cmakedeps/cmakedeps.py",
+   "conan/tools/cmake/cmakedeps/templates/targets.py",
+   "conan/tools/cmake/cmakedeps2/cmakedeps.py"
+  ],
+  "conan-io__conan-17326": [
+   "conans/model/dependencies.py",
+   "conans/model/conanfile_interface.py",
+   "conan/internal/api/install/generators.py"
+  ],
+  "conan-io__conan-17346": [
+   "conan/api/subapi/profiles.py",
+   "conans/model/profile.py",
+   "conan/internal/api/profile/profile_loader.py"
+  ],
+  "conan-io__conan-17366": [
+   "conans/model/options.py",
+   "conan/api/subapi/install.py",
+   "conans/client/graph/graph.py"
+  ],
+  "conan-io__conan-17382": [
+   "conan/tools/system/package_manager.py",
+   "conan/internal/api/install/generators.py"
+  ],
+  "conan-io__conan-17387": [
+   "conan/tools/gnu/autotoolstoolchain.py",
+   "conan/internal/api/install/generators.py"
+  ],
+  "conan-io__conan-17408": [
+   "conan/api/subapi/install.py",
+   "conan/internal/api/install/__init__.py",
+   "conans/client/installer.py"
+  ],
+  "conan-io__conan-17514": [
+   "conan/api/subapi/config.py",
+   "conan/internal/api/config/__init__.py",
+   "conan/cli/commands/config.py"
+  ],
+  "conan-io__conan-17517": [
+   "conans/client/rest/rest_client.py",
+   "conans/client/rest/rest_client_v2.py",
+   "conan/internal/api/remotes/__init__.py"
+  ],
+  "conan-io__conan-17520": [
+   "conan/tools/files/patches.py",
+   "conan/internal/model/recipe_ref.py",
+   "conan/api/subapi/cache.py"
+  ],
+  "conan-io__conan-17532": [
+   "conan/internal/api/install/generators.py",
+   "conan/tools/gnu/gnutoolchain.py",
+   "conan/tools/gnu/autotools.py"
+  ],
+  "conan-io__conan-17538": [
+   "conan/cli/commands/workspace.py",
+   "conan/internal/workspace.py",
+   "conan/api/subapi/workspace.py"
+  ],
+  "conan-io__conan-17577": [
+   "conan/api/subapi/lockfile.py",
+   "conan/internal/model/lockfile.py",
+   "conan/cli/commands/lock.py"
+  ],
+  "conan-io__conan-17591": [
+   "conan/tools/files/__init__.py",
+   "conan/tools/files/files.py",
+   "test/unittests/util/files/strip_root_extract_test.py"
+  ],
+  "conan-io__conan-17613": [
+   "conan/tools/cmake/presets.py",
+   "conan/internal/api/install/generators.py"
+  ],
+  "conan-io__conan-17708": [
+   "conan/internal/cache/db/cache_database.py",
+   "conan/api/subapi/download.py",
+   "conan/tools/files/files.py"
+  ],
+  "conan-io__conan-17725": [
+   "conan/tools/apple/xcodebuild.py",
+   "conan/api/subapi/install.py"
+  ],
+  "conan-io__conan-17781": [
+   "conan/tools/env/environment.py"
+  ],
+  "conan-io__conan-17819": [
+   "conans/client/rest_client_local_recipe_index.py",
+   "conan/internal/api/local/__init__.py",
+   "conan/internal/api/new/local_recipes_index.py"
+  ],
+  "conan-io__conan-17838": [
+   "conan/tools/cmake/cmakedeps/cmakedeps.py",
+   "conan/tools/cmake/cmakedeps/templates/config.py",
+   "conan/tools/cmake/cmakedeps2/cmakedeps.py"
+  ],
+  "conan-io__conan-17848": [
+   "conan/internal/deploy.py",
+   "conan/tools/files/copy_pattern.py",
+   "conan/tools/files/symlinks/symlinks.py"
+  ],
+  "conan-io__conan-17851": [
+   "conans/client/loader.py",
+   "conan/api/subapi/profiles.py",
+   "conan/internal/api/profile/profile_loader.py"
+  ],
+  "conan-io__conan-17863": [
+   "conan/internal/model/profile.py",
+   "conan/tools/env/environment.py",
+   "conan/api/subapi/profiles.py"
+  ],
+  "conan-io__conan-17877": [
+   "conans/client/graph/graph_builder.py",
+   "conans/client/graph/install_graph.py",
+   "conans/client/graph/range_resolver.py"
+  ],
+  "conan-io__conan-17917": [
+   "conan/tools/cmake/cmakedeps/cmakedeps.py",
+   "conan/tools/cmake/cmakedeps2/cmakedeps.py",
+   "conan/internal/api/install/generators.py"
+  ],
+  "conan-io__conan-17923": [
+   "conan/tools/cmake/cmakedeps/cmakedeps.py",
+   "conan/tools/cmake/cmakedeps2/cmakedeps.py",
+   "conan/internal/api/install/generators.py"
+  ],
+  "conan-io__conan-17954": [
+   "conan/internal/api/install/generators.py",
+   "conan/cli/formatters/__init__.py",
+   "conan/internal/model/conan_file.py"
+  ],
+  "conan-io__conan-17964": [
+   "conan/internal/api/install/__init__.py",
+   "conan/tools/google/bazel.py",
+   "conan/internal/model/conan_file.py"
+  ],
+  "conan-io__conan-17967": [
+   "conan/internal/api/install/generators.py",
+   "conan/internal/api/profile/profile_loader.py",
+   "conan/internal/model/dependencies.py"
+  ],
+  "conan-io__conan-18012": [
+   "conan/internal/model/version_range.py"
+  ],
+  "conan-io__conan-18028": [
+   "conan/internal/cache/cache.py",
+   "conan/cli/commands/install.py"
+  ],
+  "conan-io__conan-18037": [
+   "conan/api/input.py",
+   "conan/errors.py",
+   "conan/cli/commands/pkglist.py"
+  ],
+  "conan-io__conan-18051": [
+   "conan/internal/model/settings.py",
+   "conan/internal/default_settings.py",
+   "conans/client/loader.py"
+  ],
+  "conan-io__conan-18083": [
+   "conan/cli/formatters/graph/graph.py",
+   "conan/internal/model/options.py",
+   "conan/api/subapi/graph.py"
+  ],
+  "conan-io__conan-18089": [
+   "conan/cli/commands/remote.py",
+   "conan/internal/api/remotes/localdb.py",
+   "conans/client/remote_manager.py"
+  ],
+  "conan-io__conan-18097": [
+   "conans/client/graph/install_graph.py",
+   "conans/client/graph/build_mode.py",
+   "conans/client/loader.py"
+  ],
+  "conan-io__conan-18101": [
+   "conan/api/model/refs.py",
+   "conan/internal/model/dependencies.py",
+   "conan/internal/model/conan_file.py"
+  ],
+  "conan-io__conan-18153": [
+   "conan/internal/cache/conan_reference_layout.py",
+   "conan/internal/api/install/__init__.py",
+   "conan/cli/commands/install.py"
+  ],
+  "conan-io__conan-18219": [
+   "conan/cli/commands/cache.py",
+   "conan/internal/cache/cache.py",
+   "conan/cli/args.py"
+  ],
+  "conan-io__conan-18226": [
+   "conan/api/subapi/graph.py",
+   "conan/internal/graph/graph.py",
+   "conan/internal/graph/graph_binaries.py"
+  ],
+  "conan-io__conan-18243": [
+   "conan/cli/commands/cache.py",
+   "conan/internal/cache/cache.py",
+   "conan/cli/command.py"
+  ],
+  "conan-io__conan-18244": [
+   "conan/internal/model/profile.py",
+   "conan/internal/api/profile/detect.py",
+   "conan/internal/api/profile/profile_loader.py"
+  ],
+  "conan-io__conan-18280": [
+   "conan/internal/api/install/__init__.py",
+   "conan/tools/cmake/presets.py",
+   "conan/tools/microsoft/visual.py"
+  ],
+  "conan-io__conan-18333": [
+   "conan/tools/gnu/autotoolstoolchain.py",
+   "conan/internal/api/new/autotools_lib.py",
+   "conan/tools/gnu/autotools.py"
+  ],
+  "conan-io__conan-18334": [
+   "conan/api/subapi/workspace.py",
+   "conan/cli/commands/workspace.py",
+   "conan/internal/model/workspace.py"
+  ],
+  "conan-io__conan-18410": [
+   "conan/internal/api/detect/detect_api.py",
+   "conan/internal/api/profile/detect.py",
+   "conan/internal/model/settings.py"
+  ],
+  "conan-io__conan-18442": [
+   "conan/tools/gnu/autotools.py",
+   "conan/internal/model/layout.py",
+   "conan/api/model/refs.py"
+  ],
+  "conan-io__conan-18517": [
+   "conan/tools/system/package_manager.py"
+  ],
+  "conan-io__conan-18518": [
+   "conan/internal/cache/cache.py",
+   "conan/internal/cache/conan_reference_layout.py",
+   "conan/internal/cache/home_paths.py"
+  ],
+  "conan-io__conan-18538": [
+   "conan/internal/model/settings.py",
+   "conan/internal/api/profile/profile_loader.py",
+   "conan/tools/qbs/qbsprofile.py"
+  ],
+  "conan-io__conan-18541": [
+   "conan/internal/model/conf.py",
+   "conan/api/subapi/config.py",
+   "conan/internal/api/config/config_installer.py"
+  ],
+  "conan-io__conan-18544": [
+   "conan/cli/commands/cache.py",
+   "conan/internal/cache/integrity_check.py",
+   "conan/cli/formatters/list/__init__.py"
+  ],
+  "conan-io__conan-18552": [
+   "conan/internal/api/install/__init__.py",
+   "conan/tools/cmake/cmakedeps/cmakedeps.py",
+   "conan/internal/model/cpp_info.py"
+  ],
+  "conan-io__conan-18562": [
+   "conan/tools/cmake/cmakedeps2/cmakedeps.py",
+   "conan/tools/cmake/cmakedeps2/target_configuration.py",
+   "conan/internal/api/install/generators.py"
+  ],
+  "conan-io__conan-18608": [
+   "conan/internal/api/install/__init__.py",
+   "conan/tools/cmake/toolchain/__init__.py",
+   "conan/internal/model/options.py"
+  ],
+  "conan-io__conan-18621": [
+   "conan/cli/commands/export_pkg.py",
+   "conan/internal/api/export.py",
+   "conan/cli/commands/create.py"
+  ],
+  "conan-io__conan-18642": [
+   "conan/internal/rest/remote_credentials.py",
+   "conan/cli/commands/build.py",
+   "conan/internal/rest/auth_manager.py"
+  ],
+  "conan-io__conan-18655": [
+   "conan/internal/api/upload.py",
+   "conan/cli/commands/upload.py",
+   "conan/internal/source.py"
+  ],
+  "conan-io__conan-18661": [
+   "conan/cli/commands/create.py",
+   "conan/cli/commands/export_pkg.py",
+   "conan/api/model/list.py"
+  ],
+  "conan-io__conan-18676": [
+   "conan/internal/api/new/meson_lib.py",
+   "conan/tools/meson/meson.py",
+   "conan/tools/meson/toolchain.py"
+  ],
+  "conan-io__conan-18693": [
+   "conan/api/subapi/workspace.py",
+   "conan/internal/graph/install_graph.py",
+   "conan/internal/graph/graph.py"
+  ],
+  "conan-io__conan-18832": [
+   "conan/internal/api/install/__init__.py",
+   "conan/tools/cmake/toolchain/__init__.py",
+   "conan/internal/api/install/generators.py"
+  ],
+  "conan-io__conan-18840": [
+   "conan/internal/api/install/__init__.py",
+   "conan/internal/api/profile/__init__.py",
+   "conan/tools/intel/__init__.py"
+  ],
+  "conan-io__conan-18842": [
+   "conan/internal/api/install/generators.py",
+   "conan/internal/util/files.py",
+   "conan/internal/graph/installer.py"
+  ]
+ }
+}
