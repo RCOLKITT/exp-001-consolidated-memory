@@ -253,3 +253,39 @@ What this changes before pre-registration:
    lowering it after Phase 4 is not (§7).
 3. The unit of memory is the file (D24); a symptom-level memory would have
    a strictly lower ceiling.
+
+## 11. Ceiling versus detectable effect (the pre-registration problem)
+
+Minimum detectable effect from `phase2.power` at p0 = 0.673 (two-sided
+α 0.05, power 0.8), against the ceiling from §10:
+
+| design | eval pool | MDE (pts) | ceiling at promotion ≥ 3 (pts) |
+|---|---:|---:|---:|
+| build 20, 13 repos | 588 | 7.4 | 7.3 |
+| build 40 | 337 | 9.7 | 8.0 |
+| build 60 | 223 | 11.7 | 12.6 |
+
+In every design the smallest lift the evaluation could detect is about
+equal to the largest lift file-level promoted memory could produce. The
+spec's 15-point kill number is above both. As written, Phase 4 cannot
+return a positive result on this corpus; a null would be uninformative
+because it is also what an underpowered design returns.
+
+This is a Phase 0/2 finding, before pre-registration and before Phase 3–4
+spend, which is where the spec wants it found. Levers, all of which must
+be fixed in the pre-registration and none of which touch the gate or the
+freshness rule:
+
+- **Promotion at ≥ 2 occurrences** (§6.1 is adapter config): raises the
+  ceiling — run 21 quantifies it (`results/phase0/21/recurrence.md`).
+- **Longer chains**: more corpus (option D, build fresh tasks for the
+  long-chain repos) raises both the ceiling and the power.
+- **A per-task outcome that memory can move more often**: e.g. hit@1 or
+  reciprocal rank, where re-ranking a file already in the top 3 counts.
+  Changes the primary metric; must be pre-registered with its own ceiling.
+- **Accept the bound and pre-register the mechanism paper as the primary
+  deliverable** (spec Phase 5: Gate 1 alone justifies it), running Phase
+  3–4 as a bounded, honest efficacy check with the ceiling stated.
+
+Owner decision. What is not a lever: lowering the kill number after data,
+or relaxing the freshness gate.
