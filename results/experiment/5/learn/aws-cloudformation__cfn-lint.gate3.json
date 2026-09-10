@@ -1,0 +1,17 @@
+{
+ "buffered": 85,
+ "candidate_writes": 143,
+ "cluster_similarity": 0.6,
+ "consolidation": "file-keyed+sentence-transformers/all-MiniLM-L6-v2@1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+ "discard_rate": 0.4056,
+ "discarded_or_reinforced": 58,
+ "frozen_version": "3db38ec4b18dee12c793448645062d0ca88598a7b91c5886a0d7cef50b5df184",
+ "min_distinct_inputs": 2,
+ "min_occurrences": 2,
+ "n_build": 50,
+ "promoted": 3,
+ "retrieval": "sentence-transformers/all-MiniLM-L6-v2@1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+ "rho": 0.7,
+ "similarity": "file-keyed+sentence-transformers/all-MiniLM-L6-v2@1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+ "theta": 0.45
+}

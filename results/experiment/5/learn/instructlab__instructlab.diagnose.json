@@ -1,0 +1,50 @@
+{
+ "repo_dir": "runs/learn/instructlab__instructlab",
+ "theta": 0.45,
+ "rho": 0.7,
+ "n_ingested": 89,
+ "outcomes_by_label": {
+  "buffered": {
+   "bad": 14,
+   "good": 22
+  },
+  "reinforced": {
+   "good": 20,
+   "bad": 8
+  },
+  "discarded": {
+   "bad": 20,
+   "good": 5
+  }
+ },
+ "discarded_in_theta_rho_band": 25,
+ "same_file_cosine": null,
+ "diff_file_cosine": null,
+ "share_of_pairs_at_or_above": {
+  "0.5": {
+   "same_file": null,
+   "diff_file": null
+  },
+  "0.55": {
+   "same_file": null,
+   "diff_file": null
+  },
+  "0.6": {
+   "same_file": null,
+   "diff_file": null
+  },
+  "0.65": {
+   "same_file": null,
+   "diff_file": null
+  },
+  "0.7": {
+   "same_file": null,
+   "diff_file": null
+  },
+  "0.75": {
+   "same_file": null,
+   "diff_file": null
+  }
+ },
+ "promoted": 7
+}

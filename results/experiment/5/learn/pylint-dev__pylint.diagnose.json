@@ -1,0 +1,50 @@
+{
+ "repo_dir": "runs/learn/pylint-dev__pylint",
+ "theta": 0.45,
+ "rho": 0.7,
+ "n_ingested": 113,
+ "outcomes_by_label": {
+  "buffered": {
+   "good": 23,
+   "bad": 7
+  },
+  "reinforced": {
+   "good": 25,
+   "bad": 8
+  },
+  "discarded": {
+   "good": 42,
+   "bad": 8
+  }
+ },
+ "discarded_in_theta_rho_band": 50,
+ "same_file_cosine": null,
+ "diff_file_cosine": null,
+ "share_of_pairs_at_or_above": {
+  "0.5": {
+   "same_file": null,
+   "diff_file": null
+  },
+  "0.55": {
+   "same_file": null,
+   "diff_file": null
+  },
+  "0.6": {
+   "same_file": null,
+   "diff_file": null
+  },
+  "0.65": {
+   "same_file": null,
+   "diff_file": null
+  },
+  "0.7": {
+   "same_file": null,
+   "diff_file": null
+  },
+  "0.75": {
+   "same_file": null,
+   "diff_file": null
+  }
+ },
+ "promoted": 4
+}
