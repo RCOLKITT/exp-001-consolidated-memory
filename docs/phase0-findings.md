@@ -160,10 +160,10 @@ verifier is therefore "Llama 3.3 70B Instruct, bf16/fp16, served by Crusoe
 or CoreWeave in that order, no other providers" (D19).
 
 **Power, from the measured rate.** With p0 = 0.673 and a 15-point lift,
-the two-proportion floor is 111 tasks per arm; the 13-repo eval split
-(~588 tasks at build = 20) detects ~6.5 points, the 4-repo alternative
-(~188) ~11 points. The Gate 4 kill number of 15 points stands; it is
-comfortably above the MDE.
+the two-proportion floor is 131 tasks per arm (`python -m phase2.power
+--p0 0.673 --mde 0.15`); the 13-repo eval split (~588 tasks at build = 20)
+detects ~7.4 points, the 4-repo alternative (~188) ~12.7 points. The Gate 4
+kill number of 15 points stands; it is above the MDE in both designs.
 
 **Ceiling.** streamlink (1.00) and pvlib (0.95) leave no room for a 15-point
 lift, and haystack/instructlab (0.80) leave exactly 15. A repo at the

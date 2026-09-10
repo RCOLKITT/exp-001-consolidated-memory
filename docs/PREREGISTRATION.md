@@ -15,8 +15,8 @@ that, changing any value below invalidates the result.
 | Promotion thresholds | occurrences ≥ 3, distinct inputs ≥ 3, label = bad only, SoD on, cluster_similarity = ____ |
 | TTL (in nightly runs) | |
 | Minimum promoted memories per repo (Gate 3 floor) | |
-| Minimum detectable effect (from power calc) | draft: p0 = 0.673 (run 18); MDE ≈ 6.5 pts at ~588 eval tasks (13 repos), 15-pt lift needs 111/arm |
-| Localization lift kill number | ≥ 15 pts absolute (MDE ≈ 6.5 pts, so 15 stands) |
+| Minimum detectable effect (from power calc) | draft: p0 = 0.673 (run 18); MDE ≈ 7.4 pts at ~588 eval tasks (13 repos), 15-pt lift needs 131/arm |
+| Localization lift kill number | ≥ 15 pts absolute (MDE ≈ 7.4 pts, so 15 stands) |
 | False-positive ceiling | ≤ +5 pts absolute |
 | Hard stop date | |
 
