@@ -41,7 +41,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: phase0-results
+  group: phase0-${{ github.ref }}
 jobs:
   corpus:
     runs-on: ubuntu-latest
