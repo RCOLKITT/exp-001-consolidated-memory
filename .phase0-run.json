@@ -1,0 +1,4 @@
+{"dataset": "SWE-bench-Live/SWE-bench-Live", "split": "full", "cutoff": "2023-12-31",
+ "model": "meta-llama/llama-3.3-70b-instruct", "provider": "openai-compatible", "base_url": "https://openrouter.ai/api/v1",
+ "model_extra": {"provider": {"order": ["Crusoe"], "allow_fallbacks": false}},
+ "run_control": true, "limit": 50, "top_k": 3}
