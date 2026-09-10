@@ -289,3 +289,31 @@ freshness rule:
 
 Owner decision. What is not a lever: lowering the kill number after data,
 or relaxing the freshness gate.
+
+### 11.1 Ceilings at promotion ≥ 2 (run 21)
+
+| build N | eval pool | MDE (pts) | ceiling, promote ≥ 3 | ceiling, promote ≥ 2 |
+|---:|---:|---:|---:|---:|
+| 20 | 588 | 7.4 | 7.3 | 10.5 |
+| 30 | 440 | 8.6 | 8.0 | 12.5 |
+| 40 | 337 | 9.7 | 8.0 | 14.2 |
+| 50 | 275 | 10.7 | 9.5 | 17.3 |
+| 60 | 223 | 11.7 | 12.6 | 17.4 |
+
+With promotion at two occurrences from two distinct tasks, build 40–50
+gives a ceiling 4–7 points above the MDE — a design that can detect its
+own maximum effect. Per repo the room is very uneven (build 40, ≥ 2):
+cfn-lint 31 pts (control 0.20), pylint 20, matplotlib 12, instructlab 10,
+conan 8, haystack 7. The majority-of-repos criterion will be decided by
+the repos with little room, which argues for reporting per-repo lift
+against per-repo ceiling rather than a bare majority.
+
+Recommended pre-registration design (owner to confirm):
+- promotion: ≥ 2 `bad` records from ≥ 2 distinct tasks (§6.1–6.2 set to 2);
+  every other §6 rule unchanged;
+- build split: 50 for repos with ≥ 70 tasks (conan, cfn-lint, matplotlib,
+  haystack), 40 for pylint, 30 for instructlab / keras / reflex /
+  streamlink / sphinx, 20 for pdm / linkding / pvlib — eval pool ≈ 300;
+- kill number: ≥ 10 points aggregate lift (MDE ≈ 10.5 at that pool) with
+  the ceiling (~15 at that mix) stated next to it; FP ceiling unchanged;
+- per-repo reporting of lift / ceiling; negative control unchanged.
