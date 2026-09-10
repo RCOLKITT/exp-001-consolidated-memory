@@ -36,3 +36,12 @@ def test_handcheck_export_and_agreement(tmp_path):
         w = csv.DictWriter(f, fieldnames=rows[0].keys()); w.writeheader(); w.writerows(rows)
     assert agreement(str(out)) == (0.5, 1, 2)
     assert sample_flags([json.loads(flags.read_text())], 1, 0) == sample_flags([json.loads(flags.read_text())], 1, 0)
+
+
+def test_independent_parser_agrees_with_oracle_parser_on_ordinary_patches():
+    from phase0.ground_truth import gold_files
+    from phase2.handcheck import independent_gold_files
+    patch = ("diff --git a/pkg/a.py b/pkg/a.py\n--- a/pkg/a.py\n+++ b/pkg/a.py\n@@ -1,2 +1,2 @@\n-x\n+y\n"
+             "diff --git a/tests/test_a.py b/tests/test_a.py\n--- a/tests/test_a.py\n+++ b/tests/test_a.py\n@@ -1 +1 @@\n-x\n+y\n"
+             "diff --git a/pkg/gone.py b/pkg/gone.py\ndeleted file mode 100644\n--- a/pkg/gone.py\n+++ /dev/null\n@@ -1 +0,0 @@\n-x\n")
+    assert independent_gold_files(patch) == set(gold_files(patch)) == {"pkg/a.py", "pkg/gone.py"}

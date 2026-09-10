@@ -229,6 +229,7 @@ jobs:
           python -m phase0.run_control --compare runs/control-a runs/control-b | tee runs/compare.txt
           # oracle hand-check sample (Gate 2.3): 50 flags, fixed seed, oracle label + gold files, manual column blank
           python -m phase2.handcheck export runs/control-a/flags.jsonl corpus/tasks.jsonl --n 50 --seed 1 --out runs/handcheck.csv
+          python -m phase2.handcheck verify runs/handcheck.csv corpus/tasks.jsonl --out runs/handcheck-verified.csv | tee runs/handcheck-verify.txt || true
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -243,6 +244,7 @@ jobs:
           for f in metrics.json manifest.json flags.jsonl errors.jsonl freshness.jsonl; do [ -f runs/control-a/$f ] && cp runs/control-a/$f "$D/"; done; true
           [ -f runs/compare.txt ] && cp runs/compare.txt "$D/"
           [ -f runs/handcheck.csv ] && cp runs/handcheck.csv "$D/"
+          [ -f runs/handcheck-verified.csv ] && cp runs/handcheck-verified.csv runs/handcheck-verify.txt "$D/"; true
           git config user.name "phase0-bot"; git config user.email "phase0-bot@users.noreply.github.com"
           git add results/
           git commit -m "results(phase0): run ${{ github.run_number }} control arm [skip ci]" || exit 0
