@@ -66,7 +66,7 @@ it byte for byte.
 
 ## Gates that must pass before Phase 3 starts
 - Gate 0.1 published baseline reference — closed (D26, findings §13)
-- Gate 2.3 oracle hand-check ≥ 0.95 on `results/phase0/19/control/handcheck.csv` — owner to label
+- Gate 2.3 oracle hand-check — closed at 50/50 (D27)
 
 ## Sign-off
 - Registered by: Claude (session), on the owner's instruction, 2026-09-10

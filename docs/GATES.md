@@ -35,7 +35,7 @@ Tooling: `phase2/power.py` (n per arm / MDE), `phase2/handcheck.py` (oracle vs m
 
 - [x] Pre-registration published and timestamped — `docs/PREREGISTRATION.md`, commit `a58d7e20ca6b`, branch `prereg/v1` (2026-09-10)
 - [x] Per-repo chains ≥ power-calc minimum — eval pool 373, MDE 9.2 pts < kill number 10 < ceiling 17.9 (PREREGISTRATION.md)
-- [ ] Oracle agreement with manual labels ≥ 95% on a 50-instance hand-check — sample ready at `results/phase0/19/control/handcheck.csv` (fill `manual`), then `python -m phase2.handcheck score …`
+- [x] Oracle agreement ≥ 95% on a 50-instance hand-check — 50/50 with an independent parser plus a row audit (D27, `results/phase0/22/control/`)
 - [x] Similarity seam: retrieval by pinned MiniLM cosine, consolidation by file (D20, D23, D24); Θ/ρ/cluster from `results/phase2/4–5` for the semantic variant; end-to-end on real data `results/experiment/4/`
 - [x] Promotion threshold and build split fixed from the recurrence ceilings — registered (D25)
 

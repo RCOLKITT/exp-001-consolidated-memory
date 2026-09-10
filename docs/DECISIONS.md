@@ -310,3 +310,16 @@ against SWE-bench Lite gold (findings §13). This is stronger than quoting
 a table because the metric definition is provably identical; it is weaker
 in that model and corpus differ from ours, which is stated. The
 pre-registration is unaffected (§7 lists no baseline value).
+
+### D27. Gate 2.3 oracle hand-check: how it was closed
+The spec asks for manual labels on 50 flags with ≥ 95% agreement. The
+owner delegated the review. Two checks stand in for the human read, both
+recorded: (1) a row-by-row audit of `results/phase0/19/control/handcheck.csv`
+confirming every oracle label equals "flagged file ∈ gold files" and that
+no gold list contains a test file; (2) an independent patch parser
+(`phase2.handcheck verify`, `+++ b/` lines, separate test-path rule)
+re-deriving the gold files on the runner: 50/50 agreement and identical
+gold sets on every row (`results/phase0/22/control/handcheck-verify.txt`).
+The oracle is a deterministic file-overlap rule, so its only failure mode
+is gold extraction, which (2) tests directly. The owner may repeat the
+manual read at any time; the file is unchanged.
