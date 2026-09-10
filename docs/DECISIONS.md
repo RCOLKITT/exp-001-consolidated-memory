@@ -176,3 +176,16 @@ December 2023 gate keeps 13. Recommendation is therefore **Llama 3.3 70B**,
 with Llama 4 Maverick pre-registered as the fallback (docs/phase0-findings.md §6). Localization level will be below Opus 5; the
 experiment measures lift, and Gate 0 compares against a baseline reported
 for a comparable model, not a frontier one.
+
+### D17. Verifier pinned to one OpenRouter endpoint
+`results/phase0/11/control/endpoints.json` lists 13 hosts serving
+`meta-llama/llama-3.3-70b-instruct` behind OpenRouter, at quantisations
+fp8, bf16, fp16 and "unknown", with context windows from 12k to 131k. A
+quantised or context-truncated build is a different verifier, and unpinned
+routing can switch between them mid-run. The pre-registered verifier is
+therefore the **Crusoe bf16 endpoint** (131,072 context, structured
+outputs supported, $0.25 / $0.75 per M tokens at the time of listing), via
+`model_extra = {"provider": {"order": ["Crusoe"], "allow_fallbacks": false}}`.
+Fallback if Crusoe is unavailable during a run: CoreWeave fp16 (128k,
+structured outputs), recorded as a deviation if used. Never fp8 for
+pre-registered runs.

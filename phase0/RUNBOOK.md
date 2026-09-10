@@ -31,7 +31,7 @@ carries a `.phase0-run.json`:
   The control job first writes `results/phase0/<n>/control/endpoints.json`
   (every provider serving the model, with quantisation and price). Pin one
   provider and quantisation for the pre-registration via `model_extra`, e.g.
-  `{"provider": {"order": ["<provider_name>"], "allow_fallbacks": false, "quantizations": ["bf16"]}}`.
+  `{"provider": {"order": ["Crusoe"], "allow_fallbacks": false}}` (chosen in D17).
   Unpinned OpenRouter routing can change the verifier between runs.
 
 ## B. On your machine
