@@ -25,6 +25,26 @@ def dir_of(p: str) -> str:
     return p.rsplit("/", 1)[0] if "/" in p else "."
 
 
+def ceilings(res: dict, control_per_repo: dict) -> dict:
+    """ceiling on lift (pts) per repo/prefix and aggregated, for promotion at >= 2 and >= 3 occurrences:
+    seenK x (1 - p0), p0 = control hit@k of the repo."""
+    out = {"per_repo": {}, "aggregate": {}}
+    agg: dict = {}
+    for repo, d in res.items():
+        p0 = control_per_repo.get(repo, {}).get("localization_rate")
+        if p0 is None:
+            continue
+        for r in d["rows"]:
+            if r["n_eval"] < 10 or r["prefix"] >= d["n_tasks"]:
+                continue
+            c2 = 100 * (r["eval_file_seen2"] or 0) * (1 - p0); c3 = 100 * (r["eval_file_seen3"] or 0) * (1 - p0)
+            out["per_repo"].setdefault(repo, {})[str(r["prefix"])] = {"n_eval": r["n_eval"], "p0": p0, "ceiling_ge2": round(c2, 1), "ceiling_ge3": round(c3, 1)}
+            a = agg.setdefault(str(r["prefix"]), {"eval": 0, "r2": 0.0, "r3": 0.0}); a["eval"] += r["n_eval"]; a["r2"] += r["n_eval"] * c2; a["r3"] += r["n_eval"] * c3
+    for k, a in agg.items():
+        out["aggregate"][k] = {"eval_pool": a["eval"], "ceiling_ge2": round(a["r2"] / a["eval"], 1), "ceiling_ge3": round(a["r3"] / a["eval"], 1)}
+    return out
+
+
 def analyse(tasks, repos, prefixes):
     out = {}
     chains = {c.repo: c for c in build_chains(tasks)}
@@ -44,10 +64,11 @@ def analyse(tasks, repos, prefixes):
                     dc[d] += 1
             ev = golds[N:]
             seen1 = sum(1 for g in ev if any(fc.get(f, 0) >= 1 for f in g)); seen3 = sum(1 for g in ev if any(fc.get(f, 0) >= 3 for f in g))
+            seen2 = sum(1 for g in ev if any(fc.get(f, 0) >= 2 for f in g))
             dseen1 = sum(1 for g in ev if any(dc.get(dir_of(f), 0) >= 1 for f in g)); dseen3 = sum(1 for g in ev if any(dc.get(dir_of(f), 0) >= 3 for f in g))
             rows.append({"prefix": N, "n_eval": len(ev), "files_ge3": sum(1 for v in fc.values() if v >= 3), "files_ge2": sum(1 for v in fc.values() if v >= 2),
                          "dirs_ge3": sum(1 for v in dc.values() if v >= 3), "distinct_files": len(fc), "distinct_dirs": len(dc),
-                         "eval_file_seen1": round(seen1 / len(ev), 3) if ev else None, "eval_file_seen3": round(seen3 / len(ev), 3) if ev else None,
+                         "eval_file_seen1": round(seen1 / len(ev), 3) if ev else None, "eval_file_seen2": round(seen2 / len(ev), 3) if ev else None, "eval_file_seen3": round(seen3 / len(ev), 3) if ev else None,
                          "eval_dir_seen1": round(dseen1 / len(ev), 3) if ev else None, "eval_dir_seen3": round(dseen3 / len(ev), 3) if ev else None,
                          "top_files": fc.most_common(3)})
         out[repo] = {"n_tasks": len(c.tasks), "rows": rows}
@@ -67,9 +88,15 @@ def _main(argv):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("tasks"); ap.add_argument("--repos", required=True); ap.add_argument("--prefixes", default="20,40,60")
     ap.add_argument("--md"); ap.add_argument("--json", dest="json_out")
+    ap.add_argument("--control-metrics", help="phase0 control metrics.json: adds ceilings on lift (seenK x (1 - p0))")
     a = ap.parse_args(argv)
     res = analyse(read_tasks(a.tasks), [r.strip() for r in a.repos.split(",") if r.strip()], [int(x) for x in a.prefixes.split(",")])
     md = markdown(res)
+    if a.control_metrics:
+        c = ceilings(res, json.loads(Path(a.control_metrics).read_text())["per_repo"])
+        res["_ceilings"] = c
+        md += "\n## Ceiling on lift (pts) = seenK x (1 - p0)\n\n| build N | eval pool | promote at >= 2 | promote at >= 3 |\n|---:|---:|---:|---:|\n"
+        md += "\n".join(f"| {k} | {v['eval_pool']} | {v['ceiling_ge2']} | {v['ceiling_ge3']} |" for k, v in sorted(c["aggregate"].items(), key=lambda kv: int(kv[0]))) + "\n"
     if a.md: Path(a.md).parent.mkdir(parents=True, exist_ok=True); Path(a.md).write_text(md)
     if a.json_out: Path(a.json_out).write_text(json.dumps(res, indent=1))
     sys.stdout.write(md)

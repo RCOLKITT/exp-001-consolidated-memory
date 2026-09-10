@@ -145,8 +145,9 @@ jobs:
       - name: Gold-location recurrence report (Gate 3 precheck, no model)
         if: steps.cfg.outputs.repos != ''
         run: |
-          python -m phase2.recurrence corpus/tasks.jsonl --repos "${{ steps.cfg.outputs.repos }}" --prefixes 20,40,60 \
-            --md "${{ steps.dir.outputs.dir }}/recurrence.md" --json "${{ steps.dir.outputs.dir }}/recurrence.json" | head -60
+          CM=""; [ -f results/phase0/18/control/metrics.json ] && CM="--control-metrics results/phase0/18/control/metrics.json"
+          python -m phase2.recurrence corpus/tasks.jsonl --repos "${{ steps.cfg.outputs.repos }}" --prefixes 20,30,40,50,60,80 $CM \
+            --md "${{ steps.dir.outputs.dir }}/recurrence.md" --json "${{ steps.dir.outputs.dir }}/recurrence.json" | tail -12
       - uses: actions/upload-artifact@v4
         with:
           name: corpus-${{ github.run_number }}
