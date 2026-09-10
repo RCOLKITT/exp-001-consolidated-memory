@@ -1,0 +1,1 @@
+{"dataset": "SWE-bench-Live/SWE-bench-Live", "split": "full", "cutoff": "2025-03-31", "model": "claude-sonnet-4-0", "run_control": false, "limit": 50, "top_k": 3}
