@@ -1,0 +1,65 @@
+{
+ "dataset": "SWE-bench-Live/SWE-bench-Live",
+ "split": "full",
+ "cutoff": "2025-03-31",
+ "n_tasks": 595,
+ "n_repos": 177,
+ "first": "2025-04-01",
+ "last": "2025-09-02",
+ "per_month": {
+  "2025-04": 112,
+  "2025-05": 119,
+  "2025-06": 109,
+  "2025-07": 115,
+  "2025-08": 137,
+  "2025-09": 3
+ },
+ "survivors_after_cutoff": {
+  "2024-07-01": {
+   "tasks": 595,
+   "repos": 177,
+   "repos_ge30": 2,
+   "repos_ge20": 3
+  },
+  "2025-01-01": {
+   "tasks": 595,
+   "repos": 177,
+   "repos_ge30": 2,
+   "repos_ge20": 3
+  },
+  "2025-04-01": {
+   "tasks": 591,
+   "repos": 177,
+   "repos_ge30": 2,
+   "repos_ge20": 3
+  },
+  "2025-07-01": {
+   "tasks": 248,
+   "repos": 106,
+   "repos_ge30": 0,
+   "repos_ge20": 0
+  },
+  "2026-01-01": {
+   "tasks": 0,
+   "repos": 0,
+   "repos_ge30": 0,
+   "repos_ge20": 0
+  }
+ },
+ "languages": {
+  "?": 595
+ },
+ "fields": [
+  "base_commit",
+  "created_at",
+  "environment_setup_commit",
+  "fail_to_pass",
+  "hints_text",
+  "instance_id",
+  "pass_to_pass",
+  "patch",
+  "problem_statement",
+  "repo",
+  "test_patch"
+ ]
+}
