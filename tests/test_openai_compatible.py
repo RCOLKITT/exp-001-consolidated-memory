@@ -129,3 +129,11 @@ def test_cache_records_provider_meta(server, tmp_path):
         cc2.complete(_req()); assert cc2.last_meta["provider"] == "Crusoe"          # provenance survives the cache
     finally:
         Stub.do_POST = orig
+
+
+def test_truncated_json_is_salvaged_in_order():
+    resp = {"choices": [{"message": {"content": '{"files": [{"path": "pkg/a.py", "reason": "x"}, {"path": "pkg/b.py", "reason": "unterminated'}}]}
+    out = json.loads(OpenAICompatibleClient._extract(resp))
+    assert [f["path"] for f in out["files"]] == ["pkg/a.py", "pkg/b.py"] and out["salvaged"] is True
+    with pytest.raises(json.JSONDecodeError):
+        OpenAICompatibleClient._extract({"choices": [{"message": {"content": "no json at all"}}]})

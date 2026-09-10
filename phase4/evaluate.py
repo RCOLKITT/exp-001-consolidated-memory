@@ -65,12 +65,12 @@ def _main(argv):
         write_json({"control": mc.to_json(), "treatment": mt.to_json(), "lift": l, "retrieval_hit_rate": treatment.retrieval_hit_rate,
                     "control_flags": {k: [f.location.path for f in v] for k, v in control.flags_by_task.items()},
                     "treatment_flags": {k: [f.location.path for f in v] for k, v in treatment.flags_by_task.items()},
-                    "retrieved": treatment.retrieved_by_task}, rd / "arms.json")
+                    "retrieved": treatment.retrieved_by_task, "errors": treatment.errors, "n_errors": len(treatment.errors)}, rd / "arms.json")
         if chain.repo == args.negative_control:
             neg = l
         else:
             controls.append(mc); treatments.append(mt); per_repo_lift[chain.repo] = l
-        sys.stderr.write(f"{chain.repo}: n={len(ev)} control loc={mc.localization_rate:.3f} fp={mc.false_positive_rate:.3f} | treatment loc={mt.localization_rate:.3f} fp={mt.false_positive_rate:.3f} | lift={l}\n")
+        sys.stderr.write(f"{chain.repo}: n={len(ev)} errors={len(treatment.errors)} control loc={mc.localization_rate:.3f} fp={mc.false_positive_rate:.3f} | treatment loc={mt.localization_rate:.3f} fp={mt.false_positive_rate:.3f} | lift={l}\n")
     report = gate4_report(_merge(controls), _merge(treatments), per_repo_lift, neg) if controls else {"error": "no repos evaluated"}
     write_json(report, out / "gate4.json")
     sys.stdout.write(json.dumps({k: report[k] for k in report if k not in ("control", "treatment")}, indent=1) + "\n")

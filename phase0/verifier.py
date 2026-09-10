@@ -19,6 +19,7 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import re
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Optional, Protocol, Sequence
@@ -179,8 +180,10 @@ class OpenAICompatibleClient:
         return {"provider": resp.get("provider"), "model": resp.get("model"),
                 "prompt_tokens": u.get("prompt_tokens"), "completion_tokens": u.get("completion_tokens")}
 
-    @staticmethod
-    def _extract(resp: dict) -> str:
+    _PATH_RE = re.compile(r'"path"\s*:\s*"([^"\n]+)"')
+
+    @classmethod
+    def _extract(cls, resp: dict) -> str:
         text = resp["choices"][0]["message"]["content"]
         if not isinstance(text, str):
             text = "".join(part.get("text", "") for part in text)
@@ -188,9 +191,17 @@ class OpenAICompatibleClient:
         if text.startswith("```"):
             text = text.strip("`")
             text = text[text.find("{"):]
-        data = json.loads(text[text.find("{"): text.rfind("}") + 1])
-        if not isinstance(data.get("files"), list):
-            raise ValueError("response has no files list")
+        try:
+            data = json.loads(text[text.find("{"): text.rfind("}") + 1])
+            if not isinstance(data.get("files"), list):
+                raise ValueError("response has no files list")
+        except (json.JSONDecodeError, ValueError):
+            # Truncated or malformed output (e.g. max_tokens hit mid-string): keep every
+            # completed "path" in order, drop reasons. Deterministic; recorded as salvaged.
+            paths = cls._PATH_RE.findall(text)
+            if not paths:
+                raise
+            data = {"files": [{"path": p, "reason": ""} for p in paths], "salvaged": True}
         return json.dumps(data, sort_keys=True)
 
     def complete(self, req: ModelRequest) -> str:

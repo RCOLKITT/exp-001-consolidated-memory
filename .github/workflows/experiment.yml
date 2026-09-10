@@ -97,6 +97,9 @@ jobs:
           N="${{ steps.cfg.outputs.learn_run }}"; test -n "$N" || { echo "learn_run is required for stage=evaluate"; exit 3; }
           RID=$(gh api "repos/${{ github.repository }}/actions/workflows/experiment.yml/runs?per_page=100" --jq ".workflow_runs[] | select(.run_number == $N) | .id" | head -1)
           gh run download "$RID" -n "learn-$N" -D runs/learn/
+          gh run download "$RID" -n "eval-$N" -D runs/eval/ || echo "no eval artifact to reuse"
+          ls runs/learn runs/eval 2>/dev/null | head -30
+          echo "{\"resume_of\": $N}" > "${{ steps.cfg.outputs.dir }}/resume.json"
       - name: Phase 4 — evaluate
         if: steps.cfg.outputs.stage != 'learn'
         run: |

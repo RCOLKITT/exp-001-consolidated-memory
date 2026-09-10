@@ -134,3 +134,20 @@ def test_file_keyed_consolidation_promotes_recurring_file_and_retrieves_semantic
     control, treatment = p.evaluate(ev, seed=1)
     assert treatment.retrieval_hit_rate == 1.0 and control.retrieval_hit_rate == 0.0
     assert p.gate3_stats()["consolidation"] if "consolidation" in p.gate3_stats() else True
+
+
+def test_evaluate_excludes_failing_task_from_both_arms():
+    class Flaky(RepeatingVerifier):
+        def complete(self, req):
+            if "issue 11" in req.user:
+                raise RuntimeError("boom")
+            return super().complete(req)
+    build = [_task(i, "pkg/parser.py") for i in range(1, 7)]
+    ev = [_task(i, "pkg/parser.py") for i in range(10, 14)]
+    truth = ground_truth_from_tasks(build + ev)
+    cfg = KernelConfig(ttl_ticks=100, policy=PromotionPolicy(schedule_every_ticks=1, cluster_similarity=0.5))
+    p = RepoPipeline("o/r", Localizer(Flaky(), "m", k=2), TokenJaccardSimilarity(), truth, cfg, lambda t: FILES, fixed_clock())
+    p.learn(build)
+    control, treatment = p.evaluate(ev, seed=2)
+    assert set(control.errors) == set(treatment.errors) == {"o__r-11"}
+    assert set(control.flags_by_task) == set(treatment.flags_by_task) == {"o__r-10", "o__r-12", "o__r-13"}

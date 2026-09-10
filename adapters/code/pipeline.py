@@ -56,6 +56,7 @@ class ArmResult:
     version: Optional[str]
     flags_by_task: dict[str, tuple[Flag, ...]] = field(default_factory=dict)
     retrieved_by_task: dict[str, tuple[str, ...]] = field(default_factory=dict)   # memory ids shown
+    errors: dict[str, str] = field(default_factory=dict)                          # task -> error (excluded from both arms)
 
     def metrics(self, truth: GroundTruth, repo_of) -> ArmMetrics:
         return score(self.flags_by_task, truth, repo_of)
@@ -115,9 +116,15 @@ class RepoPipeline:
         if self.kernel.frozen:
             raise RuntimeError("kernel already frozen")
         tasks = sorted(build_tasks, key=lambda t: (t.created_at, t.instance_id))
+        self.learn_errors: dict[str, str] = {}
         for t in tasks:
             memories, _ = self._retrieve(t)
-            flags = self._localize(t, memories)
+            try:
+                flags = self._localize(t, memories)
+            except Exception as e:  # skip the task; it contributes no records and is reported
+                self.learn_errors[t.instance_id] = f"{type(e).__name__}: {str(e)[:300]}"
+                self.kernel.tick()
+                continue
             for r in self._records(t, flags):
                 self.kernel.ingest(r)
             res = self.kernel.tick()
@@ -136,11 +143,18 @@ class RepoPipeline:
         rng.shuffle(order)                                     # randomised task order
         for i, t in enumerate(order):
             arms = [control, treatment] if (i + rng.randrange(2)) % 2 == 0 else [treatment, control]   # interleaved
-            for arm in arms:
-                self.kernel.pin(arm.version)
-                memories, ids = self._retrieve(t) if arm.version else ([], ())
-                arm.flags_by_task[t.instance_id] = self._localize(t, memories)
-                arm.retrieved_by_task[t.instance_id] = ids
+            results = {}
+            try:
+                for arm in arms:
+                    self.kernel.pin(arm.version)
+                    memories, ids = self._retrieve(t) if arm.version else ([], ())
+                    results[arm.arm] = (self._localize(t, memories), ids)
+            except Exception as e:  # a task that fails in either arm is excluded from both: pairing is preserved
+                msg = f"{type(e).__name__}: {str(e)[:300]}"
+                control.errors[t.instance_id] = msg; treatment.errors[t.instance_id] = msg
+                continue
+            for arm in (control, treatment):
+                arm.flags_by_task[t.instance_id], arm.retrieved_by_task[t.instance_id] = results[arm.arm]
         return control, treatment
 
     # -- Learning-phase diagnostics (Gate 3) -------------------------------------
@@ -155,6 +169,7 @@ class RepoPipeline:
             "discard_rate": round((n - buffered) / n, 4) if n else 0.0,
             "promoted": len(self.kernel.store.live()),
             "frozen_version": self.frozen_version,
+            "learn_errors": getattr(self, "learn_errors", {}),
         }
 
 
