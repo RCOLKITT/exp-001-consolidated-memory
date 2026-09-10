@@ -1,0 +1,51 @@
+{
+  "corpus_run": 18,
+  "stage": "evaluate",
+  "repos": [
+    "conan-io/conan",
+    "aws-cloudformation/cfn-lint",
+    "matplotlib/matplotlib",
+    "deepset-ai/haystack",
+    "pylint-dev/pylint",
+    "instructlab/instructlab",
+    "keras-team/keras",
+    "reflex-dev/reflex",
+    "streamlink/streamlink",
+    "sphinx-doc/sphinx",
+    "pdm-project/pdm",
+    "sissbruecker/linkding",
+    "pvlib/pvlib-python"
+  ],
+  "build": 20,
+  "build_rule": "70:50,58:40,41:30,0:20",
+  "min_eval": 10,
+  "ceiling_metrics": "results/phase0/18/control/metrics.json",
+  "ceiling": 0.9,
+  "negative_control": "sissbruecker/linkding",
+  "min_occurrences": 2,
+  "min_distinct_inputs": 2,
+  "model": "meta-llama/llama-3.3-70b-instruct",
+  "provider": "openai-compatible",
+  "base_url": "https://openrouter.ai/api/v1",
+  "model_extra": {
+    "provider": {
+      "order": [
+        "Crusoe",
+        "CoreWeave"
+      ],
+      "allow_fallbacks": false
+    }
+  },
+  "similarity": "embedding",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "consolidation": "file",
+  "theta": 0.45,
+  "rho": 0.7,
+  "cluster_similarity": 0.6,
+  "ttl": 30,
+  "top_k": 3,
+  "seed": 7,
+  "max_eval_per_repo": 0,
+  "learn_run": 5
+}
