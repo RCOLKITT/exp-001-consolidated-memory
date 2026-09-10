@@ -21,6 +21,7 @@ from phase0.corpus import read_tasks
 def _main(argv):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("tasks"); ap.add_argument("--repos", required=True); ap.add_argument("--build", type=int, default=20)
+    ap.add_argument("--build-rule", default="", help='"70:50,58:40,41:30,0:20" = chains with >= 70 tasks build 50, >= 58 build 40, ... (overrides --build)')
     ap.add_argument("--min-eval", type=int, default=10); ap.add_argument("--ceiling-metrics"); ap.add_argument("--ceiling", type=float, default=0.90)
     ap.add_argument("--out", required=True)
     a = ap.parse_args(argv)
@@ -33,13 +34,20 @@ def _main(argv):
             rate = per.get(r, {}).get("localization_rate")
             if rate is not None and rate >= a.ceiling:
                 dropped[r] = rate
+    rule = sorted(((int(k), int(v)) for k, v in (x.split(":") for x in a.build_rule.split(",") if x)), reverse=True) if a.build_rule else []
+    def build_for(n):
+        for threshold, b in rule:
+            if n >= threshold:
+                return b
+        return a.build
     split = {}
     for r in wanted:
         if r in dropped or r not in chains:
             continue
-        if len(chains[r]) < a.build + a.min_eval:
-            sys.stderr.write(f"skip {r}: {len(chains[r])} tasks < {a.build}+{a.min_eval}\n"); continue
-        split[r] = a.build
+        b = build_for(len(chains[r]))
+        if len(chains[r]) < b + a.min_eval:
+            sys.stderr.write(f"skip {r}: {len(chains[r])} tasks < {b}+{a.min_eval}\n"); continue
+        split[r] = b
     Path(a.out).parent.mkdir(parents=True, exist_ok=True)
     Path(a.out).write_text(json.dumps(split, indent=1, sort_keys=True))
     sys.stderr.write(f"split: {len(split)} repos, build={a.build}; dropped at ceiling {a.ceiling}: {dropped}\n")

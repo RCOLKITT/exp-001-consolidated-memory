@@ -290,3 +290,15 @@ What this makes the treatment arm: a consolidated, provenance-tracked
 prior over recurring defect locations, recalled by symptom. Whether that
 lifts localization is exactly the efficacy question; the recurrence
 report (`results/phase0/20/recurrence.md`) bounds how much it could.
+
+### D25. Registered design (prereg-v1)
+Owner approved the recommended design and ceiling option (b) on
+2026-09-10. Promotion at ≥ 2 records from ≥ 2 tasks (spec §6 said 3):
+the recurrence analysis (findings §10–11) showed that at 3 the maximum
+possible lift is below the detectable effect in every split, so the
+experiment could not have returned a positive result by construction.
+Build split by chain length, ceiling rule at 0.90 control hit@3
+(excludes streamlink, pvlib), linkding as negative control, kill number
+10 pts against a ceiling of ~17.9 and an MDE of ~9.2 on 373 eval tasks.
+All values in docs/PREREGISTRATION.md; run config in docs/exp-run.prereg.json.
+Nothing here changes after the tag.

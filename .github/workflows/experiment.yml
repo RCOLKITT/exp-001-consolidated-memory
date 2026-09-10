@@ -3,7 +3,8 @@
 #   "corpus_run": 18,                       # phase0 run whose corpus artifact (tasks.jsonl + models.json) to reuse
 #   "stage": "both",                        # learn | evaluate | both
 #   "learn_run": "",                        # for stage=evaluate: experiment run number whose learn artifact to reuse
-#   "repos": ["owner/name", ...], "build": 20, "min_eval": 10,
+#   "repos": ["owner/name", ...], "build": 20, "build_rule": "70:50,58:40,41:30,0:20", "min_eval": 10,
+#   "min_occurrences": 2, "min_distinct_inputs": 2,
 #   "ceiling_metrics": "results/phase0/18/control/metrics.json", "ceiling": 0.90,   # optional ceiling rule (D19)
 #   "negative_control": "owner/name",
 #   "model": "meta-llama/llama-3.3-70b-instruct", "provider": "openai-compatible", "base_url": "https://openrouter.ai/api/v1",
@@ -46,7 +47,7 @@ jobs:
           for k, d in [("corpus_run", ""), ("stage", "both"), ("learn_run", ""), ("build", 20), ("min_eval", 10), ("ceiling_metrics", ""), ("ceiling", 0.90),
                        ("negative_control", ""), ("model", "meta-llama/llama-3.3-70b-instruct"), ("provider", "openai-compatible"),
                        ("base_url", "https://openrouter.ai/api/v1"), ("similarity", "embedding"), ("embedding_model", "sentence-transformers/all-MiniLM-L6-v2"),
-                       ("embedding_revision", ""), ("theta", 0.45), ("rho", 0.70), ("cluster_similarity", 0.60), ("ttl", 30), ("top_k", 3), ("seed", 7), ("max_eval_per_repo", 0), ("consolidation", "file")]:
+                       ("embedding_revision", ""), ("theta", 0.45), ("rho", 0.70), ("cluster_similarity", 0.60), ("ttl", 30), ("top_k", 3), ("seed", 7), ("max_eval_per_repo", 0), ("consolidation", "file"), ("build_rule", ""), ("min_occurrences", 2), ("min_distinct_inputs", 2)]:
               print(f"{k}={g(k, d)}")
           print("repos=" + ",".join(c.get("repos", [])))
           print("model_extra=" + json.dumps(c.get("model_extra", {})))
@@ -65,12 +66,13 @@ jobs:
           set -euo pipefail
           D="${{ steps.cfg.outputs.dir }}"; mkdir -p "$D"
           CM=""; [ -n "${{ steps.cfg.outputs.ceiling_metrics }}" ] && CM="--ceiling-metrics ${{ steps.cfg.outputs.ceiling_metrics }} --ceiling ${{ steps.cfg.outputs.ceiling }}"
-          python -m phase2.make_split corpus/tasks.jsonl --repos "${{ steps.cfg.outputs.repos }}" --build "${{ steps.cfg.outputs.build }}" --min-eval "${{ steps.cfg.outputs.min_eval }}" $CM --out corpus/split.json | tee "$D/split-decision.json"
+          BR=""; [ -n "${{ steps.cfg.outputs.build_rule }}" ] && BR="--build-rule ${{ steps.cfg.outputs.build_rule }}"
+          python -m phase2.make_split corpus/tasks.jsonl --repos "${{ steps.cfg.outputs.repos }}" --build "${{ steps.cfg.outputs.build }}" $BR --min-eval "${{ steps.cfg.outputs.min_eval }}" $CM --out corpus/split.json | tee "$D/split-decision.json"
           cp corpus/split.json "$D/split.json"; cp .exp-run.json "$D/config.json"
       - name: Common flags
         run: |
           P="--provider ${{ steps.cfg.outputs.provider }} --base-url ${{ steps.cfg.outputs.base_url }} --api-key-env MODEL_API_KEY --model ${{ steps.cfg.outputs.model }} --top-k ${{ steps.cfg.outputs.top_k }} --ttl ${{ steps.cfg.outputs.ttl }}"
-          P="$P --similarity ${{ steps.cfg.outputs.similarity }} --embedding-model ${{ steps.cfg.outputs.embedding_model }} --theta ${{ steps.cfg.outputs.theta }} --rho ${{ steps.cfg.outputs.rho }} --cluster-similarity ${{ steps.cfg.outputs.cluster_similarity }} --consolidation ${{ steps.cfg.outputs.consolidation }}"
+          P="$P --similarity ${{ steps.cfg.outputs.similarity }} --embedding-model ${{ steps.cfg.outputs.embedding_model }} --theta ${{ steps.cfg.outputs.theta }} --rho ${{ steps.cfg.outputs.rho }} --cluster-similarity ${{ steps.cfg.outputs.cluster_similarity }} --consolidation ${{ steps.cfg.outputs.consolidation }} --min-occurrences ${{ steps.cfg.outputs.min_occurrences }} --min-distinct-inputs ${{ steps.cfg.outputs.min_distinct_inputs }}"
           [ -n "${{ steps.cfg.outputs.embedding_revision }}" ] && P="$P --embedding-revision ${{ steps.cfg.outputs.embedding_revision }}"
           [ -n "${{ steps.cfg.outputs.negative_control }}" ] && P="$P --negative-control ${{ steps.cfg.outputs.negative_control }}"
           echo "COMMON=$P" >> "$GITHUB_ENV"

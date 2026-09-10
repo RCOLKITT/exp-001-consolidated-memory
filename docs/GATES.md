@@ -33,23 +33,23 @@ Phase 2 — determinism of the embedding cache is the risk.
 Tooling: `phase2/power.py` (n per arm / MDE), `phase2/handcheck.py` (oracle vs manual, exit 1 below 95%),
 `adapters/code/pipeline.py` (three seams wired to the kernel; `tests/test_pipeline.py`).
 
-- [ ] Pre-registration published and timestamped — `docs/PREREGISTRATION.md`
-- [ ] Per-repo chains ≥ power-calc minimum in the build split — `python -m phase2.power --p0 <Gate 0 rate> --mde 0.15` vs `docs/chain-report.md`
+- [x] Pre-registration published and timestamped — `docs/PREREGISTRATION.md`, tag `prereg-v1` (2026-09-10)
+- [x] Per-repo chains ≥ power-calc minimum — eval pool 373, MDE 9.2 pts < kill number 10 < ceiling 17.9 (PREREGISTRATION.md)
 - [ ] Oracle agreement with manual labels ≥ 95% on a 50-instance hand-check — sample ready at `results/phase0/19/control/handcheck.csv` (fill `manual`), then `python -m phase2.handcheck score …`
 - [x] Similarity seam: retrieval by pinned MiniLM cosine, consolidation by file (D20, D23, D24); Θ/ρ/cluster from `results/phase2/4–5` for the semantic variant; end-to-end on real data `results/experiment/4/`
-- [ ] Promotion threshold and build split fixed from the recurrence ceilings (`results/phase0/21/recurrence.md`, findings §11.1) — owner decision
+- [x] Promotion threshold and build split fixed from the recurrence ceilings — registered (D25)
 
 ## Gate 3 — Learning (Phase 3) — expected failure point
 Run: `python -m phase3.learn …` → `runs/learn-*/<repo>/gate3.json`
 
-- [ ] Surprise gate discards > 60% of candidate writes — `gate3.json: discard_rate` (floor to be restated for the file-keyed seam, findings §12)
+- [ ] Surprise gate discard rate ≥ 0.40 per repo (registered floor for the file-keyed seam) — `gate3.json: discard_rate`
 - [ ] ≥ floor promoted memories per repo (floor from pre-registration) — `gate3.json: promoted`
 - [ ] Promoted memories human-legible on inspection — read `kernel.json: objects[].content`
 
 ## Gate 4 — Result (Phase 4)
 Run: `python -m phase4.evaluate …` → `runs/eval-*/gate4.json`
 
-- [ ] Localization lift ≥ 15 pts absolute (or MDE if higher) — `localization_lift_pts`
+- [ ] Localization lift ≥ 10 pts absolute (registered; ceiling 17.9, MDE 9.2) — `localization_lift_pts`
 - [ ] False-positive rise ≤ 5 pts absolute — `false_positive_rise_pts`
 - [ ] Effect in a majority of repos — `effect_in_majority_of_repos`
 - [ ] Negative-control repo shows no lift — `negative_control_lift`

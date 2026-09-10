@@ -4,7 +4,7 @@ import sys
 
 import pytest
 
-SEAM = ["--similarity", "hashing", "--embedding-model", "m", "--embedding-revision", "abc", "--theta", "0.45", "--rho", "0.7", "--cluster-similarity", "0.6", "--consolidation", "file"]
+SEAM = ["--similarity", "hashing", "--embedding-model", "m", "--embedding-revision", "abc", "--theta", "0.45", "--rho", "0.7", "--cluster-similarity", "0.6", "--consolidation", "file", "--min-occurrences", "2", "--min-distinct-inputs", "2"]
 PROVIDER = ["--provider", "openai-compatible", "--base-url", "http://x/v1", "--api-key-env", "K", "--model-extra", "{}", "--model", "m", "--top-k", "3", "--ttl", "30"]
 
 
