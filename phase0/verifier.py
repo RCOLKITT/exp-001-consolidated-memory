@@ -172,7 +172,7 @@ class OpenAICompatibleClient:
         raise RuntimeError(f"all response modes failed: {last}")
 
 
-def make_client(provider: str, base_url: Optional[str] = None, api_key_env: Optional[str] = None) -> ModelClient:
+def make_client(provider: str, base_url: Optional[str] = None, api_key_env: Optional[str] = None, model_extra: str = "") -> ModelClient:
     """Provider factory used by every CLI. `anthropic` uses the SDK's own
     credential resolution; `openai-compatible` needs --base-url and the env
     var holding the key (default MODEL_API_KEY)."""
@@ -184,7 +184,8 @@ def make_client(provider: str, base_url: Optional[str] = None, api_key_env: Opti
         key = os.environ.get(api_key_env or "MODEL_API_KEY", "")
         if not key:
             raise ValueError(f"environment variable {api_key_env or 'MODEL_API_KEY'} is empty")
-        return OpenAICompatibleClient(base_url, key)
+        extra = json.loads(model_extra) if model_extra else {}
+        return OpenAICompatibleClient(base_url, key, extra=extra)
     raise ValueError(f"unknown provider {provider!r}")
 
 

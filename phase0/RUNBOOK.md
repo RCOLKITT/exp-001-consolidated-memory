@@ -26,6 +26,13 @@ carries a `.phase0-run.json`:
   small first.
 - `cutoff` blank = no freshness gate (exploration only). Never report a
   number from an ungated run.
+- **OpenRouter (chosen host):** secret `MODEL_API_KEY` = the OpenRouter key;
+  `"base_url": "https://openrouter.ai/api/v1"`; `"model": "meta-llama/llama-3.3-70b-instruct"`.
+  The control job first writes `results/phase0/<n>/control/endpoints.json`
+  (every provider serving the model, with quantisation and price). Pin one
+  provider and quantisation for the pre-registration via `model_extra`, e.g.
+  `{"provider": {"order": ["<provider_name>"], "allow_fallbacks": false, "quantizations": ["bf16"]}}`.
+  Unpinned OpenRouter routing can change the verifier between runs.
 
 ## B. On your machine
 Everything below is the same pipeline, run locally.

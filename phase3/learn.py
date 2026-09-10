@@ -39,7 +39,7 @@ def kernel_config(ttl_ticks: int) -> KernelConfig:
 
 def make_pipeline(repo, tasks, args, cache_path):
     truth = ground_truth_from_tasks(tasks)
-    client = CachedClient(None if args.offline else make_client(args.provider, args.base_url, args.api_key_env), cache_path, offline=args.offline)
+    client = CachedClient(None if args.offline else make_client(args.provider, args.base_url, args.api_key_env, args.model_extra), cache_path, offline=args.offline)
     loc = Localizer(client, args.model, k=args.top_k, effort=args.effort)
     repos_dir = Path(args.repos_dir)
     list_files = lambda t: repo_file_tree(ensure_checkout(repos_dir, t))
@@ -51,7 +51,7 @@ def _main(argv):
     ap.add_argument("--tasks", required=True); ap.add_argument("--split", required=True); ap.add_argument("--out", required=True)
     ap.add_argument("--models"); ap.add_argument("--repos-dir", default="corpus/repos")
     ap.add_argument("--model", default="claude-opus-5"); ap.add_argument("--effort", default="high"); ap.add_argument("--top-k", type=int, default=3)
-    ap.add_argument("--provider", default="anthropic", choices=["anthropic", "openai-compatible"]); ap.add_argument("--base-url"); ap.add_argument("--api-key-env", default="MODEL_API_KEY")
+    ap.add_argument("--provider", default="anthropic", choices=["anthropic", "openai-compatible"]); ap.add_argument("--base-url"); ap.add_argument("--api-key-env", default="MODEL_API_KEY"); ap.add_argument("--model-extra", default="")
     ap.add_argument("--ttl", type=int, default=30, help="buffer TTL in tasks (one tick per task)")
     ap.add_argument("--negative-control"); ap.add_argument("--cache"); ap.add_argument("--offline", action="store_true")
     args = ap.parse_args(argv)
