@@ -16,7 +16,7 @@ import sys
 from pathlib import Path
 
 from adapters.code.pipeline import RepoPipeline, write_json
-from adapters.code.policy import CODE_PROMOTION_POLICY, THETA_SURPRISE
+from adapters.code.policy import CODE_PROMOTION_POLICY, RHO_REINFORCE, THETA_SURPRISE
 from memkernel import KernelConfig
 from memkernel.kernel import counting_clock
 from memkernel.persist import save_kernel
@@ -34,9 +34,9 @@ def similarity(args, cache_path=None):
     return make_similarity(args.similarity, cache_path, args.embedding_model, args.embedding_revision)
 
 
-def kernel_config(ttl_ticks: int, theta: float = THETA_SURPRISE, cluster: float = CODE_PROMOTION_POLICY.cluster_similarity) -> KernelConfig:
+def kernel_config(ttl_ticks: int, theta: float = THETA_SURPRISE, cluster: float = CODE_PROMOTION_POLICY.cluster_similarity, rho: float = RHO_REINFORCE) -> KernelConfig:
     from dataclasses import replace
-    return KernelConfig(theta_surprise=theta, ttl_ticks=ttl_ticks, policy=replace(CODE_PROMOTION_POLICY, cluster_similarity=cluster))
+    return KernelConfig(theta_surprise=theta, reinforce_min_sim=rho, ttl_ticks=ttl_ticks, policy=replace(CODE_PROMOTION_POLICY, cluster_similarity=cluster))
 
 
 def add_seam_args(ap):
@@ -45,6 +45,7 @@ def add_seam_args(ap):
     ap.add_argument("--embedding-revision", default=None, help="Hub commit sha — pre-registration value")
     ap.add_argument("--theta", type=float, default=THETA_SURPRISE, help="Θ_surprise (pre-registration value, from phase2.tune)")
     ap.add_argument("--cluster-similarity", type=float, default=CODE_PROMOTION_POLICY.cluster_similarity)
+    ap.add_argument("--rho", type=float, default=RHO_REINFORCE, help="reinforce_min_sim (pre-registration value, D22/D23)")
 
 
 def make_pipeline(repo, tasks, args, cache_path):
@@ -54,7 +55,7 @@ def make_pipeline(repo, tasks, args, cache_path):
     repos_dir = Path(args.repos_dir)
     list_files = lambda t: repo_file_tree(ensure_checkout(repos_dir, t))
     sim = similarity(args, Path(cache_path).with_name("embeddings.jsonl"))
-    return RepoPipeline(repo, loc, sim, truth, kernel_config(args.ttl, args.theta, args.cluster_similarity), list_files, counting_clock())
+    return RepoPipeline(repo, loc, sim, truth, kernel_config(args.ttl, args.theta, args.cluster_similarity, args.rho), list_files, counting_clock())
 
 
 def _main(argv):
@@ -80,7 +81,7 @@ def _main(argv):
         version = p.learn(build)
         save_kernel(p.kernel, rd / "kernel.json")
         stats = p.gate3_stats(); stats["n_build"] = len(build)
-        stats["similarity"] = getattr(p.kernel.similarity, "name", args.similarity); stats["theta"] = args.theta; stats["cluster_similarity"] = args.cluster_similarity
+        stats["similarity"] = getattr(p.kernel.similarity, "name", args.similarity); stats["theta"] = args.theta; stats["cluster_similarity"] = args.cluster_similarity; stats["rho"] = args.rho
         write_json(stats, rd / "gate3.json")
         sys.stderr.write(f"{chain.repo}: {len(build)} build tasks, discard_rate={stats['discard_rate']}, promoted={stats['promoted']}, version={version[:12]}\n")
     return 0

@@ -9,7 +9,7 @@
 #   "model": "meta-llama/llama-3.3-70b-instruct", "provider": "openai-compatible", "base_url": "https://openrouter.ai/api/v1",
 #   "model_extra": {"provider": {"order": ["Crusoe", "CoreWeave"], "allow_fallbacks": false}},
 #   "similarity": "embedding", "embedding_model": "sentence-transformers/all-MiniLM-L6-v2", "embedding_revision": "<sha>",
-#   "theta": 0.35, "cluster_similarity": 0.65, "ttl": 30, "top_k": 3, "seed": 7,
+#   "theta": 0.45, "rho": 0.70, "cluster_similarity": 0.60, "ttl": 30, "top_k": 3, "seed": 7,
 #   "max_eval_per_repo": 0                  # >0 only for smoke runs
 # }
 # Results: results/experiment/<run_number>/ (split.json, per-repo gate3.json, gate4.json, arms.json); kernels + caches as artifacts.
@@ -46,7 +46,7 @@ jobs:
           for k, d in [("corpus_run", ""), ("stage", "both"), ("learn_run", ""), ("build", 20), ("min_eval", 10), ("ceiling_metrics", ""), ("ceiling", 0.90),
                        ("negative_control", ""), ("model", "meta-llama/llama-3.3-70b-instruct"), ("provider", "openai-compatible"),
                        ("base_url", "https://openrouter.ai/api/v1"), ("similarity", "embedding"), ("embedding_model", "sentence-transformers/all-MiniLM-L6-v2"),
-                       ("embedding_revision", ""), ("theta", 0.35), ("cluster_similarity", 0.65), ("ttl", 30), ("top_k", 3), ("seed", 7), ("max_eval_per_repo", 0)]:
+                       ("embedding_revision", ""), ("theta", 0.45), ("rho", 0.70), ("cluster_similarity", 0.60), ("ttl", 30), ("top_k", 3), ("seed", 7), ("max_eval_per_repo", 0)]:
               print(f"{k}={g(k, d)}")
           print("repos=" + ",".join(c.get("repos", [])))
           print("model_extra=" + json.dumps(c.get("model_extra", {})))
@@ -70,7 +70,7 @@ jobs:
       - name: Common flags
         run: |
           P="--provider ${{ steps.cfg.outputs.provider }} --base-url ${{ steps.cfg.outputs.base_url }} --api-key-env MODEL_API_KEY --model ${{ steps.cfg.outputs.model }} --top-k ${{ steps.cfg.outputs.top_k }} --ttl ${{ steps.cfg.outputs.ttl }}"
-          P="$P --similarity ${{ steps.cfg.outputs.similarity }} --embedding-model ${{ steps.cfg.outputs.embedding_model }} --theta ${{ steps.cfg.outputs.theta }} --cluster-similarity ${{ steps.cfg.outputs.cluster_similarity }}"
+          P="$P --similarity ${{ steps.cfg.outputs.similarity }} --embedding-model ${{ steps.cfg.outputs.embedding_model }} --theta ${{ steps.cfg.outputs.theta }} --rho ${{ steps.cfg.outputs.rho }} --cluster-similarity ${{ steps.cfg.outputs.cluster_similarity }}"
           [ -n "${{ steps.cfg.outputs.embedding_revision }}" ] && P="$P --embedding-revision ${{ steps.cfg.outputs.embedding_revision }}"
           [ -n "${{ steps.cfg.outputs.negative_control }}" ] && P="$P --negative-control ${{ steps.cfg.outputs.negative_control }}"
           echo "COMMON=$P" >> "$GITHUB_ENV"

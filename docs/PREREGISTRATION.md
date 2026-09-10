@@ -9,10 +9,10 @@ that, changing any value below invalidates the result.
 | Repositories (full list) | draft (run 7 gate; ceiling rule pending, D19): conan-io/conan, aws-cloudformation/cfn-lint, matplotlib/matplotlib, deepset-ai/haystack, pylint-dev/pylint, instructlab/instructlab, keras-team/keras, reflex-dev/reflex, streamlink/streamlink, sphinx-doc/sphinx, pdm-project/pdm, sissbruecker/linkding, pvlib/pvlib-python |
 | Negative-control repo | draft: one of the 13 with a mid-length chain (e.g. streamlink/streamlink, 41) - owner to pick before publishing |
 | Model + stated training cutoff | draft (D16): Llama 3.3 70B Instruct, "data freshness December 2023" (Meta model card) -> gate 2023-12-31; OpenRouter `meta-llama/llama-3.3-70b-instruct`, served by Crusoe bf16 then CoreWeave fp16, no other providers (D17, D19); fallback Llama 4 Maverick, "knowledge cutoff August 2024" -> gate 2024-08-31 |
-| Embedding model + version (similarity seam) | |
+| Embedding model + version (similarity seam) | draft: sentence-transformers/all-MiniLM-L6-v2 @ 1110a243fdf4706b3f48f1d95db1a4f5529b4d41 (D20) |
 | Chain split point per repo | draft: first 20 tasks build, rest evaluate (chronological) - revisit after the power calc with the Gate 0 rate |
-| Θ_surprise | 0.35 (spec default; confirm) |
-| Promotion thresholds | occurrences ≥ 3, distinct inputs ≥ 3, label = bad only, SoD on, cluster_similarity = ____ |
+| Θ_surprise | draft 0.45 (D23) |
+| Promotion thresholds | occurrences ≥ 3, distinct inputs ≥ 3, label = bad only, SoD on, cluster_similarity = 0.60, reinforce ρ = 0.70 (D22/D23) |
 | TTL (in nightly runs) | |
 | Minimum promoted memories per repo (Gate 3 floor) | |
 | Minimum detectable effect (from power calc) | draft: p0 = 0.673 (run 18); MDE ≈ 7.4 pts at ~588 eval tasks (13 repos), 15-pt lift needs 131/arm |

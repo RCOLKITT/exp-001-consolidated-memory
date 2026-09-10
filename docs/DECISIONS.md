@@ -245,3 +245,21 @@ without becoming evidence. ρ = None keeps the old behaviour (ρ = 1 − Θ).
 The sweep reports purity at pattern and at component level, because for
 localization a merge within one component mostly points at the same
 files; the pre-registration must state which purity it commits to.
+
+### D23. Seam operating point: Θ = 0.45, ρ = 0.70, cluster = 0.60 (MiniLM @ 1110a243)
+Pairwise cosines on the natural-language stream (phase2 run 4 vectors,
+400 records, 120 patterns): same-defect paraphrases median 0.52 (p25 0.38);
+same component, other symptom median 0.41 (p75 0.57); different component
+median 0.19 (p95 0.42). The first two overlap heavily, so no threshold
+separates "same defect" from "same component" — pattern-level purity stays
+≈ 0.3 everywhere. Different components are well separated, and component
+purity reaches 0.94 at Θ 0.45 / ρ 0.70 / cluster ≥ 0.60 with discard 0.75
+on a 70%-redundant stream and 17 promotions from 400 candidates. Above
+cluster 0.60 nothing changes: promotions come from reinforced entries, not
+from clustering separate entries.
+
+Consequence for the code adapter: the unit memory consolidates is the
+component, which in real records carries the file path — the thing
+localization needs. The pre-registration commits to component-level purity
+(≥ 0.90 on the synthetic check) and to these three constants; Gate 3's
+"> 60% discard" is consistent with this regime.

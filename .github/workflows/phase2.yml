@@ -31,6 +31,7 @@ jobs:
           print("n_records=" + str(cfg.get("n_records", 300)))
           print("redundant=" + str(cfg.get("redundant", 0.7)))
           print("seed=" + str(cfg.get("seed", 7)))
+          print("seeds=" + ",".join(str(x) for x in cfg.get("seeds", [cfg.get("seed", 7)])))
           print("mode=" + str(cfg.get("mode", "tokens")))
           print("thetas=" + str(cfg.get("thetas", "0.15,0.2,0.25,0.3,0.35,0.4,0.5,0.6")))
           print("clusters=" + str(cfg.get("clusters", "0.5,0.6,0.7,0.8,0.9")))
@@ -50,15 +51,17 @@ jobs:
           json.dump(rec, open("${{ steps.cfg.outputs.dir }}/embedding-model.json", "w"), indent=1)
           print(rec)
           PY
-      - name: Threshold sweep with the pinned embedding model
+      - name: Threshold sweep with the pinned embedding model (one table per seed)
         run: |
           set -euo pipefail
           SHA=$(python -c "import json; print(json.load(open('${{ steps.cfg.outputs.dir }}/embedding-model.json'))['sha'])")
-          python -m phase2.tune --similarity embedding --mode "${{ steps.cfg.outputs.mode }}" --embedding-model "${{ steps.cfg.outputs.model }}" --embedding-revision "$SHA" \
-            --thetas "${{ steps.cfg.outputs.thetas }}" --clusters "${{ steps.cfg.outputs.clusters }}" --rhos "${{ steps.cfg.outputs.rhos }}" \
-            --embedding-cache "${{ steps.cfg.outputs.dir }}/embeddings.jsonl" \
-            --n-records "${{ steps.cfg.outputs.n_records }}" --redundant "${{ steps.cfg.outputs.redundant }}" --seed "${{ steps.cfg.outputs.seed }}" \
-            --out "${{ steps.cfg.outputs.dir }}/tune-embedding.md" | tail -3
+          for SEED in $(echo "${{ steps.cfg.outputs.seeds }}" | tr ',' ' '); do
+            python -m phase2.tune --similarity embedding --mode "${{ steps.cfg.outputs.mode }}" --embedding-model "${{ steps.cfg.outputs.model }}" --embedding-revision "$SHA" \
+              --thetas "${{ steps.cfg.outputs.thetas }}" --clusters "${{ steps.cfg.outputs.clusters }}" --rhos "${{ steps.cfg.outputs.rhos }}" \
+              --embedding-cache "${{ steps.cfg.outputs.dir }}/embeddings.jsonl" \
+              --n-records "${{ steps.cfg.outputs.n_records }}" --redundant "${{ steps.cfg.outputs.redundant }}" --seed "$SEED" \
+              --out "${{ steps.cfg.outputs.dir }}/tune-embedding-seed$SEED.md" | tail -2
+          done
           python -m phase2.tune --similarity hashing --mode "${{ steps.cfg.outputs.mode }}" --thetas "${{ steps.cfg.outputs.thetas }}" --clusters "${{ steps.cfg.outputs.clusters }}" --rhos "${{ steps.cfg.outputs.rhos }}" --n-records "${{ steps.cfg.outputs.n_records }}" --redundant "${{ steps.cfg.outputs.redundant }}" --seed "${{ steps.cfg.outputs.seed }}" \
             --out "${{ steps.cfg.outputs.dir }}/tune-hashing.md" | tail -1
       - name: Seam tests with the real model
