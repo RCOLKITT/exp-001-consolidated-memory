@@ -1,0 +1,1471 @@
+{
+ "conan-io/conan": {
+  "n_tasks": 165,
+  "rows": [
+   {
+    "prefix": 20,
+    "n_eval": 145,
+    "files_ge3": 0,
+    "files_ge2": 5,
+    "dirs_ge3": 3,
+    "distinct_files": 31,
+    "distinct_dirs": 16,
+    "eval_file_seen1": 0.248,
+    "eval_file_seen3": 0.0,
+    "eval_dir_seen1": 0.621,
+    "eval_dir_seen3": 0.366,
+    "top_files": [
+     [
+      "conan/tools/scm/git.py",
+      2
+     ],
+     [
+      "conans/model/info.py",
+      2
+     ],
+     [
+      "conans/model/conf.py",
+      2
+     ]
+    ]
+   },
+   {
+    "prefix": 40,
+    "n_eval": 125,
+    "files_ge3": 3,
+    "files_ge2": 15,
+    "dirs_ge3": 7,
+    "distinct_files": 54,
+    "distinct_dirs": 22,
+    "eval_file_seen1": 0.416,
+    "eval_file_seen3": 0.048,
+    "eval_dir_seen1": 0.712,
+    "eval_dir_seen3": 0.496,
+    "top_files": [
+     [
+      "conans/model/conf.py",
+      5
+     ],
+     [
+      "conan/cli/commands/graph.py",
+      4
+     ],
+     [
+      "conan/cli/commands/create.py",
+      3
+     ]
+    ]
+   },
+   {
+    "prefix": 60,
+    "n_eval": 105,
+    "files_ge3": 10,
+    "files_ge2": 23,
+    "dirs_ge3": 14,
+    "distinct_files": 81,
+    "distinct_dirs": 28,
+    "eval_file_seen1": 0.486,
+    "eval_file_seen3": 0.114,
+    "eval_dir_seen1": 0.743,
+    "eval_dir_seen3": 0.61,
+    "top_files": [
+     [
+      "conans/model/conf.py",
+      5
+     ],
+     [
+      "conan/cli/commands/create.py",
+      4
+     ],
+     [
+      "conan/cli/commands/graph.py",
+      4
+     ]
+    ]
+   },
+   {
+    "prefix": 165,
+    "n_eval": 0,
+    "files_ge3": 42,
+    "files_ge2": 80,
+    "dirs_ge3": 25,
+    "distinct_files": 164,
+    "distinct_dirs": 49,
+    "eval_file_seen1": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "conans/model/conf.py",
+      8
+     ],
+     [
+      "conan/tools/cmake/toolchain/blocks.py",
+      8
+     ],
+     [
+      "conan/internal/model/conf.py",
+      7
+     ]
+    ]
+   }
+  ]
+ },
+ "aws-cloudformation/cfn-lint": {
+  "n_tasks": 109,
+  "rows": [
+   {
+    "prefix": 20,
+    "n_eval": 89,
+    "files_ge3": 2,
+    "files_ge2": 5,
+    "dirs_ge3": 3,
+    "distinct_files": 22,
+    "distinct_dirs": 14,
+    "eval_file_seen1": 0.517,
+    "eval_file_seen3": 0.169,
+    "eval_dir_seen1": 0.708,
+    "eval_dir_seen3": 0.404,
+    "top_files": [
+     [
+      "src/cfnlint/data/schemas/other/iam/policy.json",
+      3
+     ],
+     [
+      "src/cfnlint/jsonschema/_resolvers_cfn.py",
+      3
+     ],
+     [
+      "src/cfnlint/jsonschema/_filter.py",
+      2
+     ]
+    ]
+   },
+   {
+    "prefix": 40,
+    "n_eval": 69,
+    "files_ge3": 4,
+    "files_ge2": 16,
+    "dirs_ge3": 6,
+    "distinct_files": 46,
+    "distinct_dirs": 31,
+    "eval_file_seen1": 0.594,
+    "eval_file_seen3": 0.217,
+    "eval_dir_seen1": 0.884,
+    "eval_dir_seen3": 0.464,
+    "top_files": [
+     [
+      "src/cfnlint/jsonschema/_filter.py",
+      5
+     ],
+     [
+      "src/cfnlint/jsonschema/_resolvers_cfn.py",
+      5
+     ],
+     [
+      "src/cfnlint/data/schemas/other/iam/policy.json",
+      3
+     ]
+    ]
+   },
+   {
+    "prefix": 60,
+    "n_eval": 49,
+    "files_ge3": 14,
+    "files_ge2": 23,
+    "dirs_ge3": 12,
+    "distinct_files": 93,
+    "distinct_dirs": 49,
+    "eval_file_seen1": 0.592,
+    "eval_file_seen3": 0.388,
+    "eval_dir_seen1": 0.898,
+    "eval_dir_seen3": 0.673,
+    "top_files": [
+     [
+      "src/cfnlint/jsonschema/_resolvers_cfn.py",
+      7
+     ],
+     [
+      "src/cfnlint/jsonschema/_filter.py",
+      6
+     ],
+     [
+      "src/cfnlint/rules/functions/GetAtt.py",
+      6
+     ]
+    ]
+   },
+   {
+    "prefix": 109,
+    "n_eval": 0,
+    "files_ge3": 30,
+    "files_ge2": 55,
+    "dirs_ge3": 26,
+    "distinct_files": 329,
+    "distinct_dirs": 143,
+    "eval_file_seen1": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "src/cfnlint/jsonschema/_resolvers_cfn.py",
+      13
+     ],
+     [
+      "src/cfnlint/template/transforms/_language_extensions.py",
+      10
+     ],
+     [
+      "src/cfnlint/data/schemas/other/iam/policy.json",
+      8
+     ]
+    ]
+   }
+  ]
+ },
+ "matplotlib/matplotlib": {
+  "n_tasks": 101,
+  "rows": [
+   {
+    "prefix": 20,
+    "n_eval": 81,
+    "files_ge3": 2,
+    "files_ge2": 4,
+    "dirs_ge3": 5,
+    "distinct_files": 29,
+    "distinct_dirs": 8,
+    "eval_file_seen1": 0.469,
+    "eval_file_seen3": 0.185,
+    "eval_dir_seen1": 0.938,
+    "eval_dir_seen3": 0.852,
+    "top_files": [
+     [
+      "lib/matplotlib/axes/_axes.py",
+      7
+     ],
+     [
+      "lib/matplotlib/pyplot.py",
+      3
+     ],
+     [
+      "lib/matplotlib/axes/_base.py",
+      2
+     ]
+    ]
+   },
+   {
+    "prefix": 40,
+    "n_eval": 61,
+    "files_ge3": 4,
+    "files_ge2": 17,
+    "dirs_ge3": 6,
+    "distinct_files": 54,
+    "distinct_dirs": 12,
+    "eval_file_seen1": 0.623,
+    "eval_file_seen3": 0.311,
+    "eval_dir_seen1": 0.984,
+    "eval_dir_seen3": 0.934,
+    "top_files": [
+     [
+      "lib/matplotlib/axes/_axes.py",
+      8
+     ],
+     [
+      "lib/matplotlib/figure.py",
+      4
+     ],
+     [
+      "lib/matplotlib/axes/_base.py",
+      3
+     ]
+    ]
+   },
+   {
+    "prefix": 60,
+    "n_eval": 41,
+    "files_ge3": 13,
+    "files_ge2": 23,
+    "dirs_ge3": 7,
+    "distinct_files": 78,
+    "distinct_dirs": 18,
+    "eval_file_seen1": 0.756,
+    "eval_file_seen3": 0.537,
+    "eval_dir_seen1": 0.976,
+    "eval_dir_seen3": 0.951,
+    "top_files": [
+     [
+      "lib/matplotlib/axes/_axes.py",
+      10
+     ],
+     [
+      "lib/matplotlib/figure.py",
+      6
+     ],
+     [
+      "lib/matplotlib/axes/_base.py",
+      4
+     ]
+    ]
+   },
+   {
+    "prefix": 101,
+    "n_eval": 0,
+    "files_ge3": 24,
+    "files_ge2": 35,
+    "dirs_ge3": 10,
+    "distinct_files": 107,
+    "distinct_dirs": 24,
+    "eval_file_seen1": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "lib/matplotlib/axes/_axes.py",
+      20
+     ],
+     [
+      "lib/matplotlib/axes/_base.py",
+      8
+     ],
+     [
+      "lib/matplotlib/axis.py",
+      8
+     ]
+    ]
+   }
+  ]
+ },
+ "deepset-ai/haystack": {
+  "n_tasks": 88,
+  "rows": [
+   {
+    "prefix": 20,
+    "n_eval": 68,
+    "files_ge3": 1,
+    "files_ge2": 8,
+    "dirs_ge3": 4,
+    "distinct_files": 63,
+    "distinct_dirs": 24,
+    "eval_file_seen1": 0.338,
+    "eval_file_seen3": 0.059,
+    "eval_dir_seen1": 1.0,
+    "eval_dir_seen3": 0.971,
+    "top_files": [
+     [
+      "haystack/core/pipeline/pipeline.py",
+      4
+     ],
+     [
+      "haystack/core/component/component.py",
+      2
+     ],
+     [
+      "haystack/components/rankers/transformers_similarity.py",
+      2
+     ]
+    ]
+   },
+   {
+    "prefix": 40,
+    "n_eval": 48,
+    "files_ge3": 7,
+    "files_ge2": 19,
+    "dirs_ge3": 8,
+    "distinct_files": 110,
+    "distinct_dirs": 27,
+    "eval_file_seen1": 0.562,
+    "eval_file_seen3": 0.25,
+    "eval_dir_seen1": 1.0,
+    "eval_dir_seen3": 0.979,
+    "top_files": [
+     [
+      "haystack/core/pipeline/pipeline.py",
+      5
+     ],
+     [
+      "haystack/components/generators/chat/openai.py",
+      4
+     ],
+     [
+      "haystack/components/preprocessors/document_splitter.py",
+      3
+     ]
+    ]
+   },
+   {
+    "prefix": 60,
+    "n_eval": 28,
+    "files_ge3": 11,
+    "files_ge2": 26,
+    "dirs_ge3": 12,
+    "distinct_files": 139,
+    "distinct_dirs": 29,
+    "eval_file_seen1": 0.75,
+    "eval_file_seen3": 0.357,
+    "eval_dir_seen1": 1.0,
+    "eval_dir_seen3": 1.0,
+    "top_files": [
+     [
+      "haystack/core/pipeline/pipeline.py",
+      7
+     ],
+     [
+      "haystack/core/pipeline/base.py",
+      7
+     ],
+     [
+      "haystack/components/agents/agent.py",
+      5
+     ]
+    ]
+   },
+   {
+    "prefix": 88,
+    "n_eval": 0,
+    "files_ge3": 19,
+    "files_ge2": 42,
+    "dirs_ge3": 16,
+    "distinct_files": 183,
+    "distinct_dirs": 35,
+    "eval_file_seen1": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "haystack/core/pipeline/pipeline.py",
+      8
+     ],
+     [
+      "haystack/dataclasses/chat_message.py",
+      8
+     ],
+     [
+      "haystack/components/agents/agent.py",
+      8
+     ]
+    ]
+   }
+  ]
+ },
+ "pylint-dev/pylint": {
+  "n_tasks": 62,
+  "rows": [
+   {
+    "prefix": 20,
+    "n_eval": 42,
+    "files_ge3": 2,
+    "files_ge2": 8,
+    "dirs_ge3": 4,
+    "distinct_files": 55,
+    "distinct_dirs": 16,
+    "eval_file_seen1": 0.619,
+    "eval_file_seen3": 0.286,
+    "eval_dir_seen1": 1.0,
+    "eval_dir_seen3": 0.976,
+    "top_files": [
+     [
+      "pylint/checkers/variables.py",
+      5
+     ],
+     [
+      "pylint/checkers/refactoring/refactoring_checker.py",
+      3
+     ],
+     [
+      "doc/user_guide/checkers/features.rst",
+      2
+     ]
+    ]
+   },
+   {
+    "prefix": 40,
+    "n_eval": 22,
+    "files_ge3": 9,
+    "files_ge2": 21,
+    "dirs_ge3": 9,
+    "distinct_files": 103,
+    "distinct_dirs": 25,
+    "eval_file_seen1": 0.455,
+    "eval_file_seen3": 0.318,
+    "eval_dir_seen1": 1.0,
+    "eval_dir_seen3": 1.0,
+    "top_files": [
+     [
+      "pylint/checkers/variables.py",
+      9
+     ],
+     [
+      "doc/user_guide/checkers/features.rst",
+      6
+     ],
+     [
+      "doc/user_guide/messages/messages_overview.rst",
+      5
+     ]
+    ]
+   },
+   {
+    "prefix": 60,
+    "n_eval": 2,
+    "files_ge3": 10,
+    "files_ge2": 28,
+    "dirs_ge3": 13,
+    "distinct_files": 141,
+    "distinct_dirs": 31,
+    "eval_file_seen1": 0.5,
+    "eval_file_seen3": 0.0,
+    "eval_dir_seen1": 1.0,
+    "eval_dir_seen3": 1.0,
+    "top_files": [
+     [
+      "pylint/checkers/variables.py",
+      15
+     ],
+     [
+      "doc/user_guide/checkers/features.rst",
+      6
+     ],
+     [
+      "pylint/checkers/utils.py",
+      6
+     ]
+    ]
+   },
+   {
+    "prefix": 62,
+    "n_eval": 0,
+    "files_ge3": 10,
+    "files_ge2": 29,
+    "dirs_ge3": 13,
+    "distinct_files": 144,
+    "distinct_dirs": 31,
+    "eval_file_seen1": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "pylint/checkers/variables.py",
+      15
+     ],
+     [
+      "doc/user_guide/checkers/features.rst",
+      6
+     ],
+     [
+      "pylint/checkers/utils.py",
+      6
+     ]
+    ]
+   }
+  ]
+ },
+ "instructlab/instructlab": {
+  "n_tasks": 52,
+  "rows": [
+   {
+    "prefix": 20,
+    "n_eval": 32,
+    "files_ge3": 6,
+    "files_ge2": 11,
+    "dirs_ge3": 6,
+    "distinct_files": 31,
+    "distinct_dirs": 13,
+    "eval_file_seen1": 0.781,
+    "eval_file_seen3": 0.625,
+    "eval_dir_seen1": 0.906,
+    "eval_dir_seen3": 0.906,
+    "top_files": [
+     [
+      "src/instructlab/lab.py",
+      7
+     ],
+     [
+      "src/instructlab/configuration.py",
+      6
+     ],
+     [
+      "cli/lab.py",
+      5
+     ]
+    ]
+   },
+   {
+    "prefix": 40,
+    "n_eval": 12,
+    "files_ge3": 14,
+    "files_ge2": 29,
+    "dirs_ge3": 7,
+    "distinct_files": 68,
+    "distinct_dirs": 26,
+    "eval_file_seen1": 0.667,
+    "eval_file_seen3": 0.5,
+    "eval_dir_seen1": 0.833,
+    "eval_dir_seen3": 0.833,
+    "top_files": [
+     [
+      "src/instructlab/configuration.py",
+      21
+     ],
+     [
+      "CHANGELOG.md",
+      11
+     ],
+     [
+      "src/instructlab/lab.py",
+      7
+     ]
+    ]
+   },
+   {
+    "prefix": 52,
+    "n_eval": 0,
+    "files_ge3": 18,
+    "files_ge2": 50,
+    "dirs_ge3": 12,
+    "distinct_files": 89,
+    "distinct_dirs": 35,
+    "eval_file_seen1": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "src/instructlab/configuration.py",
+      26
+     ],
+     [
+      "CHANGELOG.md",
+      13
+     ],
+     [
+      "src/instructlab/model/evaluate.py",
+      8
+     ]
+    ]
+   },
+   {
+    "prefix": 52,
+    "n_eval": 0,
+    "files_ge3": 18,
+    "files_ge2": 50,
+    "dirs_ge3": 12,
+    "distinct_files": 89,
+    "distinct_dirs": 35,
+    "eval_file_seen1": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "src/instructlab/configuration.py",
+      26
+     ],
+     [
+      "CHANGELOG.md",
+      13
+     ],
+     [
+      "src/instructlab/model/evaluate.py",
+      8
+     ]
+    ]
+   }
+  ]
+ },
+ "keras-team/keras": {
+  "n_tasks": 48,
+  "rows": [
+   {
+    "prefix": 20,
+    "n_eval": 28,
+    "files_ge3": 0,
+    "files_ge2": 3,
+    "dirs_ge3": 3,
+    "distinct_files": 45,
+    "distinct_dirs": 26,
+    "eval_file_seen1": 0.357,
+    "eval_file_seen3": 0.0,
+    "eval_dir_seen1": 0.643,
+    "eval_dir_seen3": 0.286,
+    "top_files": [
+     [
+      "keras/dtype_policies/dtype_policy.py",
+      2
+     ],
+     [
+      "keras/ops/nn.py",
+      2
+     ],
+     [
+      "keras/src/ops/numpy.py",
+      2
+     ]
+    ]
+   },
+   {
+    "prefix": 40,
+    "n_eval": 8,
+    "files_ge3": 2,
+    "files_ge2": 12,
+    "dirs_ge3": 8,
+    "distinct_files": 75,
+    "distinct_dirs": 38,
+    "eval_file_seen1": 0.75,
+    "eval_file_seen3": 0.125,
+    "eval_dir_seen1": 1.0,
+    "eval_dir_seen3": 0.375,
+    "top_files": [
+     [
+      "keras/src/backend/torch/core.py",
+      3
+     ],
+     [
+      "keras/src/backend/tensorflow/core.py",
+      3
+     ],
+     [
+      "keras/dtype_policies/dtype_policy.py",
+      2
+     ]
+    ]
+   },
+   {
+    "prefix": 48,
+    "n_eval": 0,
+    "files_ge3": 6,
+    "files_ge2": 25,
+    "dirs_ge3": 16,
+    "distinct_files": 116,
+    "distinct_dirs": 45,
+    "eval_file_seen1": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "keras/src/backend/tensorflow/core.py",
+      4
+     ],
+     [
+      "keras/src/layers/layer.py",
+      3
+     ],
+     [
+      "keras/src/backend/torch/core.py",
+      3
+     ]
+    ]
+   },
+   {
+    "prefix": 48,
+    "n_eval": 0,
+    "files_ge3": 6,
+    "files_ge2": 25,
+    "dirs_ge3": 16,
+    "distinct_files": 116,
+    "distinct_dirs": 45,
+    "eval_file_seen1": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "keras/src/backend/tensorflow/core.py",
+      4
+     ],
+     [
+      "keras/src/layers/layer.py",
+      3
+     ],
+     [
+      "keras/src/backend/torch/core.py",
+      3
+     ]
+    ]
+   }
+  ]
+ },
+ "reflex-dev/reflex": {
+  "n_tasks": 44,
+  "rows": [
+   {
+    "prefix": 20,
+    "n_eval": 24,
+    "files_ge3": 5,
+    "files_ge2": 9,
+    "dirs_ge3": 5,
+    "distinct_files": 32,
+    "distinct_dirs": 10,
+    "eval_file_seen1": 0.833,
+    "eval_file_seen3": 0.542,
+    "eval_dir_seen1": 0.917,
+    "eval_dir_seen3": 0.875,
+    "top_files": [
+     [
+      "reflex/vars.py",
+      4
+     ],
+     [
+      "reflex/state.py",
+      4
+     ],
+     [
+      "reflex/components/component.py",
+      4
+     ]
+    ]
+   },
+   {
+    "prefix": 40,
+    "n_eval": 4,
+    "files_ge3": 8,
+    "files_ge2": 17,
+    "dirs_ge3": 7,
+    "distinct_files": 46,
+    "distinct_dirs": 16,
+    "eval_file_seen1": 1.0,
+    "eval_file_seen3": 0.75,
+    "eval_dir_seen1": 1.0,
+    "eval_dir_seen3": 1.0,
+    "top_files": [
+     [
+      "reflex/state.py",
+      14
+     ],
+     [
+      "reflex/app.py",
+      7
+     ],
+     [
+      "reflex/utils/prerequisites.py",
+      6
+     ]
+    ]
+   },
+   {
+    "prefix": 44,
+    "n_eval": 0,
+    "files_ge3": 10,
+    "files_ge2": 20,
+    "dirs_ge3": 8,
+    "distinct_files": 52,
+    "distinct_dirs": 18,
+    "eval_file_seen1": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "reflex/state.py",
+      14
+     ],
+     [
+      "reflex/app.py",
+      7
+     ],
+     [
+      "reflex/utils/prerequisites.py",
+      7
+     ]
+    ]
+   },
+   {
+    "prefix": 44,
+    "n_eval": 0,
+    "files_ge3": 10,
+    "files_ge2": 20,
+    "dirs_ge3": 8,
+    "distinct_files": 52,
+    "distinct_dirs": 18,
+    "eval_file_seen1": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "reflex/state.py",
+      14
+     ],
+     [
+      "reflex/app.py",
+      7
+     ],
+     [
+      "reflex/utils/prerequisites.py",
+      7
+     ]
+    ]
+   }
+  ]
+ },
+ "streamlink/streamlink": {
+  "n_tasks": 41,
+  "rows": [
+   {
+    "prefix": 20,
+    "n_eval": 21,
+    "files_ge3": 0,
+    "files_ge2": 2,
+    "dirs_ge3": 1,
+    "distinct_files": 25,
+    "distinct_dirs": 8,
+    "eval_file_seen1": 0.238,
+    "eval_file_seen3": 0.0,
+    "eval_dir_seen1": 0.905,
+    "eval_dir_seen3": 0.667,
+    "top_files": [
+     [
+      "src/streamlink/session/plugins.py",
+      2
+     ],
+     [
+      "src/streamlink/plugins/twitch.py",
+      2
+     ],
+     [
+      "src/streamlink/plugins/vidio.py",
+      1
+     ]
+    ]
+   },
+   {
+    "prefix": 40,
+    "n_eval": 1,
+    "files_ge3": 1,
+    "files_ge2": 6,
+    "dirs_ge3": 3,
+    "distinct_files": 41,
+    "distinct_dirs": 9,
+    "eval_file_seen1": 1.0,
+    "eval_file_seen3": 0.0,
+    "eval_dir_seen1": 1.0,
+    "eval_dir_seen3": 1.0,
+    "top_files": [
+     [
+      "src/streamlink_cli/main.py",
+      3
+     ],
+     [
+      "src/streamlink/session/plugins.py",
+      2
+     ],
+     [
+      "src/streamlink/stream/hls/hls.py",
+      2
+     ]
+    ]
+   },
+   {
+    "prefix": 41,
+    "n_eval": 0,
+    "files_ge3": 1,
+    "files_ge2": 8,
+    "dirs_ge3": 3,
+    "distinct_files": 42,
+    "distinct_dirs": 9,
+    "eval_file_seen1": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "src/streamlink_cli/main.py",
+      3
+     ],
+     [
+      "src/streamlink/session/plugins.py",
+      2
+     ],
+     [
+      "src/streamlink/stream/hls/hls.py",
+      2
+     ]
+    ]
+   },
+   {
+    "prefix": 41,
+    "n_eval": 0,
+    "files_ge3": 1,
+    "files_ge2": 8,
+    "dirs_ge3": 3,
+    "distinct_files": 42,
+    "distinct_dirs": 9,
+    "eval_file_seen1": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "src/streamlink_cli/main.py",
+      3
+     ],
+     [
+      "src/streamlink/session/plugins.py",
+      2
+     ],
+     [
+      "src/streamlink/stream/hls/hls.py",
+      2
+     ]
+    ]
+   }
+  ]
+ },
+ "sphinx-doc/sphinx": {
+  "n_tasks": 39,
+  "rows": [
+   {
+    "prefix": 20,
+    "n_eval": 19,
+    "files_ge3": 3,
+    "files_ge2": 8,
+    "dirs_ge3": 4,
+    "distinct_files": 32,
+    "distinct_dirs": 22,
+    "eval_file_seen1": 0.947,
+    "eval_file_seen3": 0.947,
+    "eval_dir_seen1": 1.0,
+    "eval_dir_seen3": 1.0,
+    "top_files": [
+     [
+      "CHANGES.rst",
+      14
+     ],
+     [
+      "sphinx/config.py",
+      5
+     ],
+     [
+      "sphinx/builders/linkcheck.py",
+      3
+     ]
+    ]
+   },
+   {
+    "prefix": 39,
+    "n_eval": 0,
+    "files_ge3": 9,
+    "files_ge2": 23,
+    "dirs_ge3": 9,
+    "distinct_files": 50,
+    "distinct_dirs": 26,
+    "eval_file_seen1": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "CHANGES.rst",
+      32
+     ],
+     [
+      "sphinx/config.py",
+      7
+     ],
+     [
+      "doc/usage/configuration.rst",
+      5
+     ]
+    ]
+   },
+   {
+    "prefix": 39,
+    "n_eval": 0,
+    "files_ge3": 9,
+    "files_ge2": 23,
+    "dirs_ge3": 9,
+    "distinct_files": 50,
+    "distinct_dirs": 26,
+    "eval_file_seen1": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "CHANGES.rst",
+      32
+     ],
+     [
+      "sphinx/config.py",
+      7
+     ],
+     [
+      "doc/usage/configuration.rst",
+      5
+     ]
+    ]
+   },
+   {
+    "prefix": 39,
+    "n_eval": 0,
+    "files_ge3": 9,
+    "files_ge2": 23,
+    "dirs_ge3": 9,
+    "distinct_files": 50,
+    "distinct_dirs": 26,
+    "eval_file_seen1": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "CHANGES.rst",
+      32
+     ],
+     [
+      "sphinx/config.py",
+      7
+     ],
+     [
+      "doc/usage/configuration.rst",
+      5
+     ]
+    ]
+   }
+  ]
+ },
+ "pdm-project/pdm": {
+  "n_tasks": 35,
+  "rows": [
+   {
+    "prefix": 20,
+    "n_eval": 15,
+    "files_ge3": 5,
+    "files_ge2": 23,
+    "dirs_ge3": 9,
+    "distinct_files": 76,
+    "distinct_dirs": 15,
+    "eval_file_seen1": 0.867,
+    "eval_file_seen3": 0.533,
+    "eval_dir_seen1": 1.0,
+    "eval_dir_seen3": 1.0,
+    "top_files": [
+     [
+      "src/pdm/project/core.py",
+      5
+     ],
+     [
+      "src/pdm/cli/commands/run.py",
+      3
+     ],
+     [
+      "src/pdm/cli/commands/add.py",
+      3
+     ]
+    ]
+   },
+   {
+    "prefix": 35,
+    "n_eval": 0,
+    "files_ge3": 11,
+    "files_ge2": 32,
+    "dirs_ge3": 10,
+    "distinct_files": 101,
+    "distinct_dirs": 17,
+    "eval_file_seen1": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "src/pdm/project/core.py",
+      11
+     ],
+     [
+      "src/pdm/cli/commands/run.py",
+      4
+     ],
+     [
+      "src/pdm/cli/commands/add.py",
+      4
+     ]
+    ]
+   },
+   {
+    "prefix": 35,
+    "n_eval": 0,
+    "files_ge3": 11,
+    "files_ge2": 32,
+    "dirs_ge3": 10,
+    "distinct_files": 101,
+    "distinct_dirs": 17,
+    "eval_file_seen1": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "src/pdm/project/core.py",
+      11
+     ],
+     [
+      "src/pdm/cli/commands/run.py",
+      4
+     ],
+     [
+      "src/pdm/cli/commands/add.py",
+      4
+     ]
+    ]
+   },
+   {
+    "prefix": 35,
+    "n_eval": 0,
+    "files_ge3": 11,
+    "files_ge2": 32,
+    "dirs_ge3": 10,
+    "distinct_files": 101,
+    "distinct_dirs": 17,
+    "eval_file_seen1": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "src/pdm/project/core.py",
+      11
+     ],
+     [
+      "src/pdm/cli/commands/run.py",
+      4
+     ],
+     [
+      "src/pdm/cli/commands/add.py",
+      4
+     ]
+    ]
+   }
+  ]
+ },
+ "sissbruecker/linkding": {
+  "n_tasks": 34,
+  "rows": [
+   {
+    "prefix": 20,
+    "n_eval": 14,
+    "files_ge3": 9,
+    "files_ge2": 15,
+    "dirs_ge3": 10,
+    "distinct_files": 40,
+    "distinct_dirs": 14,
+    "eval_file_seen1": 0.929,
+    "eval_file_seen3": 0.429,
+    "eval_dir_seen1": 0.929,
+    "eval_dir_seen3": 0.857,
+    "top_files": [
+     [
+      "bookmarks/models.py",
+      6
+     ],
+     [
+      "bookmarks/templates/settings/general.html",
+      4
+     ],
+     [
+      "bookmarks/views/partials/contexts.py",
+      3
+     ]
+    ]
+   },
+   {
+    "prefix": 34,
+    "n_eval": 0,
+    "files_ge3": 14,
+    "files_ge2": 25,
+    "dirs_ge3": 11,
+    "distinct_files": 94,
+    "distinct_dirs": 26,
+    "eval_file_seen1": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "bookmarks/models.py",
+      7
+     ],
+     [
+      "bookmarks/templates/settings/general.html",
+      6
+     ],
+     [
+      "bookmarks/views/bookmarks.py",
+      6
+     ]
+    ]
+   },
+   {
+    "prefix": 34,
+    "n_eval": 0,
+    "files_ge3": 14,
+    "files_ge2": 25,
+    "dirs_ge3": 11,
+    "distinct_files": 94,
+    "distinct_dirs": 26,
+    "eval_file_seen1": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "bookmarks/models.py",
+      7
+     ],
+     [
+      "bookmarks/templates/settings/general.html",
+      6
+     ],
+     [
+      "bookmarks/views/bookmarks.py",
+      6
+     ]
+    ]
+   },
+   {
+    "prefix": 34,
+    "n_eval": 0,
+    "files_ge3": 14,
+    "files_ge2": 25,
+    "dirs_ge3": 11,
+    "distinct_files": 94,
+    "distinct_dirs": 26,
+    "eval_file_seen1": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "bookmarks/models.py",
+      7
+     ],
+     [
+      "bookmarks/templates/settings/general.html",
+      6
+     ],
+     [
+      "bookmarks/views/bookmarks.py",
+      6
+     ]
+    ]
+   }
+  ]
+ },
+ "pvlib/pvlib-python": {
+  "n_tasks": 30,
+  "rows": [
+   {
+    "prefix": 20,
+    "n_eval": 10,
+    "files_ge3": 8,
+    "files_ge2": 15,
+    "dirs_ge3": 4,
+    "distinct_files": 32,
+    "distinct_dirs": 13,
+    "eval_file_seen1": 0.7,
+    "eval_file_seen3": 0.4,
+    "eval_dir_seen1": 1.0,
+    "eval_dir_seen3": 1.0,
+    "top_files": [
+     [
+      "docs/sphinx/source/whatsnew/v0.11.1.rst",
+      7
+     ],
+     [
+      "pvlib/spectrum/mismatch.py",
+      5
+     ],
+     [
+      "docs/sphinx/source/whatsnew/v0.10.4.rst",
+      4
+     ]
+    ]
+   },
+   {
+    "prefix": 30,
+    "n_eval": 0,
+    "files_ge3": 13,
+    "files_ge2": 19,
+    "dirs_ge3": 5,
+    "distinct_files": 41,
+    "distinct_dirs": 16,
+    "eval_file_seen1": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "docs/sphinx/source/whatsnew/v0.11.1.rst",
+      7
+     ],
+     [
+      "pvlib/spectrum/mismatch.py",
+      6
+     ],
+     [
+      "docs/sphinx/source/whatsnew/v0.11.2.rst",
+      6
+     ]
+    ]
+   },
+   {
+    "prefix": 30,
+    "n_eval": 0,
+    "files_ge3": 13,
+    "files_ge2": 19,
+    "dirs_ge3": 5,
+    "distinct_files": 41,
+    "distinct_dirs": 16,
+    "eval_file_seen1": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "docs/sphinx/source/whatsnew/v0.11.1.rst",
+      7
+     ],
+     [
+      "pvlib/spectrum/mismatch.py",
+      6
+     ],
+     [
+      "docs/sphinx/source/whatsnew/v0.11.2.rst",
+      6
+     ]
+    ]
+   },
+   {
+    "prefix": 30,
+    "n_eval": 0,
+    "files_ge3": 13,
+    "files_ge2": 19,
+    "dirs_ge3": 5,
+    "distinct_files": 41,
+    "distinct_dirs": 16,
+    "eval_file_seen1": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "docs/sphinx/source/whatsnew/v0.11.1.rst",
+      7
+     ],
+     [
+      "pvlib/spectrum/mismatch.py",
+      6
+     ],
+     [
+      "docs/sphinx/source/whatsnew/v0.11.2.rst",
+      6
+     ]
+    ]
+   }
+  ]
+ }
+}
