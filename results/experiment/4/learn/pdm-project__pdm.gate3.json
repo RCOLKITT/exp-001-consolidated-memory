@@ -1,0 +1,15 @@
+{
+ "buffered": 32,
+ "candidate_writes": 60,
+ "cluster_similarity": 0.6,
+ "consolidation": "file-keyed+sentence-transformers/all-MiniLM-L6-v2@1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+ "discard_rate": 0.4667,
+ "discarded_or_reinforced": 28,
+ "frozen_version": "fc23a82990e1936ad66e856eb075107e7d359359c56f92ce28f9754349291579",
+ "n_build": 20,
+ "promoted": 1,
+ "retrieval": "sentence-transformers/all-MiniLM-L6-v2@1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+ "rho": 0.7,
+ "similarity": "file-keyed+sentence-transformers/all-MiniLM-L6-v2@1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+ "theta": 0.45
+}

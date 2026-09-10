@@ -1,0 +1,153 @@
+{
+ "control": {
+  "false_positive_rate": 0.8333,
+  "localization_rate": 0.5,
+  "n_false_positive": 20,
+  "n_flags": 24,
+  "n_localized": 4,
+  "n_tasks": 8,
+  "per_repo": {
+   "pdm-project/pdm": {
+    "false_positive_rate": 0.8333,
+    "localization_rate": 0.5,
+    "n_false_positive": 20,
+    "n_flags": 24,
+    "n_localized": 4,
+    "n_tasks": 8
+   }
+  }
+ },
+ "control_flags": {
+  "pdm-project__pdm-3136": [
+   "src/pdm/cli/commands/add.py",
+   "src/pdm/project/project_file.py",
+   "src/pdm/models/project_info.py"
+  ],
+  "pdm-project__pdm-3170": [
+   "src/pdm/environments/base.py",
+   "src/pdm/models/auth.py",
+   "src/pdm/utils.py"
+  ],
+  "pdm-project__pdm-3191": [
+   "src/pdm/cli/actions.py",
+   "src/pdm/installers/base.py",
+   "src/pdm/signals.py"
+  ],
+  "pdm-project__pdm-3237": [
+   "src/pdm/formats/uv.py",
+   "src/pdm/installers/uv.py",
+   "src/pdm/cli/commands/build.py"
+  ],
+  "pdm-project__pdm-3250": [
+   "src/pdm/cli/commands/lock.py",
+   "src/pdm/project/config.py",
+   "src/pdm/resolver/base.py"
+  ],
+  "pdm-project__pdm-3255": [
+   "src/pdm/utils.py",
+   "src/pdm/project/config.py",
+   "src/pdm/installers/core.py"
+  ],
+  "pdm-project__pdm-3314": [
+   "src/pdm/cli/utils.py",
+   "src/pdm/project/config.py",
+   "src/pdm/cli/commands/update.py"
+  ],
+  "pdm-project__pdm-3374": [
+   "src/pdm/models/repositories/pypi.py",
+   "src/pdm/models/repositories/base.py",
+   "src/pdm/project/lockfile.py"
+  ]
+ },
+ "lift": {
+  "false_positive_rise_pts": -4.17,
+  "localization_lift_pts": 12.5
+ },
+ "retrieval_hit_rate": 1.0,
+ "retrieved": {
+  "pdm-project__pdm-3136": [
+   "34498332244ac961199e31267392c6c22704655639bbb4d19a4a48321aa62cfb"
+  ],
+  "pdm-project__pdm-3170": [
+   "34498332244ac961199e31267392c6c22704655639bbb4d19a4a48321aa62cfb"
+  ],
+  "pdm-project__pdm-3191": [
+   "34498332244ac961199e31267392c6c22704655639bbb4d19a4a48321aa62cfb"
+  ],
+  "pdm-project__pdm-3237": [
+   "34498332244ac961199e31267392c6c22704655639bbb4d19a4a48321aa62cfb"
+  ],
+  "pdm-project__pdm-3250": [
+   "34498332244ac961199e31267392c6c22704655639bbb4d19a4a48321aa62cfb"
+  ],
+  "pdm-project__pdm-3255": [
+   "34498332244ac961199e31267392c6c22704655639bbb4d19a4a48321aa62cfb"
+  ],
+  "pdm-project__pdm-3314": [
+   "34498332244ac961199e31267392c6c22704655639bbb4d19a4a48321aa62cfb"
+  ],
+  "pdm-project__pdm-3374": [
+   "34498332244ac961199e31267392c6c22704655639bbb4d19a4a48321aa62cfb"
+  ]
+ },
+ "treatment": {
+  "false_positive_rate": 0.7917,
+  "localization_rate": 0.625,
+  "n_false_positive": 19,
+  "n_flags": 24,
+  "n_localized": 5,
+  "n_tasks": 8,
+  "per_repo": {
+   "pdm-project/pdm": {
+    "false_positive_rate": 0.7917,
+    "localization_rate": 0.625,
+    "n_false_positive": 19,
+    "n_flags": 24,
+    "n_localized": 5,
+    "n_tasks": 8
+   }
+  }
+ },
+ "treatment_flags": {
+  "pdm-project__pdm-3136": [
+   "src/pdm/cli/commands/add.py",
+   "src/pdm/project/project_file.py",
+   "src/pdm/cli/commands/remove.py"
+  ],
+  "pdm-project__pdm-3170": [
+   "src/pdm/cli/commands/run.py",
+   "src/pdm/environments/base.py",
+   "src/pdm/utils.py"
+  ],
+  "pdm-project__pdm-3191": [
+   "src/pdm/cli/actions.py",
+   "src/pdm/installers/base.py",
+   "src/pdm/signals.py"
+  ],
+  "pdm-project__pdm-3237": [
+   "src/pdm/formats/uv.py",
+   "src/pdm/installers/uv.py",
+   "src/pdm/cli/commands/build.py"
+  ],
+  "pdm-project__pdm-3250": [
+   "src/pdm/cli/commands/lock.py",
+   "src/pdm/project/project_file.py",
+   "src/pdm/resolver/base.py"
+  ],
+  "pdm-project__pdm-3255": [
+   "src/pdm/utils.py",
+   "src/pdm/project/config.py",
+   "src/pdm/installers/installers.py"
+  ],
+  "pdm-project__pdm-3314": [
+   "src/pdm/cli/utils.py",
+   "src/pdm/cli/commands/update.py",
+   "src/pdm/project/project_file.py"
+  ],
+  "pdm-project__pdm-3374": [
+   "src/pdm/models/repositories/base.py",
+   "src/pdm/models/repositories/pypi.py",
+   "src/pdm/resolver/base.py"
+  ]
+ }
+}

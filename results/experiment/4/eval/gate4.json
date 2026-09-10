@@ -1,0 +1,88 @@
+{
+ "control": {
+  "false_positive_rate": 0.7083,
+  "localization_rate": 0.7917,
+  "n_false_positive": 51,
+  "n_flags": 72,
+  "n_localized": 19,
+  "n_tasks": 24,
+  "per_repo": {
+   "deepset-ai/haystack": {
+    "false_positive_rate": 0.625,
+    "localization_rate": 0.875,
+    "n_false_positive": 15,
+    "n_flags": 24,
+    "n_localized": 7,
+    "n_tasks": 8
+   },
+   "pdm-project/pdm": {
+    "false_positive_rate": 0.8333,
+    "localization_rate": 0.5,
+    "n_false_positive": 20,
+    "n_flags": 24,
+    "n_localized": 4,
+    "n_tasks": 8
+   },
+   "pvlib/pvlib-python": {
+    "false_positive_rate": 0.6667,
+    "localization_rate": 1.0,
+    "n_false_positive": 16,
+    "n_flags": 24,
+    "n_localized": 8,
+    "n_tasks": 8
+   }
+  }
+ },
+ "effect_in_majority_of_repos": false,
+ "false_positive_rise_pts": -3.23,
+ "localization_lift_pts": 4.17,
+ "negative_control_lift": null,
+ "per_repo_lift": {
+  "deepset-ai/haystack": {
+   "false_positive_rise_pts": 0.0,
+   "localization_lift_pts": 0.0
+  },
+  "pdm-project/pdm": {
+   "false_positive_rise_pts": -4.17,
+   "localization_lift_pts": 12.5
+  },
+  "pvlib/pvlib-python": {
+   "false_positive_rise_pts": -5.8,
+   "localization_lift_pts": 0.0
+  }
+ },
+ "treatment": {
+  "false_positive_rate": 0.6761,
+  "localization_rate": 0.8333,
+  "n_false_positive": 48,
+  "n_flags": 71,
+  "n_localized": 20,
+  "n_tasks": 24,
+  "per_repo": {
+   "deepset-ai/haystack": {
+    "false_positive_rate": 0.625,
+    "localization_rate": 0.875,
+    "n_false_positive": 15,
+    "n_flags": 24,
+    "n_localized": 7,
+    "n_tasks": 8
+   },
+   "pdm-project/pdm": {
+    "false_positive_rate": 0.7917,
+    "localization_rate": 0.625,
+    "n_false_positive": 19,
+    "n_flags": 24,
+    "n_localized": 5,
+    "n_tasks": 8
+   },
+   "pvlib/pvlib-python": {
+    "false_positive_rate": 0.6087,
+    "localization_rate": 1.0,
+    "n_false_positive": 14,
+    "n_flags": 23,
+    "n_localized": 8,
+    "n_tasks": 8
+   }
+  }
+ }
+}

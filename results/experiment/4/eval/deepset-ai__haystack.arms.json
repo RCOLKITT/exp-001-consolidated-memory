@@ -1,0 +1,153 @@
+{
+ "control": {
+  "false_positive_rate": 0.625,
+  "localization_rate": 0.875,
+  "n_false_positive": 15,
+  "n_flags": 24,
+  "n_localized": 7,
+  "n_tasks": 8,
+  "per_repo": {
+   "deepset-ai/haystack": {
+    "false_positive_rate": 0.625,
+    "localization_rate": 0.875,
+    "n_false_positive": 15,
+    "n_flags": 24,
+    "n_localized": 7,
+    "n_tasks": 8
+   }
+  }
+ },
+ "control_flags": {
+  "deepset-ai__haystack-8078": [
+   "haystack/components/preprocessors/document_cleaner.py",
+   "test/components/preprocessors/test_document_cleaner.py",
+   "haystack/components/preprocessors/__init__.py"
+  ],
+  "deepset-ai__haystack-8489": [
+   "haystack/tracing/tracer.py",
+   "haystack/core/pipeline/pipeline.py",
+   "haystack/tracing/utils.py"
+  ],
+  "deepset-ai__haystack-8525": [
+   "haystack/components/preprocessors/__init__.py",
+   "haystack/components/preprocessors/document_splitter.py",
+   "haystack/components/converters/csv.py"
+  ],
+  "deepset-ai__haystack-8609": [
+   "haystack/components/converters/pypdf.py",
+   "test/components/converters/test_pypdf_to_document.py",
+   "haystack/components/converters/__init__.py"
+  ],
+  "deepset-ai__haystack-8619": [
+   "haystack/components/converters/__init__.py",
+   "haystack/components/converters/utils.py",
+   "haystack/components/converters/output_adapter.py"
+  ],
+  "deepset-ai__haystack-8670": [
+   "haystack/dataclasses/chat_message.py",
+   "haystack/components/generators/openai.py",
+   "haystack/components/generators/chat/openai.py"
+  ],
+  "deepset-ai__haystack-8708": [
+   "haystack/components/converters/pdfminer.py",
+   "haystack/dataclasses/document.py",
+   "test/components/converters/test_pdfminer_to_document.py"
+  ],
+  "deepset-ai__haystack-8725": [
+   "haystack/dataclasses/chat_message.py",
+   "haystack/tools/from_function.py",
+   "test/dataclasses/test_chat_message.py"
+  ]
+ },
+ "lift": {
+  "false_positive_rise_pts": 0.0,
+  "localization_lift_pts": 0.0
+ },
+ "retrieval_hit_rate": 1.0,
+ "retrieved": {
+  "deepset-ai__haystack-8078": [
+   "595e1ba585084507cdbfd594eb15f5018e050f6891d5a1ff6755dc8daa575a85"
+  ],
+  "deepset-ai__haystack-8489": [
+   "595e1ba585084507cdbfd594eb15f5018e050f6891d5a1ff6755dc8daa575a85"
+  ],
+  "deepset-ai__haystack-8525": [
+   "595e1ba585084507cdbfd594eb15f5018e050f6891d5a1ff6755dc8daa575a85"
+  ],
+  "deepset-ai__haystack-8609": [
+   "595e1ba585084507cdbfd594eb15f5018e050f6891d5a1ff6755dc8daa575a85"
+  ],
+  "deepset-ai__haystack-8619": [
+   "595e1ba585084507cdbfd594eb15f5018e050f6891d5a1ff6755dc8daa575a85"
+  ],
+  "deepset-ai__haystack-8670": [
+   "595e1ba585084507cdbfd594eb15f5018e050f6891d5a1ff6755dc8daa575a85"
+  ],
+  "deepset-ai__haystack-8708": [
+   "595e1ba585084507cdbfd594eb15f5018e050f6891d5a1ff6755dc8daa575a85"
+  ],
+  "deepset-ai__haystack-8725": [
+   "595e1ba585084507cdbfd594eb15f5018e050f6891d5a1ff6755dc8daa575a85"
+  ]
+ },
+ "treatment": {
+  "false_positive_rate": 0.625,
+  "localization_rate": 0.875,
+  "n_false_positive": 15,
+  "n_flags": 24,
+  "n_localized": 7,
+  "n_tasks": 8,
+  "per_repo": {
+   "deepset-ai/haystack": {
+    "false_positive_rate": 0.625,
+    "localization_rate": 0.875,
+    "n_false_positive": 15,
+    "n_flags": 24,
+    "n_localized": 7,
+    "n_tasks": 8
+   }
+  }
+ },
+ "treatment_flags": {
+  "deepset-ai__haystack-8078": [
+   "haystack/components/preprocessors/document_cleaner.py",
+   "test/components/preprocessors/test_document_cleaner.py",
+   "haystack/core/pipeline/pipeline.py"
+  ],
+  "deepset-ai__haystack-8489": [
+   "haystack/core/pipeline/pipeline.py",
+   "haystack/tracing/tracer.py",
+   "haystack/core/pipeline/base.py"
+  ],
+  "deepset-ai__haystack-8525": [
+   "haystack/components/preprocessors/document_splitter.py",
+   "haystack/components/converters/csv.py",
+   "haystack/components/preprocessors/__init__.py"
+  ],
+  "deepset-ai__haystack-8609": [
+   "haystack/components/converters/pypdf.py",
+   "test/components/converters/test_pypdf_to_document.py",
+   "haystack/components/converters/__init__.py"
+  ],
+  "deepset-ai__haystack-8619": [
+   "haystack/components/converters/__init__.py",
+   "haystack/components/converters/utils.py",
+   "haystack/components/converters/output_adapter.py"
+  ],
+  "deepset-ai__haystack-8670": [
+   "haystack/dataclasses/chat_message.py",
+   "haystack/components/generators/chat/openai.py",
+   "haystack/components/generators/openai.py"
+  ],
+  "deepset-ai__haystack-8708": [
+   "haystack/components/converters/pdfminer.py",
+   "haystack/dataclasses/document.py",
+   "haystack/components/converters/utils.py"
+  ],
+  "deepset-ai__haystack-8725": [
+   "haystack/dataclasses/chat_message.py",
+   "haystack/tools/from_function.py",
+   "haystack/components/generators/chat/openai.py"
+  ]
+ }
+}
