@@ -142,6 +142,9 @@ jobs:
     needs: corpus
     if: needs.corpus.outputs.run_control == 'true'
     runs-on: ubuntu-latest
+    # The model key lives in a GitHub *environment* named MODEL_API_KEY (environment secret,
+    # no protection rules). Binding the job to it is what makes secrets.MODEL_API_KEY resolve.
+    environment: MODEL_API_KEY
     env:
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       # accept common alternative names so a misnamed secret still works; the diagnostic step prints which names exist
