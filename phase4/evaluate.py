@@ -35,6 +35,7 @@ def _main(argv):
     ap.add_argument("--model", default="claude-opus-5"); ap.add_argument("--effort", default="high"); ap.add_argument("--top-k", type=int, default=3)
     ap.add_argument("--provider", default="anthropic", choices=["anthropic", "openai-compatible"]); ap.add_argument("--base-url"); ap.add_argument("--api-key-env", default="MODEL_API_KEY"); ap.add_argument("--model-extra", default="")
     ap.add_argument("--ttl", type=int, default=30); ap.add_argument("--negative-control"); ap.add_argument("--cache"); ap.add_argument("--offline", action="store_true")
+    ap.add_argument("--max-eval-per-repo", type=int, default=0, help="cap eval tasks per repo (smoke runs only)")
     args = ap.parse_args(argv)
     out = Path(args.out); out.mkdir(parents=True, exist_ok=True)
     tasks = read_tasks(args.tasks)
@@ -46,6 +47,8 @@ def _main(argv):
         if chain.repo not in split:
             continue
         _, ev = chain.split(int(split[chain.repo]))
+        if args.max_eval_per_repo:
+            ev = ev[: args.max_eval_per_repo]          # smoke runs only; never for the pre-registered evaluation
         rd = out / chain.repo.replace("/", "__")
         p = make_pipeline(chain.repo, chain.tasks, args, Path(args.cache) if args.cache else rd / "cache.jsonl")
         kpath = Path(args.learn_dir) / chain.repo.replace("/", "__") / "kernel.json"

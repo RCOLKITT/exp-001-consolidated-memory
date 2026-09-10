@@ -40,6 +40,11 @@ carries a `.phase0-run.json`:
   (`.github/workflows/phase2.yml`): resolves the embedding model's Hub sha,
   runs the Θ sweep with it, commits `results/phase2/<n>/`.
 
+- Phases 3–4: push `run/exp-<n>` with `.exp-run.json` (`.github/workflows/experiment.yml`,
+  header comment lists every key). Reuses a phase0 run's corpus artifact, builds the
+  split (optional ceiling rule), learns, evaluates, commits `results/experiment/<n>/`.
+  Use `"max_eval_per_repo": 5` and two repos for a smoke run before the full spend.
+
 ## B. On your machine
 Everything below is the same pipeline, run locally.
 

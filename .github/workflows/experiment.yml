@@ -1,0 +1,119 @@
+# Phases 3–4 on a hosted runner. Start by pushing run/exp-<n> carrying .exp-run.json:
+# {
+#   "corpus_run": 18,                       # phase0 run whose corpus artifact (tasks.jsonl + models.json) to reuse
+#   "stage": "both",                        # learn | evaluate | both
+#   "learn_run": "",                        # for stage=evaluate: experiment run number whose learn artifact to reuse
+#   "repos": ["owner/name", ...], "build": 20, "min_eval": 10,
+#   "ceiling_metrics": "results/phase0/18/control/metrics.json", "ceiling": 0.90,   # optional ceiling rule (D19)
+#   "negative_control": "owner/name",
+#   "model": "meta-llama/llama-3.3-70b-instruct", "provider": "openai-compatible", "base_url": "https://openrouter.ai/api/v1",
+#   "model_extra": {"provider": {"order": ["Crusoe", "CoreWeave"], "allow_fallbacks": false}},
+#   "similarity": "embedding", "embedding_model": "sentence-transformers/all-MiniLM-L6-v2", "embedding_revision": "<sha>",
+#   "theta": 0.35, "cluster_similarity": 0.65, "ttl": 30, "top_k": 3, "seed": 7,
+#   "max_eval_per_repo": 0                  # >0 only for smoke runs
+# }
+# Results: results/experiment/<run_number>/ (split.json, per-repo gate3.json, gate4.json, arms.json); kernels + caches as artifacts.
+name: experiment
+on:
+  push:
+    branches: ["run/exp-*"]
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: experiment-${{ github.ref }}
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    environment: MODEL_API_KEY
+    env:
+      MODEL_API_KEY: ${{ secrets.MODEL_API_KEY }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install -e ".[dev]" "anthropic>=1" "sentence-transformers>=3" "huggingface_hub>=0.25"
+      - id: cfg
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import json
+          c = json.load(open(".exp-run.json"))
+          def g(k, d=""): v = c.get(k, d); return json.dumps(v) if isinstance(v, (dict, list)) else str(v)
+          for k, d in [("corpus_run", ""), ("stage", "both"), ("learn_run", ""), ("build", 20), ("min_eval", 10), ("ceiling_metrics", ""), ("ceiling", 0.90),
+                       ("negative_control", ""), ("model", "meta-llama/llama-3.3-70b-instruct"), ("provider", "openai-compatible"),
+                       ("base_url", "https://openrouter.ai/api/v1"), ("similarity", "embedding"), ("embedding_model", "sentence-transformers/all-MiniLM-L6-v2"),
+                       ("embedding_revision", ""), ("theta", 0.35), ("cluster_similarity", 0.65), ("ttl", 30), ("top_k", 3), ("seed", 7), ("max_eval_per_repo", 0)]:
+              print(f"{k}={g(k, d)}")
+          print("repos=" + ",".join(c.get("repos", [])))
+          print("model_extra=" + json.dumps(c.get("model_extra", {})))
+          print("dir=results/experiment/${{ github.run_number }}")
+          PY
+      - name: Fetch the corpus from the phase0 run
+        run: |
+          set -euo pipefail
+          N="${{ steps.cfg.outputs.corpus_run }}"; test -n "$N" || { echo "corpus_run is required"; exit 3; }
+          RID=$(gh api "repos/${{ github.repository }}/actions/workflows/phase0.yml/runs?per_page=100" --jq ".workflow_runs[] | select(.run_number == $N) | .id" | head -1)
+          test -n "$RID" || { echo "no phase0 run $N"; exit 3; }
+          gh run download "$RID" -n "corpus-$N" -D corpus/
+          ls corpus/ && wc -l corpus/tasks.jsonl
+      - name: Split (pre-registration values; ceiling rule optional)
+        run: |
+          set -euo pipefail
+          D="${{ steps.cfg.outputs.dir }}"; mkdir -p "$D"
+          CM=""; [ -n "${{ steps.cfg.outputs.ceiling_metrics }}" ] && CM="--ceiling-metrics ${{ steps.cfg.outputs.ceiling_metrics }} --ceiling ${{ steps.cfg.outputs.ceiling }}"
+          python -m phase2.make_split corpus/tasks.jsonl --repos "${{ steps.cfg.outputs.repos }}" --build "${{ steps.cfg.outputs.build }}" --min-eval "${{ steps.cfg.outputs.min_eval }}" $CM --out corpus/split.json | tee "$D/split-decision.json"
+          cp corpus/split.json "$D/split.json"; cp .exp-run.json "$D/config.json"
+      - name: Common flags
+        run: |
+          P="--provider ${{ steps.cfg.outputs.provider }} --base-url ${{ steps.cfg.outputs.base_url }} --api-key-env MODEL_API_KEY --model ${{ steps.cfg.outputs.model }} --top-k ${{ steps.cfg.outputs.top_k }} --ttl ${{ steps.cfg.outputs.ttl }}"
+          P="$P --similarity ${{ steps.cfg.outputs.similarity }} --embedding-model ${{ steps.cfg.outputs.embedding_model }} --theta ${{ steps.cfg.outputs.theta }} --cluster-similarity ${{ steps.cfg.outputs.cluster_similarity }}"
+          [ -n "${{ steps.cfg.outputs.embedding_revision }}" ] && P="$P --embedding-revision ${{ steps.cfg.outputs.embedding_revision }}"
+          [ -n "${{ steps.cfg.outputs.negative_control }}" ] && P="$P --negative-control ${{ steps.cfg.outputs.negative_control }}"
+          echo "COMMON=$P" >> "$GITHUB_ENV"
+          echo 'MX=${{ steps.cfg.outputs.model_extra }}' >> "$GITHUB_ENV"
+      - name: Phase 3 — learn
+        if: steps.cfg.outputs.stage != 'evaluate'
+        run: |
+          set -euo pipefail
+          test -n "$MODEL_API_KEY" || { echo "MODEL_API_KEY secret is not set"; exit 2; }
+          python -m phase3.learn --tasks corpus/tasks.jsonl --models corpus/models.json --split corpus/split.json --repos-dir corpus/repos --out runs/learn $COMMON --model-extra "$MX"
+          mkdir -p "${{ steps.cfg.outputs.dir }}/learn"; for d in runs/learn/*/; do r=$(basename "$d"); cp "$d/gate3.json" "${{ steps.cfg.outputs.dir }}/learn/$r.gate3.json"; done
+      - name: Reuse an earlier learn artifact
+        if: steps.cfg.outputs.stage == 'evaluate'
+        run: |
+          set -euo pipefail
+          N="${{ steps.cfg.outputs.learn_run }}"; test -n "$N" || { echo "learn_run is required for stage=evaluate"; exit 3; }
+          RID=$(gh api "repos/${{ github.repository }}/actions/workflows/experiment.yml/runs?per_page=100" --jq ".workflow_runs[] | select(.run_number == $N) | .id" | head -1)
+          gh run download "$RID" -n "learn-$N" -D runs/learn/
+      - name: Phase 4 — evaluate
+        if: steps.cfg.outputs.stage != 'learn'
+        run: |
+          set -euo pipefail
+          test -n "$MODEL_API_KEY" || { echo "MODEL_API_KEY secret is not set"; exit 2; }
+          python -m phase4.evaluate --tasks corpus/tasks.jsonl --models corpus/models.json --split corpus/split.json --learn-dir runs/learn --repos-dir corpus/repos --out runs/eval --seed "${{ steps.cfg.outputs.seed }}" --max-eval-per-repo "${{ steps.cfg.outputs.max_eval_per_repo }}" $COMMON --model-extra "$MX"
+          mkdir -p "${{ steps.cfg.outputs.dir }}/eval"; cp runs/eval/gate4.json "${{ steps.cfg.outputs.dir }}/eval/gate4.json"
+          for d in runs/eval/*/; do r=$(basename "$d"); [ -f "$d/arms.json" ] && cp "$d/arms.json" "${{ steps.cfg.outputs.dir }}/eval/$r.arms.json"; done; true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: learn-${{ github.run_number }}
+          path: runs/learn/
+          retention-days: 90
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: eval-${{ github.run_number }}
+          path: runs/eval/
+          retention-days: 90
+      - name: Commit results
+        if: always()
+        run: |
+          set -euo pipefail
+          git config user.name "experiment-bot"; git config user.email "experiment-bot@users.noreply.github.com"
+          git add results/
+          git commit -m "results(experiment): run ${{ github.run_number }} [skip ci]" || exit 0
+          git pull --rebase origin "$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME"
