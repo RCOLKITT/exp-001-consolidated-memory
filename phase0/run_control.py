@@ -24,7 +24,7 @@ from pathlib import Path
 from .corpus import Task, apply_freshness, read_tasks
 from .ground_truth import ground_truth_from_tasks
 from .metrics import dump, score
-from .verifier import AnthropicClient, CachedClient, Localizer, repo_file_tree
+from .verifier import CachedClient, Localizer, make_client, repo_file_tree
 
 
 def repo_dir(repos_dir: Path, repo: str) -> Path:
@@ -58,7 +58,7 @@ def run(args: argparse.Namespace) -> int:
     repo_of = {t.instance_id: t.repo for t in tasks}
 
     cache_path = Path(args.cache) if args.cache else out / "cache.jsonl"
-    inner = None if args.offline else AnthropicClient()
+    inner = None if args.offline else make_client(args.provider, args.base_url, args.api_key_env)
     client = CachedClient(inner, cache_path, offline=args.offline)
     localizer = Localizer(client, args.model, k=args.top_k, effort=args.effort)
 
@@ -76,7 +76,7 @@ def run(args: argparse.Namespace) -> int:
     m = score(flags_by_task, truth, repo_of)
     dump(m, out / "metrics.json")
     manifest = {
-        "model": args.model, "effort": args.effort, "top_k": args.top_k, "n_tasks": len(tasks),
+        "model": args.model, "provider": args.provider, "base_url": args.base_url, "effort": args.effort, "top_k": args.top_k, "n_tasks": len(tasks),
         "offline": args.offline, "cache": str(cache_path), "cache_hits": client.hits, "cache_misses": client.misses,
         "flags_sha256": hashlib.sha256(flags_path.read_bytes()).hexdigest(),
         "elapsed_s": round(time.time() - t0, 1),
@@ -101,6 +101,9 @@ def _main(argv: list[str]) -> int:
     ap.add_argument("--repos-dir", default="corpus/repos")
     ap.add_argument("--out")
     ap.add_argument("--model", default="claude-opus-5")
+    ap.add_argument("--provider", default="anthropic", choices=["anthropic", "openai-compatible"])
+    ap.add_argument("--base-url", help="openai-compatible: e.g. https://api.together.xyz/v1")
+    ap.add_argument("--api-key-env", default="MODEL_API_KEY", help="openai-compatible: env var holding the key")
     ap.add_argument("--effort", default="high")
     ap.add_argument("--top-k", type=int, default=3)
     ap.add_argument("--limit", type=int, default=0)

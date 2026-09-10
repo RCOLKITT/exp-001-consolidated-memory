@@ -96,6 +96,98 @@ class AnthropicClient:
         return next(b.text for b in resp.content if b.type == "text")
 
 
+class OpenAICompatibleClient:
+    """Chat-completions client for OpenAI-compatible endpoints (Together,
+    Fireworks, Groq, OpenRouter, vLLM, Ollama…) — the path for open-weights
+    models with documented training cutoffs (option A, docs/phase0-findings.md).
+
+    Structured output: tries `response_format: json_schema`, then
+    `json_object`, then plain text; the returned text is always validated as
+    JSON with a `files` list before it is cached. Standard library only.
+    """
+
+    def __init__(self, base_url: str, api_key: str, timeout: float = 180.0, extra: Optional[dict] = None) -> None:
+        self.base_url = base_url.rstrip("/")
+        self.api_key = api_key
+        self.timeout = timeout
+        self.extra = extra or {}          # e.g. {"seed": 0, "provider": {...}}
+        self._mode: Optional[str] = None  # remembered after the first success
+
+    def _post(self, body: dict) -> dict:
+        import urllib.error
+        import urllib.request
+        req = urllib.request.Request(
+            f"{self.base_url}/chat/completions",
+            data=json.dumps(body).encode(),
+            headers={"content-type": "application/json", "authorization": f"Bearer {self.api_key}"},
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=self.timeout) as r:
+                return json.loads(r.read().decode())
+        except urllib.error.HTTPError as e:
+            raise RuntimeError(f"HTTP {e.code} from {self.base_url}: {e.read().decode()[:500]}") from None
+
+    def _body(self, req: ModelRequest, mode: str) -> dict:
+        body = {
+            "model": req.model,
+            "temperature": 0,
+            "max_tokens": req.max_tokens,
+            "messages": [{"role": "system", "content": req.system}, {"role": "user", "content": req.user}],
+            **self.extra,
+        }
+        if mode == "json_schema":
+            body["response_format"] = {"type": "json_schema", "json_schema": {"name": "ranked_files", "schema": req.schema, "strict": True}}
+        elif mode == "json_object":
+            body["response_format"] = {"type": "json_object"}
+            body["messages"][0]["content"] += "\nRespond with a single JSON object: " + json.dumps(req.schema)
+        else:
+            body["messages"][0]["content"] += "\nRespond with only a JSON object matching this schema, no prose: " + json.dumps(req.schema)
+        return body
+
+    @staticmethod
+    def _extract(resp: dict) -> str:
+        text = resp["choices"][0]["message"]["content"]
+        if not isinstance(text, str):
+            text = "".join(part.get("text", "") for part in text)
+        text = text.strip()
+        if text.startswith("```"):
+            text = text.strip("`")
+            text = text[text.find("{"):]
+        data = json.loads(text[text.find("{"): text.rfind("}") + 1])
+        if not isinstance(data.get("files"), list):
+            raise ValueError("response has no files list")
+        return json.dumps(data, sort_keys=True)
+
+    def complete(self, req: ModelRequest) -> str:
+        modes = [self._mode] if self._mode else ["json_schema", "json_object", "text"]
+        last: Optional[Exception] = None
+        for mode in modes:
+            try:
+                out = self._extract(self._post(self._body(req, mode)))
+                self._mode = mode
+                return out
+            except (RuntimeError, ValueError, KeyError, json.JSONDecodeError) as e:
+                last = e
+                continue
+        raise RuntimeError(f"all response modes failed: {last}")
+
+
+def make_client(provider: str, base_url: Optional[str] = None, api_key_env: Optional[str] = None) -> ModelClient:
+    """Provider factory used by every CLI. `anthropic` uses the SDK's own
+    credential resolution; `openai-compatible` needs --base-url and the env
+    var holding the key (default MODEL_API_KEY)."""
+    if provider == "anthropic":
+        return AnthropicClient()
+    if provider == "openai-compatible":
+        if not base_url:
+            raise ValueError("--base-url is required for openai-compatible")
+        key = os.environ.get(api_key_env or "MODEL_API_KEY", "")
+        if not key:
+            raise ValueError(f"environment variable {api_key_env or 'MODEL_API_KEY'} is empty")
+        return OpenAICompatibleClient(base_url, key)
+    raise ValueError(f"unknown provider {provider!r}")
+
+
 class CachedClient:
     """Content-addressed response cache in front of any ModelClient.
 

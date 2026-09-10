@@ -150,3 +150,29 @@ postdates any Claude 5 model's cutoff.** Options, in order of preference:
    which the corpus decision (§9.1) never anticipated and which costs Phase 0
    its "4 days".
 Never weaken the gate to fit the corpus (§8, contamination).
+
+### D16. Option A chosen: choose the model to fit the freshness gate
+Owner decision (2026-09-10). The corpus stays SWE-bench-Live (Python,
+`full`); the verifier model must have a vendor-documented training cutoff
+early enough to leave long chains. Candidates checked against primary
+sources:
+
+| Model | Stated cutoff (source) | Still served? | Gated corpus (run) |
+|---|---|---|---|
+| Llama 3.3 70B Instruct | "Data freshness: December 2023" (meta-llama/llama-models MODEL_CARD.md) | open weights; Together/Fireworks/Groq/Bedrock | run 7, gate 2023-12-31 |
+| Llama 4 Maverick / Scout | "Knowledge cutoff: August 2024" (llama4 MODEL_CARD.md) | open weights; same hosts | run 8, gate 2024-08-31 |
+| Claude Sonnet 4 / Opus 4 | not verified (model page 404; deprecated) — believed Mar 2025 | deprecated, retirement TBD | run 9, gate 2025-03-31 |
+| Claude Sonnet 4.5 | training data cutoff Jul 2025 (model page) | active (legacy) | too late |
+| Claude 3.x (Apr 2024 and earlier) | — | **retired** | — |
+
+Meta documents one date ("knowledge cutoff"), not a separate training-data
+date; the gate uses it as written and the pre-registration records the
+wording. Access is through the `openai-compatible` provider in
+`phase0/verifier.py` (chat-completions, `response_format` json_schema with
+fallbacks, temperature 0). The cache remains the determinism mechanism (D11).
+
+Preference: Llama 4 Maverick (later cutoff still leaves the long chains;
+stronger coder) unless run 8 shows the August 2024 gate costs a needed repo,
+in which case Llama 3.3 70B. Localization level will be below Opus 5; the
+experiment measures lift, and Gate 0 compares against a baseline reported
+for a comparable model, not a frontier one.

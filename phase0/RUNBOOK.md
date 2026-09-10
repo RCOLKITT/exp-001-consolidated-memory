@@ -16,9 +16,14 @@ carries a `.phase0-run.json`:
   report, and for the control arm: metrics, manifest, flags, compare). Merge
   the branch into main to keep them.
 - The corpus and model-response cache are uploaded as 90-day artifacts.
-- The control job needs the repository secret `ANTHROPIC_API_KEY`
-  (Settings → Secrets and variables → Actions). Without it the job exits 2
-  before spending anything. It spends API credit: keep `limit` small first.
+- Secrets (Settings → Secrets and variables → Actions): `ANTHROPIC_API_KEY`
+  for `"provider": "anthropic"`, or `MODEL_API_KEY` plus a `"base_url"` for
+  `"provider": "openai-compatible"` (Together: `https://api.together.xyz/v1`,
+  Fireworks: `https://api.fireworks.ai/inference/v1`, Groq:
+  `https://api.groq.com/openai/v1`; the `model` value is the host's id for
+  the model, e.g. Together's `meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8`).
+  Without the secret the job exits 2 before spending anything. Keep `limit`
+  small first.
 - `cutoff` blank = no freshness gate (exploration only). Never report a
   number from an ungated run.
 
@@ -56,7 +61,9 @@ per chain), so unless SWE-bench-Live's full split gives several repos with
 ## 3. Control-arm run (no memory)
 ```bash
 python -m phase0.run_control --tasks corpus/tasks.jsonl --models corpus/models.json \
-  --repos-dir corpus/repos --out runs/control-001 --model claude-opus-5 --top-k 3 --limit 50
+  --repos-dir corpus/repos --out runs/control-001 --top-k 3 --limit 50 \
+  --provider openai-compatible --base-url https://api.together.xyz/v1 --api-key-env MODEL_API_KEY \
+  --model meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8
 ```
 - Clones each repo once into `corpus/repos/`, checks out `base_commit`, sends
   the issue + file list to the model, records top-k files per task.
