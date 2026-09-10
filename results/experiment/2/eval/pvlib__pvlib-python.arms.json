@@ -1,0 +1,102 @@
+{
+ "control": {
+  "false_positive_rate": 0.6429,
+  "localization_rate": 1.0,
+  "n_false_positive": 9,
+  "n_flags": 14,
+  "n_localized": 5,
+  "n_tasks": 5,
+  "per_repo": {
+   "pvlib/pvlib-python": {
+    "false_positive_rate": 0.6429,
+    "localization_rate": 1.0,
+    "n_false_positive": 9,
+    "n_flags": 14,
+    "n_localized": 5,
+    "n_tasks": 5
+   }
+  }
+ },
+ "control_flags": {
+  "pvlib__pvlib-python-2281": [
+   "pvlib/clearsky.py",
+   "pvlib/tests/test_clearsky.py",
+   "pvlib/__init__.py"
+  ],
+  "pvlib__pvlib-python-2286": [
+   "pvlib/atmosphere.py",
+   "pvlib/irradiance.py",
+   "pvlib/tools.py"
+  ],
+  "pvlib__pvlib-python-2291": [
+   "pvlib/pvsystem.py",
+   "pvlib/ivtools/sdm.py"
+  ],
+  "pvlib__pvlib-python-2292": [
+   "pvlib/snow.py",
+   "pvlib/pvarray.py",
+   "tests/test_snow.py"
+  ],
+  "pvlib__pvlib-python-2341": [
+   "tests/test_tools.py",
+   "pvlib/tools.py",
+   "tests/conftest.py"
+  ]
+ },
+ "lift": {
+  "false_positive_rise_pts": 0.0,
+  "localization_lift_pts": 0.0
+ },
+ "retrieval_hit_rate": 0.0,
+ "retrieved": {
+  "pvlib__pvlib-python-2281": [],
+  "pvlib__pvlib-python-2286": [],
+  "pvlib__pvlib-python-2291": [],
+  "pvlib__pvlib-python-2292": [],
+  "pvlib__pvlib-python-2341": []
+ },
+ "treatment": {
+  "false_positive_rate": 0.6429,
+  "localization_rate": 1.0,
+  "n_false_positive": 9,
+  "n_flags": 14,
+  "n_localized": 5,
+  "n_tasks": 5,
+  "per_repo": {
+   "pvlib/pvlib-python": {
+    "false_positive_rate": 0.6429,
+    "localization_rate": 1.0,
+    "n_false_positive": 9,
+    "n_flags": 14,
+    "n_localized": 5,
+    "n_tasks": 5
+   }
+  }
+ },
+ "treatment_flags": {
+  "pvlib__pvlib-python-2281": [
+   "pvlib/clearsky.py",
+   "pvlib/tests/test_clearsky.py",
+   "pvlib/__init__.py"
+  ],
+  "pvlib__pvlib-python-2286": [
+   "pvlib/atmosphere.py",
+   "pvlib/irradiance.py",
+   "pvlib/tools.py"
+  ],
+  "pvlib__pvlib-python-2291": [
+   "pvlib/pvsystem.py",
+   "pvlib/ivtools/sdm.py"
+  ],
+  "pvlib__pvlib-python-2292": [
+   "pvlib/snow.py",
+   "pvlib/pvarray.py",
+   "tests/test_snow.py"
+  ],
+  "pvlib__pvlib-python-2341": [
+   "tests/test_tools.py",
+   "pvlib/tools.py",
+   "tests/conftest.py"
+  ]
+ }
+}

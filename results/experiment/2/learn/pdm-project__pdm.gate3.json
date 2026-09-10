@@ -1,0 +1,13 @@
+{
+ "buffered": 11,
+ "candidate_writes": 60,
+ "cluster_similarity": 0.6,
+ "discard_rate": 0.8167,
+ "discarded_or_reinforced": 49,
+ "frozen_version": "6279f64d565ee2af346dd36244021d3bf7eabe843e9fbb9049289dcd5fac07a9",
+ "n_build": 20,
+ "promoted": 0,
+ "rho": 0.7,
+ "similarity": "sentence-transformers/all-MiniLM-L6-v2@1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+ "theta": 0.45
+}

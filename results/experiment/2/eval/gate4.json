@@ -1,0 +1,68 @@
+{
+ "control": {
+  "false_positive_rate": 0.7241,
+  "localization_rate": 0.8,
+  "n_false_positive": 21,
+  "n_flags": 29,
+  "n_localized": 8,
+  "n_tasks": 10,
+  "per_repo": {
+   "pdm-project/pdm": {
+    "false_positive_rate": 0.8,
+    "localization_rate": 0.6,
+    "n_false_positive": 12,
+    "n_flags": 15,
+    "n_localized": 3,
+    "n_tasks": 5
+   },
+   "pvlib/pvlib-python": {
+    "false_positive_rate": 0.6429,
+    "localization_rate": 1.0,
+    "n_false_positive": 9,
+    "n_flags": 14,
+    "n_localized": 5,
+    "n_tasks": 5
+   }
+  }
+ },
+ "effect_in_majority_of_repos": false,
+ "false_positive_rise_pts": 0.0,
+ "localization_lift_pts": 0.0,
+ "negative_control_lift": null,
+ "per_repo_lift": {
+  "pdm-project/pdm": {
+   "false_positive_rise_pts": 0.0,
+   "localization_lift_pts": 0.0
+  },
+  "pvlib/pvlib-python": {
+   "false_positive_rise_pts": 0.0,
+   "localization_lift_pts": 0.0
+  }
+ },
+ "treatment": {
+  "false_positive_rate": 0.7241,
+  "localization_rate": 0.8,
+  "n_false_positive": 21,
+  "n_flags": 29,
+  "n_localized": 8,
+  "n_tasks": 10,
+  "per_repo": {
+   "pdm-project/pdm": {
+    "false_positive_rate": 0.8,
+    "localization_rate": 0.6,
+    "n_false_positive": 12,
+    "n_flags": 15,
+    "n_localized": 3,
+    "n_tasks": 5
+   },
+   "pvlib/pvlib-python": {
+    "false_positive_rate": 0.6429,
+    "localization_rate": 1.0,
+    "n_false_positive": 9,
+    "n_flags": 14,
+    "n_localized": 5,
+    "n_tasks": 5
+   }
+  }
+ }
+}

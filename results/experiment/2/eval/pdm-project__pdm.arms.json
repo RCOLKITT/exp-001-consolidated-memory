@@ -1,0 +1,104 @@
+{
+ "control": {
+  "false_positive_rate": 0.8,
+  "localization_rate": 0.6,
+  "n_false_positive": 12,
+  "n_flags": 15,
+  "n_localized": 3,
+  "n_tasks": 5,
+  "per_repo": {
+   "pdm-project/pdm": {
+    "false_positive_rate": 0.8,
+    "localization_rate": 0.6,
+    "n_false_positive": 12,
+    "n_flags": 15,
+    "n_localized": 3,
+    "n_tasks": 5
+   }
+  }
+ },
+ "control_flags": {
+  "pdm-project__pdm-3136": [
+   "src/pdm/cli/commands/add.py",
+   "src/pdm/project/project_file.py",
+   "src/pdm/models/project_info.py"
+  ],
+  "pdm-project__pdm-3170": [
+   "src/pdm/models/auth.py",
+   "src/pdm/environments/base.py",
+   "src/pdm/utils.py"
+  ],
+  "pdm-project__pdm-3191": [
+   "src/pdm/cli/actions.py",
+   "src/pdm/installers/base.py",
+   "src/pdm/signals.py"
+  ],
+  "pdm-project__pdm-3237": [
+   "src/pdm/formats/uv.py",
+   "src/pdm/installers/uv.py",
+   "src/pdm/cli/commands/build.py"
+  ],
+  "pdm-project__pdm-3250": [
+   "src/pdm/cli/commands/lock.py",
+   "src/pdm/project/config.py",
+   "src/pdm/resolver/base.py"
+  ]
+ },
+ "lift": {
+  "false_positive_rise_pts": 0.0,
+  "localization_lift_pts": 0.0
+ },
+ "retrieval_hit_rate": 0.0,
+ "retrieved": {
+  "pdm-project__pdm-3136": [],
+  "pdm-project__pdm-3170": [],
+  "pdm-project__pdm-3191": [],
+  "pdm-project__pdm-3237": [],
+  "pdm-project__pdm-3250": []
+ },
+ "treatment": {
+  "false_positive_rate": 0.8,
+  "localization_rate": 0.6,
+  "n_false_positive": 12,
+  "n_flags": 15,
+  "n_localized": 3,
+  "n_tasks": 5,
+  "per_repo": {
+   "pdm-project/pdm": {
+    "false_positive_rate": 0.8,
+    "localization_rate": 0.6,
+    "n_false_positive": 12,
+    "n_flags": 15,
+    "n_localized": 3,
+    "n_tasks": 5
+   }
+  }
+ },
+ "treatment_flags": {
+  "pdm-project__pdm-3136": [
+   "src/pdm/cli/commands/add.py",
+   "src/pdm/project/project_file.py",
+   "src/pdm/models/project_info.py"
+  ],
+  "pdm-project__pdm-3170": [
+   "src/pdm/models/auth.py",
+   "src/pdm/environments/base.py",
+   "src/pdm/utils.py"
+  ],
+  "pdm-project__pdm-3191": [
+   "src/pdm/cli/actions.py",
+   "src/pdm/installers/base.py",
+   "src/pdm/signals.py"
+  ],
+  "pdm-project__pdm-3237": [
+   "src/pdm/formats/uv.py",
+   "src/pdm/installers/uv.py",
+   "src/pdm/cli/commands/build.py"
+  ],
+  "pdm-project__pdm-3250": [
+   "src/pdm/cli/commands/lock.py",
+   "src/pdm/project/config.py",
+   "src/pdm/resolver/base.py"
+  ]
+ }
+}
