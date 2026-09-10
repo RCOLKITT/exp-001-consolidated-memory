@@ -1,0 +1,1 @@
+{"embedding_model": "sentence-transformers/all-MiniLM-L6-v2", "embedding_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41", "mode": "nl", "n_records": 400, "redundant": 0.7, "seeds": [1, 2, 3], "thetas": "0.4,0.45,0.5", "rhos": "0.65,0.7,0.75,0.8", "clusters": "0.6"}
