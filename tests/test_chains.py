@@ -25,3 +25,15 @@ def test_stats_and_eligibility():
     assert s.count_at_least(5) == 1
     md = markdown_report(chains, 4, 2)
     assert "| a/a | 7 |" in md and "eligible" in md
+
+
+def test_recurrence_report_counts_gold_files_and_dirs():
+    from phase2.recurrence import analyse
+    def patch(*paths):
+        return "".join(f"diff --git a/{p} b/{p}\n--- a/{p}\n+++ b/{p}\n@@ -1,1 +1,1 @@\n-a\n+b\n" for p in paths)
+    tasks = [Task(instance_id=f"o__r-{i}", repo="o/r", base_commit="c", created_at=f"2025-01-{i+1:02d}", problem_statement="p",
+                  patch=patch("pkg/a.py" if i % 2 == 0 else f"pkg/b{i}.py")) for i in range(8)]
+    res = analyse(tasks, ["o/r"], [4])
+    r4 = res["o/r"]["rows"][0]
+    assert r4["prefix"] == 4 and r4["files_ge3"] == 0 and r4["files_ge2"] == 1 and r4["dirs_ge3"] == 1
+    assert r4["eval_file_seen1"] == 0.5 and r4["eval_dir_seen3"] == 1.0

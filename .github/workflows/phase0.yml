@@ -142,6 +142,11 @@ jobs:
           print(json.dumps({"dataset":"${{ steps.cfg.outputs.dataset }}","split":"${{ steps.cfg.outputs.split }}","cutoff":"${{ steps.cfg.outputs.cutoff }}","n_tasks":len(rows),"n_repos":len(by),"first":dates[0] if dates else None,"last":dates[-1] if dates else None,"per_month":dict(sorted(months.items())),"survivors_after_cutoff":survivors,"languages":dict(langs),"fields":sorted(rows[0].keys()) if rows else []},indent=1))
           PY
           cat "$D/corpus-summary.json"; head -12 "$D/chain-report.md"
+      - name: Gold-location recurrence report (Gate 3 precheck, no model)
+        if: steps.cfg.outputs.repos != ''
+        run: |
+          python -m phase2.recurrence corpus/tasks.jsonl --repos "${{ steps.cfg.outputs.repos }}" --prefixes 20,40,60 \
+            --md "${{ steps.dir.outputs.dir }}/recurrence.md" --json "${{ steps.dir.outputs.dir }}/recurrence.json" | head -60
       - uses: actions/upload-artifact@v4
         with:
           name: corpus-${{ github.run_number }}
