@@ -1,0 +1,796 @@
+{
+ "arm": "treatment",
+ "baseline": "placebo",
+ "errors": {
+  "instructlab/instructlab": {
+   "instructlab__instructlab-3135": "RuntimeError: all response modes failed: Unterminated string starting at: line 3 column 52 (char 71) | finish_reason=length | text='{ \\n  \"functions\": [\\n    {\"path\": \"src/instructlab/log.py\", \"qualname\": \"CustomFormatter.format\\'},                                                                                  "
+  },
+  "keras-team/keras": {
+   "keras-team__keras-20396": "RuntimeError: all response modes failed: Unterminated string starting at: line 3 column 59 (char 77) | finish_reason=stop | text='{\\n  \"functions\": [\\n    {\"path\": \"keras/src/trainers/trainer.py\", \"qualname\": \"Trainer.fit\\'},'"
+  },
+  "pdm-project/pdm": {
+   "pdm-project__pdm-3136": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "pdm-project__pdm-3170": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "pdm-project__pdm-3191": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "pdm-project__pdm-3237": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "pdm-project__pdm-3250": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "pdm-project__pdm-3255": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "pdm-project__pdm-3314": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "pdm-project__pdm-3374": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "pdm-project__pdm-3393": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "pdm-project__pdm-3419": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "pdm-project__pdm-3420": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "pdm-project__pdm-3435": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "pdm-project__pdm-3440": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "pdm-project__pdm-3455": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "pdm-project__pdm-3555": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''"
+  },
+  "reflex-dev/reflex": {
+   "reflex-dev__reflex-4205": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "reflex-dev__reflex-4230": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "reflex-dev__reflex-4256": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "reflex-dev__reflex-4266": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "reflex-dev__reflex-4347": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "reflex-dev__reflex-4371": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "reflex-dev__reflex-4427": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "reflex-dev__reflex-4510": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "reflex-dev__reflex-4563": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "reflex-dev__reflex-4620": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "reflex-dev__reflex-4688": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "reflex-dev__reflex-4708": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "reflex-dev__reflex-4711": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "reflex-dev__reflex-4717": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "reflex-dev__reflex-4720": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "reflex-dev__reflex-4958": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "reflex-dev__reflex-5039": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "reflex-dev__reflex-5077": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "reflex-dev__reflex-5081": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''"
+  },
+  "sissbruecker/linkding": {
+   "sissbruecker__linkding-1014": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "sissbruecker__linkding-1045": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "sissbruecker__linkding-1051": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "sissbruecker__linkding-1101": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "sissbruecker__linkding-1114": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "sissbruecker__linkding-1153": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "sissbruecker__linkding-1175": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "sissbruecker__linkding-866": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "sissbruecker__linkding-971": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "sissbruecker__linkding-984": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "sissbruecker__linkding-989": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "sissbruecker__linkding-993": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "sissbruecker__linkding-995": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "sissbruecker__linkding-999": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''"
+  },
+  "sphinx-doc/sphinx": {
+   "sphinx-doc__sphinx-12583": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "sphinx-doc__sphinx-12586": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "sphinx-doc__sphinx-12598": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "sphinx-doc__sphinx-12615": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "sphinx-doc__sphinx-12622": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "sphinx-doc__sphinx-12647": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "sphinx-doc__sphinx-12726": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "sphinx-doc__sphinx-12737": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "sphinx-doc__sphinx-12745": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "sphinx-doc__sphinx-12807": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "sphinx-doc__sphinx-12875": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "sphinx-doc__sphinx-12975": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "sphinx-doc__sphinx-13127": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "sphinx-doc__sphinx-13172": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "sphinx-doc__sphinx-13200": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "sphinx-doc__sphinx-13253": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "sphinx-doc__sphinx-13261": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "sphinx-doc__sphinx-13318": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+   "sphinx-doc__sphinx-13319": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''"
+  }
+ },
+ "negative_control": {
+  "both_hit": 0,
+  "control_localized": 0,
+  "control_only_hit": 0,
+  "control_rate": 0.0,
+  "flags_differed": 0,
+  "flags_differed_rate": 0.0,
+  "label": "sissbruecker/linkding",
+  "lift_ci95_bootstrap_pts": [
+   0.0,
+   0.0
+  ],
+  "lift_ci95_paired_wald_pts": [
+   0.0,
+   0.0
+  ],
+  "lift_pts": 0.0,
+  "mcnemar_exact_p": 1.0,
+  "n_tasks": 0,
+  "neither_hit": 0,
+  "retrieval_coverage": 0.0,
+  "retrieved_any": 0,
+  "treatment_localized": 0,
+  "treatment_only_hit": 0,
+  "treatment_rate": 0.0
+ },
+ "per_repo": {
+  "instructlab/instructlab": {
+   "both_hit": 17,
+   "control_localized": 17,
+   "control_only_hit": 0,
+   "control_rate": 0.5667,
+   "flags_differed": 23,
+   "flags_differed_rate": 0.7667,
+   "label": "instructlab/instructlab",
+   "lift_ci95_bootstrap_pts": [
+    0.0,
+    10.0
+   ],
+   "lift_ci95_paired_wald_pts": [
+    -3.09,
+    9.76
+   ],
+   "lift_pts": 3.33,
+   "mcnemar_exact_p": 1.0,
+   "n_tasks": 30,
+   "neither_hit": 12,
+   "retrieval_coverage": 1.0,
+   "retrieved_any": 30,
+   "treatment_localized": 18,
+   "treatment_only_hit": 1,
+   "treatment_rate": 0.6
+  },
+  "keras-team/keras": {
+   "both_hit": 8,
+   "control_localized": 8,
+   "control_only_hit": 0,
+   "control_rate": 0.2963,
+   "flags_differed": 0,
+   "flags_differed_rate": 0.0,
+   "label": "keras-team/keras",
+   "lift_ci95_bootstrap_pts": [
+    0.0,
+    0.0
+   ],
+   "lift_ci95_paired_wald_pts": [
+    0.0,
+    0.0
+   ],
+   "lift_pts": 0.0,
+   "mcnemar_exact_p": 1.0,
+   "n_tasks": 27,
+   "neither_hit": 19,
+   "retrieval_coverage": 0.0,
+   "retrieved_any": 0,
+   "treatment_localized": 8,
+   "treatment_only_hit": 0,
+   "treatment_rate": 0.2963
+  },
+  "pdm-project/pdm": {
+   "both_hit": 0,
+   "control_localized": 0,
+   "control_only_hit": 0,
+   "control_rate": 0.0,
+   "flags_differed": 0,
+   "flags_differed_rate": 0.0,
+   "label": "pdm-project/pdm",
+   "lift_ci95_bootstrap_pts": [
+    0.0,
+    0.0
+   ],
+   "lift_ci95_paired_wald_pts": [
+    0.0,
+    0.0
+   ],
+   "lift_pts": 0.0,
+   "mcnemar_exact_p": 1.0,
+   "n_tasks": 0,
+   "neither_hit": 0,
+   "retrieval_coverage": 0.0,
+   "retrieved_any": 0,
+   "treatment_localized": 0,
+   "treatment_only_hit": 0,
+   "treatment_rate": 0.0
+  },
+  "reflex-dev/reflex": {
+   "both_hit": 3,
+   "control_localized": 3,
+   "control_only_hit": 0,
+   "control_rate": 0.6,
+   "flags_differed": 0,
+   "flags_differed_rate": 0.0,
+   "label": "reflex-dev/reflex",
+   "lift_ci95_bootstrap_pts": [
+    0.0,
+    0.0
+   ],
+   "lift_ci95_paired_wald_pts": [
+    0.0,
+    0.0
+   ],
+   "lift_pts": 0.0,
+   "mcnemar_exact_p": 1.0,
+   "n_tasks": 5,
+   "neither_hit": 2,
+   "retrieval_coverage": 0.0,
+   "retrieved_any": 0,
+   "treatment_localized": 3,
+   "treatment_only_hit": 0,
+   "treatment_rate": 0.6
+  },
+  "sissbruecker/linkding": {
+   "both_hit": 0,
+   "control_localized": 0,
+   "control_only_hit": 0,
+   "control_rate": 0.0,
+   "flags_differed": 0,
+   "flags_differed_rate": 0.0,
+   "label": "sissbruecker/linkding",
+   "lift_ci95_bootstrap_pts": [
+    0.0,
+    0.0
+   ],
+   "lift_ci95_paired_wald_pts": [
+    0.0,
+    0.0
+   ],
+   "lift_pts": 0.0,
+   "mcnemar_exact_p": 1.0,
+   "n_tasks": 0,
+   "neither_hit": 0,
+   "retrieval_coverage": 0.0,
+   "retrieved_any": 0,
+   "treatment_localized": 0,
+   "treatment_only_hit": 0,
+   "treatment_rate": 0.0
+  },
+  "sphinx-doc/sphinx": {
+   "both_hit": 0,
+   "control_localized": 0,
+   "control_only_hit": 0,
+   "control_rate": 0.0,
+   "flags_differed": 0,
+   "flags_differed_rate": 0.0,
+   "label": "sphinx-doc/sphinx",
+   "lift_ci95_bootstrap_pts": [
+    0.0,
+    0.0
+   ],
+   "lift_ci95_paired_wald_pts": [
+    0.0,
+    0.0
+   ],
+   "lift_pts": 0.0,
+   "mcnemar_exact_p": 1.0,
+   "n_tasks": 0,
+   "neither_hit": 0,
+   "retrieval_coverage": 0.0,
+   "retrieved_any": 0,
+   "treatment_localized": 0,
+   "treatment_only_hit": 0,
+   "treatment_rate": 0.0
+  }
+ },
+ "primary": {
+  "both_hit": 28,
+  "control_localized": 28,
+  "control_only_hit": 0,
+  "control_rate": 0.4516,
+  "flags_differed": 23,
+  "flags_differed_rate": 0.371,
+  "label": "primary: all treatment repos (registered)",
+  "lift_ci95_bootstrap_pts": [
+   0.0,
+   4.84
+  ],
+  "lift_ci95_paired_wald_pts": [
+   -1.52,
+   4.75
+  ],
+  "lift_pts": 1.61,
+  "mcnemar_exact_p": 1.0,
+  "n_tasks": 62,
+  "neither_hit": 33,
+  "retrieval_coverage": 0.4839,
+  "retrieved_any": 30,
+  "treatment_localized": 29,
+  "treatment_only_hit": 1,
+  "treatment_rate": 0.4677
+ },
+ "secondary": null,
+ "tasks": [
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-1762",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-1847",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-1923",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "instructlab__instructlab-1945",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "instructlab__instructlab-2004",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-2005",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-2055",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-2065",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-2119",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-2144",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "instructlab__instructlab-2208",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-2236",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-2247",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-2316",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-2526",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-2540",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "instructlab__instructlab-2548",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-2572",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-2585",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-2592",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-2741",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-2789",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-2825",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-2886",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "instructlab__instructlab-2927",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-3045",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "instructlab__instructlab-3060",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "instructlab__instructlab-3118",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-3125",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-3184",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-19915",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-19924",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-19931",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-19937",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-19955",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-19973",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-19998",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20064",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20079",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20120",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20122",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20123",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20125",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20168",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20197",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20206",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20296",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20383",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20389",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20443",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20534",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20609",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20703",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20765",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20824",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20880",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-21072",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "reflex-dev__reflex-3842",
+   "repo": "reflex-dev/reflex",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "reflex-dev__reflex-3895",
+   "repo": "reflex-dev/reflex",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "reflex-dev__reflex-3982",
+   "repo": "reflex-dev/reflex",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "reflex-dev__reflex-4087",
+   "repo": "reflex-dev/reflex",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "reflex-dev__reflex-4129",
+   "repo": "reflex-dev/reflex",
+   "retrieved": false,
+   "treatment_hit": false
+  }
+ ]
+}

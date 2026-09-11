@@ -1,0 +1,389 @@
+{
+ "arms": {
+  "control": {
+   "file_hits": {},
+   "file_metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "flags": {},
+   "hits": {},
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "retrieved": {},
+   "scores": {},
+   "tau": 0.0,
+   "version": null
+  },
+  "gated": {
+   "file_hits": {},
+   "file_metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "flags": {},
+   "hits": {},
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "retrieved": {},
+   "scores": {},
+   "tau": 0.5,
+   "version": "rolling"
+  },
+  "placebo": {
+   "file_hits": {},
+   "file_metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "flags": {},
+   "hits": {},
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "retrieved": {},
+   "scores": {},
+   "tau": 0.0,
+   "version": "rolling"
+  },
+  "treatment": {
+   "file_hits": {},
+   "file_metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "flags": {},
+   "hits": {},
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "retrieved": {},
+   "scores": {},
+   "tau": 0.0,
+   "version": "rolling"
+  }
+ },
+ "control": {
+  "false_positive_rate": 0.0,
+  "localization_rate": 0.0,
+  "n_false_positive": 0,
+  "n_flags": 0,
+  "n_localized": 0,
+  "n_tasks": 0,
+  "per_repo": {}
+ },
+ "control_flags": {},
+ "errors": {
+  "sphinx-doc__sphinx-12583": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12586": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12598": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12615": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12622": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12647": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12726": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12737": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12745": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12807": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12875": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12975": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-13127": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-13172": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-13200": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-13253": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-13261": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-13318": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-13319": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''"
+ },
+ "gold": {
+  "sphinx-doc__sphinx-12583": [
+   "sphinx/environment/__init__.py::<module>",
+   "utils/generate_js_fixtures.py::<module>"
+  ],
+  "sphinx-doc__sphinx-12586": [
+   "sphinx/util/inventory.py::InventoryFile.load_v2"
+  ],
+  "sphinx-doc__sphinx-12598": [
+   "sphinx/ext/todo.py::<module>",
+   "sphinx/ext/todo.py::latex_depart_todo_node",
+   "sphinx/ext/todo.py::latex_visit_todo_node",
+   "sphinx/ext/todo.py::setup",
+   "sphinx/writers/latex.py::LaTeXTranslator",
+   "sphinx/writers/latex.py::LaTeXTranslator.__init__",
+   "sphinx/writers/latex.py::LaTeXTranslator._depart_named_admonition",
+   "sphinx/writers/latex.py::LaTeXTranslator._visit_named_admonition",
+   "sphinx/writers/latex.py::LaTeXTranslator.depart_admonition",
+   "sphinx/writers/latex.py::LaTeXTranslator.depart_seealso",
+   "sphinx/writers/latex.py::LaTeXTranslator.visit_admonition",
+   "sphinx/writers/latex.py::LaTeXTranslator.visit_figure",
+   "sphinx/writers/latex.py::LaTeXTranslator.visit_rubric",
+   "sphinx/writers/latex.py::LaTeXTranslator.visit_seealso"
+  ],
+  "sphinx-doc__sphinx-12615": [
+   "sphinx/util/inventory.py::InventoryFile",
+   "sphinx/util/inventory.py::InventoryFile.dump",
+   "sphinx/util/inventory.py::InventoryFile.load_v2"
+  ],
+  "sphinx-doc__sphinx-12622": [
+   "sphinx/ext/autodoc/__init__.py::AttributeDocumenter.add_directive_header",
+   "sphinx/ext/autodoc/__init__.py::DataDocumenter.add_directive_header",
+   "sphinx/ext/autodoc/__init__.py::UninitializedGlobalVariableMixin.import_object",
+   "sphinx/ext/autodoc/__init__.py::UninitializedInstanceAttributeMixin",
+   "sphinx/ext/autodoc/__init__.py::UninitializedInstanceAttributeMixin.import_object",
+   "sphinx/ext/autodoc/__init__.py::UninitializedInstanceAttributeMixin.is_uninitialized_instance_attribute",
+   "sphinx/util/inspect.py::signature",
+   "sphinx/util/typing.py::<module>",
+   "sphinx/util/typing.py::get_type_hints",
+   "sphinx/util/typing.py::restify",
+   "sphinx/util/typing.py::stringify_annotation"
+  ],
+  "sphinx-doc__sphinx-12647": [
+   "sphinx/builders/_epub_base.py::EpubBuilder",
+   "sphinx/builders/_epub_base.py::EpubBuilder.build_content",
+   "sphinx/builders/_epub_base.py::EpubBuilder.build_epub",
+   "sphinx/builders/_epub_base.py::EpubBuilder.build_toc",
+   "sphinx/builders/_epub_base.py::EpubBuilder.new_navpoint",
+   "sphinx/builders/epub3.py::Epub3Builder.build_navigation_doc",
+   "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder",
+   "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder.handle_page",
+   "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder.update_page_context",
+   "sphinx/util/fileutil.py::<module>",
+   "sphinx/util/fileutil.py::copy_asset",
+   "sphinx/util/fileutil.py::copy_asset_file",
+   "sphinx/util/osutil.py::<module>",
+   "sphinx/util/osutil.py::copyfile"
+  ],
+  "sphinx-doc__sphinx-12726": [
+   "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder",
+   "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder.copy_extra_files",
+   "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder.copy_static_files",
+   "sphinx/util/fileutil.py::copy_asset_file"
+  ],
+  "sphinx-doc__sphinx-12737": [
+   "sphinx/writers/latex.py::LaTeXTranslator",
+   "sphinx/writers/latex.py::LaTeXTranslator._depart_signature_line",
+   "sphinx/writers/latex.py::LaTeXTranslator._visit_sig_parameter",
+   "sphinx/writers/latex.py::LaTeXTranslator._visit_signature_line",
+   "sphinx/writers/latex.py::LaTeXTranslator.depart_desc_parameterlist",
+   "sphinx/writers/latex.py::LaTeXTranslator.depart_desc_type_parameter_list",
+   "sphinx/writers/latex.py::LaTeXTranslator.visit_desc_parameterlist",
+   "sphinx/writers/latex.py::LaTeXTranslator.visit_desc_type_parameter_list"
+  ],
+  "sphinx-doc__sphinx-12745": [
+   "sphinx/writers/latex.py::LaTeXTranslator",
+   "sphinx/writers/latex.py::LaTeXTranslator.visit_inline"
+  ],
+  "sphinx-doc__sphinx-12807": [
+   "sphinx/ext/intersphinx/_load.py::_fetch_inventory_group"
+  ],
+  "sphinx-doc__sphinx-12875": [
+   "sphinx/config.py::Config"
+  ],
+  "sphinx-doc__sphinx-12975": [
+   "sphinx/addnodes.py::desc_parameterlist",
+   "sphinx/addnodes.py::desc_type_parameter_list",
+   "sphinx/domains/javascript.py::JSObject",
+   "sphinx/domains/javascript.py::JSObject._object_hierarchy_parts",
+   "sphinx/domains/javascript.py::JSObject.handle_signature",
+   "sphinx/domains/javascript.py::setup",
+   "sphinx/domains/python/__init__.py::setup",
+   "sphinx/domains/python/_annotations.py::<module>",
+   "sphinx/domains/python/_annotations.py::_parse_arglist",
+   "sphinx/domains/python/_annotations.py::_parse_type_list",
+   "sphinx/domains/python/_annotations.py::_pseudo_parse_arglist",
+   "sphinx/domains/python/_object.py::PyObject.handle_signature",
+   "sphinx/writers/html5.py::HTML5Translator",
+   "sphinx/writers/html5.py::HTML5Translator._visit_sig_parameter_list",
+   "sphinx/writers/html5.py::HTML5Translator.depart_desc_optional",
+   "sphinx/writers/html5.py::HTML5Translator.depart_desc_parameter",
+   "sphinx/writers/html5.py::HTML5Translator.visit_desc_annotation",
+   "sphinx/writers/latex.py::LaTeXTranslator",
+   "sphinx/writers/latex.py::LaTeXTranslator._depart_sig_parameter",
+   "sphinx/writers/latex.py::LaTeXTranslator._visit_sig_parameter_list",
+   "sphinx/writers/latex.py::LaTeXTranslator.depart_desc_optional",
+   "sphinx/writers/latex.py::LaTeXTranslator.visit_desc_annotation",
+   "sphinx/writers/latex.py::LaTeXTranslator.visit_desc_parameterlist",
+   "sphinx/writers/text.py::TextTranslator",
+   "sphinx/writers/text.py::TextTranslator._visit_sig_parameter_list",
+   "sphinx/writers/text.py::TextTranslator.depart_desc_optional",
+   "sphinx/writers/text.py::TextTranslator.visit_desc_annotation",
+   "sphinx/writers/text.py::TextTranslator.visit_desc_parameter"
+  ],
+  "sphinx-doc__sphinx-13127": [
+   "sphinx/builders/linkcheck.py::HyperlinkAvailabilityCheckWorker",
+   "sphinx/builders/linkcheck.py::HyperlinkAvailabilityCheckWorker.__init__",
+   "sphinx/builders/linkcheck.py::HyperlinkAvailabilityCheckWorker._check_uri",
+   "sphinx/util/requests.py::<module>",
+   "sphinx/util/requests.py::_Session",
+   "sphinx/util/requests.py::_Session.request",
+   "sphinx/util/requests.py::_get_tls_cacert"
+  ],
+  "sphinx-doc__sphinx-13172": [
+   "sphinx/ext/autosummary/__init__.py::<module>",
+   "sphinx/ext/autosummary/__init__.py::Autosummary",
+   "sphinx/ext/autosummary/__init__.py::Autosummary.create_documenter",
+   "sphinx/ext/autosummary/__init__.py::Autosummary.get_items",
+   "sphinx/ext/autosummary/__init__.py::Autosummary.get_table",
+   "sphinx/ext/autosummary/__init__.py::Autosummary.run"
+  ],
+  "sphinx-doc__sphinx-13200": [
+   "sphinx/ext/autodoc/__init__.py::MethodDocumenter.add_directive_header",
+   "sphinx/util/inspect.py::<module>",
+   "sphinx/util/inspect.py::getdoc",
+   "sphinx/util/inspect.py::isclassmethod",
+   "sphinx/util/inspect.py::isstaticmethod",
+   "sphinx/util/inspect.py::signature"
+  ],
+  "sphinx-doc__sphinx-13253": [
+   "sphinx/ext/autodoc/importer.py::<module>",
+   "sphinx/ext/autodoc/importer.py::_reload_module",
+   "sphinx/ext/autodoc/importer.py::import_module",
+   "sphinx/ext/autodoc/importer.py::import_object",
+   "sphinx/ext/autodoc/importer.py::unmangle"
+  ],
+  "sphinx-doc__sphinx-13261": [
+   "sphinx/util/typing.py::<module>"
+  ],
+  "sphinx-doc__sphinx-13318": [
+   "sphinx/builders/gettext.py::<module>",
+   "sphinx/builders/gettext.py::MessageCatalogBuilder.finish",
+   "sphinx/builders/gettext.py::_gettext_compact_validator",
+   "sphinx/builders/gettext.py::setup",
+   "sphinx/config.py::<module>",
+   "sphinx/config.py::Config.convert_overrides",
+   "sphinx/config.py::ENUM",
+   "sphinx/config.py::ENUM.__repr__",
+   "sphinx/config.py::ENUM.match"
+  ],
+  "sphinx-doc__sphinx-13319": [
+   "sphinx/writers/html5.py::HTML5Translator.visit_productionlist",
+   "sphinx/writers/manpage.py::ManualPageTranslator.visit_productionlist",
+   "sphinx/writers/texinfo.py::TexinfoTranslator.visit_productionlist",
+   "sphinx/writers/text.py::TextTranslator.visit_productionlist"
+  ]
+ },
+ "granularity": "function",
+ "learn_errors": {
+  "sphinx-doc__sphinx-11876": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-11879": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-11888": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-11904": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-11905": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-11914": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-11989": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12003": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12033": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12047": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12087": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12131": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12183": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12196": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12197": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12344": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12417": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12470": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12495": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12516": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12583": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12586": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12598": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12615": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12622": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12647": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12726": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12737": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12745": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12807": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12875": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-12975": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-13127": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-13172": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-13200": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-13253": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-13261": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-13318": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sphinx-doc__sphinx-13319": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''"
+ },
+ "lift": {
+  "false_positive_rise_pts": 0.0,
+  "localization_lift_pts": 0.0
+ },
+ "memory_locations": {},
+ "mode": "rolling",
+ "n_errors": 19,
+ "n_eval": 19,
+ "retrieval_hit_rate": 0.0,
+ "retrieved": {},
+ "treatment": {
+  "false_positive_rate": 0.0,
+  "localization_rate": 0.0,
+  "n_false_positive": 0,
+  "n_flags": 0,
+  "n_localized": 0,
+  "n_tasks": 0,
+  "per_repo": {}
+ },
+ "treatment_flags": {},
+ "warmup": 20
+}

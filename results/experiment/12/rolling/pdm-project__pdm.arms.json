@@ -1,0 +1,336 @@
+{
+ "arms": {
+  "control": {
+   "file_hits": {},
+   "file_metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "flags": {},
+   "hits": {},
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "retrieved": {},
+   "scores": {},
+   "tau": 0.0,
+   "version": null
+  },
+  "gated": {
+   "file_hits": {},
+   "file_metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "flags": {},
+   "hits": {},
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "retrieved": {},
+   "scores": {},
+   "tau": 0.5,
+   "version": "rolling"
+  },
+  "placebo": {
+   "file_hits": {},
+   "file_metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "flags": {},
+   "hits": {},
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "retrieved": {},
+   "scores": {},
+   "tau": 0.0,
+   "version": "rolling"
+  },
+  "treatment": {
+   "file_hits": {},
+   "file_metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "flags": {},
+   "hits": {},
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "retrieved": {},
+   "scores": {},
+   "tau": 0.0,
+   "version": "rolling"
+  }
+ },
+ "control": {
+  "false_positive_rate": 0.0,
+  "localization_rate": 0.0,
+  "n_false_positive": 0,
+  "n_flags": 0,
+  "n_localized": 0,
+  "n_tasks": 0,
+  "per_repo": {}
+ },
+ "control_flags": {},
+ "errors": {
+  "pdm-project__pdm-3136": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-3170": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-3191": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-3237": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-3250": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-3255": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-3314": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-3374": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-3393": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-3419": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-3420": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-3435": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-3440": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-3455": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-3555": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''"
+ },
+ "gold": {
+  "pdm-project__pdm-3136": [
+   "src/pdm/cli/commands/remove.py::Command.do_remove",
+   "src/pdm/project/core.py::Project.use_pyproject_dependencies"
+  ],
+  "pdm-project__pdm-3170": [
+   "src/pdm/utils.py::<module>",
+   "src/pdm/utils.py::expand_env_vars"
+  ],
+  "pdm-project__pdm-3191": [
+   "src/pdm/cli/actions.py::do_sync"
+  ],
+  "pdm-project__pdm-3237": [
+   "src/pdm/cli/commands/build.py::<module>",
+   "src/pdm/cli/commands/build.py::Command",
+   "src/pdm/cli/commands/build.py::Command.add_arguments",
+   "src/pdm/cli/commands/build.py::Command.do_build",
+   "src/pdm/cli/commands/build.py::Command.handle"
+  ],
+  "pdm-project__pdm-3250": [
+   "src/pdm/cli/commands/add.py::Command.do_add",
+   "src/pdm/cli/filters.py::<module>",
+   "src/pdm/cli/filters.py::GroupSelection._translated_groups",
+   "src/pdm/project/core.py::Project",
+   "src/pdm/project/core.py::Project.all_dependencies",
+   "src/pdm/project/core.py::Project.iter_groups",
+   "src/pdm/project/core.py::Project.use_pyproject_dependencies"
+  ],
+  "pdm-project__pdm-3255": [
+   "src/pdm/models/session.py::PDMPyPIClient.__init__"
+  ],
+  "pdm-project__pdm-3314": [
+   "src/pdm/cli/options.py::<module>",
+   "src/pdm/cli/utils.py::<module>",
+   "src/pdm/cli/utils.py::save_version_specifiers"
+  ],
+  "pdm-project__pdm-3374": [
+   "src/pdm/_types.py::RepositoryConfig",
+   "src/pdm/_types.py::RepositoryConfig.__post_init__",
+   "src/pdm/_types.py::RepositoryConfig.__rich__",
+   "src/pdm/_types.py::RepositoryConfig.populate_auth",
+   "src/pdm/cli/commands/publish/__init__.py::Command",
+   "src/pdm/cli/commands/publish/__init__.py::Command.get_repository",
+   "src/pdm/cli/commands/publish/__init__.py::Command.handle",
+   "src/pdm/models/auth.py::<module>",
+   "src/pdm/models/auth.py::Keyring",
+   "src/pdm/models/auth.py::Keyring.__init__",
+   "src/pdm/models/auth.py::Keyring.get_auth_info",
+   "src/pdm/models/auth.py::PdmBasicAuth",
+   "src/pdm/models/auth.py::PdmBasicAuth.__init__",
+   "src/pdm/models/auth.py::PdmBasicAuth._get_auth_from_index_url",
+   "src/pdm/models/auth.py::PdmBasicAuth._prompt_for_password",
+   "src/pdm/models/auth.py::PdmBasicAuth._should_save_password_to_keyring",
+   "src/pdm/project/config.py::Config.__getitem__",
+   "src/pdm/project/core.py::Project",
+   "src/pdm/project/core.py::Project.default_source",
+   "src/pdm/project/core.py::Project.get_sources",
+   "src/pdm/project/core.py::Project.sources"
+  ],
+  "pdm-project__pdm-3393": [
+   "src/pdm/project/core.py::<module>",
+   "src/pdm/project/core.py::Project.use_pyproject_dependencies"
+  ],
+  "pdm-project__pdm-3419": [
+   "src/pdm/cli/actions.py::do_lock",
+   "src/pdm/cli/actions.py::do_sync",
+   "src/pdm/cli/commands/export.py::Command.handle",
+   "src/pdm/cli/commands/list.py::Command.handle",
+   "src/pdm/project/core.py::<module>",
+   "src/pdm/project/core.py::Project",
+   "src/pdm/project/core.py::Project.all_dependencies",
+   "src/pdm/project/core.py::Project.default_source",
+   "src/pdm/project/core.py::Project.get_dependencies",
+   "src/pdm/project/core.py::Project.iter_groups",
+   "src/pdm/project/core.py::Project.python_requires",
+   "src/pdm/project/core.py::_resolve_dependency_group"
+  ],
+  "pdm-project__pdm-3420": [
+   "src/pdm/cli/commands/remove.py::Command.do_remove",
+   "src/pdm/cli/filters.py::GroupSelection",
+   "src/pdm/cli/filters.py::GroupSelection.__init__",
+   "src/pdm/cli/filters.py::GroupSelection._translated_groups",
+   "src/pdm/cli/filters.py::GroupSelection.from_options"
+  ],
+  "pdm-project__pdm-3435": [
+   "src/pdm/cli/commands/use.py::Command.do_use",
+   "src/pdm/cli/commands/venv/backends.py::Backend._resolved_interpreter",
+   "src/pdm/project/config.py::Config",
+   "src/pdm/project/core.py::Project.iter_interpreters",
+   "src/pdm/project/core.py::Project.resolve_interpreter"
+  ],
+  "pdm-project__pdm-3440": [
+   "src/pdm/cli/commands/run.py::TaskRunner._get_script_env",
+   "src/pdm/models/requirements.py::FileRequirement",
+   "src/pdm/models/requirements.py::FileRequirement._parse_url"
+  ],
+  "pdm-project__pdm-3455": [
+   "src/pdm/models/candidates.py::<module>",
+   "src/pdm/models/candidates.py::PreparedCandidate",
+   "src/pdm/models/candidates.py::PreparedCandidate._get_build_dir",
+   "src/pdm/models/candidates.py::PreparedCandidate._wheel_compatible"
+  ],
+  "pdm-project__pdm-3555": [
+   "src/pdm/_types.py::<module>",
+   "src/pdm/_types.py::RepositoryConfig",
+   "src/pdm/_types.py::RepositoryConfig.__rich__",
+   "src/pdm/_types.py::RepositoryConfig.url_with_credentials",
+   "src/pdm/installers/uv.py::<module>",
+   "src/pdm/installers/uv.py::QuietUvSynchronizer",
+   "src/pdm/installers/uv.py::QuietUvSynchronizer._get_sync_command",
+   "src/pdm/installers/uv.py::UvSynchronizer",
+   "src/pdm/installers/uv.py::UvSynchronizer._get_sync_command",
+   "src/pdm/installers/uv.py::UvSynchronizer.synchronize",
+   "src/pdm/resolver/uv.py::<module>",
+   "src/pdm/resolver/uv.py::UvResolver",
+   "src/pdm/resolver/uv.py::UvResolver.__post_init__",
+   "src/pdm/resolver/uv.py::UvResolver._build_lock_command",
+   "src/pdm/resolver/uv.py::UvResolver.resolve",
+   "src/pdm/utils.py::<module>",
+   "src/pdm/utils.py::get_requirement_from_override"
+  ]
+ },
+ "granularity": "function",
+ "learn_errors": {
+  "pdm-project__pdm-2539": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-2544": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-2551": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-2554": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-2687": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-2688": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-2743": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-2750": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-2781": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-2800": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-2817": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-2819": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-2830": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-2850": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-2858": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-2886": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-2909": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-2928": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-3039": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-3109": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-3136": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-3170": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-3191": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-3237": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-3250": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-3255": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-3314": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-3374": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-3393": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-3419": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-3420": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-3435": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-3440": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-3455": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pdm-project__pdm-3555": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''"
+ },
+ "lift": {
+  "false_positive_rise_pts": 0.0,
+  "localization_lift_pts": 0.0
+ },
+ "memory_locations": {},
+ "mode": "rolling",
+ "n_errors": 15,
+ "n_eval": 15,
+ "retrieval_hit_rate": 0.0,
+ "retrieved": {},
+ "treatment": {
+  "false_positive_rate": 0.0,
+  "localization_rate": 0.0,
+  "n_false_positive": 0,
+  "n_flags": 0,
+  "n_localized": 0,
+  "n_tasks": 0,
+  "per_repo": {}
+ },
+ "treatment_flags": {},
+ "warmup": 20
+}
