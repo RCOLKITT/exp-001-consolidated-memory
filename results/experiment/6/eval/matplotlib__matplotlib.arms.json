@@ -1,0 +1,895 @@
+{
+ "control": {
+  "false_positive_rate": 0.6667,
+  "localization_rate": 0.8431,
+  "n_false_positive": 94,
+  "n_flags": 141,
+  "n_localized": 43,
+  "n_tasks": 51,
+  "per_repo": {
+   "matplotlib/matplotlib": {
+    "false_positive_rate": 0.6667,
+    "localization_rate": 0.8431,
+    "n_false_positive": 94,
+    "n_flags": 141,
+    "n_localized": 43,
+    "n_tasks": 51
+   }
+  }
+ },
+ "control_flags": {
+  "matplotlib__matplotlib-28841": [
+   "lib/matplotlib/rcsetup.py",
+   "lib/mpl_toolkits/mplot3d/axes3d.py",
+   "lib/matplotlib/axes/_axes.py"
+  ],
+  "matplotlib__matplotlib-28853": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/contour.py",
+   "galleries/examples/images_contours_and_fields/pcolor_demo.py"
+  ],
+  "matplotlib__matplotlib-28881": [
+   "lib/matplotlib/axes/_axes.py",
+   "galleries/examples/pyplots/axline.py",
+   "lib/matplotlib/pyplot.py"
+  ],
+  "matplotlib__matplotlib-28933": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/mpl_toolkits/axisartist/axislines.py",
+   "galleries/examples/pyplots/axline.py"
+  ],
+  "matplotlib__matplotlib-28970": [
+   "lib/matplotlib/axis.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/units.py"
+  ],
+  "matplotlib__matplotlib-29007": [
+   "lib/matplotlib/figure.py",
+   "lib/matplotlib/pyplot.py",
+   "lib/matplotlib/_api/deprecation.py"
+  ],
+  "matplotlib__matplotlib-29013": [
+   "lib/matplotlib/figure.py",
+   "lib/matplotlib/_constrained_layout.py",
+   "lib/matplotlib/colorbar.py"
+  ],
+  "matplotlib__matplotlib-29052": [
+   "lib/matplotlib/colors.py",
+   "lib/matplotlib/cm.py"
+  ],
+  "matplotlib__matplotlib-29054": [
+   "lib/matplotlib/ticker.py",
+   "lib/matplotlib/axes/__init__.py",
+   "lib/matplotlib/scale.py"
+  ],
+  "matplotlib__matplotlib-29209": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/contour.py",
+   "lib/matplotlib/tri/_tricontour.py"
+  ],
+  "matplotlib__matplotlib-29249": [
+   "lib/matplotlib/axis.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/ticker.py"
+  ],
+  "matplotlib__matplotlib-29258": [
+   "lib/matplotlib/pyplot.py",
+   "lib/matplotlib/table.py",
+   "lib/matplotlib/axes/_axes.py"
+  ],
+  "matplotlib__matplotlib-29285": [
+   "lib/mpl_toolkits/mplot3d/art3d.py",
+   "lib/matplotlib/patches.py",
+   "lib/mpl_toolkits/mplot3d/axes3d.py"
+  ],
+  "matplotlib__matplotlib-29317": [
+   "lib/matplotlib/backend_bases.py",
+   "lib/matplotlib/figure.py"
+  ],
+  "matplotlib__matplotlib-29388": [
+   "lib/matplotlib/axis.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/ticker.py"
+  ],
+  "matplotlib__matplotlib-29401": [
+   "lib/matplotlib/legend.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/lines.py"
+  ],
+  "matplotlib__matplotlib-29411": [
+   "lib/matplotlib/axes/_base.py",
+   "lib/matplotlib/axes/__init__.py",
+   "lib/matplotlib/figure.py"
+  ],
+  "matplotlib__matplotlib-29431": [
+   "lib/matplotlib/font_manager.py",
+   "lib/matplotlib/backends/backend_pdf.py"
+  ],
+  "matplotlib__matplotlib-29481": [
+   "lib/matplotlib/rcsetup.py"
+  ],
+  "matplotlib__matplotlib-29486": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/projections/polar.py",
+   "lib/matplotlib/lines.py"
+  ],
+  "matplotlib__matplotlib-29503": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/pyplot.py",
+   "lib/matplotlib/figure.py"
+  ],
+  "matplotlib__matplotlib-29520": [
+   "lib/matplotlib/animation.py"
+  ],
+  "matplotlib__matplotlib-29537": [
+   "lib/matplotlib/ticker.py",
+   "galleries/examples/ticks/scalarformatter.py",
+   "lib/matplotlib/tests/test_ticker.py"
+  ],
+  "matplotlib__matplotlib-29612": [
+   "lib/matplotlib/rcsetup.py",
+   "lib/matplotlib/figure.py",
+   "lib/matplotlib/pyplot.py"
+  ],
+  "matplotlib__matplotlib-29689": [
+   "lib/matplotlib/sphinxext/plot_directive.py",
+   "lib/matplotlib/_api/deprecation.py"
+  ],
+  "matplotlib__matplotlib-29696": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/pyplot.py",
+   "galleries/examples/lines_bars_and_markers/bar_label_demo.py"
+  ],
+  "matplotlib__matplotlib-29698": [
+   "lib/matplotlib/ticker.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/scale.py"
+  ],
+  "matplotlib__matplotlib-29719": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/pyplot.py",
+   "lib/matplotlib/_api/deprecation.py"
+  ],
+  "matplotlib__matplotlib-29721": [
+   "lib/matplotlib/pyplot.py",
+   "lib/matplotlib/backends/backend_tkagg.py",
+   "lib/matplotlib/rcsetup.py"
+  ],
+  "matplotlib__matplotlib-29781": [
+   "lib/matplotlib/backend_bases.py",
+   "lib/matplotlib/pyplot.py",
+   "lib/matplotlib/figure.py"
+  ],
+  "matplotlib__matplotlib-29783": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/axes/_base.py",
+   "lib/matplotlib/image.py"
+  ],
+  "matplotlib__matplotlib-29798": [
+   "lib/matplotlib/projections/polar.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/tests/test_polar.py"
+  ],
+  "matplotlib__matplotlib-29808": [
+   "lib/matplotlib/rcsetup.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/colors.py"
+  ],
+  "matplotlib__matplotlib-29873": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/pyplot.py",
+   "galleries/examples/pie_and_polar_charts/pie_features.py"
+  ],
+  "matplotlib__matplotlib-29879": [
+   "lib/matplotlib/pyplot.py",
+   "lib/matplotlib/lines.py",
+   "lib/matplotlib/axes/_axes.py"
+  ],
+  "matplotlib__matplotlib-29892": [
+   "lib/matplotlib/image.py",
+   "lib/matplotlib/backends/backend_qt5agg.py"
+  ],
+  "matplotlib__matplotlib-29919": [
+   "lib/matplotlib/contour.py",
+   "lib/matplotlib/projections/geo.py",
+   "lib/matplotlib/axes/_base.py"
+  ],
+  "matplotlib__matplotlib-29958": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/axes/__init__.py",
+   "lib/matplotlib/collections.py"
+  ],
+  "matplotlib__matplotlib-29993": [
+   "lib/matplotlib/widgets.py",
+   "galleries/examples/widgets/range_slider.py",
+   "lib/matplotlib/testing/widgets.py"
+  ],
+  "matplotlib__matplotlib-30030": [
+   "lib/matplotlib/rcsetup.py",
+   "lib/matplotlib/pyplot.py",
+   "lib/matplotlib/__init__.py"
+  ],
+  "matplotlib__matplotlib-30079": [
+   "lib/matplotlib/legend.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/pyplot.py"
+  ],
+  "matplotlib__matplotlib-30089": [
+   "lib/matplotlib/figure.py",
+   "lib/matplotlib/gridspec.py",
+   "lib/matplotlib/_tight_layout.py"
+  ],
+  "matplotlib__matplotlib-30098": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/colorbar.py",
+   "lib/matplotlib/axes/__init__.py"
+  ],
+  "matplotlib__matplotlib-30186": [
+   "lib/matplotlib/legend.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/figure.py"
+  ],
+  "matplotlib__matplotlib-30198": [
+   "lib/matplotlib/path.py"
+  ],
+  "matplotlib__matplotlib-30223": [
+   "lib/matplotlib/projections/polar.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/tri/_trifinder.py"
+  ],
+  "matplotlib__matplotlib-30328": [
+   "lib/matplotlib/legend.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/lines.py"
+  ],
+  "matplotlib__matplotlib-30363": [
+   "lib/matplotlib/backend_bases.py",
+   "lib/matplotlib/pyplot.py"
+  ],
+  "matplotlib__matplotlib-30423": [
+   "lib/mpl_toolkits/mplot3d/axes3d.py",
+   "lib/mpl_toolkits/mplot3d/art3d.py",
+   "lib/matplotlib/axes/_axes.py"
+  ],
+  "matplotlib__matplotlib-30467": [
+   "lib/matplotlib/axis.py",
+   "lib/matplotlib/_constrained_layout.py",
+   "lib/matplotlib/figure.py"
+  ],
+  "matplotlib__matplotlib-30475": [
+   "lib/matplotlib/transforms.py",
+   "lib/matplotlib/__init__.py",
+   "doc/sphinxext/math_symbol_table.py"
+  ]
+ },
+ "errors": {},
+ "lift": {
+  "false_positive_rise_pts": 0.23,
+  "localization_lift_pts": 0.0
+ },
+ "n_errors": 0,
+ "retrieval_hit_rate": 1.0,
+ "retrieved": {
+  "matplotlib__matplotlib-28841": [
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f",
+   "51e4b70ce76958f5ef2c505addb0cf74fc3361b2f070b27f0afbf989d9be8b92",
+   "617d55278f7aa4608a9df807425a4c28b3aa47fe75e40bbbb926f6e6341f1465",
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405"
+  ],
+  "matplotlib__matplotlib-28853": [
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "b10f0c675db5a54f00b7fc5fc5282ee0ef2800c0b5f12f48504bf7da975a86c9",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f"
+  ],
+  "matplotlib__matplotlib-28881": [
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "617d55278f7aa4608a9df807425a4c28b3aa47fe75e40bbbb926f6e6341f1465",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f",
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306"
+  ],
+  "matplotlib__matplotlib-28933": [
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "617d55278f7aa4608a9df807425a4c28b3aa47fe75e40bbbb926f6e6341f1465",
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f"
+  ],
+  "matplotlib__matplotlib-28970": [
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f",
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "617d55278f7aa4608a9df807425a4c28b3aa47fe75e40bbbb926f6e6341f1465",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405"
+  ],
+  "matplotlib__matplotlib-29007": [
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "b10f0c675db5a54f00b7fc5fc5282ee0ef2800c0b5f12f48504bf7da975a86c9",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f"
+  ],
+  "matplotlib__matplotlib-29013": [
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "b10f0c675db5a54f00b7fc5fc5282ee0ef2800c0b5f12f48504bf7da975a86c9",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "617d55278f7aa4608a9df807425a4c28b3aa47fe75e40bbbb926f6e6341f1465",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405"
+  ],
+  "matplotlib__matplotlib-29052": [
+   "b10f0c675db5a54f00b7fc5fc5282ee0ef2800c0b5f12f48504bf7da975a86c9",
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f"
+  ],
+  "matplotlib__matplotlib-29054": [
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "617d55278f7aa4608a9df807425a4c28b3aa47fe75e40bbbb926f6e6341f1465",
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f"
+  ],
+  "matplotlib__matplotlib-29209": [
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "b10f0c675db5a54f00b7fc5fc5282ee0ef2800c0b5f12f48504bf7da975a86c9",
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f"
+  ],
+  "matplotlib__matplotlib-29249": [
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f",
+   "51e4b70ce76958f5ef2c505addb0cf74fc3361b2f070b27f0afbf989d9be8b92",
+   "617d55278f7aa4608a9df807425a4c28b3aa47fe75e40bbbb926f6e6341f1465"
+  ],
+  "matplotlib__matplotlib-29258": [
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "b10f0c675db5a54f00b7fc5fc5282ee0ef2800c0b5f12f48504bf7da975a86c9",
+   "617d55278f7aa4608a9df807425a4c28b3aa47fe75e40bbbb926f6e6341f1465"
+  ],
+  "matplotlib__matplotlib-29285": [
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f",
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "617d55278f7aa4608a9df807425a4c28b3aa47fe75e40bbbb926f6e6341f1465",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10"
+  ],
+  "matplotlib__matplotlib-29317": [
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "b10f0c675db5a54f00b7fc5fc5282ee0ef2800c0b5f12f48504bf7da975a86c9",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f"
+  ],
+  "matplotlib__matplotlib-29388": [
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "51e4b70ce76958f5ef2c505addb0cf74fc3361b2f070b27f0afbf989d9be8b92",
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306"
+  ],
+  "matplotlib__matplotlib-29401": [
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "51e4b70ce76958f5ef2c505addb0cf74fc3361b2f070b27f0afbf989d9be8b92",
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f"
+  ],
+  "matplotlib__matplotlib-29411": [
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "51e4b70ce76958f5ef2c505addb0cf74fc3361b2f070b27f0afbf989d9be8b92",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f"
+  ],
+  "matplotlib__matplotlib-29431": [
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "b10f0c675db5a54f00b7fc5fc5282ee0ef2800c0b5f12f48504bf7da975a86c9",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f"
+  ],
+  "matplotlib__matplotlib-29481": [
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f",
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "617d55278f7aa4608a9df807425a4c28b3aa47fe75e40bbbb926f6e6341f1465",
+   "51e4b70ce76958f5ef2c505addb0cf74fc3361b2f070b27f0afbf989d9be8b92"
+  ],
+  "matplotlib__matplotlib-29486": [
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "51e4b70ce76958f5ef2c505addb0cf74fc3361b2f070b27f0afbf989d9be8b92",
+   "b10f0c675db5a54f00b7fc5fc5282ee0ef2800c0b5f12f48504bf7da975a86c9"
+  ],
+  "matplotlib__matplotlib-29503": [
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "b10f0c675db5a54f00b7fc5fc5282ee0ef2800c0b5f12f48504bf7da975a86c9",
+   "51e4b70ce76958f5ef2c505addb0cf74fc3361b2f070b27f0afbf989d9be8b92"
+  ],
+  "matplotlib__matplotlib-29520": [
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "b10f0c675db5a54f00b7fc5fc5282ee0ef2800c0b5f12f48504bf7da975a86c9",
+   "617d55278f7aa4608a9df807425a4c28b3aa47fe75e40bbbb926f6e6341f1465"
+  ],
+  "matplotlib__matplotlib-29537": [
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "617d55278f7aa4608a9df807425a4c28b3aa47fe75e40bbbb926f6e6341f1465",
+   "51e4b70ce76958f5ef2c505addb0cf74fc3361b2f070b27f0afbf989d9be8b92"
+  ],
+  "matplotlib__matplotlib-29612": [
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "617d55278f7aa4608a9df807425a4c28b3aa47fe75e40bbbb926f6e6341f1465",
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "b10f0c675db5a54f00b7fc5fc5282ee0ef2800c0b5f12f48504bf7da975a86c9"
+  ],
+  "matplotlib__matplotlib-29689": [
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f",
+   "51e4b70ce76958f5ef2c505addb0cf74fc3361b2f070b27f0afbf989d9be8b92"
+  ],
+  "matplotlib__matplotlib-29696": [
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "51e4b70ce76958f5ef2c505addb0cf74fc3361b2f070b27f0afbf989d9be8b92",
+   "b10f0c675db5a54f00b7fc5fc5282ee0ef2800c0b5f12f48504bf7da975a86c9",
+   "617d55278f7aa4608a9df807425a4c28b3aa47fe75e40bbbb926f6e6341f1465",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10"
+  ],
+  "matplotlib__matplotlib-29698": [
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f",
+   "b10f0c675db5a54f00b7fc5fc5282ee0ef2800c0b5f12f48504bf7da975a86c9"
+  ],
+  "matplotlib__matplotlib-29719": [
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "b10f0c675db5a54f00b7fc5fc5282ee0ef2800c0b5f12f48504bf7da975a86c9",
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f"
+  ],
+  "matplotlib__matplotlib-29721": [
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f",
+   "b10f0c675db5a54f00b7fc5fc5282ee0ef2800c0b5f12f48504bf7da975a86c9"
+  ],
+  "matplotlib__matplotlib-29781": [
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "b10f0c675db5a54f00b7fc5fc5282ee0ef2800c0b5f12f48504bf7da975a86c9",
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f"
+  ],
+  "matplotlib__matplotlib-29783": [
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "b10f0c675db5a54f00b7fc5fc5282ee0ef2800c0b5f12f48504bf7da975a86c9",
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405"
+  ],
+  "matplotlib__matplotlib-29798": [
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f",
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "617d55278f7aa4608a9df807425a4c28b3aa47fe75e40bbbb926f6e6341f1465",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405"
+  ],
+  "matplotlib__matplotlib-29808": [
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "b10f0c675db5a54f00b7fc5fc5282ee0ef2800c0b5f12f48504bf7da975a86c9",
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f"
+  ],
+  "matplotlib__matplotlib-29873": [
+   "b10f0c675db5a54f00b7fc5fc5282ee0ef2800c0b5f12f48504bf7da975a86c9",
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "617d55278f7aa4608a9df807425a4c28b3aa47fe75e40bbbb926f6e6341f1465",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405"
+  ],
+  "matplotlib__matplotlib-29879": [
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "51e4b70ce76958f5ef2c505addb0cf74fc3361b2f070b27f0afbf989d9be8b92",
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f"
+  ],
+  "matplotlib__matplotlib-29892": [
+   "b10f0c675db5a54f00b7fc5fc5282ee0ef2800c0b5f12f48504bf7da975a86c9",
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "617d55278f7aa4608a9df807425a4c28b3aa47fe75e40bbbb926f6e6341f1465"
+  ],
+  "matplotlib__matplotlib-29919": [
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "b10f0c675db5a54f00b7fc5fc5282ee0ef2800c0b5f12f48504bf7da975a86c9"
+  ],
+  "matplotlib__matplotlib-29958": [
+   "617d55278f7aa4608a9df807425a4c28b3aa47fe75e40bbbb926f6e6341f1465",
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10"
+  ],
+  "matplotlib__matplotlib-29993": [
+   "617d55278f7aa4608a9df807425a4c28b3aa47fe75e40bbbb926f6e6341f1465",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "51e4b70ce76958f5ef2c505addb0cf74fc3361b2f070b27f0afbf989d9be8b92"
+  ],
+  "matplotlib__matplotlib-30030": [
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "b10f0c675db5a54f00b7fc5fc5282ee0ef2800c0b5f12f48504bf7da975a86c9",
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f"
+  ],
+  "matplotlib__matplotlib-30079": [
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "51e4b70ce76958f5ef2c505addb0cf74fc3361b2f070b27f0afbf989d9be8b92"
+  ],
+  "matplotlib__matplotlib-30089": [
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "b10f0c675db5a54f00b7fc5fc5282ee0ef2800c0b5f12f48504bf7da975a86c9",
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f"
+  ],
+  "matplotlib__matplotlib-30098": [
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "617d55278f7aa4608a9df807425a4c28b3aa47fe75e40bbbb926f6e6341f1465",
+   "b10f0c675db5a54f00b7fc5fc5282ee0ef2800c0b5f12f48504bf7da975a86c9"
+  ],
+  "matplotlib__matplotlib-30186": [
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "b10f0c675db5a54f00b7fc5fc5282ee0ef2800c0b5f12f48504bf7da975a86c9",
+   "617d55278f7aa4608a9df807425a4c28b3aa47fe75e40bbbb926f6e6341f1465"
+  ],
+  "matplotlib__matplotlib-30198": [
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "b10f0c675db5a54f00b7fc5fc5282ee0ef2800c0b5f12f48504bf7da975a86c9",
+   "51e4b70ce76958f5ef2c505addb0cf74fc3361b2f070b27f0afbf989d9be8b92",
+   "617d55278f7aa4608a9df807425a4c28b3aa47fe75e40bbbb926f6e6341f1465",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10"
+  ],
+  "matplotlib__matplotlib-30223": [
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f",
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "51e4b70ce76958f5ef2c505addb0cf74fc3361b2f070b27f0afbf989d9be8b92"
+  ],
+  "matplotlib__matplotlib-30328": [
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "b10f0c675db5a54f00b7fc5fc5282ee0ef2800c0b5f12f48504bf7da975a86c9",
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f"
+  ],
+  "matplotlib__matplotlib-30363": [
+   "b10f0c675db5a54f00b7fc5fc5282ee0ef2800c0b5f12f48504bf7da975a86c9",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "617d55278f7aa4608a9df807425a4c28b3aa47fe75e40bbbb926f6e6341f1465",
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f",
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306"
+  ],
+  "matplotlib__matplotlib-30423": [
+   "617d55278f7aa4608a9df807425a4c28b3aa47fe75e40bbbb926f6e6341f1465",
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306"
+  ],
+  "matplotlib__matplotlib-30467": [
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "617d55278f7aa4608a9df807425a4c28b3aa47fe75e40bbbb926f6e6341f1465",
+   "caced1053f5fc3a47ab8efe27b330148a30eeace3f0062179ee06279fccd850f",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405"
+  ],
+  "matplotlib__matplotlib-30475": [
+   "5cd41ece3829057ab5fb2773a65b7fb879313ebaaafee75eeb489aac3f84b306",
+   "51e4b70ce76958f5ef2c505addb0cf74fc3361b2f070b27f0afbf989d9be8b92",
+   "8f720aeb3be2f689550529a93d3940f7ef2aec28b1757ebaebc8bda3984eda10",
+   "58dc12310488c8ac9f03e7e665a45555789daebf38933a7b2702212159b64405",
+   "b10f0c675db5a54f00b7fc5fc5282ee0ef2800c0b5f12f48504bf7da975a86c9"
+  ]
+ },
+ "treatment": {
+  "false_positive_rate": 0.669,
+  "localization_rate": 0.8431,
+  "n_false_positive": 95,
+  "n_flags": 142,
+  "n_localized": 43,
+  "n_tasks": 51,
+  "per_repo": {
+   "matplotlib/matplotlib": {
+    "false_positive_rate": 0.669,
+    "localization_rate": 0.8431,
+    "n_false_positive": 95,
+    "n_flags": 142,
+    "n_localized": 43,
+    "n_tasks": 51
+   }
+  }
+ },
+ "treatment_flags": {
+  "matplotlib__matplotlib-28841": [
+   "lib/mpl_toolkits/mplot3d/axes3d.py",
+   "lib/matplotlib/rcsetup.py",
+   "lib/mpl_toolkits/mplot3d/art3d.py"
+  ],
+  "matplotlib__matplotlib-28853": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/image.py",
+   "lib/matplotlib/contour.py"
+  ],
+  "matplotlib__matplotlib-28881": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/pyplot.py",
+   "galleries/examples/pyplots/axline.py"
+  ],
+  "matplotlib__matplotlib-28933": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/mpl_toolkits/axisartist/axislines.py",
+   "galleries/examples/pyplots/axline.py"
+  ],
+  "matplotlib__matplotlib-28970": [
+   "lib/matplotlib/axis.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/units.py"
+  ],
+  "matplotlib__matplotlib-29007": [
+   "lib/matplotlib/figure.py",
+   "lib/matplotlib/pyplot.py",
+   "lib/matplotlib/axes/_axes.py"
+  ],
+  "matplotlib__matplotlib-29013": [
+   "lib/matplotlib/figure.py",
+   "lib/matplotlib/_constrained_layout.py",
+   "lib/matplotlib/colorbar.py"
+  ],
+  "matplotlib__matplotlib-29052": [
+   "lib/matplotlib/colors.py",
+   "lib/matplotlib/cm.py",
+   "lib/matplotlib/axes/_axes.py"
+  ],
+  "matplotlib__matplotlib-29054": [
+   "lib/matplotlib/ticker.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/scale.py"
+  ],
+  "matplotlib__matplotlib-29209": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/image.py",
+   "lib/matplotlib/tri/_tricontour.py"
+  ],
+  "matplotlib__matplotlib-29249": [
+   "lib/matplotlib/axis.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/ticker.py"
+  ],
+  "matplotlib__matplotlib-29258": [
+   "lib/matplotlib/pyplot.py",
+   "lib/matplotlib/table.py",
+   "lib/matplotlib/axes/_axes.py"
+  ],
+  "matplotlib__matplotlib-29285": [
+   "lib/mpl_toolkits/mplot3d/art3d.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/mpl_toolkits/mplot3d/axes3d.py"
+  ],
+  "matplotlib__matplotlib-29317": [
+   "lib/matplotlib/figure.py",
+   "lib/matplotlib/ticker.py"
+  ],
+  "matplotlib__matplotlib-29388": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/ticker.py",
+   "lib/matplotlib/axis.py"
+  ],
+  "matplotlib__matplotlib-29401": [
+   "lib/matplotlib/legend.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/pyplot.py"
+  ],
+  "matplotlib__matplotlib-29411": [
+   "lib/matplotlib/axes/_base.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/figure.py"
+  ],
+  "matplotlib__matplotlib-29431": [
+   "lib/matplotlib/backends/backend_pdf.py",
+   "lib/matplotlib/font_manager.py",
+   "lib/matplotlib/figure.py"
+  ],
+  "matplotlib__matplotlib-29481": [
+   "lib/matplotlib/rcsetup.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/ticker.py"
+  ],
+  "matplotlib__matplotlib-29486": [
+   "lib/matplotlib/projections/polar.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/pyplot.py"
+  ],
+  "matplotlib__matplotlib-29503": [
+   "lib/matplotlib/pyplot.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/figure.py"
+  ],
+  "matplotlib__matplotlib-29520": [
+   "lib/matplotlib/animation.py",
+   "lib/matplotlib/backends/backend_agg.py"
+  ],
+  "matplotlib__matplotlib-29537": [
+   "lib/matplotlib/ticker.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/pyplot.py"
+  ],
+  "matplotlib__matplotlib-29612": [
+   "lib/matplotlib/rcsetup.py",
+   "lib/matplotlib/figure.py",
+   "lib/matplotlib/pyplot.py"
+  ],
+  "matplotlib__matplotlib-29689": [
+   "lib/matplotlib/sphinxext/plot_directive.py",
+   "lib/matplotlib/_api/deprecation.py"
+  ],
+  "matplotlib__matplotlib-29696": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/pyplot.py",
+   "galleries/examples/lines_bars_and_markers/bar_label_demo.py"
+  ],
+  "matplotlib__matplotlib-29698": [
+   "lib/matplotlib/ticker.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/scale.py"
+  ],
+  "matplotlib__matplotlib-29719": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/pyplot.py",
+   "lib/matplotlib/_api/deprecation.py"
+  ],
+  "matplotlib__matplotlib-29721": [
+   "lib/matplotlib/pyplot.py",
+   "lib/matplotlib/backends/backend_tkagg.py",
+   "lib/matplotlib/rcsetup.py"
+  ],
+  "matplotlib__matplotlib-29781": [
+   "lib/matplotlib/backend_bases.py"
+  ],
+  "matplotlib__matplotlib-29783": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/image.py",
+   "lib/matplotlib/collections.py"
+  ],
+  "matplotlib__matplotlib-29798": [
+   "lib/matplotlib/projections/polar.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/ticker.py"
+  ],
+  "matplotlib__matplotlib-29808": [
+   "lib/matplotlib/rcsetup.py",
+   "lib/matplotlib/axes/_axes.py"
+  ],
+  "matplotlib__matplotlib-29873": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/pyplot.py",
+   "lib/matplotlib/patches.py"
+  ],
+  "matplotlib__matplotlib-29879": [
+   "lib/matplotlib/pyplot.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/lines.py"
+  ],
+  "matplotlib__matplotlib-29892": [
+   "lib/matplotlib/image.py",
+   "lib/matplotlib/axes/_axes.py"
+  ],
+  "matplotlib__matplotlib-29919": [
+   "lib/matplotlib/contour.py",
+   "lib/matplotlib/projections/geo.py",
+   "lib/matplotlib/axes/_axes.py"
+  ],
+  "matplotlib__matplotlib-29958": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/axes/__init__.py",
+   "lib/matplotlib/figure.py"
+  ],
+  "matplotlib__matplotlib-29993": [
+   "lib/matplotlib/widgets.py",
+   "lib/matplotlib/testing/widgets.py",
+   "galleries/examples/widgets/range_slider.py"
+  ],
+  "matplotlib__matplotlib-30030": [
+   "lib/matplotlib/rcsetup.py",
+   "lib/matplotlib/pyplot.py",
+   "lib/matplotlib/__init__.py"
+  ],
+  "matplotlib__matplotlib-30079": [
+   "lib/matplotlib/legend.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/pyplot.py"
+  ],
+  "matplotlib__matplotlib-30089": [
+   "lib/matplotlib/figure.py",
+   "lib/matplotlib/gridspec.py",
+   "lib/matplotlib/ticker.py"
+  ],
+  "matplotlib__matplotlib-30098": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/colorbar.py",
+   "lib/matplotlib/axes/__init__.py"
+  ],
+  "matplotlib__matplotlib-30186": [
+   "lib/matplotlib/legend.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/figure.py"
+  ],
+  "matplotlib__matplotlib-30198": [
+   "lib/matplotlib/path.py"
+  ],
+  "matplotlib__matplotlib-30223": [
+   "lib/matplotlib/projections/polar.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/scale.py"
+  ],
+  "matplotlib__matplotlib-30328": [
+   "lib/matplotlib/legend.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/lines.py"
+  ],
+  "matplotlib__matplotlib-30363": [
+   "lib/matplotlib/backend_bases.py",
+   "lib/matplotlib/pyplot.py",
+   "lib/matplotlib/image.py"
+  ],
+  "matplotlib__matplotlib-30423": [
+   "lib/mpl_toolkits/mplot3d/axes3d.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/mpl_toolkits/mplot3d/art3d.py"
+  ],
+  "matplotlib__matplotlib-30467": [
+   "lib/matplotlib/axis.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/ticker.py"
+  ],
+  "matplotlib__matplotlib-30475": [
+   "lib/matplotlib/transforms.py"
+  ]
+ }
+}

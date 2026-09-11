@@ -1,0 +1,693 @@
+{
+ "control": {
+  "false_positive_rate": 0.6273,
+  "localization_rate": 0.9737,
+  "n_false_positive": 69,
+  "n_flags": 110,
+  "n_localized": 37,
+  "n_tasks": 38,
+  "per_repo": {
+   "deepset-ai/haystack": {
+    "false_positive_rate": 0.6273,
+    "localization_rate": 0.9737,
+    "n_false_positive": 69,
+    "n_flags": 110,
+    "n_localized": 37,
+    "n_tasks": 38
+   }
+  }
+ },
+ "control_flags": {
+  "deepset-ai__haystack-9132": [
+   "haystack/components/agents/agent.py",
+   "haystack/core/pipeline/pipeline.py",
+   "test/components/agents/test_agent.py"
+  ],
+  "deepset-ai__haystack-9144": [
+   "haystack/components/agents/agent.py",
+   "haystack/components/generators/chat/types/protocol.py",
+   "haystack/core/pipeline/component_checks.py"
+  ],
+  "deepset-ai__haystack-9182": [
+   "haystack/errors.py",
+   "haystack/core/pipeline/base.py",
+   "haystack/core/pipeline/utils.py"
+  ],
+  "deepset-ai__haystack-9189": [
+   "haystack/components/embedders/openai_document_embedder.py",
+   "haystack/components/embedders/azure_document_embedder.py",
+   "haystack/core/pipeline/async_pipeline.py"
+  ],
+  "deepset-ai__haystack-9218": [
+   "haystack/components/extractors/llm_metadata_extractor.py",
+   "test/components/extractors/test_llm_metadata_extractor.py",
+   "haystack/errors.py"
+  ],
+  "deepset-ai__haystack-9226": [
+   "haystack/components/embedders/hugging_face_api_document_embedder.py",
+   "haystack/core/pipeline/async_pipeline.py",
+   "test/components/embedders/test_hugging_face_api_document_embedder.py"
+  ],
+  "deepset-ai__haystack-9227": [
+   "haystack/dataclasses/document.py",
+   "haystack/core/serialization.py",
+   "haystack/utils/base_serialization.py"
+  ],
+  "deepset-ai__haystack-9230": [
+   "haystack/components/agents/agent.py",
+   "haystack/components/tools/tool_invoker.py",
+   "haystack/core/component/component.py"
+  ],
+  "deepset-ai__haystack-9239": [
+   "haystack/components/agents/agent.py",
+   "test/components/agents/test_agent.py",
+   "haystack/core/pipeline/async_pipeline.py"
+  ],
+  "deepset-ai__haystack-9240": [
+   "haystack/components/agents/agent.py",
+   "haystack/components/tools/tool_invoker.py",
+   "haystack/tracing/tracer.py"
+  ],
+  "deepset-ai__haystack-9242": [
+   "haystack/core/super_component/super_component.py",
+   "haystack/core/pipeline/component_checks.py",
+   "haystack/core/super_component/utils.py"
+  ],
+  "deepset-ai__haystack-9251": [
+   "haystack/tracing/logging_tracer.py",
+   "haystack/tracing/utils.py"
+  ],
+  "deepset-ai__haystack-9270": [
+   "haystack/components/generators/chat/openai.py",
+   "haystack/utils/http_client.py",
+   "haystack/components/generators/openai.py"
+  ],
+  "deepset-ai__haystack-9284": [
+   "haystack/components/agents/agent.py",
+   "haystack/components/agents/__init__.py",
+   "test/components/agents/test_agent.py"
+  ],
+  "deepset-ai__haystack-9322": [
+   "haystack/core/pipeline/component_checks.py",
+   "haystack/core/component/component.py",
+   "haystack/errors.py"
+  ],
+  "deepset-ai__haystack-9336": [
+   "haystack/core/super_component/super_component.py",
+   "haystack/core/pipeline/draw.py",
+   "haystack/core/pipeline/pipeline.py"
+  ],
+  "deepset-ai__haystack-9524": [
+   "haystack/tools/component_tool.py",
+   "haystack/core/serialization.py",
+   "haystack/components/agents/agent.py"
+  ],
+  "deepset-ai__haystack-9525": [
+   "haystack/components/generators/chat/openai.py",
+   "haystack/components/generators/chat/__init__.py",
+   "haystack/dataclasses/streaming_chunk.py"
+  ],
+  "deepset-ai__haystack-9568": [
+   "haystack/dataclasses/byte_stream.py",
+   "haystack/dataclasses/streaming_chunk.py",
+   "haystack/core/serialization.py"
+  ],
+  "deepset-ai__haystack-9574": [
+   "haystack/components/agents/agent.py",
+   "haystack/components/tools/tool_invoker.py",
+   "haystack/core/pipeline/base.py"
+  ],
+  "deepset-ai__haystack-9582": [
+   "haystack/dataclasses/streaming_chunk.py",
+   "haystack/components/generators/chat/openai.py",
+   "haystack/components/generators/utils.py"
+  ],
+  "deepset-ai__haystack-9608": [
+   "haystack/dataclasses/streaming_chunk.py",
+   "haystack/core/serialization.py",
+   "haystack/utils/base_serialization.py"
+  ],
+  "deepset-ai__haystack-9622": [
+   "haystack/components/retrievers/filter_retriever.py",
+   "test/components/retrievers/test_filter_retriever.py",
+   "haystack/components/retrievers/__init__.py"
+  ],
+  "deepset-ai__haystack-9649": [
+   "haystack/components/preprocessors/document_splitter.py",
+   "haystack/components/routers/document_length_router.py"
+  ],
+  "deepset-ai__haystack-9667": [
+   "haystack/lazy_imports.py",
+   "haystack/errors.py",
+   "haystack/components/converters/pypdf.py"
+  ],
+  "deepset-ai__haystack-9679": [
+   "haystack/dataclasses/image_content.py",
+   "haystack/core/serialization.py",
+   "haystack/utils/base_serialization.py"
+  ],
+  "deepset-ai__haystack-9680": [
+   "haystack/components/generators/chat/hugging_face_api.py",
+   "haystack/dataclasses/chat_message.py",
+   "haystack/components/generators/chat/__init__.py"
+  ],
+  "deepset-ai__haystack-9682": [
+   "haystack/components/generators/chat/openai.py",
+   "haystack/dataclasses/chat_message.py",
+   "haystack/components/generators/chat/__init__.py"
+  ],
+  "deepset-ai__haystack-9688": [
+   "haystack/components/routers/metadata_router.py",
+   "haystack/dataclasses/byte_stream.py",
+   "haystack/components/converters/output_adapter.py"
+  ],
+  "deepset-ai__haystack-9693": [
+   "haystack/components/embedders/sentence_transformers_document_embedder.py",
+   "haystack/components/embedders/__init__.py",
+   "haystack/dataclasses/document.py"
+  ],
+  "deepset-ai__haystack-9699": [
+   "haystack/components/retrievers/sentence_window_retriever.py",
+   "haystack/components/retrievers/__init__.py",
+   "haystack/utils/filters.py"
+  ],
+  "deepset-ai__haystack-9703": [
+   "haystack/components/classifiers/zero_shot_document_classifier.py",
+   "haystack/components/extractors/named_entity_extractor.py",
+   "haystack/dataclasses/document.py"
+  ],
+  "deepset-ai__haystack-9704": [
+   "haystack/components/tools/tool_invoker.py"
+  ],
+  "deepset-ai__haystack-9712": [
+   "haystack/core/pipeline/async_pipeline.py",
+   "haystack/errors.py",
+   "haystack/core/pipeline/base.py"
+  ],
+  "deepset-ai__haystack-9726": [
+   "haystack/components/agents/agent.py",
+   "haystack/core/pipeline/async_pipeline.py",
+   "haystack/core/pipeline/base.py"
+  ],
+  "deepset-ai__haystack-9729": [
+   "haystack/components/websearch/serper_dev.py",
+   "haystack/components/websearch/__init__.py",
+   "test/components/websearch/test_serperdev.py"
+  ],
+  "deepset-ai__haystack-9742": [
+   "haystack/core/pipeline/base.py",
+   "haystack/core/pipeline/pipeline.py",
+   "haystack/core/errors.py"
+  ],
+  "deepset-ai__haystack-9748": [
+   "haystack/dataclasses/chat_message.py",
+   "haystack/core/serialization.py",
+   "haystack/errors.py"
+  ]
+ },
+ "errors": {},
+ "lift": {
+  "false_positive_rise_pts": 3.06,
+  "localization_lift_pts": 0.0
+ },
+ "n_errors": 0,
+ "retrieval_hit_rate": 1.0,
+ "retrieved": {
+  "deepset-ai__haystack-9132": [
+   "64ac92da525bc6442c69db87a0dcf1226d333c66c0230f63088937b1d5a14ba4",
+   "9ddf78764f89a472aa5f5c472be1f8f544342eaac9b648d5cd427461fd345e15",
+   "3f1b2bc0212a7b914edcdc9e5f425363c89e83faa0fb5f3bed9d64e521f7613a",
+   "9eb5dadf2610c4173417de46d135f7da30722c06e06a6e60681eb8e7786c742f",
+   "c0e802614d9519b31ff5e167f6355bfa40d9d8f2823200657e759752bf4acec1"
+  ],
+  "deepset-ai__haystack-9144": [
+   "9ddf78764f89a472aa5f5c472be1f8f544342eaac9b648d5cd427461fd345e15",
+   "64ac92da525bc6442c69db87a0dcf1226d333c66c0230f63088937b1d5a14ba4",
+   "3f1b2bc0212a7b914edcdc9e5f425363c89e83faa0fb5f3bed9d64e521f7613a",
+   "e2820c9a253faa85819a2efc3d642dc630789d23192bef1971841560a6209cab",
+   "9eb5dadf2610c4173417de46d135f7da30722c06e06a6e60681eb8e7786c742f"
+  ],
+  "deepset-ai__haystack-9182": [
+   "e2820c9a253faa85819a2efc3d642dc630789d23192bef1971841560a6209cab",
+   "bc754f8011610aa82a46a74b37af74c13c1f4b5fb19cae892a66f1583f492732",
+   "c0e802614d9519b31ff5e167f6355bfa40d9d8f2823200657e759752bf4acec1",
+   "3f1b2bc0212a7b914edcdc9e5f425363c89e83faa0fb5f3bed9d64e521f7613a",
+   "64ac92da525bc6442c69db87a0dcf1226d333c66c0230f63088937b1d5a14ba4"
+  ],
+  "deepset-ai__haystack-9189": [
+   "9ddf78764f89a472aa5f5c472be1f8f544342eaac9b648d5cd427461fd345e15",
+   "64ac92da525bc6442c69db87a0dcf1226d333c66c0230f63088937b1d5a14ba4",
+   "7add2a1748e76f0c170f5470b83b38d64873250b816b4f10fc1da335e77c01b6",
+   "6a7a8cbc14ed9b69525c3d29ebac9182eadbe1cc4ae6f986d56c955d358fd7d7",
+   "9eb5dadf2610c4173417de46d135f7da30722c06e06a6e60681eb8e7786c742f"
+  ],
+  "deepset-ai__haystack-9218": [
+   "3f1b2bc0212a7b914edcdc9e5f425363c89e83faa0fb5f3bed9d64e521f7613a",
+   "9ddf78764f89a472aa5f5c472be1f8f544342eaac9b648d5cd427461fd345e15",
+   "e2820c9a253faa85819a2efc3d642dc630789d23192bef1971841560a6209cab",
+   "64ac92da525bc6442c69db87a0dcf1226d333c66c0230f63088937b1d5a14ba4",
+   "bc754f8011610aa82a46a74b37af74c13c1f4b5fb19cae892a66f1583f492732"
+  ],
+  "deepset-ai__haystack-9226": [
+   "9ddf78764f89a472aa5f5c472be1f8f544342eaac9b648d5cd427461fd345e15",
+   "64ac92da525bc6442c69db87a0dcf1226d333c66c0230f63088937b1d5a14ba4",
+   "3f1b2bc0212a7b914edcdc9e5f425363c89e83faa0fb5f3bed9d64e521f7613a",
+   "9eb5dadf2610c4173417de46d135f7da30722c06e06a6e60681eb8e7786c742f",
+   "e2820c9a253faa85819a2efc3d642dc630789d23192bef1971841560a6209cab"
+  ],
+  "deepset-ai__haystack-9227": [
+   "7add2a1748e76f0c170f5470b83b38d64873250b816b4f10fc1da335e77c01b6",
+   "bc754f8011610aa82a46a74b37af74c13c1f4b5fb19cae892a66f1583f492732",
+   "e2820c9a253faa85819a2efc3d642dc630789d23192bef1971841560a6209cab",
+   "c0e802614d9519b31ff5e167f6355bfa40d9d8f2823200657e759752bf4acec1",
+   "9eb5dadf2610c4173417de46d135f7da30722c06e06a6e60681eb8e7786c742f"
+  ],
+  "deepset-ai__haystack-9230": [
+   "64ac92da525bc6442c69db87a0dcf1226d333c66c0230f63088937b1d5a14ba4",
+   "9ddf78764f89a472aa5f5c472be1f8f544342eaac9b648d5cd427461fd345e15",
+   "3f1b2bc0212a7b914edcdc9e5f425363c89e83faa0fb5f3bed9d64e521f7613a",
+   "e2820c9a253faa85819a2efc3d642dc630789d23192bef1971841560a6209cab",
+   "bc754f8011610aa82a46a74b37af74c13c1f4b5fb19cae892a66f1583f492732"
+  ],
+  "deepset-ai__haystack-9239": [
+   "3f1b2bc0212a7b914edcdc9e5f425363c89e83faa0fb5f3bed9d64e521f7613a",
+   "9ddf78764f89a472aa5f5c472be1f8f544342eaac9b648d5cd427461fd345e15",
+   "64ac92da525bc6442c69db87a0dcf1226d333c66c0230f63088937b1d5a14ba4",
+   "9eb5dadf2610c4173417de46d135f7da30722c06e06a6e60681eb8e7786c742f",
+   "6a7a8cbc14ed9b69525c3d29ebac9182eadbe1cc4ae6f986d56c955d358fd7d7"
+  ],
+  "deepset-ai__haystack-9240": [
+   "64ac92da525bc6442c69db87a0dcf1226d333c66c0230f63088937b1d5a14ba4",
+   "9ddf78764f89a472aa5f5c472be1f8f544342eaac9b648d5cd427461fd345e15",
+   "6a7a8cbc14ed9b69525c3d29ebac9182eadbe1cc4ae6f986d56c955d358fd7d7",
+   "3f1b2bc0212a7b914edcdc9e5f425363c89e83faa0fb5f3bed9d64e521f7613a",
+   "494b6b0f5e612181b87b61060463173cb7dfd03bef3dfc309d9ba56c43effb71"
+  ],
+  "deepset-ai__haystack-9242": [
+   "3f1b2bc0212a7b914edcdc9e5f425363c89e83faa0fb5f3bed9d64e521f7613a",
+   "9eb5dadf2610c4173417de46d135f7da30722c06e06a6e60681eb8e7786c742f",
+   "c0e802614d9519b31ff5e167f6355bfa40d9d8f2823200657e759752bf4acec1",
+   "6a7a8cbc14ed9b69525c3d29ebac9182eadbe1cc4ae6f986d56c955d358fd7d7",
+   "bc754f8011610aa82a46a74b37af74c13c1f4b5fb19cae892a66f1583f492732"
+  ],
+  "deepset-ai__haystack-9251": [
+   "9ddf78764f89a472aa5f5c472be1f8f544342eaac9b648d5cd427461fd345e15",
+   "64ac92da525bc6442c69db87a0dcf1226d333c66c0230f63088937b1d5a14ba4",
+   "bc754f8011610aa82a46a74b37af74c13c1f4b5fb19cae892a66f1583f492732",
+   "e2820c9a253faa85819a2efc3d642dc630789d23192bef1971841560a6209cab",
+   "3f1b2bc0212a7b914edcdc9e5f425363c89e83faa0fb5f3bed9d64e521f7613a"
+  ],
+  "deepset-ai__haystack-9270": [
+   "9ddf78764f89a472aa5f5c472be1f8f544342eaac9b648d5cd427461fd345e15",
+   "64ac92da525bc6442c69db87a0dcf1226d333c66c0230f63088937b1d5a14ba4",
+   "bc754f8011610aa82a46a74b37af74c13c1f4b5fb19cae892a66f1583f492732",
+   "3f1b2bc0212a7b914edcdc9e5f425363c89e83faa0fb5f3bed9d64e521f7613a",
+   "33b8f39abf81cca8243aa6fc735c5268b57a4cf88db648d3262fd3bb5ad7e247"
+  ],
+  "deepset-ai__haystack-9284": [
+   "9ddf78764f89a472aa5f5c472be1f8f544342eaac9b648d5cd427461fd345e15",
+   "64ac92da525bc6442c69db87a0dcf1226d333c66c0230f63088937b1d5a14ba4",
+   "3f1b2bc0212a7b914edcdc9e5f425363c89e83faa0fb5f3bed9d64e521f7613a",
+   "7add2a1748e76f0c170f5470b83b38d64873250b816b4f10fc1da335e77c01b6",
+   "e2820c9a253faa85819a2efc3d642dc630789d23192bef1971841560a6209cab"
+  ],
+  "deepset-ai__haystack-9322": [
+   "3f1b2bc0212a7b914edcdc9e5f425363c89e83faa0fb5f3bed9d64e521f7613a",
+   "e2820c9a253faa85819a2efc3d642dc630789d23192bef1971841560a6209cab",
+   "33b8f39abf81cca8243aa6fc735c5268b57a4cf88db648d3262fd3bb5ad7e247",
+   "bc754f8011610aa82a46a74b37af74c13c1f4b5fb19cae892a66f1583f492732",
+   "9ddf78764f89a472aa5f5c472be1f8f544342eaac9b648d5cd427461fd345e15"
+  ],
+  "deepset-ai__haystack-9336": [
+   "6a7a8cbc14ed9b69525c3d29ebac9182eadbe1cc4ae6f986d56c955d358fd7d7",
+   "3f1b2bc0212a7b914edcdc9e5f425363c89e83faa0fb5f3bed9d64e521f7613a",
+   "c0e802614d9519b31ff5e167f6355bfa40d9d8f2823200657e759752bf4acec1",
+   "bc754f8011610aa82a46a74b37af74c13c1f4b5fb19cae892a66f1583f492732",
+   "9ddf78764f89a472aa5f5c472be1f8f544342eaac9b648d5cd427461fd345e15"
+  ],
+  "deepset-ai__haystack-9524": [
+   "3f1b2bc0212a7b914edcdc9e5f425363c89e83faa0fb5f3bed9d64e521f7613a",
+   "bc754f8011610aa82a46a74b37af74c13c1f4b5fb19cae892a66f1583f492732",
+   "9ddf78764f89a472aa5f5c472be1f8f544342eaac9b648d5cd427461fd345e15",
+   "64ac92da525bc6442c69db87a0dcf1226d333c66c0230f63088937b1d5a14ba4",
+   "e2820c9a253faa85819a2efc3d642dc630789d23192bef1971841560a6209cab"
+  ],
+  "deepset-ai__haystack-9525": [
+   "64ac92da525bc6442c69db87a0dcf1226d333c66c0230f63088937b1d5a14ba4",
+   "9ddf78764f89a472aa5f5c472be1f8f544342eaac9b648d5cd427461fd345e15",
+   "3f1b2bc0212a7b914edcdc9e5f425363c89e83faa0fb5f3bed9d64e521f7613a",
+   "c0e802614d9519b31ff5e167f6355bfa40d9d8f2823200657e759752bf4acec1",
+   "33b8f39abf81cca8243aa6fc735c5268b57a4cf88db648d3262fd3bb5ad7e247"
+  ],
+  "deepset-ai__haystack-9568": [
+   "9ddf78764f89a472aa5f5c472be1f8f544342eaac9b648d5cd427461fd345e15",
+   "64ac92da525bc6442c69db87a0dcf1226d333c66c0230f63088937b1d5a14ba4",
+   "c0e802614d9519b31ff5e167f6355bfa40d9d8f2823200657e759752bf4acec1",
+   "e2820c9a253faa85819a2efc3d642dc630789d23192bef1971841560a6209cab",
+   "bc754f8011610aa82a46a74b37af74c13c1f4b5fb19cae892a66f1583f492732"
+  ],
+  "deepset-ai__haystack-9574": [
+   "64ac92da525bc6442c69db87a0dcf1226d333c66c0230f63088937b1d5a14ba4",
+   "9ddf78764f89a472aa5f5c472be1f8f544342eaac9b648d5cd427461fd345e15",
+   "3f1b2bc0212a7b914edcdc9e5f425363c89e83faa0fb5f3bed9d64e521f7613a",
+   "9eb5dadf2610c4173417de46d135f7da30722c06e06a6e60681eb8e7786c742f",
+   "c0e802614d9519b31ff5e167f6355bfa40d9d8f2823200657e759752bf4acec1"
+  ],
+  "deepset-ai__haystack-9582": [
+   "9ddf78764f89a472aa5f5c472be1f8f544342eaac9b648d5cd427461fd345e15",
+   "3f1b2bc0212a7b914edcdc9e5f425363c89e83faa0fb5f3bed9d64e521f7613a",
+   "e2820c9a253faa85819a2efc3d642dc630789d23192bef1971841560a6209cab",
+   "64ac92da525bc6442c69db87a0dcf1226d333c66c0230f63088937b1d5a14ba4",
+   "bc754f8011610aa82a46a74b37af74c13c1f4b5fb19cae892a66f1583f492732"
+  ],
+  "deepset-ai__haystack-9608": [
+   "9ddf78764f89a472aa5f5c472be1f8f544342eaac9b648d5cd427461fd345e15",
+   "c0e802614d9519b31ff5e167f6355bfa40d9d8f2823200657e759752bf4acec1",
+   "64ac92da525bc6442c69db87a0dcf1226d333c66c0230f63088937b1d5a14ba4",
+   "6a7a8cbc14ed9b69525c3d29ebac9182eadbe1cc4ae6f986d56c955d358fd7d7",
+   "3f1b2bc0212a7b914edcdc9e5f425363c89e83faa0fb5f3bed9d64e521f7613a"
+  ],
+  "deepset-ai__haystack-9622": [
+   "c0e802614d9519b31ff5e167f6355bfa40d9d8f2823200657e759752bf4acec1",
+   "9eb5dadf2610c4173417de46d135f7da30722c06e06a6e60681eb8e7786c742f",
+   "3f1b2bc0212a7b914edcdc9e5f425363c89e83faa0fb5f3bed9d64e521f7613a",
+   "e2820c9a253faa85819a2efc3d642dc630789d23192bef1971841560a6209cab",
+   "6a7a8cbc14ed9b69525c3d29ebac9182eadbe1cc4ae6f986d56c955d358fd7d7"
+  ],
+  "deepset-ai__haystack-9649": [
+   "9eb5dadf2610c4173417de46d135f7da30722c06e06a6e60681eb8e7786c742f",
+   "c0e802614d9519b31ff5e167f6355bfa40d9d8f2823200657e759752bf4acec1",
+   "bc754f8011610aa82a46a74b37af74c13c1f4b5fb19cae892a66f1583f492732",
+   "7add2a1748e76f0c170f5470b83b38d64873250b816b4f10fc1da335e77c01b6",
+   "e2820c9a253faa85819a2efc3d642dc630789d23192bef1971841560a6209cab"
+  ],
+  "deepset-ai__haystack-9667": [
+   "bc754f8011610aa82a46a74b37af74c13c1f4b5fb19cae892a66f1583f492732",
+   "3f1b2bc0212a7b914edcdc9e5f425363c89e83faa0fb5f3bed9d64e521f7613a",
+   "7add2a1748e76f0c170f5470b83b38d64873250b816b4f10fc1da335e77c01b6",
+   "e2820c9a253faa85819a2efc3d642dc630789d23192bef1971841560a6209cab",
+   "9ddf78764f89a472aa5f5c472be1f8f544342eaac9b648d5cd427461fd345e15"
+  ],
+  "deepset-ai__haystack-9679": [
+   "9ddf78764f89a472aa5f5c472be1f8f544342eaac9b648d5cd427461fd345e15",
+   "64ac92da525bc6442c69db87a0dcf1226d333c66c0230f63088937b1d5a14ba4",
+   "33b8f39abf81cca8243aa6fc735c5268b57a4cf88db648d3262fd3bb5ad7e247",
+   "c0e802614d9519b31ff5e167f6355bfa40d9d8f2823200657e759752bf4acec1",
+   "e2820c9a253faa85819a2efc3d642dc630789d23192bef1971841560a6209cab"
+  ],
+  "deepset-ai__haystack-9680": [
+   "9ddf78764f89a472aa5f5c472be1f8f544342eaac9b648d5cd427461fd345e15",
+   "64ac92da525bc6442c69db87a0dcf1226d333c66c0230f63088937b1d5a14ba4",
+   "3f1b2bc0212a7b914edcdc9e5f425363c89e83faa0fb5f3bed9d64e521f7613a",
+   "33b8f39abf81cca8243aa6fc735c5268b57a4cf88db648d3262fd3bb5ad7e247",
+   "9eb5dadf2610c4173417de46d135f7da30722c06e06a6e60681eb8e7786c742f"
+  ],
+  "deepset-ai__haystack-9682": [
+   "64ac92da525bc6442c69db87a0dcf1226d333c66c0230f63088937b1d5a14ba4",
+   "9ddf78764f89a472aa5f5c472be1f8f544342eaac9b648d5cd427461fd345e15",
+   "e2820c9a253faa85819a2efc3d642dc630789d23192bef1971841560a6209cab",
+   "33b8f39abf81cca8243aa6fc735c5268b57a4cf88db648d3262fd3bb5ad7e247",
+   "3f1b2bc0212a7b914edcdc9e5f425363c89e83faa0fb5f3bed9d64e521f7613a"
+  ],
+  "deepset-ai__haystack-9688": [
+   "7add2a1748e76f0c170f5470b83b38d64873250b816b4f10fc1da335e77c01b6",
+   "bc754f8011610aa82a46a74b37af74c13c1f4b5fb19cae892a66f1583f492732",
+   "33b8f39abf81cca8243aa6fc735c5268b57a4cf88db648d3262fd3bb5ad7e247",
+   "c0e802614d9519b31ff5e167f6355bfa40d9d8f2823200657e759752bf4acec1",
+   "9eb5dadf2610c4173417de46d135f7da30722c06e06a6e60681eb8e7786c742f"
+  ],
+  "deepset-ai__haystack-9693": [
+   "bc754f8011610aa82a46a74b37af74c13c1f4b5fb19cae892a66f1583f492732",
+   "9eb5dadf2610c4173417de46d135f7da30722c06e06a6e60681eb8e7786c742f",
+   "64ac92da525bc6442c69db87a0dcf1226d333c66c0230f63088937b1d5a14ba4",
+   "e2820c9a253faa85819a2efc3d642dc630789d23192bef1971841560a6209cab",
+   "7add2a1748e76f0c170f5470b83b38d64873250b816b4f10fc1da335e77c01b6"
+  ],
+  "deepset-ai__haystack-9699": [
+   "c0e802614d9519b31ff5e167f6355bfa40d9d8f2823200657e759752bf4acec1",
+   "9eb5dadf2610c4173417de46d135f7da30722c06e06a6e60681eb8e7786c742f",
+   "7add2a1748e76f0c170f5470b83b38d64873250b816b4f10fc1da335e77c01b6",
+   "3f1b2bc0212a7b914edcdc9e5f425363c89e83faa0fb5f3bed9d64e521f7613a",
+   "64ac92da525bc6442c69db87a0dcf1226d333c66c0230f63088937b1d5a14ba4"
+  ],
+  "deepset-ai__haystack-9703": [
+   "c0e802614d9519b31ff5e167f6355bfa40d9d8f2823200657e759752bf4acec1",
+   "bc754f8011610aa82a46a74b37af74c13c1f4b5fb19cae892a66f1583f492732",
+   "7add2a1748e76f0c170f5470b83b38d64873250b816b4f10fc1da335e77c01b6",
+   "9eb5dadf2610c4173417de46d135f7da30722c06e06a6e60681eb8e7786c742f",
+   "6a7a8cbc14ed9b69525c3d29ebac9182eadbe1cc4ae6f986d56c955d358fd7d7"
+  ],
+  "deepset-ai__haystack-9704": [
+   "9ddf78764f89a472aa5f5c472be1f8f544342eaac9b648d5cd427461fd345e15",
+   "64ac92da525bc6442c69db87a0dcf1226d333c66c0230f63088937b1d5a14ba4",
+   "3f1b2bc0212a7b914edcdc9e5f425363c89e83faa0fb5f3bed9d64e521f7613a",
+   "6a7a8cbc14ed9b69525c3d29ebac9182eadbe1cc4ae6f986d56c955d358fd7d7",
+   "c0e802614d9519b31ff5e167f6355bfa40d9d8f2823200657e759752bf4acec1"
+  ],
+  "deepset-ai__haystack-9712": [
+   "6a7a8cbc14ed9b69525c3d29ebac9182eadbe1cc4ae6f986d56c955d358fd7d7",
+   "9ddf78764f89a472aa5f5c472be1f8f544342eaac9b648d5cd427461fd345e15",
+   "3f1b2bc0212a7b914edcdc9e5f425363c89e83faa0fb5f3bed9d64e521f7613a",
+   "64ac92da525bc6442c69db87a0dcf1226d333c66c0230f63088937b1d5a14ba4",
+   "c0e802614d9519b31ff5e167f6355bfa40d9d8f2823200657e759752bf4acec1"
+  ],
+  "deepset-ai__haystack-9726": [
+   "9eb5dadf2610c4173417de46d135f7da30722c06e06a6e60681eb8e7786c742f",
+   "3f1b2bc0212a7b914edcdc9e5f425363c89e83faa0fb5f3bed9d64e521f7613a",
+   "c0e802614d9519b31ff5e167f6355bfa40d9d8f2823200657e759752bf4acec1",
+   "64ac92da525bc6442c69db87a0dcf1226d333c66c0230f63088937b1d5a14ba4",
+   "9ddf78764f89a472aa5f5c472be1f8f544342eaac9b648d5cd427461fd345e15"
+  ],
+  "deepset-ai__haystack-9729": [
+   "e2820c9a253faa85819a2efc3d642dc630789d23192bef1971841560a6209cab",
+   "3f1b2bc0212a7b914edcdc9e5f425363c89e83faa0fb5f3bed9d64e521f7613a",
+   "c0e802614d9519b31ff5e167f6355bfa40d9d8f2823200657e759752bf4acec1",
+   "33b8f39abf81cca8243aa6fc735c5268b57a4cf88db648d3262fd3bb5ad7e247",
+   "9eb5dadf2610c4173417de46d135f7da30722c06e06a6e60681eb8e7786c742f"
+  ],
+  "deepset-ai__haystack-9742": [
+   "6a7a8cbc14ed9b69525c3d29ebac9182eadbe1cc4ae6f986d56c955d358fd7d7",
+   "c0e802614d9519b31ff5e167f6355bfa40d9d8f2823200657e759752bf4acec1",
+   "3f1b2bc0212a7b914edcdc9e5f425363c89e83faa0fb5f3bed9d64e521f7613a",
+   "bc754f8011610aa82a46a74b37af74c13c1f4b5fb19cae892a66f1583f492732",
+   "9eb5dadf2610c4173417de46d135f7da30722c06e06a6e60681eb8e7786c742f"
+  ],
+  "deepset-ai__haystack-9748": [
+   "9ddf78764f89a472aa5f5c472be1f8f544342eaac9b648d5cd427461fd345e15",
+   "64ac92da525bc6442c69db87a0dcf1226d333c66c0230f63088937b1d5a14ba4",
+   "e2820c9a253faa85819a2efc3d642dc630789d23192bef1971841560a6209cab",
+   "3f1b2bc0212a7b914edcdc9e5f425363c89e83faa0fb5f3bed9d64e521f7613a",
+   "bc754f8011610aa82a46a74b37af74c13c1f4b5fb19cae892a66f1583f492732"
+  ]
+ },
+ "treatment": {
+  "false_positive_rate": 0.6579,
+  "localization_rate": 0.9737,
+  "n_false_positive": 75,
+  "n_flags": 114,
+  "n_localized": 37,
+  "n_tasks": 38,
+  "per_repo": {
+   "deepset-ai/haystack": {
+    "false_positive_rate": 0.6579,
+    "localization_rate": 0.9737,
+    "n_false_positive": 75,
+    "n_flags": 114,
+    "n_localized": 37,
+    "n_tasks": 38
+   }
+  }
+ },
+ "treatment_flags": {
+  "deepset-ai__haystack-9132": [
+   "haystack/components/agents/agent.py",
+   "haystack/components/agents/__init__.py",
+   "test/components/agents/test_agent.py"
+  ],
+  "deepset-ai__haystack-9144": [
+   "haystack/components/agents/agent.py",
+   "haystack/components/generators/chat/types/protocol.py",
+   "haystack/components/agents/__init__.py"
+  ],
+  "deepset-ai__haystack-9182": [
+   "haystack/errors.py",
+   "haystack/core/pipeline/base.py",
+   "haystack/core/pipeline/utils.py"
+  ],
+  "deepset-ai__haystack-9189": [
+   "haystack/components/embedders/openai_document_embedder.py",
+   "haystack/core/pipeline/async_pipeline.py",
+   "haystack/components/embedders/azure_document_embedder.py"
+  ],
+  "deepset-ai__haystack-9218": [
+   "haystack/components/extractors/llm_metadata_extractor.py",
+   "test/components/extractors/test_llm_metadata_extractor.py",
+   "haystack/components/generators/__init__.py"
+  ],
+  "deepset-ai__haystack-9226": [
+   "haystack/components/embedders/hugging_face_api_document_embedder.py",
+   "haystack/core/pipeline/async_pipeline.py",
+   "test/components/embedders/test_hugging_face_api_document_embedder.py"
+  ],
+  "deepset-ai__haystack-9227": [
+   "haystack/dataclasses/document.py",
+   "haystack/core/serialization.py",
+   "haystack/utils/base_serialization.py"
+  ],
+  "deepset-ai__haystack-9230": [
+   "haystack/components/agents/agent.py",
+   "haystack/components/tools/tool_invoker.py",
+   "haystack/core/component/component.py"
+  ],
+  "deepset-ai__haystack-9239": [
+   "haystack/components/agents/agent.py",
+   "haystack/core/pipeline/async_pipeline.py",
+   "test/components/agents/test_agent.py"
+  ],
+  "deepset-ai__haystack-9240": [
+   "haystack/components/agents/agent.py",
+   "haystack/tracing/logging_tracer.py",
+   "haystack/components/tools/tool_invoker.py"
+  ],
+  "deepset-ai__haystack-9242": [
+   "haystack/core/super_component/super_component.py",
+   "haystack/core/pipeline/component_checks.py",
+   "haystack/core/super_component/utils.py"
+  ],
+  "deepset-ai__haystack-9251": [
+   "haystack/tracing/logging_tracer.py",
+   "haystack/tracing/utils.py",
+   "haystack/logging.py"
+  ],
+  "deepset-ai__haystack-9270": [
+   "haystack/components/generators/chat/openai.py",
+   "haystack/components/generators/openai.py",
+   "haystack/utils/http_client.py"
+  ],
+  "deepset-ai__haystack-9284": [
+   "haystack/components/agents/agent.py",
+   "haystack/components/agents/__init__.py",
+   "haystack/tools/toolset.py"
+  ],
+  "deepset-ai__haystack-9322": [
+   "haystack/core/pipeline/component_checks.py",
+   "haystack/core/component/component.py",
+   "haystack/errors.py"
+  ],
+  "deepset-ai__haystack-9336": [
+   "haystack/core/super_component/super_component.py",
+   "haystack/core/pipeline/pipeline.py",
+   "haystack/core/pipeline/draw.py"
+  ],
+  "deepset-ai__haystack-9524": [
+   "haystack/tools/component_tool.py",
+   "haystack/core/serialization.py",
+   "haystack/components/agents/agent.py"
+  ],
+  "deepset-ai__haystack-9525": [
+   "haystack/components/generators/chat/openai.py",
+   "haystack/components/generators/chat/__init__.py",
+   "haystack/dataclasses/chat_message.py"
+  ],
+  "deepset-ai__haystack-9568": [
+   "haystack/dataclasses/byte_stream.py",
+   "haystack/dataclasses/streaming_chunk.py",
+   "haystack/core/serialization.py"
+  ],
+  "deepset-ai__haystack-9574": [
+   "haystack/components/agents/agent.py",
+   "haystack/components/tools/tool_invoker.py",
+   "haystack/core/pipeline/pipeline.py"
+  ],
+  "deepset-ai__haystack-9582": [
+   "haystack/components/generators/chat/openai.py",
+   "haystack/dataclasses/streaming_chunk.py",
+   "haystack/components/generators/chat/types/protocol.py"
+  ],
+  "deepset-ai__haystack-9608": [
+   "haystack/dataclasses/streaming_chunk.py",
+   "haystack/core/serialization.py",
+   "haystack/utils/base_serialization.py"
+  ],
+  "deepset-ai__haystack-9622": [
+   "haystack/components/retrievers/filter_retriever.py",
+   "haystack/components/retrievers/__init__.py",
+   "test/components/retrievers/test_filter_retriever.py"
+  ],
+  "deepset-ai__haystack-9649": [
+   "haystack/components/preprocessors/document_splitter.py",
+   "haystack/components/converters/pypdf.py",
+   "haystack/components/routers/document_length_router.py"
+  ],
+  "deepset-ai__haystack-9667": [
+   "haystack/lazy_imports.py",
+   "haystack/components/converters/pypdf.py",
+   "haystack/errors.py"
+  ],
+  "deepset-ai__haystack-9679": [
+   "haystack/dataclasses/image_content.py",
+   "haystack/core/serialization.py",
+   "haystack/utils/base_serialization.py"
+  ],
+  "deepset-ai__haystack-9680": [
+   "haystack/components/generators/chat/hugging_face_api.py",
+   "haystack/dataclasses/chat_message.py",
+   "haystack/components/embedders/image/sentence_transformers_doc_image_embedder.py"
+  ],
+  "deepset-ai__haystack-9682": [
+   "haystack/components/generators/chat/openai.py",
+   "haystack/dataclasses/chat_message.py",
+   "haystack/components/generators/chat/__init__.py"
+  ],
+  "deepset-ai__haystack-9688": [
+   "haystack/components/routers/metadata_router.py",
+   "haystack/components/converters/output_adapter.py",
+   "haystack/dataclasses/byte_stream.py"
+  ],
+  "deepset-ai__haystack-9693": [
+   "haystack/components/embedders/sentence_transformers_document_embedder.py",
+   "haystack/components/embedders/__init__.py",
+   "haystack/dataclasses/document.py"
+  ],
+  "deepset-ai__haystack-9699": [
+   "haystack/components/retrievers/sentence_window_retriever.py",
+   "haystack/components/retrievers/__init__.py",
+   "haystack/core/pipeline/pipeline.py"
+  ],
+  "deepset-ai__haystack-9703": [
+   "haystack/components/classifiers/zero_shot_document_classifier.py",
+   "haystack/components/extractors/named_entity_extractor.py",
+   "haystack/dataclasses/document.py"
+  ],
+  "deepset-ai__haystack-9704": [
+   "haystack/components/tools/tool_invoker.py",
+   "haystack/core/pipeline/base.py",
+   "haystack/components/agents/agent.py"
+  ],
+  "deepset-ai__haystack-9712": [
+   "haystack/core/pipeline/async_pipeline.py",
+   "haystack/core/pipeline/base.py",
+   "haystack/core/pipeline/pipeline.py"
+  ],
+  "deepset-ai__haystack-9726": [
+   "haystack/components/agents/agent.py",
+   "haystack/core/pipeline/pipeline.py",
+   "haystack/core/component/component.py"
+  ],
+  "deepset-ai__haystack-9729": [
+   "haystack/components/websearch/serper_dev.py",
+   "haystack/components/websearch/__init__.py",
+   "haystack/components/websearch/searchapi.py"
+  ],
+  "deepset-ai__haystack-9742": [
+   "haystack/core/pipeline/base.py",
+   "haystack/core/pipeline/pipeline.py",
+   "haystack/core/component/component.py"
+  ],
+  "deepset-ai__haystack-9748": [
+   "haystack/dataclasses/chat_message.py",
+   "haystack/core/errors.py",
+   "haystack/components/tools/tool_invoker.py"
+  ]
+ }
+}

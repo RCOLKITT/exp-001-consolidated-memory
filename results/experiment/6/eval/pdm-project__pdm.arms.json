@@ -1,0 +1,291 @@
+{
+ "control": {
+  "false_positive_rate": 0.7556,
+  "localization_rate": 0.6,
+  "n_false_positive": 34,
+  "n_flags": 45,
+  "n_localized": 9,
+  "n_tasks": 15,
+  "per_repo": {
+   "pdm-project/pdm": {
+    "false_positive_rate": 0.7556,
+    "localization_rate": 0.6,
+    "n_false_positive": 34,
+    "n_flags": 45,
+    "n_localized": 9,
+    "n_tasks": 15
+   }
+  }
+ },
+ "control_flags": {
+  "pdm-project__pdm-3136": [
+   "src/pdm/cli/commands/add.py",
+   "src/pdm/project/project_file.py",
+   "src/pdm/resolver/core.py"
+  ],
+  "pdm-project__pdm-3170": [
+   "src/pdm/environments/base.py",
+   "src/pdm/models/auth.py",
+   "src/pdm/utils.py"
+  ],
+  "pdm-project__pdm-3191": [
+   "src/pdm/cli/actions.py",
+   "src/pdm/installers/base.py",
+   "src/pdm/signals.py"
+  ],
+  "pdm-project__pdm-3237": [
+   "src/pdm/formats/uv.py",
+   "src/pdm/installers/uv.py",
+   "src/pdm/cli/commands/build.py"
+  ],
+  "pdm-project__pdm-3250": [
+   "src/pdm/cli/commands/lock.py",
+   "src/pdm/project/lockfile.py",
+   "src/pdm/resolver/base.py"
+  ],
+  "pdm-project__pdm-3255": [
+   "src/pdm/utils.py",
+   "src/pdm/project/config.py",
+   "src/pdm/installers/installers.py"
+  ],
+  "pdm-project__pdm-3314": [
+   "src/pdm/cli/utils.py",
+   "src/pdm/project/config.py",
+   "src/pdm/resolver/base.py"
+  ],
+  "pdm-project__pdm-3374": [
+   "src/pdm/installers/installers.py",
+   "src/pdm/models/repositories/pypi.py",
+   "src/pdm/resolver/base.py"
+  ],
+  "pdm-project__pdm-3393": [
+   "src/pdm/project/core.py",
+   "src/pdm/cli/commands/add.py",
+   "src/pdm/models/requirements.py"
+  ],
+  "pdm-project__pdm-3419": [
+   "src/pdm/cli/commands/update.py",
+   "src/pdm/project/lockfile.py",
+   "src/pdm/resolver/__init__.py"
+  ],
+  "pdm-project__pdm-3420": [
+   "src/pdm/cli/commands/remove.py",
+   "src/pdm/cli/actions.py",
+   "src/pdm/cli/filters.py"
+  ],
+  "pdm-project__pdm-3435": [
+   "src/pdm/project/config.py",
+   "src/pdm/project/core.py",
+   "src/pdm/environments/local.py"
+  ],
+  "pdm-project__pdm-3440": [
+   "src/pdm/installers/core.py",
+   "src/pdm/resolver/resolvelib.py",
+   "src/pdm/cli/commands/install.py"
+  ],
+  "pdm-project__pdm-3455": [
+   "src/pdm/models/repositories/base.py",
+   "src/pdm/resolver/providers.py",
+   "src/pdm/models/candidates.py"
+  ],
+  "pdm-project__pdm-3555": [
+   "src/pdm/resolver/uv.py",
+   "src/pdm/cli/actions.py",
+   "src/pdm/models/auth.py"
+  ]
+ },
+ "errors": {},
+ "lift": {
+  "false_positive_rise_pts": 4.44,
+  "localization_lift_pts": -6.67
+ },
+ "n_errors": 0,
+ "retrieval_hit_rate": 1.0,
+ "retrieved": {
+  "pdm-project__pdm-3136": [
+   "6a7690e5877cd4fe231250834ee6d14c0611ef9e005f7c35342fe2df85a0adbb",
+   "bb784eb4533d11620843f08e3493d7db9130384057972ab5a9bd5c0792b21463",
+   "36e485f040287fe91f04948f7aafc9482cc5b060e5ca4407593b10fefe57d140",
+   "2ee7e9dab718ee9091ab95374c6adf55f344f10d12c8d807fbeb322ba15061e7"
+  ],
+  "pdm-project__pdm-3170": [
+   "2ee7e9dab718ee9091ab95374c6adf55f344f10d12c8d807fbeb322ba15061e7",
+   "36e485f040287fe91f04948f7aafc9482cc5b060e5ca4407593b10fefe57d140",
+   "6a7690e5877cd4fe231250834ee6d14c0611ef9e005f7c35342fe2df85a0adbb",
+   "bb784eb4533d11620843f08e3493d7db9130384057972ab5a9bd5c0792b21463"
+  ],
+  "pdm-project__pdm-3191": [
+   "6a7690e5877cd4fe231250834ee6d14c0611ef9e005f7c35342fe2df85a0adbb",
+   "2ee7e9dab718ee9091ab95374c6adf55f344f10d12c8d807fbeb322ba15061e7",
+   "bb784eb4533d11620843f08e3493d7db9130384057972ab5a9bd5c0792b21463",
+   "36e485f040287fe91f04948f7aafc9482cc5b060e5ca4407593b10fefe57d140"
+  ],
+  "pdm-project__pdm-3237": [
+   "6a7690e5877cd4fe231250834ee6d14c0611ef9e005f7c35342fe2df85a0adbb",
+   "36e485f040287fe91f04948f7aafc9482cc5b060e5ca4407593b10fefe57d140",
+   "2ee7e9dab718ee9091ab95374c6adf55f344f10d12c8d807fbeb322ba15061e7",
+   "bb784eb4533d11620843f08e3493d7db9130384057972ab5a9bd5c0792b21463"
+  ],
+  "pdm-project__pdm-3250": [
+   "6a7690e5877cd4fe231250834ee6d14c0611ef9e005f7c35342fe2df85a0adbb",
+   "bb784eb4533d11620843f08e3493d7db9130384057972ab5a9bd5c0792b21463",
+   "2ee7e9dab718ee9091ab95374c6adf55f344f10d12c8d807fbeb322ba15061e7",
+   "36e485f040287fe91f04948f7aafc9482cc5b060e5ca4407593b10fefe57d140"
+  ],
+  "pdm-project__pdm-3255": [
+   "6a7690e5877cd4fe231250834ee6d14c0611ef9e005f7c35342fe2df85a0adbb",
+   "2ee7e9dab718ee9091ab95374c6adf55f344f10d12c8d807fbeb322ba15061e7",
+   "36e485f040287fe91f04948f7aafc9482cc5b060e5ca4407593b10fefe57d140",
+   "bb784eb4533d11620843f08e3493d7db9130384057972ab5a9bd5c0792b21463"
+  ],
+  "pdm-project__pdm-3314": [
+   "6a7690e5877cd4fe231250834ee6d14c0611ef9e005f7c35342fe2df85a0adbb",
+   "2ee7e9dab718ee9091ab95374c6adf55f344f10d12c8d807fbeb322ba15061e7",
+   "36e485f040287fe91f04948f7aafc9482cc5b060e5ca4407593b10fefe57d140",
+   "bb784eb4533d11620843f08e3493d7db9130384057972ab5a9bd5c0792b21463"
+  ],
+  "pdm-project__pdm-3374": [
+   "6a7690e5877cd4fe231250834ee6d14c0611ef9e005f7c35342fe2df85a0adbb",
+   "bb784eb4533d11620843f08e3493d7db9130384057972ab5a9bd5c0792b21463",
+   "36e485f040287fe91f04948f7aafc9482cc5b060e5ca4407593b10fefe57d140",
+   "2ee7e9dab718ee9091ab95374c6adf55f344f10d12c8d807fbeb322ba15061e7"
+  ],
+  "pdm-project__pdm-3393": [
+   "6a7690e5877cd4fe231250834ee6d14c0611ef9e005f7c35342fe2df85a0adbb",
+   "bb784eb4533d11620843f08e3493d7db9130384057972ab5a9bd5c0792b21463",
+   "2ee7e9dab718ee9091ab95374c6adf55f344f10d12c8d807fbeb322ba15061e7",
+   "36e485f040287fe91f04948f7aafc9482cc5b060e5ca4407593b10fefe57d140"
+  ],
+  "pdm-project__pdm-3419": [
+   "6a7690e5877cd4fe231250834ee6d14c0611ef9e005f7c35342fe2df85a0adbb",
+   "36e485f040287fe91f04948f7aafc9482cc5b060e5ca4407593b10fefe57d140",
+   "bb784eb4533d11620843f08e3493d7db9130384057972ab5a9bd5c0792b21463",
+   "2ee7e9dab718ee9091ab95374c6adf55f344f10d12c8d807fbeb322ba15061e7"
+  ],
+  "pdm-project__pdm-3420": [
+   "6a7690e5877cd4fe231250834ee6d14c0611ef9e005f7c35342fe2df85a0adbb",
+   "bb784eb4533d11620843f08e3493d7db9130384057972ab5a9bd5c0792b21463",
+   "36e485f040287fe91f04948f7aafc9482cc5b060e5ca4407593b10fefe57d140",
+   "2ee7e9dab718ee9091ab95374c6adf55f344f10d12c8d807fbeb322ba15061e7"
+  ],
+  "pdm-project__pdm-3435": [
+   "6a7690e5877cd4fe231250834ee6d14c0611ef9e005f7c35342fe2df85a0adbb",
+   "2ee7e9dab718ee9091ab95374c6adf55f344f10d12c8d807fbeb322ba15061e7",
+   "36e485f040287fe91f04948f7aafc9482cc5b060e5ca4407593b10fefe57d140",
+   "bb784eb4533d11620843f08e3493d7db9130384057972ab5a9bd5c0792b21463"
+  ],
+  "pdm-project__pdm-3440": [
+   "2ee7e9dab718ee9091ab95374c6adf55f344f10d12c8d807fbeb322ba15061e7",
+   "6a7690e5877cd4fe231250834ee6d14c0611ef9e005f7c35342fe2df85a0adbb",
+   "36e485f040287fe91f04948f7aafc9482cc5b060e5ca4407593b10fefe57d140",
+   "bb784eb4533d11620843f08e3493d7db9130384057972ab5a9bd5c0792b21463"
+  ],
+  "pdm-project__pdm-3455": [
+   "6a7690e5877cd4fe231250834ee6d14c0611ef9e005f7c35342fe2df85a0adbb",
+   "2ee7e9dab718ee9091ab95374c6adf55f344f10d12c8d807fbeb322ba15061e7",
+   "36e485f040287fe91f04948f7aafc9482cc5b060e5ca4407593b10fefe57d140",
+   "bb784eb4533d11620843f08e3493d7db9130384057972ab5a9bd5c0792b21463"
+  ],
+  "pdm-project__pdm-3555": [
+   "6a7690e5877cd4fe231250834ee6d14c0611ef9e005f7c35342fe2df85a0adbb",
+   "36e485f040287fe91f04948f7aafc9482cc5b060e5ca4407593b10fefe57d140",
+   "bb784eb4533d11620843f08e3493d7db9130384057972ab5a9bd5c0792b21463",
+   "2ee7e9dab718ee9091ab95374c6adf55f344f10d12c8d807fbeb322ba15061e7"
+  ]
+ },
+ "treatment": {
+  "false_positive_rate": 0.8,
+  "localization_rate": 0.5333,
+  "n_false_positive": 36,
+  "n_flags": 45,
+  "n_localized": 8,
+  "n_tasks": 15,
+  "per_repo": {
+   "pdm-project/pdm": {
+    "false_positive_rate": 0.8,
+    "localization_rate": 0.5333,
+    "n_false_positive": 36,
+    "n_flags": 45,
+    "n_localized": 8,
+    "n_tasks": 15
+   }
+  }
+ },
+ "treatment_flags": {
+  "pdm-project__pdm-3136": [
+   "src/pdm/cli/commands/add.py",
+   "src/pdm/project/project_file.py",
+   "src/pdm/cli/commands/remove.py"
+  ],
+  "pdm-project__pdm-3170": [
+   "src/pdm/environments/base.py",
+   "src/pdm/project/config.py",
+   "src/pdm/cli/commands/install.py"
+  ],
+  "pdm-project__pdm-3191": [
+   "src/pdm/cli/actions.py",
+   "src/pdm/installers/base.py",
+   "src/pdm/cli/commands/install.py"
+  ],
+  "pdm-project__pdm-3237": [
+   "src/pdm/installers/uv.py",
+   "src/pdm/cli/commands/build.py",
+   "src/pdm/formats/uv.py"
+  ],
+  "pdm-project__pdm-3250": [
+   "src/pdm/cli/commands/lock.py",
+   "src/pdm/project/project_file.py",
+   "src/pdm/resolver/base.py"
+  ],
+  "pdm-project__pdm-3255": [
+   "src/pdm/utils.py",
+   "src/pdm/project/config.py",
+   "src/pdm/installers/installers.py"
+  ],
+  "pdm-project__pdm-3314": [
+   "src/pdm/cli/commands/update.py",
+   "src/pdm/cli/utils.py",
+   "src/pdm/project/config.py"
+  ],
+  "pdm-project__pdm-3374": [
+   "src/pdm/cli/commands/install.py",
+   "src/pdm/project/lockfile.py",
+   "src/pdm/resolver/base.py"
+  ],
+  "pdm-project__pdm-3393": [
+   "src/pdm/project/core.py",
+   "src/pdm/cli/commands/add.py",
+   "src/pdm/project/project_file.py"
+  ],
+  "pdm-project__pdm-3419": [
+   "src/pdm/cli/commands/update.py",
+   "src/pdm/project/lockfile.py",
+   "src/pdm/resolver/__init__.py"
+  ],
+  "pdm-project__pdm-3420": [
+   "src/pdm/cli/commands/remove.py",
+   "src/pdm/cli/actions.py",
+   "src/pdm/cli/filters.py"
+  ],
+  "pdm-project__pdm-3435": [
+   "src/pdm/project/config.py",
+   "src/pdm/environments/python.py",
+   "src/pdm/utils.py"
+  ],
+  "pdm-project__pdm-3440": [
+   "src/pdm/installers/core.py",
+   "src/pdm/resolver/resolvelib.py",
+   "src/pdm/cli/commands/install.py"
+  ],
+  "pdm-project__pdm-3455": [
+   "src/pdm/models/repositories/base.py",
+   "src/pdm/resolver/providers.py",
+   "src/pdm/cli/commands/add.py"
+  ],
+  "pdm-project__pdm-3555": [
+   "src/pdm/resolver/uv.py",
+   "src/pdm/cli/actions.py",
+   "src/pdm/project/config.py"
+  ]
+ }
+}

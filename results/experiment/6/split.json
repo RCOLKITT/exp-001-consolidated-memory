@@ -1,0 +1,13 @@
+{
+ "aws-cloudformation/cfn-lint": 50,
+ "conan-io/conan": 50,
+ "deepset-ai/haystack": 50,
+ "instructlab/instructlab": 30,
+ "keras-team/keras": 30,
+ "matplotlib/matplotlib": 50,
+ "pdm-project/pdm": 20,
+ "pylint-dev/pylint": 40,
+ "reflex-dev/reflex": 30,
+ "sissbruecker/linkding": 20,
+ "sphinx-doc/sphinx": 20
+}

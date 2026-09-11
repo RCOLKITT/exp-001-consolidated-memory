@@ -1,0 +1,197 @@
+{
+ "control": {
+  "false_positive_rate": 0.7105,
+  "localization_rate": 0.7143,
+  "n_false_positive": 27,
+  "n_flags": 38,
+  "n_localized": 10,
+  "n_tasks": 14,
+  "per_repo": {
+   "sissbruecker/linkding": {
+    "false_positive_rate": 0.7105,
+    "localization_rate": 0.7143,
+    "n_false_positive": 27,
+    "n_flags": 38,
+    "n_localized": 10,
+    "n_tasks": 14
+   }
+  }
+ },
+ "control_flags": {
+  "sissbruecker__linkding-1014": [
+   "bookmarks/views/root.py",
+   "bookmarks/templatetags/bookmarks.py",
+   "bookmarks/settings/base.py"
+  ],
+  "sissbruecker__linkding-1045": [
+   "bookmarks/services/auto_tagging.py",
+   "bookmarks/models.py",
+   "bookmarks/views/bookmarks.py"
+  ],
+  "sissbruecker__linkding-1051": [
+   "bookmarks/services/parser.py",
+   "bookmarks/views/bookmarks.py",
+   "bookmarks/templatetags/shared.py"
+  ],
+  "sissbruecker__linkding-1101": [
+   "bookmarks/services/exporter.py",
+   "bookmarks/views/bookmarks.py",
+   "bookmarks/utils.py"
+  ],
+  "sissbruecker__linkding-1114": [
+   "bookmarks/views/bundles.py",
+   "bookmarks/models.py"
+  ],
+  "sissbruecker__linkding-1153": [
+   "bookmarks/services/importer.py",
+   "bookmarks/views/settings.py",
+   "bookmarks/models.py"
+  ],
+  "sissbruecker__linkding-1175": [
+   "bookmarks/services/tags.py",
+   "bookmarks/models.py",
+   "bookmarks/views/bookmarks.py"
+  ],
+  "sissbruecker__linkding-866": [
+   "bookmarks/services/singlefile.py",
+   "bookmarks/tasks.py",
+   "bookmarks/services/tasks.py"
+  ],
+  "sissbruecker__linkding-971": [
+   "bookmarks/tests/test_oidc_support.py",
+   "siteroot/settings/base.py"
+  ],
+  "sissbruecker__linkding-984": [
+   "bookmarks/views/bookmarks.py",
+   "bookmarks/feeds.py"
+  ],
+  "sissbruecker__linkding-989": [
+   "bookmarks/services/preview_image_loader.py",
+   "bookmarks/models.py",
+   "bookmarks/services/tasks.py"
+  ],
+  "sissbruecker__linkding-993": [
+   "bookmarks/models.py",
+   "bookmarks/services/wayback.py",
+   "bookmarks/api/serializers.py"
+  ],
+  "sissbruecker__linkding-995": [
+   "bookmarks/middlewares.py",
+   "bookmarks/views/__init__.py",
+   "siteroot/settings/base.py"
+  ],
+  "sissbruecker__linkding-999": [
+   "bookmarks/views/bookmarks.py",
+   "bookmarks/services/bookmarks.py"
+  ]
+ },
+ "errors": {},
+ "lift": {
+  "false_positive_rise_pts": 0.0,
+  "localization_lift_pts": 0.0
+ },
+ "n_errors": 0,
+ "retrieval_hit_rate": 0.0,
+ "retrieved": {
+  "sissbruecker__linkding-1014": [],
+  "sissbruecker__linkding-1045": [],
+  "sissbruecker__linkding-1051": [],
+  "sissbruecker__linkding-1101": [],
+  "sissbruecker__linkding-1114": [],
+  "sissbruecker__linkding-1153": [],
+  "sissbruecker__linkding-1175": [],
+  "sissbruecker__linkding-866": [],
+  "sissbruecker__linkding-971": [],
+  "sissbruecker__linkding-984": [],
+  "sissbruecker__linkding-989": [],
+  "sissbruecker__linkding-993": [],
+  "sissbruecker__linkding-995": [],
+  "sissbruecker__linkding-999": []
+ },
+ "treatment": {
+  "false_positive_rate": 0.7105,
+  "localization_rate": 0.7143,
+  "n_false_positive": 27,
+  "n_flags": 38,
+  "n_localized": 10,
+  "n_tasks": 14,
+  "per_repo": {
+   "sissbruecker/linkding": {
+    "false_positive_rate": 0.7105,
+    "localization_rate": 0.7143,
+    "n_false_positive": 27,
+    "n_flags": 38,
+    "n_localized": 10,
+    "n_tasks": 14
+   }
+  }
+ },
+ "treatment_flags": {
+  "sissbruecker__linkding-1014": [
+   "bookmarks/views/root.py",
+   "bookmarks/templatetags/bookmarks.py",
+   "bookmarks/settings/base.py"
+  ],
+  "sissbruecker__linkding-1045": [
+   "bookmarks/services/auto_tagging.py",
+   "bookmarks/models.py",
+   "bookmarks/views/bookmarks.py"
+  ],
+  "sissbruecker__linkding-1051": [
+   "bookmarks/services/parser.py",
+   "bookmarks/views/bookmarks.py",
+   "bookmarks/templatetags/shared.py"
+  ],
+  "sissbruecker__linkding-1101": [
+   "bookmarks/services/exporter.py",
+   "bookmarks/views/bookmarks.py",
+   "bookmarks/utils.py"
+  ],
+  "sissbruecker__linkding-1114": [
+   "bookmarks/views/bundles.py",
+   "bookmarks/models.py"
+  ],
+  "sissbruecker__linkding-1153": [
+   "bookmarks/services/importer.py",
+   "bookmarks/views/settings.py",
+   "bookmarks/models.py"
+  ],
+  "sissbruecker__linkding-1175": [
+   "bookmarks/services/tags.py",
+   "bookmarks/models.py",
+   "bookmarks/views/bookmarks.py"
+  ],
+  "sissbruecker__linkding-866": [
+   "bookmarks/services/singlefile.py",
+   "bookmarks/tasks.py",
+   "bookmarks/services/tasks.py"
+  ],
+  "sissbruecker__linkding-971": [
+   "bookmarks/tests/test_oidc_support.py",
+   "siteroot/settings/base.py"
+  ],
+  "sissbruecker__linkding-984": [
+   "bookmarks/views/bookmarks.py",
+   "bookmarks/feeds.py"
+  ],
+  "sissbruecker__linkding-989": [
+   "bookmarks/services/preview_image_loader.py",
+   "bookmarks/models.py",
+   "bookmarks/services/tasks.py"
+  ],
+  "sissbruecker__linkding-993": [
+   "bookmarks/models.py",
+   "bookmarks/services/wayback.py",
+   "bookmarks/api/serializers.py"
+  ],
+  "sissbruecker__linkding-995": [
+   "bookmarks/middlewares.py",
+   "bookmarks/views/__init__.py",
+   "siteroot/settings/base.py"
+  ],
+  "sissbruecker__linkding-999": [
+   "bookmarks/views/bookmarks.py",
+   "bookmarks/services/bookmarks.py"
+  ]
+ }
+}
