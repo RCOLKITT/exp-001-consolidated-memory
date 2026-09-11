@@ -8,6 +8,10 @@ from adapters.code.pipeline import ArmResult, gate4_report
 from phase0.metrics import ArmMetrics, lift
 
 
+def metrics_from_json(d: dict) -> ArmMetrics:
+    return ArmMetrics(d["n_tasks"], d["n_localized"], d["n_flags"], d["n_false_positive"], d.get("per_repo", {}))
+
+
 def merge(ms: list[ArmMetrics]) -> ArmMetrics:
     per = {}
     for m in ms:
@@ -47,16 +51,21 @@ class Aggregator:
         self.file_level = {"control": [], "treatment": []}
 
     def add(self, repo: str, arms: dict[str, ArmResult], truth, repo_of: dict, aj: dict, is_negative_control: bool) -> None:
-        mc, mt = arms["control"].metrics(truth, repo_of), arms["treatment"].metrics(truth, repo_of)
+        self.add_metrics(repo, {n: a.metrics(truth, repo_of) for n, a in arms.items()},
+                         {n: a.file_metrics(truth, repo_of) for n, a in arms.items()}, aj, is_negative_control)
+
+    def add_metrics(self, repo: str, metrics: dict[str, ArmMetrics], file_metrics: dict[str, ArmMetrics], aj: dict, is_negative_control: bool) -> None:
+        """Same as `add`, from already-computed metrics (used to merge shards from arms.json files)."""
+        mc, mt = metrics["control"], metrics["treatment"]
         if is_negative_control:
             self.neg = aj["lift"]
             for n in self.secondary:
                 self.secondary[n]["negative_control_lift"] = aj["arms"][n]["lift_vs_control"]
             return
         self.controls.append(mc); self.treatments.append(mt); self.per_repo_lift[repo] = aj["lift"]
-        self.file_level["control"].append(arms["control"].file_metrics(truth, repo_of)); self.file_level["treatment"].append(arms["treatment"].file_metrics(truth, repo_of))
+        self.file_level["control"].append(file_metrics["control"]); self.file_level["treatment"].append(file_metrics["treatment"])
         for n in self.secondary:
-            self.secondary[n]["control"].append(mc); self.secondary[n]["arm"].append(arms[n].metrics(truth, repo_of)); self.secondary[n]["per_repo_lift"][repo] = aj["arms"][n]["lift_vs_control"]
+            self.secondary[n]["control"].append(mc); self.secondary[n]["arm"].append(metrics[n]); self.secondary[n]["per_repo_lift"][repo] = aj["arms"][n]["lift_vs_control"]
 
     def report(self, extra: Optional[dict] = None) -> dict:
         if not self.controls:
@@ -67,5 +76,10 @@ class Aggregator:
         if self.granularity == "function":
             fc, ft = merge(self.file_level["control"]), merge(self.file_level["treatment"])
             rep["file_level_secondary"] = {"control": fc.to_json(), "treatment": ft.to_json(), **lift(ft, fc)}
+        if "placebo" in self.secondary and self.treatments:
+            pl = self.secondary["placebo"]
+            t, pm = merge(self.treatments), merge(pl["arm"])
+            rep["treatment_minus_placebo"] = {"localization_pts": round(100 * (t.localization_rate - pm.localization_rate), 2),
+                                              "false_positive_pts": round(100 * (t.false_positive_rate - pm.false_positive_rate), 2)}
         rep.update(extra or {})
         return rep

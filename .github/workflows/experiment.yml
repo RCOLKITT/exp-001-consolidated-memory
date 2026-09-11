@@ -5,6 +5,9 @@
 #   "warmup": 20,                           # rolling: tasks per repo learned from but not scored
 #   "resume_run": "",                       # rolling: experiment run whose rolling-N artifact (caches) to reuse
 #   "calibrate_tau": false,                 # rolling on calibration repos: also run phase2.calibrate_tau on the ungated arm -> tau.json
+#   "placebo_pool": "docs/placebo-pool.v2.json",   # rolling: pool file for a placebo arm (phase4.placebo_pool)
+#   "pool_from_run": 8,                     # stage placebo-pool: build the pool from that run's rolling-N artifact kernels
+#   "merge_runs": [10, 11, 12],             # stage merge: aggregate results/experiment/<n>/rolling of these (sharded) runs
 #   "eval_run": "",                         # for stage=analyze: experiment run whose results/experiment/<n>/eval to analyse (must be on the branch)
 #   "secondary_repos": [],                  # for the paired analysis: labeled secondary subset (e.g. repos that passed Gate 3)
 #   "granularity": "file",                  # v2: "function" = two-stage verifier, symbolised ground truth, function-keyed consolidation
@@ -55,15 +58,17 @@ jobs:
           for k, d in [("corpus_run", ""), ("stage", "both"), ("learn_run", ""), ("eval_run", ""), ("build", 20), ("min_eval", 10), ("ceiling_metrics", ""), ("ceiling", 0.90),
                        ("negative_control", ""), ("model", "meta-llama/llama-3.3-70b-instruct"), ("provider", "openai-compatible"),
                        ("base_url", "https://openrouter.ai/api/v1"), ("similarity", "embedding"), ("embedding_model", "sentence-transformers/all-MiniLM-L6-v2"),
-                       ("embedding_revision", ""), ("theta", 0.45), ("rho", 0.70), ("cluster_similarity", 0.60), ("ttl", 30), ("top_k", 3), ("seed", 7), ("max_eval_per_repo", 0), ("consolidation", "file"), ("build_rule", ""), ("min_occurrences", 2), ("min_distinct_inputs", 2), ("granularity", "file"), ("tau", 0.0), ("warmup", 20), ("resume_run", ""), ("calibrate_tau", "false")]:
+                       ("embedding_revision", ""), ("theta", 0.45), ("rho", 0.70), ("cluster_similarity", 0.60), ("ttl", 30), ("top_k", 3), ("seed", 7), ("max_eval_per_repo", 0), ("consolidation", "file"), ("build_rule", ""), ("min_occurrences", 2), ("min_distinct_inputs", 2), ("granularity", "file"), ("tau", 0.0), ("warmup", 20), ("resume_run", ""), ("calibrate_tau", "false"), ("placebo_pool", ""), ("pool_from_run", "")]:
               print(f"{k}={g(k, d)}")
           print("repos=" + ",".join(c.get("repos", [])))
           print("secondary_repos=" + ",".join(c.get("secondary_repos", [])))
           print("arms=" + ",".join(c.get("arms", ["control", "treatment"])))
+          print("merge_runs=" + ",".join(str(x) for x in c.get("merge_runs", [])))
           print("model_extra=" + json.dumps(c.get("model_extra", {})))
           print("dir=results/experiment/${{ github.run_number }}")
           PY
       - name: Fetch the corpus from the phase0 run
+        if: steps.cfg.outputs.stage != 'merge' && steps.cfg.outputs.stage != 'placebo-pool'
         run: |
           set -euo pipefail
           N="${{ steps.cfg.outputs.corpus_run }}"; test -n "$N" || { echo "corpus_run is required"; exit 3; }
@@ -72,7 +77,7 @@ jobs:
           gh run download "$RID" -n "corpus-$N" -D corpus/
           ls corpus/ && wc -l corpus/tasks.jsonl
       - name: Split (pre-registration values; ceiling rule optional)
-        if: steps.cfg.outputs.stage != 'analyze' && steps.cfg.outputs.stage != 'rolling'
+        if: steps.cfg.outputs.stage != 'analyze' && steps.cfg.outputs.stage != 'rolling' && steps.cfg.outputs.stage != 'merge' && steps.cfg.outputs.stage != 'placebo-pool'
         run: |
           set -euo pipefail
           D="${{ steps.cfg.outputs.dir }}"; mkdir -p "$D"
@@ -132,8 +137,9 @@ jobs:
             RID=$(gh api "repos/${{ github.repository }}/actions/workflows/experiment.yml/runs?per_page=100" --jq ".workflow_runs[] | select(.run_number == $N) | .id" | head -1)
             gh run download "$RID" -n "rolling-$N" -D runs/rolling/ && echo "{\"resume_of\": $N}" > "$D/resume.json" || echo "no rolling artifact to reuse"
           fi
+          PP=""; [ -n "${{ steps.cfg.outputs.placebo_pool }}" ] && PP="--placebo-pool ${{ steps.cfg.outputs.placebo_pool }}" && cp "${{ steps.cfg.outputs.placebo_pool }}" "$D/placebo-pool.json"
           python -m phase4.rolling --tasks corpus/tasks.jsonl --models corpus/models.json --repos "${{ steps.cfg.outputs.repos }}" --warmup "${{ steps.cfg.outputs.warmup }}" --repos-dir corpus/repos \
-            --out runs/rolling --seed "${{ steps.cfg.outputs.seed }}" --arms "${{ steps.cfg.outputs.arms }}" $COMMON --model-extra "$MX"
+            --out runs/rolling --seed "${{ steps.cfg.outputs.seed }}" --arms "${{ steps.cfg.outputs.arms }}" $PP $COMMON --model-extra "$MX"
           cp runs/rolling/gate4.json "$D/rolling/gate4.json"
           for d in runs/rolling/*/; do r=$(basename "$d"); for f in arms gate3; do [ -f "$d/$f.json" ] && cp "$d/$f.json" "$D/rolling/$r.$f.json"; done; done; true
           NC=""; [ -n "${{ steps.cfg.outputs.negative_control }}" ] && NC="--negative-control ${{ steps.cfg.outputs.negative_control }}"
@@ -147,6 +153,25 @@ jobs:
           name: rolling-${{ github.run_number }}
           path: runs/rolling/
           retention-days: 90
+      - name: Build the placebo pool from an earlier rolling run's kernels (no model calls)
+        if: steps.cfg.outputs.stage == 'placebo-pool'
+        run: |
+          set -euo pipefail
+          N="${{ steps.cfg.outputs.pool_from_run }}"; test -n "$N" || { echo "pool_from_run is required"; exit 3; }
+          RID=$(gh api "repos/${{ github.repository }}/actions/workflows/experiment.yml/runs?per_page=100" --jq ".workflow_runs[] | select(.run_number == $N) | .id" | head -1)
+          gh run download "$RID" -n "rolling-$N" -D runs/pool/
+          D="${{ steps.cfg.outputs.dir }}"; mkdir -p "$D"; cp .exp-run.json "$D/config.json"
+          K=$(ls runs/pool/*/kernel.json | paste -sd, -)
+          python -m phase4.placebo_pool --kernels "$K" --out "$D/placebo-pool.json"
+      - name: Merge sharded rolling runs (no model calls)
+        if: steps.cfg.outputs.stage == 'merge'
+        run: |
+          set -euo pipefail
+          D="${{ steps.cfg.outputs.dir }}"; mkdir -p "$D"; cp .exp-run.json "$D/config.json"
+          DIRS=$(echo "${{ steps.cfg.outputs.merge_runs }}" | tr ',' '\n' | sed 's#^#results/experiment/#; s#$#/rolling#' | paste -sd, -)
+          NC=""; [ -n "${{ steps.cfg.outputs.negative_control }}" ] && NC="--negative-control ${{ steps.cfg.outputs.negative_control }}"
+          python -m phase4.aggregate --dirs "$DIRS" $NC --out "$D/rolling"
+          python -m phase4.paired --eval-dir "$D/rolling" $NC --secondary-repos "${{ steps.cfg.outputs.secondary_repos }}" --out "$D/paired"
       - name: Paired analysis of an earlier evaluation (no model calls)
         if: steps.cfg.outputs.stage == 'analyze'
         run: |

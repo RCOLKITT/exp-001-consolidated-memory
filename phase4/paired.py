@@ -87,9 +87,9 @@ def summarise(rows: list[dict], label: str) -> dict:
     return out
 
 
-def _rows_v2(a: dict, repo: str, arm: str) -> list[dict]:
-    """Per-task rows from a v2 arms.json (hits recorded by the evaluator)."""
-    c, t = a["arms"]["control"], a["arms"][arm]
+def _rows_v2(a: dict, repo: str, arm: str, baseline: str = "control") -> list[dict]:
+    """Per-task rows from a v2 arms.json (hits recorded by the evaluator); `baseline` plays the control role."""
+    c, t = a["arms"][baseline], a["arms"][arm]
     rows = []
     for iid, chit in c["hits"].items():
         if iid not in t["hits"]:
@@ -114,7 +114,7 @@ def _rows_v1(a: dict, repo: str, tasks: dict) -> list[dict]:
     return rows
 
 
-def analyse(tasks_path: Path | None, eval_dir: Path, negative_control: str | None, secondary_repos: list[str], arm: str = "treatment") -> dict:
+def analyse(tasks_path: Path | None, eval_dir: Path, negative_control: str | None, secondary_repos: list[str], arm: str = "treatment", baseline: str = "control") -> dict:
     tasks = {t.instance_id: t for t in read_tasks(tasks_path)} if tasks_path else {}
     rows: list[dict] = []
     per_repo: dict[str, dict] = {}
@@ -123,8 +123,8 @@ def analyse(tasks_path: Path | None, eval_dir: Path, negative_control: str | Non
         repo = f.name[: -len(".arms.json")].replace("__", "/", 1)
         a = json.loads(f.read_text())
         errors[repo] = a.get("errors", {})
-        if "arms" in a and arm in a["arms"]:
-            rrows = _rows_v2(a, repo, arm)
+        if "arms" in a and arm in a["arms"] and baseline in a["arms"]:
+            rrows = _rows_v2(a, repo, arm, baseline)
         elif tasks:
             rrows = _rows_v1(a, repo, tasks)
         else:
@@ -135,7 +135,7 @@ def analyse(tasks_path: Path | None, eval_dir: Path, negative_control: str | Non
     primary = summarise(rows, "primary: all treatment repos (registered)")
     secondary = summarise([r for r in rows if r["repo"] in set(secondary_repos)], "secondary: repos that passed Gate 3") if secondary_repos else None
     neg = per_repo.get(negative_control) if negative_control else None
-    return {"arm": arm, "primary": primary, "secondary": secondary, "negative_control": neg, "per_repo": per_repo,
+    return {"arm": arm, "baseline": baseline, "primary": primary, "secondary": secondary, "negative_control": neg, "per_repo": per_repo,
             "errors": {k: v for k, v in errors.items() if v}, "tasks": rows}
 
 
@@ -146,7 +146,7 @@ def render_md(rep: dict) -> str:
                 f"bootstrap {s['lift_ci95_bootstrap_pts'][0]:+.1f} to {s['lift_ci95_bootstrap_pts'][1]:+.1f}). "
                 f"Discordant pairs: treatment-only {s['treatment_only_hit']}, control-only {s['control_only_hit']}, McNemar exact p = {s['mcnemar_exact_p']}. "
                 f"Flags differed on {s['flags_differed']}/{s['n_tasks']} tasks; memory retrieved on {s['retrieved_any']}/{s['n_tasks']}.\n")
-    out = [f"# Paired analysis — arm `{rep.get('arm', 'treatment')}` vs control\n", block(rep["primary"])]
+    out = [f"# Paired analysis — arm `{rep.get('arm', 'treatment')}` vs `{rep.get('baseline', 'control')}`\n", block(rep["primary"])]
     if rep.get("secondary"):
         out.append(block(rep["secondary"]))
     if rep.get("negative_control"):
@@ -179,6 +179,10 @@ def main(argv: list[str] | None = None) -> int:
         r2 = analyse(None, Path(args.eval_dir), args.negative_control, secondary, name)
         (out / f"paired-{name}.json").write_text(json.dumps(r2, indent=1, sort_keys=True) + "\n")
         (out / f"paired-{name}.md").write_text(render_md(r2))
+    if "placebo" in names and args.treatment_arm != "placebo":       # the registered placebo comparison
+        r3 = analyse(None, Path(args.eval_dir), args.negative_control, secondary, args.treatment_arm, baseline="placebo")
+        (out / "paired-treatment-vs-placebo.json").write_text(json.dumps(r3, indent=1, sort_keys=True) + "\n")
+        (out / "paired-treatment-vs-placebo.md").write_text(render_md(r3))
     return 0
 
 

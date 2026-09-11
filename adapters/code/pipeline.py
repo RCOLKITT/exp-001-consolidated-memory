@@ -55,10 +55,31 @@ def record_content(flag: Flag, symptom: str) -> str:
 @dataclass(frozen=True)
 class ArmSpec:
     """An evaluation arm: which memory version it sees and its retrieval gate τ
-    (memories below τ are not injected; τ = 0 injects the top-k as in v1)."""
+    (memories below τ are not injected; τ = 0 injects the top-k as in v1).
+    kind: "control" (no memory), "memory", or "placebo" — the placebo arm
+    injects as many lines as the primary treatment arm would at this task,
+    but drawn (by the same retrieval similarity) from an irrelevant pool."""
     name: str
     version: Optional[str]
     tau: float = 0.0
+    kind: str = "memory"
+
+
+def parse_arms(spec: str, default_tau: float) -> list[ArmSpec]:
+    """`control,treatment:0,gated:0.5,placebo:0` -> ArmSpecs. τ defaults: treatment
+    -> default_tau, ungated -> 0, others -> default_tau. Version is a marker
+    ("memory") that the caller replaces with the frozen version or "rolling"."""
+    out = []
+    for item in [x.strip() for x in spec.split(",") if x.strip()]:
+        name, _, tau = item.partition(":")
+        if name == "control":
+            out.append(ArmSpec("control", None, 0.0, "control")); continue
+        t = float(tau) if tau else (0.0 if name == "ungated" else default_tau)
+        out.append(ArmSpec(name, "memory", t, "placebo" if name == "placebo" else "memory"))
+    names = [a.name for a in out]
+    if "control" not in names or "treatment" not in names or len(set(names)) != len(names):
+        raise ValueError("--arms must include control and treatment, names unique")
+    return out
 
 
 @dataclass
@@ -106,6 +127,7 @@ class RepoPipeline:
         retrieval_similarity: Optional[Similarity] = None,
         index_of: Optional[Callable[[Task, str], object]] = None,
         tau: float = 0.0,
+        placebo_pool: Sequence[str] = (),
     ) -> None:
         self.repo = repo
         self.localizer = localizer
@@ -113,6 +135,7 @@ class RepoPipeline:
         self.list_files = list_files
         self.index_of = index_of          # v2: (task, path) -> function spans at base_commit
         self.tau = tau                    # learning-phase retrieval gate (evaluation arms carry their own)
+        self.placebo_pool = tuple(placebo_pool)   # irrelevant memories (another repository's), for the placebo arm
         self._flags: dict[str, Flag] = {}                       # record id -> Flag (oracle input)
         self.oracle = LocationOracle(truth, self._flags)
         self.kernel = Kernel(config, similarity, self.oracle, clock=clock, retrieval_similarity=retrieval_similarity)
@@ -128,6 +151,15 @@ class RepoPipeline:
         hits = self.kernel.retrieve(task.problem_statement)
         keep = [(m, s) for m, s in hits if s > 0.0 and s >= tau]
         return [m.content for m, _ in keep], tuple(m.id for m, _ in keep), {m.id: round(s, 6) for m, s in hits}
+
+    def _placebo(self, task: Task, n: int) -> tuple[list[str], tuple[str, ...], dict[str, float]]:
+        """Top-n of the placebo pool by the retrieval similarity — same count and
+        selection rule as the treatment arm, content that cannot be relevant."""
+        if n <= 0 or not self.placebo_pool:
+            return [], (), {}
+        sim = self.kernel.retrieval_similarity
+        scored = sorted(((sim.sim(task.problem_statement, m), i) for i, m in enumerate(self.placebo_pool)), key=lambda x: (-x[0], x[1]))[:n]
+        return [self.placebo_pool[i] for _, i in scored], tuple(f"placebo:{i}" for _, i in scored), {f"placebo:{i}": round(s_, 6) for s_, i in scored}
 
     def _localize(self, task: Task, memories: Sequence[str]):
         if getattr(self.localizer, "level", "file") == "function":
@@ -190,9 +222,16 @@ class RepoPipeline:
             rng.shuffle(arm_order)                             # interleaved
             got = {}
             try:
+                n_primary = None
                 for sp in arm_order:
-                    self.kernel.pin(sp.version)
-                    memories, ids, scores = self._retrieve(t, sp.tau) if sp.version else ([], (), {})
+                    if sp.kind == "placebo":
+                        if n_primary is None:
+                            ref = next(x for x in specs if x.name == "treatment")
+                            self.kernel.pin(ref.version); n_primary = len(self._retrieve(t, ref.tau)[1]) if ref.version else 0
+                        memories, ids, scores = self._placebo(t, n_primary)
+                    else:
+                        self.kernel.pin(sp.version)
+                        memories, ids, scores = self._retrieve(t, sp.tau) if sp.version else ([], (), {})
                     got[sp.name] = (self._localize(t, memories), ids, scores)
             except Exception as e:  # excluded from every arm: pairing is preserved
                 msg = f"{type(e).__name__}: {str(e)[:300]}"
@@ -241,11 +280,17 @@ class RepoPipeline:
             else:
                 order = [control_spec]
             got, failure = {}, None
+            n_primary = None
             for sp in order:
                 try:
                     if sp.version is None:
                         self.kernel.pin(None)
                         memories, ids, scores = [], (), {}
+                    elif sp.kind == "placebo":
+                        if n_primary is None:
+                            ref = next(x for x in specs if x.name == "treatment")
+                            self.kernel.pin(version); n_primary = len(self._retrieve(t, ref.tau)[1]) if version else 0
+                        memories, ids, scores = self._placebo(t, n_primary)
                     else:
                         self.kernel.pin(version)
                         memories, ids, scores = self._retrieve(t, sp.tau) if version else ([], (), {})
@@ -281,6 +326,8 @@ class RepoPipeline:
                 r.retrieved_by_task[t.instance_id] = ids
                 r.scores_by_task[t.instance_id] = scores
                 r.version_by_task[t.instance_id] = version if name != control_spec.name else None
+                if next(x for x in specs if x.name == name).kind == "placebo":
+                    r.version_by_task[t.instance_id] = None
                 if hasattr(res_, "file_flags"):
                     r.file_flags_by_task[t.instance_id] = res_.file_flags()
         self.frozen_version = self.kernel.freeze()

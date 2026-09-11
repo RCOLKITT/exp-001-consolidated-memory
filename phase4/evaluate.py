@@ -13,7 +13,7 @@ import json
 import sys
 from pathlib import Path
 
-from adapters.code.pipeline import ArmSpec, write_json
+from adapters.code.pipeline import ArmSpec, parse_arms, write_json
 from memkernel.persist import load_kernel
 from phase0.chains import build_chains
 from phase0.corpus import apply_freshness, read_tasks
@@ -30,11 +30,17 @@ def _main(argv):
     add_seam_args(ap)
     ap.add_argument("--ttl", type=int, default=30); ap.add_argument("--negative-control"); ap.add_argument("--cache"); ap.add_argument("--offline", action="store_true")
     ap.add_argument("--max-eval-per-repo", type=int, default=0, help="cap eval tasks per repo (smoke runs only)")
-    ap.add_argument("--arms", default="control,treatment", help="arms to evaluate: control (no memory), treatment (frozen memory, gate τ = --tau), ungated (frozen memory, τ = 0)")
+    ap.add_argument("--arms", default="control,treatment", help="name[:tau] list, e.g. control,treatment:0,gated:0.5,placebo:0")
+    ap.add_argument("--placebo-pool", help="JSON {\"pool\": [contents...]} of memories from repositories outside the experiment")
     args = ap.parse_args(argv)
-    arm_names = [a.strip() for a in args.arms.split(",") if a.strip()]
-    if "control" not in arm_names or "treatment" not in arm_names:
-        ap.error("--arms must include control and treatment")
+    try:
+        arm_specs = parse_arms(args.arms, args.tau)
+    except ValueError as e:
+        ap.error(str(e))
+    arm_names = [a.name for a in arm_specs]
+    placebo_pool = [m["content"] if isinstance(m, dict) else str(m) for m in json.loads(Path(args.placebo_pool).read_text())["pool"]] if args.placebo_pool else []
+    if any(a.kind == "placebo" for a in arm_specs) and not placebo_pool:
+        ap.error("a placebo arm needs --placebo-pool")
     out = Path(args.out); out.mkdir(parents=True, exist_ok=True)
     tasks = read_tasks(args.tasks)
     if args.models:
@@ -49,14 +55,14 @@ def _main(argv):
             ev = ev[: args.max_eval_per_repo]          # smoke runs only; never for the pre-registered evaluation
         rd = out / chain.repo.replace("/", "__")
         p = make_pipeline(chain.repo, chain.tasks, args, Path(args.cache) if args.cache else rd / "cache.jsonl")
+        p.placebo_pool = tuple(placebo_pool)
         kpath = Path(args.learn_dir) / chain.repo.replace("/", "__") / "kernel.json"
         if chain.repo == args.negative_control or not kpath.exists():
             p.frozen_version = p.kernel.freeze()             # empty memory, still two arms
         else:
             load_kernel(kpath, p.kernel)
             p.frozen_version = p.kernel.pinned_version
-        tau = {"control": 0.0, "treatment": args.tau, "ungated": 0.0}
-        specs = [ArmSpec(n, None if n == "control" else p.frozen_version, tau.get(n, args.tau)) for n in arm_names]
+        specs = [ArmSpec(a.name, None if a.kind == "control" else p.frozen_version, a.tau, a.kind) for a in arm_specs]
         arms = p.evaluate_arms(ev, args.seed, specs)
         repo_of = {t.instance_id: chain.repo for t in ev}
         aj = arms_json(arms, p.truth, repo_of, args.granularity)

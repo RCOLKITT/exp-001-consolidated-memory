@@ -17,7 +17,7 @@ import json
 import sys
 from pathlib import Path
 
-from adapters.code.pipeline import ArmSpec, write_json
+from adapters.code.pipeline import ArmSpec, parse_arms, write_json
 from memkernel.persist import save_kernel
 from phase0.chains import build_chains
 from phase0.corpus import apply_freshness, read_tasks
@@ -34,12 +34,18 @@ def _main(argv):
     ap.add_argument("--provider", default="anthropic", choices=["anthropic", "openai-compatible"]); ap.add_argument("--base-url"); ap.add_argument("--api-key-env", default="MODEL_API_KEY"); ap.add_argument("--model-extra", default="")
     add_seam_args(ap)
     ap.add_argument("--ttl", type=int, default=30); ap.add_argument("--negative-control"); ap.add_argument("--cache"); ap.add_argument("--offline", action="store_true")
-    ap.add_argument("--arms", default="control,treatment", help="control (no memory), treatment (memory, gate τ = --tau), ungated (memory, τ = 0)")
+    ap.add_argument("--arms", default="control,treatment", help="name[:tau] list, e.g. control,treatment:0,gated:0.5,placebo:0 — control (no memory); placebo (irrelevant pool, count matched to treatment)")
+    ap.add_argument("--placebo-pool", help="JSON {\"pool\": [contents...]} of memories from repositories outside the experiment (phase4.placebo_pool)")
     ap.add_argument("--max-tasks-per-repo", type=int, default=0, help="cap chain length per repo (smoke runs only)")
     args = ap.parse_args(argv)
-    arm_names = [a.strip() for a in args.arms.split(",") if a.strip()]
-    if "control" not in arm_names or "treatment" not in arm_names:
-        ap.error("--arms must include control and treatment")
+    try:
+        arm_specs = parse_arms(args.arms, args.tau)
+    except ValueError as e:
+        ap.error(str(e))
+    arm_names = [a.name for a in arm_specs]
+    placebo_pool = [m["content"] if isinstance(m, dict) else str(m) for m in json.loads(Path(args.placebo_pool).read_text())["pool"]] if args.placebo_pool else []
+    if any(a.kind == "placebo" for a in arm_specs) and not placebo_pool:
+        ap.error("a placebo arm needs --placebo-pool")
     repos = [r.strip() for r in args.repos.split(",") if r.strip()]
     out = Path(args.out); out.mkdir(parents=True, exist_ok=True)
     tasks = read_tasks(args.tasks)
@@ -52,8 +58,8 @@ def _main(argv):
         chain_tasks = list(chain.tasks)[: args.max_tasks_per_repo] if args.max_tasks_per_repo else list(chain.tasks)
         rd = out / chain.repo.replace("/", "__")
         p = make_pipeline(chain.repo, chain_tasks, args, Path(args.cache) if args.cache else rd / "cache.jsonl")
-        tau = {"control": 0.0, "treatment": args.tau, "ungated": 0.0}
-        specs = [ArmSpec(n, None if n == "control" else "rolling", tau.get(n, args.tau)) for n in arm_names]
+        p.placebo_pool = tuple(placebo_pool)
+        specs = [ArmSpec(a.name, None if a.kind == "control" else "rolling", a.tau, a.kind) for a in arm_specs]
         is_neg = chain.repo == args.negative_control
         arms = p.rolling(chain_tasks, args.warmup, args.seed, specs, learn=not is_neg)
         save_kernel(p.kernel, rd / "kernel.json")
