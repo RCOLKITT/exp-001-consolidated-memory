@@ -517,3 +517,20 @@ Gate 2.3-v2 tooling: the indentation-based witness first disagreed with
 the `ast` oracle on 6/50 hunks; all six were witness bugs (multi-line
 signatures, nested defs), fixed; second pass 50/50. The `ast` mapping was
 right on every sampled hunk.
+
+
+## 17. Sizing the v2 pool: the split rule, not the corpus, was the limit (run 26)
+
+Adding repos under the registered split rule adds no eval tasks: every
+chain shorter than 30 yields fewer than 10 eval tasks after its 20-task
+build and is excluded (222 repos, 1,884 tasks, 13 chains ≥ 30). A
+prequential design — every task after a 20-task warm-up scored against
+all earlier tasks — raises the same 10 repos from 373 to 530 scorable
+tasks and function-level seen2 from 0.26 to 0.30 (eval-weighted), giving
+ceiling 15.6 vs MDE 8.6 and passing the draft's feasibility rule (1.82 ≥
+1.5) with no threshold changed. Recurrence by level over the 24-repo pool:
+file 0.49, class 0.39, function 0.29 (seen2). Paired-design power (MDE by
+discordance share) is implemented in `phase2.power.mde_paired`; at v1's
+observed 9% discordance it would halve the MDE, but the function-level
+share is unmeasured and the draft does not rely on it. Details and the
+recommended design in `docs/PREREGISTRATION-v2-DRAFT.md` §12.

@@ -267,3 +267,76 @@ to decide on (none of it is done):
 Nothing was spent on treatment arms. Model calls: 520 (§5.2). The
 harness (§3) stays in the repository and is exercised; whichever option
 the owner takes reuses it unchanged.
+
+## 12. Sizing option 1 — and two levers outside the one-split design (run 26, 2026-09-11)
+
+All numbers here come from no-model runs (`results/phase0/26/prequential.*`,
+run 24's control rates) and the rules in §4. Nothing is registered; the
+owner picks a design, then a fresh §5.2/§5.3 fills the block and it is tagged.
+
+**Traditional option 1 is a dead end.** Under the registered split rule
+(build 20 for short chains, minimum 10 eval tasks) every repo in the corpus
+with a chain of 21–29 tasks contributes fewer than 10 eval tasks and is
+excluded. Adding repos leaves the pool at 373 exactly. The corpus has 222
+repos and 1,884 tasks after the freshness gate; only 13 chains reach 30.
+
+**Lever 1 — prequential (rolling) evaluation.** Instead of one chronological
+split, every task after a 20-task warm-up is an eval task, scored against
+the memory built from *all* tasks before it in its repo (memory version
+pinned as of task t−1; the task's own gold enters memory only after it is
+scored; learning stream = the control arm's flags, so memory content never
+depends on its own effect). This is what a deployed memory actually
+experiences. Both arms still run on every eval task; pairing, the frozen-
+version-per-task rule, seeding and the negative control are unchanged.
+Recurrence rises because the window behind each task is the whole chain,
+and the pool rises because build tasks are no longer thrown away.
+
+| design | repos | pool (scorable) | p0 (function) | ceiling (pts) | MDE unpaired | ceiling / MDE | feasible (≥ 1.5)? |
+|---|---:|---:|---:|---:|---:|---:|---|
+| registered split (§11, for reference) | 10 | 373 | 0.436 | 13.0 | 10.2 | 1.27 | **no** |
+| **A. prequential, registered 10 repos** | 10 | **530** | 0.442 | **15.6** | **8.6** | **1.82** | **yes** |
+| B. prequential, every chain ≥ 21 (p0 of the 11 new repos unmeasured; placeholder 0.439) | 21 | 573 | 0.442 | 15.2 | 8.3 | 1.84 | yes, but needs a control run on 11 more repos first |
+| C. prequential, 10 + streamlink + pvlib (ceiling rule re-applied at function level: neither is ≥ 0.90 there) | 12 | 561 | 0.461 | 14.8 | 8.4 | 1.77 | yes |
+
+Per-repo prequential function-level seen2 (pool): conan 0.24 (145),
+cfn-lint 0.36 (79), matplotlib 0.15 (79), haystack 0.43 (68), pylint 0.14
+(42), instructlab 0.72 (31), keras 0.07 (28), reflex 0.42 (24), sphinx 0.26
+(19), pdm 0.60 (15); linkding (negative control) 0.71 (14).
+
+Under §4's rules design A gives kill number **9 pts** (ceil(max(8.6,
+0.5 × 15.6))). It changes no threshold, adds no repo, and needs no new
+control run: p0 per repo is run 24's. It does need the harness to gain a
+rolling evaluation mode (a day's work, offline-testable like §3): learn
+online from control flags, pin version t−1 for the treatment arm, N arms,
+same `arms.json`.
+
+**Lever 2 — paired power (not used above).** The MDE in every table so far
+is the two-proportion formula for *independent* samples. The design is
+paired, and paired power depends on the discordance share d (tasks whose
+outcome differs between arms), not on p0. At d = 0.5 the two formulas
+coincide; v1 observed d = 0.09. For design A: d = 0.2 → MDE 5.4; d = 0.3 →
+6.7; d = 0.5 → 8.6 (`phase2.power.mde_paired`). This lever is real but
+carries an assumption that only a treatment run can check, so the honest
+way to use it is: register an assumed d (say 0.3, well above v1's 0.09 to
+allow for function-level volatility), keep the kill number from the
+unpaired rule, and report the paired CI as the primary interval — which
+`phase4.paired` already does. It is not needed for feasibility of design A
+and is offered only because it is the correct power model for this design.
+
+**Lever 3 — class granularity (measured, not proposed).** A `path::Class`
+memory (a method's class; a function itself; `<module>`) recurs more than a
+function and less than a file: prequential seen2 0.39 vs 0.29 (function)
+vs 0.49 (file) over the 24-repo pool. On design A the class-level ceiling
+is between 15.1 and 22.1 pts depending on the unmeasured class-level p0
+(bounded by the function- and file-level rates). It would need a
+class-level control run and a class-level verifier prompt; it is a
+different hypothesis, so it is a different registration.
+
+**Recommendation (owner's call): design A**, function level, prequential,
+same 10 repos, same negative control, unpaired kill rule, paired CI
+reported alongside. Rationale: it is feasible under the rules already
+written without touching a single threshold, it uses no unmeasured p0,
+and it evaluates the mechanism the way it would be deployed. B adds 43
+tasks for the cost of 11 more control runs and a weaker ceiling; C adds
+two repos the file-level ceiling rule excluded, which invites the
+question of why the rule changed.

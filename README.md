@@ -27,7 +27,9 @@ registered: [docs/PREREGISTRATION-v2-DRAFT.md](docs/PREREGISTRATION-v2-DRAFT.md)
 its harness (§3) is built and exercised live (D31); pre-runs §5.1–5.2 done
 (runs 23–25) and the draft's feasibility rule **fails** (ceiling 13.0 pts vs
 MDE 10.2 at n = 373; needs n ≥ 521) — recorded in the draft §11 and D32,
-not registered.
+not registered. Sizing (run 26, draft §12): the split rule, not the corpus,
+capped the pool; a prequential design on the same 10 repos is feasible
+(ceiling 15.6 vs MDE 8.6, pool 530) — recommended, awaiting the owner's call (D33).
 
 ## Layout
 

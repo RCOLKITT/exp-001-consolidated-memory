@@ -390,3 +390,15 @@ tasks (n ≥ 521 at this ceiling) or a larger corpus — both require a fresh
 §5.1/§5.2 before any value is filled; neither is chosen here, and neither
 the 1.5× margin nor the ceiling definition is revisited after seeing the
 numbers. Treatment spend: none.
+
+### D33. Sizing v2: recommend prequential evaluation, not more repos (owner to decide)
+Run 26 (findings §17) shows the registered one-split rule, not the corpus,
+capped the pool: repos with short chains add nothing under it. A
+prequential design on the same 10 repos is feasible under the draft's
+unchanged rules (ceiling 15.6, MDE 8.6, pool 530). Two further levers are
+recorded with their assumptions — paired power (needs an assumed
+discordance share) and class granularity (needs its own control run and
+is a different hypothesis) — and neither is relied on. No design is
+chosen here; the recommendation is design A in draft §12, and picking it
+means a rolling-evaluation mode in the harness before §5.2/§5.3 are re-run
+and the block is filled and tagged.
