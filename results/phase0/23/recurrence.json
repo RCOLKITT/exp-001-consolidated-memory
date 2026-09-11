@@ -1,0 +1,2616 @@
+{
+ "conan-io/conan": {
+  "n_tasks": 165,
+  "rows": [
+   {
+    "prefix": 20,
+    "n_eval": 145,
+    "files_ge3": 0,
+    "files_ge2": 5,
+    "dirs_ge3": 0,
+    "distinct_files": 105,
+    "distinct_dirs": 31,
+    "eval_file_seen1": 0.214,
+    "eval_file_seen2": 0.034,
+    "eval_file_seen3": 0.0,
+    "eval_dir_seen1": 0.248,
+    "eval_dir_seen3": 0.0,
+    "top_files": [
+     [
+      "conan/tools/scm/git.py::<module>",
+      2
+     ],
+     [
+      "conans/model/info.py::PythonRequiresInfo.copy",
+      2
+     ],
+     [
+      "conans/model/info.py::PythonRequiresInfo.__bool__",
+      2
+     ]
+    ]
+   },
+   {
+    "prefix": 30,
+    "n_eval": 135,
+    "files_ge3": 1,
+    "files_ge2": 17,
+    "dirs_ge3": 1,
+    "distinct_files": 154,
+    "distinct_dirs": 44,
+    "eval_file_seen1": 0.252,
+    "eval_file_seen2": 0.074,
+    "eval_file_seen3": 0.03,
+    "eval_dir_seen1": 0.333,
+    "eval_dir_seen3": 0.03,
+    "top_files": [
+     [
+      "conans/model/conf.py::<module>",
+      3
+     ],
+     [
+      "conan/tools/scm/git.py::<module>",
+      2
+     ],
+     [
+      "conans/model/info.py::PythonRequiresInfo.copy",
+      2
+     ]
+    ]
+   },
+   {
+    "prefix": 40,
+    "n_eval": 125,
+    "files_ge3": 3,
+    "files_ge2": 21,
+    "dirs_ge3": 3,
+    "distinct_files": 198,
+    "distinct_dirs": 54,
+    "eval_file_seen1": 0.32,
+    "eval_file_seen2": 0.064,
+    "eval_file_seen3": 0.048,
+    "eval_dir_seen1": 0.416,
+    "eval_dir_seen3": 0.048,
+    "top_files": [
+     [
+      "conans/model/conf.py::<module>",
+      4
+     ],
+     [
+      "conan/cli/commands/create.py::create",
+      3
+     ],
+     [
+      "conan/cli/commands/graph.py::<module>",
+      3
+     ]
+    ]
+   },
+   {
+    "prefix": 50,
+    "n_eval": 115,
+    "files_ge3": 3,
+    "files_ge2": 35,
+    "dirs_ge3": 7,
+    "distinct_files": 271,
+    "distinct_dirs": 70,
+    "eval_file_seen1": 0.348,
+    "eval_file_seen2": 0.139,
+    "eval_file_seen3": 0.043,
+    "eval_dir_seen1": 0.461,
+    "eval_dir_seen3": 0.061,
+    "top_files": [
+     [
+      "conans/model/conf.py::<module>",
+      4
+     ],
+     [
+      "conan/cli/commands/create.py::create",
+      4
+     ],
+     [
+      "conan/cli/commands/graph.py::<module>",
+      3
+     ]
+    ]
+   },
+   {
+    "prefix": 60,
+    "n_eval": 105,
+    "files_ge3": 4,
+    "files_ge2": 40,
+    "dirs_ge3": 10,
+    "distinct_files": 308,
+    "distinct_dirs": 81,
+    "eval_file_seen1": 0.371,
+    "eval_file_seen2": 0.143,
+    "eval_file_seen3": 0.057,
+    "eval_dir_seen1": 0.486,
+    "eval_dir_seen3": 0.114,
+    "top_files": [
+     [
+      "conans/model/conf.py::<module>",
+      4
+     ],
+     [
+      "conan/cli/commands/create.py::create",
+      4
+     ],
+     [
+      "conan/cli/commands/graph.py::<module>",
+      3
+     ]
+    ]
+   },
+   {
+    "prefix": 80,
+    "n_eval": 85,
+    "files_ge3": 8,
+    "files_ge2": 60,
+    "dirs_ge3": 14,
+    "distinct_files": 426,
+    "distinct_dirs": 101,
+    "eval_file_seen1": 0.424,
+    "eval_file_seen2": 0.176,
+    "eval_file_seen3": 0.059,
+    "eval_dir_seen1": 0.541,
+    "eval_dir_seen3": 0.141,
+    "top_files": [
+     [
+      "conans/model/conf.py::<module>",
+      5
+     ],
+     [
+      "conan/cli/commands/create.py::create",
+      4
+     ],
+     [
+      "conan/cli/commands/graph.py::<module>",
+      4
+     ]
+    ]
+   },
+   {
+    "prefix": 165,
+    "n_eval": 0,
+    "files_ge3": 38,
+    "files_ge2": 164,
+    "dirs_ge3": 42,
+    "distinct_files": 815,
+    "distinct_dirs": 163,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "conans/model/conf.py::<module>",
+      7
+     ],
+     [
+      "conan/cli/commands/graph.py::<module>",
+      5
+     ],
+     [
+      "conan/internal/model/conf.py::<module>",
+      5
+     ]
+    ]
+   }
+  ]
+ },
+ "aws-cloudformation/cfn-lint": {
+  "n_tasks": 109,
+  "rows": [
+   {
+    "prefix": 20,
+    "n_eval": 89,
+    "files_ge3": 1,
+    "files_ge2": 3,
+    "dirs_ge3": 2,
+    "distinct_files": 45,
+    "distinct_dirs": 22,
+    "eval_file_seen1": 0.449,
+    "eval_file_seen2": 0.169,
+    "eval_file_seen3": 0.056,
+    "eval_dir_seen1": 0.517,
+    "eval_dir_seen3": 0.169,
+    "top_files": [
+     [
+      "src/cfnlint/data/schemas/other/iam/policy.json::<module>",
+      3
+     ],
+     [
+      "src/cfnlint/jsonschema/_filter.py::FunctionFilter.filter",
+      2
+     ],
+     [
+      "src/cfnlint/jsonschema/_resolvers_cfn.py::find_in_map",
+      2
+     ]
+    ]
+   },
+   {
+    "prefix": 30,
+    "n_eval": 79,
+    "files_ge3": 2,
+    "files_ge2": 11,
+    "dirs_ge3": 3,
+    "distinct_files": 67,
+    "distinct_dirs": 33,
+    "eval_file_seen1": 0.494,
+    "eval_file_seen2": 0.266,
+    "eval_file_seen3": 0.089,
+    "eval_dir_seen1": 0.557,
+    "eval_dir_seen3": 0.215,
+    "top_files": [
+     [
+      "src/cfnlint/jsonschema/_filter.py::FunctionFilter.filter",
+      3
+     ],
+     [
+      "src/cfnlint/data/schemas/other/iam/policy.json::<module>",
+      3
+     ],
+     [
+      "src/cfnlint/rules/functions/GetAttFormat.py::GetAttFormat.validate",
+      2
+     ]
+    ]
+   },
+   {
+    "prefix": 40,
+    "n_eval": 69,
+    "files_ge3": 5,
+    "files_ge2": 22,
+    "dirs_ge3": 4,
+    "distinct_files": 108,
+    "distinct_dirs": 46,
+    "eval_file_seen1": 0.522,
+    "eval_file_seen2": 0.319,
+    "eval_file_seen3": 0.174,
+    "eval_dir_seen1": 0.594,
+    "eval_dir_seen3": 0.217,
+    "top_files": [
+     [
+      "src/cfnlint/jsonschema/_filter.py::FunctionFilter.filter",
+      5
+     ],
+     [
+      "src/cfnlint/data/schemas/other/iam/policy.json::<module>",
+      3
+     ],
+     [
+      "src/cfnlint/rules/functions/_BaseFn.py::BaseFn",
+      3
+     ]
+    ]
+   },
+   {
+    "prefix": 50,
+    "n_eval": 59,
+    "files_ge3": 8,
+    "files_ge2": 31,
+    "dirs_ge3": 7,
+    "distinct_files": 166,
+    "distinct_dirs": 70,
+    "eval_file_seen1": 0.542,
+    "eval_file_seen2": 0.424,
+    "eval_file_seen3": 0.22,
+    "eval_dir_seen1": 0.593,
+    "eval_dir_seen3": 0.271,
+    "top_files": [
+     [
+      "src/cfnlint/jsonschema/_filter.py::FunctionFilter.filter",
+      5
+     ],
+     [
+      "src/cfnlint/data/schemas/other/iam/policy.json::<module>",
+      4
+     ],
+     [
+      "src/cfnlint/rules/functions/GetAtt.py::GetAtt._resolve_getatt",
+      4
+     ]
+    ]
+   },
+   {
+    "prefix": 60,
+    "n_eval": 49,
+    "files_ge3": 14,
+    "files_ge2": 38,
+    "dirs_ge3": 14,
+    "distinct_files": 211,
+    "distinct_dirs": 93,
+    "eval_file_seen1": 0.571,
+    "eval_file_seen2": 0.408,
+    "eval_file_seen3": 0.306,
+    "eval_dir_seen1": 0.592,
+    "eval_dir_seen3": 0.388,
+    "top_files": [
+     [
+      "src/cfnlint/rules/functions/GetAtt.py::GetAtt._resolve_getatt",
+      6
+     ],
+     [
+      "src/cfnlint/jsonschema/_filter.py::FunctionFilter.filter",
+      5
+     ],
+     [
+      "scripts/update_snapshot_results.sh::<module>",
+      5
+     ]
+    ]
+   },
+   {
+    "prefix": 80,
+    "n_eval": 29,
+    "files_ge3": 20,
+    "files_ge2": 49,
+    "dirs_ge3": 16,
+    "distinct_files": 281,
+    "distinct_dirs": 122,
+    "eval_file_seen1": 0.69,
+    "eval_file_seen2": 0.448,
+    "eval_file_seen3": 0.31,
+    "eval_dir_seen1": 0.759,
+    "eval_dir_seen3": 0.31,
+    "top_files": [
+     [
+      "src/cfnlint/data/schemas/other/iam/policy.json::<module>",
+      6
+     ],
+     [
+      "src/cfnlint/rules/functions/GetAtt.py::GetAtt._resolve_getatt",
+      6
+     ],
+     [
+      "src/cfnlint/template/transforms/_language_extensions.py::_ForEachValueFnFindInMap.value",
+      6
+     ]
+    ]
+   },
+   {
+    "prefix": 109,
+    "n_eval": 0,
+    "files_ge3": 36,
+    "files_ge2": 106,
+    "dirs_ge3": 30,
+    "distinct_files": 588,
+    "distinct_dirs": 325,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "src/cfnlint/jsonschema/_resolvers_cfn.py::find_in_map",
+      9
+     ],
+     [
+      "src/cfnlint/data/schemas/other/iam/policy.json::<module>",
+      8
+     ],
+     [
+      "src/cfnlint/jsonschema/_resolvers_cfn.py::<module>",
+      8
+     ]
+    ]
+   }
+  ]
+ },
+ "matplotlib/matplotlib": {
+  "n_tasks": 101,
+  "rows": [
+   {
+    "prefix": 20,
+    "n_eval": 81,
+    "files_ge3": 1,
+    "files_ge2": 1,
+    "dirs_ge3": 2,
+    "distinct_files": 72,
+    "distinct_dirs": 29,
+    "eval_file_seen1": 0.185,
+    "eval_file_seen2": 0.037,
+    "eval_file_seen3": 0.037,
+    "eval_dir_seen1": 0.469,
+    "eval_dir_seen3": 0.185,
+    "top_files": [
+     [
+      "lib/matplotlib/axes/_axes.py::Axes",
+      3
+     ],
+     [
+      "doc/api/next_api_changes/behavior/27605-DS.rst::<module>",
+      1
+     ],
+     [
+      "lib/matplotlib/cbook.py::boxplot_stats",
+      1
+     ]
+    ]
+   },
+   {
+    "prefix": 30,
+    "n_eval": 71,
+    "files_ge3": 1,
+    "files_ge2": 4,
+    "dirs_ge3": 4,
+    "distinct_files": 180,
+    "distinct_dirs": 48,
+    "eval_file_seen1": 0.239,
+    "eval_file_seen2": 0.099,
+    "eval_file_seen3": 0.042,
+    "eval_dir_seen1": 0.606,
+    "eval_dir_seen3": 0.296,
+    "top_files": [
+     [
+      "lib/matplotlib/axes/_axes.py::Axes",
+      3
+     ],
+     [
+      "lib/matplotlib/rcsetup.py::<module>",
+      2
+     ],
+     [
+      "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D._on_move",
+      2
+     ]
+    ]
+   },
+   {
+    "prefix": 40,
+    "n_eval": 61,
+    "files_ge3": 1,
+    "files_ge2": 6,
+    "dirs_ge3": 4,
+    "distinct_files": 207,
+    "distinct_dirs": 54,
+    "eval_file_seen1": 0.295,
+    "eval_file_seen2": 0.115,
+    "eval_file_seen3": 0.049,
+    "eval_dir_seen1": 0.623,
+    "eval_dir_seen3": 0.311,
+    "top_files": [
+     [
+      "lib/matplotlib/axes/_axes.py::Axes",
+      3
+     ],
+     [
+      "lib/matplotlib/rcsetup.py::<module>",
+      2
+     ],
+     [
+      "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D._on_move",
+      2
+     ]
+    ]
+   },
+   {
+    "prefix": 50,
+    "n_eval": 51,
+    "files_ge3": 1,
+    "files_ge2": 9,
+    "dirs_ge3": 9,
+    "distinct_files": 256,
+    "distinct_dirs": 68,
+    "eval_file_seen1": 0.431,
+    "eval_file_seen2": 0.196,
+    "eval_file_seen3": 0.059,
+    "eval_dir_seen1": 0.765,
+    "eval_dir_seen3": 0.49,
+    "top_files": [
+     [
+      "lib/matplotlib/axes/_axes.py::Axes",
+      3
+     ],
+     [
+      "lib/matplotlib/rcsetup.py::<module>",
+      2
+     ],
+     [
+      "lib/matplotlib/backends/backend_svg.py::RendererSVG",
+      2
+     ]
+    ]
+   },
+   {
+    "prefix": 60,
+    "n_eval": 41,
+    "files_ge3": 6,
+    "files_ge2": 13,
+    "dirs_ge3": 13,
+    "distinct_files": 312,
+    "distinct_dirs": 78,
+    "eval_file_seen1": 0.415,
+    "eval_file_seen2": 0.171,
+    "eval_file_seen3": 0.171,
+    "eval_dir_seen1": 0.756,
+    "eval_dir_seen3": 0.537,
+    "top_files": [
+     [
+      "lib/matplotlib/rcsetup.py::<module>",
+      3
+     ],
+     [
+      "lib/matplotlib/axes/_axes.py::Axes",
+      3
+     ],
+     [
+      "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D._on_move",
+      3
+     ]
+    ]
+   },
+   {
+    "prefix": 80,
+    "n_eval": 21,
+    "files_ge3": 7,
+    "files_ge2": 23,
+    "dirs_ge3": 17,
+    "distinct_files": 374,
+    "distinct_dirs": 91,
+    "eval_file_seen1": 0.571,
+    "eval_file_seen2": 0.19,
+    "eval_file_seen3": 0.19,
+    "eval_dir_seen1": 0.905,
+    "eval_dir_seen3": 0.429,
+    "top_files": [
+     [
+      "lib/matplotlib/rcsetup.py::<module>",
+      4
+     ],
+     [
+      "lib/matplotlib/axes/_axes.py::Axes",
+      4
+     ],
+     [
+      "lib/matplotlib/axis.py::Axis",
+      4
+     ]
+    ]
+   },
+   {
+    "prefix": 101,
+    "n_eval": 0,
+    "files_ge3": 9,
+    "files_ge2": 40,
+    "dirs_ge3": 24,
+    "distinct_files": 484,
+    "distinct_dirs": 107,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "lib/matplotlib/axes/_axes.py::Axes",
+      6
+     ],
+     [
+      "lib/matplotlib/rcsetup.py::<module>",
+      5
+     ],
+     [
+      "lib/matplotlib/axis.py::Axis",
+      5
+     ]
+    ]
+   }
+  ]
+ },
+ "deepset-ai/haystack": {
+  "n_tasks": 88,
+  "rows": [
+   {
+    "prefix": 20,
+    "n_eval": 68,
+    "files_ge3": 1,
+    "files_ge2": 22,
+    "dirs_ge3": 1,
+    "distinct_files": 240,
+    "distinct_dirs": 63,
+    "eval_file_seen1": 0.309,
+    "eval_file_seen2": 0.103,
+    "eval_file_seen3": 0.0,
+    "eval_dir_seen1": 0.338,
+    "eval_dir_seen3": 0.059,
+    "top_files": [
+     [
+      "haystack/core/pipeline/pipeline.py::Pipeline.add_component",
+      3
+     ],
+     [
+      "haystack/core/component/component.py::ComponentMeta.__call__",
+      2
+     ],
+     [
+      "haystack/components/rankers/transformers_similarity.py::TransformersSimilarityRanker.to_dict",
+      2
+     ]
+    ]
+   },
+   {
+    "prefix": 30,
+    "n_eval": 58,
+    "files_ge3": 7,
+    "files_ge2": 34,
+    "dirs_ge3": 3,
+    "distinct_files": 321,
+    "distinct_dirs": 90,
+    "eval_file_seen1": 0.466,
+    "eval_file_seen2": 0.172,
+    "eval_file_seen3": 0.052,
+    "eval_dir_seen1": 0.517,
+    "eval_dir_seen3": 0.069,
+    "top_files": [
+     [
+      "haystack/components/preprocessors/document_splitter.py::DocumentSplitter.run",
+      3
+     ],
+     [
+      "haystack/components/preprocessors/document_splitter.py::DocumentSplitter",
+      3
+     ],
+     [
+      "haystack/components/preprocessors/document_splitter.py::DocumentSplitter._split_into_units",
+      3
+     ]
+    ]
+   },
+   {
+    "prefix": 40,
+    "n_eval": 48,
+    "files_ge3": 9,
+    "files_ge2": 53,
+    "dirs_ge3": 7,
+    "distinct_files": 377,
+    "distinct_dirs": 110,
+    "eval_file_seen1": 0.521,
+    "eval_file_seen2": 0.271,
+    "eval_file_seen3": 0.083,
+    "eval_dir_seen1": 0.562,
+    "eval_dir_seen3": 0.25,
+    "top_files": [
+     [
+      "haystack/components/generators/chat/openai.py::OpenAIChatGenerator",
+      4
+     ],
+     [
+      "haystack/components/preprocessors/document_splitter.py::DocumentSplitter.run",
+      3
+     ],
+     [
+      "haystack/components/preprocessors/document_splitter.py::DocumentSplitter",
+      3
+     ]
+    ]
+   },
+   {
+    "prefix": 50,
+    "n_eval": 38,
+    "files_ge3": 12,
+    "files_ge2": 71,
+    "dirs_ge3": 9,
+    "distinct_files": 406,
+    "distinct_dirs": 123,
+    "eval_file_seen1": 0.526,
+    "eval_file_seen2": 0.342,
+    "eval_file_seen3": 0.132,
+    "eval_dir_seen1": 0.553,
+    "eval_dir_seen3": 0.237,
+    "top_files": [
+     [
+      "haystack/components/generators/chat/openai.py::OpenAIChatGenerator",
+      4
+     ],
+     [
+      "haystack/components/preprocessors/document_splitter.py::DocumentSplitter.run",
+      3
+     ],
+     [
+      "haystack/components/preprocessors/document_splitter.py::DocumentSplitter",
+      3
+     ]
+    ]
+   },
+   {
+    "prefix": 60,
+    "n_eval": 28,
+    "files_ge3": 22,
+    "files_ge2": 85,
+    "dirs_ge3": 11,
+    "distinct_files": 458,
+    "distinct_dirs": 139,
+    "eval_file_seen1": 0.714,
+    "eval_file_seen2": 0.536,
+    "eval_file_seen3": 0.25,
+    "eval_dir_seen1": 0.75,
+    "eval_dir_seen3": 0.357,
+    "top_files": [
+     [
+      "haystack/components/generators/chat/openai.py::OpenAIChatGenerator",
+      4
+     ],
+     [
+      "haystack/core/pipeline/pipeline.py::Pipeline",
+      4
+     ],
+     [
+      "haystack/core/pipeline/pipeline.py::Pipeline.run",
+      4
+     ]
+    ]
+   },
+   {
+    "prefix": 80,
+    "n_eval": 8,
+    "files_ge3": 36,
+    "files_ge2": 132,
+    "dirs_ge3": 17,
+    "distinct_files": 567,
+    "distinct_dirs": 170,
+    "eval_file_seen1": 0.75,
+    "eval_file_seen2": 0.5,
+    "eval_file_seen3": 0.375,
+    "eval_dir_seen1": 0.875,
+    "eval_dir_seen3": 0.375,
+    "top_files": [
+     [
+      "haystack/components/agents/agent.py::Agent.__init__",
+      6
+     ],
+     [
+      "haystack/components/generators/chat/openai.py::OpenAIChatGenerator",
+      5
+     ],
+     [
+      "haystack/components/preprocessors/document_splitter.py::DocumentSplitter.run",
+      4
+     ]
+    ]
+   },
+   {
+    "prefix": 88,
+    "n_eval": 0,
+    "files_ge3": 41,
+    "files_ge2": 145,
+    "dirs_ge3": 19,
+    "distinct_files": 613,
+    "distinct_dirs": 183,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "haystack/components/agents/agent.py::Agent.__init__",
+      6
+     ],
+     [
+      "haystack/components/generators/chat/openai.py::OpenAIChatGenerator",
+      5
+     ],
+     [
+      "haystack/core/pipeline/pipeline.py::Pipeline.run",
+      5
+     ]
+    ]
+   }
+  ]
+ },
+ "pylint-dev/pylint": {
+  "n_tasks": 62,
+  "rows": [
+   {
+    "prefix": 20,
+    "n_eval": 42,
+    "files_ge3": 0,
+    "files_ge2": 8,
+    "dirs_ge3": 2,
+    "distinct_files": 94,
+    "distinct_dirs": 55,
+    "eval_file_seen1": 0.31,
+    "eval_file_seen2": 0.143,
+    "eval_file_seen3": 0.0,
+    "eval_dir_seen1": 0.619,
+    "eval_dir_seen3": 0.286,
+    "top_files": [
+     [
+      "doc/user_guide/checkers/features.rst::<module>",
+      2
+     ],
+     [
+      "pylint/checkers/refactoring/refactoring_checker.py::RefactoringChecker",
+      2
+     ],
+     [
+      "pylint/checkers/refactoring/refactoring_checker.py::RefactoringChecker._has_exit_in_scope",
+      2
+     ]
+    ]
+   },
+   {
+    "prefix": 30,
+    "n_eval": 32,
+    "files_ge3": 6,
+    "files_ge2": 15,
+    "dirs_ge3": 8,
+    "distinct_files": 150,
+    "distinct_dirs": 84,
+    "eval_file_seen1": 0.312,
+    "eval_file_seen2": 0.125,
+    "eval_file_seen3": 0.062,
+    "eval_dir_seen1": 0.562,
+    "eval_dir_seen3": 0.438,
+    "top_files": [
+     [
+      "doc/user_guide/checkers/features.rst::<module>",
+      4
+     ],
+     [
+      "doc/user_guide/configuration/all-options.rst::<module>",
+      4
+     ],
+     [
+      "doc/user_guide/messages/messages_overview.rst::<module>",
+      3
+     ]
+    ]
+   },
+   {
+    "prefix": 40,
+    "n_eval": 22,
+    "files_ge3": 8,
+    "files_ge2": 31,
+    "dirs_ge3": 9,
+    "distinct_files": 187,
+    "distinct_dirs": 102,
+    "eval_file_seen1": 0.273,
+    "eval_file_seen2": 0.136,
+    "eval_file_seen3": 0.0,
+    "eval_dir_seen1": 0.455,
+    "eval_dir_seen3": 0.318,
+    "top_files": [
+     [
+      "doc/user_guide/checkers/features.rst::<module>",
+      6
+     ],
+     [
+      "doc/user_guide/messages/messages_overview.rst::<module>",
+      5
+     ],
+     [
+      "doc/user_guide/configuration/all-options.rst::<module>",
+      4
+     ]
+    ]
+   },
+   {
+    "prefix": 50,
+    "n_eval": 12,
+    "files_ge3": 10,
+    "files_ge2": 36,
+    "dirs_ge3": 10,
+    "distinct_files": 235,
+    "distinct_dirs": 125,
+    "eval_file_seen1": 0.333,
+    "eval_file_seen2": 0.083,
+    "eval_file_seen3": 0.0,
+    "eval_dir_seen1": 0.5,
+    "eval_dir_seen3": 0.333,
+    "top_files": [
+     [
+      "doc/user_guide/checkers/features.rst::<module>",
+      6
+     ],
+     [
+      "doc/user_guide/messages/messages_overview.rst::<module>",
+      5
+     ],
+     [
+      "doc/user_guide/configuration/all-options.rst::<module>",
+      4
+     ]
+    ]
+   },
+   {
+    "prefix": 60,
+    "n_eval": 2,
+    "files_ge3": 11,
+    "files_ge2": 43,
+    "dirs_ge3": 10,
+    "distinct_files": 262,
+    "distinct_dirs": 139,
+    "eval_file_seen1": 0.5,
+    "eval_file_seen2": 0.0,
+    "eval_file_seen3": 0.0,
+    "eval_dir_seen1": 0.5,
+    "eval_dir_seen3": 0.0,
+    "top_files": [
+     [
+      "doc/user_guide/checkers/features.rst::<module>",
+      6
+     ],
+     [
+      "doc/user_guide/messages/messages_overview.rst::<module>",
+      5
+     ],
+     [
+      "doc/user_guide/configuration/all-options.rst::<module>",
+      4
+     ]
+    ]
+   },
+   {
+    "prefix": 62,
+    "n_eval": 0,
+    "files_ge3": 11,
+    "files_ge2": 46,
+    "dirs_ge3": 10,
+    "distinct_files": 267,
+    "distinct_dirs": 142,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "doc/user_guide/checkers/features.rst::<module>",
+      6
+     ],
+     [
+      "doc/user_guide/messages/messages_overview.rst::<module>",
+      5
+     ],
+     [
+      "doc/user_guide/configuration/all-options.rst::<module>",
+      4
+     ]
+    ]
+   },
+   {
+    "prefix": 62,
+    "n_eval": 0,
+    "files_ge3": 11,
+    "files_ge2": 46,
+    "dirs_ge3": 10,
+    "distinct_files": 267,
+    "distinct_dirs": 142,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "doc/user_guide/checkers/features.rst::<module>",
+      6
+     ],
+     [
+      "doc/user_guide/messages/messages_overview.rst::<module>",
+      5
+     ],
+     [
+      "doc/user_guide/configuration/all-options.rst::<module>",
+      4
+     ]
+    ]
+   }
+  ]
+ },
+ "instructlab/instructlab": {
+  "n_tasks": 52,
+  "rows": [
+   {
+    "prefix": 20,
+    "n_eval": 32,
+    "files_ge3": 7,
+    "files_ge2": 27,
+    "dirs_ge3": 6,
+    "distinct_files": 124,
+    "distinct_dirs": 31,
+    "eval_file_seen1": 0.75,
+    "eval_file_seen2": 0.625,
+    "eval_file_seen3": 0.531,
+    "eval_dir_seen1": 0.781,
+    "eval_dir_seen3": 0.625,
+    "top_files": [
+     [
+      "src/instructlab/configuration.py::<module>",
+      6
+     ],
+     [
+      "src/instructlab/lab.py::<module>",
+      5
+     ],
+     [
+      "cli/generator/generate_data.py::<module>",
+      3
+     ]
+    ]
+   },
+   {
+    "prefix": 30,
+    "n_eval": 22,
+    "files_ge3": 23,
+    "files_ge2": 53,
+    "dirs_ge3": 10,
+    "distinct_files": 170,
+    "distinct_dirs": 35,
+    "eval_file_seen1": 0.682,
+    "eval_file_seen2": 0.682,
+    "eval_file_seen3": 0.682,
+    "eval_dir_seen1": 0.682,
+    "eval_dir_seen3": 0.682,
+    "top_files": [
+     [
+      "src/instructlab/configuration.py::<module>",
+      13
+     ],
+     [
+      "src/instructlab/lab.py::<module>",
+      5
+     ],
+     [
+      "src/instructlab/configuration.py::_train",
+      5
+     ]
+    ]
+   },
+   {
+    "prefix": 40,
+    "n_eval": 12,
+    "files_ge3": 34,
+    "files_ge2": 78,
+    "dirs_ge3": 14,
+    "distinct_files": 225,
+    "distinct_dirs": 68,
+    "eval_file_seen1": 0.667,
+    "eval_file_seen2": 0.5,
+    "eval_file_seen3": 0.5,
+    "eval_dir_seen1": 0.667,
+    "eval_dir_seen3": 0.5,
+    "top_files": [
+     [
+      "src/instructlab/configuration.py::<module>",
+      18
+     ],
+     [
+      "CHANGELOG.md::<module>",
+      11
+     ],
+     [
+      "src/instructlab/configuration.py::_train",
+      7
+     ]
+    ]
+   },
+   {
+    "prefix": 50,
+    "n_eval": 2,
+    "files_ge3": 46,
+    "files_ge2": 106,
+    "dirs_ge3": 18,
+    "distinct_files": 291,
+    "distinct_dirs": 88,
+    "eval_file_seen1": 0.5,
+    "eval_file_seen2": 0.0,
+    "eval_file_seen3": 0.0,
+    "eval_dir_seen1": 0.5,
+    "eval_dir_seen3": 0.0,
+    "top_files": [
+     [
+      "src/instructlab/configuration.py::<module>",
+      23
+     ],
+     [
+      "CHANGELOG.md::<module>",
+      13
+     ],
+     [
+      "src/instructlab/configuration.py::_train",
+      8
+     ]
+    ]
+   },
+   {
+    "prefix": 52,
+    "n_eval": 0,
+    "files_ge3": 46,
+    "files_ge2": 107,
+    "dirs_ge3": 18,
+    "distinct_files": 299,
+    "distinct_dirs": 89,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "src/instructlab/configuration.py::<module>",
+      23
+     ],
+     [
+      "CHANGELOG.md::<module>",
+      13
+     ],
+     [
+      "src/instructlab/configuration.py::_train",
+      8
+     ]
+    ]
+   },
+   {
+    "prefix": 52,
+    "n_eval": 0,
+    "files_ge3": 46,
+    "files_ge2": 107,
+    "dirs_ge3": 18,
+    "distinct_files": 299,
+    "distinct_dirs": 89,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "src/instructlab/configuration.py::<module>",
+      23
+     ],
+     [
+      "CHANGELOG.md::<module>",
+      13
+     ],
+     [
+      "src/instructlab/configuration.py::_train",
+      8
+     ]
+    ]
+   },
+   {
+    "prefix": 52,
+    "n_eval": 0,
+    "files_ge3": 46,
+    "files_ge2": 107,
+    "dirs_ge3": 18,
+    "distinct_files": 299,
+    "distinct_dirs": 89,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "src/instructlab/configuration.py::<module>",
+      23
+     ],
+     [
+      "CHANGELOG.md::<module>",
+      13
+     ],
+     [
+      "src/instructlab/configuration.py::_train",
+      8
+     ]
+    ]
+   }
+  ]
+ },
+ "keras-team/keras": {
+  "n_tasks": 48,
+  "rows": [
+   {
+    "prefix": 20,
+    "n_eval": 28,
+    "files_ge3": 0,
+    "files_ge2": 0,
+    "dirs_ge3": 0,
+    "distinct_files": 152,
+    "distinct_dirs": 45,
+    "eval_file_seen1": 0.179,
+    "eval_file_seen2": 0.0,
+    "eval_file_seen3": 0.0,
+    "eval_dir_seen1": 0.357,
+    "eval_dir_seen3": 0.0,
+    "top_files": [
+     [
+      "keras/layers/attention/attention.py::Attention",
+      1
+     ],
+     [
+      "keras/layers/attention/attention.py::Attention._validate_inputs",
+      1
+     ],
+     [
+      "keras/layers/attention/attention.py::Attention.compute_mask",
+      1
+     ]
+    ]
+   },
+   {
+    "prefix": 30,
+    "n_eval": 18,
+    "files_ge3": 0,
+    "files_ge2": 2,
+    "dirs_ge3": 0,
+    "distinct_files": 263,
+    "distinct_dirs": 58,
+    "eval_file_seen1": 0.333,
+    "eval_file_seen2": 0.111,
+    "eval_file_seen3": 0.0,
+    "eval_dir_seen1": 0.5,
+    "eval_dir_seen3": 0.0,
+    "top_files": [
+     [
+      "keras/src/backend/tensorflow/core.py::scan",
+      2
+     ],
+     [
+      "keras/src/backend/tensorflow/core.py::<module>",
+      2
+     ],
+     [
+      "keras/layers/attention/attention.py::Attention",
+      1
+     ]
+    ]
+   },
+   {
+    "prefix": 40,
+    "n_eval": 8,
+    "files_ge3": 1,
+    "files_ge2": 6,
+    "dirs_ge3": 2,
+    "distinct_files": 358,
+    "distinct_dirs": 75,
+    "eval_file_seen1": 0.5,
+    "eval_file_seen2": 0.125,
+    "eval_file_seen3": 0.125,
+    "eval_dir_seen1": 0.75,
+    "eval_dir_seen3": 0.125,
+    "top_files": [
+     [
+      "keras/src/backend/tensorflow/core.py::<module>",
+      3
+     ],
+     [
+      "keras/src/backend/torch/core.py::<module>",
+      2
+     ],
+     [
+      "keras/src/backend/tensorflow/core.py::scan",
+      2
+     ]
+    ]
+   },
+   {
+    "prefix": 48,
+    "n_eval": 0,
+    "files_ge3": 1,
+    "files_ge2": 23,
+    "dirs_ge3": 6,
+    "distinct_files": 520,
+    "distinct_dirs": 116,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "keras/src/backend/tensorflow/core.py::<module>",
+      4
+     ],
+     [
+      "keras/src/layers/layer.py::Layer.__call__",
+      2
+     ],
+     [
+      "keras/src/layers/merging/base_merge.py::Merge",
+      2
+     ]
+    ]
+   },
+   {
+    "prefix": 48,
+    "n_eval": 0,
+    "files_ge3": 1,
+    "files_ge2": 23,
+    "dirs_ge3": 6,
+    "distinct_files": 520,
+    "distinct_dirs": 116,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "keras/src/backend/tensorflow/core.py::<module>",
+      4
+     ],
+     [
+      "keras/src/layers/layer.py::Layer.__call__",
+      2
+     ],
+     [
+      "keras/src/layers/merging/base_merge.py::Merge",
+      2
+     ]
+    ]
+   },
+   {
+    "prefix": 48,
+    "n_eval": 0,
+    "files_ge3": 1,
+    "files_ge2": 23,
+    "dirs_ge3": 6,
+    "distinct_files": 520,
+    "distinct_dirs": 116,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "keras/src/backend/tensorflow/core.py::<module>",
+      4
+     ],
+     [
+      "keras/src/layers/layer.py::Layer.__call__",
+      2
+     ],
+     [
+      "keras/src/layers/merging/base_merge.py::Merge",
+      2
+     ]
+    ]
+   },
+   {
+    "prefix": 48,
+    "n_eval": 0,
+    "files_ge3": 1,
+    "files_ge2": 23,
+    "dirs_ge3": 6,
+    "distinct_files": 520,
+    "distinct_dirs": 116,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "keras/src/backend/tensorflow/core.py::<module>",
+      4
+     ],
+     [
+      "keras/src/layers/layer.py::Layer.__call__",
+      2
+     ],
+     [
+      "keras/src/layers/merging/base_merge.py::Merge",
+      2
+     ]
+    ]
+   }
+  ]
+ },
+ "reflex-dev/reflex": {
+  "n_tasks": 44,
+  "rows": [
+   {
+    "prefix": 20,
+    "n_eval": 24,
+    "files_ge3": 1,
+    "files_ge2": 13,
+    "dirs_ge3": 5,
+    "distinct_files": 184,
+    "distinct_dirs": 32,
+    "eval_file_seen1": 0.542,
+    "eval_file_seen2": 0.25,
+    "eval_file_seen3": 0.125,
+    "eval_dir_seen1": 0.833,
+    "eval_dir_seen3": 0.542,
+    "top_files": [
+     [
+      "reflex/state.py::BaseState.__init_subclass__",
+      3
+     ],
+     [
+      "reflex/utils/types.py::<module>",
+      2
+     ],
+     [
+      "reflex/components/component.py::Component._get_vars",
+      2
+     ]
+    ]
+   },
+   {
+    "prefix": 30,
+    "n_eval": 14,
+    "files_ge3": 3,
+    "files_ge2": 22,
+    "dirs_ge3": 7,
+    "distinct_files": 210,
+    "distinct_dirs": 35,
+    "eval_file_seen1": 0.5,
+    "eval_file_seen2": 0.429,
+    "eval_file_seen3": 0.143,
+    "eval_dir_seen1": 0.857,
+    "eval_dir_seen3": 0.643,
+    "top_files": [
+     [
+      "reflex/state.py::BaseState.__init_subclass__",
+      5
+     ],
+     [
+      "reflex/state.py::<module>",
+      4
+     ],
+     [
+      "reflex/state.py::BaseState",
+      4
+     ]
+    ]
+   },
+   {
+    "prefix": 40,
+    "n_eval": 4,
+    "files_ge3": 8,
+    "files_ge2": 41,
+    "dirs_ge3": 8,
+    "distinct_files": 295,
+    "distinct_dirs": 46,
+    "eval_file_seen1": 0.5,
+    "eval_file_seen2": 0.5,
+    "eval_file_seen3": 0.25,
+    "eval_dir_seen1": 1.0,
+    "eval_dir_seen3": 0.75,
+    "top_files": [
+     [
+      "reflex/state.py::BaseState.__init_subclass__",
+      6
+     ],
+     [
+      "reflex/state.py::BaseState",
+      6
+     ],
+     [
+      "reflex/state.py::<module>",
+      5
+     ]
+    ]
+   },
+   {
+    "prefix": 44,
+    "n_eval": 0,
+    "files_ge3": 10,
+    "files_ge2": 46,
+    "dirs_ge3": 10,
+    "distinct_files": 309,
+    "distinct_dirs": 52,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "reflex/state.py::BaseState.__init_subclass__",
+      6
+     ],
+     [
+      "reflex/state.py::BaseState",
+      6
+     ],
+     [
+      "reflex/state.py::<module>",
+      5
+     ]
+    ]
+   },
+   {
+    "prefix": 44,
+    "n_eval": 0,
+    "files_ge3": 10,
+    "files_ge2": 46,
+    "dirs_ge3": 10,
+    "distinct_files": 309,
+    "distinct_dirs": 52,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "reflex/state.py::BaseState.__init_subclass__",
+      6
+     ],
+     [
+      "reflex/state.py::BaseState",
+      6
+     ],
+     [
+      "reflex/state.py::<module>",
+      5
+     ]
+    ]
+   },
+   {
+    "prefix": 44,
+    "n_eval": 0,
+    "files_ge3": 10,
+    "files_ge2": 46,
+    "dirs_ge3": 10,
+    "distinct_files": 309,
+    "distinct_dirs": 52,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "reflex/state.py::BaseState.__init_subclass__",
+      6
+     ],
+     [
+      "reflex/state.py::BaseState",
+      6
+     ],
+     [
+      "reflex/state.py::<module>",
+      5
+     ]
+    ]
+   },
+   {
+    "prefix": 44,
+    "n_eval": 0,
+    "files_ge3": 10,
+    "files_ge2": 46,
+    "dirs_ge3": 10,
+    "distinct_files": 309,
+    "distinct_dirs": 52,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "reflex/state.py::BaseState.__init_subclass__",
+      6
+     ],
+     [
+      "reflex/state.py::BaseState",
+      6
+     ],
+     [
+      "reflex/state.py::<module>",
+      5
+     ]
+    ]
+   }
+  ]
+ },
+ "streamlink/streamlink": {
+  "n_tasks": 41,
+  "rows": [
+   {
+    "prefix": 20,
+    "n_eval": 21,
+    "files_ge3": 0,
+    "files_ge2": 4,
+    "dirs_ge3": 0,
+    "distinct_files": 104,
+    "distinct_dirs": 25,
+    "eval_file_seen1": 0.095,
+    "eval_file_seen2": 0.0,
+    "eval_file_seen3": 0.0,
+    "eval_dir_seen1": 0.238,
+    "eval_dir_seen3": 0.0,
+    "top_files": [
+     [
+      "src/streamlink/plugins/twitch.py::TwitchM3U8Parser._is_segment_ad",
+      2
+     ],
+     [
+      "src/streamlink/plugins/twitch.py::TwitchM3U8Parser",
+      2
+     ],
+     [
+      "src/streamlink/plugins/twitch.py::TwitchM3U8Parser.parse_tag_ext_x_twitch_prefetch",
+      2
+     ]
+    ]
+   },
+   {
+    "prefix": 30,
+    "n_eval": 11,
+    "files_ge3": 0,
+    "files_ge2": 8,
+    "dirs_ge3": 0,
+    "distinct_files": 143,
+    "distinct_dirs": 32,
+    "eval_file_seen1": 0.0,
+    "eval_file_seen2": 0.0,
+    "eval_file_seen3": 0.0,
+    "eval_dir_seen1": 0.273,
+    "eval_dir_seen3": 0.0,
+    "top_files": [
+     [
+      "src/streamlink/plugins/tv3cat.py::TV3Cat",
+      2
+     ],
+     [
+      "src/streamlink/plugins/tv3cat.py::<module>",
+      2
+     ],
+     [
+      "src/streamlink/plugins/mangomolo.py::Mangomolo",
+      2
+     ]
+    ]
+   },
+   {
+    "prefix": 40,
+    "n_eval": 1,
+    "files_ge3": 0,
+    "files_ge2": 8,
+    "dirs_ge3": 1,
+    "distinct_files": 193,
+    "distinct_dirs": 41,
+    "eval_file_seen1": 0.0,
+    "eval_file_seen2": 0.0,
+    "eval_file_seen3": 0.0,
+    "eval_dir_seen1": 1.0,
+    "eval_dir_seen3": 0.0,
+    "top_files": [
+     [
+      "src/streamlink/plugins/tv3cat.py::TV3Cat",
+      2
+     ],
+     [
+      "src/streamlink/plugins/tv3cat.py::<module>",
+      2
+     ],
+     [
+      "src/streamlink/plugins/mangomolo.py::Mangomolo",
+      2
+     ]
+    ]
+   },
+   {
+    "prefix": 41,
+    "n_eval": 0,
+    "files_ge3": 0,
+    "files_ge2": 8,
+    "dirs_ge3": 1,
+    "distinct_files": 203,
+    "distinct_dirs": 42,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "src/streamlink/plugins/tv3cat.py::TV3Cat",
+      2
+     ],
+     [
+      "src/streamlink/plugins/tv3cat.py::<module>",
+      2
+     ],
+     [
+      "src/streamlink/plugins/mangomolo.py::Mangomolo",
+      2
+     ]
+    ]
+   },
+   {
+    "prefix": 41,
+    "n_eval": 0,
+    "files_ge3": 0,
+    "files_ge2": 8,
+    "dirs_ge3": 1,
+    "distinct_files": 203,
+    "distinct_dirs": 42,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "src/streamlink/plugins/tv3cat.py::TV3Cat",
+      2
+     ],
+     [
+      "src/streamlink/plugins/tv3cat.py::<module>",
+      2
+     ],
+     [
+      "src/streamlink/plugins/mangomolo.py::Mangomolo",
+      2
+     ]
+    ]
+   },
+   {
+    "prefix": 41,
+    "n_eval": 0,
+    "files_ge3": 0,
+    "files_ge2": 8,
+    "dirs_ge3": 1,
+    "distinct_files": 203,
+    "distinct_dirs": 42,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "src/streamlink/plugins/tv3cat.py::TV3Cat",
+      2
+     ],
+     [
+      "src/streamlink/plugins/tv3cat.py::<module>",
+      2
+     ],
+     [
+      "src/streamlink/plugins/mangomolo.py::Mangomolo",
+      2
+     ]
+    ]
+   },
+   {
+    "prefix": 41,
+    "n_eval": 0,
+    "files_ge3": 0,
+    "files_ge2": 8,
+    "dirs_ge3": 1,
+    "distinct_files": 203,
+    "distinct_dirs": 42,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "src/streamlink/plugins/tv3cat.py::TV3Cat",
+      2
+     ],
+     [
+      "src/streamlink/plugins/tv3cat.py::<module>",
+      2
+     ],
+     [
+      "src/streamlink/plugins/mangomolo.py::Mangomolo",
+      2
+     ]
+    ]
+   }
+  ]
+ },
+ "sphinx-doc/sphinx": {
+  "n_tasks": 39,
+  "rows": [
+   {
+    "prefix": 20,
+    "n_eval": 19,
+    "files_ge3": 2,
+    "files_ge2": 8,
+    "dirs_ge3": 3,
+    "distinct_files": 114,
+    "distinct_dirs": 32,
+    "eval_file_seen1": 0.947,
+    "eval_file_seen2": 0.947,
+    "eval_file_seen3": 0.947,
+    "eval_dir_seen1": 0.947,
+    "eval_dir_seen3": 0.947,
+    "top_files": [
+     [
+      "CHANGES.rst::<module>",
+      14
+     ],
+     [
+      "sphinx/config.py::<module>",
+      3
+     ],
+     [
+      "sphinx/builders/linkcheck.py::HyperlinkAvailabilityCheckWorker._check_uri",
+      2
+     ]
+    ]
+   },
+   {
+    "prefix": 30,
+    "n_eval": 9,
+    "files_ge3": 4,
+    "files_ge2": 17,
+    "dirs_ge3": 8,
+    "distinct_files": 166,
+    "distinct_dirs": 40,
+    "eval_file_seen1": 1.0,
+    "eval_file_seen2": 1.0,
+    "eval_file_seen3": 1.0,
+    "eval_dir_seen1": 1.0,
+    "eval_dir_seen3": 1.0,
+    "top_files": [
+     [
+      "CHANGES.rst::<module>",
+      23
+     ],
+     [
+      "doc/usage/configuration.rst::<module>",
+      3
+     ],
+     [
+      "sphinx/config.py::<module>",
+      3
+     ]
+    ]
+   },
+   {
+    "prefix": 39,
+    "n_eval": 0,
+    "files_ge3": 6,
+    "files_ge2": 24,
+    "dirs_ge3": 9,
+    "distinct_files": 223,
+    "distinct_dirs": 50,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "CHANGES.rst::<module>",
+      32
+     ],
+     [
+      "doc/usage/configuration.rst::<module>",
+      5
+     ],
+     [
+      "sphinx/config.py::<module>",
+      4
+     ]
+    ]
+   },
+   {
+    "prefix": 39,
+    "n_eval": 0,
+    "files_ge3": 6,
+    "files_ge2": 24,
+    "dirs_ge3": 9,
+    "distinct_files": 223,
+    "distinct_dirs": 50,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "CHANGES.rst::<module>",
+      32
+     ],
+     [
+      "doc/usage/configuration.rst::<module>",
+      5
+     ],
+     [
+      "sphinx/config.py::<module>",
+      4
+     ]
+    ]
+   },
+   {
+    "prefix": 39,
+    "n_eval": 0,
+    "files_ge3": 6,
+    "files_ge2": 24,
+    "dirs_ge3": 9,
+    "distinct_files": 223,
+    "distinct_dirs": 50,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "CHANGES.rst::<module>",
+      32
+     ],
+     [
+      "doc/usage/configuration.rst::<module>",
+      5
+     ],
+     [
+      "sphinx/config.py::<module>",
+      4
+     ]
+    ]
+   },
+   {
+    "prefix": 39,
+    "n_eval": 0,
+    "files_ge3": 6,
+    "files_ge2": 24,
+    "dirs_ge3": 9,
+    "distinct_files": 223,
+    "distinct_dirs": 50,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "CHANGES.rst::<module>",
+      32
+     ],
+     [
+      "doc/usage/configuration.rst::<module>",
+      5
+     ],
+     [
+      "sphinx/config.py::<module>",
+      4
+     ]
+    ]
+   },
+   {
+    "prefix": 39,
+    "n_eval": 0,
+    "files_ge3": 6,
+    "files_ge2": 24,
+    "dirs_ge3": 9,
+    "distinct_files": 223,
+    "distinct_dirs": 50,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "CHANGES.rst::<module>",
+      32
+     ],
+     [
+      "doc/usage/configuration.rst::<module>",
+      5
+     ],
+     [
+      "sphinx/config.py::<module>",
+      4
+     ]
+    ]
+   }
+  ]
+ },
+ "pdm-project/pdm": {
+  "n_tasks": 35,
+  "rows": [
+   {
+    "prefix": 20,
+    "n_eval": 15,
+    "files_ge3": 4,
+    "files_ge2": 33,
+    "dirs_ge3": 5,
+    "distinct_files": 200,
+    "distinct_dirs": 76,
+    "eval_file_seen1": 0.733,
+    "eval_file_seen2": 0.467,
+    "eval_file_seen3": 0.333,
+    "eval_dir_seen1": 0.867,
+    "eval_dir_seen3": 0.533,
+    "top_files": [
+     [
+      "src/pdm/project/core.py::<module>",
+      3
+     ],
+     [
+      "src/pdm/project/core.py::Project",
+      3
+     ],
+     [
+      "src/pdm/cli/commands/add.py::Command.do_add",
+      3
+     ]
+    ]
+   },
+   {
+    "prefix": 30,
+    "n_eval": 5,
+    "files_ge3": 8,
+    "files_ge2": 48,
+    "dirs_ge3": 7,
+    "distinct_files": 241,
+    "distinct_dirs": 92,
+    "eval_file_seen1": 0.8,
+    "eval_file_seen2": 0.8,
+    "eval_file_seen3": 0.2,
+    "eval_dir_seen1": 1.0,
+    "eval_dir_seen3": 0.6,
+    "top_files": [
+     [
+      "src/pdm/project/core.py::Project",
+      6
+     ],
+     [
+      "src/pdm/project/core.py::<module>",
+      5
+     ],
+     [
+      "src/pdm/cli/commands/add.py::Command.do_add",
+      4
+     ]
+    ]
+   },
+   {
+    "prefix": 35,
+    "n_eval": 0,
+    "files_ge3": 13,
+    "files_ge2": 55,
+    "dirs_ge3": 11,
+    "distinct_files": 269,
+    "distinct_dirs": 101,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "src/pdm/project/core.py::Project",
+      6
+     ],
+     [
+      "src/pdm/project/core.py::<module>",
+      5
+     ],
+     [
+      "src/pdm/cli/commands/add.py::Command.do_add",
+      4
+     ]
+    ]
+   },
+   {
+    "prefix": 35,
+    "n_eval": 0,
+    "files_ge3": 13,
+    "files_ge2": 55,
+    "dirs_ge3": 11,
+    "distinct_files": 269,
+    "distinct_dirs": 101,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "src/pdm/project/core.py::Project",
+      6
+     ],
+     [
+      "src/pdm/project/core.py::<module>",
+      5
+     ],
+     [
+      "src/pdm/cli/commands/add.py::Command.do_add",
+      4
+     ]
+    ]
+   },
+   {
+    "prefix": 35,
+    "n_eval": 0,
+    "files_ge3": 13,
+    "files_ge2": 55,
+    "dirs_ge3": 11,
+    "distinct_files": 269,
+    "distinct_dirs": 101,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "src/pdm/project/core.py::Project",
+      6
+     ],
+     [
+      "src/pdm/project/core.py::<module>",
+      5
+     ],
+     [
+      "src/pdm/cli/commands/add.py::Command.do_add",
+      4
+     ]
+    ]
+   },
+   {
+    "prefix": 35,
+    "n_eval": 0,
+    "files_ge3": 13,
+    "files_ge2": 55,
+    "dirs_ge3": 11,
+    "distinct_files": 269,
+    "distinct_dirs": 101,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "src/pdm/project/core.py::Project",
+      6
+     ],
+     [
+      "src/pdm/project/core.py::<module>",
+      5
+     ],
+     [
+      "src/pdm/cli/commands/add.py::Command.do_add",
+      4
+     ]
+    ]
+   },
+   {
+    "prefix": 35,
+    "n_eval": 0,
+    "files_ge3": 13,
+    "files_ge2": 55,
+    "dirs_ge3": 11,
+    "distinct_files": 269,
+    "distinct_dirs": 101,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "src/pdm/project/core.py::Project",
+      6
+     ],
+     [
+      "src/pdm/project/core.py::<module>",
+      5
+     ],
+     [
+      "src/pdm/cli/commands/add.py::Command.do_add",
+      4
+     ]
+    ]
+   }
+  ]
+ },
+ "sissbruecker/linkding": {
+  "n_tasks": 34,
+  "rows": [
+   {
+    "prefix": 20,
+    "n_eval": 14,
+    "files_ge3": 7,
+    "files_ge2": 25,
+    "dirs_ge3": 9,
+    "distinct_files": 120,
+    "distinct_dirs": 40,
+    "eval_file_seen1": 0.857,
+    "eval_file_seen2": 0.714,
+    "eval_file_seen3": 0.286,
+    "eval_dir_seen1": 0.929,
+    "eval_dir_seen3": 0.429,
+    "top_files": [
+     [
+      "bookmarks/models.py::<module>",
+      5
+     ],
+     [
+      "bookmarks/models.py::UserProfileForm",
+      4
+     ],
+     [
+      "bookmarks/models.py::UserProfile",
+      4
+     ]
+    ]
+   },
+   {
+    "prefix": 30,
+    "n_eval": 4,
+    "files_ge3": 11,
+    "files_ge2": 37,
+    "dirs_ge3": 13,
+    "distinct_files": 169,
+    "distinct_dirs": 70,
+    "eval_file_seen1": 0.75,
+    "eval_file_seen2": 0.75,
+    "eval_file_seen3": 0.5,
+    "eval_dir_seen1": 1.0,
+    "eval_dir_seen3": 0.75,
+    "top_files": [
+     [
+      "bookmarks/models.py::<module>",
+      6
+     ],
+     [
+      "siteroot/settings/base.py::<module>",
+      5
+     ],
+     [
+      "bookmarks/templates/settings/general.html::<module>",
+      5
+     ]
+    ]
+   },
+   {
+    "prefix": 34,
+    "n_eval": 0,
+    "files_ge3": 14,
+    "files_ge2": 40,
+    "dirs_ge3": 14,
+    "distinct_files": 202,
+    "distinct_dirs": 94,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "bookmarks/models.py::<module>",
+      6
+     ],
+     [
+      "bookmarks/templates/settings/general.html::<module>",
+      6
+     ],
+     [
+      "siteroot/settings/base.py::<module>",
+      5
+     ]
+    ]
+   },
+   {
+    "prefix": 34,
+    "n_eval": 0,
+    "files_ge3": 14,
+    "files_ge2": 40,
+    "dirs_ge3": 14,
+    "distinct_files": 202,
+    "distinct_dirs": 94,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "bookmarks/models.py::<module>",
+      6
+     ],
+     [
+      "bookmarks/templates/settings/general.html::<module>",
+      6
+     ],
+     [
+      "siteroot/settings/base.py::<module>",
+      5
+     ]
+    ]
+   },
+   {
+    "prefix": 34,
+    "n_eval": 0,
+    "files_ge3": 14,
+    "files_ge2": 40,
+    "dirs_ge3": 14,
+    "distinct_files": 202,
+    "distinct_dirs": 94,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "bookmarks/models.py::<module>",
+      6
+     ],
+     [
+      "bookmarks/templates/settings/general.html::<module>",
+      6
+     ],
+     [
+      "siteroot/settings/base.py::<module>",
+      5
+     ]
+    ]
+   },
+   {
+    "prefix": 34,
+    "n_eval": 0,
+    "files_ge3": 14,
+    "files_ge2": 40,
+    "dirs_ge3": 14,
+    "distinct_files": 202,
+    "distinct_dirs": 94,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "bookmarks/models.py::<module>",
+      6
+     ],
+     [
+      "bookmarks/templates/settings/general.html::<module>",
+      6
+     ],
+     [
+      "siteroot/settings/base.py::<module>",
+      5
+     ]
+    ]
+   },
+   {
+    "prefix": 34,
+    "n_eval": 0,
+    "files_ge3": 14,
+    "files_ge2": 40,
+    "dirs_ge3": 14,
+    "distinct_files": 202,
+    "distinct_dirs": 94,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "bookmarks/models.py::<module>",
+      6
+     ],
+     [
+      "bookmarks/templates/settings/general.html::<module>",
+      6
+     ],
+     [
+      "siteroot/settings/base.py::<module>",
+      5
+     ]
+    ]
+   }
+  ]
+ },
+ "pvlib/pvlib-python": {
+  "n_tasks": 30,
+  "rows": [
+   {
+    "prefix": 20,
+    "n_eval": 10,
+    "files_ge3": 12,
+    "files_ge2": 22,
+    "dirs_ge3": 8,
+    "distinct_files": 81,
+    "distinct_dirs": 32,
+    "eval_file_seen1": 0.5,
+    "eval_file_seen2": 0.4,
+    "eval_file_seen3": 0.3,
+    "eval_dir_seen1": 0.7,
+    "eval_dir_seen3": 0.4,
+    "top_files": [
+     [
+      "docs/sphinx/source/whatsnew/v0.11.1.rst::<module>",
+      7
+     ],
+     [
+      "docs/sphinx/source/whatsnew/v0.10.4.rst::<module>",
+      4
+     ],
+     [
+      "pvlib/spectrum/__init__.py::<module>",
+      4
+     ]
+    ]
+   },
+   {
+    "prefix": 30,
+    "n_eval": 0,
+    "files_ge3": 14,
+    "files_ge2": 28,
+    "dirs_ge3": 13,
+    "distinct_files": 109,
+    "distinct_dirs": 41,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "docs/sphinx/source/whatsnew/v0.11.1.rst::<module>",
+      7
+     ],
+     [
+      "docs/sphinx/source/whatsnew/v0.11.2.rst::<module>",
+      6
+     ],
+     [
+      "docs/sphinx/source/whatsnew/v0.11.3.rst::<module>",
+      5
+     ]
+    ]
+   },
+   {
+    "prefix": 30,
+    "n_eval": 0,
+    "files_ge3": 14,
+    "files_ge2": 28,
+    "dirs_ge3": 13,
+    "distinct_files": 109,
+    "distinct_dirs": 41,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "docs/sphinx/source/whatsnew/v0.11.1.rst::<module>",
+      7
+     ],
+     [
+      "docs/sphinx/source/whatsnew/v0.11.2.rst::<module>",
+      6
+     ],
+     [
+      "docs/sphinx/source/whatsnew/v0.11.3.rst::<module>",
+      5
+     ]
+    ]
+   },
+   {
+    "prefix": 30,
+    "n_eval": 0,
+    "files_ge3": 14,
+    "files_ge2": 28,
+    "dirs_ge3": 13,
+    "distinct_files": 109,
+    "distinct_dirs": 41,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "docs/sphinx/source/whatsnew/v0.11.1.rst::<module>",
+      7
+     ],
+     [
+      "docs/sphinx/source/whatsnew/v0.11.2.rst::<module>",
+      6
+     ],
+     [
+      "docs/sphinx/source/whatsnew/v0.11.3.rst::<module>",
+      5
+     ]
+    ]
+   },
+   {
+    "prefix": 30,
+    "n_eval": 0,
+    "files_ge3": 14,
+    "files_ge2": 28,
+    "dirs_ge3": 13,
+    "distinct_files": 109,
+    "distinct_dirs": 41,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "docs/sphinx/source/whatsnew/v0.11.1.rst::<module>",
+      7
+     ],
+     [
+      "docs/sphinx/source/whatsnew/v0.11.2.rst::<module>",
+      6
+     ],
+     [
+      "docs/sphinx/source/whatsnew/v0.11.3.rst::<module>",
+      5
+     ]
+    ]
+   },
+   {
+    "prefix": 30,
+    "n_eval": 0,
+    "files_ge3": 14,
+    "files_ge2": 28,
+    "dirs_ge3": 13,
+    "distinct_files": 109,
+    "distinct_dirs": 41,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "docs/sphinx/source/whatsnew/v0.11.1.rst::<module>",
+      7
+     ],
+     [
+      "docs/sphinx/source/whatsnew/v0.11.2.rst::<module>",
+      6
+     ],
+     [
+      "docs/sphinx/source/whatsnew/v0.11.3.rst::<module>",
+      5
+     ]
+    ]
+   },
+   {
+    "prefix": 30,
+    "n_eval": 0,
+    "files_ge3": 14,
+    "files_ge2": 28,
+    "dirs_ge3": 13,
+    "distinct_files": 109,
+    "distinct_dirs": 41,
+    "eval_file_seen1": null,
+    "eval_file_seen2": null,
+    "eval_file_seen3": null,
+    "eval_dir_seen1": null,
+    "eval_dir_seen3": null,
+    "top_files": [
+     [
+      "docs/sphinx/source/whatsnew/v0.11.1.rst::<module>",
+      7
+     ],
+     [
+      "docs/sphinx/source/whatsnew/v0.11.2.rst::<module>",
+      6
+     ],
+     [
+      "docs/sphinx/source/whatsnew/v0.11.3.rst::<module>",
+      5
+     ]
+    ]
+   }
+  ]
+ },
+ "_level": "function"
+}
