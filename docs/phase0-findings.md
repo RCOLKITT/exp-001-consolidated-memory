@@ -534,3 +534,17 @@ discordance share) is implemented in `phase2.power.mde_paired`; at v1's
 observed 9% discordance it would halve the MDE, but the function-level
 share is unmeasured and the draft does not rely on it. Details and the
 recommended design in `docs/PREREGISTRATION-v2-DRAFT.md` §12.
+
+
+## 18. Rolling mode live; τ calibration finds no signal; injection perturbs (run 8)
+
+The rolling (prequential) mode ran on the two calibration repos
+(streamlink, pvlib; 71 tasks, ≈ 250 calls): 0 errors, 5 promoted
+memories, retrieval on 30/31 eval tasks. τ calibration by the registered
+rule gave 0.50 via the fallback: 0 of 72 retrieved memories named a gold
+symbol (or gold file), which the repos' near-zero function recurrence
+made inevitable. The descriptive +9.7 pts on 31 tasks came from three
+flips in which the injected memories were about an unrelated plugin —
+the prompt's shape, not its content, moved the verifier. Recorded in
+draft §14 with the design decision it raises (primary arm gated vs
+ungated; optional placebo arm).

@@ -362,7 +362,7 @@ question of why the rule changed.
 | **Kill number** | **9 pts** = ceil(max(8.6, 0.5 × 15.6)) | §4 rule |
 | Feasibility | ceiling / MDE = 1.82 ≥ 1.5 — **passes** | §4 rule |
 | Paired interval | reported as primary CI (`phase4.paired`); assumed discordance for the paired MDE: **0.30** (v1 observed 0.09; function level assumed more volatile). Kill number stays from the unpaired rule | §12 lever 2 |
-| τ | ⟦FILL from §5.3-A⟧ | calibration run |
+| τ | **0.50** by the registered fallback rule (run 8: 0 of 72 retrieved memories named a gold symbol, so precision never reached 0.5; 90th percentile of non-matching cosines = 0.50). See §14 before accepting | `results/experiment/8/tau.json` |
 | Gate 3 floor (per treatment repo, whole chain) | ≥ 2 promoted memories by chain end; discard rate ≥ 0.5 × whole-chain repeat share: conan 0.106, cfn-lint 0.141, matplotlib 0.070, haystack 0.141, pylint 0.097, instructlab 0.200, keras 0.023, reflex 0.092, sphinx 0.058, pdm 0.114 | run 25 |
 | FP ceiling, majority, negative-control criteria | as §4 | §4 |
 | Hard stop | six weeks from `prereg-v2` | §4 |
@@ -384,3 +384,53 @@ tasks, 2 arms × 2 stages ≈ 2,100 minus cache hits where τ gates nothing;
 ≈ 4,000 calls, roughly 6–7 hours of runner time at run 23's rate. Fits a
 single 6-hour job only barely; the rolling stage supports `resume_run`
 (content-addressed caches), so a second run finishes it at no extra spend.
+
+## 14. τ calibration outcome (run 8) and an open design decision
+
+Run 8 was the rolling mode's first live run: streamlink (41 tasks) and
+pvlib (30), function level, three arms, 0 errors, 5 promoted memories,
+memory retrieved on 30/31 eval tasks, ≈ 250 calls. The mechanism works on
+the live path.
+
+The calibration itself returned no signal: none of the 72 retrieved
+memories named the gold symbol of the task it was retrieved for (nor even
+its gold file), so precision was 0 at every threshold and τ = 0.50 came
+from the fallback (90th percentile of non-matching cosines; only 5/72
+retrievals score ≥ 0.50). In hindsight the calibration repos could not
+have done otherwise: streamlink's prequential function recurrence is
+0.095 (seen1) and pvlib's seen2 is 0.1 (§12 table), so there was almost
+nothing for a memory to match. The registered rule was followed and its
+result stands as computed; whether it should be *used* is the question.
+
+What the same run shows about injection. On the calibration repos the
+treatment arm posted +9.7 pts (n = 31, 3 treatment-only hits, McNemar
+p = 0.25). All three flips had irrelevant memories in the prompt (twitch
+plugin memories on tf1 / tv3cat tasks); the verifier moved from a third
+method to the class name, which happened to be a gold symbol. That is
+**prompt perturbation, not memory**: it is the noise the paired design and
+the negative control are there to expose, and it is a reason not to read
+any single-arm lift as mechanism.
+
+Decision for the owner (nothing registered yet, so this is an amendment
+of a draft, not of a registration):
+
+- **Option 1 — keep H2 as drafted.** Primary = gated arm at τ = 0.50. With
+  the observed cosine distribution the gated arm injects on ≈ 7% of
+  retrievals and equals control elsewhere, so the primary test mostly
+  measures those few high-similarity cases; the ungated arm carries the
+  rest of the information as a secondary.
+- **Option 2 — swap the arms (recommended).** Primary = ungated (τ = 0),
+  as v1 was; secondary = gated at τ = 0.50 for attribution. This makes v2
+  differ from v1 by *one* thing, granularity, which is the change the v1
+  data motivated most directly; the gating lever is kept, measured, and
+  reported, but not made the headline before its calibration has any
+  positive support. Kill number 9 applies to the primary either way.
+- **Option 3 — recalibrate τ on repos with recurrence** by treating the
+  first 40 tasks of each treatment repo as calibration (warm-up 40). Costs
+  ≈ 200 eval tasks from the pool (530 → ≈ 330) and fails feasibility.
+
+Optional fourth arm, either option: a **placebo** arm that injects the
+same number of memory lines but with content from a different
+repository's kernel (semantically irrelevant by construction). It
+measures the perturbation effect directly; cross-repo use is forbidden as
+a mechanism (§1) but fine as a control. Cost ≈ 1,100 more calls.
