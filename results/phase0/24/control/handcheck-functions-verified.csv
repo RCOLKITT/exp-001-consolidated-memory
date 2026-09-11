@@ -1,0 +1,678 @@
+instance_id,path,hunk_start,hunk_end,oracle,manual,context
+aws-cloudformation__cfn-lint-3390,src/cfnlint/jsonschema/_resolvers_cfn.py,313,319,sub;<module>;if_,sub;<module>;if_,"310:             )
+311:             yield from _sub_string(resolved_validator, string)
+312: 
+313:         return
+314: 
+315:     # its a string
+316:     yield from _sub_string(validator, instance)
+317: 
+318: 
+319: def if_(validator: Validator, instance: Any) -> ResolutionResult:
+320:     if not validator.is_type(instance, ""array""):
+321:         return
+322: "
+aws-cloudformation__cfn-lint-3442,src/cfnlint/data/schemas/extensions/aws_rds_dbinstance/aurora_exclusive.json,1,7,<module>,<module>,"1: {
+2:  ""additionalProperties"": true,
+3:  ""description"": ""When creating an aurora DBInstance don't specify 'AllocatedStorage', 'BackupRetentionPeriod', 'CopyTagsToSnapshot', 'DeletionProtection', 'EnableIAMDatabaseAuthentication', 'MasterUserPassword', or 'StorageEncrypted'"",
+4:  ""else"": {},
+5:  ""if"": {
+6:   ""properties"": {
+7:    ""Engine"": {
+8:     ""pattern"": ""(aurora|aurora-mysql|aurora-postgresql)"",
+9:     ""type"": ""string""
+10:    }"
+aws-cloudformation__cfn-lint-3498,src/cfnlint/conditions/conditions.py,295,304,Conditions.check_implies;Conditions;Conditions.build_scenerios_on_region,Conditions.check_implies;Conditions;Conditions.build_scenerios_on_region,"292:             return False
+293:         except KeyError:
+294:             # KeyError is because the listed condition doesn't exist because of bad
+295:             #  formatting or just the wrong condition name
+296:             return True
+297: 
+298:     @lru_cache()
+299:     def build_scenerios_on_region(
+300:         self, condition_name: str, region: str
+301:     ) -> Iterator[bool]:
+302:         """"""Based on a region validate if the condition_name could be true
+303: 
+304:         Args:
+305:             condition_name (str): The name of the condition we are validating against
+306:             region (str): the name of the region
+307: "
+aws-cloudformation__cfn-lint-3969,src/cfnlint/data/schemas/patches/extensions/all/aws_cloudwatch_alarm/manual.json,36,48,<module>,<module>,"33:     ""Threshold""
+34:    ]
+35:   }
+36:  },
+37:  {
+38:   ""op"": ""add"",
+39:   ""path"": ""/properties/AlarmActions/items/maximum"",
+40:   ""value"": 1024
+41:  },
+42:  {
+43:   ""op"": ""add"",
+44:   ""path"": ""/properties/AlarmActions/items/minimum"",
+45:   ""value"": 1
+46:  },
+47:  {
+48:   ""op"": ""add"",
+49:   ""path"": ""/properties/AlarmActions/maxItems"",
+50:   ""value"": 5
+51:  },"
+aws-cloudformation__cfn-lint-3969,src/cfnlint/data/schemas/patches/extensions/all/aws_s3_bucket/manual.json,52,56,<module>,<module>,"49:     ""AbortIncompleteMultipartUpload""
+50:    ],
+51:    ""ObjectSizeLessThan"": [
+52:     ""AbortIncompleteMultipartUpload""
+53:    ]
+54:   }
+55:  }
+56: ]"
+aws-cloudformation__cfn-lint-3981,src/cfnlint/data/schemas/patches/extensions/all/aws_ec2_localgatewayroute/format.json,0,0,<module>,<module>,(file absent at base_commit)
+aws-cloudformation__cfn-lint-4008,src/cfnlint/data/schemas/other/conditions/conditions.json,1,7,<module>,<module>,"1: {
+2:  ""additionalProperties"": false,
+3:  ""patternProperties"": {
+4:   ""^[a-zA-Z0-9&]{1,255}$"": {
+5:    ""type"": ""boolean""
+6:   }
+7:  },
+8:  ""properties"": {},
+9:  ""type"": ""object""
+10: }"
+conan-io__conan-15513,conan/tools/files/copy_pattern.py,106,115,_copy_files,_copy_files,"103:     """"""
+104:     copied_files = []
+105:     for filename in files:
+106:         abs_src_name = os.path.join(src, filename)
+107:         filename = filename if keep_path else os.path.basename(filename)
+108:         abs_dst_name = os.path.normpath(os.path.join(dst, filename))
+109:         try:
+110:             os.makedirs(os.path.dirname(abs_dst_name))
+111:         except Exception:
+112:             pass
+113:         if os.path.islink(abs_src_name):
+114:             linkto = os.readlink(abs_src_name)  # @UndefinedVariable
+115:             try:
+116:                 os.remove(abs_dst_name)
+117:             except OSError:
+118:                 pass"
+conan-io__conan-16022,conan/api/model.py,47,52,MultiPackagesList.__init__;MultiPackagesList;MultiPackagesList.__getitem__,MultiPackagesList.__init__;MultiPackagesList;MultiPackagesList.__getitem__,"44: 
+45: 
+46: class MultiPackagesList:
+47:     def __init__(self):
+48:         self.lists = {}
+49: 
+50:     def __getitem__(self, name):
+51:         try:
+52:             return self.lists[name]
+53:         except KeyError:
+54:             raise ConanException(f""'{name}' doesn't exist is package list"")
+55: "
+conan-io__conan-16415,conan/cli/formatters/graph/graph.py,126,133,format_graph_html;<module>;format_graph_dot,format_graph_html;<module>;format_graph_dot,"123:         ""should_highlight_node"": lambda node: False
+124:     }
+125:     if isinstance(graph.error, GraphConflictError):
+126:         error[""type""] = ""conflict""
+127:         error[""should_highlight_node""] = lambda node: node.id == graph.error.node.id
+128:     cli_out_write(_render_graph(graph, error, template, template_folder))
+129:     if graph.error:
+130:         raise graph.error
+131: 
+132: 
+133: def format_graph_dot(result):
+134:     graph = result[""graph""]
+135:     conan_api = result[""conan_api""]
+136: "
+conan-io__conan-16613,conan/tools/gnu/makedeps.py,630,637,MakeDeps.generate,MakeDeps.generate,"627:         make_infos = []
+628: 
+629:         for require, dep in dependencies:
+630:             # Require is not used at the moment, but its information could be used, and will be used in Conan 2.0
+631:             if require.build:
+632:                 continue
+633: 
+634:             dep_gen = DepGenerator(dep, require)
+635:             make_infos.append(dep_gen.makeinfo)
+636:             deps_buffer += dep_gen.generate()
+637: 
+638:         glob_gen = GlobalGenerator(self._conanfile, make_infos)
+639:         content_buffer += glob_gen.deps_generate() + deps_buffer + glob_gen.generate()
+640: "
+conan-io__conan-16742,conan/tools/qbs/common.py,0,0,<module>,<module>,(file absent at base_commit)
+conan-io__conan-18693,conan/cli/commands/workspace.py,225,231,workspace_super_install,workspace_super_install,"222:     print_graph_basic(deps_graph)
+223: 
+224:     # Collapsing the graph
+225:     ws_graph = conan_api.workspace.super_build_graph(deps_graph, profile_host, profile_build)
+226:     ConanOutput().subtitle(""Collapsed graph"")
+227:     print_graph_basic(ws_graph)
+228: 
+229:     conan_api.graph.analyze_binaries(ws_graph, args.build, remotes=remotes, update=args.update,
+230:                                      lockfile=lockfile)
+231:     print_graph_packages(ws_graph)
+232:     conan_api.install.install_binaries(deps_graph=ws_graph, remotes=remotes)
+233:     output_folder = make_abs_path(args.output_folder) if args.output_folder else None
+234:     conan_api.install.install_consumer(ws_graph, args.generator, ws_folder, output_folder,"
+deepset-ai__haystack-6887,haystack/components/generators/azure.py,142,147,AzureOpenAIGenerator.to_dict;AzureOpenAIGenerator;AzureOpenAIGenerator.from_dict,AzureOpenAIGenerator.to_dict;AzureOpenAIGenerator;AzureOpenAIGenerator.from_dict,"139:             azure_deployment=self.azure_deployment,
+140:             organization=self.organization,
+141:             api_version=self.api_version,
+142:             streaming_callback=callback_name,
+143:             generation_kwargs=self.generation_kwargs,
+144:             system_prompt=self.system_prompt,
+145:         )
+146: 
+147:     @classmethod
+148:     def from_dict(cls, data: Dict[str, Any]) -> ""AzureOpenAIGenerator"":
+149:         """"""
+150:         Deserialize this component from a dictionary."
+deepset-ai__haystack-6887,haystack/components/generators/chat/hugging_face_tgi.py,51,57,HuggingFaceTGIChatGenerator,HuggingFaceTGIChatGenerator,"48: 
+49:     messages = [ChatMessage.from_system(""\\nYou are a helpful, respectful and honest assistant""),
+50:                 ChatMessage.from_user(""What's Natural Language Processing?"")]
+51: 
+52:     client = HuggingFaceTGIChatGenerator(model=""meta-llama/Llama-2-70b-chat-hf"",
+53:                                          url=""<your-tgi-endpoint-url>"",
+54:                                          token=""<your-token>"")
+55:     client.warm_up()
+56:     response = client.run(messages, generation_kwargs={""max_new_tokens"": 120})
+57:     print(response)
+58:     ```
+59: 
+60:      Key Features and Compatibility:"
+deepset-ai__haystack-8875,haystack/core/pipeline/base.py,1179,1185,<module>;_connections_status,<module>;_connections_status,"1176:                 ""Check the connections between these components and ensure all required inputs are provided.""
+1177:             )
+1178: 
+1179: 
+1180: def _connections_status(
+1181:     sender_node: str, receiver_node: str, sender_sockets: List[OutputSocket], receiver_sockets: List[InputSocket]
+1182: ):
+1183:     """"""
+1184:     Lists the status of the sockets, for error messages.
+1185:     """"""
+1186:     sender_sockets_entries = []
+1187:     for sender_socket in sender_sockets:
+1188:         sender_sockets_entries.append(f"" - {sender_socket.name}: {_type_name(sender_socket.type)}"")"
+deepset-ai__haystack-9270,haystack/components/embedders/openai_document_embedder.py,150,155,OpenAIDocumentEmbedder.to_dict;OpenAIDocumentEmbedder;OpenAIDocumentEmbedder.from_dict,OpenAIDocumentEmbedder.to_dict;OpenAIDocumentEmbedder;OpenAIDocumentEmbedder.from_dict,"147:             suffix=self.suffix,
+148:             batch_size=self.batch_size,
+149:             progress_bar=self.progress_bar,
+150:             meta_fields_to_embed=self.meta_fields_to_embed,
+151:             embedding_separator=self.embedding_separator,
+152:             api_key=self.api_key.to_dict(),
+153:         )
+154: 
+155:     @classmethod
+156:     def from_dict(cls, data: Dict[str, Any]) -> ""OpenAIDocumentEmbedder"":
+157:         """"""
+158:         Deserializes the component from a dictionary."
+deepset-ai__haystack-9270,haystack/components/generators/openai_dalle.py,60,65,DALLEImageGenerator.__init__,DALLEImageGenerator.__init__,"57:         :param timeout:
+58:             Timeout for OpenAI Client calls. If not set, it is inferred from the `OPENAI_TIMEOUT` environment variable
+59:             or set to 30.
+60:         :param max_retries:
+61:             Maximum retries to establish contact with OpenAI if it returns an internal error. If not set, it is inferred
+62:             from the `OPENAI_MAX_RETRIES` environment variable or set to 5.
+63:         """"""
+64:         self.model = model
+65:         self.quality = quality
+66:         self.size = size
+67:         self.response_format = response_format
+68:         self.api_key = api_key"
+deepset-ai__haystack-9622,haystack/document_stores/in_memory/document_store.py,85,90,InMemoryDocumentStore.__init__,InMemoryDocumentStore.__init__,"82:             about your embedding model.
+83:         :param index: A specific index to store the documents. If not specified, a random UUID is used.
+84:             Using the same index allows you to store documents across multiple InMemoryDocumentStore instances.
+85:         :param async_executor:
+86:             Optional ThreadPoolExecutor to use for async calls. If not provided, a single-threaded
+87:             executor will be initialized and used.
+88:         """"""
+89:         self.bm25_tokenization_regex = bm25_tokenization_regex
+90:         self.tokenizer = re.compile(bm25_tokenization_regex).findall
+91: 
+92:         if index is None:
+93:             index = str(uuid.uuid4())"
+deepset-ai__haystack-9622,releasenotes/notes/update-in-memory-document-store-17f555695caf9d52.yaml,0,0,<module>,<module>,(file absent at base_commit)
+instructlab__instructlab-1732,src/instructlab/configuration.py,572,577,ensure_storage_directories_exist,ensure_storage_directories_exist,"569:         DEFAULTS.INTERNAL_DIR,
+570:         DEFAULTS.MODELS_DIR,
+571:         DEFAULTS.TAXONOMY_DIR,
+572:         DEFAULTS.TRAIN_CONFIG_DIR,
+573:         DEFAULTS.TRAIN_PROFILE_DIR,
+574:         DEFAULTS.TRAIN_ADDITIONAL_OPTIONS_DIR,
+575:     ]
+576: 
+577:     for dirpath in dirs_to_make:
+578:         if not os.path.exists(dirpath):
+579:             os.makedirs(dirpath, exist_ok=True)
+580: "
+instructlab__instructlab-1923,src/instructlab/data/generate.py,1,6,<module>,<module>,"1: # SPDX-License-Identifier: Apache-2.0
+2: 
+3: # Standard
+4: import logging
+5: import os.path
+6: 
+7: # Third Party
+8: import click
+9: "
+instructlab__instructlab-2247,src/instructlab/configuration.py,1275,1280,map_train_to_library;<module>,map_train_to_library;<module>,"1272:         )
+1273:     if lora_options and not lora_enabled:
+1274:         click.secho(""LoRA is disabled (rank=0), ignoring all additional LoRA args"")
+1275: 
+1276:     train_args.deepspeed_options = ds_args
+1277:     train_args.lora = lora_args
+1278: 
+1279:     return train_args, torch_args
+1280: 
+1281: 
+1282: def finish_additional_train_args(current_additional):
+1283:     additional_args_and_defaults = {}"
+instructlab__instructlab-2825,src/instructlab/model/chat.py,664,669,ConsoleChatBot.start_prompt,ConsoleChatBot.start_prompt,"661:                         model=self.model,
+662:                         messages=self.info[""messages""],
+663:                         stream=True,
+664:                         **create_params,
+665:                     )
+666:                 except openai.BadRequestError as e:
+667:                     logger.debug(f""BadRequestError: {e}"")
+668:                     if e.code == ""context_length_exceeded"":
+669:                         if len(self.info[""messages""]) > 1:
+670:                             # Trim the oldest entry in our message history
+671:                             logger.debug(
+672:                                 ""Trimming message history to attempt to fit context length"""
+keras-team__keras-19955,keras/src/backend/common/keras_tensor.py,322,327,KerasTensor.__getitem__;<module>;any_symbolic_tensors,KerasTensor.__getitem__;<module>;any_symbolic_tensors,"319: 
+320:     def __getitem__(self, key):
+321:         from keras.src import ops
+322: 
+323:         return ops.GetItem().symbolic_call(self, key)
+324: 
+325: 
+326: def any_symbolic_tensors(args=None, kwargs=None):
+327:     args = args or ()
+328:     kwargs = kwargs or {}
+329:     for x in tree.flatten((args, kwargs)):
+330:         if isinstance(x, KerasTensor):"
+keras-team__keras-20880,keras/src/layers/convolutional/base_depthwise_conv.py,190,196,BaseDepthwiseConv.build;BaseDepthwiseConv;BaseDepthwiseConv._get_input_channel,BaseDepthwiseConv.build;BaseDepthwiseConv;BaseDepthwiseConv._get_input_channel,"187:                 constraint=self.bias_constraint,
+188:                 trainable=True,
+189:                 dtype=self.dtype,
+190:             )
+191:         else:
+192:             self.bias = None
+193:         self.built = True
+194: 
+195:     def _get_input_channel(self, input_shape):
+196:         if self.data_format == ""channels_last"":
+197:             input_channel = input_shape[-1]
+198:         else:
+199:             input_channel = input_shape[1]"
+keras-team__keras-20880,keras/src/layers/core/identity.py,15,21,Identity.__init__;Identity;Identity.call,Identity.__init__;Identity;Identity.call,"12:     performed. The layer just returns its `inputs` argument as output.
+13:     """"""
+14: 
+15:     def __init__(self, **kwargs):
+16:         super().__init__(**kwargs)
+17:         self.supports_masking = True
+18:         self.built = True
+19: 
+20:     def call(self, inputs):
+21:         return inputs
+22: 
+23:     def compute_output_shape(self, input_shape):
+24:         return input_shape"
+keras-team__keras-20880,keras/src/layers/regularization/alpha_dropout.py,46,52,AlphaDropout.__init__;AlphaDropout;AlphaDropout.call,AlphaDropout.__init__;AlphaDropout;AlphaDropout.call,"43:         self.rate = rate
+44:         self.seed = seed
+45:         self.noise_shape = noise_shape
+46:         if rate > 0:
+47:             self.seed_generator = backend.random.SeedGenerator(seed)
+48:         self.supports_masking = True
+49:         self.built = True
+50: 
+51:     def call(self, inputs, training=False):
+52:         if training and self.rate > 0:
+53:             noise_shape = self._get_concrete_noise_shape(
+54:                 inputs, self.noise_shape
+55:             )"
+matplotlib__matplotlib-27613,lib/matplotlib/rcsetup.py,957,963,<module>,<module>,"954:     ""boxplot.showcaps"":    validate_bool,
+955:     ""boxplot.showbox"":     validate_bool,
+956:     ""boxplot.showfliers"":  validate_bool,
+957:     ""boxplot.meanline"":    validate_bool,
+958: 
+959:     ""boxplot.flierprops.color"":           validate_color,
+960:     ""boxplot.flierprops.marker"":          validate_string,
+961:     ""boxplot.flierprops.markerfacecolor"": validate_color_or_auto,
+962:     ""boxplot.flierprops.markeredgecolor"": validate_color,
+963:     ""boxplot.flierprops.markeredgewidth"": validate_float,
+964:     ""boxplot.flierprops.markersize"":      validate_float,
+965:     ""boxplot.flierprops.linestyle"":       _validate_linestyle,
+966:     ""boxplot.flierprops.linewidth"":       validate_float,"
+matplotlib__matplotlib-28177,lib/matplotlib/artist.pyi,87,94,Artist.set_sketch_params;Artist.set_path_effects;Artist.get_path_effects;Artist.get_figure;Artist.set_figure;Artist.set_clip_box;Artist.set_clip_path,Artist.set_sketch_params;Artist.set_path_effects;Artist.get_path_effects;Artist.get_figure;Artist.set_figure;Artist.set_clip_box;Artist.set_clip_path,"84:         scale: float | None = ...,
+85:         length: float | None = ...,
+86:         randomness: float | None = ...,
+87:     ) -> None: ...
+88:     def set_path_effects(self, path_effects: list[AbstractPathEffect]) -> None: ...
+89:     def get_path_effects(self) -> list[AbstractPathEffect]: ...
+90:     def get_figure(self) -> Figure | None: ...
+91:     def set_figure(self, fig: Figure) -> None: ...
+92:     def set_clip_box(self, clipbox: BboxBase | None) -> None: ...
+93:     def set_clip_path(
+94:         self,
+95:         path: Patch | Path | TransformedPath | TransformedPatchPath | None,
+96:         transform: Transform | None = ...,
+97:     ) -> None: ..."
+matplotlib__matplotlib-30098,lib/matplotlib/colorbar.py,1549,1554,make_axes_gridspec,make_axes_gridspec,"1546:     parent.set_subplotspec(ss_main)
+1547:     if panchor is not False:
+1548:         parent.set_anchor(panchor)
+1549: 
+1550:     fig = parent.get_figure()
+1551:     cax = fig.add_subplot(ss_cb, label=""<colorbar>"")
+1552:     cax.set_anchor(anchor)
+1553:     cax.set_box_aspect(aspect)
+1554:     cax.set_aspect('auto')
+1555:     cax._colorbar_info = dict(
+1556:         location=location,
+1557:         parents=[parent],"
+matplotlib__matplotlib-30475,lib/matplotlib/axes/_axes.py,1183,1189,Axes.hlines,Axes.hlines,"1180:             # e.g. by errorbar()), which would make nanmin/nanmax stumble.
+1181:             updatex = True
+1182:             updatey = True
+1183:             if self.name == ""rectilinear"":
+1184:                 datalim = lines.get_datalim(self.transData)
+1185:                 t = lines.get_transform()
+1186:                 updatex, updatey = t.contains_branch_seperately(self.transData)
+1187:                 minx = np.nanmin(datalim.xmin)
+1188:                 maxx = np.nanmax(datalim.xmax)
+1189:                 miny = np.nanmin(datalim.ymin)
+1190:                 maxy = np.nanmax(datalim.ymax)
+1191:             else:
+1192:                 minx = np.nanmin(masked_verts[..., 0])"
+matplotlib__matplotlib-30475,lib/matplotlib/transforms.pyi,189,197,Transform.depth;Transform.contains_branch;Transform.contains_branch_seperately;Transform.__sub__;Transform.__array__;Transform.transform,Transform.depth;Transform.contains_branch;Transform.contains_branch_seperately;Transform.__sub__;Transform.__array__;Transform.transform,"186:     def has_inverse(self) -> bool: ...
+187: 
+188:     def __add__(self, other: Transform) -> Transform: ...
+189:     @property
+190:     def depth(self) -> int: ...
+191:     def contains_branch(self, other: Transform) -> bool: ...
+192:     def contains_branch_seperately(
+193:         self, other_transform: Transform
+194:     ) -> Sequence[bool]: ...
+195:     def __sub__(self, other: Transform) -> Transform: ...
+196:     def __array__(self, *args, **kwargs) -> np.ndarray: ...
+197:     def transform(self, values: ArrayLike) -> np.ndarray: ...
+198:     def transform_affine(self, values: ArrayLike) -> np.ndarray: ...
+199:     def transform_non_affine(self, values: ArrayLike) -> ArrayLike: ...
+200:     def transform_bbox(self, bbox: BboxBase) -> Bbox: ..."
+pdm-project__pdm-2743,src/pdm/formats/poetry.py,11,20,<module>,<module>,"8: from typing import TYPE_CHECKING, Any, Iterable, Mapping, cast
+9: 
+10: from pdm.compat import tomllib
+11: from pdm.formats.base import (
+12:     MetaConverter,
+13:     Unset,
+14:     convert_from,
+15:     make_array,
+16:     make_inline_table,
+17:     parse_name_email,
+18: )
+19: from pdm.models.markers import Marker, get_marker
+20: from pdm.models.requirements import Requirement
+21: from pdm.models.specifiers import PySpecSet
+22: from pdm.utils import cd
+23: "
+pdm-project__pdm-2750,src/pdm/models/candidates.py,399,414,PreparedCandidate.direct_url;PreparedCandidate;PreparedCandidate.build,PreparedCandidate.direct_url;PreparedCandidate;PreparedCandidate.build,"396:                     ""subdirectory"": req.subdirectory,
+397:                 }
+398:             )
+399:         else:
+400:             return None
+401: 
+402:     def build(self) -> CachedPackage:
+403:         """"""Call PEP 517 build hook to build the candidate into a wheel""""""
+404:         self.obtain(allow_all=False)
+405:         if self._cached:
+406:             return self._cached
+407:         if not self.req.editable:
+408:             cached, checksum = self._get_build_cache()
+409:             if cached:
+410:                 self._cached = self.environment.project.package_cache.cache_wheel(cached, checksum)
+411:                 return self._cached
+412:         assert self._source_dir, ""Source directory isn't ready yet""
+413:         builder_cls = EditableBuilder if self.req.editable else WheelBuilder
+414:         builder = builder_cls(str(self._unpacked_dir), self.environment)
+415:         build_dir = self._get_wheel_dir()
+416:         os.makedirs(build_dir, exist_ok=True)
+417:         termui.logger.info(""Running PEP 517 backend to build a wheel for %s"", self.link)"
+pdm-project__pdm-3419,src/pdm/cli/actions.py,79,85,do_lock,do_lock,"76:         project.write_lockfile(lockfile)
+77:         return locked_repo.all_candidates
+78: 
+79:     if groups is None:
+80:         groups = list(project.iter_groups())
+81:     if not requirements:
+82:         requirements = [r for group in groups for r in project.get_dependencies(group)]
+83:     ui = project.core.ui
+84:     supports_env_spec = ""env_spec"" in inspect.signature(project.get_provider).parameters
+85:     # The repository to store the lock result
+86:     if locked_repo.packages:
+87:         result_repo = LockedRepository({}, sources=project.sources, environment=project.environment)
+88:     else:"
+pdm-project__pdm-3455,pdm.lock,706,712,<module>,<module>,"703: 
+704: [[package]]
+705: name = ""id""
+706: version = ""1.5.0""
+707: requires_python = "">=3.8""
+708: summary = ""A tool for generating OIDC identities""
+709: groups = [""default"", ""test""]
+710: dependencies = [
+711:     ""requests"",
+712: ]
+713: files = [
+714:     {file = ""id-1.5.0-py3-none-any.whl"", hash = ""sha256:f1434e1cef91f2cbb8a4ec64663d5a23b9ed43ef44c4c957d02583d61714c658""},
+715:     {file = ""id-1.5.0.tar.gz"", hash = ""sha256:292cb8a49eacbbdbce97244f47a97b4c62540169c976552e497fd57df0734c1d""},"
+pylint-dev__pylint-10045,pylint/pyreverse/main.py,250,255,<module>,<module>,"247:     (
+248:         ""source-roots"",
+249:         {
+250:             ""type"": ""glob_paths_csv"",
+251:             ""metavar"": ""<path>[,<path>...]"",
+252:             ""default"": (),
+253:             ""help"": ""Add paths to the list of the source roots. Supports globbing patterns. The ""
+254:             ""source root is an absolute path or a path relative to the current working directory ""
+255:             ""used to determine a package namespace for modules located under the source root."",
+256:         },
+257:     ),
+258:     ("
+pylint-dev__pylint-9452,doc/whatsnew/fragments/9451.false_positive,0,0,<module>,<module>,(file absent at base_commit)
+pylint-dev__pylint-9838,pylint/checkers/unsupported_version.py,115,141,UnsupportedVersionChecker.visit_raise;UnsupportedVersionChecker;UnsupportedVersionChecker.visit_typealias;UnsupportedVersionChecker.visit_typevar;UnsupportedVersionChecker.visit_typevartuple;<module>,UnsupportedVersionChecker.visit_raise;UnsupportedVersionChecker;UnsupportedVersionChecker.visit_typealias;UnsupportedVersionChecker.visit_typevar;UnsupportedVersionChecker.visit_typevartuple;<module>,"112:         if (
+113:             not self._py311_plus
+114:             and isinstance(node.exc, nodes.Call)
+115:             and isinstance(node.exc.func, nodes.Name)
+116:             and node.exc.func.name == ""ExceptionGroup""
+117:         ):
+118:             self.add_message(""using-exception-groups-in-unsupported-version"", node=node)
+119: 
+120:     @only_required_for_messages(""using-generic-type-syntax-in-unsupported-version"")
+121:     def visit_typealias(self, node: nodes.TypeAlias) -> None:
+122:         if not self._py312_plus:
+123:             self.add_message(
+124:                 ""using-generic-type-syntax-in-unsupported-version"", node=node
+125:             )
+126: 
+127:     @only_required_for_messages(""using-generic-type-syntax-in-unsupported-version"")
+128:     def visit_typevar(self, node: nodes.TypeVar) -> None:
+129:         if not self._py312_plus:
+130:             self.add_message(
+131:                 ""using-generic-type-syntax-in-unsupported-version"", node=node
+132:             )
+133: 
+134:     @only_required_for_messages(""using-generic-type-syntax-in-unsupported-version"")
+135:     def visit_typevartuple(self, node: nodes.TypeVarTuple) -> None:
+136:         if not self._py312_plus:
+137:             self.add_message(
+138:                 ""using-generic-type-syntax-in-unsupported-version"", node=node
+139:             )
+140: 
+141: 
+142: def register(linter: PyLinter) -> None:
+143:     linter.register_checker(UnsupportedVersionChecker(linter))"
+reflex-dev__reflex-3462,reflex/utils/prerequisites.py,593,599,update_next_config,update_next_config,"590:     """"""Update Next.js config from Reflex config.
+591: 
+592:     Args:
+593:         export: if the method run during reflex export.
+594:         transpile_packages: list of packages to transpile via next.config.js.
+595:     """"""
+596:     next_config_file = Path(constants.Dirs.WEB, constants.Next.CONFIG_FILE)
+597: 
+598:     next_config = _update_next_config(
+599:         get_config(), export=export, transpile_packages=transpile_packages
+600:     )
+601: 
+602:     # Overwriting the next.config.js triggers a full server reload, so make sure"
+reflex-dev__reflex-4347,reflex/state.py,87,92,<module>,<module>,"84:     DynamicComponentInvalidSignature,
+85:     DynamicRouteArgShadowsStateVar,
+86:     EventHandlerShadowsBuiltInStateMethod,
+87:     ImmutableStateError,
+88:     InvalidStateManagerMode,
+89:     LockExpiredError,
+90:     SetUndefinedStateVarError,
+91:     StateSchemaMismatchError,
+92: )
+93: from reflex.utils.exec import is_testing_env
+94: from reflex.utils.serializers import serializer
+95: from reflex.utils.types import ("
+sissbruecker__linkding-1014,bookmarks/templates/bookmarks/archive.html,28,44,<module>,<module>,"25:         {% include 'bookmarks/bulk_edit/bar.html' with disable_actions='bulk_archive' %}
+26: 
+27:         <div id=""bookmark-list-container"">
+28:           {% include 'bookmarks/bookmark_list.html' %}
+29:         </div>
+30:       </form>
+31:     </section>
+32: 
+33:     {# Tag cloud #}
+34:     <section class=""side-panel content-area col-1"">
+35:       <div class=""content-area-header"">
+36:         <h2>Tags</h2>
+37:       </div>
+38:       <div id=""tag-cloud-container"">
+39:         {% include 'bookmarks/tag_cloud.html' %}
+40:       </div>
+41:     </section>
+42:   </div>
+43: {% endblock %}
+44: 
+45: {% block overlays %}
+46:   {# Bookmark details #}
+47:   <turbo-frame id=""details-modal"" target=""_top"">"
+sissbruecker__linkding-1114,bookmarks/views/bundles.py,1,11,<module>,<module>,"1: from django.contrib import messages
+2: from django.contrib.auth.decorators import login_required
+3: from django.db.models import Max
+4: from django.http import HttpRequest, HttpResponseRedirect
+5: from django.shortcuts import render
+6: from django.urls import reverse
+7: 
+8: from bookmarks.models import BookmarkBundle, BookmarkBundleForm, BookmarkSearch
+9: from bookmarks.views import access
+10: from bookmarks.views.contexts import ActiveBookmarkListContext
+11: 
+12: 
+13: @login_required
+14: def index(request: HttpRequest):"
+sissbruecker__linkding-652,bookmarks/migrations/0026_userprofile_custom_css.py,0,0,<module>,<module>,(file absent at base_commit)
+sissbruecker__linkding-810,bookmarks/templates/settings/integrations.html,1,70,<module>,<module>,"1: {% extends ""bookmarks/layout.html"" %}
+2: 
+3: {% block content %}
+4:     <div class=""settings-page"">
+5: 
+6:         {% include 'settings/nav.html' %}
+7: 
+8:         <section class=""content-area"">
+9:             <h2>Browser Extension</h2>
+10:             <p>The browser extension allows you to quickly add new bookmarks without leaving the page that you are on. The extension is available in the official extension stores for:</p>
+11:             <ul>
+12:                 <li><a href=""https://addons.mozilla.org/firefox/addon/linkding-extension/"" target=""_blank"">Firefox</a></li>
+13:                 <li><a href=""https://chrome.google.com/webstore/detail/linkding-extension/beakmhbijpdhipnjhnclmhgjlddhidpe"" target=""_blank"">Chrome</a></li>
+14:             </ul>
+15:             <p>The extension is <a href=""https://github.com/sissbruecker/linkding-extension"" target=""_blank"">open source</a> as well, which enables you to build and manually load it into any browser that supports Chrome extensions.</p>
+16:             <h2>Bookmarklet</h2>
+17:             <p>The bookmarklet is an alternative, cross-browser way to quickly add new bookmarks without opening the linkding application
+18:                 first. Here's how it works:</p>
+19:             <ul>
+20:                 <li>Drag the bookmarklet below into your browsers bookmark bar / toolbar</li>
+21:                 <li>Open the website that you want to bookmark</li>
+22:                 <li>Click the bookmarklet in your browsers toolbar</li>
+23:                 <li>linkding opens in a new window or tab and allows you to add a bookmark for the site</li>
+24:                 <li>After saving the bookmark the linkding window closes and you are back on your website</li>
+25:             </ul>
+26:             <p>Drag the following bookmarklet to your browsers toolbar:</p>
+27:             <a href=""javascript: {% include 'bookmarks/bookmarklet.js' %}""
+28:                class=""btn btn-primary"">📎 Add bookmark</a>
+29:         </section>
+30: 
+31:         <section class=""content-area"">
+32:             <h2>REST API</h2>
+33:             <p>The following token can be used to authenticate 3rd-party applications against the REST API:</p>
+34:             <div class=""form-group"">
+35:                 <div class=""columns"">
+36:                     <div class=""column width-50 width-md-100"">
+37:                         <input class=""form-input"" value=""{{ api_token }}"" readonly>
+38:                     </div>
+39:                 </div>
+40:             </div>
+41:             <p>
+42:               <strong>Please treat this token as you would any other credential.</strong>
+43:               Any party with access to this token can access and manage all your bookmarks.
+44:               If you think that a token was compromised you can revoke (delete) it in the <a href=""{% url 'admin:authtoken_tokenproxy_changelist' %}"">admin panel</a>.
+45:               After deleting the token, a new one will be generated when you reload this settings page.
+46:             </p>
+47:         </section>
+48: 
+49:         <section class=""content-area"">
+50:             <h2>RSS Feeds</h2>
+51:             <p>The following URLs provide RSS feeds for your bookmarks:</p>
+52:             <ul style=""list-style-position: outside;"">
+53:               <li><a href=""{{ all_feed_url }}"">All bookmarks</a></li>
+54:               <li><a href=""{{ unread_feed_url }}"">Unread bookmarks</a></li>
+55:               <li><a href=""{{ shared_feed_url }}"">Shared bookmarks</a></li>
+56:               <li><a href=""{{ public_shared_feed_url }}"">Public shared bookmarks</a><br><span class=""text-small text-gray"">The public shared feed does not contain an authentication token and can be shared with other people. Only shows shared bookmarks from users who have explicitly enabled public sharing.</span></li>
+57:             </ul>
+58:             <p>
+59:               All URLs support appending a <code>q</code> URL parameter for specifying a search query.
+60:               You can get an example by doing a search in the bookmarks view and then copying the parameter from the URL.
+61:             </p>
+62:             <p>
+63:               <strong>Please note that these URLs include an authentication token that should be treated like any other credential.</strong>
+64:               Any party with access to these URLs can read all your bookmarks.
+65:               If you think that a URL was compromised you can delete the feed token for your user in the <a href=""{% url 'admin:bookmarks_feedtoken_changelist' %}"">admin panel</a>.
+66:               After deleting the feed token, new URLs will be generated when you reload this settings page.
+67:             </p>
+68:         </section>
+69:     </div>
+70: {% endblock %}"
+sphinx-doc__sphinx-11876,CHANGES.rst,57,62,<module>,<module>,"54:   ``ImageDownloader``.
+55:   Patch by Nick Touran.
+56: * #11433: Added the ``linkcheck_allow_unauthorized`` configuration option.
+57:   Set this option to ``False`` to report HTTP 401 (unauthorized) server
+58:   responses as broken.
+59:   Patch by James Addison.
+60: 
+61: Testing
+62: -------
+63: 
+64: Release 7.2.6 (released Sep 13, 2023)
+65: ====================================="
+sphinx-doc__sphinx-12047,sphinx/environment/__init__.py,253,259,BuildEnvironment.__init__,BuildEnvironment.__init__,"250:         # attributes of ""any"" cross references
+251:         self.ref_context: dict[str, Any] = {}
+252: 
+253:         # search index data
+254: 
+255:         # docname -> title
+256:         self._search_index_titles: dict[str, str] = {}
+257:         # docname -> filename
+258:         self._search_index_filenames: dict[str, str] = {}
+259:         # stemmed words -> set(docname)
+260:         self._search_index_mapping: dict[str, set[str]] = {}
+261:         # stemmed words in titles -> set(docname)
+262:         self._search_index_title_mapping: dict[str, set[str]] = {}"
+sphinx-doc__sphinx-13172,sphinx/ext/autosummary/__init__.py,431,437,Autosummary.get_items;Autosummary;Autosummary.get_table,Autosummary.get_items;Autosummary;Autosummary.get_table,"428:             summary = extract_summary(self.bridge.result.data[:], self.state.document)
+429: 
+430:             items.append((display_name, sig, summary, real_name))
+431: 
+432:         return items
+433: 
+434:     def get_table(self, items: list[tuple[str, str, str, str]]) -> list[Node]:
+435:         """"""Generate a proper list of table nodes for autosummary:: directive.
+436: 
+437:         *items* is a list produced by :meth:`get_items`.
+438:         """"""
+439:         table_spec = addnodes.tabular_col_spec()
+440:         table_spec['spec'] = r'\X{1}{2}\X{1}{2}'"
+streamlink__streamlink-6207,src/streamlink_cli/main.py,292,297,output_stream_passthrough,output_stream_passthrough,"289: 
+290:     try:
+291:         url = stream.to_url()
+292:     except TypeError:
+293:         raise StreamlinkCLIError(""The stream specified cannot be translated to a URL"") from None
+294: 
+295:     output = PlayerOutput(
+296:         path=args.player,
+297:         args=args.player_args,
+298:         env=args.player_env,
+299:         quiet=not args.verbose_player,
+300:         call=True,"
