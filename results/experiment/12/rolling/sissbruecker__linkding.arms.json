@@ -1,0 +1,264 @@
+{
+ "arms": {
+  "control": {
+   "file_hits": {},
+   "file_metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "flags": {},
+   "hits": {},
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "retrieved": {},
+   "scores": {},
+   "tau": 0.0,
+   "version": null
+  },
+  "gated": {
+   "file_hits": {},
+   "file_metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "flags": {},
+   "hits": {},
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "retrieved": {},
+   "scores": {},
+   "tau": 0.5,
+   "version": "rolling"
+  },
+  "placebo": {
+   "file_hits": {},
+   "file_metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "flags": {},
+   "hits": {},
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "retrieved": {},
+   "scores": {},
+   "tau": 0.0,
+   "version": "rolling"
+  },
+  "treatment": {
+   "file_hits": {},
+   "file_metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "flags": {},
+   "hits": {},
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "retrieved": {},
+   "scores": {},
+   "tau": 0.0,
+   "version": "rolling"
+  }
+ },
+ "control": {
+  "false_positive_rate": 0.0,
+  "localization_rate": 0.0,
+  "n_false_positive": 0,
+  "n_flags": 0,
+  "n_localized": 0,
+  "n_tasks": 0,
+  "per_repo": {}
+ },
+ "control_flags": {},
+ "errors": {
+  "sissbruecker__linkding-1014": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sissbruecker__linkding-1045": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sissbruecker__linkding-1051": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sissbruecker__linkding-1101": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sissbruecker__linkding-1114": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sissbruecker__linkding-1153": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sissbruecker__linkding-1175": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sissbruecker__linkding-866": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sissbruecker__linkding-971": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sissbruecker__linkding-984": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sissbruecker__linkding-989": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sissbruecker__linkding-993": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sissbruecker__linkding-995": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "sissbruecker__linkding-999": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''"
+ },
+ "gold": {
+  "sissbruecker__linkding-1014": [
+   "bookmarks/views/bookmarks.py::<module>",
+   "bookmarks/views/bookmarks.py::archived",
+   "bookmarks/views/bookmarks.py::index",
+   "bookmarks/views/bookmarks.py::render_bookmarks_view",
+   "bookmarks/views/bookmarks.py::shared"
+  ],
+  "sissbruecker__linkding-1045": [
+   "bookmarks/services/auto_tagging.py::_qs_matches",
+   "bookmarks/services/auto_tagging.py::get_tags"
+  ],
+  "sissbruecker__linkding-1051": [
+   "bookmarks/templatetags/shared.py::render_markdown"
+  ],
+  "sissbruecker__linkding-1101": [
+   "bookmarks/views/settings.py::<module>",
+   "bookmarks/views/settings.py::bookmark_export"
+  ],
+  "sissbruecker__linkding-1114": [
+   "bookmarks/api/routes.py::<module>",
+   "bookmarks/api/routes.py::BookmarkBundleViewSet.get_serializer_context",
+   "bookmarks/api/serializers.py::<module>",
+   "bookmarks/api/serializers.py::BookmarkBundleSerializer",
+   "bookmarks/api/serializers.py::BookmarkBundleSerializer.create",
+   "bookmarks/api/serializers.py::BookmarkSerializer",
+   "bookmarks/services/bundles.py::<module>",
+   "bookmarks/views/bundles.py::<module>",
+   "bookmarks/views/bundles.py::_handle_edit",
+   "bookmarks/views/bundles.py::action"
+  ],
+  "sissbruecker__linkding-1153": [
+   "bookmarks/services/importer.py::_create_missing_tags"
+  ],
+  "sissbruecker__linkding-1175": [
+   "bookmarks/forms.py::<module>",
+   "bookmarks/forms.py::CustomErrorList",
+   "bookmarks/forms.py::convert_tag_string",
+   "bookmarks/urls.py::<module>",
+   "bookmarks/views/__init__.py::<module>",
+   "bookmarks/views/tags.py::<module>"
+  ],
+  "sissbruecker__linkding-866": [
+   "siteroot/settings/base.py::<module>"
+  ],
+  "sissbruecker__linkding-971": [
+   "bookmarks/utils.py::<module>",
+   "bookmarks/utils.py::generate_username",
+   "bookmarks/utils.py::redirect_with_query",
+   "siteroot/settings/base.py::<module>"
+  ],
+  "sissbruecker__linkding-984": [
+   "bookmarks/views/bookmarks.py::<module>",
+   "bookmarks/views/bookmarks.py::shared"
+  ],
+  "sissbruecker__linkding-989": [
+   "bookmarks/models.py::<module>",
+   "bookmarks/models.py::Bookmark.__str__",
+   "bookmarks/models.py::BookmarkAsset"
+  ],
+  "sissbruecker__linkding-993": [
+   "bookmarks/api/serializers.py::<module>",
+   "bookmarks/api/serializers.py::BookmarkSerializer",
+   "bookmarks/api/serializers.py::BookmarkSerializer.get_preview_image_url",
+   "bookmarks/api/serializers.py::BookmarkSerializer.get_website_title",
+   "bookmarks/api/serializers.py::TagListField"
+  ],
+  "sissbruecker__linkding-995": [
+   "bookmarks/api/auth.py::<module>",
+   "siteroot/settings/base.py::<module>"
+  ],
+  "sissbruecker__linkding-999": [
+   "bookmarks/api/routes.py::BookmarkViewSet.check",
+   "bookmarks/services/bookmarks.py::<module>",
+   "bookmarks/services/bookmarks.py::_merge_bookmark_data",
+   "bookmarks/services/bookmarks.py::unshare_bookmarks",
+   "bookmarks/services/tasks.py::<module>",
+   "bookmarks/services/tasks.py::_schedule_bookmarks_without_previews_task",
+   "bookmarks/services/tasks.py::is_html_snapshot_feature_active",
+   "bookmarks/services/website_loader.py::<module>",
+   "bookmarks/services/website_loader.py::WebsiteMetadata.to_dict",
+   "bookmarks/services/website_loader.py::load_website_metadata",
+   "bookmarks/views/bookmarks.py::<module>",
+   "bookmarks/views/bookmarks.py::close",
+   "bookmarks/views/bookmarks.py::handle_action"
+  ]
+ },
+ "granularity": "function",
+ "learn_errors": {},
+ "lift": {
+  "false_positive_rise_pts": 0.0,
+  "localization_lift_pts": 0.0
+ },
+ "memory_locations": {},
+ "mode": "rolling",
+ "n_errors": 14,
+ "n_eval": 14,
+ "retrieval_hit_rate": 0.0,
+ "retrieved": {},
+ "treatment": {
+  "false_positive_rate": 0.0,
+  "localization_rate": 0.0,
+  "n_false_positive": 0,
+  "n_flags": 0,
+  "n_localized": 0,
+  "n_tasks": 0,
+  "per_repo": {}
+ },
+ "treatment_flags": {},
+ "warmup": 20
+}
