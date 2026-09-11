@@ -58,7 +58,7 @@ class GroundTruth:
         if raw is None or self._resolver is None:
             return raw
         if instance_id not in self._resolved:
-            self._resolved[instance_id] = self._resolver(instance_id, raw)
+            self._resolved[instance_id] = self._resolver(instance_id, raw)   # may be None: outside the metric
         return self._resolved[instance_id]
 
 

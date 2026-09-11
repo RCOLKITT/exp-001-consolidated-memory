@@ -59,6 +59,16 @@ def is_test_path(path: str) -> bool:
     return "test" in p.split("/")[0] or "/tests/" in f"/{p}" or "/test/" in f"/{p}" or p.split("/")[-1].startswith("test_") or p.endswith("_test.py") or p.endswith("conftest.py")
 
 
+SOURCE_SUFFIXES = (".py",)
+
+
+def is_source_path(path: str) -> bool:
+    """v2: only Python source can carry a function-level target — the verifier's
+    file list is `.py` only, so a hunk in CHANGES.rst or a JSON schema is
+    unhittable by construction and is outside the function-level metric."""
+    return path.endswith(SOURCE_SUFFIXES)
+
+
 def ground_truth_from_tasks(tasks, exclude_tests: bool = True) -> GroundTruth:
     """instance_id -> hunk locations of the gold patch (non-test files by default)."""
     table: dict[str, tuple[Location, ...]] = {}
@@ -95,18 +105,21 @@ def symbolise_hunks(hunks, repo: str, commit: str, index: FunctionIndexCache) ->
     return tuple(out)
 
 
-def function_ground_truth_from_tasks(tasks, index: FunctionIndexCache, exclude_tests: bool = True) -> GroundTruth:
-    """Lazy: hunks are symbolised on first lookup (needs the checkout, or the cache)."""
+def function_ground_truth_from_tasks(tasks, index: FunctionIndexCache, exclude_tests: bool = True, source_only: bool = True) -> GroundTruth:
+    """Lazy: hunks are symbolised on first lookup (needs the checkout, or the
+    cache). With `source_only` (the v2 rule) non-Python hunks are dropped and a
+    task left with no hunk resolves to None: outside the metric, not a miss."""
     base = ground_truth_from_tasks(tasks, exclude_tests)
     meta = {t.instance_id: (t.repo, t.base_commit) for t in tasks}
 
     def resolve(iid: str, hunks):
         repo, commit = meta[iid]
-        return symbolise_hunks(hunks, repo, commit, index)
+        hunks = tuple(h for h in hunks if not source_only or is_source_path(h.path))
+        return symbolise_hunks(hunks, repo, commit, index) if hunks else None
     return GroundTruth(base._hunks, resolver=resolve)
 
 
-def gold_symbols(task, index: FunctionIndexCache, exclude_tests: bool = True) -> tuple[str, ...]:
-    """`path::qualname` keys of the gold patch (function-level recurrence)."""
-    hunks = tuple(h for h in parse_patch(task.patch).hunks if not (exclude_tests and is_test_path(h.path)))
+def gold_symbols(task, index: FunctionIndexCache, exclude_tests: bool = True, source_only: bool = True) -> tuple[str, ...]:
+    """`path::qualname` keys of the gold patch (function-level recurrence); same rule as the metric."""
+    hunks = tuple(h for h in parse_patch(task.patch).hunks if not (exclude_tests and is_test_path(h.path)) and (not source_only or is_source_path(h.path)))
     return tuple(f"{l.path}::{l.symbol}" for l in symbolise_hunks(hunks, task.repo, task.base_commit, index))

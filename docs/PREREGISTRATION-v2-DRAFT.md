@@ -89,7 +89,7 @@ first pre-run (§5.1, no model) is that exercise.
 |---|---|---|
 | Corpus, freshness gate, verifier model, serving, providers, `served_by` rule | as v1 | v1 block |
 | Verifier prompt | **v2 two-stage** (§3); treatment differs from control only by the memory section, injected at both stages | this draft |
-| Localization metric | **task-level function-level hit@3**: a task is localized if any flagged `path::qualname` range overlaps a non-test gold hunk; paired with function-level FP rate at k = 3 | this draft |
+| Localization metric | **task-level function-level hit@3**: a task is localized if any flagged `path::qualname` overlaps a non-test **Python-source** gold hunk (same symbol, overlapping span); paired with function-level FP rate at k = 3. A task with no Python gold hunk (docs-only, schema-only patches) is **outside the metric**, not a miss — the verifier's file list is `.py` only, so such a task is unhittable in every arm | this draft; run 23 finding |
 | Secondary metric | file-level hit@3 recovered from the same flags (so v1 and v2 controls can be compared) | this draft |
 | Embedding model / revision | as v1 (MiniLM `1110a243…`) | D20 |
 | Consolidation seam | **function-keyed**: same `(path, qualname)` ⇒ same pattern | §3 |
@@ -123,6 +123,15 @@ half of what recurrence makes possible.
 
 All three run on GitHub Actions, results committed under `results/`, and
 none of them evaluates a treatment arm or looks at v1's eval-arm outcomes.
+
+Note on gold files, found in run 23: v1's file-level gold included non-Python
+files (sphinx `CHANGES.rst` was the most frequent "gold file" in its build
+window, 14 of 20 tasks; pvlib's `whatsnew/*.rst` likewise). Those files were
+never in the verifier's list, so they were unhittable and inflated v1's
+recurrence and ceiling (findings §10–11 report them as-is; the registered
+v1 result is unaffected because both arms faced the same targets). v2 drops
+them at function level, as the metric row says; the file-level secondary in
+v2 uses the same Python-only rule and is therefore not exactly v1's metric.
 
 ### 5.1 Function-level recurrence (no model calls)
 `phase2.recurrence --level function` over the v1 chains and split:

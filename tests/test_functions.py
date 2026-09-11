@@ -100,3 +100,33 @@ def test_oracle_symbol_clause():
     assert Location("pkg/m.py", 1, 10**9, MODULE).overlaps(gold_mod)             # ...but does match a module-level hunk
     assert Location("pkg/m.py", 1, 10**9).overlaps(gold_fn)                      # file-level flag: unchanged v1 semantics
     assert gold_fn.file_level == Location("pkg/m.py", 1, 10**9)
+
+
+PATCH_DOCS_ONLY = """diff --git a/CHANGES.rst b/CHANGES.rst
+--- a/CHANGES.rst
++++ b/CHANGES.rst
+@@ -1,2 +1,3 @@
++note
+"""
+
+PATCH_MIXED = PATCH_DOCS_ONLY + """diff --git a/pkg/m.py b/pkg/m.py
+--- a/pkg/m.py
++++ b/pkg/m.py
+@@ -16,2 +16,2 @@
+-x
++y
+"""
+
+
+def test_function_level_gold_is_python_source_only_and_docs_only_tasks_leave_the_metric():
+    cache = FunctionIndexCache(lambda repo, commit, path: SRC if path == "pkg/m.py" else None)
+    docs, mixed = _task("d", PATCH_DOCS_ONLY), _task("m", PATCH_MIXED)
+    gt = function_ground_truth_from_tasks([docs, mixed], cache)
+    assert gt.locations("d") is None                                                     # not a miss: no Python target exists
+    assert gt.locations("m") == (Location("pkg/m.py", 15, 17, "Box.area"),)              # CHANGES.rst dropped
+    assert gold_symbols(docs, cache) == () and gold_symbols(mixed, cache) == ("pkg/m.py::Box.area",)
+    assert gold_symbols(mixed, cache, source_only=False) == ("CHANGES.rst::<module>", "pkg/m.py::Box.area")
+    from phase0.metrics import score
+    from phase0.verifier import Flag
+    m = score({"d": (Flag("d", Location("pkg/m.py", 15, 17, "Box.area"), ""),), "m": (Flag("m", Location("pkg/m.py", 15, 17, "Box.area"), ""),)}, gt, {"d": "o/r", "m": "o/r"})
+    assert (m.n_tasks, m.n_localized) == (1, 1)
