@@ -1,6 +1,6 @@
 # EXP-001 Pre-registration — v2 DRAFT (function-level memory)
 
-**Status (2026-09-11): owner chose design A (§12) — prequential evaluation
+**Status (2026-09-11, later): superseded by the registered block `docs/PREREGISTRATION-v2.md` (D35). Earlier status: owner chose design A (§12) — prequential evaluation
 on the same 10 repos. The one-split values in §4–5 are superseded by §13,
 which carries the design-A values; the rolling harness is built and
 tested (§3, D34); τ calibration is the last ⟦FILL⟧.** Not registered until

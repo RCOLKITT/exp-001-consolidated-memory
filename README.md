@@ -29,8 +29,9 @@ its harness (§3) is built and exercised live (D31); pre-runs §5.1–5.2 done
 MDE 10.2 at n = 373; needs n ≥ 521) — recorded in the draft §11 and D32,
 not registered. Sizing (run 26, draft §12): the split rule, not the corpus,
 capped the pool; a prequential design on the same 10 repos is feasible
-(ceiling 15.6 vs MDE 8.6, pool 530) — chosen by the owner (design A, D34): rolling evaluation built and tested; τ calibration
-is the last fill before `prereg-v2` (draft §13).
+(ceiling 15.6 vs MDE 8.6, pool 530) — chosen by the owner (design A, D34). **v2 REGISTERED** (`docs/PREREGISTRATION-v2.md`,
+branch `prereg/v2`, D35): primary = ungated function-level memory vs control, kill
+number 9, placebo margin 4.5, gated τ 0.50 secondary; sharded runs in flight.
 
 ## Layout
 

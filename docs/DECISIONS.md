@@ -415,3 +415,19 @@ are never scored as treatment. Values for the block are in draft §13; τ is
 the last fill. The paired MDE is reported with an assumed discordance of
 0.30, chosen before any treatment data and above v1's 0.09; the kill
 number does not depend on it.
+
+### D35. v2 registered: primary arm ungated, gated as secondary, placebo arm added
+Owner chose option 2 with the placebo arm (draft §14) on 2026-09-11.
+Registered in `docs/PREREGISTRATION-v2.md` with `docs/exp-run.v2.json`
+(branch `prereg/v2`). The primary comparison is the ungated memory arm
+against control, as in v1, so v2 differs from v1 by granularity alone;
+gating at τ = 0.50 is measured as a secondary. The placebo arm injects,
+on every task, as many memory lines as the treatment arm does, drawn by
+the same retrieval similarity from a fixed pool of five promoted memories
+from two repositories outside the experiment (streamlink, pvlib; run 8;
+`docs/placebo-pool.v2.json`, sha256 pinned in the block). H2 requires
+treatment − placebo ≥ 4.5 pts in addition to the kill number, the FP
+ceiling and the inert negative control: a lift the placebo matches is
+prompt perturbation, not memory (run 8 showed exactly that). The run is
+sharded by repository (A/B/C) to fit the runner's job limit; sharding is
+exact and the merge refuses duplicates.
