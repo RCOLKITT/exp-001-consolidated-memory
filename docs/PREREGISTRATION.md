@@ -1,7 +1,9 @@
 # EXP-001 Pre-registration — v1
 
 **Status:** REGISTERED at commit `a58d7e20ca6b` (2026-09-10), reachable as
-branch `prereg/v1` and tag `prereg-v1` (created by the owner, 2026-09-11). Owner approved the
+branch `prereg/v1`; the owner reports tag `prereg-v1` created on it (2026-09-11) —
+not yet visible on `origin` at the time of this note, so it may still be a
+local tag awaiting `git push origin prereg-v1`. Owner approved the
 design and the ceiling rule ("yes go with your recommended design and
 option b"). Changing any value below after this tag invalidates the result
 (spec §7). The tag is the public timestamp; the owner may add an external
