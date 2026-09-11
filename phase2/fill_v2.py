@@ -25,7 +25,24 @@ from pathlib import Path
 from phase2.power import mde_at
 
 
+def fill_prequential(preq: dict, control_per_repo: dict, repos: list[str], level: str = "function") -> dict:
+    """Design A: pool and seen2 come from phase2.prequential (rolling window),
+    p0 per repo from the function-level control run. Same rules as `fill`."""
+    out = {}
+    for repo in repos:
+        d, c = preq.get("repos", {}).get(repo), control_per_repo.get(repo)
+        if d is None or c is None:
+            out[repo] = {"error": "missing prequential or control data"}
+            continue
+        lv = d[level]
+        p0 = c["n_localized"] / c["n_tasks"] if c["n_tasks"] else 0.0
+        out[repo] = {"chain": d["chain"], "n_eval": lv["n_scorable"], "p0": round(p0, 4), "eval_seen2": lv["seen2"] or 0.0,
+                     "ceiling_pts": round(100 * (lv["seen2"] or 0.0) * (1 - p0), 1), "build_repeat_share": None, "gate3_discard_floor": None}
+    return _aggregate(out)
+
+
 def fill(recurrence: dict, control_per_repo: dict, split: dict, negative_control: str | None, excluded: list[str]) -> dict:
+    """Registered-split design: seen2 at prefix = build size, from phase2.recurrence."""
     repos = {}
     for repo, build in split.items():
         if repo == negative_control or repo in excluded or repo.startswith("_"):
@@ -45,6 +62,10 @@ def fill(recurrence: dict, control_per_repo: dict, split: dict, negative_control
                        "ceiling_pts": round(100 * seen2 * (1 - p0), 1),
                        "build_repeat_share": row.get("build_repeat_share"),
                        "gate3_discard_floor": round(0.5 * row["build_repeat_share"], 3) if row.get("build_repeat_share") is not None else None}
+    return _aggregate(repos)
+
+
+def _aggregate(repos: dict) -> dict:
     ok = {r: v for r, v in repos.items() if "error" not in v}
     pool = sum(v["n_eval"] for v in ok.values())
     p0 = sum(v["p0"] * v["n_eval"] for v in ok.values()) / pool if pool else 0.0
@@ -62,7 +83,7 @@ def render(f: dict) -> str:
         if "error" in v:
             out.append(f"| {r} | — | — | — | — | — | — | {v['error']} |")
         else:
-            out.append(f"| {r} | {v['build']} | {v['n_eval']} | {v['p0']:.3f} | {v['eval_seen2']:.3f} | {v['ceiling_pts']} | {v['build_repeat_share']} | {v['gate3_discard_floor']} |")
+            out.append(f"| {r} | {v.get('build', v.get('chain'))} | {v['n_eval']} | {v['p0']:.3f} | {v['eval_seen2']:.3f} | {v['ceiling_pts']} | {v['build_repeat_share']} | {v['gate3_discard_floor']} |")
     out.append("")
     out.append(f"eval pool {f['eval_pool']}; p0 {f['p0']}; ceiling {f['ceiling_pts']} pts; MDE {f['mde_pts']} pts; kill number {f['kill_number_pts']} pts ({f['kill_rule']}); feasible: {f['feasible']} ({f['feasibility_rule']})")
     return "\n".join(out) + "\n"
@@ -70,11 +91,15 @@ def render(f: dict) -> str:
 
 def _main(argv):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--recurrence", required=True); ap.add_argument("--control", required=True); ap.add_argument("--split", required=True)
+    ap.add_argument("--recurrence"); ap.add_argument("--control", required=True); ap.add_argument("--split")
+    ap.add_argument("--prequential", help="design A: phase2.prequential JSON instead of --recurrence/--split"); ap.add_argument("--repos", default="", help="design A: treatment repos")
     ap.add_argument("--negative-control"); ap.add_argument("--excluded", default=""); ap.add_argument("--out")
     a = ap.parse_args(argv)
-    f = fill(json.loads(Path(a.recurrence).read_text()), json.loads(Path(a.control).read_text())["per_repo"], json.loads(Path(a.split).read_text()),
-             a.negative_control, [x for x in a.excluded.split(",") if x])
+    ctl = json.loads(Path(a.control).read_text())["per_repo"]
+    if a.prequential:
+        f = fill_prequential(json.loads(Path(a.prequential).read_text()), ctl, [r for r in a.repos.split(",") if r])
+    else:
+        f = fill(json.loads(Path(a.recurrence).read_text()), ctl, json.loads(Path(a.split).read_text()), a.negative_control, [x for x in a.excluded.split(",") if x])
     print(render(f))
     if a.out:
         Path(a.out).write_text(json.dumps(f, indent=1, sort_keys=True) + "\n")

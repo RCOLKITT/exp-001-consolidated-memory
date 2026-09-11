@@ -1,9 +1,10 @@
 # EXP-001 Pre-registration — v2 DRAFT (function-level memory)
 
-**Status (2026-09-11): pre-runs §5.1–5.2 done; the feasibility criterion
-(§4) FAILS at the registered pool size — see §11. Not registered, and under
-its own rules must not be registered as drafted.** Nothing below binds anyone
-until the owner approves a filled-in block and it is tagged `prereg-v2`. Fields
+**Status (2026-09-11): owner chose design A (§12) — prequential evaluation
+on the same 10 repos. The one-split values in §4–5 are superseded by §13,
+which carries the design-A values; the rolling harness is built and
+tested (§3, D34); τ calibration is the last ⟦FILL⟧.** Not registered until
+the owner approves §13 and it is tagged `prereg-v2`. Fields
 marked ⟦FILL⟧ are set by the three no-treatment pre-runs in §5 and then
 frozen; the *rules* for filling them are fixed here so that no value is
 chosen after any treatment result is seen. v1 (`docs/PREREGISTRATION.md`,
@@ -67,6 +68,8 @@ registered criterion and cannot rescue H2.
 | Flags carry `Location(path, def_start, def_end, symbol)`; gold hunks are symbolised the same way (lazy, memoised). The oracle gains **one clause**: when both sides name a symbol they must be equal — otherwise a `<module>` flag would earn file-level credit. File-level flags (no symbol) keep v1 semantics exactly, which is what the file-level secondary metric relies on | `adapters/code/oracle.py`, `phase0/ground_truth.py` | `tests/test_functions.py::test_oracle_symbol_clause` |
 | Function index cache (`functions.jsonl`, keyed by repo/commit/path) saved with every run so replays never need the checkout | `phase0/functions.py` | cache round-trip test |
 | Gate 2.3-v2 tooling: `handcheck export-functions` (50 gold hunks → oracle symbol + source context for the human read) and `verify-functions` (indentation-based symboliser, independent of `ast`) | `phase2/handcheck.py` | agreement with `ast` on a fixture; scoring test |
+| **Rolling (prequential) evaluation** (design A): per task, every arm localizes (control: no memory; memory arms: the snapshot pinned after task t−1, gated by τ), then the control arm's flags are ingested, then tick; a promotion's snapshot becomes visible at t+1. A failure in any arm drops the task from every arm's score; the control call is still made so the learning stream never depends on arm order. Negative control learns nothing. `arms.json` records the memory version each arm saw per task, the location every memory names (from provenance), and each task's gold keys | `adapters/code/pipeline.py::rolling`, `phase4/rolling.py`, `phase4/report.py` | `tests/test_rolling.py` (memory as of t−1, control-only learning, failure pairing, negative control); CLI end to end |
+| τ calibration from rolling runs on calibration repos: (cosine, memory names a gold symbol) pairs from the ungated arm; precision-0.5 rule | `phase2/calibrate_tau.py` | rule tests; end to end |
 | Consolidation keyed by `(path, qualname)`; retrieval by embedding cosine of issue text vs memory content (as v1) | `adapters/code/similarity.py` (`FunctionKeyedSimilarity`) | seam test: same function ⇒ 1.0 |
 | Retrieval gate τ: a memory is injected only if cosine ≥ τ; `retrieved` records the score and whether it passed | `adapters/code/pipeline.py` | test: τ = 1.01 ⇒ never injected, arms identical |
 | Three-arm evaluate (control / gated / ungated), interleaved per task, seeded; per-task hits written to `arms.json` so `phase4.paired` needs no corpus | `phase4/evaluate.py`, `phase4/paired.py` | pairing test extended to three arms |
@@ -340,3 +343,44 @@ and it evaluates the mechanism the way it would be deployed. B adds 43
 tasks for the cost of 11 more control runs and a weaker ceiling; C adds
 two repos the file-level ceiling rule excluded, which invites the
 question of why the rule changed.
+
+## 13. Design A — values (supersedes §4–5 where they differ)
+
+| Item | Value | Source |
+|---|---|---|
+| Evaluation | **prequential**: per repo, tasks in chain order; the first **20** are warm-up (learned from, never scored); every later task is scored by every arm against the memory snapshot pinned after the previous task | §12, D34 |
+| Learning stream | the control arm's flags on every task (warm-up and eval); labels from the oracle; promotion ≥ 2 `bad` records from ≥ 2 tasks; TTL 30; one kernel per repo | §3 |
+| Arms | control (no memory) · **treatment** (memory, gate τ) · ungated (memory, τ = 0; attribution only); arm order shuffled per task, **seed 11** | §2 |
+| Treatment repos | the same 10 as v1 (conan, cfn-lint, matplotlib, haystack, pylint, instructlab, keras, reflex, sphinx, pdm) | v1 |
+| Negative control | sissbruecker/linkding — rolling with learning off; both arms scored | v1 |
+| Calibration repos (τ only) | streamlink/streamlink, pvlib/pvlib-python — excluded from treatment by v1's ceiling rule; rolling with learning on; never scored as treatment | §5.3-A |
+| Metric | function-level hit@3, Python-source gold, symbol-matched (§4); FP at k = 3; file-level from stage-1 flags as secondary | §4 |
+| Eval pool | **530** scorable tasks (run 26) | `docs/v2-fill-designA.json` |
+| p0 (function level, eval-weighted) | **0.442** (run 24, first 20 tasks per repo) | §5.2 |
+| Ceiling | **15.6 pts** = eval-weighted seen2 × (1 − p0) | §12 |
+| MDE (unpaired rule) | **8.6 pts** | `phase2.power.mde_at` |
+| **Kill number** | **9 pts** = ceil(max(8.6, 0.5 × 15.6)) | §4 rule |
+| Feasibility | ceiling / MDE = 1.82 ≥ 1.5 — **passes** | §4 rule |
+| Paired interval | reported as primary CI (`phase4.paired`); assumed discordance for the paired MDE: **0.30** (v1 observed 0.09; function level assumed more volatile). Kill number stays from the unpaired rule | §12 lever 2 |
+| τ | ⟦FILL from §5.3-A⟧ | calibration run |
+| Gate 3 floor (per treatment repo, whole chain) | ≥ 2 promoted memories by chain end; discard rate ≥ 0.5 × whole-chain repeat share: conan 0.106, cfn-lint 0.141, matplotlib 0.070, haystack 0.141, pylint 0.097, instructlab 0.200, keras 0.023, reflex 0.092, sphinx 0.058, pdm 0.114 | run 25 |
+| FP ceiling, majority, negative-control criteria | as §4 | §4 |
+| Hard stop | six weeks from `prereg-v2` | §4 |
+
+### 5.3-A τ calibration (replaces §5.3)
+Design A leaves no build-only tasks: everything after warm-up is scored.
+So τ is calibrated on repos that are never scored as treatment — the two
+the v1 ceiling rule excluded (streamlink, pvlib) — by running the rolling
+mode with learning on and reading, from the ungated arm, every (retrieval
+cosine, memory names a gold symbol) pair. τ = the lowest θ in steps of 0.05
+at which precision reaches 0.5; if never, the 90th percentile of the
+non-matching cosines (`phase2.calibrate_tau`). One value for all repos.
+Cost ≈ 250 calls. Run as `stage: rolling` with `calibrate_tau: true`.
+
+### Spend plan
+Calibration ≈ 250 calls. Registered run: 10 repos + linkding, 848 tasks;
+control 2 calls per task (stage 1 + 2) ≈ 1,700; memory arms on 530 eval
+tasks, 2 arms × 2 stages ≈ 2,100 minus cache hits where τ gates nothing;
+≈ 4,000 calls, roughly 6–7 hours of runner time at run 23's rate. Fits a
+single 6-hour job only barely; the rolling stage supports `resume_run`
+(content-addressed caches), so a second run finishes it at no extra spend.

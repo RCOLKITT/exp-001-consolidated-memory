@@ -1,6 +1,6 @@
 {
   "corpus_run": 18,
-  "stage": "both",
+  "stage": "rolling",
   "repos": [
     "conan-io/conan",
     "aws-cloudformation/cfn-lint",
@@ -10,17 +10,10 @@
     "instructlab/instructlab",
     "keras-team/keras",
     "reflex-dev/reflex",
-    "streamlink/streamlink",
     "sphinx-doc/sphinx",
     "pdm-project/pdm",
-    "sissbruecker/linkding",
-    "pvlib/pvlib-python"
+    "sissbruecker/linkding"
   ],
-  "build": 20,
-  "build_rule": "70:50,58:40,41:30,0:20",
-  "min_eval": 10,
-  "ceiling_metrics": "results/phase0/<function-level control run>/control/metrics.json",
-  "ceiling": 0.9,
   "negative_control": "sissbruecker/linkding",
   "min_occurrences": 2,
   "min_distinct_inputs": 2,
@@ -47,17 +40,22 @@
   "top_k": 3,
   "seed": 11,
   "max_eval_per_repo": 0,
-  "prereg": "v2-DRAFT",
+  "prereg": "v2-DRAFT-designA",
   "granularity": "function",
   "arms": [
     "control",
-    "gated",
+    "treatment",
     "ungated"
   ],
   "tau": null,
-  "kill_number_pts": null,
-  "split_from": "results/experiment/5/split.json",
-  "control_run_function_level": null,
-  "recurrence_run_function_level": null,
-  "tau_calibration_run": null
+  "kill_number_pts": 9,
+  "control_run_function_level": 24,
+  "recurrence_run_function_level": 25,
+  "tau_calibration_run": null,
+  "warmup": 20,
+  "calibration_repos": [
+    "streamlink/streamlink",
+    "pvlib/pvlib-python"
+  ],
+  "prequential_run": 26
 }

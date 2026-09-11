@@ -71,6 +71,7 @@ class ArmResult:
     file_flags_by_task: dict[str, tuple[Flag, ...]] = field(default_factory=dict) # v2: stage-1 file flags (secondary metric)
     scores_by_task: dict[str, dict[str, float]] = field(default_factory=dict)     # memory id -> retrieval score (all candidates)
     tau: float = 0.0
+    version_by_task: dict[str, Optional[str]] = field(default_factory=dict)       # rolling mode: memory version this arm saw per task
 
     def metrics(self, truth: GroundTruth, repo_of) -> ArmMetrics:
         return score(self.flags_by_task, truth, repo_of)
@@ -207,6 +208,108 @@ class RepoPipeline:
                     r.file_flags_by_task[t.instance_id] = res.file_flags()
         return results
 
+    # -- Design A: prequential / rolling evaluation (v2 draft §12) ---------------
+    def rolling(self, tasks: Sequence[Task], warmup: int, seed: int, specs: Sequence[ArmSpec], learn: bool = True) -> dict[str, ArmResult]:
+        """Every task after `warmup` is an eval task scored against the memory
+        built from every task before it (the pinned snapshot after task t-1).
+        Order of operations per task, fixed:
+          1. every arm localizes task t (control: no memory; memory arms: the
+             snapshot as of t-1, gated by their τ); arm order shuffled by seed;
+          2. the CONTROL arm's flags become records and are ingested — the
+             learning stream never depends on memory's own effect;
+          3. tick; a promotion takes a new snapshot which becomes visible at t+1.
+        A task that fails in any arm is excluded from every arm's score but,
+        if its control call succeeded, still feeds learning (the stream is a
+        property of the corpus, not of the evaluation). `learn=False` is the
+        negative control: memory stays empty and every arm equals control."""
+        if self.kernel.frozen:
+            raise RuntimeError("kernel already frozen")
+        if not any(sp.version is None for sp in specs):
+            raise ValueError("rolling evaluation needs a control arm (version None)")
+        tasks = sorted(tasks, key=lambda t: (t.created_at, t.instance_id))
+        results = {sp.name: ArmResult(sp.name, "rolling" if sp.version else None, tau=sp.tau) for sp in specs}
+        self.learn_errors = {}
+        self.n_warmup = min(warmup, len(tasks))
+        rng = random.Random(seed)
+        control_spec = next(sp for sp in specs if sp.version is None)
+        for i, t in enumerate(tasks):
+            version = self.kernel.pinned_version                      # memory as of tasks < i (None until the first promotion)
+            is_eval = i >= warmup
+            order = list(specs)
+            if is_eval:
+                rng.shuffle(order)                                    # interleaved
+            else:
+                order = [control_spec]
+            got, failure = {}, None
+            for sp in order:
+                try:
+                    if sp.version is None:
+                        self.kernel.pin(None)
+                        memories, ids, scores = [], (), {}
+                    else:
+                        self.kernel.pin(version)
+                        memories, ids, scores = self._retrieve(t, sp.tau) if version else ([], (), {})
+                    got[sp.name] = (self._localize(t, memories), ids, scores)
+                except Exception as e:
+                    failure = f"{type(e).__name__}: {str(e)[:300]}"
+                    break
+            if failure is not None and control_spec.name not in got:
+                try:                                                  # the learning stream must not depend on arm order
+                    self.kernel.pin(None)
+                    got[control_spec.name] = (self._localize(t, []), (), {})
+                except Exception as e:
+                    failure = f"{type(e).__name__}: {str(e)[:300]}"
+            self.kernel.pin(version)
+            if learn:
+                if control_spec.name in got:
+                    for r in self._records(t, got[control_spec.name][0].flags()):
+                        self.kernel.ingest(r)
+                else:
+                    self.learn_errors[t.instance_id] = failure or "control arm failed"
+                res = self.kernel.tick()
+                if res.promotion and res.promotion.promoted:
+                    self.kernel.pin(self.kernel.snapshot())           # visible from the next task on
+            if not is_eval:
+                continue
+            if failure is not None:
+                for r in results.values():
+                    r.errors[t.instance_id] = failure
+                continue
+            for name, (res_, ids, scores) in got.items():
+                r = results[name]
+                r.flags_by_task[t.instance_id] = res_.flags()
+                r.retrieved_by_task[t.instance_id] = ids
+                r.scores_by_task[t.instance_id] = scores
+                r.version_by_task[t.instance_id] = version if name != control_spec.name else None
+                if hasattr(res_, "file_flags"):
+                    r.file_flags_by_task[t.instance_id] = res_.file_flags()
+        self.frozen_version = self.kernel.freeze()
+        return results
+
+    def memory_locations(self) -> dict[str, str]:
+        """memory id -> `path::symbol` (or `path`) of its source flags — the
+        location a memory names, read from provenance, not parsed from text."""
+        out = {}
+        for o in self.kernel.store.all():
+            for rid in o.provenance:
+                f = self._flags.get(rid)
+                if f is not None:
+                    out[o.id] = f"{f.location.path}::{f.location.symbol}" if f.location.symbol else f.location.path
+                    break
+        return out
+
+    def gold_keys(self, tasks: Sequence[Task]) -> dict[str, list[str]]:
+        """instance_id -> gold `path::symbol` keys (None-gold tasks omitted)."""
+        out = {}
+        for t in tasks:
+            try:
+                gt = self.truth.locations(t.instance_id)
+            except Exception:          # gold unresolvable (no checkout): the task was excluded from scoring anyway
+                continue
+            if gt:
+                out[t.instance_id] = sorted({f"{h.path}::{h.symbol}" if h.symbol else h.path for h in gt})
+        return out
+
     # -- Learning-phase diagnostics (Gate 3) -------------------------------------
     def gate3_stats(self) -> dict:
         ingests = self.kernel.ledger.events("ingest")
@@ -220,6 +323,7 @@ class RepoPipeline:
             "promoted": len(self.kernel.store.live()),
             "frozen_version": self.frozen_version,
             "learn_errors": getattr(self, "learn_errors", {}),
+            **({"n_warmup": self.n_warmup} if hasattr(self, "n_warmup") else {}),
         }
 
 

@@ -39,8 +39,8 @@ def model_url():
     srv.shutdown()
 
 
-def _git_repo(root: Path) -> str:
-    d = root / "repos" / "o__r"; (d / "pkg").mkdir(parents=True)
+def _git_repo(root: Path, name: str = "o__r") -> str:
+    d = root / "repos" / name; (d / "pkg").mkdir(parents=True)
     (d / "pkg" / "parser.py").write_text(SRC)
     env = {**os.environ, "GIT_AUTHOR_NAME": "t", "GIT_AUTHOR_EMAIL": "t@x", "GIT_COMMITTER_NAME": "t", "GIT_COMMITTER_EMAIL": "t@x"}
     for cmd in (["git", "init", "-q"], ["git", "add", "."], ["git", "commit", "-q", "-m", "base"]):
@@ -53,13 +53,13 @@ def _patch(start):
 
 
 def test_function_level_cli_end_to_end(tmp_path, model_url):
-    sha = _git_repo(tmp_path)
+    sha = _git_repo(tmp_path); sha_n = _git_repo(tmp_path, "n__c")
     tasks = tmp_path / "tasks.jsonl"
     with tasks.open("w") as f:
         for i in range(1, 9):   # 4 build + 4 eval; gold = parse (line 1) throughout, and one negative-control task
             f.write(json.dumps({"instance_id": f"o__r-{i}", "repo": "o/r", "base_commit": sha, "created_at": f"2025-08-{i:02d}T00:00:00Z",
                                 "problem_statement": f"crash in parse {i}", "patch": _patch(1)}) + "\n")
-        f.write(json.dumps({"instance_id": "n__c-1", "repo": "n/c", "base_commit": sha, "created_at": "2025-08-01T00:00:00Z", "problem_statement": "x", "patch": _patch(1)}) + "\n")
+        f.write(json.dumps({"instance_id": "n__c-1", "repo": "n/c", "base_commit": sha_n, "created_at": "2025-08-01T00:00:00Z", "problem_statement": "x", "patch": _patch(1)}) + "\n")
     split = tmp_path / "split.json"; split.write_text(json.dumps({"o/r": 4, "n/c": 0}))
     env = {**os.environ, "MODEL_API_KEY": "k"}
     common = ["--tasks", str(tasks), "--split", str(split), "--repos-dir", str(tmp_path / "repos"), "--provider", "openai-compatible", "--base-url", model_url,
@@ -77,6 +77,8 @@ def test_function_level_cli_end_to_end(tmp_path, model_url):
     assert g4["control"]["n_tasks"] == 4 and g4["localization_lift_pts"] == 0.0 and g4["false_positive_rise_pts"] == -50.0
     assert g4["secondary_arms"]["ungated"]["localization_lift_pts"] == 0.0 and g4["file_level_secondary"]["control"]["localization_rate"] == 1.0
     assert g4["negative_control_lift"] == {"localization_lift_pts": 0.0, "false_positive_rise_pts": 0.0}
+    neg = json.loads((tmp_path / "eval" / "n__c" / "arms.json").read_text())
+    assert neg["control"]["n_tasks"] == 1 and neg["n_errors"] == 0 and neg["arms"]["treatment"]["flags"] == neg["arms"]["control"]["flags"]
     arms = json.loads((tmp_path / "eval" / "o__r" / "arms.json").read_text())
     assert set(arms["arms"]) == {"control", "treatment", "ungated"} and all(arms["arms"]["treatment"]["hits"].values())
     assert arms["arms"]["control"]["flags"]["o__r-5"] == ["pkg/parser.py::dump", "pkg/parser.py::parse"]
@@ -90,3 +92,35 @@ def test_function_level_cli_end_to_end(tmp_path, model_url):
     pj = json.loads((tmp_path / "paired" / "paired.json").read_text())
     assert pj["primary"]["n_tasks"] == 4 and pj["primary"]["flags_differed"] == 4 and pj["primary"]["retrieved_any"] == 4
     assert (tmp_path / "paired" / "paired-ungated.md").exists()
+
+
+def test_rolling_cli_end_to_end(tmp_path, model_url):
+    sha = _git_repo(tmp_path); sha_n = _git_repo(tmp_path, "n__c")
+    tasks = tmp_path / "tasks.jsonl"
+    with tasks.open("w") as f:
+        for i in range(1, 9):
+            f.write(json.dumps({"instance_id": f"o__r-{i}", "repo": "o/r", "base_commit": sha, "created_at": f"2025-08-{i:02d}T00:00:00Z",
+                                "problem_statement": f"crash in parse {i}", "patch": _patch(1)}) + "\n")
+        for i in range(1, 5):
+            f.write(json.dumps({"instance_id": f"n__c-{i}", "repo": "n/c", "base_commit": sha_n, "created_at": f"2025-08-{i:02d}T00:00:00Z", "problem_statement": "x", "patch": _patch(1)}) + "\n")
+    env = {**os.environ, "MODEL_API_KEY": "k"}
+    r = subprocess.run([sys.executable, "-m", "phase4.rolling", "--tasks", str(tasks), "--repos", "o/r,n/c", "--warmup", "3", "--repos-dir", str(tmp_path / "repos"),
+                        "--provider", "openai-compatible", "--base-url", model_url, "--model", "m", "--top-k", "2", "--similarity", "hashing",
+                        "--granularity", "function", "--consolidation", "function", "--tau", "0.0", "--min-occurrences", "2", "--min-distinct-inputs", "2",
+                        "--negative-control", "n/c", "--seed", "11", "--arms", "control,treatment,ungated", "--out", str(tmp_path / "rolling")], capture_output=True, text=True, env=env)
+    assert r.returncode == 0, r.stderr[-1500:]
+    g4 = json.loads((tmp_path / "rolling" / "gate4.json").read_text())
+    assert g4["mode"] == "rolling" and g4["warmup"] == 3 and g4["control"]["n_tasks"] == 5
+    assert g4["false_positive_rise_pts"] == -50.0 and g4["negative_control_lift"]["localization_lift_pts"] == 0.0
+    arms = json.loads((tmp_path / "rolling" / "o__r" / "arms.json").read_text())
+    assert arms["n_eval"] == 5 and all(v for v in arms["arms"]["treatment"]["versions"].values())     # memory promoted during warm-up, visible to every eval task
+    g3 = json.loads((tmp_path / "rolling" / "o__r" / "gate3.json").read_text())
+    assert g3["promoted"] == 1 and g3["n_tasks"] == 8 and g3["n_warmup"] == 3
+    neg = json.loads((tmp_path / "rolling" / "n__c" / "arms.json").read_text())
+    assert neg["n_eval"] == 1 and neg["n_errors"] == 0 and neg["arms"]["treatment"]["flags"] == neg["arms"]["control"]["flags"]
+    assert (tmp_path / "rolling" / "o__r" / "kernel.json").exists()
+    assert list(arms["memory_locations"].values()) == ["pkg/parser.py::parse"] and all(v == ["pkg/parser.py::parse"] for v in arms["gold"].values())
+    r = subprocess.run([sys.executable, "-m", "phase2.calibrate_tau", "--rolling-dir", str(tmp_path / "rolling"), "--arm", "ungated", "--out", str(tmp_path / "tau.json")], capture_output=True, text=True)
+    assert r.returncode == 0, r.stderr[-800:]
+    tau = json.loads((tmp_path / "tau.json").read_text())
+    assert tau["n_pairs"] == 5 and tau["n_match"] == 5 and tau["tau"] == 0.0          # every retrieval named the gold function

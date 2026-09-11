@@ -402,3 +402,16 @@ is a different hypothesis) — and neither is relied on. No design is
 chosen here; the recommendation is design A in draft §12, and picking it
 means a rolling-evaluation mode in the harness before §5.2/§5.3 are re-run
 and the block is filled and tagged.
+
+### D34. Design A adopted: rolling evaluation built; τ calibrated on the excluded repos
+Owner chose design A (2026-09-11). The rolling mode fixes the per-task
+order (all arms localize, then the control flags are ingested, then tick)
+so the memory an arm sees is exactly the snapshot after the previous task
+and the learning stream never depends on memory's effect or on arm order.
+Because design A scores every post-warm-up task, τ cannot be calibrated
+on "build tasks" without leakage; it is calibrated instead on the two
+repos v1's ceiling rule excluded from treatment (streamlink, pvlib), which
+are never scored as treatment. Values for the block are in draft §13; τ is
+the last fill. The paired MDE is reported with an assumed discordance of
+0.30, chosen before any treatment data and above v1's 0.09; the kill
+number does not depend on it.
