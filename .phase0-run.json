@@ -1,0 +1,24 @@
+{
+ "dataset": "SWE-bench-Live/SWE-bench-Live",
+ "split": "full",
+ "cutoff": "2023-12-31",
+ "model": "meta-llama/llama-3.3-70b-instruct",
+ "repos": [
+  "conan-io/conan",
+  "aws-cloudformation/cfn-lint",
+  "matplotlib/matplotlib",
+  "deepset-ai/haystack",
+  "pylint-dev/pylint",
+  "instructlab/instructlab",
+  "keras-team/keras",
+  "reflex-dev/reflex",
+  "streamlink/streamlink",
+  "sphinx-doc/sphinx",
+  "pdm-project/pdm",
+  "sissbruecker/linkding",
+  "pvlib/pvlib-python"
+ ],
+ "run_control": false,
+ "level": "function",
+ "ceiling_metrics": ""
+}
