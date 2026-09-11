@@ -169,6 +169,8 @@ jobs:
           set -euo pipefail
           D="${{ steps.cfg.outputs.dir }}"; mkdir -p "$D"; cp .exp-run.json "$D/config.json"
           DIRS=$(echo "${{ steps.cfg.outputs.merge_runs }}" | tr ',' '\n' | sed 's#^#results/experiment/#; s#$#/rolling#' | paste -sd, -)
+          CFGS=$(echo "${{ steps.cfg.outputs.merge_runs }}" | tr ',' '\n' | sed 's#^#results/experiment/#; s#$#/config.json#' | paste -sd' ' -)
+          python -m phase2.check_config docs/exp-run.v2.json $CFGS | tee "$D/config-check.txt"
           NC=""; [ -n "${{ steps.cfg.outputs.negative_control }}" ] && NC="--negative-control ${{ steps.cfg.outputs.negative_control }}"
           python -m phase4.aggregate --dirs "$DIRS" $NC --out "$D/rolling"
           python -m phase4.paired --eval-dir "$D/rolling" $NC --secondary-repos "${{ steps.cfg.outputs.secondary_repos }}" --out "$D/paired"

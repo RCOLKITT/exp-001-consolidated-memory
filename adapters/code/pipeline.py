@@ -248,7 +248,7 @@ class RepoPipeline:
         return results
 
     # -- Design A: prequential / rolling evaluation (v2 draft §12) ---------------
-    def rolling(self, tasks: Sequence[Task], warmup: int, seed: int, specs: Sequence[ArmSpec], learn: bool = True) -> dict[str, ArmResult]:
+    def rolling(self, tasks: Sequence[Task], warmup: int, seed: int, specs: Sequence[ArmSpec], learn: bool = True, max_consecutive_failures: int = 10) -> dict[str, ArmResult]:
         """Every task after `warmup` is an eval task scored against the memory
         built from every task before it (the pinned snapshot after task t-1).
         Order of operations per task, fixed:
@@ -271,7 +271,10 @@ class RepoPipeline:
         self.n_warmup = min(warmup, len(tasks))
         rng = random.Random(seed)
         control_spec = next(sp for sp in specs if sp.version is None)
+        consecutive = 0
         for i, t in enumerate(tasks):
+            if consecutive >= max_consecutive_failures:              # circuit breaker: a dead key or endpoint, not a task problem
+                raise RuntimeError(f"{consecutive} consecutive task failures at {t.instance_id}; last: {failure}")
             version = self.kernel.pinned_version                      # memory as of tasks < i (None until the first promotion)
             is_eval = i >= warmup
             order = list(specs)
@@ -304,6 +307,7 @@ class RepoPipeline:
                     got[control_spec.name] = (self._localize(t, []), (), {})
                 except Exception as e:
                     failure = f"{type(e).__name__}: {str(e)[:300]}"
+            consecutive = consecutive + 1 if failure is not None else 0
             self.kernel.pin(version)
             if learn:
                 if control_spec.name in got:

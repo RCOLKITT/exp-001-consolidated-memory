@@ -31,7 +31,8 @@ not registered. Sizing (run 26, draft §12): the split rule, not the corpus,
 capped the pool; a prequential design on the same 10 repos is feasible
 (ceiling 15.6 vs MDE 8.6, pool 530) — chosen by the owner (design A, D34). **v2 REGISTERED** (`docs/PREREGISTRATION-v2.md`,
 branch `prereg/v2`, D35): primary = ungated function-level memory vs control, kill
-number 9, placebo margin 4.5, gated τ 0.50 secondary; sharded runs in flight.
+number 9, placebo margin 4.5, gated τ 0.50 secondary. First attempt (runs 10–12) was cut short by the API key's
+spend cap; resume pending a raised limit (D36).
 
 ## Layout
 

@@ -67,3 +67,15 @@ def test_negative_control_learns_nothing_and_arms_are_identical():
     assert p.gate3_stats()["promoted"] == 0 and p.gate3_stats()["candidate_writes"] == 0
     assert arms["treatment"].flags_by_task == arms["control"].flags_by_task == arms["ungated"].flags_by_task
     assert all(v is None for v in arms["treatment"].version_by_task.values())
+
+
+def test_circuit_breaker_stops_a_dead_endpoint():
+    class Dead(FunctionVerifier):
+        def complete(self, req):
+            raise RuntimeError("HTTP 403 key limit exceeded")
+    import pytest
+    tasks = [_ftask(i) for i in range(1, 15)]
+    p, _ = _fpipeline(tasks)
+    p.localizer = LocalizerV2(Dead(), "m", k=2)
+    with pytest.raises(RuntimeError, match="consecutive task failures"):
+        p.rolling(tasks, warmup=0, seed=1, specs=SPECS, max_consecutive_failures=3)

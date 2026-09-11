@@ -548,3 +548,15 @@ flips in which the injected memories were about an unrelated plugin —
 the prompt's shape, not its content, moved the verifier. Recorded in
 draft §14 with the design decision it raises (primary arm gated vs
 ungated; optional placebo arm).
+
+
+## 19. Registered v2 run: first attempt interrupted by the key's spend cap (runs 10–12)
+
+Three shards ran in parallel and exhausted the OpenRouter key's total
+limit after ~40 minutes (402 in-flight budget, then 403 "Key limit
+exceeded"). Partial per-repo files exist for shards B and C and are not
+analysed. Resume is exact via the content-addressed caches (D36). Two
+harness observations from the partial data, both mechanics: the 402 is
+documented as retryable and is now treated as transient; one more
+truncated-JSON shape (a stray `'` closing the last string, finish_reason
+stop) is now salvaged.

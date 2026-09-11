@@ -64,3 +64,14 @@ def test_no_stage2_when_stage1_returns_nothing():
             return '{"files": []}'
     res = LocalizerV2(Empty(), "m").localize("i1", "t", FILES, index_of=lambda p: ())
     assert res.flags() == () and res.ranked == ()
+
+
+def test_salvage_handles_a_stray_quote_closing_the_last_string():
+    text = '{"functions": [\n  {"path": "src/cfnlint/rules/functions/ForEach.py", "qualname": "ForEach.match\'},'
+    out = json.loads(OpenAICompatibleClient._extract({"choices": [{"message": {"content": text}}]}, "functions"))
+    assert [(f["path"], f["qualname"]) for f in out["functions"]] == [("src/cfnlint/rules/functions/ForEach.py", "ForEach.match")]
+
+
+def test_402_is_transient():
+    from phase0.verifier import TRANSIENT_HTTP
+    assert 402 in TRANSIENT_HTTP and 403 not in TRANSIENT_HTTP

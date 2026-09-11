@@ -102,7 +102,7 @@ class TransientError(RuntimeError):
     """Rate limit / upstream outage: retry, do not change response mode."""
 
 
-TRANSIENT_HTTP = {408, 409, 425, 429, 500, 502, 503, 504, 529}
+TRANSIENT_HTTP = {402, 408, 409, 425, 429, 500, 502, 503, 504, 529}   # 402 on OpenRouter = in-flight budget: "retry after in-flight requests settle"
 
 
 class AnthropicClient:
@@ -204,7 +204,7 @@ class OpenAICompatibleClient:
                 "prompt_tokens": u.get("prompt_tokens"), "completion_tokens": u.get("completion_tokens")}
 
     _PATH_RE = re.compile(r'"path"\s*:\s*"([^"\n]+)"')
-    _FUNC_RE = re.compile(r'"path"\s*:\s*"([^"\n]+)"\s*,\s*"qualname"\s*:\s*"([^"\n]+)"')
+    _FUNC_RE = re.compile(r'"path"\s*:\s*"([^"\n]+)"\s*,\s*"qualname"\s*:\s*"([^"\'\n]+)["\']')   # a stray ' may close the last string (run 11)
 
     @classmethod
     def _extract(cls, resp: dict, key: str = "files") -> str:

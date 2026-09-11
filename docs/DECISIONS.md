@@ -431,3 +431,25 @@ ceiling and the inert negative control: a lift the placebo matches is
 prompt perturbation, not memory (run 8 showed exactly that). The run is
 sharded by repository (A/B/C) to fit the runner's job limit; sharding is
 exact and the merge refuses duplicates.
+
+### D36. Registered run interrupted by the API key's spend cap; resumed, not restarted
+Shards A/B/C (runs 10–12) started 2026-09-11 15:52 and hit OpenRouter
+HTTP 402 ("in-flight budget exhausted", retryable) and then HTTP 403 ("Key
+limit exceeded (total limit)") within ~40 minutes; shard A wrote no
+results, B and C wrote partial ones (`results/experiment/{11,12}/`,
+kept for the record, **not results**). Nothing about the design changed.
+Recovery: the shards are re-run with `resume_run` pointing at their own
+artifacts, so every call that succeeded is served from the
+content-addressed cache and only the failed calls are made; the rolling
+chain is replayed from task 1, so memory state is exactly what an
+uninterrupted run would have produced. Mechanics changes made before the
+relaunch, none touching a registered value: 402 is now retried with
+backoff; the salvage regex accepts a stray quote closing the last string
+(one cfn-lint response); a circuit breaker stops a shard after 10
+consecutive task failures instead of burning through the chain; and
+`phase2.check_config` verifies every shard's config against
+`docs/exp-run.v2.json` at merge time, ignoring only the run-mechanics keys
+(`repos` must be a registered shard, `shard`, `resume_run`,
+`secondary_repos`). The registered block's wording ("except the repos
+list") predates the `shard`/`resume_run` keys; this decision, not the
+block, is the record of that clarification.
