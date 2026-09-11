@@ -1,0 +1,4 @@
+{"instance_id": "matplotlib__matplotlib-27605", "repo": "matplotlib/matplotlib", "error": "RuntimeError: all response modes failed: Unterminated string starting at: line 3 column 58 (char 359)"}
+{"instance_id": "matplotlib__matplotlib-27613", "repo": "matplotlib/matplotlib", "error": "RuntimeError: all response modes failed: Unterminated string starting at: line 3 column 55 (char 77)"}
+{"instance_id": "pvlib__pvlib-python-2190", "repo": "pvlib/pvlib-python", "error": "RuntimeError: all response modes failed: Unterminated string starting at: line 3 column 56 (char 79)"}
+{"instance_id": "pvlib__pvlib-python-2227", "repo": "pvlib/pvlib-python", "error": "RuntimeError: all response modes failed: Unterminated string starting at: line 3 column 51 (char 74)"}
