@@ -1,0 +1,510 @@
+{
+ "arms": {
+  "control": {
+   "file_hits": {},
+   "file_metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "flags": {},
+   "hits": {},
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "retrieved": {},
+   "scores": {},
+   "tau": 0.0,
+   "version": null
+  },
+  "gated": {
+   "file_hits": {},
+   "file_metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "flags": {},
+   "hits": {},
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "retrieved": {},
+   "scores": {},
+   "tau": 0.5,
+   "version": "rolling"
+  },
+  "placebo": {
+   "file_hits": {},
+   "file_metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "flags": {},
+   "hits": {},
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "retrieved": {},
+   "scores": {},
+   "tau": 0.0,
+   "version": "rolling"
+  },
+  "treatment": {
+   "file_hits": {},
+   "file_metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "flags": {},
+   "hits": {},
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "retrieved": {},
+   "scores": {},
+   "tau": 0.0,
+   "version": "rolling"
+  }
+ },
+ "control": {
+  "false_positive_rate": 0.0,
+  "localization_rate": 0.0,
+  "n_false_positive": 0,
+  "n_flags": 0,
+  "n_localized": 0,
+  "n_tasks": 0,
+  "per_repo": {}
+ },
+ "control_flags": {},
+ "errors": {
+  "pylint-dev__pylint-10034": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10036": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10044": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10045": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10062": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10075": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10089": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10097": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10141": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10170": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10209": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10225": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10228": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10232": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10240": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10246": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10250": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10275": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10300": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10328": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10344": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10350": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10362": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10379": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10403": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9714": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9744": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9753": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9771": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9772": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9785": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9802": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9817": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9838": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9842": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9844": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9866": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9868": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9876": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9882": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9917": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9990": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''"
+ },
+ "gold": {
+  "pylint-dev__pylint-10034": [
+   "pylint/checkers/variables.py::<module>",
+   "pylint/checkers/variables.py::NamesConsumer._uncertain_nodes_if_tests",
+   "pylint/checkers/variables.py::NamesConsumer.get_next_to_consume",
+   "pylint/checkers/variables.py::VariablesChecker",
+   "pylint/checkers/variables.py::VariablesChecker._is_builtin",
+   "pylint/checkers/variables.py::VariablesChecker._is_only_type_assignment",
+   "pylint/checkers/variables.py::VariablesChecker._is_variable_violation",
+   "pylint/checkers/variables.py::VariablesChecker._report_unfound_name_definition",
+   "pylint/checkers/variables.py::_assigned_locally",
+   "pylint/checkers/variables.py::_has_locals_call_after_node"
+  ],
+  "pylint-dev__pylint-10036": [
+   "pylint/lint/expand_modules.py::discover_package_path"
+  ],
+  "pylint-dev__pylint-10044": [
+   "doc/data/messages/c/consider-alternative-union-syntax/bad.py::<module>",
+   "doc/data/messages/c/consider-alternative-union-syntax/good.py::<module>",
+   "pylint/extensions/typing.py::TypingChecker"
+  ],
+  "pylint-dev__pylint-10045": [
+   "doc/conf.py::<module>",
+   "doc/exts/pyreverse_configuration.py::<module>",
+   "pylint/__init__.py::<module>",
+   "pylint/__init__.py::run_pyreverse",
+   "pylint/__init__.py::run_symilar",
+   "pylint/pyreverse/inspector.py::<module>",
+   "pylint/pyreverse/inspector.py::project_from_files",
+   "pylint/pyreverse/main.py::<module>",
+   "pylint/pyreverse/main.py::Run",
+   "pylint/pyreverse/main.py::Run.__init__",
+   "pylint/pyreverse/main.py::Run.run"
+  ],
+  "pylint-dev__pylint-10062": [
+   "pylint/checkers/variables.py::NamesConsumer._node_guarded_by_same_test"
+  ],
+  "pylint-dev__pylint-10075": [
+   "pylint/checkers/variables.py::VariablesChecker",
+   "pylint/checkers/variables.py::VariablesChecker._has_nonlocal_binding",
+   "pylint/checkers/variables.py::VariablesChecker._is_builtin",
+   "pylint/checkers/variables.py::VariablesChecker._report_unfound_name_definition"
+  ],
+  "pylint-dev__pylint-10089": [
+   "pylint/lint/run.py::_query_cpu"
+  ],
+  "pylint-dev__pylint-10097": [
+   "pylint/checkers/variables.py::VariablesChecker",
+   "pylint/checkers/variables.py::VariablesChecker._check_potential_index_error",
+   "pylint/checkers/variables.py::VariablesChecker.visit_subscript"
+  ],
+  "pylint-dev__pylint-10141": [
+   "pylint/lint/expand_modules.py::expand_modules",
+   "pylint/lint/pylinter.py::PyLinter",
+   "pylint/lint/pylinter.py::PyLinter._expand_files",
+   "pylint/lint/pylinter.py::PyLinter._get_file_descr_from_stdin",
+   "pylint/lint/pylinter.py::PyLinter._iterate_file_descrs",
+   "pylint/lint/pylinter.py::PyLinter._report_evaluation",
+   "pylint/lint/pylinter.py::PyLinter.generate_reports",
+   "pylint/typing.py::<module>",
+   "pylint/typing.py::ErrorDescriptionDict",
+   "pylint/typing.py::ModuleDescriptionDict",
+   "pylint/utils/linterstats.py::LinterStats.__init__",
+   "pylint/utils/linterstats.py::LinterStats.__str__",
+   "pylint/utils/linterstats.py::merge_stats"
+  ],
+  "pylint-dev__pylint-10170": [
+   "pylint/checkers/base/comparison_checker.py::ComparisonChecker",
+   "pylint/checkers/base/comparison_checker.py::ComparisonChecker._check_type_x_is_y",
+   "pylint/checkers/base/comparison_checker.py::ComparisonChecker._check_unidiomatic_typecheck"
+  ],
+  "pylint-dev__pylint-10209": [
+   "pylint/checkers/classes/special_methods_checker.py::SpecialMethodsChecker._check_getnewargs_ex"
+  ],
+  "pylint-dev__pylint-10225": [
+   "pylint/checkers/base/comparison_checker.py::ComparisonChecker",
+   "pylint/checkers/base/comparison_checker.py::ComparisonChecker._check_type_x_is_y",
+   "pylint/checkers/base/comparison_checker.py::ComparisonChecker._check_unidiomatic_typecheck"
+  ],
+  "pylint-dev__pylint-10228": [
+   "pylint/checkers/base/name_checker/naming_style.py::<module>",
+   "pylint/checkers/base/name_checker/naming_style.py::CamelCaseStyle"
+  ],
+  "pylint-dev__pylint-10232": [
+   "pylint/checkers/exceptions.py::ExceptionsChecker._check_catching_non_exception"
+  ],
+  "pylint-dev__pylint-10240": [
+   "pylint/checkers/variables.py::NamesConsumer._defines_name_raises_or_returns"
+  ],
+  "pylint-dev__pylint-10246": [
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker",
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker._check_compare_to_str_or_zero",
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker._check_use_implicit_booleaness_not_comparison",
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker._get_node_description",
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker.visit_compare"
+  ],
+  "pylint-dev__pylint-10250": [
+   "pylint/pyreverse/mermaidjs_printer.py::MermaidJSPrinter",
+   "pylint/pyreverse/mermaidjs_printer.py::MermaidJSPrinter.emit_edge",
+   "pylint/pyreverse/mermaidjs_printer.py::MermaidJSPrinter.emit_node"
+  ],
+  "pylint-dev__pylint-10275": [
+   "pylint/checkers/variables.py::VariablesChecker._is_variable_violation"
+  ],
+  "pylint-dev__pylint-10300": [
+   "pylint/checkers/refactoring/recommendation_checker.py::RecommendationChecker._detect_replacable_format_call"
+  ],
+  "pylint-dev__pylint-10328": [
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker",
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker._check_compare_to_str_or_zero",
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker._check_use_implicit_booleaness_not_comparison",
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker._get_node_description",
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker._implicit_booleaness_message_args",
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker.base_names_of_instance"
+  ],
+  "pylint-dev__pylint-10344": [
+   "pylint/pyreverse/inspector.py::<module>",
+   "pylint/pyreverse/inspector.py::AggregationsHandler",
+   "pylint/pyreverse/inspector.py::AggregationsHandler.handle",
+   "pylint/pyreverse/inspector.py::OtherAssociationsHandler"
+  ],
+  "pylint-dev__pylint-10350": [
+   "pylint/checkers/deprecated.py::DeprecatedMixin.visit_decorators",
+   "pylint/checkers/utils.py::decorated_with"
+  ],
+  "pylint-dev__pylint-10362": [
+   "pylint/checkers/variables.py::VariablesChecker._is_only_type_assignment"
+  ],
+  "pylint-dev__pylint-10379": [
+   "pylint/pyreverse/diagrams.py::ClassDiagram.extract_relationships"
+  ],
+  "pylint-dev__pylint-10403": [
+   "pylint/pyreverse/mermaidjs_printer.py::MermaidJSPrinter",
+   "pylint/pyreverse/mermaidjs_printer.py::MermaidJSPrinter._close_graph",
+   "pylint/pyreverse/mermaidjs_printer.py::MermaidJSPrinter._open_graph",
+   "pylint/pyreverse/mermaidjs_printer.py::MermaidJSPrinter.emit_edge",
+   "pylint/pyreverse/mermaidjs_printer.py::MermaidJSPrinter.emit_node"
+  ],
+  "pylint-dev__pylint-9714": [
+   "pylint/checkers/utils.py::<module>",
+   "pylint/checkers/utils.py::is_terminating_func",
+   "pylint/checkers/variables.py::VariablesChecker._loopvar_name"
+  ],
+  "pylint-dev__pylint-9744": [
+   "pylint/checkers/misc.py::<module>",
+   "pylint/checkers/misc.py::EncodingChecker",
+   "pylint/checkers/misc.py::EncodingChecker._check_encoding",
+   "pylint/checkers/misc.py::EncodingChecker.open",
+   "pylint/checkers/misc.py::EncodingChecker.process_tokens",
+   "pylint/checkers/misc.py::register"
+  ],
+  "pylint-dev__pylint-9753": [
+   "pylint/checkers/utils.py::is_terminating_func"
+  ],
+  "pylint-dev__pylint-9771": [
+   "pylint/checkers/base/name_checker/checker.py::NameChecker.visit_assignname"
+  ],
+  "pylint-dev__pylint-9772": [
+   "pylint/checkers/base/name_checker/checker.py::NameChecker.visit_assignname"
+  ],
+  "pylint-dev__pylint-9785": [
+   "pylint/checkers/typecheck.py::TypeChecker.visit_call",
+   "pylint/checkers/utils.py::<module>",
+   "pylint/checkers/utils.py::function_arguments_are_ambiguous",
+   "pylint/checkers/utils.py::has_known_bases",
+   "pylint/checkers/utils.py::safe_infer"
+  ],
+  "pylint-dev__pylint-9802": [
+   "pylint/checkers/refactoring/refactoring_checker.py::RefactoringChecker._check_consider_using_min_max_builtin"
+  ],
+  "pylint-dev__pylint-9817": [
+   "pylint/checkers/classes/class_checker.py::ClassChecker",
+   "pylint/checkers/classes/class_checker.py::ClassChecker._check_slots",
+   "pylint/checkers/classes/class_checker.py::ClassChecker._get_classdef_slots_names",
+   "pylint/checkers/classes/class_checker.py::ClassChecker._has_valid_slots"
+  ],
+  "pylint-dev__pylint-9838": [
+   "doc/data/messages/u/using-assignment-expression-in-unsupported-version/bad.py::<module>",
+   "doc/data/messages/u/using-assignment-expression-in-unsupported-version/good.py::<module>",
+   "doc/data/messages/u/using-positional-only-args-in-unsupported-version/bad.py::<module>",
+   "doc/data/messages/u/using-positional-only-args-in-unsupported-version/good.py::<module>",
+   "pylint/checkers/unsupported_version.py::<module>",
+   "pylint/checkers/unsupported_version.py::UnsupportedVersionChecker",
+   "pylint/checkers/unsupported_version.py::UnsupportedVersionChecker._check_typing_final",
+   "pylint/checkers/unsupported_version.py::UnsupportedVersionChecker.open",
+   "pylint/checkers/unsupported_version.py::UnsupportedVersionChecker.visit_decorators",
+   "pylint/checkers/unsupported_version.py::UnsupportedVersionChecker.visit_excepthandler",
+   "pylint/checkers/unsupported_version.py::UnsupportedVersionChecker.visit_joinedstr",
+   "pylint/checkers/unsupported_version.py::UnsupportedVersionChecker.visit_raise",
+   "pylint/checkers/unsupported_version.py::UnsupportedVersionChecker.visit_trystar",
+   "pylint/checkers/unsupported_version.py::UnsupportedVersionChecker.visit_typealias",
+   "pylint/checkers/unsupported_version.py::UnsupportedVersionChecker.visit_typevar",
+   "pylint/checkers/unsupported_version.py::UnsupportedVersionChecker.visit_typevartuple"
+  ],
+  "pylint-dev__pylint-9842": [
+   "doc/data/messages/t/too-many-positional-arguments/bad.py::<module>",
+   "doc/data/messages/t/too-many-positional-arguments/good.py::<module>",
+   "pylint/checkers/design_analysis.py::<module>",
+   "pylint/checkers/design_analysis.py::MisdesignChecker",
+   "pylint/checkers/design_analysis.py::MisdesignChecker.visit_functiondef"
+  ],
+  "pylint-dev__pylint-9844": [
+   "pylint/checkers/utils.py::is_terminating_func"
+  ],
+  "pylint-dev__pylint-9866": [
+   "pylint/checkers/refactoring/refactoring_checker.py::RefactoringChecker",
+   "pylint/checkers/refactoring/refactoring_checker.py::RefactoringChecker._check_return_at_the_end",
+   "pylint/checkers/refactoring/refactoring_checker.py::RefactoringChecker._is_function_def_never_returning"
+  ],
+  "pylint-dev__pylint-9868": [
+   "doc/data/messages/t/too-few-function-args/bad.py::<module>",
+   "doc/data/messages/t/too-few-function-args/good.py::<module>",
+   "pylint/checkers/typecheck.py::<module>",
+   "pylint/checkers/typecheck.py::TypeChecker",
+   "pylint/checkers/typecheck.py::TypeChecker._check_argument_order",
+   "pylint/checkers/typecheck.py::TypeChecker._check_isinstance_args",
+   "pylint/checkers/typecheck.py::TypeChecker.visit_call"
+  ],
+  "pylint-dev__pylint-9876": [
+   "pylint/checkers/variables.py::VariablesChecker._loopvar_name"
+  ],
+  "pylint-dev__pylint-9882": [
+   "doc/data/messages/t/too-few-function-args/bad.py::<module>",
+   "doc/data/messages/t/too-few-function-args/good.py::<module>",
+   "pylint/checkers/typecheck.py::<module>",
+   "pylint/checkers/typecheck.py::TypeChecker._check_isinstance_args"
+  ],
+  "pylint-dev__pylint-9917": [
+   "pylint/checkers/format.py::FormatChecker",
+   "pylint/checkers/format.py::FormatChecker._check_multi_statement_line",
+   "pylint/checkers/format.py::FormatChecker.visit_default"
+  ],
+  "pylint-dev__pylint-9990": [
+   "pylint/checkers/variables.py::NamesConsumer._uncertain_nodes_if_tests",
+   "pylint/checkers/variables.py::VariablesChecker",
+   "pylint/checkers/variables.py::VariablesChecker.__init__",
+   "pylint/checkers/variables.py::VariablesChecker._check_consumer",
+   "pylint/checkers/variables.py::VariablesChecker._filter_type_checking_import_from_consumption",
+   "pylint/checkers/variables.py::VariablesChecker._report_unfound_name_definition",
+   "pylint/checkers/variables.py::VariablesChecker.visit_import"
+  ]
+ },
+ "granularity": "function",
+ "learn_errors": {
+  "pylint-dev__pylint-10034": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10036": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10044": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10045": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10062": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10075": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10089": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10097": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10141": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10170": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10209": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10225": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10228": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10232": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10240": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10246": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10250": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10275": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10300": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10328": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10344": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10350": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10362": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10379": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-10403": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9346": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9374": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9419": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9452": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9491": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9504": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9534": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9592": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9594": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9599": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9632": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9634": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9654": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9670": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9678": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9697": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9700": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9704": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9705": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9709": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9714": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9744": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9753": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9771": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9772": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9785": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9802": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9817": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9838": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9842": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9844": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9866": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9868": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9876": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9882": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9917": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "pylint-dev__pylint-9990": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''"
+ },
+ "lift": {
+  "false_positive_rise_pts": 0.0,
+  "localization_lift_pts": 0.0
+ },
+ "memory_locations": {},
+ "mode": "rolling",
+ "n_errors": 42,
+ "n_eval": 42,
+ "retrieval_hit_rate": 0.0,
+ "retrieved": {},
+ "treatment": {
+  "false_positive_rate": 0.0,
+  "localization_rate": 0.0,
+  "n_false_positive": 0,
+  "n_flags": 0,
+  "n_localized": 0,
+  "n_tasks": 0,
+  "per_repo": {}
+ },
+ "treatment_flags": {},
+ "warmup": 20
+}
