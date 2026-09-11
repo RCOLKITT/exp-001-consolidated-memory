@@ -58,3 +58,28 @@ def _main(argv: list[str]) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(_main(sys.argv[1:]))
+
+
+def mde_paired(discordance: float, n: int, alpha: float = 0.05, power: float = 0.8) -> float:
+    """Smallest lift (fraction) detectable with n PAIRED tasks when a share
+    `discordance` of them change outcome between arms (McNemar / paired
+    difference of proportions; Connor 1987). At discordance 0.5 this equals
+    the two-proportion formula; at v1's observed 0.09 it is far smaller.
+    The lift is (c - b) / n with b + c = discordance x n."""
+    if not (0 < discordance <= 1) or n <= 0:
+        raise ValueError("discordance in (0,1], n > 0")
+    z_a = NormalDist().inv_cdf(1 - alpha / 2)
+    z_b = NormalDist().inv_cdf(power)
+    lift = (z_a + z_b) * math.sqrt(discordance / n)
+    for _ in range(100):
+        lift = (z_a * math.sqrt(discordance) + z_b * math.sqrt(max(discordance - lift * lift, 1e-12))) / math.sqrt(n)
+    return round(min(lift, discordance), 4)
+
+
+def n_paired(discordance: float, mde: float, alpha: float = 0.05, power: float = 0.8) -> int:
+    """Paired tasks needed to detect `mde` (fraction) at a given discordance share."""
+    z_a = NormalDist().inv_cdf(1 - alpha / 2)
+    z_b = NormalDist().inv_cdf(power)
+    if mde >= discordance:
+        raise ValueError("mde must be below the discordance share")
+    return math.ceil(((z_a * math.sqrt(discordance) + z_b * math.sqrt(discordance - mde * mde)) / mde) ** 2)

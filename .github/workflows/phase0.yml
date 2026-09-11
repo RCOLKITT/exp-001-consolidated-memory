@@ -103,7 +103,8 @@ jobs:
                  "base_url": pick("IN_BASE_URL", "base_url", ""), "model_extra": json.dumps(cfg["model_extra"]) if isinstance(cfg.get("model_extra"), dict) else pick("IN_MODEL_EXTRA", "model_extra", ""), "run_control": str(pick("IN_RUN_CONTROL", "run_control", False)).lower(),
                  "limit": str(pick("IN_LIMIT", "limit", 50)), "top_k": str(pick("IN_TOP_K", "top_k", 3)), "per_repo_limit": str(pick("IN_PER_REPO_LIMIT", "per_repo_limit", 0)), "reuse_cache_run": str(pick("IN_REUSE_CACHE_RUN", "reuse_cache_run", "")),
                  "repos": ",".join(cfg["repos"]) if isinstance(cfg.get("repos"), list) else pick("IN_REPOS", "repos", ""),
-                 "level": str(cfg.get("level", "file")), "ceiling_metrics": str(cfg.get("ceiling_metrics", "results/phase0/18/control/metrics.json"))}   # v2: "function"
+                 "level": str(cfg.get("level", "file")), "ceiling_metrics": str(cfg.get("ceiling_metrics", "results/phase0/18/control/metrics.json")),   # v2: "function"
+                 "prequential": str(cfg.get("prequential", False)).lower(), "warmup": str(cfg.get("warmup", 20)), "min_chain": str(cfg.get("min_chain", 21)), "exclude": ",".join(cfg.get("exclude", []))}
           for k, v in out.items(): print(f"{k}={v}")
           import sys; print(json.dumps(out), file=sys.stderr)
           PY
@@ -151,8 +152,14 @@ jobs:
           L=""; [ "${{ steps.cfg.outputs.level }}" = "function" ] && L="--level function --repos-dir checkouts --functions-cache runs/functions.jsonl" && mkdir -p runs
           python -m phase2.recurrence corpus/tasks.jsonl --repos "${{ steps.cfg.outputs.repos }}" --prefixes 20,30,40,50,60,80 $CM $L \
             --md "${{ steps.dir.outputs.dir }}/recurrence.md" --json "${{ steps.dir.outputs.dir }}/recurrence.json" | tail -12
+      - name: Prequential recurrence (rolling window, all levels, no model)
+        if: steps.cfg.outputs.prequential == 'true'
+        run: |
+          mkdir -p runs
+          python -m phase2.prequential corpus/tasks.jsonl --warmup "${{ steps.cfg.outputs.warmup }}" --min-chain "${{ steps.cfg.outputs.min_chain }}" --exclude "${{ steps.cfg.outputs.exclude }}" \
+            --repos-dir checkouts --functions-cache runs/functions.jsonl --md "${{ steps.dir.outputs.dir }}/prequential.md" --json "${{ steps.dir.outputs.dir }}/prequential.json" | tail -8
       - uses: actions/upload-artifact@v4
-        if: steps.cfg.outputs.level == 'function' && steps.cfg.outputs.repos != ''
+        if: (steps.cfg.outputs.level == 'function' && steps.cfg.outputs.repos != '') || steps.cfg.outputs.prequential == 'true'
         with:
           name: functions-${{ github.run_number }}
           path: runs/functions.jsonl
