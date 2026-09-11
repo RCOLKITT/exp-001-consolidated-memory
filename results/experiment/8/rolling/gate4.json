@@ -1,0 +1,203 @@
+{
+ "arms": [
+  "control",
+  "treatment",
+  "ungated"
+ ],
+ "control": {
+  "false_positive_rate": 0.4382,
+  "localization_rate": 0.8387,
+  "n_false_positive": 39,
+  "n_flags": 89,
+  "n_localized": 26,
+  "n_tasks": 31,
+  "per_repo": {
+   "pvlib/pvlib-python": {
+    "false_positive_rate": 0.4615,
+    "localization_rate": 0.9,
+    "n_false_positive": 12,
+    "n_flags": 26,
+    "n_localized": 9,
+    "n_tasks": 10
+   },
+   "streamlink/streamlink": {
+    "false_positive_rate": 0.4286,
+    "localization_rate": 0.8095,
+    "n_false_positive": 27,
+    "n_flags": 63,
+    "n_localized": 17,
+    "n_tasks": 21
+   }
+  }
+ },
+ "effect_in_majority_of_repos": false,
+ "false_positive_rise_pts": -1.96,
+ "file_level_secondary": {
+  "control": {
+   "false_positive_rate": 0.6452,
+   "localization_rate": 1.0,
+   "n_false_positive": 60,
+   "n_flags": 93,
+   "n_localized": 31,
+   "n_tasks": 31,
+   "per_repo": {
+    "pvlib/pvlib-python": {
+     "false_positive_rate": 0.6333,
+     "localization_rate": 1.0,
+     "n_false_positive": 19,
+     "n_flags": 30,
+     "n_localized": 10,
+     "n_tasks": 10
+    },
+    "streamlink/streamlink": {
+     "false_positive_rate": 0.6508,
+     "localization_rate": 1.0,
+     "n_false_positive": 41,
+     "n_flags": 63,
+     "n_localized": 21,
+     "n_tasks": 21
+    }
+   }
+  },
+  "false_positive_rise_pts": 0.7,
+  "localization_lift_pts": 0.0,
+  "treatment": {
+   "false_positive_rate": 0.6522,
+   "localization_rate": 1.0,
+   "n_false_positive": 60,
+   "n_flags": 92,
+   "n_localized": 31,
+   "n_tasks": 31,
+   "per_repo": {
+    "pvlib/pvlib-python": {
+     "false_positive_rate": 0.6207,
+     "localization_rate": 1.0,
+     "n_false_positive": 18,
+     "n_flags": 29,
+     "n_localized": 10,
+     "n_tasks": 10
+    },
+    "streamlink/streamlink": {
+     "false_positive_rate": 0.6667,
+     "localization_rate": 1.0,
+     "n_false_positive": 42,
+     "n_flags": 63,
+     "n_localized": 21,
+     "n_tasks": 21
+    }
+   }
+  }
+ },
+ "granularity": "function",
+ "localization_lift_pts": 9.68,
+ "mode": "rolling",
+ "negative_control_lift": null,
+ "per_repo_lift": {
+  "pvlib/pvlib-python": {
+   "false_positive_rise_pts": -2.68,
+   "localization_lift_pts": 0.0
+  },
+  "streamlink/streamlink": {
+   "false_positive_rise_pts": -1.59,
+   "localization_lift_pts": 14.29
+  }
+ },
+ "secondary_arms": {
+  "ungated": {
+   "control": {
+    "false_positive_rate": 0.4382,
+    "localization_rate": 0.8387,
+    "n_false_positive": 39,
+    "n_flags": 89,
+    "n_localized": 26,
+    "n_tasks": 31,
+    "per_repo": {
+     "pvlib/pvlib-python": {
+      "false_positive_rate": 0.4615,
+      "localization_rate": 0.9,
+      "n_false_positive": 12,
+      "n_flags": 26,
+      "n_localized": 9,
+      "n_tasks": 10
+     },
+     "streamlink/streamlink": {
+      "false_positive_rate": 0.4286,
+      "localization_rate": 0.8095,
+      "n_false_positive": 27,
+      "n_flags": 63,
+      "n_localized": 17,
+      "n_tasks": 21
+     }
+    }
+   },
+   "effect_in_majority_of_repos": false,
+   "false_positive_rise_pts": -1.96,
+   "localization_lift_pts": 9.68,
+   "negative_control_lift": null,
+   "per_repo_lift": {
+    "pvlib/pvlib-python": {
+     "false_positive_rise_pts": -2.68,
+     "localization_lift_pts": 0.0
+    },
+    "streamlink/streamlink": {
+     "false_positive_rise_pts": -1.59,
+     "localization_lift_pts": 14.29
+    }
+   },
+   "treatment": {
+    "false_positive_rate": 0.4186,
+    "localization_rate": 0.9355,
+    "n_false_positive": 36,
+    "n_flags": 86,
+    "n_localized": 29,
+    "n_tasks": 31,
+    "per_repo": {
+     "pvlib/pvlib-python": {
+      "false_positive_rate": 0.4348,
+      "localization_rate": 0.9,
+      "n_false_positive": 10,
+      "n_flags": 23,
+      "n_localized": 9,
+      "n_tasks": 10
+     },
+     "streamlink/streamlink": {
+      "false_positive_rate": 0.4127,
+      "localization_rate": 0.9524,
+      "n_false_positive": 26,
+      "n_flags": 63,
+      "n_localized": 20,
+      "n_tasks": 21
+     }
+    }
+   }
+  }
+ },
+ "tau": 0.0,
+ "treatment": {
+  "false_positive_rate": 0.4186,
+  "localization_rate": 0.9355,
+  "n_false_positive": 36,
+  "n_flags": 86,
+  "n_localized": 29,
+  "n_tasks": 31,
+  "per_repo": {
+   "pvlib/pvlib-python": {
+    "false_positive_rate": 0.4348,
+    "localization_rate": 0.9,
+    "n_false_positive": 10,
+    "n_flags": 23,
+    "n_localized": 9,
+    "n_tasks": 10
+   },
+   "streamlink/streamlink": {
+    "false_positive_rate": 0.4127,
+    "localization_rate": 0.9524,
+    "n_false_positive": 26,
+    "n_flags": 63,
+    "n_localized": 20,
+    "n_tasks": 21
+   }
+  }
+ },
+ "warmup": 20
+}

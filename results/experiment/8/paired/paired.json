@@ -1,0 +1,336 @@
+{
+ "arm": "treatment",
+ "errors": {},
+ "negative_control": null,
+ "per_repo": {
+  "pvlib/pvlib-python": {
+   "both_hit": 9,
+   "control_localized": 9,
+   "control_only_hit": 0,
+   "control_rate": 0.9,
+   "flags_differed": 3,
+   "flags_differed_rate": 0.3,
+   "label": "pvlib/pvlib-python",
+   "lift_ci95_bootstrap_pts": [
+    0.0,
+    0.0
+   ],
+   "lift_ci95_paired_wald_pts": [
+    0.0,
+    0.0
+   ],
+   "lift_pts": 0.0,
+   "mcnemar_exact_p": 1.0,
+   "n_tasks": 10,
+   "neither_hit": 1,
+   "retrieval_coverage": 0.9,
+   "retrieved_any": 9,
+   "treatment_localized": 9,
+   "treatment_only_hit": 0,
+   "treatment_rate": 0.9
+  },
+  "streamlink/streamlink": {
+   "both_hit": 17,
+   "control_localized": 17,
+   "control_only_hit": 0,
+   "control_rate": 0.8095,
+   "flags_differed": 13,
+   "flags_differed_rate": 0.619,
+   "label": "streamlink/streamlink",
+   "lift_ci95_bootstrap_pts": [
+    0.0,
+    33.33
+   ],
+   "lift_ci95_paired_wald_pts": [
+    -0.68,
+    29.25
+   ],
+   "lift_pts": 14.29,
+   "mcnemar_exact_p": 0.25,
+   "n_tasks": 21,
+   "neither_hit": 1,
+   "retrieval_coverage": 1.0,
+   "retrieved_any": 21,
+   "treatment_localized": 20,
+   "treatment_only_hit": 3,
+   "treatment_rate": 0.9524
+  }
+ },
+ "primary": {
+  "both_hit": 26,
+  "control_localized": 26,
+  "control_only_hit": 0,
+  "control_rate": 0.8387,
+  "flags_differed": 16,
+  "flags_differed_rate": 0.5161,
+  "label": "primary: all treatment repos (registered)",
+  "lift_ci95_bootstrap_pts": [
+   0.0,
+   19.35
+  ],
+  "lift_ci95_paired_wald_pts": [
+   -0.73,
+   20.08
+  ],
+  "lift_pts": 9.68,
+  "mcnemar_exact_p": 0.25,
+  "n_tasks": 31,
+  "neither_hit": 2,
+  "retrieval_coverage": 0.9677,
+  "retrieved_any": 30,
+  "treatment_localized": 29,
+  "treatment_only_hit": 3,
+  "treatment_rate": 0.9355
+ },
+ "secondary": null,
+ "tasks": [
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "pvlib__pvlib-python-2281",
+   "repo": "pvlib/pvlib-python",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "pvlib__pvlib-python-2286",
+   "repo": "pvlib/pvlib-python",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "pvlib__pvlib-python-2291",
+   "repo": "pvlib/pvlib-python",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "pvlib__pvlib-python-2292",
+   "repo": "pvlib/pvlib-python",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "pvlib__pvlib-python-2341",
+   "repo": "pvlib/pvlib-python",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "pvlib__pvlib-python-2347",
+   "repo": "pvlib/pvlib-python",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "pvlib__pvlib-python-2393",
+   "repo": "pvlib/pvlib-python",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "pvlib__pvlib-python-2400",
+   "repo": "pvlib/pvlib-python",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "pvlib__pvlib-python-2429",
+   "repo": "pvlib/pvlib-python",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "pvlib__pvlib-python-2451",
+   "repo": "pvlib/pvlib-python",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "streamlink__streamlink-6127",
+   "repo": "streamlink/streamlink",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "streamlink__streamlink-6178",
+   "repo": "streamlink/streamlink",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "streamlink__streamlink-6205",
+   "repo": "streamlink/streamlink",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "streamlink__streamlink-6207",
+   "repo": "streamlink/streamlink",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "streamlink__streamlink-6242",
+   "repo": "streamlink/streamlink",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "streamlink__streamlink-6328",
+   "repo": "streamlink/streamlink",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "streamlink__streamlink-6338",
+   "repo": "streamlink/streamlink",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "streamlink__streamlink-6353",
+   "repo": "streamlink/streamlink",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "streamlink__streamlink-6361",
+   "repo": "streamlink/streamlink",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "streamlink__streamlink-6381",
+   "repo": "streamlink/streamlink",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "streamlink__streamlink-6389",
+   "repo": "streamlink/streamlink",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "streamlink__streamlink-6397",
+   "repo": "streamlink/streamlink",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "streamlink__streamlink-6420",
+   "repo": "streamlink/streamlink",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "streamlink__streamlink-6433",
+   "repo": "streamlink/streamlink",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "streamlink__streamlink-6439",
+   "repo": "streamlink/streamlink",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "streamlink__streamlink-6452",
+   "repo": "streamlink/streamlink",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "streamlink__streamlink-6455",
+   "repo": "streamlink/streamlink",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "streamlink__streamlink-6479",
+   "repo": "streamlink/streamlink",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "streamlink__streamlink-6491",
+   "repo": "streamlink/streamlink",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "streamlink__streamlink-6535",
+   "repo": "streamlink/streamlink",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "streamlink__streamlink-6544",
+   "repo": "streamlink/streamlink",
+   "retrieved": true,
+   "treatment_hit": true
+  }
+ ]
+}

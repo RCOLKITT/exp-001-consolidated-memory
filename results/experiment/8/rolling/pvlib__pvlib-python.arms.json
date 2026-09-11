@@ -1,0 +1,787 @@
+{
+ "arms": {
+  "control": {
+   "file_hits": {
+    "pvlib__pvlib-python-2281": true,
+    "pvlib__pvlib-python-2286": true,
+    "pvlib__pvlib-python-2291": true,
+    "pvlib__pvlib-python-2292": true,
+    "pvlib__pvlib-python-2341": true,
+    "pvlib__pvlib-python-2347": true,
+    "pvlib__pvlib-python-2393": true,
+    "pvlib__pvlib-python-2400": true,
+    "pvlib__pvlib-python-2429": true,
+    "pvlib__pvlib-python-2451": true
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.6333,
+    "localization_rate": 1.0,
+    "n_false_positive": 19,
+    "n_flags": 30,
+    "n_localized": 10,
+    "n_tasks": 10,
+    "per_repo": {
+     "pvlib/pvlib-python": {
+      "false_positive_rate": 0.6333,
+      "localization_rate": 1.0,
+      "n_false_positive": 19,
+      "n_flags": 30,
+      "n_localized": 10,
+      "n_tasks": 10
+     }
+    }
+   },
+   "flags": {
+    "pvlib__pvlib-python-2281": [
+     "pvlib/clearsky.py::detect_clearsky",
+     "pvlib/clearsky.py::_max_diff_windowed",
+     "pvlib/clearsky.py::_line_length_windowed"
+    ],
+    "pvlib__pvlib-python-2286": [
+     "pvlib/spectrum/mismatch.py::calc_spectral_mismatch_field",
+     "pvlib/irradiance.py::_temp_dew_dirint",
+     "pvlib/atmosphere.py::<module>"
+    ],
+    "pvlib__pvlib-python-2291": [
+     "pvlib/ivtools/sdm.py::fit_desoto",
+     "pvlib/ivtools/sdm.py::_check_converge",
+     "pvlib/ivtools/sdm.py::_update_io"
+    ],
+    "pvlib__pvlib-python-2292": [
+     "pvlib/snow.py::coverage_nrel",
+     "pvlib/snow.py::fully_covered_nrel",
+     "pvlib/snow.py::<module>"
+    ],
+    "pvlib__pvlib-python-2341": [
+     "pvlib/tools.py::localize_to_utc",
+     "pvlib/tools.py::datetime_to_djd",
+     "pvlib/tools.py::djd_to_datetime"
+    ],
+    "pvlib__pvlib-python-2347": [
+     "pvlib/irradiance.py::gti_dirint",
+     "pvlib/irradiance.py::_gti_dirint_lt_90",
+     "pvlib/irradiance.py::_gti_dirint_gte_90"
+    ],
+    "pvlib__pvlib-python-2393": [],
+    "pvlib__pvlib-python-2400": [
+     "pvlib/spectrum/mismatch.py::spectral_factor_pvspec",
+     "pvlib/spectrum/mismatch.py::<module>"
+    ],
+    "pvlib__pvlib-python-2429": [
+     "pvlib/ivtools/sdm/pvsyst.py::fit_pvsyst_sandia",
+     "pvlib/ivtools/sdm/pvsyst.py::<module>",
+     "pvlib/ivtools/sdm/__init__.py::<module>"
+    ],
+    "pvlib__pvlib-python-2451": [
+     "pvlib/bifacial/infinite_sheds.py::_poa_ground_shadows",
+     "pvlib/bifacial/infinite_sheds.py::get_irradiance",
+     "pvlib/bifacial/infinite_sheds.py::get_irradiance_poa"
+    ]
+   },
+   "hits": {
+    "pvlib__pvlib-python-2281": true,
+    "pvlib__pvlib-python-2286": true,
+    "pvlib__pvlib-python-2291": true,
+    "pvlib__pvlib-python-2292": true,
+    "pvlib__pvlib-python-2341": true,
+    "pvlib__pvlib-python-2347": true,
+    "pvlib__pvlib-python-2393": false,
+    "pvlib__pvlib-python-2400": true,
+    "pvlib__pvlib-python-2429": true,
+    "pvlib__pvlib-python-2451": true
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.4615,
+    "localization_rate": 0.9,
+    "n_false_positive": 12,
+    "n_flags": 26,
+    "n_localized": 9,
+    "n_tasks": 10,
+    "per_repo": {
+     "pvlib/pvlib-python": {
+      "false_positive_rate": 0.4615,
+      "localization_rate": 0.9,
+      "n_false_positive": 12,
+      "n_flags": 26,
+      "n_localized": 9,
+      "n_tasks": 10
+     }
+    }
+   },
+   "retrieved": {
+    "pvlib__pvlib-python-2281": [],
+    "pvlib__pvlib-python-2286": [],
+    "pvlib__pvlib-python-2291": [],
+    "pvlib__pvlib-python-2292": [],
+    "pvlib__pvlib-python-2341": [],
+    "pvlib__pvlib-python-2347": [],
+    "pvlib__pvlib-python-2393": [],
+    "pvlib__pvlib-python-2400": [],
+    "pvlib__pvlib-python-2429": [],
+    "pvlib__pvlib-python-2451": []
+   },
+   "scores": {
+    "pvlib__pvlib-python-2281": {},
+    "pvlib__pvlib-python-2286": {},
+    "pvlib__pvlib-python-2291": {},
+    "pvlib__pvlib-python-2292": {},
+    "pvlib__pvlib-python-2341": {},
+    "pvlib__pvlib-python-2347": {},
+    "pvlib__pvlib-python-2393": {},
+    "pvlib__pvlib-python-2400": {},
+    "pvlib__pvlib-python-2429": {},
+    "pvlib__pvlib-python-2451": {}
+   },
+   "tau": 0.0,
+   "version": null,
+   "versions": {
+    "pvlib__pvlib-python-2281": null,
+    "pvlib__pvlib-python-2286": null,
+    "pvlib__pvlib-python-2291": null,
+    "pvlib__pvlib-python-2292": null,
+    "pvlib__pvlib-python-2341": null,
+    "pvlib__pvlib-python-2347": null,
+    "pvlib__pvlib-python-2393": null,
+    "pvlib__pvlib-python-2400": null,
+    "pvlib__pvlib-python-2429": null,
+    "pvlib__pvlib-python-2451": null
+   }
+  },
+  "treatment": {
+   "file_hits": {
+    "pvlib__pvlib-python-2281": true,
+    "pvlib__pvlib-python-2286": true,
+    "pvlib__pvlib-python-2291": true,
+    "pvlib__pvlib-python-2292": true,
+    "pvlib__pvlib-python-2341": true,
+    "pvlib__pvlib-python-2347": true,
+    "pvlib__pvlib-python-2393": true,
+    "pvlib__pvlib-python-2400": true,
+    "pvlib__pvlib-python-2429": true,
+    "pvlib__pvlib-python-2451": true
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.6207,
+    "localization_rate": 1.0,
+    "n_false_positive": 18,
+    "n_flags": 29,
+    "n_localized": 10,
+    "n_tasks": 10,
+    "per_repo": {
+     "pvlib/pvlib-python": {
+      "false_positive_rate": 0.6207,
+      "localization_rate": 1.0,
+      "n_false_positive": 18,
+      "n_flags": 29,
+      "n_localized": 10,
+      "n_tasks": 10
+     }
+    }
+   },
+   "flags": {
+    "pvlib__pvlib-python-2281": [
+     "pvlib/clearsky.py::detect_clearsky",
+     "pvlib/clearsky.py::_max_diff_windowed",
+     "pvlib/clearsky.py::_line_length_windowed"
+    ],
+    "pvlib__pvlib-python-2286": [
+     "pvlib/atmosphere.py::gueymard94_pw",
+     "pvlib/spectrum/mismatch.py::calc_spectral_mismatch_field",
+     "pvlib/irradiance.py::_temp_dew_dirint"
+    ],
+    "pvlib__pvlib-python-2291": [
+     "pvlib/ivtools/sdm.py::fit_desoto",
+     "pvlib/pvsystem.py::calcparams_desoto"
+    ],
+    "pvlib__pvlib-python-2292": [
+     "pvlib/snow.py::coverage_nrel",
+     "pvlib/snow.py::fully_covered_nrel",
+     "pvlib/snow.py::<module>"
+    ],
+    "pvlib__pvlib-python-2341": [
+     "pvlib/tools.py::localize_to_utc",
+     "pvlib/tools.py::datetime_to_djd",
+     "pvlib/tools.py::djd_to_datetime"
+    ],
+    "pvlib__pvlib-python-2347": [
+     "pvlib/irradiance.py::gti_dirint",
+     "pvlib/irradiance.py::_gti_dirint_lt_90",
+     "pvlib/irradiance.py::_gti_dirint_gte_90"
+    ],
+    "pvlib__pvlib-python-2393": [],
+    "pvlib__pvlib-python-2400": [
+     "pvlib/spectrum/mismatch.py::spectral_factor_pvspec",
+     "pvlib/spectrum/mismatch.py::<module>"
+    ],
+    "pvlib__pvlib-python-2429": [
+     "pvlib/ivtools/sdm/pvsyst.py::<module>"
+    ],
+    "pvlib__pvlib-python-2451": [
+     "pvlib/bifacial/infinite_sheds.py::_poa_ground_shadows",
+     "pvlib/bifacial/infinite_sheds.py::get_irradiance",
+     "pvlib/bifacial/infinite_sheds.py::get_irradiance_poa"
+    ]
+   },
+   "hits": {
+    "pvlib__pvlib-python-2281": true,
+    "pvlib__pvlib-python-2286": true,
+    "pvlib__pvlib-python-2291": true,
+    "pvlib__pvlib-python-2292": true,
+    "pvlib__pvlib-python-2341": true,
+    "pvlib__pvlib-python-2347": true,
+    "pvlib__pvlib-python-2393": false,
+    "pvlib__pvlib-python-2400": true,
+    "pvlib__pvlib-python-2429": true,
+    "pvlib__pvlib-python-2451": true
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": -2.68,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.4348,
+    "localization_rate": 0.9,
+    "n_false_positive": 10,
+    "n_flags": 23,
+    "n_localized": 9,
+    "n_tasks": 10,
+    "per_repo": {
+     "pvlib/pvlib-python": {
+      "false_positive_rate": 0.4348,
+      "localization_rate": 0.9,
+      "n_false_positive": 10,
+      "n_flags": 23,
+      "n_localized": 9,
+      "n_tasks": 10
+     }
+    }
+   },
+   "retrieved": {
+    "pvlib__pvlib-python-2281": [],
+    "pvlib__pvlib-python-2286": [
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7"
+    ],
+    "pvlib__pvlib-python-2291": [
+     "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12",
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7"
+    ],
+    "pvlib__pvlib-python-2292": [
+     "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12",
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7"
+    ],
+    "pvlib__pvlib-python-2341": [
+     "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12",
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7"
+    ],
+    "pvlib__pvlib-python-2347": [
+     "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12",
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7"
+    ],
+    "pvlib__pvlib-python-2393": [
+     "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12",
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7"
+    ],
+    "pvlib__pvlib-python-2400": [
+     "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12",
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7"
+    ],
+    "pvlib__pvlib-python-2429": [
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7",
+     "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12"
+    ],
+    "pvlib__pvlib-python-2451": [
+     "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12",
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7"
+    ]
+   },
+   "scores": {
+    "pvlib__pvlib-python-2281": {},
+    "pvlib__pvlib-python-2286": {
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7": 0.363265
+    },
+    "pvlib__pvlib-python-2291": {
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7": 0.377512,
+     "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12": 0.385698
+    },
+    "pvlib__pvlib-python-2292": {
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7": 0.100083,
+     "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12": 0.154205
+    },
+    "pvlib__pvlib-python-2341": {
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7": 0.242078,
+     "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12": 0.337756
+    },
+    "pvlib__pvlib-python-2347": {
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7": 0.377719,
+     "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12": 0.549406
+    },
+    "pvlib__pvlib-python-2393": {
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7": 0.241445,
+     "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12": 0.37278
+    },
+    "pvlib__pvlib-python-2400": {
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7": 0.378205,
+     "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12": 0.526415
+    },
+    "pvlib__pvlib-python-2429": {
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7": 0.400171,
+     "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12": 0.346641
+    },
+    "pvlib__pvlib-python-2451": {
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7": 0.39319,
+     "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12": 0.55377
+    }
+   },
+   "tau": 0.0,
+   "version": "rolling",
+   "versions": {
+    "pvlib__pvlib-python-2281": null,
+    "pvlib__pvlib-python-2286": "6a58f8a13c00ef618ec65f698a0ba201c13f0a4eecacbf330a0f63173f8cda1a",
+    "pvlib__pvlib-python-2291": "5a9a52e8796856b2d816f6828788abaf076b0646f3e65d7bbbc8146f5d1bea61",
+    "pvlib__pvlib-python-2292": "5a9a52e8796856b2d816f6828788abaf076b0646f3e65d7bbbc8146f5d1bea61",
+    "pvlib__pvlib-python-2341": "5a9a52e8796856b2d816f6828788abaf076b0646f3e65d7bbbc8146f5d1bea61",
+    "pvlib__pvlib-python-2347": "5a9a52e8796856b2d816f6828788abaf076b0646f3e65d7bbbc8146f5d1bea61",
+    "pvlib__pvlib-python-2393": "5a9a52e8796856b2d816f6828788abaf076b0646f3e65d7bbbc8146f5d1bea61",
+    "pvlib__pvlib-python-2400": "5a9a52e8796856b2d816f6828788abaf076b0646f3e65d7bbbc8146f5d1bea61",
+    "pvlib__pvlib-python-2429": "5a9a52e8796856b2d816f6828788abaf076b0646f3e65d7bbbc8146f5d1bea61",
+    "pvlib__pvlib-python-2451": "5a9a52e8796856b2d816f6828788abaf076b0646f3e65d7bbbc8146f5d1bea61"
+   }
+  },
+  "ungated": {
+   "file_hits": {
+    "pvlib__pvlib-python-2281": true,
+    "pvlib__pvlib-python-2286": true,
+    "pvlib__pvlib-python-2291": true,
+    "pvlib__pvlib-python-2292": true,
+    "pvlib__pvlib-python-2341": true,
+    "pvlib__pvlib-python-2347": true,
+    "pvlib__pvlib-python-2393": true,
+    "pvlib__pvlib-python-2400": true,
+    "pvlib__pvlib-python-2429": true,
+    "pvlib__pvlib-python-2451": true
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.6207,
+    "localization_rate": 1.0,
+    "n_false_positive": 18,
+    "n_flags": 29,
+    "n_localized": 10,
+    "n_tasks": 10,
+    "per_repo": {
+     "pvlib/pvlib-python": {
+      "false_positive_rate": 0.6207,
+      "localization_rate": 1.0,
+      "n_false_positive": 18,
+      "n_flags": 29,
+      "n_localized": 10,
+      "n_tasks": 10
+     }
+    }
+   },
+   "flags": {
+    "pvlib__pvlib-python-2281": [
+     "pvlib/clearsky.py::detect_clearsky",
+     "pvlib/clearsky.py::_max_diff_windowed",
+     "pvlib/clearsky.py::_line_length_windowed"
+    ],
+    "pvlib__pvlib-python-2286": [
+     "pvlib/atmosphere.py::gueymard94_pw",
+     "pvlib/spectrum/mismatch.py::calc_spectral_mismatch_field",
+     "pvlib/irradiance.py::_temp_dew_dirint"
+    ],
+    "pvlib__pvlib-python-2291": [
+     "pvlib/ivtools/sdm.py::fit_desoto",
+     "pvlib/pvsystem.py::calcparams_desoto"
+    ],
+    "pvlib__pvlib-python-2292": [
+     "pvlib/snow.py::coverage_nrel",
+     "pvlib/snow.py::fully_covered_nrel",
+     "pvlib/snow.py::<module>"
+    ],
+    "pvlib__pvlib-python-2341": [
+     "pvlib/tools.py::localize_to_utc",
+     "pvlib/tools.py::datetime_to_djd",
+     "pvlib/tools.py::djd_to_datetime"
+    ],
+    "pvlib__pvlib-python-2347": [
+     "pvlib/irradiance.py::gti_dirint",
+     "pvlib/irradiance.py::_gti_dirint_lt_90",
+     "pvlib/irradiance.py::_gti_dirint_gte_90"
+    ],
+    "pvlib__pvlib-python-2393": [],
+    "pvlib__pvlib-python-2400": [
+     "pvlib/spectrum/mismatch.py::spectral_factor_pvspec",
+     "pvlib/spectrum/mismatch.py::<module>"
+    ],
+    "pvlib__pvlib-python-2429": [
+     "pvlib/ivtools/sdm/pvsyst.py::<module>"
+    ],
+    "pvlib__pvlib-python-2451": [
+     "pvlib/bifacial/infinite_sheds.py::_poa_ground_shadows",
+     "pvlib/bifacial/infinite_sheds.py::get_irradiance",
+     "pvlib/bifacial/infinite_sheds.py::get_irradiance_poa"
+    ]
+   },
+   "hits": {
+    "pvlib__pvlib-python-2281": true,
+    "pvlib__pvlib-python-2286": true,
+    "pvlib__pvlib-python-2291": true,
+    "pvlib__pvlib-python-2292": true,
+    "pvlib__pvlib-python-2341": true,
+    "pvlib__pvlib-python-2347": true,
+    "pvlib__pvlib-python-2393": false,
+    "pvlib__pvlib-python-2400": true,
+    "pvlib__pvlib-python-2429": true,
+    "pvlib__pvlib-python-2451": true
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": -2.68,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.4348,
+    "localization_rate": 0.9,
+    "n_false_positive": 10,
+    "n_flags": 23,
+    "n_localized": 9,
+    "n_tasks": 10,
+    "per_repo": {
+     "pvlib/pvlib-python": {
+      "false_positive_rate": 0.4348,
+      "localization_rate": 0.9,
+      "n_false_positive": 10,
+      "n_flags": 23,
+      "n_localized": 9,
+      "n_tasks": 10
+     }
+    }
+   },
+   "retrieved": {
+    "pvlib__pvlib-python-2281": [],
+    "pvlib__pvlib-python-2286": [
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7"
+    ],
+    "pvlib__pvlib-python-2291": [
+     "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12",
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7"
+    ],
+    "pvlib__pvlib-python-2292": [
+     "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12",
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7"
+    ],
+    "pvlib__pvlib-python-2341": [
+     "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12",
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7"
+    ],
+    "pvlib__pvlib-python-2347": [
+     "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12",
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7"
+    ],
+    "pvlib__pvlib-python-2393": [
+     "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12",
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7"
+    ],
+    "pvlib__pvlib-python-2400": [
+     "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12",
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7"
+    ],
+    "pvlib__pvlib-python-2429": [
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7",
+     "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12"
+    ],
+    "pvlib__pvlib-python-2451": [
+     "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12",
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7"
+    ]
+   },
+   "scores": {
+    "pvlib__pvlib-python-2281": {},
+    "pvlib__pvlib-python-2286": {
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7": 0.363265
+    },
+    "pvlib__pvlib-python-2291": {
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7": 0.377512,
+     "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12": 0.385698
+    },
+    "pvlib__pvlib-python-2292": {
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7": 0.100083,
+     "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12": 0.154205
+    },
+    "pvlib__pvlib-python-2341": {
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7": 0.242078,
+     "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12": 0.337756
+    },
+    "pvlib__pvlib-python-2347": {
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7": 0.377719,
+     "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12": 0.549406
+    },
+    "pvlib__pvlib-python-2393": {
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7": 0.241445,
+     "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12": 0.37278
+    },
+    "pvlib__pvlib-python-2400": {
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7": 0.378205,
+     "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12": 0.526415
+    },
+    "pvlib__pvlib-python-2429": {
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7": 0.400171,
+     "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12": 0.346641
+    },
+    "pvlib__pvlib-python-2451": {
+     "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7": 0.39319,
+     "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12": 0.55377
+    }
+   },
+   "tau": 0.0,
+   "version": "rolling",
+   "versions": {
+    "pvlib__pvlib-python-2281": null,
+    "pvlib__pvlib-python-2286": "6a58f8a13c00ef618ec65f698a0ba201c13f0a4eecacbf330a0f63173f8cda1a",
+    "pvlib__pvlib-python-2291": "5a9a52e8796856b2d816f6828788abaf076b0646f3e65d7bbbc8146f5d1bea61",
+    "pvlib__pvlib-python-2292": "5a9a52e8796856b2d816f6828788abaf076b0646f3e65d7bbbc8146f5d1bea61",
+    "pvlib__pvlib-python-2341": "5a9a52e8796856b2d816f6828788abaf076b0646f3e65d7bbbc8146f5d1bea61",
+    "pvlib__pvlib-python-2347": "5a9a52e8796856b2d816f6828788abaf076b0646f3e65d7bbbc8146f5d1bea61",
+    "pvlib__pvlib-python-2393": "5a9a52e8796856b2d816f6828788abaf076b0646f3e65d7bbbc8146f5d1bea61",
+    "pvlib__pvlib-python-2400": "5a9a52e8796856b2d816f6828788abaf076b0646f3e65d7bbbc8146f5d1bea61",
+    "pvlib__pvlib-python-2429": "5a9a52e8796856b2d816f6828788abaf076b0646f3e65d7bbbc8146f5d1bea61",
+    "pvlib__pvlib-python-2451": "5a9a52e8796856b2d816f6828788abaf076b0646f3e65d7bbbc8146f5d1bea61"
+   }
+  }
+ },
+ "control": {
+  "false_positive_rate": 0.4615,
+  "localization_rate": 0.9,
+  "n_false_positive": 12,
+  "n_flags": 26,
+  "n_localized": 9,
+  "n_tasks": 10,
+  "per_repo": {
+   "pvlib/pvlib-python": {
+    "false_positive_rate": 0.4615,
+    "localization_rate": 0.9,
+    "n_false_positive": 12,
+    "n_flags": 26,
+    "n_localized": 9,
+    "n_tasks": 10
+   }
+  }
+ },
+ "control_flags": {
+  "pvlib__pvlib-python-2281": [
+   "pvlib/clearsky.py",
+   "pvlib/clearsky.py",
+   "pvlib/clearsky.py"
+  ],
+  "pvlib__pvlib-python-2286": [
+   "pvlib/spectrum/mismatch.py",
+   "pvlib/irradiance.py",
+   "pvlib/atmosphere.py"
+  ],
+  "pvlib__pvlib-python-2291": [
+   "pvlib/ivtools/sdm.py",
+   "pvlib/ivtools/sdm.py",
+   "pvlib/ivtools/sdm.py"
+  ],
+  "pvlib__pvlib-python-2292": [
+   "pvlib/snow.py",
+   "pvlib/snow.py",
+   "pvlib/snow.py"
+  ],
+  "pvlib__pvlib-python-2341": [
+   "pvlib/tools.py",
+   "pvlib/tools.py",
+   "pvlib/tools.py"
+  ],
+  "pvlib__pvlib-python-2347": [
+   "pvlib/irradiance.py",
+   "pvlib/irradiance.py",
+   "pvlib/irradiance.py"
+  ],
+  "pvlib__pvlib-python-2393": [],
+  "pvlib__pvlib-python-2400": [
+   "pvlib/spectrum/mismatch.py",
+   "pvlib/spectrum/mismatch.py"
+  ],
+  "pvlib__pvlib-python-2429": [
+   "pvlib/ivtools/sdm/pvsyst.py",
+   "pvlib/ivtools/sdm/pvsyst.py",
+   "pvlib/ivtools/sdm/__init__.py"
+  ],
+  "pvlib__pvlib-python-2451": [
+   "pvlib/bifacial/infinite_sheds.py",
+   "pvlib/bifacial/infinite_sheds.py",
+   "pvlib/bifacial/infinite_sheds.py"
+  ]
+ },
+ "errors": {},
+ "gold": {
+  "pvlib__pvlib-python-2281": [
+   "pvlib/clearsky.py::detect_clearsky"
+  ],
+  "pvlib__pvlib-python-2286": [
+   "pvlib/atmosphere.py::<module>",
+   "pvlib/atmosphere.py::gueymard94_pw"
+  ],
+  "pvlib__pvlib-python-2291": [
+   "pvlib/ivtools/sdm.py::<module>",
+   "pvlib/ivtools/sdm.py::fit_desoto"
+  ],
+  "pvlib__pvlib-python-2292": [
+   "pvlib/snow.py::<module>",
+   "pvlib/snow.py::_time_delta_in_hours",
+   "pvlib/snow.py::coverage_nrel",
+   "pvlib/snow.py::fully_covered_nrel"
+  ],
+  "pvlib__pvlib-python-2341": [
+   "pvlib/location.py::<module>",
+   "pvlib/location.py::Location",
+   "pvlib/location.py::Location.__init__",
+   "pvlib/location.py::Location.__repr__",
+   "pvlib/location.py::Location.from_tmy",
+   "pvlib/tools.py::<module>",
+   "pvlib/tools.py::cosd",
+   "pvlib/tools.py::localize_to_utc"
+  ],
+  "pvlib__pvlib-python-2347": [
+   "pvlib/irradiance.py::<module>",
+   "pvlib/irradiance.py::_gti_dirint_lt_90",
+   "pvlib/irradiance.py::gti_dirint"
+  ],
+  "pvlib__pvlib-python-2393": [
+   "pvlib/pvsystem.py::<module>"
+  ],
+  "pvlib__pvlib-python-2400": [
+   "pvlib/spectrum/mismatch.py::spectral_factor_pvspec"
+  ],
+  "pvlib__pvlib-python-2429": [
+   "pvlib/ivtools/sdm/__init__.py::<module>",
+   "pvlib/ivtools/sdm/pvsyst.py::<module>",
+   "pvlib/ivtools/sdm/pvsyst.py::pvsyst_temperature_coeff"
+  ],
+  "pvlib__pvlib-python-2451": [
+   "pvlib/bifacial/infinite_sheds.py::<module>",
+   "pvlib/bifacial/infinite_sheds.py::_poa_ground_shadows",
+   "pvlib/bifacial/infinite_sheds.py::_poa_sky_diffuse_pv",
+   "pvlib/bifacial/infinite_sheds.py::get_irradiance_poa"
+  ]
+ },
+ "granularity": "function",
+ "learn_errors": {},
+ "lift": {
+  "false_positive_rise_pts": -2.68,
+  "localization_lift_pts": 0.0
+ },
+ "memory_locations": {
+  "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7": "pvlib/clearsky.py::detect_clearsky",
+  "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12": "pvlib/atmosphere.py::<module>"
+ },
+ "mode": "rolling",
+ "n_errors": 0,
+ "n_eval": 10,
+ "retrieval_hit_rate": 0.9,
+ "retrieved": {
+  "pvlib__pvlib-python-2281": [],
+  "pvlib__pvlib-python-2286": [
+   "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7"
+  ],
+  "pvlib__pvlib-python-2291": [
+   "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12",
+   "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7"
+  ],
+  "pvlib__pvlib-python-2292": [
+   "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12",
+   "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7"
+  ],
+  "pvlib__pvlib-python-2341": [
+   "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12",
+   "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7"
+  ],
+  "pvlib__pvlib-python-2347": [
+   "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12",
+   "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7"
+  ],
+  "pvlib__pvlib-python-2393": [
+   "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12",
+   "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7"
+  ],
+  "pvlib__pvlib-python-2400": [
+   "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12",
+   "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7"
+  ],
+  "pvlib__pvlib-python-2429": [
+   "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7",
+   "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12"
+  ],
+  "pvlib__pvlib-python-2451": [
+   "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12",
+   "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7"
+  ]
+ },
+ "treatment": {
+  "false_positive_rate": 0.4348,
+  "localization_rate": 0.9,
+  "n_false_positive": 10,
+  "n_flags": 23,
+  "n_localized": 9,
+  "n_tasks": 10,
+  "per_repo": {
+   "pvlib/pvlib-python": {
+    "false_positive_rate": 0.4348,
+    "localization_rate": 0.9,
+    "n_false_positive": 10,
+    "n_flags": 23,
+    "n_localized": 9,
+    "n_tasks": 10
+   }
+  }
+ },
+ "treatment_flags": {
+  "pvlib__pvlib-python-2281": [
+   "pvlib/clearsky.py",
+   "pvlib/clearsky.py",
+   "pvlib/clearsky.py"
+  ],
+  "pvlib__pvlib-python-2286": [
+   "pvlib/atmosphere.py",
+   "pvlib/spectrum/mismatch.py",
+   "pvlib/irradiance.py"
+  ],
+  "pvlib__pvlib-python-2291": [
+   "pvlib/ivtools/sdm.py",
+   "pvlib/pvsystem.py"
+  ],
+  "pvlib__pvlib-python-2292": [
+   "pvlib/snow.py",
+   "pvlib/snow.py",
+   "pvlib/snow.py"
+  ],
+  "pvlib__pvlib-python-2341": [
+   "pvlib/tools.py",
+   "pvlib/tools.py",
+   "pvlib/tools.py"
+  ],
+  "pvlib__pvlib-python-2347": [
+   "pvlib/irradiance.py",
+   "pvlib/irradiance.py",
+   "pvlib/irradiance.py"
+  ],
+  "pvlib__pvlib-python-2393": [],
+  "pvlib__pvlib-python-2400": [
+   "pvlib/spectrum/mismatch.py",
+   "pvlib/spectrum/mismatch.py"
+  ],
+  "pvlib__pvlib-python-2429": [
+   "pvlib/ivtools/sdm/pvsyst.py"
+  ],
+  "pvlib__pvlib-python-2451": [
+   "pvlib/bifacial/infinite_sheds.py",
+   "pvlib/bifacial/infinite_sheds.py",
+   "pvlib/bifacial/infinite_sheds.py"
+  ]
+ },
+ "warmup": 20
+}

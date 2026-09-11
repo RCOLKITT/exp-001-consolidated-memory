@@ -1,0 +1,1612 @@
+{
+ "arms": {
+  "control": {
+   "file_hits": {
+    "streamlink__streamlink-6127": true,
+    "streamlink__streamlink-6178": true,
+    "streamlink__streamlink-6205": true,
+    "streamlink__streamlink-6207": true,
+    "streamlink__streamlink-6242": true,
+    "streamlink__streamlink-6328": true,
+    "streamlink__streamlink-6338": true,
+    "streamlink__streamlink-6353": true,
+    "streamlink__streamlink-6361": true,
+    "streamlink__streamlink-6381": true,
+    "streamlink__streamlink-6389": true,
+    "streamlink__streamlink-6397": true,
+    "streamlink__streamlink-6420": true,
+    "streamlink__streamlink-6433": true,
+    "streamlink__streamlink-6439": true,
+    "streamlink__streamlink-6452": true,
+    "streamlink__streamlink-6455": true,
+    "streamlink__streamlink-6479": true,
+    "streamlink__streamlink-6491": true,
+    "streamlink__streamlink-6535": true,
+    "streamlink__streamlink-6544": true
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.6508,
+    "localization_rate": 1.0,
+    "n_false_positive": 41,
+    "n_flags": 63,
+    "n_localized": 21,
+    "n_tasks": 21,
+    "per_repo": {
+     "streamlink/streamlink": {
+      "false_positive_rate": 0.6508,
+      "localization_rate": 1.0,
+      "n_false_positive": 41,
+      "n_flags": 63,
+      "n_localized": 21,
+      "n_tasks": 21
+     }
+    }
+   },
+   "flags": {
+    "streamlink__streamlink-6127": [
+     "src/streamlink/plugins/nicolive.py::NicoLive._get_hls_stream_url",
+     "src/streamlink/plugins/nicolive.py::NicoLive._get_streams",
+     "src/streamlink/plugins/nicolive.py::NicoLive.find_wss_api_url"
+    ],
+    "streamlink__streamlink-6178": [
+     "src/streamlink/plugins/vk.py::VK._get_streams",
+     "src/streamlink/plugins/vk.py::VK.follow_vk_redirect",
+     "src/streamlink/plugins/vk.py::<module>"
+    ],
+    "streamlink__streamlink-6205": [
+     "src/streamlink/session/http.py::SSLContextAdapter.get_ssl_context",
+     "src/streamlink/session/http.py::TLSNoDHAdapter.get_ssl_context",
+     "src/streamlink/session/http.py::HTTPSession.request"
+    ],
+    "streamlink__streamlink-6207": [
+     "src/streamlink_cli/output/player.py::PlayerOutput.playerargsfactory",
+     "src/streamlink_cli/output/player.py::PlayerOutput.__init__",
+     "src/streamlink_cli/utils/player.py::_resolve_executable"
+    ],
+    "streamlink__streamlink-6242": [
+     "src/streamlink/plugins/tv3cat.py::TV3Cat._get_streams",
+     "src/streamlink/plugins/tv3cat.py::TV3Cat._call_api_media",
+     "src/streamlink/session/plugins.py::StreamlinkPlugins.match_url"
+    ],
+    "streamlink__streamlink-6328": [
+     "src/streamlink/stream/dash/manifest.py::BaseURL.join",
+     "src/streamlink/stream/dash/manifest.py::SegmentList.make_url",
+     "src/streamlink/utils/url.py::absolute_url"
+    ],
+    "streamlink__streamlink-6338": [
+     "src/streamlink/stream/dash/dash.py::DASHStream.fetch_manifest",
+     "src/streamlink/stream/dash/dash.py::DASHStream.parse_manifest",
+     "src/streamlink/utils/url.py::absolute_url"
+    ],
+    "streamlink__streamlink-6353": [
+     "src/streamlink/plugins/mangomolo.py::Mangomolo._get_streams",
+     "src/streamlink/plugins/mangomolo.py::Mangomolo._get_player_url",
+     "src/streamlink/session/plugins.py::StreamlinkPlugins.match_url"
+    ],
+    "streamlink__streamlink-6361": [
+     "src/streamlink_cli/show_matchers.py::show_matchers",
+     "src/streamlink_cli/_parser.py::get_parser",
+     "src/streamlink_cli/show_matchers.py::<module>"
+    ],
+    "streamlink__streamlink-6381": [
+     "src/streamlink/plugins/tiktok.py::TikTok._get_streams",
+     "src/streamlink/plugins/tiktok.py::TikTok.stream_weight",
+     "src/streamlink/plugins/tiktok.py::<module>"
+    ],
+    "streamlink__streamlink-6389": [
+     "src/streamlink/plugins/chzzk.py::Chzzk._get_streams",
+     "src/streamlink/plugins/chzzk.py::ChzzkAPI.get_videos",
+     "src/streamlink/plugins/chzzk.py::ChzzkAPI._query_api"
+    ],
+    "streamlink__streamlink-6397": [
+     "src/streamlink/plugins/ceskatelevize.py::Ceskatelevize._get_streams",
+     "src/streamlink/plugins/ceskatelevize.py::Ceskatelevize.get_stream_url",
+     "src/streamlink/plugins/ceskatelevize.py::Ceskatelevize.get_decko"
+    ],
+    "streamlink__streamlink-6420": [
+     "src/streamlink/plugins/nos.py::NOS._get_streams",
+     "src/streamlink/plugins/nos.py::NOS",
+     "src/streamlink/validate/_schemas.py::NoneOrAllSchema"
+    ],
+    "streamlink__streamlink-6433": [
+     "src/streamlink/plugins/pandalive.py::Pandalive._get_streams",
+     "src/streamlink/plugins/pandalive.py::Pandalive",
+     "src/streamlink/plugins/pandalive.py::<module>"
+    ],
+    "streamlink__streamlink-6439": [
+     "src/streamlink/plugins/tf1.py::TF1._api_call",
+     "src/streamlink/plugins/tf1.py::TF1._get_streams",
+     "src/streamlink/plugins/tf1.py::TF1._get_channel"
+    ],
+    "streamlink__streamlink-6452": [
+     "src/streamlink/plugins/euronews.py::Euronews._get_streams",
+     "src/streamlink/plugins/euronews.py::Euronews._get_live",
+     "src/streamlink/plugin/plugin.py::Plugin.input_ask_password"
+    ],
+    "streamlink__streamlink-6455": [
+     "src/streamlink_cli/argparser.py::build_parser",
+     "src/streamlink_cli/main.py::setup_args",
+     "src/streamlink_cli/main.py::fetch_streams_with_retry"
+    ],
+    "streamlink__streamlink-6479": [
+     "src/streamlink/stream/hls/hls.py::HLSStream.parse_variant_playlist",
+     "src/streamlink/stream/hls/m3u8.py::M3U8Parser.parse_tag_ext_x_media",
+     "src/streamlink/plugins/hls.py::HLSPlugin._get_streams"
+    ],
+    "streamlink__streamlink-6491": [
+     "src/streamlink/plugins/kick.py::Kick._get_api_headers",
+     "src/streamlink/plugins/kick.py::Kick._get_token",
+     "src/streamlink/plugins/kick.py::Kick._get_streams_live"
+    ],
+    "streamlink__streamlink-6535": [
+     "src/streamlink/plugins/tvp.py::TVP._get_video_id",
+     "src/streamlink/plugins/tvp.py::TVP._get_formats_from_api",
+     "src/streamlink/plugins/tvp.py::TVP._get_streams"
+    ],
+    "streamlink__streamlink-6544": [
+     "src/streamlink/plugins/nicolive.py::NicoLive.get_data",
+     "src/streamlink/plugins/nicolive.py::NicoLive.find_metadata",
+     "src/streamlink/utils/l10n.py::Localization.__init__"
+    ]
+   },
+   "hits": {
+    "streamlink__streamlink-6127": false,
+    "streamlink__streamlink-6178": true,
+    "streamlink__streamlink-6205": true,
+    "streamlink__streamlink-6207": false,
+    "streamlink__streamlink-6242": false,
+    "streamlink__streamlink-6328": true,
+    "streamlink__streamlink-6338": true,
+    "streamlink__streamlink-6353": true,
+    "streamlink__streamlink-6361": true,
+    "streamlink__streamlink-6381": true,
+    "streamlink__streamlink-6389": true,
+    "streamlink__streamlink-6397": true,
+    "streamlink__streamlink-6420": true,
+    "streamlink__streamlink-6433": true,
+    "streamlink__streamlink-6439": false,
+    "streamlink__streamlink-6452": true,
+    "streamlink__streamlink-6455": true,
+    "streamlink__streamlink-6479": true,
+    "streamlink__streamlink-6491": true,
+    "streamlink__streamlink-6535": true,
+    "streamlink__streamlink-6544": true
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.4286,
+    "localization_rate": 0.8095,
+    "n_false_positive": 27,
+    "n_flags": 63,
+    "n_localized": 17,
+    "n_tasks": 21,
+    "per_repo": {
+     "streamlink/streamlink": {
+      "false_positive_rate": 0.4286,
+      "localization_rate": 0.8095,
+      "n_false_positive": 27,
+      "n_flags": 63,
+      "n_localized": 17,
+      "n_tasks": 21
+     }
+    }
+   },
+   "retrieved": {
+    "streamlink__streamlink-6127": [],
+    "streamlink__streamlink-6178": [],
+    "streamlink__streamlink-6205": [],
+    "streamlink__streamlink-6207": [],
+    "streamlink__streamlink-6242": [],
+    "streamlink__streamlink-6328": [],
+    "streamlink__streamlink-6338": [],
+    "streamlink__streamlink-6353": [],
+    "streamlink__streamlink-6361": [],
+    "streamlink__streamlink-6381": [],
+    "streamlink__streamlink-6389": [],
+    "streamlink__streamlink-6397": [],
+    "streamlink__streamlink-6420": [],
+    "streamlink__streamlink-6433": [],
+    "streamlink__streamlink-6439": [],
+    "streamlink__streamlink-6452": [],
+    "streamlink__streamlink-6455": [],
+    "streamlink__streamlink-6479": [],
+    "streamlink__streamlink-6491": [],
+    "streamlink__streamlink-6535": [],
+    "streamlink__streamlink-6544": []
+   },
+   "scores": {
+    "streamlink__streamlink-6127": {},
+    "streamlink__streamlink-6178": {},
+    "streamlink__streamlink-6205": {},
+    "streamlink__streamlink-6207": {},
+    "streamlink__streamlink-6242": {},
+    "streamlink__streamlink-6328": {},
+    "streamlink__streamlink-6338": {},
+    "streamlink__streamlink-6353": {},
+    "streamlink__streamlink-6361": {},
+    "streamlink__streamlink-6381": {},
+    "streamlink__streamlink-6389": {},
+    "streamlink__streamlink-6397": {},
+    "streamlink__streamlink-6420": {},
+    "streamlink__streamlink-6433": {},
+    "streamlink__streamlink-6439": {},
+    "streamlink__streamlink-6452": {},
+    "streamlink__streamlink-6455": {},
+    "streamlink__streamlink-6479": {},
+    "streamlink__streamlink-6491": {},
+    "streamlink__streamlink-6535": {},
+    "streamlink__streamlink-6544": {}
+   },
+   "tau": 0.0,
+   "version": null,
+   "versions": {
+    "streamlink__streamlink-6127": null,
+    "streamlink__streamlink-6178": null,
+    "streamlink__streamlink-6205": null,
+    "streamlink__streamlink-6207": null,
+    "streamlink__streamlink-6242": null,
+    "streamlink__streamlink-6328": null,
+    "streamlink__streamlink-6338": null,
+    "streamlink__streamlink-6353": null,
+    "streamlink__streamlink-6361": null,
+    "streamlink__streamlink-6381": null,
+    "streamlink__streamlink-6389": null,
+    "streamlink__streamlink-6397": null,
+    "streamlink__streamlink-6420": null,
+    "streamlink__streamlink-6433": null,
+    "streamlink__streamlink-6439": null,
+    "streamlink__streamlink-6452": null,
+    "streamlink__streamlink-6455": null,
+    "streamlink__streamlink-6479": null,
+    "streamlink__streamlink-6491": null,
+    "streamlink__streamlink-6535": null,
+    "streamlink__streamlink-6544": null
+   }
+  },
+  "treatment": {
+   "file_hits": {
+    "streamlink__streamlink-6127": true,
+    "streamlink__streamlink-6178": true,
+    "streamlink__streamlink-6205": true,
+    "streamlink__streamlink-6207": true,
+    "streamlink__streamlink-6242": true,
+    "streamlink__streamlink-6328": true,
+    "streamlink__streamlink-6338": true,
+    "streamlink__streamlink-6353": true,
+    "streamlink__streamlink-6361": true,
+    "streamlink__streamlink-6381": true,
+    "streamlink__streamlink-6389": true,
+    "streamlink__streamlink-6397": true,
+    "streamlink__streamlink-6420": true,
+    "streamlink__streamlink-6433": true,
+    "streamlink__streamlink-6439": true,
+    "streamlink__streamlink-6452": true,
+    "streamlink__streamlink-6455": true,
+    "streamlink__streamlink-6479": true,
+    "streamlink__streamlink-6491": true,
+    "streamlink__streamlink-6535": true,
+    "streamlink__streamlink-6544": true
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.6667,
+    "localization_rate": 1.0,
+    "n_false_positive": 42,
+    "n_flags": 63,
+    "n_localized": 21,
+    "n_tasks": 21,
+    "per_repo": {
+     "streamlink/streamlink": {
+      "false_positive_rate": 0.6667,
+      "localization_rate": 1.0,
+      "n_false_positive": 42,
+      "n_flags": 63,
+      "n_localized": 21,
+      "n_tasks": 21
+     }
+    }
+   },
+   "flags": {
+    "streamlink__streamlink-6127": [
+     "src/streamlink/plugins/nicolive.py::NicoLive._get_hls_stream_url",
+     "src/streamlink/plugins/nicolive.py::NicoLive.find_wss_api_url",
+     "src/streamlink/plugins/nicolive.py::NicoLive.get_data"
+    ],
+    "streamlink__streamlink-6178": [
+     "src/streamlink/plugins/vk.py::VK._get_streams",
+     "src/streamlink/plugins/vk.py::VK.follow_vk_redirect",
+     "src/streamlink/plugins/vk.py::VK._get_cookies"
+    ],
+    "streamlink__streamlink-6205": [
+     "src/streamlink/session/http.py::SSLContextAdapter.get_ssl_context",
+     "src/streamlink/session/http.py::TLSNoDHAdapter.get_ssl_context",
+     "src/streamlink/session/http.py::HTTPSession.request"
+    ],
+    "streamlink__streamlink-6207": [
+     "src/streamlink_cli/output/player.py::PlayerOutput.__init__",
+     "src/streamlink_cli/output/player.py::PlayerOutput.playerargsfactory",
+     "src/streamlink_cli/main.py::output_stream_passthrough"
+    ],
+    "streamlink__streamlink-6242": [
+     "src/streamlink/plugins/tv3cat.py::TV3Cat._get_streams",
+     "src/streamlink/plugins/tv3cat.py::TV3Cat",
+     "src/streamlink/plugins/tv3cat.py::TV3Cat._call_api_media"
+    ],
+    "streamlink__streamlink-6328": [
+     "src/streamlink/stream/dash/manifest.py::BaseURL.join",
+     "src/streamlink/stream/dash/manifest.py::SegmentList.make_url",
+     "src/streamlink/utils/url.py::url_concat"
+    ],
+    "streamlink__streamlink-6338": [
+     "src/streamlink/stream/dash/dash.py::DASHStream.fetch_manifest",
+     "src/streamlink/stream/dash/dash.py::DASHStream.parse_manifest",
+     "src/streamlink/utils/url.py::absolute_url"
+    ],
+    "streamlink__streamlink-6353": [
+     "src/streamlink/plugins/mangomolo.py::Mangomolo._get_streams",
+     "src/streamlink/plugins/mangomolo.py::Mangomolo._get_player_url",
+     "src/streamlink/session/plugins.py::StreamlinkPlugins.match_url"
+    ],
+    "streamlink__streamlink-6361": [
+     "src/streamlink_cli/show_matchers.py::show_matchers",
+     "src/streamlink_cli/_parser.py::get_parser",
+     "src/streamlink_cli/show_matchers.py::<module>"
+    ],
+    "streamlink__streamlink-6381": [
+     "src/streamlink/plugins/tiktok.py::TikTok._get_streams",
+     "src/streamlink/plugins/tiktok.py::<module>",
+     "src/streamlink/plugins/tiktok.py::TikTok"
+    ],
+    "streamlink__streamlink-6389": [
+     "src/streamlink/plugins/chzzk.py::ChzzkAPI._query_api",
+     "src/streamlink/plugins/chzzk.py::Chzzk._get_streams",
+     "src/streamlink/plugins/chzzk.py::ChzzkAPI.get_videos"
+    ],
+    "streamlink__streamlink-6397": [
+     "src/streamlink/plugins/ceskatelevize.py::Ceskatelevize._get_streams",
+     "src/streamlink/plugins/ceskatelevize.py::Ceskatelevize.get_stream_url",
+     "src/streamlink/plugins/ceskatelevize.py::Ceskatelevize.get_decko"
+    ],
+    "streamlink__streamlink-6420": [
+     "src/streamlink/plugins/nos.py::NOS._get_streams",
+     "src/streamlink/plugins/nos.py::NOS",
+     "src/streamlink/validate/_schemas.py::NoneOrAllSchema"
+    ],
+    "streamlink__streamlink-6433": [
+     "src/streamlink/plugins/pandalive.py::Pandalive._get_streams",
+     "src/streamlink/plugins/pandalive.py::Pandalive",
+     "src/streamlink/plugin/plugin.py::Plugin._get_streams"
+    ],
+    "streamlink__streamlink-6439": [
+     "src/streamlink/plugins/tf1.py::TF1._api_call",
+     "src/streamlink/plugins/tf1.py::TF1._get_streams",
+     "src/streamlink/plugins/tf1.py::TF1"
+    ],
+    "streamlink__streamlink-6452": [
+     "src/streamlink/plugins/euronews.py::Euronews._get_streams",
+     "src/streamlink/plugins/euronews.py::Euronews._get_live",
+     "src/streamlink/plugins/euronews.py::Euronews._get_embed"
+    ],
+    "streamlink__streamlink-6455": [
+     "src/streamlink_cli/argparser.py::build_parser",
+     "src/streamlink_cli/argparser.py::ArgumentParser.__init__",
+     "src/streamlink/session/options.py::StreamlinkOptions.__init__"
+    ],
+    "streamlink__streamlink-6479": [
+     "src/streamlink/stream/hls/hls.py::HLSStream.parse_variant_playlist",
+     "src/streamlink/stream/hls/m3u8.py::M3U8Parser.parse_tag_ext_x_media",
+     "src/streamlink/plugins/hls.py::HLSPlugin._get_streams"
+    ],
+    "streamlink__streamlink-6491": [
+     "src/streamlink/plugins/kick.py::Kick._get_api_headers",
+     "src/streamlink/plugins/kick.py::Kick._get_token",
+     "src/streamlink/plugins/kick.py::KickAdapter.get_ssl_context"
+    ],
+    "streamlink__streamlink-6535": [
+     "src/streamlink/plugins/tvp.py::TVP._get_video_id",
+     "src/streamlink/plugins/tvp.py::TVP._get_formats_from_api",
+     "src/streamlink/plugins/tvp.py::TVP._get_streams"
+    ],
+    "streamlink__streamlink-6544": [
+     "src/streamlink/plugins/nicolive.py::NicoLive.get_data",
+     "src/streamlink/plugins/nicolive.py::NicoLive.find_metadata",
+     "src/streamlink/utils/l10n.py::Localization._parse_locale_code"
+    ]
+   },
+   "hits": {
+    "streamlink__streamlink-6127": false,
+    "streamlink__streamlink-6178": true,
+    "streamlink__streamlink-6205": true,
+    "streamlink__streamlink-6207": true,
+    "streamlink__streamlink-6242": true,
+    "streamlink__streamlink-6328": true,
+    "streamlink__streamlink-6338": true,
+    "streamlink__streamlink-6353": true,
+    "streamlink__streamlink-6361": true,
+    "streamlink__streamlink-6381": true,
+    "streamlink__streamlink-6389": true,
+    "streamlink__streamlink-6397": true,
+    "streamlink__streamlink-6420": true,
+    "streamlink__streamlink-6433": true,
+    "streamlink__streamlink-6439": true,
+    "streamlink__streamlink-6452": true,
+    "streamlink__streamlink-6455": true,
+    "streamlink__streamlink-6479": true,
+    "streamlink__streamlink-6491": true,
+    "streamlink__streamlink-6535": true,
+    "streamlink__streamlink-6544": true
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": -1.59,
+    "localization_lift_pts": 14.29
+   },
+   "metrics": {
+    "false_positive_rate": 0.4127,
+    "localization_rate": 0.9524,
+    "n_false_positive": 26,
+    "n_flags": 63,
+    "n_localized": 20,
+    "n_tasks": 21,
+    "per_repo": {
+     "streamlink/streamlink": {
+      "false_positive_rate": 0.4127,
+      "localization_rate": 0.9524,
+      "n_false_positive": 26,
+      "n_flags": 63,
+      "n_localized": 20,
+      "n_tasks": 21
+     }
+    }
+   },
+   "retrieved": {
+    "streamlink__streamlink-6127": [
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440"
+    ],
+    "streamlink__streamlink-6178": [
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467"
+    ],
+    "streamlink__streamlink-6205": [
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467"
+    ],
+    "streamlink__streamlink-6207": [
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467"
+    ],
+    "streamlink__streamlink-6242": [
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440"
+    ],
+    "streamlink__streamlink-6328": [
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467"
+    ],
+    "streamlink__streamlink-6338": [
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467"
+    ],
+    "streamlink__streamlink-6353": [
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467"
+    ],
+    "streamlink__streamlink-6361": [
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+    ],
+    "streamlink__streamlink-6381": [
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+    ],
+    "streamlink__streamlink-6389": [
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+    ],
+    "streamlink__streamlink-6397": [
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+    ],
+    "streamlink__streamlink-6420": [
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+    ],
+    "streamlink__streamlink-6433": [
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+    ],
+    "streamlink__streamlink-6439": [
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+    ],
+    "streamlink__streamlink-6452": [
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+    ],
+    "streamlink__streamlink-6455": [
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+    ],
+    "streamlink__streamlink-6479": [
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+    ],
+    "streamlink__streamlink-6491": [
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+    ],
+    "streamlink__streamlink-6535": [
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+    ],
+    "streamlink__streamlink-6544": [
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+    ]
+   },
+   "scores": {
+    "streamlink__streamlink-6127": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.460669,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.465656
+    },
+    "streamlink__streamlink-6178": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.480949,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.458698
+    },
+    "streamlink__streamlink-6205": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.39037,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.374022
+    },
+    "streamlink__streamlink-6207": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.447337,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.424229
+    },
+    "streamlink__streamlink-6242": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.4994,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.50798
+    },
+    "streamlink__streamlink-6328": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.462915,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.457219
+    },
+    "streamlink__streamlink-6338": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.453873,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.441912
+    },
+    "streamlink__streamlink-6353": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.446874,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.441854
+    },
+    "streamlink__streamlink-6361": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.42638,
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602": 0.250696,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.395349
+    },
+    "streamlink__streamlink-6381": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.413629,
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602": 0.345354,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.423324
+    },
+    "streamlink__streamlink-6389": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.47232,
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602": 0.411746,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.438907
+    },
+    "streamlink__streamlink-6397": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.468666,
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602": 0.424971,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.462056
+    },
+    "streamlink__streamlink-6420": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.484113,
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602": 0.405347,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.465909
+    },
+    "streamlink__streamlink-6433": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.418515,
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602": 0.356962,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.4277
+    },
+    "streamlink__streamlink-6439": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.460229,
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602": 0.300546,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.434539
+    },
+    "streamlink__streamlink-6452": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.459424,
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602": 0.32265,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.447067
+    },
+    "streamlink__streamlink-6455": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.344118,
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602": 0.192343,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.307747
+    },
+    "streamlink__streamlink-6479": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.480985,
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602": 0.262113,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.457246
+    },
+    "streamlink__streamlink-6491": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.485851,
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602": 0.334778,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.472871
+    },
+    "streamlink__streamlink-6535": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.497271,
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602": 0.412478,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.504935
+    },
+    "streamlink__streamlink-6544": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.462813,
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602": 0.396421,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.468207
+    }
+   },
+   "tau": 0.0,
+   "version": "rolling",
+   "versions": {
+    "streamlink__streamlink-6127": "5584e7debef41b04f7db8f9579e5e22bc1ad730ea64f5d2087f4062cb4f45962",
+    "streamlink__streamlink-6178": "5584e7debef41b04f7db8f9579e5e22bc1ad730ea64f5d2087f4062cb4f45962",
+    "streamlink__streamlink-6205": "5584e7debef41b04f7db8f9579e5e22bc1ad730ea64f5d2087f4062cb4f45962",
+    "streamlink__streamlink-6207": "5584e7debef41b04f7db8f9579e5e22bc1ad730ea64f5d2087f4062cb4f45962",
+    "streamlink__streamlink-6242": "5584e7debef41b04f7db8f9579e5e22bc1ad730ea64f5d2087f4062cb4f45962",
+    "streamlink__streamlink-6328": "5584e7debef41b04f7db8f9579e5e22bc1ad730ea64f5d2087f4062cb4f45962",
+    "streamlink__streamlink-6338": "5584e7debef41b04f7db8f9579e5e22bc1ad730ea64f5d2087f4062cb4f45962",
+    "streamlink__streamlink-6353": "5584e7debef41b04f7db8f9579e5e22bc1ad730ea64f5d2087f4062cb4f45962",
+    "streamlink__streamlink-6361": "16d77063671fa5234015f2e9d57134d315ac40fc348edc6d6eb6226c1624cf9a",
+    "streamlink__streamlink-6381": "16d77063671fa5234015f2e9d57134d315ac40fc348edc6d6eb6226c1624cf9a",
+    "streamlink__streamlink-6389": "16d77063671fa5234015f2e9d57134d315ac40fc348edc6d6eb6226c1624cf9a",
+    "streamlink__streamlink-6397": "16d77063671fa5234015f2e9d57134d315ac40fc348edc6d6eb6226c1624cf9a",
+    "streamlink__streamlink-6420": "16d77063671fa5234015f2e9d57134d315ac40fc348edc6d6eb6226c1624cf9a",
+    "streamlink__streamlink-6433": "16d77063671fa5234015f2e9d57134d315ac40fc348edc6d6eb6226c1624cf9a",
+    "streamlink__streamlink-6439": "16d77063671fa5234015f2e9d57134d315ac40fc348edc6d6eb6226c1624cf9a",
+    "streamlink__streamlink-6452": "16d77063671fa5234015f2e9d57134d315ac40fc348edc6d6eb6226c1624cf9a",
+    "streamlink__streamlink-6455": "16d77063671fa5234015f2e9d57134d315ac40fc348edc6d6eb6226c1624cf9a",
+    "streamlink__streamlink-6479": "16d77063671fa5234015f2e9d57134d315ac40fc348edc6d6eb6226c1624cf9a",
+    "streamlink__streamlink-6491": "16d77063671fa5234015f2e9d57134d315ac40fc348edc6d6eb6226c1624cf9a",
+    "streamlink__streamlink-6535": "16d77063671fa5234015f2e9d57134d315ac40fc348edc6d6eb6226c1624cf9a",
+    "streamlink__streamlink-6544": "16d77063671fa5234015f2e9d57134d315ac40fc348edc6d6eb6226c1624cf9a"
+   }
+  },
+  "ungated": {
+   "file_hits": {
+    "streamlink__streamlink-6127": true,
+    "streamlink__streamlink-6178": true,
+    "streamlink__streamlink-6205": true,
+    "streamlink__streamlink-6207": true,
+    "streamlink__streamlink-6242": true,
+    "streamlink__streamlink-6328": true,
+    "streamlink__streamlink-6338": true,
+    "streamlink__streamlink-6353": true,
+    "streamlink__streamlink-6361": true,
+    "streamlink__streamlink-6381": true,
+    "streamlink__streamlink-6389": true,
+    "streamlink__streamlink-6397": true,
+    "streamlink__streamlink-6420": true,
+    "streamlink__streamlink-6433": true,
+    "streamlink__streamlink-6439": true,
+    "streamlink__streamlink-6452": true,
+    "streamlink__streamlink-6455": true,
+    "streamlink__streamlink-6479": true,
+    "streamlink__streamlink-6491": true,
+    "streamlink__streamlink-6535": true,
+    "streamlink__streamlink-6544": true
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.6667,
+    "localization_rate": 1.0,
+    "n_false_positive": 42,
+    "n_flags": 63,
+    "n_localized": 21,
+    "n_tasks": 21,
+    "per_repo": {
+     "streamlink/streamlink": {
+      "false_positive_rate": 0.6667,
+      "localization_rate": 1.0,
+      "n_false_positive": 42,
+      "n_flags": 63,
+      "n_localized": 21,
+      "n_tasks": 21
+     }
+    }
+   },
+   "flags": {
+    "streamlink__streamlink-6127": [
+     "src/streamlink/plugins/nicolive.py::NicoLive._get_hls_stream_url",
+     "src/streamlink/plugins/nicolive.py::NicoLive.find_wss_api_url",
+     "src/streamlink/plugins/nicolive.py::NicoLive.get_data"
+    ],
+    "streamlink__streamlink-6178": [
+     "src/streamlink/plugins/vk.py::VK._get_streams",
+     "src/streamlink/plugins/vk.py::VK.follow_vk_redirect",
+     "src/streamlink/plugins/vk.py::VK._get_cookies"
+    ],
+    "streamlink__streamlink-6205": [
+     "src/streamlink/session/http.py::SSLContextAdapter.get_ssl_context",
+     "src/streamlink/session/http.py::TLSNoDHAdapter.get_ssl_context",
+     "src/streamlink/session/http.py::HTTPSession.request"
+    ],
+    "streamlink__streamlink-6207": [
+     "src/streamlink_cli/output/player.py::PlayerOutput.__init__",
+     "src/streamlink_cli/output/player.py::PlayerOutput.playerargsfactory",
+     "src/streamlink_cli/main.py::output_stream_passthrough"
+    ],
+    "streamlink__streamlink-6242": [
+     "src/streamlink/plugins/tv3cat.py::TV3Cat._get_streams",
+     "src/streamlink/plugins/tv3cat.py::TV3Cat",
+     "src/streamlink/plugins/tv3cat.py::TV3Cat._call_api_media"
+    ],
+    "streamlink__streamlink-6328": [
+     "src/streamlink/stream/dash/manifest.py::BaseURL.join",
+     "src/streamlink/stream/dash/manifest.py::SegmentList.make_url",
+     "src/streamlink/utils/url.py::url_concat"
+    ],
+    "streamlink__streamlink-6338": [
+     "src/streamlink/stream/dash/dash.py::DASHStream.fetch_manifest",
+     "src/streamlink/stream/dash/dash.py::DASHStream.parse_manifest",
+     "src/streamlink/utils/url.py::absolute_url"
+    ],
+    "streamlink__streamlink-6353": [
+     "src/streamlink/plugins/mangomolo.py::Mangomolo._get_streams",
+     "src/streamlink/plugins/mangomolo.py::Mangomolo._get_player_url",
+     "src/streamlink/session/plugins.py::StreamlinkPlugins.match_url"
+    ],
+    "streamlink__streamlink-6361": [
+     "src/streamlink_cli/show_matchers.py::show_matchers",
+     "src/streamlink_cli/_parser.py::get_parser",
+     "src/streamlink_cli/show_matchers.py::<module>"
+    ],
+    "streamlink__streamlink-6381": [
+     "src/streamlink/plugins/tiktok.py::TikTok._get_streams",
+     "src/streamlink/plugins/tiktok.py::<module>",
+     "src/streamlink/plugins/tiktok.py::TikTok"
+    ],
+    "streamlink__streamlink-6389": [
+     "src/streamlink/plugins/chzzk.py::ChzzkAPI._query_api",
+     "src/streamlink/plugins/chzzk.py::Chzzk._get_streams",
+     "src/streamlink/plugins/chzzk.py::ChzzkAPI.get_videos"
+    ],
+    "streamlink__streamlink-6397": [
+     "src/streamlink/plugins/ceskatelevize.py::Ceskatelevize._get_streams",
+     "src/streamlink/plugins/ceskatelevize.py::Ceskatelevize.get_stream_url",
+     "src/streamlink/plugins/ceskatelevize.py::Ceskatelevize.get_decko"
+    ],
+    "streamlink__streamlink-6420": [
+     "src/streamlink/plugins/nos.py::NOS._get_streams",
+     "src/streamlink/plugins/nos.py::NOS",
+     "src/streamlink/validate/_schemas.py::NoneOrAllSchema"
+    ],
+    "streamlink__streamlink-6433": [
+     "src/streamlink/plugins/pandalive.py::Pandalive._get_streams",
+     "src/streamlink/plugins/pandalive.py::Pandalive",
+     "src/streamlink/plugin/plugin.py::Plugin._get_streams"
+    ],
+    "streamlink__streamlink-6439": [
+     "src/streamlink/plugins/tf1.py::TF1._api_call",
+     "src/streamlink/plugins/tf1.py::TF1._get_streams",
+     "src/streamlink/plugins/tf1.py::TF1"
+    ],
+    "streamlink__streamlink-6452": [
+     "src/streamlink/plugins/euronews.py::Euronews._get_streams",
+     "src/streamlink/plugins/euronews.py::Euronews._get_live",
+     "src/streamlink/plugins/euronews.py::Euronews._get_embed"
+    ],
+    "streamlink__streamlink-6455": [
+     "src/streamlink_cli/argparser.py::build_parser",
+     "src/streamlink_cli/argparser.py::ArgumentParser.__init__",
+     "src/streamlink/session/options.py::StreamlinkOptions.__init__"
+    ],
+    "streamlink__streamlink-6479": [
+     "src/streamlink/stream/hls/hls.py::HLSStream.parse_variant_playlist",
+     "src/streamlink/stream/hls/m3u8.py::M3U8Parser.parse_tag_ext_x_media",
+     "src/streamlink/plugins/hls.py::HLSPlugin._get_streams"
+    ],
+    "streamlink__streamlink-6491": [
+     "src/streamlink/plugins/kick.py::Kick._get_api_headers",
+     "src/streamlink/plugins/kick.py::Kick._get_token",
+     "src/streamlink/plugins/kick.py::KickAdapter.get_ssl_context"
+    ],
+    "streamlink__streamlink-6535": [
+     "src/streamlink/plugins/tvp.py::TVP._get_video_id",
+     "src/streamlink/plugins/tvp.py::TVP._get_formats_from_api",
+     "src/streamlink/plugins/tvp.py::TVP._get_streams"
+    ],
+    "streamlink__streamlink-6544": [
+     "src/streamlink/plugins/nicolive.py::NicoLive.get_data",
+     "src/streamlink/plugins/nicolive.py::NicoLive.find_metadata",
+     "src/streamlink/utils/l10n.py::Localization._parse_locale_code"
+    ]
+   },
+   "hits": {
+    "streamlink__streamlink-6127": false,
+    "streamlink__streamlink-6178": true,
+    "streamlink__streamlink-6205": true,
+    "streamlink__streamlink-6207": true,
+    "streamlink__streamlink-6242": true,
+    "streamlink__streamlink-6328": true,
+    "streamlink__streamlink-6338": true,
+    "streamlink__streamlink-6353": true,
+    "streamlink__streamlink-6361": true,
+    "streamlink__streamlink-6381": true,
+    "streamlink__streamlink-6389": true,
+    "streamlink__streamlink-6397": true,
+    "streamlink__streamlink-6420": true,
+    "streamlink__streamlink-6433": true,
+    "streamlink__streamlink-6439": true,
+    "streamlink__streamlink-6452": true,
+    "streamlink__streamlink-6455": true,
+    "streamlink__streamlink-6479": true,
+    "streamlink__streamlink-6491": true,
+    "streamlink__streamlink-6535": true,
+    "streamlink__streamlink-6544": true
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": -1.59,
+    "localization_lift_pts": 14.29
+   },
+   "metrics": {
+    "false_positive_rate": 0.4127,
+    "localization_rate": 0.9524,
+    "n_false_positive": 26,
+    "n_flags": 63,
+    "n_localized": 20,
+    "n_tasks": 21,
+    "per_repo": {
+     "streamlink/streamlink": {
+      "false_positive_rate": 0.4127,
+      "localization_rate": 0.9524,
+      "n_false_positive": 26,
+      "n_flags": 63,
+      "n_localized": 20,
+      "n_tasks": 21
+     }
+    }
+   },
+   "retrieved": {
+    "streamlink__streamlink-6127": [
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440"
+    ],
+    "streamlink__streamlink-6178": [
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467"
+    ],
+    "streamlink__streamlink-6205": [
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467"
+    ],
+    "streamlink__streamlink-6207": [
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467"
+    ],
+    "streamlink__streamlink-6242": [
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440"
+    ],
+    "streamlink__streamlink-6328": [
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467"
+    ],
+    "streamlink__streamlink-6338": [
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467"
+    ],
+    "streamlink__streamlink-6353": [
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467"
+    ],
+    "streamlink__streamlink-6361": [
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+    ],
+    "streamlink__streamlink-6381": [
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+    ],
+    "streamlink__streamlink-6389": [
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+    ],
+    "streamlink__streamlink-6397": [
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+    ],
+    "streamlink__streamlink-6420": [
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+    ],
+    "streamlink__streamlink-6433": [
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+    ],
+    "streamlink__streamlink-6439": [
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+    ],
+    "streamlink__streamlink-6452": [
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+    ],
+    "streamlink__streamlink-6455": [
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+    ],
+    "streamlink__streamlink-6479": [
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+    ],
+    "streamlink__streamlink-6491": [
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+    ],
+    "streamlink__streamlink-6535": [
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+    ],
+    "streamlink__streamlink-6544": [
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+    ]
+   },
+   "scores": {
+    "streamlink__streamlink-6127": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.460669,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.465656
+    },
+    "streamlink__streamlink-6178": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.480949,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.458698
+    },
+    "streamlink__streamlink-6205": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.39037,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.374022
+    },
+    "streamlink__streamlink-6207": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.447337,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.424229
+    },
+    "streamlink__streamlink-6242": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.4994,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.50798
+    },
+    "streamlink__streamlink-6328": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.462915,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.457219
+    },
+    "streamlink__streamlink-6338": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.453873,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.441912
+    },
+    "streamlink__streamlink-6353": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.446874,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.441854
+    },
+    "streamlink__streamlink-6361": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.42638,
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602": 0.250696,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.395349
+    },
+    "streamlink__streamlink-6381": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.413629,
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602": 0.345354,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.423324
+    },
+    "streamlink__streamlink-6389": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.47232,
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602": 0.411746,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.438907
+    },
+    "streamlink__streamlink-6397": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.468666,
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602": 0.424971,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.462056
+    },
+    "streamlink__streamlink-6420": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.484113,
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602": 0.405347,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.465909
+    },
+    "streamlink__streamlink-6433": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.418515,
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602": 0.356962,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.4277
+    },
+    "streamlink__streamlink-6439": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.460229,
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602": 0.300546,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.434539
+    },
+    "streamlink__streamlink-6452": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.459424,
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602": 0.32265,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.447067
+    },
+    "streamlink__streamlink-6455": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.344118,
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602": 0.192343,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.307747
+    },
+    "streamlink__streamlink-6479": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.480985,
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602": 0.262113,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.457246
+    },
+    "streamlink__streamlink-6491": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.485851,
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602": 0.334778,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.472871
+    },
+    "streamlink__streamlink-6535": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.497271,
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602": 0.412478,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.504935
+    },
+    "streamlink__streamlink-6544": {
+     "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": 0.462813,
+     "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602": 0.396421,
+     "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": 0.468207
+    }
+   },
+   "tau": 0.0,
+   "version": "rolling",
+   "versions": {
+    "streamlink__streamlink-6127": "5584e7debef41b04f7db8f9579e5e22bc1ad730ea64f5d2087f4062cb4f45962",
+    "streamlink__streamlink-6178": "5584e7debef41b04f7db8f9579e5e22bc1ad730ea64f5d2087f4062cb4f45962",
+    "streamlink__streamlink-6205": "5584e7debef41b04f7db8f9579e5e22bc1ad730ea64f5d2087f4062cb4f45962",
+    "streamlink__streamlink-6207": "5584e7debef41b04f7db8f9579e5e22bc1ad730ea64f5d2087f4062cb4f45962",
+    "streamlink__streamlink-6242": "5584e7debef41b04f7db8f9579e5e22bc1ad730ea64f5d2087f4062cb4f45962",
+    "streamlink__streamlink-6328": "5584e7debef41b04f7db8f9579e5e22bc1ad730ea64f5d2087f4062cb4f45962",
+    "streamlink__streamlink-6338": "5584e7debef41b04f7db8f9579e5e22bc1ad730ea64f5d2087f4062cb4f45962",
+    "streamlink__streamlink-6353": "5584e7debef41b04f7db8f9579e5e22bc1ad730ea64f5d2087f4062cb4f45962",
+    "streamlink__streamlink-6361": "16d77063671fa5234015f2e9d57134d315ac40fc348edc6d6eb6226c1624cf9a",
+    "streamlink__streamlink-6381": "16d77063671fa5234015f2e9d57134d315ac40fc348edc6d6eb6226c1624cf9a",
+    "streamlink__streamlink-6389": "16d77063671fa5234015f2e9d57134d315ac40fc348edc6d6eb6226c1624cf9a",
+    "streamlink__streamlink-6397": "16d77063671fa5234015f2e9d57134d315ac40fc348edc6d6eb6226c1624cf9a",
+    "streamlink__streamlink-6420": "16d77063671fa5234015f2e9d57134d315ac40fc348edc6d6eb6226c1624cf9a",
+    "streamlink__streamlink-6433": "16d77063671fa5234015f2e9d57134d315ac40fc348edc6d6eb6226c1624cf9a",
+    "streamlink__streamlink-6439": "16d77063671fa5234015f2e9d57134d315ac40fc348edc6d6eb6226c1624cf9a",
+    "streamlink__streamlink-6452": "16d77063671fa5234015f2e9d57134d315ac40fc348edc6d6eb6226c1624cf9a",
+    "streamlink__streamlink-6455": "16d77063671fa5234015f2e9d57134d315ac40fc348edc6d6eb6226c1624cf9a",
+    "streamlink__streamlink-6479": "16d77063671fa5234015f2e9d57134d315ac40fc348edc6d6eb6226c1624cf9a",
+    "streamlink__streamlink-6491": "16d77063671fa5234015f2e9d57134d315ac40fc348edc6d6eb6226c1624cf9a",
+    "streamlink__streamlink-6535": "16d77063671fa5234015f2e9d57134d315ac40fc348edc6d6eb6226c1624cf9a",
+    "streamlink__streamlink-6544": "16d77063671fa5234015f2e9d57134d315ac40fc348edc6d6eb6226c1624cf9a"
+   }
+  }
+ },
+ "control": {
+  "false_positive_rate": 0.4286,
+  "localization_rate": 0.8095,
+  "n_false_positive": 27,
+  "n_flags": 63,
+  "n_localized": 17,
+  "n_tasks": 21,
+  "per_repo": {
+   "streamlink/streamlink": {
+    "false_positive_rate": 0.4286,
+    "localization_rate": 0.8095,
+    "n_false_positive": 27,
+    "n_flags": 63,
+    "n_localized": 17,
+    "n_tasks": 21
+   }
+  }
+ },
+ "control_flags": {
+  "streamlink__streamlink-6127": [
+   "src/streamlink/plugins/nicolive.py",
+   "src/streamlink/plugins/nicolive.py",
+   "src/streamlink/plugins/nicolive.py"
+  ],
+  "streamlink__streamlink-6178": [
+   "src/streamlink/plugins/vk.py",
+   "src/streamlink/plugins/vk.py",
+   "src/streamlink/plugins/vk.py"
+  ],
+  "streamlink__streamlink-6205": [
+   "src/streamlink/session/http.py",
+   "src/streamlink/session/http.py",
+   "src/streamlink/session/http.py"
+  ],
+  "streamlink__streamlink-6207": [
+   "src/streamlink_cli/output/player.py",
+   "src/streamlink_cli/output/player.py",
+   "src/streamlink_cli/utils/player.py"
+  ],
+  "streamlink__streamlink-6242": [
+   "src/streamlink/plugins/tv3cat.py",
+   "src/streamlink/plugins/tv3cat.py",
+   "src/streamlink/session/plugins.py"
+  ],
+  "streamlink__streamlink-6328": [
+   "src/streamlink/stream/dash/manifest.py",
+   "src/streamlink/stream/dash/manifest.py",
+   "src/streamlink/utils/url.py"
+  ],
+  "streamlink__streamlink-6338": [
+   "src/streamlink/stream/dash/dash.py",
+   "src/streamlink/stream/dash/dash.py",
+   "src/streamlink/utils/url.py"
+  ],
+  "streamlink__streamlink-6353": [
+   "src/streamlink/plugins/mangomolo.py",
+   "src/streamlink/plugins/mangomolo.py",
+   "src/streamlink/session/plugins.py"
+  ],
+  "streamlink__streamlink-6361": [
+   "src/streamlink_cli/show_matchers.py",
+   "src/streamlink_cli/_parser.py",
+   "src/streamlink_cli/show_matchers.py"
+  ],
+  "streamlink__streamlink-6381": [
+   "src/streamlink/plugins/tiktok.py",
+   "src/streamlink/plugins/tiktok.py",
+   "src/streamlink/plugins/tiktok.py"
+  ],
+  "streamlink__streamlink-6389": [
+   "src/streamlink/plugins/chzzk.py",
+   "src/streamlink/plugins/chzzk.py",
+   "src/streamlink/plugins/chzzk.py"
+  ],
+  "streamlink__streamlink-6397": [
+   "src/streamlink/plugins/ceskatelevize.py",
+   "src/streamlink/plugins/ceskatelevize.py",
+   "src/streamlink/plugins/ceskatelevize.py"
+  ],
+  "streamlink__streamlink-6420": [
+   "src/streamlink/plugins/nos.py",
+   "src/streamlink/plugins/nos.py",
+   "src/streamlink/validate/_schemas.py"
+  ],
+  "streamlink__streamlink-6433": [
+   "src/streamlink/plugins/pandalive.py",
+   "src/streamlink/plugins/pandalive.py",
+   "src/streamlink/plugins/pandalive.py"
+  ],
+  "streamlink__streamlink-6439": [
+   "src/streamlink/plugins/tf1.py",
+   "src/streamlink/plugins/tf1.py",
+   "src/streamlink/plugins/tf1.py"
+  ],
+  "streamlink__streamlink-6452": [
+   "src/streamlink/plugins/euronews.py",
+   "src/streamlink/plugins/euronews.py",
+   "src/streamlink/plugin/plugin.py"
+  ],
+  "streamlink__streamlink-6455": [
+   "src/streamlink_cli/argparser.py",
+   "src/streamlink_cli/main.py",
+   "src/streamlink_cli/main.py"
+  ],
+  "streamlink__streamlink-6479": [
+   "src/streamlink/stream/hls/hls.py",
+   "src/streamlink/stream/hls/m3u8.py",
+   "src/streamlink/plugins/hls.py"
+  ],
+  "streamlink__streamlink-6491": [
+   "src/streamlink/plugins/kick.py",
+   "src/streamlink/plugins/kick.py",
+   "src/streamlink/plugins/kick.py"
+  ],
+  "streamlink__streamlink-6535": [
+   "src/streamlink/plugins/tvp.py",
+   "src/streamlink/plugins/tvp.py",
+   "src/streamlink/plugins/tvp.py"
+  ],
+  "streamlink__streamlink-6544": [
+   "src/streamlink/plugins/nicolive.py",
+   "src/streamlink/plugins/nicolive.py",
+   "src/streamlink/utils/l10n.py"
+  ]
+ },
+ "errors": {},
+ "gold": {
+  "streamlink__streamlink-6127": [
+   "src/streamlink/plugins/nicolive.py::<module>",
+   "src/streamlink/plugins/nicolive.py::NicoLive",
+   "src/streamlink/plugins/nicolive.py::NicoLiveHLSStream.set_wsclient"
+  ],
+  "streamlink__streamlink-6178": [
+   "src/streamlink/plugins/vk.py::<module>",
+   "src/streamlink/plugins/vk.py::VK",
+   "src/streamlink/plugins/vk.py::VK._get_cookies",
+   "src/streamlink/plugins/vk.py::VK._get_streams",
+   "src/streamlink/plugins/vk.py::VK._has_video_id",
+   "src/streamlink/plugins/vk.py::VK.follow_vk_redirect"
+  ],
+  "streamlink__streamlink-6205": [
+   "src/streamlink/session/http.py::<module>",
+   "src/streamlink/session/http.py::SSLContextAdapter.proxy_manager_for",
+   "src/streamlink/session/http.py::TLSNoDHAdapter",
+   "src/streamlink/session/http.py::TLSNoDHAdapter.get_ssl_context"
+  ],
+  "streamlink__streamlink-6207": [
+   "src/streamlink_cli/main.py::output_stream_passthrough"
+  ],
+  "streamlink__streamlink-6242": [
+   "src/streamlink/plugins/tv3cat.py::<module>",
+   "src/streamlink/plugins/tv3cat.py::TV3Cat"
+  ],
+  "streamlink__streamlink-6328": [
+   "src/streamlink/stream/dash/manifest.py::<module>",
+   "src/streamlink/stream/dash/manifest.py::BaseURL",
+   "src/streamlink/stream/dash/manifest.py::BaseURL.__init__",
+   "src/streamlink/stream/dash/manifest.py::BaseURL.is_absolute",
+   "src/streamlink/stream/dash/manifest.py::BaseURL.join",
+   "src/streamlink/stream/dash/manifest.py::Location",
+   "src/streamlink/stream/dash/manifest.py::MPDNode.base_url",
+   "src/streamlink/stream/dash/manifest.py::SegmentList",
+   "src/streamlink/stream/dash/manifest.py::SegmentList.calculate_optimal_start",
+   "src/streamlink/stream/dash/manifest.py::SegmentList.make_url",
+   "src/streamlink/stream/dash/manifest.py::SegmentTemplate",
+   "src/streamlink/stream/dash/manifest.py::SegmentTemplate.make_url",
+   "src/streamlink/stream/dash/manifest.py::SegmentTemplate.segment_numbers"
+  ],
+  "streamlink__streamlink-6338": [
+   "src/streamlink/stream/dash/dash.py::<module>",
+   "src/streamlink/stream/dash/dash.py::DASHStream",
+   "src/streamlink/stream/dash/dash.py::DASHStream.fetch_manifest",
+   "src/streamlink/stream/dash/dash.py::DASHStream.parse_mpd"
+  ],
+  "streamlink__streamlink-6353": [
+   "src/streamlink/plugins/mangomolo.py::Mangomolo",
+   "src/streamlink/plugins/mangomolo.py::Mangomolo._get_player_url"
+  ],
+  "streamlink__streamlink-6361": [
+   "src/streamlink_cli/show_matchers.py::<module>",
+   "src/streamlink_cli/show_matchers.py::show_matchers",
+   "src/streamlink_cli/show_matchers.py::show_matchers_json",
+   "src/streamlink_cli/show_matchers.py::show_matchers_text"
+  ],
+  "streamlink__streamlink-6381": [
+   "src/streamlink/plugins/tiktok.py::<module>",
+   "src/streamlink/plugins/tiktok.py::TikTok",
+   "src/streamlink/plugins/tiktok.py::TikTok._get_streams",
+   "src/streamlink/plugins/tiktok.py::TikTok.stream_weight"
+  ],
+  "streamlink__streamlink-6389": [
+   "src/streamlink/plugins/chzzk.py::<module>",
+   "src/streamlink/plugins/chzzk.py::Chzzk",
+   "src/streamlink/plugins/chzzk.py::Chzzk._get_live",
+   "src/streamlink/plugins/chzzk.py::Chzzk._get_streams",
+   "src/streamlink/plugins/chzzk.py::Chzzk._get_video",
+   "src/streamlink/plugins/chzzk.py::ChzzkAPI",
+   "src/streamlink/plugins/chzzk.py::ChzzkAPI.__init__",
+   "src/streamlink/plugins/chzzk.py::ChzzkAPI._query_api",
+   "src/streamlink/plugins/chzzk.py::ChzzkAPI.get_videos"
+  ],
+  "streamlink__streamlink-6397": [
+   "src/streamlink/plugins/ceskatelevize.py::<module>",
+   "src/streamlink/plugins/ceskatelevize.py::Ceskatelevize",
+   "src/streamlink/plugins/ceskatelevize.py::Ceskatelevize._get_streams",
+   "src/streamlink/plugins/ceskatelevize.py::Ceskatelevize.get_channel",
+   "src/streamlink/plugins/ceskatelevize.py::Ceskatelevize.get_ct24",
+   "src/streamlink/plugins/ceskatelevize.py::Ceskatelevize.get_decko",
+   "src/streamlink/plugins/ceskatelevize.py::Ceskatelevize.get_sport",
+   "src/streamlink/plugins/ceskatelevize.py::Ceskatelevize.get_stream_url"
+  ],
+  "streamlink__streamlink-6420": [
+   "src/streamlink/plugins/nos.py::<module>",
+   "src/streamlink/plugins/nos.py::NOS",
+   "src/streamlink/plugins/nos.py::NOS._get_streams"
+  ],
+  "streamlink__streamlink-6433": [
+   "src/streamlink/plugins/pandalive.py::<module>",
+   "src/streamlink/plugins/pandalive.py::Pandalive",
+   "src/streamlink/plugins/pandalive.py::Pandalive._get_streams"
+  ],
+  "streamlink__streamlink-6439": [
+   "src/streamlink/plugins/tf1.py::<module>",
+   "src/streamlink/plugins/tf1.py::TF1"
+  ],
+  "streamlink__streamlink-6452": [
+   "src/streamlink/plugins/euronews.py::<module>",
+   "src/streamlink/plugins/euronews.py::Euronews",
+   "src/streamlink/plugins/euronews.py::Euronews._get_embed",
+   "src/streamlink/plugins/euronews.py::Euronews._get_live",
+   "src/streamlink/plugins/euronews.py::Euronews._get_streams",
+   "src/streamlink/plugins/euronews.py::Euronews._get_vod"
+  ],
+  "streamlink__streamlink-6455": [
+   "src/streamlink_cli/argparser.py::build_parser",
+   "src/streamlink_cli/main.py::fetch_streams_with_retry"
+  ],
+  "streamlink__streamlink-6479": [
+   "src/streamlink/stream/hls/hls.py::HLSStream.parse_variant_playlist"
+  ],
+  "streamlink__streamlink-6491": [
+   "src/streamlink/plugins/kick.py::<module>",
+   "src/streamlink/plugins/kick.py::Kick",
+   "src/streamlink/plugins/kick.py::Kick.__init__",
+   "src/streamlink/plugins/kick.py::Kick._get_api_headers",
+   "src/streamlink/plugins/kick.py::Kick._get_streams_clip",
+   "src/streamlink/plugins/kick.py::Kick._get_streams_live",
+   "src/streamlink/plugins/kick.py::Kick._get_streams_vod",
+   "src/streamlink/plugins/kick.py::Kick._get_token"
+  ],
+  "streamlink__streamlink-6535": [
+   "src/streamlink/plugins/tvp.py::<module>",
+   "src/streamlink/plugins/tvp.py::TVP",
+   "src/streamlink/plugins/tvp.py::TVP._get_formats_from_api",
+   "src/streamlink/plugins/tvp.py::TVP._get_live",
+   "src/streamlink/plugins/tvp.py::TVP._get_streams",
+   "src/streamlink/plugins/tvp.py::TVP._get_tvp_info_vod",
+   "src/streamlink/plugins/tvp.py::TVP._get_video_id",
+   "src/streamlink/plugins/tvp.py::TVP._get_vod"
+  ],
+  "streamlink__streamlink-6544": [
+   "src/streamlink/plugins/nicolive.py::NicoLive.get_data",
+   "src/streamlink/session/http.py::HTTPSession",
+   "src/streamlink/session/http.py::HTTPSession.request"
+  ]
+ },
+ "granularity": "function",
+ "learn_errors": {},
+ "lift": {
+  "false_positive_rise_pts": -1.59,
+  "localization_lift_pts": 14.29
+ },
+ "memory_locations": {
+  "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440": "src/streamlink/plugins/twitch.py::TwitchM3U8Parser.parse_tag_ext_x_twitch_prefetch",
+  "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602": "src/streamlink/plugins/mangomolo.py::Mangomolo._get_player_url",
+  "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467": "src/streamlink/plugins/twitch.py::TwitchM3U8Parser._is_segment_ad"
+ },
+ "mode": "rolling",
+ "n_errors": 0,
+ "n_eval": 21,
+ "retrieval_hit_rate": 1.0,
+ "retrieved": {
+  "streamlink__streamlink-6127": [
+   "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+   "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440"
+  ],
+  "streamlink__streamlink-6178": [
+   "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+   "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467"
+  ],
+  "streamlink__streamlink-6205": [
+   "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+   "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467"
+  ],
+  "streamlink__streamlink-6207": [
+   "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+   "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467"
+  ],
+  "streamlink__streamlink-6242": [
+   "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+   "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440"
+  ],
+  "streamlink__streamlink-6328": [
+   "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+   "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467"
+  ],
+  "streamlink__streamlink-6338": [
+   "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+   "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467"
+  ],
+  "streamlink__streamlink-6353": [
+   "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+   "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467"
+  ],
+  "streamlink__streamlink-6361": [
+   "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+   "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+   "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+  ],
+  "streamlink__streamlink-6381": [
+   "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+   "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+   "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+  ],
+  "streamlink__streamlink-6389": [
+   "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+   "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+   "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+  ],
+  "streamlink__streamlink-6397": [
+   "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+   "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+   "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+  ],
+  "streamlink__streamlink-6420": [
+   "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+   "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+   "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+  ],
+  "streamlink__streamlink-6433": [
+   "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+   "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+   "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+  ],
+  "streamlink__streamlink-6439": [
+   "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+   "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+   "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+  ],
+  "streamlink__streamlink-6452": [
+   "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+   "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+   "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+  ],
+  "streamlink__streamlink-6455": [
+   "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+   "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+   "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+  ],
+  "streamlink__streamlink-6479": [
+   "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+   "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+   "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+  ],
+  "streamlink__streamlink-6491": [
+   "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+   "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+   "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+  ],
+  "streamlink__streamlink-6535": [
+   "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+   "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+   "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+  ],
+  "streamlink__streamlink-6544": [
+   "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467",
+   "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440",
+   "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+  ]
+ },
+ "treatment": {
+  "false_positive_rate": 0.4127,
+  "localization_rate": 0.9524,
+  "n_false_positive": 26,
+  "n_flags": 63,
+  "n_localized": 20,
+  "n_tasks": 21,
+  "per_repo": {
+   "streamlink/streamlink": {
+    "false_positive_rate": 0.4127,
+    "localization_rate": 0.9524,
+    "n_false_positive": 26,
+    "n_flags": 63,
+    "n_localized": 20,
+    "n_tasks": 21
+   }
+  }
+ },
+ "treatment_flags": {
+  "streamlink__streamlink-6127": [
+   "src/streamlink/plugins/nicolive.py",
+   "src/streamlink/plugins/nicolive.py",
+   "src/streamlink/plugins/nicolive.py"
+  ],
+  "streamlink__streamlink-6178": [
+   "src/streamlink/plugins/vk.py",
+   "src/streamlink/plugins/vk.py",
+   "src/streamlink/plugins/vk.py"
+  ],
+  "streamlink__streamlink-6205": [
+   "src/streamlink/session/http.py",
+   "src/streamlink/session/http.py",
+   "src/streamlink/session/http.py"
+  ],
+  "streamlink__streamlink-6207": [
+   "src/streamlink_cli/output/player.py",
+   "src/streamlink_cli/output/player.py",
+   "src/streamlink_cli/main.py"
+  ],
+  "streamlink__streamlink-6242": [
+   "src/streamlink/plugins/tv3cat.py",
+   "src/streamlink/plugins/tv3cat.py",
+   "src/streamlink/plugins/tv3cat.py"
+  ],
+  "streamlink__streamlink-6328": [
+   "src/streamlink/stream/dash/manifest.py",
+   "src/streamlink/stream/dash/manifest.py",
+   "src/streamlink/utils/url.py"
+  ],
+  "streamlink__streamlink-6338": [
+   "src/streamlink/stream/dash/dash.py",
+   "src/streamlink/stream/dash/dash.py",
+   "src/streamlink/utils/url.py"
+  ],
+  "streamlink__streamlink-6353": [
+   "src/streamlink/plugins/mangomolo.py",
+   "src/streamlink/plugins/mangomolo.py",
+   "src/streamlink/session/plugins.py"
+  ],
+  "streamlink__streamlink-6361": [
+   "src/streamlink_cli/show_matchers.py",
+   "src/streamlink_cli/_parser.py",
+   "src/streamlink_cli/show_matchers.py"
+  ],
+  "streamlink__streamlink-6381": [
+   "src/streamlink/plugins/tiktok.py",
+   "src/streamlink/plugins/tiktok.py",
+   "src/streamlink/plugins/tiktok.py"
+  ],
+  "streamlink__streamlink-6389": [
+   "src/streamlink/plugins/chzzk.py",
+   "src/streamlink/plugins/chzzk.py",
+   "src/streamlink/plugins/chzzk.py"
+  ],
+  "streamlink__streamlink-6397": [
+   "src/streamlink/plugins/ceskatelevize.py",
+   "src/streamlink/plugins/ceskatelevize.py",
+   "src/streamlink/plugins/ceskatelevize.py"
+  ],
+  "streamlink__streamlink-6420": [
+   "src/streamlink/plugins/nos.py",
+   "src/streamlink/plugins/nos.py",
+   "src/streamlink/validate/_schemas.py"
+  ],
+  "streamlink__streamlink-6433": [
+   "src/streamlink/plugins/pandalive.py",
+   "src/streamlink/plugins/pandalive.py",
+   "src/streamlink/plugin/plugin.py"
+  ],
+  "streamlink__streamlink-6439": [
+   "src/streamlink/plugins/tf1.py",
+   "src/streamlink/plugins/tf1.py",
+   "src/streamlink/plugins/tf1.py"
+  ],
+  "streamlink__streamlink-6452": [
+   "src/streamlink/plugins/euronews.py",
+   "src/streamlink/plugins/euronews.py",
+   "src/streamlink/plugins/euronews.py"
+  ],
+  "streamlink__streamlink-6455": [
+   "src/streamlink_cli/argparser.py",
+   "src/streamlink_cli/argparser.py",
+   "src/streamlink/session/options.py"
+  ],
+  "streamlink__streamlink-6479": [
+   "src/streamlink/stream/hls/hls.py",
+   "src/streamlink/stream/hls/m3u8.py",
+   "src/streamlink/plugins/hls.py"
+  ],
+  "streamlink__streamlink-6491": [
+   "src/streamlink/plugins/kick.py",
+   "src/streamlink/plugins/kick.py",
+   "src/streamlink/plugins/kick.py"
+  ],
+  "streamlink__streamlink-6535": [
+   "src/streamlink/plugins/tvp.py",
+   "src/streamlink/plugins/tvp.py",
+   "src/streamlink/plugins/tvp.py"
+  ],
+  "streamlink__streamlink-6544": [
+   "src/streamlink/plugins/nicolive.py",
+   "src/streamlink/plugins/nicolive.py",
+   "src/streamlink/utils/l10n.py"
+  ]
+ },
+ "warmup": 20
+}
