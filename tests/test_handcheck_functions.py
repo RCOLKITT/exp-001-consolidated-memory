@@ -48,3 +48,39 @@ def test_verify_functions_scores_agreement(tmp_path):
     assert (agree, n) == (2, 3)
     rows = list(csv.DictReader(open(tmp_path / "out.csv")))
     assert [r["manual"] for r in rows] == ["Box.area", "<module>", "top"]
+
+
+MULTILINE = '''class Store:
+    def __init__(
+        self,
+        index: str | None = None,
+    ):
+        """doc
+        :param index: x
+        """
+        self.index = index
+
+    def one(self) -> None: ...
+    def two(
+        self, other
+    ) -> bool: ...
+    @property
+    def depth(self) -> int: ...
+
+
+def do_lock(
+    project,
+    groups=None,
+) -> list:
+    def inner():
+        return 1
+    if groups is None:
+        groups = []
+    return groups
+'''
+
+
+def test_witness_handles_multiline_signatures_and_stub_one_liners():
+    ast_spans = {(s.qualname, s.start_line, s.end_line) for s in function_index(MULTILINE)}
+    ind = set(indent_symbols(MULTILINE))
+    assert ind == ast_spans, (ind ^ ast_spans)

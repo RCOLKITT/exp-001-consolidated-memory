@@ -112,10 +112,17 @@ def indent_symbols(source: str) -> list[tuple[str, int, int]]:
             heads.append((i, len(m.group(1).expandtabs(8)), m.group(2), m.group(3)))
     out: list[tuple[str, int, int]] = []
     for j, (ln, ind, kind, name) in enumerate(heads):
+        # the signature may span several lines: skip to the line where its parentheses close
+        depth, sig_end = 0, ln
+        for k in range(ln - 1, len(lines)):
+            depth += lines[k].count("(") - lines[k].count(")")
+            sig_end = k + 1
+            if depth <= 0:
+                break
         end = len(lines)
-        for k in range(ln, len(lines)):
+        for k in range(sig_end, len(lines)):
             text = lines[k]
-            if text.strip() and not text.lstrip().startswith("#") and len(text) - len(text.lstrip()) <= ind and k + 1 > ln:
+            if text.strip() and not text.lstrip().startswith("#") and len(text) - len(text.lstrip()) <= ind:
                 end = k
                 break
         while end > ln and not lines[end - 1].strip():
@@ -126,9 +133,9 @@ def indent_symbols(source: str) -> list[tuple[str, int, int]]:
         if ind == 0:
             out.append((name, start, end))
         else:
-            parent = next((h for h in reversed(heads[:j]) if h[1] < ind and h[2] == "class"), None)
-            if parent and parent[1] == 0 and not any(h[1] < ind and h[1] > parent[1] for h in heads[:j] if h[0] > parent[0]):
-                out.append((f"{parent[3]}.{name}", start, end))
+            parent = next((h for h in reversed(heads[:j]) if h[1] < ind), None)     # nearest enclosing head
+            if parent and parent[1] == 0 and parent[2] == "class":
+                out.append((f"{parent[3]}.{name}", start, end))                    # a direct method; anything deeper is folded
     return out
 
 

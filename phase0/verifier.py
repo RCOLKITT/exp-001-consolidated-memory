@@ -234,6 +234,7 @@ class OpenAICompatibleClient:
     def complete(self, req: ModelRequest) -> str:
         modes = [self._mode] if self._mode else ["json_schema", "json_object", "text"]
         last: Optional[Exception] = None
+        last_text, finish = "", None
         for mode in modes:
             try:
                 resp = self._post_with_retry(self._body(req, mode))   # TransientError propagates: not a mode problem
@@ -245,8 +246,14 @@ class OpenAICompatibleClient:
                 raise
             except (RuntimeError, ValueError, KeyError, json.JSONDecodeError) as e:
                 last = e
+                try:    # keep the offending text so an unrecoverable shape can be diagnosed from errors.jsonl
+                    raw = resp["choices"][0]["message"]["content"]
+                    last_text = raw if isinstance(raw, str) else json.dumps(raw)
+                    finish = resp["choices"][0].get("finish_reason")
+                except Exception:
+                    last_text, finish = "", None
                 continue
-        raise RuntimeError(f"all response modes failed: {last}")
+        raise RuntimeError(f"all response modes failed: {last} | finish_reason={finish} | text={last_text[:400]!r}")
 
 
 def make_client(provider: str, base_url: Optional[str] = None, api_key_env: Optional[str] = None, model_extra: str = "") -> ModelClient:
