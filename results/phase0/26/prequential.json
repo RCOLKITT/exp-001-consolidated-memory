@@ -1,0 +1,608 @@
+{
+ "warmup": 20,
+ "min_chain": 21,
+ "repos": {
+  "conan-io/conan": {
+   "chain": 165,
+   "file": {
+    "n_eval": 145,
+    "n_scorable": 145,
+    "seen1": 0.759,
+    "seen2": 0.476,
+    "seen3": 0.241
+   },
+   "class": {
+    "n_eval": 145,
+    "n_scorable": 145,
+    "seen1": 0.655,
+    "seen2": 0.317,
+    "seen3": 0.145
+   },
+   "function": {
+    "n_eval": 145,
+    "n_scorable": 145,
+    "seen1": 0.579,
+    "seen2": 0.241,
+    "seen3": 0.11
+   }
+  },
+  "aws-cloudformation/cfn-lint": {
+   "chain": 109,
+   "file": {
+    "n_eval": 89,
+    "n_scorable": 79,
+    "seen1": 0.652,
+    "seen2": 0.449,
+    "seen3": 0.326
+   },
+   "class": {
+    "n_eval": 89,
+    "n_scorable": 79,
+    "seen1": 0.629,
+    "seen2": 0.404,
+    "seen3": 0.281
+   },
+   "function": {
+    "n_eval": 89,
+    "n_scorable": 79,
+    "seen1": 0.607,
+    "seen2": 0.36,
+    "seen3": 0.225
+   }
+  },
+  "matplotlib/matplotlib": {
+   "chain": 101,
+   "file": {
+    "n_eval": 81,
+    "n_scorable": 79,
+    "seen1": 0.765,
+    "seen2": 0.556,
+    "seen3": 0.395
+   },
+   "class": {
+    "n_eval": 81,
+    "n_scorable": 79,
+    "seen1": 0.63,
+    "seen2": 0.407,
+    "seen3": 0.284
+   },
+   "function": {
+    "n_eval": 81,
+    "n_scorable": 79,
+    "seen1": 0.42,
+    "seen2": 0.148,
+    "seen3": 0.086
+   }
+  },
+  "deepset-ai/haystack": {
+   "chain": 88,
+   "file": {
+    "n_eval": 68,
+    "n_scorable": 68,
+    "seen1": 0.779,
+    "seen2": 0.515,
+    "seen3": 0.279
+   },
+   "class": {
+    "n_eval": 68,
+    "n_scorable": 68,
+    "seen1": 0.765,
+    "seen2": 0.5,
+    "seen3": 0.279
+   },
+   "function": {
+    "n_eval": 68,
+    "n_scorable": 68,
+    "seen1": 0.691,
+    "seen2": 0.426,
+    "seen3": 0.206
+   }
+  },
+  "pylint-dev/pylint": {
+   "chain": 62,
+   "file": {
+    "n_eval": 42,
+    "n_scorable": 42,
+    "seen1": 0.69,
+    "seen2": 0.429,
+    "seen3": 0.357
+   },
+   "class": {
+    "n_eval": 42,
+    "n_scorable": 42,
+    "seen1": 0.643,
+    "seen2": 0.381,
+    "seen3": 0.262
+   },
+   "function": {
+    "n_eval": 42,
+    "n_scorable": 42,
+    "seen1": 0.524,
+    "seen2": 0.143,
+    "seen3": 0.024
+   }
+  },
+  "instructlab/instructlab": {
+   "chain": 52,
+   "file": {
+    "n_eval": 32,
+    "n_scorable": 31,
+    "seen1": 0.875,
+    "seen2": 0.781,
+    "seen3": 0.781
+   },
+   "class": {
+    "n_eval": 32,
+    "n_scorable": 31,
+    "seen1": 0.875,
+    "seen2": 0.719,
+    "seen3": 0.656
+   },
+   "function": {
+    "n_eval": 32,
+    "n_scorable": 31,
+    "seen1": 0.875,
+    "seen2": 0.719,
+    "seen3": 0.656
+   }
+  },
+  "keras-team/keras": {
+   "chain": 48,
+   "file": {
+    "n_eval": 28,
+    "n_scorable": 28,
+    "seen1": 0.5,
+    "seen2": 0.179,
+    "seen3": 0.036
+   },
+   "class": {
+    "n_eval": 28,
+    "n_scorable": 28,
+    "seen1": 0.321,
+    "seen2": 0.179,
+    "seen3": 0.036
+   },
+   "function": {
+    "n_eval": 28,
+    "n_scorable": 28,
+    "seen1": 0.25,
+    "seen2": 0.071,
+    "seen3": 0.036
+   }
+  },
+  "reflex-dev/reflex": {
+   "chain": 44,
+   "file": {
+    "n_eval": 24,
+    "n_scorable": 24,
+    "seen1": 0.833,
+    "seen2": 0.792,
+    "seen3": 0.708
+   },
+   "class": {
+    "n_eval": 24,
+    "n_scorable": 24,
+    "seen1": 0.708,
+    "seen2": 0.583,
+    "seen3": 0.5
+   },
+   "function": {
+    "n_eval": 24,
+    "n_scorable": 24,
+    "seen1": 0.583,
+    "seen2": 0.417,
+    "seen3": 0.292
+   }
+  },
+  "streamlink/streamlink": {
+   "chain": 41,
+   "file": {
+    "n_eval": 21,
+    "n_scorable": 21,
+    "seen1": 0.286,
+    "seen2": 0.048,
+    "seen3": 0.0
+   },
+   "class": {
+    "n_eval": 21,
+    "n_scorable": 21,
+    "seen1": 0.143,
+    "seen2": 0.0,
+    "seen3": 0.0
+   },
+   "function": {
+    "n_eval": 21,
+    "n_scorable": 21,
+    "seen1": 0.095,
+    "seen2": 0.0,
+    "seen3": 0.0
+   }
+  },
+  "sphinx-doc/sphinx": {
+   "chain": 39,
+   "file": {
+    "n_eval": 19,
+    "n_scorable": 19,
+    "seen1": 0.789,
+    "seen2": 0.474,
+    "seen3": 0.263
+   },
+   "class": {
+    "n_eval": 19,
+    "n_scorable": 19,
+    "seen1": 0.684,
+    "seen2": 0.316,
+    "seen3": 0.105
+   },
+   "function": {
+    "n_eval": 19,
+    "n_scorable": 19,
+    "seen1": 0.632,
+    "seen2": 0.263,
+    "seen3": 0.105
+   }
+  },
+  "pdm-project/pdm": {
+   "chain": 35,
+   "file": {
+    "n_eval": 15,
+    "n_scorable": 15,
+    "seen1": 0.867,
+    "seen2": 0.733,
+    "seen3": 0.533
+   },
+   "class": {
+    "n_eval": 15,
+    "n_scorable": 15,
+    "seen1": 0.867,
+    "seen2": 0.733,
+    "seen3": 0.467
+   },
+   "function": {
+    "n_eval": 15,
+    "n_scorable": 15,
+    "seen1": 0.733,
+    "seen2": 0.6,
+    "seen3": 0.267
+   }
+  },
+  "sissbruecker/linkding": {
+   "chain": 34,
+   "file": {
+    "n_eval": 14,
+    "n_scorable": 14,
+    "seen1": 0.929,
+    "seen2": 0.786,
+    "seen3": 0.643
+   },
+   "class": {
+    "n_eval": 14,
+    "n_scorable": 14,
+    "seen1": 0.857,
+    "seen2": 0.714,
+    "seen3": 0.5
+   },
+   "function": {
+    "n_eval": 14,
+    "n_scorable": 14,
+    "seen1": 0.857,
+    "seen2": 0.714,
+    "seen3": 0.5
+   }
+  },
+  "pvlib/pvlib-python": {
+   "chain": 30,
+   "file": {
+    "n_eval": 10,
+    "n_scorable": 10,
+    "seen1": 0.6,
+    "seen2": 0.5,
+    "seen3": 0.1
+   },
+   "class": {
+    "n_eval": 10,
+    "n_scorable": 10,
+    "seen1": 0.4,
+    "seen2": 0.1,
+    "seen3": 0.0
+   },
+   "function": {
+    "n_eval": 10,
+    "n_scorable": 10,
+    "seen1": 0.4,
+    "seen2": 0.1,
+    "seen3": 0.0
+   }
+  },
+  "pydata/xarray": {
+   "chain": 29,
+   "file": {
+    "n_eval": 9,
+    "n_scorable": 8,
+    "seen1": 0.667,
+    "seen2": 0.333,
+    "seen3": 0.111
+   },
+   "class": {
+    "n_eval": 9,
+    "n_scorable": 8,
+    "seen1": 0.333,
+    "seen2": 0.222,
+    "seen3": 0.111
+   },
+   "function": {
+    "n_eval": 9,
+    "n_scorable": 8,
+    "seen1": 0.333,
+    "seen2": 0.111,
+    "seen3": 0.0
+   }
+  },
+  "beeware/briefcase": {
+   "chain": 28,
+   "file": {
+    "n_eval": 8,
+    "n_scorable": 8,
+    "seen1": 0.875,
+    "seen2": 0.375,
+    "seen3": 0.25
+   },
+   "class": {
+    "n_eval": 8,
+    "n_scorable": 8,
+    "seen1": 0.875,
+    "seen2": 0.25,
+    "seen3": 0.0
+   },
+   "function": {
+    "n_eval": 8,
+    "n_scorable": 8,
+    "seen1": 0.875,
+    "seen2": 0.125,
+    "seen3": 0.0
+   }
+  },
+  "kedro-org/kedro": {
+   "chain": 28,
+   "file": {
+    "n_eval": 8,
+    "n_scorable": 8,
+    "seen1": 0.875,
+    "seen2": 0.5,
+    "seen3": 0.125
+   },
+   "class": {
+    "n_eval": 8,
+    "n_scorable": 8,
+    "seen1": 0.875,
+    "seen2": 0.25,
+    "seen3": 0.125
+   },
+   "function": {
+    "n_eval": 8,
+    "n_scorable": 8,
+    "seen1": 0.75,
+    "seen2": 0.25,
+    "seen3": 0.125
+   }
+  },
+  "bridgecrewio/checkov": {
+   "chain": 25,
+   "file": {
+    "n_eval": 5,
+    "n_scorable": 4,
+    "seen1": 0.2,
+    "seen2": 0.0,
+    "seen3": 0.0
+   },
+   "class": {
+    "n_eval": 5,
+    "n_scorable": 4,
+    "seen1": 0.2,
+    "seen2": 0.0,
+    "seen3": 0.0
+   },
+   "function": {
+    "n_eval": 5,
+    "n_scorable": 4,
+    "seen1": 0.2,
+    "seen2": 0.0,
+    "seen3": 0.0
+   }
+  },
+  "jlowin/fastmcp": {
+   "chain": 25,
+   "file": {
+    "n_eval": 5,
+    "n_scorable": 5,
+    "seen1": 0.4,
+    "seen2": 0.2,
+    "seen3": 0.2
+   },
+   "class": {
+    "n_eval": 5,
+    "n_scorable": 5,
+    "seen1": 0.4,
+    "seen2": 0.2,
+    "seen3": 0.2
+   },
+   "function": {
+    "n_eval": 5,
+    "n_scorable": 5,
+    "seen1": 0.2,
+    "seen2": 0.2,
+    "seen3": 0.2
+   }
+  },
+  "koxudaxi/datamodel-code-generator": {
+   "chain": 24,
+   "file": {
+    "n_eval": 4,
+    "n_scorable": 3,
+    "seen1": 0.75,
+    "seen2": 0.5,
+    "seen3": 0.5
+   },
+   "class": {
+    "n_eval": 4,
+    "n_scorable": 3,
+    "seen1": 0.75,
+    "seen2": 0.5,
+    "seen3": 0.5
+   },
+   "function": {
+    "n_eval": 4,
+    "n_scorable": 3,
+    "seen1": 0.5,
+    "seen2": 0.25,
+    "seen3": 0.0
+   }
+  },
+  "Kozea/WeasyPrint": {
+   "chain": 22,
+   "file": {
+    "n_eval": 2,
+    "n_scorable": 2,
+    "seen1": 1.0,
+    "seen2": 0.5,
+    "seen3": 0.5
+   },
+   "class": {
+    "n_eval": 2,
+    "n_scorable": 2,
+    "seen1": 1.0,
+    "seen2": 0.5,
+    "seen3": 0.5
+   },
+   "function": {
+    "n_eval": 2,
+    "n_scorable": 2,
+    "seen1": 1.0,
+    "seen2": 0.5,
+    "seen3": 0.5
+   }
+  },
+  "geopandas/geopandas": {
+   "chain": 22,
+   "file": {
+    "n_eval": 2,
+    "n_scorable": 2,
+    "seen1": 0.5,
+    "seen2": 0.5,
+    "seen3": 0.5
+   },
+   "class": {
+    "n_eval": 2,
+    "n_scorable": 2,
+    "seen1": 0.5,
+    "seen2": 0.5,
+    "seen3": 0.5
+   },
+   "function": {
+    "n_eval": 2,
+    "n_scorable": 2,
+    "seen1": 0.0,
+    "seen2": 0.0,
+    "seen3": 0.0
+   }
+  },
+  "joke2k/faker": {
+   "chain": 21,
+   "file": {
+    "n_eval": 1,
+    "n_scorable": 1,
+    "seen1": 0.0,
+    "seen2": 0.0,
+    "seen3": 0.0
+   },
+   "class": {
+    "n_eval": 1,
+    "n_scorable": 1,
+    "seen1": 0.0,
+    "seen2": 0.0,
+    "seen3": 0.0
+   },
+   "function": {
+    "n_eval": 1,
+    "n_scorable": 1,
+    "seen1": 0.0,
+    "seen2": 0.0,
+    "seen3": 0.0
+   }
+  },
+  "patroni/patroni": {
+   "chain": 21,
+   "file": {
+    "n_eval": 1,
+    "n_scorable": 1,
+    "seen1": 1.0,
+    "seen2": 1.0,
+    "seen3": 1.0
+   },
+   "class": {
+    "n_eval": 1,
+    "n_scorable": 1,
+    "seen1": 1.0,
+    "seen2": 1.0,
+    "seen3": 1.0
+   },
+   "function": {
+    "n_eval": 1,
+    "n_scorable": 1,
+    "seen1": 1.0,
+    "seen2": 1.0,
+    "seen3": 1.0
+   }
+  },
+  "stanfordnlp/dspy": {
+   "chain": 21,
+   "file": {
+    "n_eval": 1,
+    "n_scorable": 1,
+    "seen1": 1.0,
+    "seen2": 0.0,
+    "seen3": 0.0
+   },
+   "class": {
+    "n_eval": 1,
+    "n_scorable": 1,
+    "seen1": 0.0,
+    "seen2": 0.0,
+    "seen3": 0.0
+   },
+   "function": {
+    "n_eval": 1,
+    "n_scorable": 1,
+    "seen1": 0.0,
+    "seen2": 0.0,
+    "seen3": 0.0
+   }
+  }
+ },
+ "aggregate": {
+  "file": {
+   "n_repos": 24,
+   "n_eval": 634,
+   "n_scorable": 618,
+   "seen1": 0.722,
+   "seen2": 0.487,
+   "seen3": 0.325
+  },
+  "class": {
+   "n_repos": 24,
+   "n_eval": 634,
+   "n_scorable": 618,
+   "seen1": 0.642,
+   "seen2": 0.39,
+   "seen3": 0.248
+  },
+  "function": {
+   "n_repos": 24,
+   "n_eval": 634,
+   "n_scorable": 618,
+   "seen1": 0.558,
+   "seen2": 0.287,
+   "seen3": 0.164
+  }
+ }
+}
