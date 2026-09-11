@@ -360,3 +360,22 @@ false positives, every belief traceable") is answered on its first
 clause: at file granularity with this verifier and corpus, it does not,
 while the other two clauses held. Any follow-up design is a new
 pre-registration.
+
+### D31. v2 harness: symbol on the flag, one clause in the oracle, v1 untouched
+Function-level localization is implemented by giving flags and symbolised
+gold hunks a `symbol` (qualname or `<module>`) and a line span, and by
+adding a single clause to `Location.overlaps`: two locations that both name
+a symbol must name the same one. This keeps the oracle a deterministic
+overlap rule (D27's argument still holds) while closing the loophole where
+a `<module>` flag with a whole-file span would score as a file hit. Nothing
+at file granularity changes: a file-level flag has no symbol, so v1 runs
+replay byte-identically and the v2 file-level secondary is the v1 metric
+computed on the stage-1 flags. The stage-1 prompt is the v1 prompt on
+purpose: same cache keys, so no v1 spend is repeated. Consolidation keys on
+`path # qualname` inside the record's location string, so the file-keyed
+seam (D24) becomes function-keyed with no new gate logic. Evaluation is
+N-arm with one shared task set (a failure in any arm drops the task from
+all), and per-task hits are written to `arms.json` so the paired analysis
+needs no corpus. The only genuinely new parsing is the `ast` function
+index; its independent witness for Gate 2.3-v2 is an indentation-based
+symboliser that shares no code with it.

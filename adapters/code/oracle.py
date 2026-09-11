@@ -20,13 +20,20 @@ class Location:
     path: str
     start_line: int
     end_line: int
+    symbol: str = ""     # v2: function/class qualname (or "<module>"); "" = file-level, matches any symbol
 
     def overlaps(self, other: "Location", slack: int = 0) -> bool:
+        if self.symbol and other.symbol and self.symbol != other.symbol:
+            return False      # both sides name a symbol: they must be the same one (closes the "<module>" loophole)
         return (
             self.path == other.path
             and self.start_line - slack <= other.end_line
             and other.start_line - slack <= self.end_line
         )
+
+    @property
+    def file_level(self) -> "Location":
+        return Location(self.path, 1, 10**9)
 
 
 @dataclass(frozen=True)
@@ -37,13 +44,22 @@ class Flag:
 
 
 class GroundTruth:
-    """instance_id -> ground-truth hunk locations, parsed from gold patches."""
+    """instance_id -> ground-truth hunk locations, parsed from gold patches.
+    A `resolver` (v2) is called once per instance on first use to symbolise
+    the hunks (function-level ground truth) and its result is memoised."""
 
-    def __init__(self, hunks: dict[str, tuple[Location, ...]]) -> None:
+    def __init__(self, hunks: dict[str, tuple[Location, ...]], resolver=None) -> None:
         self._hunks = hunks
+        self._resolver = resolver
+        self._resolved: dict[str, tuple[Location, ...]] = {}
 
     def locations(self, instance_id: str) -> tuple[Location, ...] | None:
-        return self._hunks.get(instance_id)
+        raw = self._hunks.get(instance_id)
+        if raw is None or self._resolver is None:
+            return raw
+        if instance_id not in self._resolved:
+            self._resolved[instance_id] = self._resolver(instance_id, raw)
+        return self._resolved[instance_id]
 
 
 class LocationOracle:

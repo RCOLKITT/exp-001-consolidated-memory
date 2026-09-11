@@ -23,7 +23,8 @@ docs/exp-run.prereg.json). Gates 0–2 closed. **Registered Phase 3–4 run comp
 kill number of 10 (95% CI −2.0 to +4.2), false-positive rate flat,
 negative control exactly inert ([docs/phase0-findings.md](docs/phase0-findings.md) §14–15, D28–D30).
 A follow-up at function granularity with gated injection is drafted, not
-registered: [docs/PREREGISTRATION-v2-DRAFT.md](docs/PREREGISTRATION-v2-DRAFT.md).
+registered: [docs/PREREGISTRATION-v2-DRAFT.md](docs/PREREGISTRATION-v2-DRAFT.md);
+its harness (§3) is built and tested offline (D31), pre-runs not yet made.
 
 ## Layout
 

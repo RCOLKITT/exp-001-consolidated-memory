@@ -20,12 +20,13 @@ from adapters.code.policy import CODE_PROMOTION_POLICY, RHO_REINFORCE, THETA_SUR
 from memkernel import KernelConfig
 from memkernel.kernel import counting_clock
 from memkernel.persist import save_kernel
-from adapters.code.similarity import FileKeyedSimilarity, make_similarity
+from adapters.code.similarity import FileKeyedSimilarity, FunctionKeyedSimilarity, make_similarity
 from phase0.chains import build_chains
 from phase0.corpus import apply_freshness, read_tasks
-from phase0.ground_truth import ground_truth_from_tasks
+from phase0.functions import FunctionIndexCache, checkout_reader
+from phase0.ground_truth import function_ground_truth_from_tasks, ground_truth_from_tasks
 from phase0.run_control import ensure_checkout, repo_dir
-from phase0.verifier import CachedClient, Localizer, make_client, repo_file_tree
+from phase0.verifier import CachedClient, Localizer, LocalizerV2, make_client, repo_file_tree
 
 
 def similarity(args, cache_path=None):
@@ -48,21 +49,32 @@ def add_seam_args(ap):
     ap.add_argument("--theta", type=float, default=THETA_SURPRISE, help="Θ_surprise (pre-registration value, from phase2.tune)")
     ap.add_argument("--cluster-similarity", type=float, default=CODE_PROMOTION_POLICY.cluster_similarity)
     ap.add_argument("--rho", type=float, default=RHO_REINFORCE, help="reinforce_min_sim (pre-registration value, D22/D23)")
-    ap.add_argument("--consolidation", default="file", choices=["file", "embedding"], help="what makes two records the same pattern (D24): same file, or embedding similarity")
+    ap.add_argument("--consolidation", default="file", choices=["file", "function", "embedding"], help="what makes two records the same pattern (D24): same file, same (file, function) [v2], or embedding similarity")
+    ap.add_argument("--granularity", default="file", choices=["file", "function"], help="v2: function-level flags via the two-stage verifier (LocalizerV2) and symbolised ground truth")
+    ap.add_argument("--tau", type=float, default=0.0, help="v2: retrieval gate — inject a memory only if its retrieval cosine ≥ τ (0 = top-k as v1)")
+    ap.add_argument("--functions-cache", default=None, help="v2: JSONL cache of function indexes (default: next to --cache)")
     ap.add_argument("--min-occurrences", type=int, default=CODE_PROMOTION_POLICY.min_occurrences, help="promotion: bad records needed (pre-registration value, D25)")
     ap.add_argument("--min-distinct-inputs", type=int, default=CODE_PROMOTION_POLICY.min_distinct_inputs, help="promotion: distinct tasks needed (D25)")
 
 
 def make_pipeline(repo, tasks, args, cache_path):
-    truth = ground_truth_from_tasks(tasks)
     client = CachedClient(None if args.offline else make_client(args.provider, args.base_url, args.api_key_env, args.model_extra), cache_path, offline=args.offline)
-    loc = Localizer(client, args.model, k=args.top_k, effort=args.effort)
     repos_dir = Path(args.repos_dir)
     list_files = lambda t: repo_file_tree(ensure_checkout(repos_dir, t))
+    granularity = getattr(args, "granularity", "file")
+    index_of = None
+    if granularity == "function":                                                # v2
+        fcache = FunctionIndexCache(checkout_reader(repos_dir), getattr(args, "functions_cache", None) or Path(cache_path).with_name("functions.jsonl"))
+        truth = function_ground_truth_from_tasks(tasks, fcache)
+        loc = LocalizerV2(client, args.model, k=args.top_k, effort=args.effort)
+        index_of = lambda t, path: fcache.spans(t.repo, t.base_commit, path)
+    else:
+        truth = ground_truth_from_tasks(tasks)
+        loc = Localizer(client, args.model, k=args.top_k, effort=args.effort)
     sem = similarity(args, Path(cache_path).with_name("embeddings.jsonl"))       # semantic: retrieval (and consolidation if chosen)
-    cons = FileKeyedSimilarity(sem) if args.consolidation == "file" else sem     # D24
+    cons = {"file": FileKeyedSimilarity(sem), "function": FunctionKeyedSimilarity(sem), "embedding": sem}[args.consolidation]   # D24 / v2
     return RepoPipeline(repo, loc, cons, truth, kernel_config(args.ttl, args.theta, args.cluster_similarity, args.rho, args.min_occurrences, args.min_distinct_inputs), list_files, counting_clock(),
-                        retrieval_similarity=sem)
+                        retrieval_similarity=sem, index_of=index_of, tau=getattr(args, "tau", 0.0))
 
 
 def _main(argv):
@@ -89,7 +101,7 @@ def _main(argv):
         version = p.learn(build)
         save_kernel(p.kernel, rd / "kernel.json")
         stats = p.gate3_stats(); stats["n_build"] = len(build)
-        stats["similarity"] = getattr(p.kernel.similarity, "name", args.similarity); stats["theta"] = args.theta; stats["cluster_similarity"] = args.cluster_similarity; stats["rho"] = args.rho; stats["min_occurrences"] = args.min_occurrences; stats["min_distinct_inputs"] = args.min_distinct_inputs; stats["consolidation"] = getattr(p.kernel.similarity, "name", args.consolidation); stats["retrieval"] = getattr(p.kernel.retrieval_similarity, "name", "")
+        stats["similarity"] = getattr(p.kernel.similarity, "name", args.similarity); stats["theta"] = args.theta; stats["cluster_similarity"] = args.cluster_similarity; stats["rho"] = args.rho; stats["min_occurrences"] = args.min_occurrences; stats["min_distinct_inputs"] = args.min_distinct_inputs; stats["consolidation"] = getattr(p.kernel.similarity, "name", args.consolidation); stats["retrieval"] = getattr(p.kernel.retrieval_similarity, "name", ""); stats["granularity"] = args.granularity; stats["tau"] = args.tau
         write_json(stats, rd / "gate3.json")
         sys.stderr.write(f"{chain.repo}: {len(build)} build tasks, discard_rate={stats['discard_rate']}, promoted={stats['promoted']}, version={version[:12]}\n")
     return 0

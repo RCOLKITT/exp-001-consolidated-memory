@@ -7,6 +7,8 @@ recur >= 3 times among the first N tasks, and what share of the remaining
 (eval) tasks have a gold file / directory already seen >= 1 and >= 3 times.
 
     python -m phase2.recurrence corpus/tasks.jsonl --repos a/b,c/d --prefixes 20,40,60 --md out.md --json out.json
+    # v2: function-level keys (path::qualname), needs the checkouts (or a functions.jsonl cache)
+    python -m phase2.recurrence corpus/tasks.jsonl --repos a/b --level function --repos-dir corpus/repos --functions-cache runs/functions.jsonl
 """
 from __future__ import annotations
 
@@ -18,10 +20,13 @@ from pathlib import Path
 
 from phase0.chains import build_chains
 from phase0.corpus import read_tasks
-from phase0.ground_truth import gold_files
+from phase0.functions import FunctionIndexCache, checkout_reader
+from phase0.ground_truth import gold_files, gold_symbols
 
 
 def dir_of(p: str) -> str:
+    if "::" in p:                       # function key -> its file
+        return p.split("::", 1)[0]
     return p.rsplit("/", 1)[0] if "/" in p else "."
 
 
@@ -31,6 +36,8 @@ def ceilings(res: dict, control_per_repo: dict) -> dict:
     out = {"per_repo": {}, "aggregate": {}}
     agg: dict = {}
     for repo, d in res.items():
+        if repo.startswith("_"):
+            continue
         p0 = control_per_repo.get(repo, {}).get("localization_rate")
         if p0 is None:
             continue
@@ -45,14 +52,18 @@ def ceilings(res: dict, control_per_repo: dict) -> dict:
     return out
 
 
-def analyse(tasks, repos, prefixes):
+def analyse(tasks, repos, prefixes, gold_of=None):
+    """`gold_of(task) -> keys` defaults to gold files; at function level pass
+    `lambda t: gold_symbols(t, index)` (keys `path::qualname`; `dir_of` then
+    groups by file, so the "dir" columns read as file-level recurrence)."""
+    gold_of = gold_of or (lambda t: gold_files(t.patch))
     out = {}
     chains = {c.repo: c for c in build_chains(tasks)}
     for repo in repos:
         c = chains.get(repo)
         if c is None:
             continue
-        golds = [set(gold_files(t.patch)) for t in c.tasks]
+        golds = [set(gold_of(t)) for t in c.tasks]
         rows = []
         for n in prefixes + ["all"]:
             N = len(c.tasks) if n == "all" else min(int(n), len(c.tasks))
@@ -79,6 +90,8 @@ def markdown(res):
     lines = ["# Gold-location recurrence along chains", "", "eval_file_seen3 = share of eval tasks whose gold file was a gold file >= 3 times in the build prefix (what file-level memory could at best recall).", "",
              "| repo | prefix | eval n | files >=3 | dirs >=3 | eval: file seen>=1 | file seen>=3 | dir seen>=1 | dir seen>=3 |", "|---|---:|---:|---:|---:|---:|---:|---:|---:|"]
     for repo, d in res.items():
+        if repo.startswith("_"):
+            continue
         for r in d["rows"]:
             lines.append(f"| {repo} | {r['prefix']} | {r['n_eval']} | {r['files_ge3']} | {r['dirs_ge3']} | {r['eval_file_seen1']} | {r['eval_file_seen3']} | {r['eval_dir_seen1']} | {r['eval_dir_seen3']} |")
     return "\n".join(lines) + "\n"
@@ -89,9 +102,15 @@ def _main(argv):
     ap.add_argument("tasks"); ap.add_argument("--repos", required=True); ap.add_argument("--prefixes", default="20,40,60")
     ap.add_argument("--md"); ap.add_argument("--json", dest="json_out")
     ap.add_argument("--control-metrics", help="phase0 control metrics.json: adds ceilings on lift (seenK x (1 - p0))")
+    ap.add_argument("--level", default="file", choices=["file", "function"]); ap.add_argument("--repos-dir", default="corpus/repos"); ap.add_argument("--functions-cache")
     a = ap.parse_args(argv)
-    res = analyse(read_tasks(a.tasks), [r.strip() for r in a.repos.split(",") if r.strip()], [int(x) for x in a.prefixes.split(",")])
-    md = markdown(res)
+    gold_of = None
+    if a.level == "function":
+        index = FunctionIndexCache(checkout_reader(a.repos_dir), a.functions_cache)
+        gold_of = lambda t: gold_symbols(t, index)
+    res = analyse(read_tasks(a.tasks), [r.strip() for r in a.repos.split(",") if r.strip()], [int(x) for x in a.prefixes.split(",")], gold_of)
+    res["_level"] = a.level
+    md = markdown(res).replace("# Gold-location recurrence along chains", f"# Gold-location recurrence along chains (level: {a.level})")
     if a.control_metrics:
         c = ceilings(res, json.loads(Path(a.control_metrics).read_text())["per_repo"])
         res["_ceilings"] = c

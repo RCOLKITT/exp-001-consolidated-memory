@@ -62,7 +62,9 @@ registered criterion and cannot rescue H2.
 |---|---|---|
 | Function-level ground truth: each non-test gold hunk maps to the enclosing top-level `def`/`class`…`def` at `base_commit` via `ast`; a hunk outside any function maps to `path::<module>`; gold = set of such locations with the function's line range | `phase0/ground_truth.py` (`gold_functions`) | golden vectors on 20 hand-labelled hunks (§6, Gate 2.3-v2) |
 | Verifier v2, two stages, identical in both arms: stage 1 ranks files from the listing (v1 prompt); stage 2 shows the `def`/`class` index of the top-3 files and asks for up to 3 `path::qualname` flags with reasons | `phase0/verifier.py` (`LocalizerV2`) | prompt snapshot test; JSON salvage covers `qualname` |
-| Flags carry `Location(path, def_start, def_end)`; the oracle is **unchanged** (`Location.overlaps` against gold hunks) | `adapters/code/oracle.py` | existing oracle tests + one function-range case |
+| Flags carry `Location(path, def_start, def_end, symbol)`; gold hunks are symbolised the same way (lazy, memoised). The oracle gains **one clause**: when both sides name a symbol they must be equal — otherwise a `<module>` flag would earn file-level credit. File-level flags (no symbol) keep v1 semantics exactly, which is what the file-level secondary metric relies on | `adapters/code/oracle.py`, `phase0/ground_truth.py` | `tests/test_functions.py::test_oracle_symbol_clause` |
+| Function index cache (`functions.jsonl`, keyed by repo/commit/path) saved with every run so replays never need the checkout | `phase0/functions.py` | cache round-trip test |
+| Gate 2.3-v2 tooling: `handcheck export-functions` (50 gold hunks → oracle symbol + source context for the human read) and `verify-functions` (indentation-based symboliser, independent of `ast`) | `phase2/handcheck.py` | agreement with `ast` on a fixture; scoring test |
 | Consolidation keyed by `(path, qualname)`; retrieval by embedding cosine of issue text vs memory content (as v1) | `adapters/code/similarity.py` (`FunctionKeyedSimilarity`) | seam test: same function ⇒ 1.0 |
 | Retrieval gate τ: a memory is injected only if cosine ≥ τ; `retrieved` records the score and whether it passed | `adapters/code/pipeline.py` | test: τ = 1.01 ⇒ never injected, arms identical |
 | Three-arm evaluate (control / gated / ungated), interleaved per task, seeded; per-task hits written to `arms.json` so `phase4.paired` needs no corpus | `phase4/evaluate.py`, `phase4/paired.py` | pairing test extended to three arms |
@@ -70,6 +72,16 @@ registered criterion and cannot rescue H2.
 | Workflow keys: `granularity: "function"`, `tau`, `arms: ["control","gated","ungated"]` | `.github/workflows/experiment.yml`, `phase0.yml` | yaml lint |
 
 Cost of the harness work is engineering time only; no model spend.
+
+**Status (2026-09-11): built and tested offline end to end** (learn →
+evaluate → paired at function granularity through the real CLIs against a
+local git repo and a stub model; 94 tests). Workflow keys: `.exp-run.json`
+`granularity`, `tau`, `arms`; `.phase0-run.json` `level`, `ceiling_metrics`.
+v1 replays are byte-identical: record ids, prompts and cache keys are
+unchanged at file granularity, and the v2 stage-1 request is the v1 request,
+so v1's control caches serve stage 1 of the function-level control run.
+Not yet exercised on the live path (a runner + the real verifier); the
+first pre-run (§5.1, no model) is that exercise.
 
 ## 4. Values (inherited unless marked)
 

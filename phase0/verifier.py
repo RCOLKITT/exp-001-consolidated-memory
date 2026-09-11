@@ -55,6 +55,29 @@ RANKED_FILES_SCHEMA = {
 }
 
 
+RANKED_FUNCTIONS_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "functions": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {"path": {"type": "string"}, "qualname": {"type": "string"}, "reason": {"type": "string"}},
+                "required": ["path", "qualname", "reason"],
+                "additionalProperties": False,
+            },
+        }
+    },
+    "required": ["functions"],
+    "additionalProperties": False,
+}
+
+
+def schema_key(schema: dict) -> str:
+    """The top-level list the response must carry (`files` or `functions`)."""
+    return (schema.get("required") or ["files"])[0]
+
+
 @dataclass(frozen=True)
 class ModelRequest:
     model: str
@@ -166,7 +189,7 @@ class OpenAICompatibleClient:
             **self.extra,
         }
         if mode == "json_schema":
-            body["response_format"] = {"type": "json_schema", "json_schema": {"name": "ranked_files", "schema": req.schema, "strict": True}}
+            body["response_format"] = {"type": "json_schema", "json_schema": {"name": f"ranked_{schema_key(req.schema)}", "schema": req.schema, "strict": True}}
         elif mode == "json_object":
             body["response_format"] = {"type": "json_object"}
             body["messages"][0]["content"] += "\nRespond with a single JSON object: " + json.dumps(req.schema)
@@ -181,9 +204,10 @@ class OpenAICompatibleClient:
                 "prompt_tokens": u.get("prompt_tokens"), "completion_tokens": u.get("completion_tokens")}
 
     _PATH_RE = re.compile(r'"path"\s*:\s*"([^"\n]+)"')
+    _FUNC_RE = re.compile(r'"path"\s*:\s*"([^"\n]+)"\s*,\s*"qualname"\s*:\s*"([^"\n]+)"')
 
     @classmethod
-    def _extract(cls, resp: dict) -> str:
+    def _extract(cls, resp: dict, key: str = "files") -> str:
         text = resp["choices"][0]["message"]["content"]
         if not isinstance(text, str):
             text = "".join(part.get("text", "") for part in text)
@@ -193,15 +217,18 @@ class OpenAICompatibleClient:
             text = text[text.find("{"):]
         try:
             data = json.loads(text[text.find("{"): text.rfind("}") + 1])
-            if not isinstance(data.get("files"), list):
-                raise ValueError("response has no files list")
+            if not isinstance(data.get(key), list):
+                raise ValueError(f"response has no {key} list")
         except (json.JSONDecodeError, ValueError):
             # Truncated or malformed output (e.g. max_tokens hit mid-string): keep every
-            # completed "path" in order, drop reasons. Deterministic; recorded as salvaged.
-            paths = cls._PATH_RE.findall(text)
-            if not paths:
+            # completed item in order, drop reasons. Deterministic; recorded as salvaged.
+            if key == "functions":
+                items = [{"path": p, "qualname": q, "reason": ""} for p, q in cls._FUNC_RE.findall(text)]
+            else:
+                items = [{"path": p, "reason": ""} for p in cls._PATH_RE.findall(text)]
+            if not items:
                 raise
-            data = {"files": [{"path": p, "reason": ""} for p in paths], "salvaged": True}
+            data = {key: items, "salvaged": True}
         return json.dumps(data, sort_keys=True)
 
     def complete(self, req: ModelRequest) -> str:
@@ -210,7 +237,7 @@ class OpenAICompatibleClient:
         for mode in modes:
             try:
                 resp = self._post_with_retry(self._body(req, mode))   # TransientError propagates: not a mode problem
-                out = self._extract(resp)
+                out = self._extract(resp, schema_key(req.schema))
                 self._mode = mode
                 self.last_meta = self._meta(resp)
                 return out
@@ -334,6 +361,29 @@ def render_prompt(problem_statement: str, files: Sequence[str], k: int, memories
     return "\n".join(parts)
 
 
+SYSTEM_PROMPT_FUNCTIONS = (
+    "You are a defect localization verifier. Given a GitHub issue and, for a few "
+    "candidate source files, the list of functions, methods and classes each file "
+    "defines (with line ranges) at the commit where the issue was reported, identify "
+    "the functions that must be modified to fix the issue. Rank them from most to "
+    "least likely. Do not propose a patch. Only name entries that appear in the "
+    "provided lists, exactly as written; use \"<module>\" for a file's module-level "
+    "code. Prefer fewer, more certain entries; every wrong entry counts against you."
+)
+
+
+def render_function_prompt(problem_statement: str, index: Sequence[tuple[str, Sequence[tuple[str, int, int]]]], k: int, memories: Sequence[str] = ()) -> str:
+    """Stage 2 of the v2 verifier. `index` = [(path, [(qualname, start, end), ...]), ...]
+    for the stage-1 files, in rank order. Memory section identical to stage 1."""
+    parts = ["## Issue", problem_statement.strip(), ""]
+    for path, spans in index:
+        parts += [f"## {path}", f"- <module>"] + [f"- {q}  (lines {a}-{b})" for q, a, b in spans] + [""]
+    if memories:
+        parts += ["## Relevant memory from prior defects in this repository", *[f"- {m}" for m in memories], ""]
+    parts += [f"List at most {k} functions as path + qualname, most likely first."]
+    return "\n".join(parts)
+
+
 # --------------------------------------------------------------------------
 # Localizer
 # --------------------------------------------------------------------------
@@ -350,7 +400,27 @@ class LocalizationResult:
         return tuple(Flag(self.instance_id, file_location(p), reason) for p, reason in self.ranked)
 
 
+@dataclass(frozen=True)
+class FunctionLocalizationResult:
+    """v2: stage-1 file ranking plus stage-2 function ranking."""
+    instance_id: str
+    files: LocalizationResult
+    ranked: tuple[tuple[str, str, str], ...]     # (path, qualname, reason), most likely first
+    request_key: str
+    raw: str
+    meta: dict = None
+    function_flags: tuple[Flag, ...] = ()
+
+    def flags(self) -> tuple[Flag, ...]:
+        return self.function_flags
+
+    def file_flags(self) -> tuple[Flag, ...]:
+        return self.files.flags()
+
+
 class Localizer:
+    level = "file"
+
     def __init__(self, client: ModelClient, model: str, k: int = 3, effort: str = "high") -> None:
         self.client = client
         self.model = model
@@ -377,3 +447,54 @@ class Localizer:
                 break
         return LocalizationResult(instance_id, tuple(ranked), req.key(), raw,
                                   dict(getattr(self.client, "last_meta", {}) or {}), len(files))
+
+
+class LocalizerV2:
+    """Two-stage verifier (v2 pre-registration §3): stage 1 is the v1 file
+    ranking, unchanged (same prompt, same cache keys); stage 2 shows the
+    function index of the stage-1 files and asks for up to k `path::qualname`
+    flags. Both arms run both stages; memory is injected in both stages.
+    `index_of(path) -> spans | None` comes from the task's checkout."""
+    level = "function"
+
+    def __init__(self, client: ModelClient, model: str, k: int = 3, effort: str = "high") -> None:
+        self.stage1 = Localizer(client, model, k=k, effort=effort)
+        self.client = client
+        self.model = model
+        self.k = k
+        self.effort = effort
+
+    def localize(self, instance_id: str, problem_statement: str, files: Sequence[str], memories: Sequence[str] = (), index_of=None) -> FunctionLocalizationResult:
+        from phase0.functions import MODULE
+        stage1 = self.stage1.localize(instance_id, problem_statement, files, memories)
+        index: list[tuple[str, list[tuple[str, int, int]]]] = []
+        spans_by_path: dict[str, dict[str, tuple[int, int]]] = {}
+        for path, _ in stage1.ranked:
+            spans = (index_of(path) if index_of else None) or ()
+            index.append((path, [(sp.qualname, sp.start_line, sp.end_line) for sp in spans]))
+            spans_by_path[path] = {sp.qualname: (sp.start_line, sp.end_line) for sp in spans}
+        if not index:
+            return FunctionLocalizationResult(instance_id, stage1, (), stage1.request_key, stage1.raw, stage1.meta)
+        req = ModelRequest(model=self.model, system=SYSTEM_PROMPT_FUNCTIONS,
+                           user=render_function_prompt(problem_statement, index, self.k, memories),
+                           schema=RANKED_FUNCTIONS_SCHEMA, effort=self.effort)
+        raw = self.client.complete(req)
+        data = json.loads(raw)
+        ranked: list[tuple[str, str, str]] = []
+        flags: list[Flag] = []
+        for item in data.get("functions", []):
+            p, q = str(item.get("path", "")).strip(), str(item.get("qualname", "")).strip()
+            if p not in spans_by_path or (p, q) in {(r[0], r[1]) for r in ranked}:
+                continue
+            if q == MODULE:
+                loc = Location(p, 1, 10**9, MODULE)
+            elif q in spans_by_path[p]:
+                a, b = spans_by_path[p][q]
+                loc = Location(p, a, b, q)
+            else:
+                continue          # not in the shown index: dropped, like an unknown path in v1
+            reason = str(item.get("reason", ""))
+            ranked.append((p, q, reason)); flags.append(Flag(instance_id, loc, reason))
+            if len(ranked) >= self.k:
+                break
+        return FunctionLocalizationResult(instance_id, stage1, tuple(ranked), req.key(), raw, dict(getattr(self.client, "last_meta", {}) or {}), tuple(flags))

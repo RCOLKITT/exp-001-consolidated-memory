@@ -22,9 +22,10 @@ import time
 from pathlib import Path
 
 from .corpus import Task, apply_freshness, read_tasks
-from .ground_truth import ground_truth_from_tasks
+from .functions import FunctionIndexCache, checkout_reader
+from .ground_truth import function_ground_truth_from_tasks, ground_truth_from_tasks
 from .metrics import dump, score
-from .verifier import MAX_FILES, CachedClient, Localizer, make_client, repo_file_tree
+from .verifier import MAX_FILES, CachedClient, Localizer, LocalizerV2, make_client, repo_file_tree
 
 
 def repo_dir(repos_dir: Path, repo: str) -> Path:
@@ -65,17 +66,24 @@ def run(args: argparse.Namespace) -> int:
         tasks = kept
     if args.limit:
         tasks = tasks[: args.limit]
-    truth = ground_truth_from_tasks(tasks)
     repo_of = {t.instance_id: t.repo for t in tasks}
 
     cache_path = Path(args.cache) if args.cache else out / "cache.jsonl"
     inner = None if args.offline else make_client(args.provider, args.base_url, args.api_key_env, args.model_extra)
     client = CachedClient(inner, cache_path, offline=args.offline)
-    localizer = Localizer(client, args.model, k=args.top_k, effort=args.effort)
+    level = getattr(args, "level", "file")
+    if level == "function":                     # v2: two-stage verifier, symbolised ground truth
+        findex = FunctionIndexCache(checkout_reader(args.repos_dir), args.functions_cache or out / "functions.jsonl")
+        truth = function_ground_truth_from_tasks(tasks, findex)
+        localizer = LocalizerV2(client, args.model, k=args.top_k, effort=args.effort)
+    else:
+        truth = ground_truth_from_tasks(tasks)
+        localizer = Localizer(client, args.model, k=args.top_k, effort=args.effort)
 
     flags_path = out / "flags.jsonl"
     errors_path = out / "errors.jsonl"
     flags_by_task = {}
+    file_flags_by_task = {}
     errors = []
     t0 = time.time()
     with flags_path.open("w") as f, errors_path.open("w") as ef:
@@ -83,21 +91,30 @@ def run(args: argparse.Namespace) -> int:
             try:
                 d = ensure_checkout(Path(args.repos_dir), t)
                 files = repo_file_tree(d)
-                res = localizer.localize(t.instance_id, t.problem_statement, files)
+                if level == "function":
+                    res = localizer.localize(t.instance_id, t.problem_statement, files, index_of=lambda p: findex.spans(t.repo, t.base_commit, p))
+                else:
+                    res = localizer.localize(t.instance_id, t.problem_statement, files)
             except Exception as e:  # one task must not kill the run; the task is excluded and recorded
                 errors.append(t.instance_id)
                 ef.write(json.dumps({"instance_id": t.instance_id, "repo": t.repo, "error": f"{type(e).__name__}: {str(e)[:400]}"}) + "\n")
                 sys.stderr.write(f"[{i}/{len(tasks)}] {t.instance_id}: ERROR {type(e).__name__}: {str(e)[:200]}\n")
                 continue
             flags_by_task[t.instance_id] = res.flags()
+            stage1 = res.files if level == "function" else res
+            if level == "function":
+                file_flags_by_task[t.instance_id] = res.file_flags()
             f.write(json.dumps({"instance_id": t.instance_id, "repo": t.repo, "ranked": list(res.ranked), "request_key": res.request_key,
-                                "served_by": res.meta.get("provider") if res.meta else None,
-                                "n_files": res.n_files, "truncated": res.n_files >= MAX_FILES}, sort_keys=True) + "\n")
-            sys.stderr.write(f"[{i}/{len(tasks)}] {t.instance_id}: {[p for p, _ in res.ranked]} via {res.meta.get('provider') if res.meta else '?'}\n")
+                                "served_by": res.meta.get("provider") if res.meta else None, "level": level,
+                                **({"files_ranked": list(stage1.ranked), "files_request_key": stage1.request_key} if level == "function" else {}),
+                                "n_files": stage1.n_files, "truncated": stage1.n_files >= MAX_FILES}, sort_keys=True) + "\n")
+            sys.stderr.write(f"[{i}/{len(tasks)}] {t.instance_id}: {[r[:2] if level == 'function' else r[0] for r in res.ranked]} via {res.meta.get('provider') if res.meta else '?'}\n")
     m = score(flags_by_task, truth, repo_of)
     dump(m, out / "metrics.json")
+    if level == "function":                     # file-level rate from the same stage-1 flags (comparability with v1)
+        dump(score(file_flags_by_task, truth, repo_of), out / "metrics-file.json")
     manifest = {
-        "model": args.model, "provider": args.provider, "base_url": args.base_url, "model_extra": args.model_extra, "effort": args.effort, "top_k": args.top_k,
+        "model": args.model, "provider": args.provider, "level": level, "base_url": args.base_url, "model_extra": args.model_extra, "effort": args.effort, "top_k": args.top_k,
         "per_repo_limit": args.per_repo_limit, "n_tasks": len(tasks), "n_scored": len(flags_by_task), "n_errors": len(errors), "error_ids": errors, "repos_filter": args.repos,
         "offline": args.offline, "cache": str(cache_path), "cache_hits": client.hits, "cache_misses": client.misses,
         "flags_sha256": hashlib.sha256(flags_path.read_bytes()).hexdigest(),
@@ -134,6 +151,8 @@ def _main(argv: list[str]) -> int:
     ap.add_argument("--repos", default="", help="restrict to these repos: comma list or a file with one owner/name per line")
     ap.add_argument("--cache", help="reuse an existing cache file (default: <out>/cache.jsonl)")
     ap.add_argument("--offline", action="store_true", help="never call the model; fail on cache miss")
+    ap.add_argument("--level", default="file", choices=["file", "function"], help="v2: function-level flags (two-stage verifier); also writes metrics-file.json")
+    ap.add_argument("--functions-cache", help="v2: JSONL cache of function indexes (default: <out>/functions.jsonl)")
     args = ap.parse_args(argv)
     if args.compare:
         return compare(*args.compare)

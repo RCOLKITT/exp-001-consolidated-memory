@@ -1,10 +1,12 @@
 """Paired task-level analysis of a Phase 4 evaluation (post-hoc, descriptive).
 
-    python -m phase4.paired --tasks corpus/tasks.jsonl --eval-dir results/experiment/6/eval \
-        [--negative-control owner/name] [--secondary-repos a/b,c/d] --out results/experiment/6/paired
+    python -m phase4.paired --eval-dir results/experiment/6/eval [--tasks corpus/tasks.jsonl] \
+        [--negative-control owner/name] [--secondary-repos a/b,c/d] [--treatment-arm treatment] --out results/experiment/6/paired
 
-Reads the per-repo ``arms.json`` files written by ``phase4.evaluate`` and the
-corpus (for gold files), recomputes file-level hit@k per task for both arms,
+Reads the per-repo ``arms.json`` files written by ``phase4.evaluate``. Files
+written by v2 carry per-task hits under ``arms[<name>].hits`` and need no
+corpus; older files (v1) need ``--tasks`` so file-level hits can be
+recomputed from gold files. Either way the analysis reports, per arm pair,
 and reports what the aggregate ``gate4.json`` cannot: discordant pairs
 (control-only hit vs treatment-only hit), an exact McNemar p-value, a paired
 confidence interval on the lift, retrieval coverage and how often the
@@ -85,8 +87,35 @@ def summarise(rows: list[dict], label: str) -> dict:
     return out
 
 
-def analyse(tasks_path: Path, eval_dir: Path, negative_control: str | None, secondary_repos: list[str]) -> dict:
-    tasks = {t.instance_id: t for t in read_tasks(tasks_path)}
+def _rows_v2(a: dict, repo: str, arm: str) -> list[dict]:
+    """Per-task rows from a v2 arms.json (hits recorded by the evaluator)."""
+    c, t = a["arms"]["control"], a["arms"][arm]
+    rows = []
+    for iid, chit in c["hits"].items():
+        if iid not in t["hits"]:
+            continue
+        rows.append({"instance_id": iid, "repo": repo, "control_hit": bool(chit), "treatment_hit": bool(t["hits"][iid]),
+                     "flags_differed": c["flags"].get(iid) != t["flags"].get(iid), "retrieved": bool(t.get("retrieved", {}).get(iid))})
+    return rows
+
+
+def _rows_v1(a: dict, repo: str, tasks: dict) -> list[dict]:
+    rows = []
+    for iid, cflags in a["control_flags"].items():
+        t = tasks.get(iid)
+        if t is None:
+            continue
+        gold = set(gold_files(t.patch))
+        if not gold:
+            continue
+        tflags = a["treatment_flags"].get(iid, [])
+        rows.append({"instance_id": iid, "repo": repo, "control_hit": any(p in gold for p in cflags), "treatment_hit": any(p in gold for p in tflags),
+                     "flags_differed": list(cflags) != list(tflags), "retrieved": bool(a.get("retrieved", {}).get(iid))})
+    return rows
+
+
+def analyse(tasks_path: Path | None, eval_dir: Path, negative_control: str | None, secondary_repos: list[str], arm: str = "treatment") -> dict:
+    tasks = {t.instance_id: t for t in read_tasks(tasks_path)} if tasks_path else {}
     rows: list[dict] = []
     per_repo: dict[str, dict] = {}
     errors: dict[str, dict] = {}
@@ -94,27 +123,19 @@ def analyse(tasks_path: Path, eval_dir: Path, negative_control: str | None, seco
         repo = f.name[: -len(".arms.json")].replace("__", "/", 1)
         a = json.loads(f.read_text())
         errors[repo] = a.get("errors", {})
-        rrows = []
-        for iid, cflags in a["control_flags"].items():
-            t = tasks.get(iid)
-            if t is None:
-                continue
-            gold = set(gold_files(t.patch))
-            if not gold:
-                continue
-            tflags = a["treatment_flags"].get(iid, [])
-            rrows.append({
-                "instance_id": iid, "repo": repo,
-                "control_hit": any(p in gold for p in cflags), "treatment_hit": any(p in gold for p in tflags),
-                "flags_differed": list(cflags) != list(tflags), "retrieved": bool(a.get("retrieved", {}).get(iid)),
-            })
+        if "arms" in a and arm in a["arms"]:
+            rrows = _rows_v2(a, repo, arm)
+        elif tasks:
+            rrows = _rows_v1(a, repo, tasks)
+        else:
+            raise SystemExit(f"{f}: no per-task hits in arms.json and no --tasks given to recompute them")
         per_repo[repo] = summarise(rrows, repo)
         if repo != negative_control:
             rows.extend(rrows)
     primary = summarise(rows, "primary: all treatment repos (registered)")
     secondary = summarise([r for r in rows if r["repo"] in set(secondary_repos)], "secondary: repos that passed Gate 3") if secondary_repos else None
     neg = per_repo.get(negative_control) if negative_control else None
-    return {"primary": primary, "secondary": secondary, "negative_control": neg, "per_repo": per_repo,
+    return {"arm": arm, "primary": primary, "secondary": secondary, "negative_control": neg, "per_repo": per_repo,
             "errors": {k: v for k, v in errors.items() if v}, "tasks": rows}
 
 
@@ -125,7 +146,7 @@ def render_md(rep: dict) -> str:
                 f"bootstrap {s['lift_ci95_bootstrap_pts'][0]:+.1f} to {s['lift_ci95_bootstrap_pts'][1]:+.1f}). "
                 f"Discordant pairs: treatment-only {s['treatment_only_hit']}, control-only {s['control_only_hit']}, McNemar exact p = {s['mcnemar_exact_p']}. "
                 f"Flags differed on {s['flags_differed']}/{s['n_tasks']} tasks; memory retrieved on {s['retrieved_any']}/{s['n_tasks']}.\n")
-    out = ["# Paired analysis\n", block(rep["primary"])]
+    out = [f"# Paired analysis — arm `{rep.get('arm', 'treatment')}` vs control\n", block(rep["primary"])]
     if rep.get("secondary"):
         out.append(block(rep["secondary"]))
     if rep.get("negative_control"):
@@ -140,14 +161,24 @@ def render_md(rep: dict) -> str:
 
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--tasks", required=True); ap.add_argument("--eval-dir", required=True); ap.add_argument("--out", required=True)
+    ap.add_argument("--tasks"); ap.add_argument("--eval-dir", required=True); ap.add_argument("--out", required=True)
     ap.add_argument("--negative-control"); ap.add_argument("--secondary-repos", default="")
+    ap.add_argument("--treatment-arm", default="treatment", help="v2: which memory arm to pair against control (treatment | ungated); every arm present is also written as paired-<arm>.*")
     args = ap.parse_args(argv)
-    rep = analyse(Path(args.tasks), Path(args.eval_dir), args.negative_control, [r for r in args.secondary_repos.split(",") if r])
     out = Path(args.out); out.mkdir(parents=True, exist_ok=True)
+    secondary = [r for r in args.secondary_repos.split(",") if r]
+    rep = analyse(Path(args.tasks) if args.tasks else None, Path(args.eval_dir), args.negative_control, secondary, args.treatment_arm)
     (out / "paired.json").write_text(json.dumps(rep, indent=1, sort_keys=True) + "\n")
     (out / "paired.md").write_text(render_md(rep))
     print(render_md(rep))
+    # every other memory arm present in the v2 files gets its own report
+    names = set()
+    for f in Path(args.eval_dir).glob("*.arms.json"):
+        names |= set(json.loads(f.read_text()).get("arms", {}))
+    for name in sorted(names - {"control", args.treatment_arm}):
+        r2 = analyse(None, Path(args.eval_dir), args.negative_control, secondary, name)
+        (out / f"paired-{name}.json").write_text(json.dumps(r2, indent=1, sort_keys=True) + "\n")
+        (out / f"paired-{name}.md").write_text(render_md(r2))
     return 0
 
 

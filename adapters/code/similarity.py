@@ -154,3 +154,15 @@ class FileKeyedSimilarity:
         if la and lb:
             return 1.0 if la == lb else 0.0
         return self.inner.sim(a, b) if self.inner else 0.0
+
+
+class FunctionKeyedSimilarity(FileKeyedSimilarity):
+    """v2 consolidation seam: two records are the same pattern iff they point
+    at the same `(path, qualname)`. The location part of a function-level
+    record is `path tokens # qualname` (adapters.code.pipeline.record_content),
+    so equality on the location string is equality on the pair; a record with
+    no `#` (file-level) keys on its file, as in v1."""
+
+    def __init__(self, inner=None) -> None:
+        super().__init__(inner)
+        self.name = "function-keyed" + (f"+{getattr(inner, 'name', type(inner).__name__)}" if inner else "")

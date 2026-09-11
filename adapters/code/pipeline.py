@@ -47,7 +47,18 @@ def record_content(flag: Flag, symptom: str) -> str:
     `symptom => location :: reason`. The symptom (issue head) is what a future
     issue can match against; the location is what memory is for (D12)."""
     path_tokens = flag.location.path.replace("/", " / ").replace(".py", "")
+    if flag.location.symbol:                      # v2: function-level pattern keys on (path, qualname)
+        path_tokens = f"{path_tokens} # {flag.location.symbol}"
     return f"{symptom} => {path_tokens} :: {flag.pattern_text}".strip()
+
+
+@dataclass(frozen=True)
+class ArmSpec:
+    """An evaluation arm: which memory version it sees and its retrieval gate τ
+    (memories below τ are not injected; τ = 0 injects the top-k as in v1)."""
+    name: str
+    version: Optional[str]
+    tau: float = 0.0
 
 
 @dataclass
@@ -55,11 +66,25 @@ class ArmResult:
     arm: str
     version: Optional[str]
     flags_by_task: dict[str, tuple[Flag, ...]] = field(default_factory=dict)
-    retrieved_by_task: dict[str, tuple[str, ...]] = field(default_factory=dict)   # memory ids shown
-    errors: dict[str, str] = field(default_factory=dict)                          # task -> error (excluded from both arms)
+    retrieved_by_task: dict[str, tuple[str, ...]] = field(default_factory=dict)   # memory ids injected
+    errors: dict[str, str] = field(default_factory=dict)                          # task -> error (excluded from every arm)
+    file_flags_by_task: dict[str, tuple[Flag, ...]] = field(default_factory=dict) # v2: stage-1 file flags (secondary metric)
+    scores_by_task: dict[str, dict[str, float]] = field(default_factory=dict)     # memory id -> retrieval score (all candidates)
+    tau: float = 0.0
 
     def metrics(self, truth: GroundTruth, repo_of) -> ArmMetrics:
         return score(self.flags_by_task, truth, repo_of)
+
+    def file_metrics(self, truth: GroundTruth, repo_of) -> ArmMetrics:
+        return score(self.file_flags_by_task or self.flags_by_task, truth, repo_of)
+
+    def hits(self, truth: GroundTruth) -> dict[str, bool]:
+        out = {}
+        for iid, flags in self.flags_by_task.items():
+            gt = truth.locations(iid)
+            if gt:
+                out[iid] = any(f.location.overlaps(h) for f in flags for h in gt)
+        return out
 
     @property
     def retrieval_hit_rate(self) -> float:
@@ -78,11 +103,15 @@ class RepoPipeline:
         list_files: FileLister,
         clock: Callable[[], float],
         retrieval_similarity: Optional[Similarity] = None,
+        index_of: Optional[Callable[[Task, str], object]] = None,
+        tau: float = 0.0,
     ) -> None:
         self.repo = repo
         self.localizer = localizer
         self.truth = truth
         self.list_files = list_files
+        self.index_of = index_of          # v2: (task, path) -> function spans at base_commit
+        self.tau = tau                    # learning-phase retrieval gate (evaluation arms carry their own)
         self._flags: dict[str, Flag] = {}                       # record id -> Flag (oracle input)
         self.oracle = LocationOracle(truth, self._flags)
         self.kernel = Kernel(config, similarity, self.oracle, clock=clock, retrieval_similarity=retrieval_similarity)
@@ -91,13 +120,19 @@ class RepoPipeline:
         self.frozen_version: Optional[str] = None
 
     # -- one verifier pass ---------------------------------------------------
-    def _retrieve(self, task: Task) -> tuple[list[str], tuple[str, ...]]:
+    def _retrieve(self, task: Task, tau: Optional[float] = None) -> tuple[list[str], tuple[str, ...], dict[str, float]]:
+        """Top-k memories for the issue; only those scoring > 0 and ≥ τ are injected.
+        Returns (contents, injected ids, scores of every candidate)."""
+        tau = self.tau if tau is None else tau
         hits = self.kernel.retrieve(task.problem_statement)
-        return [m.content for m, s in hits if s > 0.0], tuple(m.id for m, s in hits if s > 0.0)
+        keep = [(m, s) for m, s in hits if s > 0.0 and s >= tau]
+        return [m.content for m, _ in keep], tuple(m.id for m, _ in keep), {m.id: round(s, 6) for m, s in hits}
 
-    def _localize(self, task: Task, memories: Sequence[str]) -> tuple[Flag, ...]:
-        res = self.localizer.localize(task.instance_id, task.problem_statement, self.list_files(task), memories)
-        return res.flags()
+    def _localize(self, task: Task, memories: Sequence[str]):
+        if getattr(self.localizer, "level", "file") == "function":
+            return self.localizer.localize(task.instance_id, task.problem_statement, self.list_files(task), memories,
+                                           index_of=(lambda p: self.index_of(task, p)) if self.index_of else None)
+        return self.localizer.localize(task.instance_id, task.problem_statement, self.list_files(task), memories)
 
     def _records(self, task: Task, flags: Sequence[Flag]) -> list[Record]:
         # The verifier read the kernel's memory before acting: merge, then tick.
@@ -105,7 +140,7 @@ class RepoPipeline:
         input_hash = digest({"instance_id": task.instance_id, "base_commit": task.base_commit})
         out = []
         for i, f in enumerate(flags):
-            rid = digest({"task": task.instance_id, "rank": i, "path": f.location.path})
+            rid = digest({"task": task.instance_id, "rank": i, "path": f.location.path, **({"symbol": f.location.symbol} if f.location.symbol else {})})
             self._flags[rid] = f
             out.append(Record(id=rid, content=record_content(f, issue_head(task.problem_statement)), input_hash=input_hash, agent_id=self.agent_id,
                               vclock=self.agent_clock, wall_clock=self.kernel._now()))
@@ -118,9 +153,9 @@ class RepoPipeline:
         tasks = sorted(build_tasks, key=lambda t: (t.created_at, t.instance_id))
         self.learn_errors: dict[str, str] = {}
         for t in tasks:
-            memories, _ = self._retrieve(t)
+            memories, _, _ = self._retrieve(t)
             try:
-                flags = self._localize(t, memories)
+                flags = self._localize(t, memories).flags()
             except Exception as e:  # skip the task; it contributes no records and is reported
                 self.learn_errors[t.instance_id] = f"{type(e).__name__}: {str(e)[:300]}"
                 self.kernel.tick()
@@ -135,27 +170,42 @@ class RepoPipeline:
         return self.frozen_version
 
     # -- Phase 4 ---------------------------------------------------------------
-    def evaluate(self, eval_tasks: Sequence[Task], seed: int, version: Optional[str] = None) -> tuple[ArmResult, ArmResult]:
+    def evaluate(self, eval_tasks: Sequence[Task], seed: int, version: Optional[str] = None, tau: Optional[float] = None) -> tuple[ArmResult, ArmResult]:
+        """v1 two-arm evaluation: control (no memory) vs treatment (frozen version)."""
         version = version or self.frozen_version
-        control, treatment = ArmResult("control", None), ArmResult("treatment", version)
+        arms = self.evaluate_arms(eval_tasks, seed, (ArmSpec("control", None), ArmSpec("treatment", version, self.tau if tau is None else tau)))
+        return arms["control"], arms["treatment"]
+
+    def evaluate_arms(self, eval_tasks: Sequence[Task], seed: int, specs: Sequence[ArmSpec]) -> dict[str, ArmResult]:
+        """Every arm on every task; arm order shuffled per task, task order
+        randomised by seed. A task that fails in any arm is excluded from all
+        of them, so every arm scores exactly the same task set (pairing)."""
+        results = {sp.name: ArmResult(sp.name, sp.version, tau=sp.tau) for sp in specs}
         rng = random.Random(seed)
         order = list(eval_tasks)
         rng.shuffle(order)                                     # randomised task order
-        for i, t in enumerate(order):
-            arms = [control, treatment] if (i + rng.randrange(2)) % 2 == 0 else [treatment, control]   # interleaved
-            results = {}
+        for t in order:
+            arm_order = list(specs)
+            rng.shuffle(arm_order)                             # interleaved
+            got = {}
             try:
-                for arm in arms:
-                    self.kernel.pin(arm.version)
-                    memories, ids = self._retrieve(t) if arm.version else ([], ())
-                    results[arm.arm] = (self._localize(t, memories), ids)
-            except Exception as e:  # a task that fails in either arm is excluded from both: pairing is preserved
+                for sp in arm_order:
+                    self.kernel.pin(sp.version)
+                    memories, ids, scores = self._retrieve(t, sp.tau) if sp.version else ([], (), {})
+                    got[sp.name] = (self._localize(t, memories), ids, scores)
+            except Exception as e:  # excluded from every arm: pairing is preserved
                 msg = f"{type(e).__name__}: {str(e)[:300]}"
-                control.errors[t.instance_id] = msg; treatment.errors[t.instance_id] = msg
+                for r in results.values():
+                    r.errors[t.instance_id] = msg
                 continue
-            for arm in (control, treatment):
-                arm.flags_by_task[t.instance_id], arm.retrieved_by_task[t.instance_id] = results[arm.arm]
-        return control, treatment
+            for name, (res, ids, scores) in got.items():
+                r = results[name]
+                r.flags_by_task[t.instance_id] = res.flags()
+                r.retrieved_by_task[t.instance_id] = ids
+                r.scores_by_task[t.instance_id] = scores
+                if hasattr(res, "file_flags"):
+                    r.file_flags_by_task[t.instance_id] = res.file_flags()
+        return results
 
     # -- Learning-phase diagnostics (Gate 3) -------------------------------------
     def gate3_stats(self) -> dict:

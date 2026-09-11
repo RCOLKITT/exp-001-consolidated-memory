@@ -73,6 +73,7 @@ jobs:
       repos: ${{ steps.cfg.outputs.repos }}
       per_repo_limit: ${{ steps.cfg.outputs.per_repo_limit }}
       reuse_cache_run: ${{ steps.cfg.outputs.reuse_cache_run }}
+      level: ${{ steps.cfg.outputs.level }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -101,7 +102,8 @@ jobs:
                  "model": pick("IN_MODEL", "model", "claude-opus-5"), "provider": pick("IN_PROVIDER", "provider", "anthropic"),
                  "base_url": pick("IN_BASE_URL", "base_url", ""), "model_extra": json.dumps(cfg["model_extra"]) if isinstance(cfg.get("model_extra"), dict) else pick("IN_MODEL_EXTRA", "model_extra", ""), "run_control": str(pick("IN_RUN_CONTROL", "run_control", False)).lower(),
                  "limit": str(pick("IN_LIMIT", "limit", 50)), "top_k": str(pick("IN_TOP_K", "top_k", 3)), "per_repo_limit": str(pick("IN_PER_REPO_LIMIT", "per_repo_limit", 0)), "reuse_cache_run": str(pick("IN_REUSE_CACHE_RUN", "reuse_cache_run", "")),
-                 "repos": ",".join(cfg["repos"]) if isinstance(cfg.get("repos"), list) else pick("IN_REPOS", "repos", "")}
+                 "repos": ",".join(cfg["repos"]) if isinstance(cfg.get("repos"), list) else pick("IN_REPOS", "repos", ""),
+                 "level": str(cfg.get("level", "file")), "ceiling_metrics": str(cfg.get("ceiling_metrics", "results/phase0/18/control/metrics.json"))}   # v2: "function"
           for k, v in out.items(): print(f"{k}={v}")
           import sys; print(json.dumps(out), file=sys.stderr)
           PY
@@ -145,9 +147,16 @@ jobs:
       - name: Gold-location recurrence report (Gate 3 precheck, no model)
         if: steps.cfg.outputs.repos != ''
         run: |
-          CM=""; [ -f results/phase0/18/control/metrics.json ] && CM="--control-metrics results/phase0/18/control/metrics.json"
-          python -m phase2.recurrence corpus/tasks.jsonl --repos "${{ steps.cfg.outputs.repos }}" --prefixes 20,30,40,50,60,80 $CM \
+          CM=""; [ -f "${{ steps.cfg.outputs.ceiling_metrics }}" ] && CM="--control-metrics ${{ steps.cfg.outputs.ceiling_metrics }}"
+          L=""; [ "${{ steps.cfg.outputs.level }}" = "function" ] && L="--level function --repos-dir checkouts --functions-cache runs/functions.jsonl" && mkdir -p runs
+          python -m phase2.recurrence corpus/tasks.jsonl --repos "${{ steps.cfg.outputs.repos }}" --prefixes 20,30,40,50,60,80 $CM $L \
             --md "${{ steps.dir.outputs.dir }}/recurrence.md" --json "${{ steps.dir.outputs.dir }}/recurrence.json" | tail -12
+      - uses: actions/upload-artifact@v4
+        if: steps.cfg.outputs.level == 'function' && steps.cfg.outputs.repos != ''
+        with:
+          name: functions-${{ github.run_number }}
+          path: runs/functions.jsonl
+          retention-days: 90
       - uses: actions/upload-artifact@v4
         with:
           name: corpus-${{ github.run_number }}
@@ -224,12 +233,18 @@ jobs:
           M=""; [ -f corpus/models.json ] && M="--models corpus/models.json"
           R=""; [ -n "${{ needs.corpus.outputs.repos }}" ] && R="--repos ${{ needs.corpus.outputs.repos }}"
           C=""; [ -n "${REUSED_CACHE:-}" ] && C="--cache $REUSED_CACHE --offline"
-          python -m phase0.run_control --tasks corpus/tasks.jsonl $M --repos-dir corpus/repos --out runs/control-a $P ${MX:+"$MX"} $R $C --model "${{ needs.corpus.outputs.model }}" --top-k "${{ needs.corpus.outputs.top_k }}" --limit "${{ needs.corpus.outputs.limit }}" --per-repo-limit "${{ needs.corpus.outputs.per_repo_limit }}"
-          python -m phase0.run_control --tasks corpus/tasks.jsonl $M --repos-dir corpus/repos --out runs/control-b $P ${MX:+"$MX"} $R --model "${{ needs.corpus.outputs.model }}" --top-k "${{ needs.corpus.outputs.top_k }}" --limit "${{ needs.corpus.outputs.limit }}" --per-repo-limit "${{ needs.corpus.outputs.per_repo_limit }}" --cache "${REUSED_CACHE:-runs/control-a/cache.jsonl}" --offline
+          LV="--level ${{ needs.corpus.outputs.level }}"
+          python -m phase0.run_control --tasks corpus/tasks.jsonl $M --repos-dir corpus/repos --out runs/control-a $P ${MX:+"$MX"} $R $C $LV --model "${{ needs.corpus.outputs.model }}" --top-k "${{ needs.corpus.outputs.top_k }}" --limit "${{ needs.corpus.outputs.limit }}" --per-repo-limit "${{ needs.corpus.outputs.per_repo_limit }}"
+          python -m phase0.run_control --tasks corpus/tasks.jsonl $M --repos-dir corpus/repos --out runs/control-b $P ${MX:+"$MX"} $R $LV --model "${{ needs.corpus.outputs.model }}" --top-k "${{ needs.corpus.outputs.top_k }}" --limit "${{ needs.corpus.outputs.limit }}" --per-repo-limit "${{ needs.corpus.outputs.per_repo_limit }}" --cache "${REUSED_CACHE:-runs/control-a/cache.jsonl}" --offline --functions-cache runs/control-a/functions.jsonl
           python -m phase0.run_control --compare runs/control-a runs/control-b | tee runs/compare.txt
           # oracle hand-check sample (Gate 2.3): 50 flags, fixed seed, oracle label + gold files, manual column blank
           python -m phase2.handcheck export runs/control-a/flags.jsonl corpus/tasks.jsonl --n 50 --seed 1 --out runs/handcheck.csv
           python -m phase2.handcheck verify runs/handcheck.csv corpus/tasks.jsonl --out runs/handcheck-verified.csv | tee runs/handcheck-verify.txt || true
+          if [ "${{ needs.corpus.outputs.level }}" = "function" ]; then
+            # Gate 2.3-v2: 50 gold hunks -> enclosing symbol, with source context for the human read; independent indentation parser as a second witness
+            python -m phase2.handcheck export-functions corpus/tasks.jsonl $R --repos-dir corpus/repos --functions-cache runs/control-a/functions.jsonl --n 50 --seed 1 --out runs/handcheck-functions.csv
+            python -m phase2.handcheck verify-functions runs/handcheck-functions.csv corpus/tasks.jsonl --repos-dir corpus/repos --out runs/handcheck-functions-verified.csv | tee runs/handcheck-functions-verify.txt || true
+          fi
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -241,10 +256,12 @@ jobs:
         run: |
           set -euo pipefail
           D="${{ needs.corpus.outputs.dir }}/control"; mkdir -p "$D"
-          for f in metrics.json manifest.json flags.jsonl errors.jsonl freshness.jsonl; do [ -f runs/control-a/$f ] && cp runs/control-a/$f "$D/"; done; true
+          for f in metrics.json metrics-file.json manifest.json flags.jsonl errors.jsonl freshness.jsonl; do [ -f runs/control-a/$f ] && cp runs/control-a/$f "$D/"; done; true
           [ -f runs/compare.txt ] && cp runs/compare.txt "$D/"
           [ -f runs/handcheck.csv ] && cp runs/handcheck.csv "$D/"
           [ -f runs/handcheck-verified.csv ] && cp runs/handcheck-verified.csv runs/handcheck-verify.txt "$D/"; true
+          [ -f runs/handcheck-functions.csv ] && cp runs/handcheck-functions.csv "$D/"; true
+          [ -f runs/handcheck-functions-verified.csv ] && cp runs/handcheck-functions-verified.csv runs/handcheck-functions-verify.txt "$D/"; true
           git config user.name "phase0-bot"; git config user.email "phase0-bot@users.noreply.github.com"
           git add results/
           git commit -m "results(phase0): run ${{ github.run_number }} control arm [skip ci]" || exit 0
