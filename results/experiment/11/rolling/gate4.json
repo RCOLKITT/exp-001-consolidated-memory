@@ -1,0 +1,224 @@
+{
+ "arms": [
+  "control",
+  "treatment",
+  "gated",
+  "placebo"
+ ],
+ "control": {
+  "false_positive_rate": 0.875,
+  "localization_rate": 0.3125,
+  "n_false_positive": 119,
+  "n_flags": 136,
+  "n_localized": 15,
+  "n_tasks": 48,
+  "per_repo": {
+   "aws-cloudformation/cfn-lint": {
+    "false_positive_rate": 0.875,
+    "localization_rate": 0.3125,
+    "n_false_positive": 119,
+    "n_flags": 136,
+    "n_localized": 15,
+    "n_tasks": 48
+   }
+  }
+ },
+ "effect_in_majority_of_repos": false,
+ "false_positive_rise_pts": 0.38,
+ "file_level_secondary": {
+  "control": {
+   "false_positive_rate": 0.8382,
+   "localization_rate": 0.4375,
+   "n_false_positive": 114,
+   "n_flags": 136,
+   "n_localized": 21,
+   "n_tasks": 48,
+   "per_repo": {
+    "aws-cloudformation/cfn-lint": {
+     "false_positive_rate": 0.8382,
+     "localization_rate": 0.4375,
+     "n_false_positive": 114,
+     "n_flags": 136,
+     "n_localized": 21,
+     "n_tasks": 48
+    }
+   }
+  },
+  "false_positive_rise_pts": -0.23,
+  "localization_lift_pts": -2.08,
+  "treatment": {
+   "false_positive_rate": 0.8359,
+   "localization_rate": 0.4167,
+   "n_false_positive": 107,
+   "n_flags": 128,
+   "n_localized": 20,
+   "n_tasks": 48,
+   "per_repo": {
+    "aws-cloudformation/cfn-lint": {
+     "false_positive_rate": 0.8359,
+     "localization_rate": 0.4167,
+     "n_false_positive": 107,
+     "n_flags": 128,
+     "n_localized": 20,
+     "n_tasks": 48
+    }
+   }
+  }
+ },
+ "granularity": "function",
+ "localization_lift_pts": 0.0,
+ "mode": "rolling",
+ "negative_control_lift": null,
+ "per_repo_lift": {
+  "aws-cloudformation/cfn-lint": {
+   "false_positive_rise_pts": 0.38,
+   "localization_lift_pts": 0.0
+  },
+  "matplotlib/matplotlib": {
+   "false_positive_rise_pts": 0.0,
+   "localization_lift_pts": 0.0
+  },
+  "pylint-dev/pylint": {
+   "false_positive_rise_pts": 0.0,
+   "localization_lift_pts": 0.0
+  }
+ },
+ "secondary_arms": {
+  "gated": {
+   "control": {
+    "false_positive_rate": 0.875,
+    "localization_rate": 0.3125,
+    "n_false_positive": 119,
+    "n_flags": 136,
+    "n_localized": 15,
+    "n_tasks": 48,
+    "per_repo": {
+     "aws-cloudformation/cfn-lint": {
+      "false_positive_rate": 0.875,
+      "localization_rate": 0.3125,
+      "n_false_positive": 119,
+      "n_flags": 136,
+      "n_localized": 15,
+      "n_tasks": 48
+     }
+    }
+   },
+   "effect_in_majority_of_repos": false,
+   "false_positive_rise_pts": -0.74,
+   "localization_lift_pts": 2.08,
+   "negative_control_lift": null,
+   "per_repo_lift": {
+    "aws-cloudformation/cfn-lint": {
+     "false_positive_rise_pts": -0.74,
+     "localization_lift_pts": 2.08
+    },
+    "matplotlib/matplotlib": {
+     "false_positive_rise_pts": 0.0,
+     "localization_lift_pts": 0.0
+    },
+    "pylint-dev/pylint": {
+     "false_positive_rise_pts": 0.0,
+     "localization_lift_pts": 0.0
+    }
+   },
+   "treatment": {
+    "false_positive_rate": 0.8676,
+    "localization_rate": 0.3333,
+    "n_false_positive": 118,
+    "n_flags": 136,
+    "n_localized": 16,
+    "n_tasks": 48,
+    "per_repo": {
+     "aws-cloudformation/cfn-lint": {
+      "false_positive_rate": 0.8676,
+      "localization_rate": 0.3333,
+      "n_false_positive": 118,
+      "n_flags": 136,
+      "n_localized": 16,
+      "n_tasks": 48
+     }
+    }
+   }
+  },
+  "placebo": {
+   "control": {
+    "false_positive_rate": 0.875,
+    "localization_rate": 0.3125,
+    "n_false_positive": 119,
+    "n_flags": 136,
+    "n_localized": 15,
+    "n_tasks": 48,
+    "per_repo": {
+     "aws-cloudformation/cfn-lint": {
+      "false_positive_rate": 0.875,
+      "localization_rate": 0.3125,
+      "n_false_positive": 119,
+      "n_flags": 136,
+      "n_localized": 15,
+      "n_tasks": 48
+     }
+    }
+   },
+   "effect_in_majority_of_repos": false,
+   "false_positive_rise_pts": -1.79,
+   "localization_lift_pts": 2.08,
+   "negative_control_lift": null,
+   "per_repo_lift": {
+    "aws-cloudformation/cfn-lint": {
+     "false_positive_rise_pts": -1.79,
+     "localization_lift_pts": 2.08
+    },
+    "matplotlib/matplotlib": {
+     "false_positive_rise_pts": 0.0,
+     "localization_lift_pts": 0.0
+    },
+    "pylint-dev/pylint": {
+     "false_positive_rise_pts": 0.0,
+     "localization_lift_pts": 0.0
+    }
+   },
+   "treatment": {
+    "false_positive_rate": 0.8571,
+    "localization_rate": 0.3333,
+    "n_false_positive": 114,
+    "n_flags": 133,
+    "n_localized": 16,
+    "n_tasks": 48,
+    "per_repo": {
+     "aws-cloudformation/cfn-lint": {
+      "false_positive_rate": 0.8571,
+      "localization_rate": 0.3333,
+      "n_false_positive": 114,
+      "n_flags": 133,
+      "n_localized": 16,
+      "n_tasks": 48
+     }
+    }
+   }
+  }
+ },
+ "tau": 0.5,
+ "treatment": {
+  "false_positive_rate": 0.8788,
+  "localization_rate": 0.3125,
+  "n_false_positive": 116,
+  "n_flags": 132,
+  "n_localized": 15,
+  "n_tasks": 48,
+  "per_repo": {
+   "aws-cloudformation/cfn-lint": {
+    "false_positive_rate": 0.8788,
+    "localization_rate": 0.3125,
+    "n_false_positive": 116,
+    "n_flags": 132,
+    "n_localized": 15,
+    "n_tasks": 48
+   }
+  }
+ },
+ "treatment_minus_placebo": {
+  "false_positive_pts": 2.16,
+  "localization_pts": -2.08
+ },
+ "warmup": 20
+}

@@ -1,0 +1,817 @@
+{
+ "arms": {
+  "control": {
+   "file_hits": {},
+   "file_metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "flags": {},
+   "hits": {},
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "retrieved": {},
+   "scores": {},
+   "tau": 0.0,
+   "version": null
+  },
+  "gated": {
+   "file_hits": {},
+   "file_metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "flags": {},
+   "hits": {},
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "retrieved": {},
+   "scores": {},
+   "tau": 0.5,
+   "version": "rolling"
+  },
+  "placebo": {
+   "file_hits": {},
+   "file_metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "flags": {},
+   "hits": {},
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "retrieved": {},
+   "scores": {},
+   "tau": 0.0,
+   "version": "rolling"
+  },
+  "treatment": {
+   "file_hits": {},
+   "file_metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "flags": {},
+   "hits": {},
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.0,
+    "localization_rate": 0.0,
+    "n_false_positive": 0,
+    "n_flags": 0,
+    "n_localized": 0,
+    "n_tasks": 0,
+    "per_repo": {}
+   },
+   "retrieved": {},
+   "scores": {},
+   "tau": 0.0,
+   "version": "rolling"
+  }
+ },
+ "control": {
+  "false_positive_rate": 0.0,
+  "localization_rate": 0.0,
+  "n_false_positive": 0,
+  "n_flags": 0,
+  "n_localized": 0,
+  "n_tasks": 0,
+  "per_repo": {}
+ },
+ "control_flags": {},
+ "errors": {
+  "matplotlib__matplotlib-28104": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28116": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28177": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28261": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28292": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28306": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28363": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28388": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28397": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28401": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28436": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28437": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28458": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28465": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28473": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28478": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28486": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28487": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28501": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28504": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28525": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28573": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28577": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28584": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28609": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28629": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28649": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28734": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28786": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28830": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28841": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28853": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28881": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28933": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28970": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29007": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29013": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29052": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29054": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29209": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29249": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29258": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29285": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29317": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29388": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29401": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29411": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29431": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29481": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29486": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29503": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29520": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29537": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29612": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29689": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29696": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29698": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29719": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29721": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29781": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29783": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29798": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29808": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29873": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29879": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29892": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29919": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29958": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29993": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-30030": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-30079": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-30089": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-30098": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-30186": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-30198": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-30223": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-30328": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-30363": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-30423": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-30467": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-30475": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''"
+ },
+ "gold": {
+  "matplotlib__matplotlib-28104": [
+   "galleries/examples/shapes_and_collections/hatchcolor_demo.py::<module>",
+   "lib/matplotlib/backend_bases.py::GraphicsContextBase.__init__",
+   "lib/matplotlib/collections.py::Collection.__init__",
+   "lib/matplotlib/patches.py::Patch",
+   "lib/matplotlib/patches.py::Patch.__init__",
+   "lib/matplotlib/patches.py::Patch._draw_paths_with_artist_properties",
+   "lib/matplotlib/patches.py::Patch._set_edgecolor",
+   "lib/matplotlib/patches.py::Patch.get_facecolor",
+   "lib/matplotlib/patches.py::Patch.get_fill",
+   "lib/matplotlib/patches.py::Patch.get_linewidth",
+   "lib/matplotlib/patches.py::Patch.set_alpha",
+   "lib/matplotlib/patches.py::Patch.set_antialiased",
+   "lib/matplotlib/patches.py::Patch.set_color",
+   "lib/matplotlib/patches.py::Patch.set_edgecolor",
+   "lib/matplotlib/patches.py::Patch.set_fill",
+   "lib/matplotlib/patches.py::Patch.set_linewidth",
+   "lib/matplotlib/patches.py::Patch.update_from",
+   "lib/matplotlib/rcsetup.py::<module>",
+   "lib/matplotlib/rcsetup.py::validate_color_for_prop_cycle",
+   "lib/matplotlib/rcsetup.py::validate_color_or_auto"
+  ],
+  "matplotlib__matplotlib-28116": [
+   "lib/matplotlib/cm.py::_gen_cmap_registry"
+  ],
+  "matplotlib__matplotlib-28177": [
+   "lib/matplotlib/artist.py::Artist",
+   "lib/matplotlib/artist.py::Artist.__init__",
+   "lib/matplotlib/artist.py::Artist.get_figure",
+   "lib/matplotlib/artist.py::Artist.get_path_effects",
+   "lib/matplotlib/artist.py::Artist.remove",
+   "lib/matplotlib/artist.py::Artist.set_clip_box",
+   "lib/matplotlib/artist.py::Artist.set_figure",
+   "lib/matplotlib/axes/_base.py::_AxesBase.__clear",
+   "lib/matplotlib/figure.py::<module>",
+   "lib/matplotlib/figure.py::Figure.__init__",
+   "lib/matplotlib/figure.py::FigureBase",
+   "lib/matplotlib/figure.py::FigureBase.contains",
+   "lib/matplotlib/figure.py::FigureBase.get_children",
+   "lib/matplotlib/figure.py::SubFigure.__init__"
+  ],
+  "matplotlib__matplotlib-28261": [
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D._on_move"
+  ],
+  "matplotlib__matplotlib-28292": [
+   "lib/matplotlib/ticker.py::MaxNLocator._raw_ticks"
+  ],
+  "matplotlib__matplotlib-28306": [
+   "lib/matplotlib/projections/polar.py::PolarAxes",
+   "lib/matplotlib/projections/polar.py::PolarAxes.format_coord",
+   "lib/matplotlib/projections/polar.py::PolarAxes.get_data_ratio"
+  ],
+  "matplotlib__matplotlib-28363": [
+   "lib/matplotlib/figure.py::FigureBase.subfigures"
+  ],
+  "matplotlib__matplotlib-28388": [
+   "lib/matplotlib/backends/registry.py::BackendRegistry._validate_and_store_entry_points"
+  ],
+  "matplotlib__matplotlib-28397": [
+   "lib/matplotlib/figure.py::FigureBase",
+   "lib/matplotlib/figure.py::FigureBase.add_subfigure",
+   "lib/matplotlib/figure.py::FigureBase.sca"
+  ],
+  "matplotlib__matplotlib-28401": [
+   "lib/matplotlib/text.py::Text._get_dist_to_box",
+   "lib/matplotlib/text.py::Text.set_wrap"
+  ],
+  "matplotlib__matplotlib-28436": [
+   "lib/matplotlib/colors.py::_to_rgba_no_colorcycle",
+   "lib/matplotlib/colors.py::is_color_like",
+   "lib/matplotlib/colors.py::to_rgba"
+  ],
+  "matplotlib__matplotlib-28437": [
+   "lib/matplotlib/image.py::_ImageBase._make_image"
+  ],
+  "matplotlib__matplotlib-28465": [
+   "lib/matplotlib/figure.py::SubFigure",
+   "lib/matplotlib/figure.py::SubFigure.__init__",
+   "lib/matplotlib/figure.py::SubFigure.dpi"
+  ],
+  "matplotlib__matplotlib-28473": [
+   "lib/matplotlib/backends/registry.py::BackendRegistry",
+   "lib/matplotlib/backends/registry.py::BackendRegistry.__init__",
+   "lib/matplotlib/backends/registry.py::BackendRegistry._backend_module_name",
+   "lib/matplotlib/backends/registry.py::BackendRegistry.is_valid_backend",
+   "lib/matplotlib/backends/registry.py::BackendRegistry.resolve_backend",
+   "lib/matplotlib/backends/registry.py::BackendRegistry.resolve_gui_or_backend"
+  ],
+  "matplotlib__matplotlib-28486": [
+   "lib/matplotlib/transforms.py::CompositeGenericTransform",
+   "lib/matplotlib/transforms.py::CompositeGenericTransform._iter_break_from_left_to_right",
+   "lib/matplotlib/transforms.py::Transform",
+   "lib/matplotlib/transforms.py::Transform.__sub__",
+   "lib/matplotlib/transforms.py::Transform.contains_branch_seperately"
+  ],
+  "matplotlib__matplotlib-28487": [
+   "lib/matplotlib/axes/_axes.py::Axes.axhspan"
+  ],
+  "matplotlib__matplotlib-28501": [
+   "lib/matplotlib/dates.py::ConciseDateFormatter.format_ticks"
+  ],
+  "matplotlib__matplotlib-28504": [
+   "lib/matplotlib/backends/backend_svg.py::RendererSVG._draw_text_as_path",
+   "lib/matplotlib/backends/backend_svg.py::RendererSVG._draw_text_as_text"
+  ],
+  "matplotlib__matplotlib-28525": [
+   "lib/mpl_toolkits/axes_grid1/axes_grid.py::ImageGrid.__init__",
+   "lib/mpl_toolkits/axes_grid1/axes_grid.py::ImageGrid._init_locators"
+  ],
+  "matplotlib__matplotlib-28573": [
+   "lib/matplotlib/artist.py::Artist._update_props"
+  ],
+  "matplotlib__matplotlib-28577": [
+   "lib/matplotlib/axis.py::<module>",
+   "lib/matplotlib/axis.py::Axis",
+   "lib/matplotlib/axis.py::Axis._copy_tick_props",
+   "lib/matplotlib/axis.py::Axis.get_label_text",
+   "lib/matplotlib/axis.py::Tick",
+   "lib/matplotlib/axis.py::Tick._apply_tickdir",
+   "lib/matplotlib/axis.py::Tick._set_labelrotation",
+   "lib/matplotlib/axis.py::Tick.get_tickdir",
+   "lib/matplotlib/axis.py::XTick",
+   "lib/matplotlib/axis.py::XTick._apply_tickdir"
+  ],
+  "matplotlib__matplotlib-28584": [
+   "galleries/examples/axes_grid1/parasite_simple.py::<module>",
+   "lib/matplotlib/axes/_base.py::_AxesBase",
+   "lib/matplotlib/axes/_base.py::_AxesBase.__repr__",
+   "lib/matplotlib/axes/_base.py::_AxesBase.get_subplotspec",
+   "lib/matplotlib/axes/_base.py::_AxesBase.get_xlabel",
+   "lib/matplotlib/axes/_base.py::_AxesBase.get_ylabel",
+   "lib/matplotlib/axes/_base.py::_AxesBase.set_xlabel",
+   "lib/matplotlib/axes/_base.py::_AxesBase.set_ylabel",
+   "lib/matplotlib/axis.py::Axis",
+   "lib/matplotlib/axis.py::Axis.get_gridlines",
+   "lib/matplotlib/axis.py::Axis.get_label",
+   "lib/matplotlib/axis.py::Axis.get_offset_text",
+   "lib/matplotlib/backends/qt_editor/figureoptions.py::figure_edit",
+   "lib/mpl_toolkits/axisartist/axis_artist.py::AxisLabel",
+   "lib/mpl_toolkits/axisartist/axis_artist.py::AxisLabel.get_ref_artist",
+   "lib/mpl_toolkits/axisartist/axis_artist.py::AxisLabel.get_text",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D.get_zlabel"
+  ],
+  "matplotlib__matplotlib-28609": [
+   "lib/matplotlib/backends/backend_svg.py::RendererSVG",
+   "lib/matplotlib/backends/backend_svg.py::RendererSVG.draw_markers",
+   "lib/matplotlib/backends/backend_svg.py::RendererSVG.draw_path_collection"
+  ],
+  "matplotlib__matplotlib-28629": [
+   "lib/matplotlib/axis.py::Axis.get_tightbbox"
+  ],
+  "matplotlib__matplotlib-28649": [
+   "lib/matplotlib/artist.py::Artist.format_cursor_data",
+   "lib/matplotlib/cbook.py::_g_sig_digits"
+  ],
+  "matplotlib__matplotlib-28734": [
+   "lib/matplotlib/_constrained_layout.py::do_constrained_layout"
+  ],
+  "matplotlib__matplotlib-28786": [
+   "lib/matplotlib/contour.py::<module>",
+   "lib/matplotlib/contour.py::ContourSet.__init__"
+  ],
+  "matplotlib__matplotlib-28830": [
+   "lib/matplotlib/cbook.py::_auto_format_str",
+   "lib/matplotlib/table.py::<module>",
+   "lib/matplotlib/table.py::Cell",
+   "lib/matplotlib/table.py::table"
+  ],
+  "matplotlib__matplotlib-28841": [
+   "lib/matplotlib/rcsetup.py::<module>",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D._arcball",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D._on_move",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::_Quaternion",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::_Quaternion.as_cardan_angles",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::_Quaternion.from_cardan_angles",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::_Quaternion.rotate_from_to"
+  ],
+  "matplotlib__matplotlib-28853": [
+   "lib/matplotlib/axes/_axes.py::Axes.pcolorfast"
+  ],
+  "matplotlib__matplotlib-28881": [
+   "lib/matplotlib/lines.py::AxLine.get_transform"
+  ],
+  "matplotlib__matplotlib-28933": [
+   "lib/matplotlib/lines.py::AxLine",
+   "lib/matplotlib/lines.py::AxLine.get_slope",
+   "lib/matplotlib/lines.py::AxLine.set_xy1",
+   "lib/matplotlib/lines.py::AxLine.set_xy2"
+  ],
+  "matplotlib__matplotlib-28970": [
+   "lib/matplotlib/axis.py::Axis",
+   "lib/matplotlib/axis.py::Axis.__init__",
+   "lib/matplotlib/axis.py::Axis.__str__",
+   "lib/matplotlib/axis.py::Axis._update_axisinfo",
+   "lib/matplotlib/axis.py::Axis.clear",
+   "lib/matplotlib/axis.py::Axis.convert_units",
+   "lib/matplotlib/axis.py::Axis.have_units",
+   "lib/matplotlib/axis.py::Axis.set_units",
+   "lib/matplotlib/axis.py::Axis.update_units",
+   "lib/matplotlib/axis.py::XAxis.set_default_intervals",
+   "lib/matplotlib/axis.py::YAxis.set_default_intervals",
+   "lib/matplotlib/backends/qt_editor/figureoptions.py::figure_edit"
+  ],
+  "matplotlib__matplotlib-29007": [
+   "lib/matplotlib/_pylab_helpers.py::Gcf._set_new_active_manager",
+   "lib/matplotlib/figure.py::Figure",
+   "lib/matplotlib/figure.py::Figure._get_renderer"
+  ],
+  "matplotlib__matplotlib-29013": [
+   "lib/matplotlib/figure.py::FigureBase",
+   "lib/matplotlib/figure.py::FigureBase.autofmt_xdate"
+  ],
+  "matplotlib__matplotlib-29052": [
+   "lib/matplotlib/colors.py::<module>",
+   "lib/matplotlib/colors.py::LinearSegmentedColormap.__init__"
+  ],
+  "matplotlib__matplotlib-29054": [
+   "lib/matplotlib/ticker.py::<module>",
+   "lib/matplotlib/ticker.py::LogFormatter",
+   "lib/matplotlib/ticker.py::LogFormatter.set_locs",
+   "lib/matplotlib/ticker.py::ScalarFormatter._set_format"
+  ],
+  "matplotlib__matplotlib-29209": [
+   "lib/matplotlib/axes/_axes.py::Axes._pcolorargs"
+  ],
+  "matplotlib__matplotlib-29249": [
+   "lib/matplotlib/axis.py::Axis",
+   "lib/matplotlib/axis.py::Axis._translate_tick_params",
+   "lib/matplotlib/axis.py::Axis.get_tick_params"
+  ],
+  "matplotlib__matplotlib-29258": [
+   "lib/matplotlib/table.py::table"
+  ],
+  "matplotlib__matplotlib-29285": [
+   "lib/mpl_toolkits/mplot3d/art3d.py::_generate_normals"
+  ],
+  "matplotlib__matplotlib-29317": [
+   "lib/matplotlib/legend.py::Legend",
+   "lib/matplotlib/legend.py::Legend._auto_legend_data",
+   "lib/matplotlib/legend.py::Legend._find_best_position",
+   "lib/matplotlib/legend.py::Legend._init_legend_box"
+  ],
+  "matplotlib__matplotlib-29388": [
+   "lib/matplotlib/axis.py::<module>",
+   "lib/matplotlib/axis.py::Axis._get_ticks_position"
+  ],
+  "matplotlib__matplotlib-29401": [
+   "lib/matplotlib/axes/_axes.py::Axes",
+   "lib/matplotlib/axes/_axes.py::Axes.errorbar"
+  ],
+  "matplotlib__matplotlib-29411": [
+   "lib/matplotlib/axes/_base.py::_AxesBase.__init__"
+  ],
+  "matplotlib__matplotlib-29431": [
+   "galleries/examples/misc/ftface_props.py::<module>"
+  ],
+  "matplotlib__matplotlib-29481": [
+   "lib/matplotlib/__init__.py::<module>",
+   "lib/matplotlib/__init__.py::_init_tests",
+   "lib/matplotlib/__init__.py::_val_or_rc",
+   "lib/matplotlib/__init__.py::is_interactive",
+   "lib/matplotlib/axis.py::Tick.__init__",
+   "lib/matplotlib/rcsetup.py::<module>",
+   "lib/matplotlib/rcsetup.py::_validate_linestyle",
+   "lib/matplotlib/rcsetup.py::validate_color"
+  ],
+  "matplotlib__matplotlib-29486": [
+   "lib/matplotlib/axes/_axes.py::Axes.stem"
+  ],
+  "matplotlib__matplotlib-29503": [
+   "lib/matplotlib/axes/_axes.py::Axes.bar"
+  ],
+  "matplotlib__matplotlib-29520": [
+   "lib/matplotlib/animation.py::PillowWriter.grab_frame"
+  ],
+  "matplotlib__matplotlib-29537": [
+   "lib/matplotlib/ticker.py::ScalarFormatter.set_useOffset"
+  ],
+  "matplotlib__matplotlib-29612": [
+   "lib/matplotlib/figure.py::Figure.__init__",
+   "lib/matplotlib/figure.py::figaspect",
+   "lib/matplotlib/pyplot.py::figure"
+  ],
+  "matplotlib__matplotlib-29689": [
+   "lib/matplotlib/sphinxext/figmpl_directive.py::<module>",
+   "lib/matplotlib/sphinxext/figmpl_directive.py::visit_figmpl_html",
+   "lib/matplotlib/sphinxext/figmpl_directive.py::visit_figmpl_latex",
+   "lib/matplotlib/sphinxext/plot_directive.py::run"
+  ],
+  "matplotlib__matplotlib-29696": [
+   "lib/matplotlib/axes/_axes.py::Axes.bar_label",
+   "lib/matplotlib/pyplot.py::bar_label"
+  ],
+  "matplotlib__matplotlib-29698": [
+   "lib/matplotlib/ticker.py::LogLocator",
+   "lib/matplotlib/ticker.py::LogLocator.__call__",
+   "lib/matplotlib/ticker.py::LogLocator.tick_values"
+  ],
+  "matplotlib__matplotlib-29719": [
+   "lib/matplotlib/axes/_axes.py::Axes.hist",
+   "lib/matplotlib/collections.py::Collection.set_linestyle",
+   "lib/matplotlib/lines.py::<module>",
+   "lib/matplotlib/lines.py::_get_dash_pattern",
+   "lib/matplotlib/lines.py::_get_inverse_dash_pattern"
+  ],
+  "matplotlib__matplotlib-29721": [
+   "lib/matplotlib/pyplot.py::<module>"
+  ],
+  "matplotlib__matplotlib-29781": [
+   "lib/matplotlib/backend_bases.py::<module>",
+   "lib/matplotlib/backend_bases.py::FigureCanvasBase.get_default_filename",
+   "lib/matplotlib/backend_bases.py::FigureManagerBase",
+   "lib/matplotlib/backend_bases.py::FigureManagerBase.get_window_title",
+   "lib/matplotlib/backend_bases.py::FigureManagerBase.resize",
+   "lib/matplotlib/backend_bases.py::FigureManagerBase.set_window_title"
+  ],
+  "matplotlib__matplotlib-29783": [
+   "lib/matplotlib/axes/_axes.py::Axes",
+   "lib/matplotlib/axes/_axes.py::Axes.pcolor",
+   "lib/matplotlib/axes/_axes.py::Axes.pcolorfast",
+   "lib/matplotlib/axes/_axes.py::Axes.pcolormesh"
+  ],
+  "matplotlib__matplotlib-29798": [
+   "lib/matplotlib/projections/polar.py::PolarAxes",
+   "lib/matplotlib/projections/polar.py::PolarAxes.set_rscale",
+   "lib/matplotlib/projections/polar.py::PolarAxes.set_rticks",
+   "lib/matplotlib/projections/polar.py::PolarAxes.set_thetagrids"
+  ],
+  "matplotlib__matplotlib-29808": [
+   "galleries/users_explain/artists/color_cycle.py::<module>",
+   "lib/matplotlib/__init__.py::<module>",
+   "lib/matplotlib/rcsetup.py::<module>",
+   "lib/matplotlib/rcsetup.py::ValidateInStrings.__call__",
+   "lib/matplotlib/rcsetup.py::_listify_validator"
+  ],
+  "matplotlib__matplotlib-29873": [
+   "lib/matplotlib/axes/_axes.py::Axes.pie"
+  ],
+  "matplotlib__matplotlib-29879": [
+   "lib/matplotlib/axes/_axes.py::Axes.errorbar",
+   "lib/matplotlib/pyplot.py::errorbar"
+  ],
+  "matplotlib__matplotlib-29892": [
+   "lib/matplotlib/image.py::_ImageBase._make_image"
+  ],
+  "matplotlib__matplotlib-29919": [
+   "lib/matplotlib/path.py::Path",
+   "lib/matplotlib/path.py::Path.interpolated"
+  ],
+  "matplotlib__matplotlib-29958": [
+   "galleries/examples/lines_bars_and_markers/multicolored_line.py::<module>",
+   "galleries/examples/lines_bars_and_markers/multicolored_line.py::colored_line",
+   "galleries/examples/shapes_and_collections/collections.py::<module>",
+   "galleries/examples/shapes_and_collections/ellipse_collection.py::<module>",
+   "galleries/users_explain/axes/autoscale.py::<module>",
+   "lib/matplotlib/axes/_axes.py::Axes",
+   "lib/matplotlib/axes/_axes.py::Axes._fill_between_x_or_y",
+   "lib/matplotlib/axes/_axes.py::Axes._quiver_units",
+   "lib/matplotlib/axes/_axes.py::Axes.broken_barh",
+   "lib/matplotlib/axes/_axes.py::Axes.quiver",
+   "lib/matplotlib/axes/_axes.py::Axes.quiverkey",
+   "lib/matplotlib/axes/_axes.py::Axes.scatter",
+   "lib/matplotlib/axes/_base.py::_AxesBase.add_collection",
+   "lib/matplotlib/colorbar.py::Colorbar",
+   "lib/matplotlib/colorbar.py::Colorbar.__init__",
+   "lib/matplotlib/colorbar.py::Colorbar.add_lines",
+   "lib/matplotlib/colorbar.py::Colorbar.update_ticks",
+   "lib/matplotlib/tri/_tripcolor.py::tripcolor",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D.add_collection3d",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D.bar3d",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D.errorbar",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D.fill_between",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D.plot_surface",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D.plot_trisurf",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D.plot_wireframe",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D.quiver",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D.scatter",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D.stem"
+  ],
+  "matplotlib__matplotlib-29993": [
+   "lib/matplotlib/backend_bases.py::<module>",
+   "lib/matplotlib/backend_bases.py::KeyEvent.__init__",
+   "lib/matplotlib/backend_bases.py::MouseEvent",
+   "lib/matplotlib/backend_bases.py::MouseEvent.__init__",
+   "lib/matplotlib/backend_bases.py::MouseEvent.__str__",
+   "lib/matplotlib/backend_bases.py::_key_handler"
+  ],
+  "matplotlib__matplotlib-30030": [
+   "lib/matplotlib/__init__.py::rc"
+  ],
+  "matplotlib__matplotlib-30079": [
+   "lib/matplotlib/legend.py::Legend.__init__"
+  ],
+  "matplotlib__matplotlib-30089": [
+   "lib/matplotlib/_constrained_layout.py::<module>",
+   "lib/matplotlib/_constrained_layout.py::get_cb_parent_spans",
+   "lib/matplotlib/_constrained_layout.py::match_submerged_margins"
+  ],
+  "matplotlib__matplotlib-30098": [
+   "lib/matplotlib/axes/_base.py::_AxesBase",
+   "lib/matplotlib/axes/_base.py::_AxesBase._label_outer_xaxis",
+   "lib/matplotlib/axes/_base.py::_AxesBase._label_outer_yaxis",
+   "lib/matplotlib/axes/_base.py::_AxesBase.label_outer",
+   "lib/matplotlib/colorbar.py::make_axes",
+   "lib/matplotlib/colorbar.py::make_axes_gridspec"
+  ],
+  "matplotlib__matplotlib-30186": [
+   "lib/matplotlib/legend_handler.py::HandlerPolyCollection",
+   "lib/matplotlib/legend_handler.py::HandlerPolyCollection._update_prop",
+   "lib/matplotlib/legend_handler.py::HandlerPolyCollection.create_artists"
+  ],
+  "matplotlib__matplotlib-30198": [
+   "lib/matplotlib/path.py::Path",
+   "lib/matplotlib/path.py::Path.__deepcopy__",
+   "lib/matplotlib/path.py::Path.copy",
+   "lib/matplotlib/path.py::Path.make_compound_path_from_polys",
+   "lib/matplotlib/transforms.py::<module>",
+   "lib/matplotlib/transforms.py::TransformNode",
+   "lib/matplotlib/transforms.py::TransformNode.__copy__",
+   "lib/matplotlib/transforms.py::TransformNode.__setstate__"
+  ],
+  "matplotlib__matplotlib-30223": [
+   "lib/matplotlib/projections/polar.py::PolarAxes",
+   "lib/matplotlib/projections/polar.py::PolarAxes._init_axis",
+   "lib/matplotlib/projections/polar.py::PolarAxes._set_lim_and_transforms",
+   "lib/matplotlib/projections/polar.py::PolarAxes.draw",
+   "lib/matplotlib/spines.py::Spine._adjust_location"
+  ],
+  "matplotlib__matplotlib-30328": [
+   "lib/matplotlib/legend.py::Legend.__init__"
+  ],
+  "matplotlib__matplotlib-30363": [
+   "lib/matplotlib/backend_bases.py::<module>",
+   "lib/matplotlib/backends/backend_agg.py::<module>",
+   "lib/matplotlib/backends/backend_agg.py::FigureCanvasAgg",
+   "lib/matplotlib/backends/backend_agg.py::FigureCanvasAgg.print_webp",
+   "lib/matplotlib/backends/backend_agg.py::_BackendAgg"
+  ],
+  "matplotlib__matplotlib-30423": [
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D.add_collection3d"
+  ],
+  "matplotlib__matplotlib-30467": [
+   "lib/matplotlib/axis.py::Axis",
+   "lib/matplotlib/axis.py::Axis._get_ticklabel_bboxes",
+   "lib/matplotlib/axis.py::Axis.get_tightbbox"
+  ],
+  "matplotlib__matplotlib-30475": [
+   "lib/matplotlib/axes/_axes.py::Axes._update_pcolor_lims",
+   "lib/matplotlib/axes/_axes.py::Axes.hlines",
+   "lib/matplotlib/axes/_axes.py::Axes.vlines",
+   "lib/matplotlib/axes/_base.py::_AxesBase._update_line_limits",
+   "lib/matplotlib/axes/_base.py::_AxesBase._update_patch_limits",
+   "lib/matplotlib/axes/_base.py::_AxesBase.add_collection",
+   "lib/matplotlib/collections.py::Collection.get_datalim",
+   "lib/matplotlib/contour.py::QuadContourSet._process_args",
+   "lib/matplotlib/transforms.py::CompositeGenericTransform",
+   "lib/matplotlib/transforms.py::CompositeGenericTransform._iter_break_from_left_to_right",
+   "lib/matplotlib/transforms.py::CompositeGenericTransform.contains_branch_seperately",
+   "lib/matplotlib/transforms.py::Transform",
+   "lib/matplotlib/transforms.py::Transform.__sub__",
+   "lib/matplotlib/transforms.py::Transform.contains_branch",
+   "lib/matplotlib/transforms.py::Transform.contains_branch_seperately",
+   "lib/matplotlib/transforms.py::_BlendedMixin",
+   "lib/matplotlib/transforms.py::_BlendedMixin.__eq__",
+   "lib/matplotlib/transforms.py::_BlendedMixin.contains_branch_seperately"
+  ]
+ },
+ "granularity": "function",
+ "learn_errors": {
+  "matplotlib__matplotlib-27605": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-27613": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-27647": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-27692": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-27767": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-27773": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-27818": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-27833": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-27840": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-27845": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-27848": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-27850": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-27906": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-27943": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-27992": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-27998": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28032": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28033": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28039": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28073": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28104": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28116": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28177": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28261": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28292": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28306": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28363": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28388": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28397": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28401": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28436": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28437": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28458": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28465": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28473": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28478": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28486": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28487": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28501": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28504": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28525": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28573": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28577": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28584": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28609": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28629": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28649": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28734": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28786": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28830": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28841": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28853": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28881": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28933": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-28970": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29007": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29013": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29052": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29054": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29209": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29249": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29258": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29285": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29317": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29388": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29401": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29411": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29431": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29481": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29486": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29503": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29520": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29537": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29612": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29689": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29696": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29698": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29719": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29721": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29781": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29783": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29798": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29808": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29873": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29879": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29892": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29919": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29958": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-29993": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-30030": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-30079": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-30089": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-30098": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-30186": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-30198": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-30223": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-30328": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-30363": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-30423": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-30467": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''",
+  "matplotlib__matplotlib-30475": "RuntimeError: all response modes failed: HTTP 403 from https://openrouter.ai/api/v1: {\"error\":{\"message\":\"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/8f435516924aeb12532441d678a23e9df1c884d6b19b647b1f45a8757fad15bc\",\"code\":403}} | finish_reason=None | text=''"
+ },
+ "lift": {
+  "false_positive_rise_pts": 0.0,
+  "localization_lift_pts": 0.0
+ },
+ "memory_locations": {},
+ "mode": "rolling",
+ "n_errors": 81,
+ "n_eval": 81,
+ "retrieval_hit_rate": 0.0,
+ "retrieved": {},
+ "treatment": {
+  "false_positive_rate": 0.0,
+  "localization_rate": 0.0,
+  "n_false_positive": 0,
+  "n_flags": 0,
+  "n_localized": 0,
+  "n_tasks": 0,
+  "per_repo": {}
+ },
+ "treatment_flags": {},
+ "warmup": 20
+}
