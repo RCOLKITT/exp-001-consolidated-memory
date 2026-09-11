@@ -1,0 +1,26 @@
+{
+ "base_url": "https://openrouter.ai/api/v1",
+ "cache": "runs/reused-cache.jsonl",
+ "cache_hits": 516,
+ "cache_misses": 0,
+ "effort": "high",
+ "elapsed_s": 141.8,
+ "error_ids": [
+  "matplotlib__matplotlib-27605",
+  "matplotlib__matplotlib-27613",
+  "pvlib__pvlib-python-2190",
+  "pvlib__pvlib-python-2227"
+ ],
+ "flags_sha256": "75085a1b9f56ddc612bf685e79ccea75174c80f43b813b08ef3748e6b3f69bc4",
+ "level": "function",
+ "model": "meta-llama/llama-3.3-70b-instruct",
+ "model_extra": "{\"provider\": {\"order\": [\"Crusoe\", \"CoreWeave\"], \"allow_fallbacks\": false}}",
+ "n_errors": 4,
+ "n_scored": 256,
+ "n_tasks": 260,
+ "offline": true,
+ "per_repo_limit": 20,
+ "provider": "openai-compatible",
+ "repos_filter": "conan-io/conan,aws-cloudformation/cfn-lint,matplotlib/matplotlib,deepset-ai/haystack,pylint-dev/pylint,instructlab/instructlab,keras-team/keras,reflex-dev/reflex,streamlink/streamlink,sphinx-doc/sphinx,pdm-project/pdm,sissbruecker/linkding,pvlib/pvlib-python",
+ "top_k": 3
+}
