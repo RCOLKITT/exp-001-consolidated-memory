@@ -1,7 +1,9 @@
 # EXP-001 Pre-registration — v2 DRAFT (function-level memory)
 
-**Status:** DRAFT — not registered. Nothing below binds anyone until the
-owner approves the filled-in block and it is tagged `prereg-v2`. Fields
+**Status (2026-09-11): pre-runs §5.1–5.2 done; the feasibility criterion
+(§4) FAILS at the registered pool size — see §11. Not registered, and under
+its own rules must not be registered as drafted.** Nothing below binds anyone
+until the owner approves a filled-in block and it is tagged `prereg-v2`. Fields
 marked ⟦FILL⟧ are set by the three no-treatment pre-runs in §5 and then
 frozen; the *rules* for filling them are fixed here so that no value is
 chosen after any treatment result is seen. v1 (`docs/PREREGISTRATION.md`,
@@ -203,3 +205,65 @@ run's `config.json` must equal the final file byte for byte.
 - Drafted by: Claude (session), on the owner's instruction, 2026-09-11
 - Approved by owner: ______ (date)
 - Registered commit / tag `prereg-v2`: ______
+
+## 11. Pre-run outcomes (runs 23–25, 2026-09-11) and the feasibility verdict
+
+Harness exercised on the live path: function-level recurrence over all 13
+repos with checkouts (run 23/25, no model), function-level control arm on
+run 18's 260 tasks (run 23, 520 calls, 52 min, offline rerun byte-identical),
+rescored under the Python-source-only gold rule (run 24, no spend).
+Gate 2.3-v2 witness: 50/50 after the witness was fixed for multi-line
+signatures (its first pass, 44/50, was wrong on every disagreement; the
+`ast` oracle was right on all six — `results/phase0/{23,24}/control/handcheck-functions-verified.csv`).
+
+Filled values (`docs/v2-fill.json`, produced by `phase2.fill_v2` under §4's rules):
+
+| repo | build | eval | p0 (function) | seen2 | ceiling (pts) | Gate 3 floor |
+|---|---:|---:|---:|---:|---:|---:|
+| aws-cloudformation/cfn-lint | 50 | 59 | 0.250 | 0.322 | 24.2 | 0.108 |
+| conan-io/conan | 50 | 115 | 0.400 | 0.139 | 8.3 | 0.065 |
+| deepset-ai/haystack | 50 | 38 | 0.650 | 0.316 | 11.1 | 0.095 |
+| instructlab/instructlab | 30 | 22 | 0.750 | 0.591 | 14.8 | 0.173 |
+| keras-team/keras | 30 | 18 | 0.500 | 0.111 | 5.5 | 0.004 |
+| matplotlib/matplotlib | 50 | 51 | 0.500 | 0.196 | 9.8 | 0.028 |
+| pdm-project/pdm | 20 | 15 | 0.450 | 0.467 | 25.7 | 0.073 |
+| pylint-dev/pylint | 40 | 22 | 0.250 | 0.136 | 10.2 | 0.084 |
+| reflex-dev/reflex | 30 | 14 | 0.450 | 0.429 | 23.6 | 0.067 |
+| sphinx-doc/sphinx | 20 | 19 | 0.400 | 0.158 | 9.5 | 0.030 |
+
+| ⟦FILL⟧ | value | rule |
+|---|---:|---|
+| control-arm rate p0 (function level) | **0.436** (eval-weighted; 0.520 over the 252 scored tasks of the 13-repo control run; file-level from the same stage-1 flags 0.710) | §5.2 |
+| ceiling on lift | **13.0 pts** | seen2 × (1 − p0), eval-weighted |
+| MDE at n = 373 | **10.2 pts** | `phase2.power` |
+| kill number | 11 pts | ceil(max(MDE, 0.5 × ceiling)) |
+| **feasible** | **NO** — 13.0 < 1.5 × 10.2 = 15.3 | §4 |
+| τ | not calibrated — §5.3 is not run when feasibility fails | §5.3 |
+
+**Verdict.** As drafted, v2 cannot be registered: the most a perfect
+function-level memory could add on this corpus at this pool is 13 points,
+and the pool cannot reliably detect less than 10. The prediction in §5.1
+("this check may well fail") held. Functions recur less than files
+(eval-weighted seen2 0.26 vs v1's 0.55 at file level, and v1's number was
+inflated by non-Python "gold" files), and the lower function-level p0 does
+not compensate.
+
+What would make it feasible, computed from the same rules, for the owner
+to decide on (none of it is done):
+- **More paired tasks.** At p0 0.436 and ceiling 13.0, feasibility needs
+  MDE ≤ 8.7 pts, i.e. **n ≥ 521** eval tasks (373 registered). The
+  freshness-gated corpus has 1,888 tasks; the 13-repo set was chosen for
+  chain length ≥ 30. Adding repos with shorter chains adds eval tasks
+  but each with a 20-task build window and its own (small) ceiling; the
+  ceiling would need to be re-derived from a new §5.1 run, not assumed.
+- **A larger corpus.** SWE-bench-Live adds tasks monthly; a re-pull
+  before the hard stop grows both build windows and eval pools, and the
+  freshness gate still holds (the verifier's cutoff is fixed). Same rule:
+  a new §5.1 and §5.2 before any value is filled.
+- **Not an option under these rules:** lowering the 1.5× margin,
+  redefining the ceiling, or subsetting to the high-ceiling repos
+  (cfn-lint, pdm, reflex) after seeing them.
+
+Nothing was spent on treatment arms. Model calls: 520 (§5.2). The
+harness (§3) stays in the repository and is exercised; whichever option
+the owner takes reuses it unchanged.

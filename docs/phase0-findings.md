@@ -485,3 +485,35 @@ Open item: the salvage regex did not recover `cfn-lint-3712`; the raw
 response is in the `eval-6` artifact cache (`runs/eval/.../cache.jsonl`)
 and should be inspected before the next run so the parser covers that
 shape too.
+
+
+## 16. v2 pre-runs at function granularity (runs 23–25, 2026-09-11)
+
+Run 23 exercised the v2 harness live: function-level recurrence over the
+13 repos with checkouts (3 min, no model), then a two-stage control arm on
+run 18's 260 tasks (520 calls, 52 min; offline rerun byte-identical). Run
+24 rescored it under the corrected gold rule (Python-source hunks only;
+docs-only tasks leave the metric — 4 tasks); run 25 recomputed recurrence
+with the same rule and the build repeat share. Four tasks errored in the
+function stage on truncated JSON the salvage could not read (the raw text
+is now kept in the error message for the next run).
+
+Function-level control: 0.520 hit@3 over 252 tasks (FP 0.713); the same
+stage-1 flags give 0.710 at file level (v1 run 18: 0.673 on 260). The
+stage-1 prompt is byte-identical to v1's; the difference is provider
+non-determinism at temperature 0 (235/256 same top-1 file, 132/256
+identical lists, 0.84 flag overlap with run 18), not the prompt.
+
+Recurrence at function level, eval-weighted seen2 at the registered build
+sizes: 0.26 (file level, v1: 0.55 — and that included non-Python files
+such as sphinx's `CHANGES.rst`, gold in 14/20 build tasks and unhittable).
+Ceiling 13.0 pts against an MDE of 10.2 at n = 373: the draft's
+feasibility rule (ceiling ≥ 1.5 × MDE) fails; n ≥ 521 would be needed at
+this ceiling. Recorded as the outcome of v2-as-drafted in
+`docs/PREREGISTRATION-v2-DRAFT.md` §11 and D32; no treatment arm was run
+and no τ was calibrated.
+
+Gate 2.3-v2 tooling: the indentation-based witness first disagreed with
+the `ast` oracle on 6/50 hunks; all six were witness bugs (multi-line
+signatures, nested defs), fixed; second pass 50/50. The `ast` mapping was
+right on every sampled hunk.

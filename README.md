@@ -24,7 +24,10 @@ kill number of 10 (95% CI −2.0 to +4.2), false-positive rate flat,
 negative control exactly inert ([docs/phase0-findings.md](docs/phase0-findings.md) §14–15, D28–D30).
 A follow-up at function granularity with gated injection is drafted, not
 registered: [docs/PREREGISTRATION-v2-DRAFT.md](docs/PREREGISTRATION-v2-DRAFT.md);
-its harness (§3) is built and tested offline (D31), pre-runs not yet made.
+its harness (§3) is built and exercised live (D31); pre-runs §5.1–5.2 done
+(runs 23–25) and the draft's feasibility rule **fails** (ceiling 13.0 pts vs
+MDE 10.2 at n = 373; needs n ≥ 521) — recorded in the draft §11 and D32,
+not registered.
 
 ## Layout
 

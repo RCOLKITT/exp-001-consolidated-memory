@@ -1,0 +1,102 @@
+{
+ "ceiling_pts": 13.0,
+ "eval_pool": 373,
+ "feasibility_rule": "ceiling >= 1.5 x MDE",
+ "feasible": false,
+ "kill_number_pts": 11,
+ "kill_rule": "ceil(max(MDE, 0.5 x ceiling))",
+ "mde_pts": 10.2,
+ "p0": 0.4359,
+ "repos": {
+  "aws-cloudformation/cfn-lint": {
+   "build": 50,
+   "build_repeat_share": 0.217,
+   "ceiling_pts": 24.2,
+   "eval_seen2": 0.322,
+   "gate3_discard_floor": 0.108,
+   "n_eval": 59,
+   "p0": 0.25
+  },
+  "conan-io/conan": {
+   "build": 50,
+   "build_repeat_share": 0.129,
+   "ceiling_pts": 8.3,
+   "eval_seen2": 0.139,
+   "gate3_discard_floor": 0.065,
+   "n_eval": 115,
+   "p0": 0.4
+  },
+  "deepset-ai/haystack": {
+   "build": 50,
+   "build_repeat_share": 0.189,
+   "ceiling_pts": 11.1,
+   "eval_seen2": 0.316,
+   "gate3_discard_floor": 0.095,
+   "n_eval": 38,
+   "p0": 0.65
+  },
+  "instructlab/instructlab": {
+   "build": 30,
+   "build_repeat_share": 0.347,
+   "ceiling_pts": 14.8,
+   "eval_seen2": 0.591,
+   "gate3_discard_floor": 0.173,
+   "n_eval": 22,
+   "p0": 0.75
+  },
+  "keras-team/keras": {
+   "build": 30,
+   "build_repeat_share": 0.008,
+   "ceiling_pts": 5.5,
+   "eval_seen2": 0.111,
+   "gate3_discard_floor": 0.004,
+   "n_eval": 18,
+   "p0": 0.5
+  },
+  "matplotlib/matplotlib": {
+   "build": 50,
+   "build_repeat_share": 0.056,
+   "ceiling_pts": 9.8,
+   "eval_seen2": 0.196,
+   "gate3_discard_floor": 0.028,
+   "n_eval": 51,
+   "p0": 0.5
+  },
+  "pdm-project/pdm": {
+   "build": 20,
+   "build_repeat_share": 0.147,
+   "ceiling_pts": 25.7,
+   "eval_seen2": 0.467,
+   "gate3_discard_floor": 0.073,
+   "n_eval": 15,
+   "p0": 0.45
+  },
+  "pylint-dev/pylint": {
+   "build": 40,
+   "build_repeat_share": 0.168,
+   "ceiling_pts": 10.2,
+   "eval_seen2": 0.136,
+   "gate3_discard_floor": 0.084,
+   "n_eval": 22,
+   "p0": 0.25
+  },
+  "reflex-dev/reflex": {
+   "build": 30,
+   "build_repeat_share": 0.133,
+   "ceiling_pts": 23.6,
+   "eval_seen2": 0.429,
+   "gate3_discard_floor": 0.067,
+   "n_eval": 14,
+   "p0": 0.45
+  },
+  "sphinx-doc/sphinx": {
+   "build": 20,
+   "build_repeat_share": 0.06,
+   "ceiling_pts": 9.5,
+   "eval_seen2": 0.158,
+   "gate3_discard_floor": 0.03,
+   "n_eval": 19,
+   "p0": 0.4
+  }
+ }
+}

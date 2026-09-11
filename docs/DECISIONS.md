@@ -379,3 +379,14 @@ all), and per-task hits are written to `arms.json` so the paired analysis
 needs no corpus. The only genuinely new parsing is the `ast` function
 index; its independent witness for Gate 2.3-v2 is an indentation-based
 symboliser that shares no code with it.
+
+### D32. v2 as drafted is not feasible; recorded, not registered
+The v2 draft fixed a feasibility rule before any pre-run (ceiling ≥ 1.5 ×
+MDE) precisely so that this decision would not be a judgement call. The
+pre-runs give ceiling 13.0 pts and MDE 10.2 pts at the registered pool of
+373 tasks (draft §11, findings §16), so the rule fails and the registered
+run is not made. The two paths that could make it feasible — more paired
+tasks (n ≥ 521 at this ceiling) or a larger corpus — both require a fresh
+§5.1/§5.2 before any value is filled; neither is chosen here, and neither
+the 1.5× margin nor the ceiling definition is revisited after seeing the
+numbers. Treatment spend: none.
