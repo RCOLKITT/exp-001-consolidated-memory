@@ -1,7 +1,9 @@
 # Phases 3–4 on a hosted runner. Start by pushing run/exp-<n> carrying .exp-run.json:
 # {
 #   "corpus_run": 18,                       # phase0 run whose corpus artifact (tasks.jsonl + models.json) to reuse
-#   "stage": "both",                        # learn | evaluate | both
+#   "stage": "both",                        # learn | evaluate | both | analyze
+#   "eval_run": "",                         # for stage=analyze: experiment run whose results/experiment/<n>/eval to analyse (must be on the branch)
+#   "secondary_repos": [],                  # for the paired analysis: labeled secondary subset (e.g. repos that passed Gate 3)
 #   "learn_run": "",                        # for stage=evaluate: experiment run number whose learn artifact to reuse
 #   "repos": ["owner/name", ...], "build": 20, "build_rule": "70:50,58:40,41:30,0:20", "min_eval": 10,
 #   "min_occurrences": 2, "min_distinct_inputs": 2,
@@ -44,12 +46,13 @@ jobs:
           import json
           c = json.load(open(".exp-run.json"))
           def g(k, d=""): v = c.get(k, d); return json.dumps(v) if isinstance(v, (dict, list)) else str(v)
-          for k, d in [("corpus_run", ""), ("stage", "both"), ("learn_run", ""), ("build", 20), ("min_eval", 10), ("ceiling_metrics", ""), ("ceiling", 0.90),
+          for k, d in [("corpus_run", ""), ("stage", "both"), ("learn_run", ""), ("eval_run", ""), ("build", 20), ("min_eval", 10), ("ceiling_metrics", ""), ("ceiling", 0.90),
                        ("negative_control", ""), ("model", "meta-llama/llama-3.3-70b-instruct"), ("provider", "openai-compatible"),
                        ("base_url", "https://openrouter.ai/api/v1"), ("similarity", "embedding"), ("embedding_model", "sentence-transformers/all-MiniLM-L6-v2"),
                        ("embedding_revision", ""), ("theta", 0.45), ("rho", 0.70), ("cluster_similarity", 0.60), ("ttl", 30), ("top_k", 3), ("seed", 7), ("max_eval_per_repo", 0), ("consolidation", "file"), ("build_rule", ""), ("min_occurrences", 2), ("min_distinct_inputs", 2)]:
               print(f"{k}={g(k, d)}")
           print("repos=" + ",".join(c.get("repos", [])))
+          print("secondary_repos=" + ",".join(c.get("secondary_repos", [])))
           print("model_extra=" + json.dumps(c.get("model_extra", {})))
           print("dir=results/experiment/${{ github.run_number }}")
           PY
@@ -62,6 +65,7 @@ jobs:
           gh run download "$RID" -n "corpus-$N" -D corpus/
           ls corpus/ && wc -l corpus/tasks.jsonl
       - name: Split (pre-registration values; ceiling rule optional)
+        if: steps.cfg.outputs.stage != 'analyze'
         run: |
           set -euo pipefail
           D="${{ steps.cfg.outputs.dir }}"; mkdir -p "$D"
@@ -78,7 +82,7 @@ jobs:
           echo "COMMON=$P" >> "$GITHUB_ENV"
           echo 'MX=${{ steps.cfg.outputs.model_extra }}' >> "$GITHUB_ENV"
       - name: Phase 3 — learn
-        if: steps.cfg.outputs.stage != 'evaluate'
+        if: steps.cfg.outputs.stage == 'learn' || steps.cfg.outputs.stage == 'both'
         run: |
           set -euo pipefail
           test -n "$MODEL_API_KEY" || { echo "MODEL_API_KEY secret is not set"; exit 2; }
@@ -101,13 +105,23 @@ jobs:
           ls runs/learn runs/eval 2>/dev/null | head -30
           echo "{\"resume_of\": $N}" > "${{ steps.cfg.outputs.dir }}/resume.json"
       - name: Phase 4 — evaluate
-        if: steps.cfg.outputs.stage != 'learn'
+        if: steps.cfg.outputs.stage == 'evaluate' || steps.cfg.outputs.stage == 'both'
         run: |
           set -euo pipefail
           test -n "$MODEL_API_KEY" || { echo "MODEL_API_KEY secret is not set"; exit 2; }
           python -m phase4.evaluate --tasks corpus/tasks.jsonl --models corpus/models.json --split corpus/split.json --learn-dir runs/learn --repos-dir corpus/repos --out runs/eval --seed "${{ steps.cfg.outputs.seed }}" --max-eval-per-repo "${{ steps.cfg.outputs.max_eval_per_repo }}" $COMMON --model-extra "$MX"
           mkdir -p "${{ steps.cfg.outputs.dir }}/eval"; cp runs/eval/gate4.json "${{ steps.cfg.outputs.dir }}/eval/gate4.json"
           for d in runs/eval/*/; do r=$(basename "$d"); [ -f "$d/arms.json" ] && cp "$d/arms.json" "${{ steps.cfg.outputs.dir }}/eval/$r.arms.json"; done; true
+          NC=""; [ -n "${{ steps.cfg.outputs.negative_control }}" ] && NC="--negative-control ${{ steps.cfg.outputs.negative_control }}"
+          python -m phase4.paired --tasks corpus/tasks.jsonl --eval-dir "${{ steps.cfg.outputs.dir }}/eval" $NC --secondary-repos "${{ steps.cfg.outputs.secondary_repos }}" --out "${{ steps.cfg.outputs.dir }}/paired"
+      - name: Paired analysis of an earlier evaluation (no model calls)
+        if: steps.cfg.outputs.stage == 'analyze'
+        run: |
+          set -euo pipefail
+          N="${{ steps.cfg.outputs.eval_run }}"; test -n "$N" || { echo "eval_run is required for stage=analyze"; exit 3; }
+          D="${{ steps.cfg.outputs.dir }}"; mkdir -p "$D"; cp .exp-run.json "$D/config.json"; echo "{\"analysis_of\": $N}" > "$D/resume.json"
+          NC=""; [ -n "${{ steps.cfg.outputs.negative_control }}" ] && NC="--negative-control ${{ steps.cfg.outputs.negative_control }}"
+          python -m phase4.paired --tasks corpus/tasks.jsonl --eval-dir "results/experiment/$N/eval" $NC --secondary-repos "${{ steps.cfg.outputs.secondary_repos }}" --out "$D/paired"
       - uses: actions/upload-artifact@v4
         if: always()
         with:
