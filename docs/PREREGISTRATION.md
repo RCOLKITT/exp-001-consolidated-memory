@@ -1,9 +1,7 @@
 # EXP-001 Pre-registration — v1
 
 **Status:** REGISTERED at commit `a58d7e20ca6b` (2026-09-10), reachable as
-branch `prereg/v1` (this session's git proxy refuses tag pushes; the owner
-can create tag `prereg-v1` on that commit from the GitHub UI, which changes
-nothing below). Owner approved the
+branch `prereg/v1` and tag `prereg-v1` (created by the owner, 2026-09-11). Owner approved the
 design and the ceiling rule ("yes go with your recommended design and
 option b"). Changing any value below after this tag invalidates the result
 (spec §7). The tag is the public timestamp; the owner may add an external

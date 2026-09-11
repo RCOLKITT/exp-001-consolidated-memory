@@ -22,6 +22,8 @@ docs/exp-run.prereg.json). Gates 0–2 closed. **Registered Phase 3–4 run comp
 **killed the hypothesis** — lift +1.08 pts on 371 paired tasks against a
 kill number of 10 (95% CI −2.0 to +4.2), false-positive rate flat,
 negative control exactly inert ([docs/phase0-findings.md](docs/phase0-findings.md) §14–15, D28–D30).
+A follow-up at function granularity with gated injection is drafted, not
+registered: [docs/PREREGISTRATION-v2-DRAFT.md](docs/PREREGISTRATION-v2-DRAFT.md).
 
 ## Layout
 
