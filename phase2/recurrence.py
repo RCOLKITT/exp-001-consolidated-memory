@@ -77,7 +77,9 @@ def analyse(tasks, repos, prefixes, gold_of=None):
             seen1 = sum(1 for g in ev if any(fc.get(f, 0) >= 1 for f in g)); seen3 = sum(1 for g in ev if any(fc.get(f, 0) >= 3 for f in g))
             seen2 = sum(1 for g in ev if any(fc.get(f, 0) >= 2 for f in g))
             dseen1 = sum(1 for g in ev if any(dc.get(dir_of(f), 0) >= 1 for f in g)); dseen3 = sum(1 for g in ev if any(dc.get(dir_of(f), 0) >= 3 for f in g))
+            occ = sum(fc.values())
             rows.append({"prefix": N, "n_eval": len(ev), "files_ge3": sum(1 for v in fc.values() if v >= 3), "files_ge2": sum(1 for v in fc.values() if v >= 2),
+                         "build_occurrences": occ, "build_repeat_share": round(1 - len(fc) / occ, 3) if occ else None,   # share of build-window gold keys that repeat an earlier one
                          "dirs_ge3": sum(1 for v in dc.values() if v >= 3), "distinct_files": len(fc), "distinct_dirs": len(dc),
                          "eval_file_seen1": round(seen1 / len(ev), 3) if ev else None, "eval_file_seen2": round(seen2 / len(ev), 3) if ev else None, "eval_file_seen3": round(seen3 / len(ev), 3) if ev else None,
                          "eval_dir_seen1": round(dseen1 / len(ev), 3) if ev else None, "eval_dir_seen3": round(dseen3 / len(ev), 3) if ev else None,
