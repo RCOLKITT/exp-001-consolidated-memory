@@ -345,3 +345,18 @@ preserved, count recorded in `arms.json: errors`). Run 6 resumes at
 `stage = evaluate` from run 5's kernels and caches (`learn_run = 5`,
 `resume.json`), so the frozen memory versions evaluated are the ones run
 5 produced; the run 5 conan arm is reproduced from cache, not re-sampled.
+
+### D30. Verdict on the registered run: killed, reported as registered
+Gate 4 on runs 6/7 (findings §15): lift +1.08 pts on 371 paired tasks,
+95% CI −2.0 to +4.2, against a registered kill number of 10; majority
+criterion fails (3/10 repos positive); FP ceiling and negative control
+pass. The result is reported exactly as the pre-registration defined it —
+primary aggregate over all 10 treatment repos, kill number 10, no
+subsetting. The passed-Gate-3 secondary (−0.45 pts) is reported beside
+it and points the same way. No thresholds were re-tuned after the data
+were seen and no further registered runs were spent. The experiment's
+thesis ("memory of prior defects improves localization without inflating
+false positives, every belief traceable") is answered on its first
+clause: at file granularity with this verifier and corpus, it does not,
+while the other two clauses held. Any follow-up design is a new
+pre-registration.

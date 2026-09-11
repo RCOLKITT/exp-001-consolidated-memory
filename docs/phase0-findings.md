@@ -423,3 +423,65 @@ list from truncated output; a task whose call fails is dropped from both
 arms, never one) is in main, and run 6 resumes evaluation from the run 5
 kernels and caches (`learn_run = 5`, `resume.json`), so the registered
 learning phase is not repeated or re-randomized.
+
+## 15. Gate 4 — the registered result (experiment runs 6 + 7, 2026-09-11)
+
+Run 6 evaluated both arms on every eval task of the registered split from
+run 5's frozen kernels (`resume_of: 5`); run 7 is the paired task-level
+analysis of run 6 with no model calls (`results/experiment/7/paired/`).
+Registered pool 373 tasks; 372 were evaluated (one conan task has no
+non-test gold file and is outside the metric by definition, D9) and 371
+scored (one cfn-lint task, `aws-cloudformation__cfn-lint-3712`, failed in
+both arms after the verifier returned truncated JSON that the salvage
+could not recover; dropped from both arms, recorded in `arms.json:
+errors`).
+
+| criterion (registered) | value | verdict |
+|---|---:|---|
+| localization lift, aggregate over 10 treatment repos | **+1.08 pts** (control 0.644 → treatment 0.655, n = 371) | **fails** kill number ≥ 10 |
+| 95% CI on the lift (paired Wald / bootstrap over tasks) | −2.0 to +4.2 / −1.9 to +4.3 | excludes 10 |
+| discordant pairs | treatment-only hit 19, control-only hit 15; McNemar exact p = 0.61 | no effect detectable |
+| false-positive rise (flag level, k = 3) | +0.1 pts (0.741 → 0.742) | passes ceiling ≤ 5 |
+| effect in a majority of repos | lift > 0 in 3 of 10 (conan, keras, pylint); < 0 in 3; = 0 in 4 | **fails** |
+| negative control (linkding, n = 14) | lift 0.00, FP rise 0.00; flags identical on 14/14, no memory retrieved | passes |
+| secondary: 7 repos that passed Gate 3 (n = 220) | lift −0.45 pts (CI −3.7 to +2.8); trt-only 6, ctl-only 7 | no effect |
+
+Per repo (n, control, treatment, lift; from `paired.md`): cfn-lint 58,
+0.362, 0.328, −3.5; conan 114, 0.561, 0.597, +3.5; haystack 38, 0.974,
+0.974, 0; instructlab 22, 0.682, 0.682, 0; keras 18, 0.667, 0.722, +5.6;
+matplotlib 51, 0.843, 0.843, 0; pdm 15, 0.600, 0.533, −6.7; pylint 22,
+0.636, 0.773, +13.6 (3 treatment-only hits, 0 control-only, p = 0.25);
+reflex 14, 0.714, 0.643, −7.1; sphinx 19, 0.737, 0.737, 0.
+
+**Verdict: the registered hypothesis is killed.** Under the pre-registered
+design, consolidated file-level memory of prior defects does not raise
+localization by the kill number; the point estimate is one tenth of it and
+the interval excludes it. The secondary criteria are informative: the
+false-positive rate did not move and the negative control is exactly
+inert, so the mechanism is clean — it simply does not help at this
+granularity. The one repo with a visible lift (pylint, +13.6) is 3
+discordant tasks and is not distinguishable from noise.
+
+What the paired data say about why. The treatment arm retrieved memory on
+371/371 tasks and changed its flags on 283/371 (76%), so memory was
+present and acted on; it moved answers roughly symmetrically in both
+directions (19 vs 15). The ceiling analysis (§10–11) put the maximum
+possible lift at ≈ 17.9 pts if every recurring gold file were flagged;
+the realized share of that ceiling is ≈ 6%. Two mechanisms are visible in
+the per-task rows: (a) a promoted memory names a file that recurs in the
+build window but not in this task, and the verifier substitutes it for a
+correct guess (the 15 control-only losses); (b) the memories are
+`symptom => file` at file granularity, and on repos where the control
+already localizes well (haystack 0.97, matplotlib 0.84) there is nothing
+left to gain. Both are properties of the file-level design, not of the
+kernel's gates, which behaved as specified throughout (§14).
+
+Not done and not claimed: no post-hoc re-tuning of Θ/ρ/promotion, no
+subset selection, no second registered run. The hard stop is 2026-10-22;
+any follow-up (function-level memory, retrieval-gated injection, larger
+build windows) is a new pre-registration, not an amendment.
+
+Open item: the salvage regex did not recover `cfn-lint-3712`; the raw
+response is in the `eval-6` artifact cache (`runs/eval/.../cache.jsonl`)
+and should be inspected before the next run so the parser covers that
+shape too.

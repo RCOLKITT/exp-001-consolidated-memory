@@ -53,7 +53,10 @@ labeled secondary (D28).
 ## Gate 4 — Result (Phase 4)
 Run: `python -m phase4.evaluate …` → `runs/eval-*/gate4.json`
 
-- [ ] Localization lift ≥ 10 pts absolute (registered; ceiling 17.9, MDE 9.2) — `localization_lift_pts`
-- [ ] False-positive rise ≤ 5 pts absolute — `false_positive_rise_pts`
-- [ ] Effect in a majority of repos — `effect_in_majority_of_repos`
-- [ ] Negative-control repo shows no lift — `negative_control_lift`
+- [x] Localization lift ≥ 10 pts absolute — **+1.08 pts, FAIL** (n = 371; 95% CI −2.0 to +4.2; McNemar p = 0.61) — `results/experiment/6/eval/gate4.json`, `results/experiment/7/paired/`
+- [x] False-positive rise ≤ 5 pts absolute — **+0.1 pts, pass**
+- [x] Effect in a majority of repos — **3/10 positive, FAIL**
+- [x] Negative-control repo shows no lift — **linkding 0.00 / 0.00, pass**
+
+Outcome: **hypothesis killed as registered** (findings §15, D30). Mechanism
+clean (FP flat, negative control inert); effect absent at file granularity.

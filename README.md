@@ -17,8 +17,11 @@ Control arm measured on the pinned verifier across the 13 draft repos
 (hit@3 0.673, determinism identical, `results/phase0/18/`); seam built and
 tuned; learn → freeze → evaluate demonstrated end to end on real data
 (`results/experiment/4/`). **Pre-registered** at commit `a58d7e20ca6b` (branch `prereg/v1`) (docs/PREREGISTRATION.md, run config
-docs/exp-run.prereg.json). Gates 0–2 closed; the registered Phase 3–4 run is `run/exp-5`.
-Similarity seam is still the Jaccard placeholder (D14).
+docs/exp-run.prereg.json). Gates 0–2 closed. **Registered Phase 3–4 run complete** (runs 5–7,
+`results/experiment/{5,6,7}/`): Gate 3 passed on 7/10 repos; Gate 4
+**killed the hypothesis** — lift +1.08 pts on 371 paired tasks against a
+kill number of 10 (95% CI −2.0 to +4.2), false-positive rate flat,
+negative control exactly inert ([docs/phase0-findings.md](docs/phase0-findings.md) §14–15, D28–D30).
 
 ## Layout
 
