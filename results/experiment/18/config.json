@@ -1,0 +1,76 @@
+{
+  "corpus_run": 18,
+  "model": "meta-llama/llama-3.3-70b-instruct",
+  "provider": "openai-compatible",
+  "base_url": "https://openrouter.ai/api/v1",
+  "model_extra": {
+    "provider": {
+      "order": [
+        "Crusoe",
+        "CoreWeave"
+      ],
+      "allow_fallbacks": false
+    }
+  },
+  "similarity": "embedding",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "theta": 0.45,
+  "rho": 0.7,
+  "cluster_similarity": 0.6,
+  "ttl": 30,
+  "top_k": 3,
+  "min_occurrences": 2,
+  "min_distinct_inputs": 2,
+  "prereg": "v2",
+  "stage": "rolling",
+  "warmup": 20,
+  "seed": 11,
+  "granularity": "function",
+  "consolidation": "function",
+  "tau": 0.5,
+  "arms": [
+    "control",
+    "treatment:0",
+    "gated:0.5",
+    "placebo:0"
+  ],
+  "placebo_pool": "docs/placebo-pool.v2.json",
+  "repos": [
+    "conan-io/conan",
+    "deepset-ai/haystack"
+  ],
+  "negative_control": "sissbruecker/linkding",
+  "secondary_repos": [],
+  "shards": {
+    "A": [
+      "conan-io/conan",
+      "deepset-ai/haystack"
+    ],
+    "B": [
+      "aws-cloudformation/cfn-lint",
+      "matplotlib/matplotlib",
+      "pylint-dev/pylint"
+    ],
+    "C": [
+      "instructlab/instructlab",
+      "keras-team/keras",
+      "reflex-dev/reflex",
+      "sphinx-doc/sphinx",
+      "pdm-project/pdm",
+      "sissbruecker/linkding"
+    ]
+  },
+  "kill_number_pts": 9,
+  "placebo_margin_pts": 4.5,
+  "assumed_discordance": 0.3,
+  "sources": {
+    "control_function_level": "results/phase0/24/control/metrics.json",
+    "prequential": "results/phase0/26/prequential.json",
+    "recurrence": "results/phase0/25/recurrence.json",
+    "tau_calibration": "results/experiment/8/tau.json",
+    "fill": "docs/v2-fill-designA.json"
+  },
+  "shard": "A",
+  "resume_run": 10
+}

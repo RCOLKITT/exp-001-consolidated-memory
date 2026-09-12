@@ -1,0 +1,1781 @@
+{
+ "arm": "gated",
+ "baseline": "control",
+ "errors": {
+  "conan-io/conan": {
+   "conan-io__conan-18226": "RuntimeError: all response modes failed: Expecting value: line 1 column 1 (char 0) | finish_reason=length | text='{\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n \\n    \\n\\n\\n\\n\\n\\n \\n    \\n\\n\\n\\n\\n\\n \\n    \\n\\n\\n\\n\\n\\n \\n    \\n\\n\\n\\n\\n\\n \\n    \\n\\n\\n\\n\\n\\n \\n    \\n\\n\\n\\n\\n\\n \\n    \\n\\n\\n\\n\\n\\n \\n    \\n\\n\\n\\n\\n\\n \\n    \\n\\n\\n\\n\\n\\n \\"
+  }
+ },
+ "negative_control": null,
+ "per_repo": {
+  "conan-io/conan": {
+   "both_hit": 60,
+   "control_localized": 60,
+   "control_only_hit": 0,
+   "control_rate": 0.4196,
+   "flags_differed": 2,
+   "flags_differed_rate": 0.014,
+   "label": "conan-io/conan",
+   "lift_ci95_bootstrap_pts": [
+    0.0,
+    0.0
+   ],
+   "lift_ci95_paired_wald_pts": [
+    0.0,
+    0.0
+   ],
+   "lift_pts": 0.0,
+   "mcnemar_exact_p": 1.0,
+   "n_tasks": 143,
+   "neither_hit": 83,
+   "retrieval_coverage": 0.014,
+   "retrieved_any": 2,
+   "treatment_localized": 60,
+   "treatment_only_hit": 0,
+   "treatment_rate": 0.4196
+  },
+  "deepset-ai/haystack": {
+   "both_hit": 50,
+   "control_localized": 52,
+   "control_only_hit": 2,
+   "control_rate": 0.7647,
+   "flags_differed": 11,
+   "flags_differed_rate": 0.1618,
+   "label": "deepset-ai/haystack",
+   "lift_ci95_bootstrap_pts": [
+    -7.35,
+    2.94
+   ],
+   "lift_ci95_paired_wald_pts": [
+    -6.45,
+    3.51
+   ],
+   "lift_pts": -1.47,
+   "mcnemar_exact_p": 1.0,
+   "n_tasks": 68,
+   "neither_hit": 15,
+   "retrieval_coverage": 0.1765,
+   "retrieved_any": 12,
+   "treatment_localized": 51,
+   "treatment_only_hit": 1,
+   "treatment_rate": 0.75
+  }
+ },
+ "primary": {
+  "both_hit": 110,
+  "control_localized": 112,
+  "control_only_hit": 2,
+  "control_rate": 0.5308,
+  "flags_differed": 13,
+  "flags_differed_rate": 0.0616,
+  "label": "primary: all treatment repos (registered)",
+  "lift_ci95_bootstrap_pts": [
+   -2.37,
+   0.95
+  ],
+  "lift_ci95_paired_wald_pts": [
+   -2.08,
+   1.13
+  ],
+  "lift_pts": -0.47,
+  "mcnemar_exact_p": 1.0,
+  "n_tasks": 211,
+  "neither_hit": 98,
+  "retrieval_coverage": 0.0664,
+  "retrieved_any": 14,
+  "treatment_localized": 111,
+  "treatment_only_hit": 1,
+  "treatment_rate": 0.5261
+ },
+ "secondary": null,
+ "tasks": [
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-15652",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-15653",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-15665",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-15697",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-15699",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-15705",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-15737",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-15747",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-15763",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-15779",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-15823",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-15838",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-15845",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-15876",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-15914",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-15931",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-15933",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-15946",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-15965",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-15999",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16011",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16013",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16015",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16022",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16025",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16028",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16034",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16038",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16065",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16069",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16102",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16103",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16126",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16170",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16172",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16196",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16213",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16214",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16289",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16308",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16317",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16335",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16350",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16362",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16415",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16443",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16454",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16552",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16559",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16563",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16573",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16613",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16633",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16646",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16720",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16742",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16776",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16789",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16847",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16849",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16870",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16871",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16942",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16964",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16986",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-16987",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17051",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17092",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17102",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17117",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17123",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17127",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17129",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17132",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17183",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17186",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17266",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17292",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17300",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17301",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17302",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17326",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17346",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17366",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17382",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17387",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17408",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17514",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17517",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17520",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17532",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17538",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17577",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17591",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17613",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17708",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17725",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17781",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17819",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17838",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17848",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17851",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17863",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17877",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17917",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17923",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17954",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17964",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-17967",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-18012",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-18028",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-18037",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-18051",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-18083",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-18089",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-18097",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-18101",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-18153",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-18219",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-18243",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-18244",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-18280",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-18333",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-18334",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-18410",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-18442",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-18517",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-18518",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-18538",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-18541",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-18544",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-18552",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-18562",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-18608",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-18621",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-18642",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-18655",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-18661",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-18676",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-18693",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "conan-io__conan-18832",
+   "repo": "conan-io/conan",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "conan-io__conan-18840",
+   "repo": "conan-io/conan",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "conan-io__conan-18842",
+   "repo": "conan-io/conan",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-8078",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-8489",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "deepset-ai__haystack-8525",
+   "repo": "deepset-ai/haystack",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-8609",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-8619",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-8670",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-8708",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-8725",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-8799",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-8804",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-8838",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-8875",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-8879",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-8880",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-8885",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-8940",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-8941",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-8943",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-8948",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-8969",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-8973",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-8981",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-8992",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-8993",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-8997",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-9026",
+   "repo": "deepset-ai/haystack",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-9027",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-9033",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-9066",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-9069",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-9132",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-9144",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-9182",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-9189",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "deepset-ai__haystack-9218",
+   "repo": "deepset-ai/haystack",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-9226",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-9227",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-9230",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-9239",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-9240",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-9242",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "deepset-ai__haystack-9251",
+   "repo": "deepset-ai/haystack",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-9270",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-9284",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-9322",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "deepset-ai__haystack-9336",
+   "repo": "deepset-ai/haystack",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "deepset-ai__haystack-9524",
+   "repo": "deepset-ai/haystack",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "deepset-ai__haystack-9525",
+   "repo": "deepset-ai/haystack",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-9568",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "deepset-ai__haystack-9574",
+   "repo": "deepset-ai/haystack",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-9582",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-9608",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-9622",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "deepset-ai__haystack-9649",
+   "repo": "deepset-ai/haystack",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-9667",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-9679",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-9680",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "deepset-ai__haystack-9682",
+   "repo": "deepset-ai/haystack",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-9688",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-9693",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-9699",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-9703",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-9704",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-9712",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "deepset-ai__haystack-9726",
+   "repo": "deepset-ai/haystack",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-9729",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "deepset-ai__haystack-9742",
+   "repo": "deepset-ai/haystack",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "deepset-ai__haystack-9748",
+   "repo": "deepset-ai/haystack",
+   "retrieved": true,
+   "treatment_hit": true
+  }
+ ]
+}

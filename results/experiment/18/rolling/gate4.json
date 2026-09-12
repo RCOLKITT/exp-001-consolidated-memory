@@ -1,0 +1,276 @@
+{
+ "arms": [
+  "control",
+  "treatment",
+  "gated",
+  "placebo"
+ ],
+ "control": {
+  "false_positive_rate": 0.7009,
+  "localization_rate": 0.5308,
+  "n_false_positive": 389,
+  "n_flags": 555,
+  "n_localized": 112,
+  "n_tasks": 211,
+  "per_repo": {
+   "conan-io/conan": {
+    "false_positive_rate": 0.7872,
+    "localization_rate": 0.4196,
+    "n_false_positive": 307,
+    "n_flags": 390,
+    "n_localized": 60,
+    "n_tasks": 143
+   },
+   "deepset-ai/haystack": {
+    "false_positive_rate": 0.497,
+    "localization_rate": 0.7647,
+    "n_false_positive": 82,
+    "n_flags": 165,
+    "n_localized": 52,
+    "n_tasks": 68
+   }
+  }
+ },
+ "effect_in_majority_of_repos": false,
+ "false_positive_rise_pts": 0.35,
+ "file_level_secondary": {
+  "control": {
+   "false_positive_rate": 0.7138,
+   "localization_rate": 0.7109,
+   "n_false_positive": 429,
+   "n_flags": 601,
+   "n_localized": 150,
+   "n_tasks": 211,
+   "per_repo": {
+    "conan-io/conan": {
+     "false_positive_rate": 0.7469,
+     "localization_rate": 0.6154,
+     "n_false_positive": 298,
+     "n_flags": 399,
+     "n_localized": 88,
+     "n_tasks": 143
+    },
+    "deepset-ai/haystack": {
+     "false_positive_rate": 0.6485,
+     "localization_rate": 0.9118,
+     "n_false_positive": 131,
+     "n_flags": 202,
+     "n_localized": 62,
+     "n_tasks": 68
+    }
+   }
+  },
+  "false_positive_rise_pts": 0.05,
+  "localization_lift_pts": 0.47,
+  "treatment": {
+   "false_positive_rate": 0.7143,
+   "localization_rate": 0.7156,
+   "n_false_positive": 430,
+   "n_flags": 602,
+   "n_localized": 151,
+   "n_tasks": 211,
+   "per_repo": {
+    "conan-io/conan": {
+     "false_positive_rate": 0.7469,
+     "localization_rate": 0.6154,
+     "n_false_positive": 298,
+     "n_flags": 399,
+     "n_localized": 88,
+     "n_tasks": 143
+    },
+    "deepset-ai/haystack": {
+     "false_positive_rate": 0.6502,
+     "localization_rate": 0.9265,
+     "n_false_positive": 132,
+     "n_flags": 203,
+     "n_localized": 63,
+     "n_tasks": 68
+    }
+   }
+  }
+ },
+ "granularity": "function",
+ "localization_lift_pts": -0.95,
+ "mode": "rolling",
+ "negative_control_lift": null,
+ "per_repo_lift": {
+  "conan-io/conan": {
+   "false_positive_rise_pts": -0.05,
+   "localization_lift_pts": 0.0
+  },
+  "deepset-ai/haystack": {
+   "false_positive_rise_pts": 0.62,
+   "localization_lift_pts": -2.94
+  }
+ },
+ "secondary_arms": {
+  "gated": {
+   "control": {
+    "false_positive_rate": 0.7009,
+    "localization_rate": 0.5308,
+    "n_false_positive": 389,
+    "n_flags": 555,
+    "n_localized": 112,
+    "n_tasks": 211,
+    "per_repo": {
+     "conan-io/conan": {
+      "false_positive_rate": 0.7872,
+      "localization_rate": 0.4196,
+      "n_false_positive": 307,
+      "n_flags": 390,
+      "n_localized": 60,
+      "n_tasks": 143
+     },
+     "deepset-ai/haystack": {
+      "false_positive_rate": 0.497,
+      "localization_rate": 0.7647,
+      "n_false_positive": 82,
+      "n_flags": 165,
+      "n_localized": 52,
+      "n_tasks": 68
+     }
+    }
+   },
+   "effect_in_majority_of_repos": false,
+   "false_positive_rise_pts": -0.22,
+   "localization_lift_pts": -0.47,
+   "negative_control_lift": null,
+   "per_repo_lift": {
+    "conan-io/conan": {
+     "false_positive_rise_pts": -0.05,
+     "localization_lift_pts": 0.0
+    },
+    "deepset-ai/haystack": {
+     "false_positive_rise_pts": -0.93,
+     "localization_lift_pts": -1.47
+    }
+   },
+   "treatment": {
+    "false_positive_rate": 0.6987,
+    "localization_rate": 0.5261,
+    "n_false_positive": 385,
+    "n_flags": 551,
+    "n_localized": 111,
+    "n_tasks": 211,
+    "per_repo": {
+     "conan-io/conan": {
+      "false_positive_rate": 0.7866,
+      "localization_rate": 0.4196,
+      "n_false_positive": 306,
+      "n_flags": 389,
+      "n_localized": 60,
+      "n_tasks": 143
+     },
+     "deepset-ai/haystack": {
+      "false_positive_rate": 0.4877,
+      "localization_rate": 0.75,
+      "n_false_positive": 79,
+      "n_flags": 162,
+      "n_localized": 51,
+      "n_tasks": 68
+     }
+    }
+   }
+  },
+  "placebo": {
+   "control": {
+    "false_positive_rate": 0.7009,
+    "localization_rate": 0.5308,
+    "n_false_positive": 389,
+    "n_flags": 555,
+    "n_localized": 112,
+    "n_tasks": 211,
+    "per_repo": {
+     "conan-io/conan": {
+      "false_positive_rate": 0.7872,
+      "localization_rate": 0.4196,
+      "n_false_positive": 307,
+      "n_flags": 390,
+      "n_localized": 60,
+      "n_tasks": 143
+     },
+     "deepset-ai/haystack": {
+      "false_positive_rate": 0.497,
+      "localization_rate": 0.7647,
+      "n_false_positive": 82,
+      "n_flags": 165,
+      "n_localized": 52,
+      "n_tasks": 68
+     }
+    }
+   },
+   "effect_in_majority_of_repos": false,
+   "false_positive_rise_pts": 1.36,
+   "localization_lift_pts": 0.0,
+   "negative_control_lift": null,
+   "per_repo_lift": {
+    "conan-io/conan": {
+     "false_positive_rise_pts": -0.05,
+     "localization_lift_pts": 0.0
+    },
+    "deepset-ai/haystack": {
+     "false_positive_rise_pts": 3.55,
+     "localization_lift_pts": 0.0
+    }
+   },
+   "treatment": {
+    "false_positive_rate": 0.7145,
+    "localization_rate": 0.5308,
+    "n_false_positive": 388,
+    "n_flags": 543,
+    "n_localized": 112,
+    "n_tasks": 211,
+    "per_repo": {
+     "conan-io/conan": {
+      "false_positive_rate": 0.7866,
+      "localization_rate": 0.4196,
+      "n_false_positive": 306,
+      "n_flags": 389,
+      "n_localized": 60,
+      "n_tasks": 143
+     },
+     "deepset-ai/haystack": {
+      "false_positive_rate": 0.5325,
+      "localization_rate": 0.7647,
+      "n_false_positive": 82,
+      "n_flags": 154,
+      "n_localized": 52,
+      "n_tasks": 68
+     }
+    }
+   }
+  }
+ },
+ "tau": 0.5,
+ "treatment": {
+  "false_positive_rate": 0.7044,
+  "localization_rate": 0.5213,
+  "n_false_positive": 386,
+  "n_flags": 548,
+  "n_localized": 110,
+  "n_tasks": 211,
+  "per_repo": {
+   "conan-io/conan": {
+    "false_positive_rate": 0.7866,
+    "localization_rate": 0.4196,
+    "n_false_positive": 306,
+    "n_flags": 389,
+    "n_localized": 60,
+    "n_tasks": 143
+   },
+   "deepset-ai/haystack": {
+    "false_positive_rate": 0.5031,
+    "localization_rate": 0.7353,
+    "n_false_positive": 80,
+    "n_flags": 159,
+    "n_localized": 50,
+    "n_tasks": 68
+   }
+  }
+ },
+ "treatment_minus_placebo": {
+  "false_positive_pts": -1.02,
+  "localization_pts": -0.95
+ },
+ "warmup": 20
+}
