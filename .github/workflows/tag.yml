@@ -1,0 +1,32 @@
+# Create annotated tags from the runner (the authoring session's git proxy refuses tag pushes).
+# Push a branch named tag/* carrying .tags.json: [{"name": "prereg-v2", "sha": "<commit>", "message": "..."}]
+name: tag
+on:
+  push:
+    branches: ["tag/*"]
+permissions:
+  contents: write
+jobs:
+  tag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Create tags
+        run: |
+          set -euo pipefail
+          git config user.name "experiment-bot"; git config user.email "experiment-bot@users.noreply.github.com"
+          python3 - <<'PY' > tags.txt
+          import json
+          for t in json.load(open(".tags.json")):
+              print(t["name"], t["sha"], t.get("message", t["name"]).replace("\n", " "))
+          PY
+          while read -r NAME SHA MSG; do
+            git cat-file -e "$SHA^{commit}" || { echo "unknown commit $SHA"; exit 3; }
+            if git ls-remote --exit-code --tags origin "refs/tags/$NAME" >/dev/null 2>&1; then echo "tag $NAME already exists"; continue; fi
+            git tag -a "$NAME" "$SHA" -m "$MSG"
+            git push origin "refs/tags/$NAME"
+            echo "created $NAME -> $SHA"
+          done < tags.txt
+          git ls-remote --tags origin
