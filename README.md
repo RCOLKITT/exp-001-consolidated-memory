@@ -31,8 +31,11 @@ not registered. Sizing (run 26, draft §12): the split rule, not the corpus,
 capped the pool; a prequential design on the same 10 repos is feasible
 (ceiling 15.6 vs MDE 8.6, pool 530) — chosen by the owner (design A, D34). **v2 REGISTERED** (`docs/PREREGISTRATION-v2.md`,
 branch `prereg/v2`, D35): primary = ungated function-level memory vs control, kill
-number 9, placebo margin 4.5, gated τ 0.50 secondary. First attempt (runs 10–12) was cut short by the API key's
-spend cap; resume pending a raised limit (D36).
+number 9, placebo margin 4.5, gated τ 0.50 secondary. **Result: H2 killed** (runs 18–20 merged in 21; findings §20, D38): treatment
+−1.33 pts vs control on 526 paired tasks (CI −3.3 to +0.6), treatment − placebo
+−0.57, FP +0.55, negative control 0.00. Two registered experiments, two clean
+negatives; the placebo arm shows the verifier reacts to the memory section's
+presence more than its content.
 
 ## Layout
 

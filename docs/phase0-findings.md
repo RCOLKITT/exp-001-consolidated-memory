@@ -560,3 +560,75 @@ harness observations from the partial data, both mechanics: the 402 is
 documented as retryable and is now treated as transient; one more
 truncated-JSON shape (a stray `'` closing the last string, finish_reason
 stop) is now salvaged.
+
+
+## 20. Registered v2 result (runs 18–20, merged in run 21; 2026-09-12)
+
+Design A as registered (`docs/PREREGISTRATION-v2.md`, tag `prereg-v2`):
+function-level memory, prequential evaluation with a 20-task warm-up, four
+arms on every scored task, 10 treatment repos plus linkding. Shards A/B/C
+ran as resumes of the interrupted runs 10–12 (every cached call served
+from the content-addressed cache; the chain replayed from task 1);
+`phase2.check_config` confirms each shard's config equals the registered
+file except `repos`/`shard`/`resume_run`. 526 tasks scored (3 excluded
+after a failed call in some arm; 6 outside the metric).
+
+| criterion (registered) | value | verdict |
+|---|---:|---|
+| treatment (ungated memory) vs control, aggregate lift | **−1.33 pts** (control 0.491 → treatment 0.477, n = 526) | **fails** kill number ≥ 9 |
+| 95% CI (paired Wald / bootstrap) | −3.3 to +0.6 / −3.2 to +0.6 | excludes 9 |
+| discordant pairs | treatment-only hit 10, control-only hit 17; McNemar exact p = 0.25 | no effect; sign negative |
+| false-positive rise | +0.55 pts | passes (≤ 5) |
+| treatment − placebo | **−0.57 pts** (CI −2.4 to +1.3) | **fails** margin ≥ 4.5 |
+| negative control (linkding, n = 14) | 0.00 / 0.00, arms identical | passes |
+| majority of repos with lift > 0 | 4 of 10 (instructlab, pdm, reflex, matplotlib) | fails |
+| secondary: gated (τ 0.50) vs control | −0.19 pts (differed on 49 tasks) | no effect |
+| secondary: placebo vs control | −0.76 pts | prompt perturbation ≈ 0 |
+| file-level secondary (stage-1 flags) | −0.76 pts, FP +0.04 | no effect |
+
+**Verdict: H2 is killed.** Function-level memory, evaluated the way it
+would be deployed, did not raise localization; the point estimate is
+slightly negative and indistinguishable from the placebo arm, whose
+memories could not be relevant. Every secondary criterion that could have
+rescued the mechanism (gated injection, file-level scoring of the same
+flags) is also at zero.
+
+Per repo (Gate 3 floors from run 25; hits per arm; discordant pairs vs control; tasks with any retrieval):
+
+| repo | chain | scored | promoted | discard | floor | Gate 3 | control | treatment | placebo | gated | trt-only | ctl-only | retrieved |
+|---|---:|---:|---:|---:|---:|---|---:|---:|---:|---:|---:|---:|---:|
+| conan-io/conan | 164 | 143 | 1 | 0.122 | 0.106 | fail (promoted) | 0.420 | 0.420 | 0.420 | 0.420 | 0 | 0 | 3 |
+| deepset-ai/haystack | 88 | 68 | 8 | 0.216 | 0.141 | pass | 0.765 | 0.735 | 0.765 | 0.750 | 3 | 5 | 68 |
+| aws-cloudformation/cfn-lint | 109 | 79 | 3 | 0.315 | 0.141 | pass | 0.329 | 0.279 | 0.304 | 0.342 | 1 | 5 | 61 |
+| matplotlib/matplotlib | 101 | 79 | 1 | 0.090 | 0.070 | fail (promoted) | 0.595 | 0.608 | 0.608 | 0.595 | 1 | 0 | 4 |
+| pylint-dev/pylint | 62 | 42 | 2 | 0.227 | 0.097 | pass | 0.476 | 0.357 | 0.452 | 0.429 | 0 | 5 | 27 |
+| instructlab/instructlab | 52 | 31 | 5 | 0.233 | 0.200 | pass | 0.516 | 0.581 | 0.548 | 0.516 | 2 | 0 | 31 |
+| keras-team/keras | 48 | 28 | 0 | 0.073 | 0.023 | fail (promoted) | 0.321 | 0.321 | 0.321 | 0.321 | 0 | 0 | 0 |
+| pdm-project/pdm | 35 | 15 | 2 | 0.247 | 0.114 | pass | 0.533 | 0.600 | 0.533 | 0.533 | 1 | 0 | 15 |
+| reflex-dev/reflex | 44 | 24 | 1 | 0.210 | 0.092 | fail (promoted) | 0.458 | 0.500 | 0.458 | 0.458 | 1 | 0 | 14 |
+| sphinx-doc/sphinx | 39 | 17 | 2 | 0.177 | 0.058 | pass | 0.529 | 0.471 | 0.353 | 0.588 | 1 | 2 | 17 |
+
+Gate 3: every repo clears its discard-rate floor; 6 of 10 reach two
+promoted memories (D28: all stay in the primary analysis). What the
+mechanism actually delivered is visible in the last column: memory was
+retrieved on **240 of 526** scored tasks, because a function-level memory
+exists only after the same function has been gold twice, and on conan
+(3/143), matplotlib (4/79) and keras (0/28) that almost never happened
+within the chain. Where memory *was* present it did not help: haystack
+(retrieved on all 68, 3 treatment-only vs 5 control-only) and cfn-lint
+(61 of 79, 1 vs 5) are the two repos with the most memory and both moved
+the wrong way; pylint lost 5 tasks and gained none.
+
+Read together with v1 (findings §15): file-level memory changed the
+verifier's flags on 76% of tasks and netted +1.1; function-level memory
+changed them on 34% (181/526) and netted −1.3; a placebo of irrelevant
+memories changed them on 29% and netted −0.8. The verifier reacts to the
+presence of a memory section far more than to its content, and the
+content it does react to is, at both granularities, as often wrong as
+right for the task at hand. The registered ceilings were never the
+binding constraint; the mechanism's precision was.
+
+Cost of the registered run: ≈ 3,900 model calls across runs 10–12 and
+18–20 (the failed attempts 13–17 made 0–10 calls each). Files:
+`results/experiment/{18,19,20}/rolling/` (per repo), `results/experiment/21/`
+(merged gate4, paired analyses, config check).

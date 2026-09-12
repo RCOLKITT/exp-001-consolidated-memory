@@ -466,3 +466,18 @@ precision, and v1's registered pool of 373 is unaffected (the duplicate sat
 past v1's split). No design value was touched; the fix is corpus hygiene
 and applies identically to every arm. Run 13 made no model calls (every
 call was a cache hit), so the key's status is still untested.
+
+### D38. v2 verdict: killed as registered; no further registered runs on this thesis
+The registered v2 run (findings §20) fails the kill number (−1.33 pts vs
+≥ 9), fails the placebo margin (−0.57 vs ≥ 4.5), and fails the majority
+criterion; it passes the FP ceiling and the negative control. Both
+registered experiments on the thesis "memory of prior defects improves
+localization" are now negative at the two granularities the data
+supported, with clean mechanics each time (traceable beliefs, inert
+negative control, flat false positives). The placebo arm adds the
+diagnostic v1 lacked: the verifier's response to memory is mostly a
+response to the prompt's shape. No third registration is proposed on
+this corpus with this verifier; a different thesis (e.g. memory as a
+*veto* on repeated false positives rather than a pointer to gold, or
+memory consumed by a retrieval-augmented localizer that reads code
+rather than a file listing) would be a new experiment, not a v3.
