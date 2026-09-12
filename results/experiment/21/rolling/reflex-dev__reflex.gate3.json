@@ -1,0 +1,20 @@
+{
+ "buffered": 94,
+ "candidate_writes": 119,
+ "consolidation": "function-keyed+sentence-transformers/all-MiniLM-L6-v2@1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+ "discard_rate": 0.2101,
+ "discarded_or_reinforced": 25,
+ "frozen_version": "7daa3786c21b491a795bfeb8de38fe645c25b8a0f590fbf9c155d48087c143b5",
+ "granularity": "function",
+ "learn_errors": {},
+ "min_distinct_inputs": 2,
+ "min_occurrences": 2,
+ "n_eval": 24,
+ "n_tasks": 44,
+ "n_warmup": 20,
+ "negative_control": false,
+ "promoted": 1,
+ "retrieval": "sentence-transformers/all-MiniLM-L6-v2@1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+ "tau": 0.5,
+ "warmup": 20
+}

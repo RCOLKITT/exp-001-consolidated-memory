@@ -1,0 +1,1429 @@
+{
+ "arms": {
+  "control": {
+   "file_hits": {
+    "pdm-project__pdm-3136": false,
+    "pdm-project__pdm-3170": true,
+    "pdm-project__pdm-3191": true,
+    "pdm-project__pdm-3237": true,
+    "pdm-project__pdm-3250": false,
+    "pdm-project__pdm-3255": false,
+    "pdm-project__pdm-3314": true,
+    "pdm-project__pdm-3374": false,
+    "pdm-project__pdm-3393": true,
+    "pdm-project__pdm-3419": false,
+    "pdm-project__pdm-3420": true,
+    "pdm-project__pdm-3435": true,
+    "pdm-project__pdm-3440": false,
+    "pdm-project__pdm-3455": true,
+    "pdm-project__pdm-3555": true
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.7556,
+    "localization_rate": 0.6,
+    "n_false_positive": 34,
+    "n_flags": 45,
+    "n_localized": 9,
+    "n_tasks": 15,
+    "per_repo": {
+     "pdm-project/pdm": {
+      "false_positive_rate": 0.7556,
+      "localization_rate": 0.6,
+      "n_false_positive": 34,
+      "n_flags": 45,
+      "n_localized": 9,
+      "n_tasks": 15
+     }
+    }
+   },
+   "flags": {
+    "pdm-project__pdm-3136": [
+     "src/pdm/cli/commands/add.py::Command.do_add",
+     "src/pdm/project/project_file.py::_remove_empty_tables",
+     "src/pdm/cli/commands/add.py::Command.handle"
+    ],
+    "pdm-project__pdm-3170": [
+     "src/pdm/utils.py::expand_env_vars_in_auth",
+     "src/pdm/utils.py::expand_env_vars",
+     "src/pdm/models/auth.py::PdmBasicAuth._get_auth_from_index_url"
+    ],
+    "pdm-project__pdm-3191": [
+     "src/pdm/cli/actions.py::do_sync",
+     "src/pdm/installers/base.py::BaseSynchronizer.__init__",
+     "src/pdm/cli/actions.py::resolve_from_lockfile"
+    ],
+    "pdm-project__pdm-3237": [
+     "src/pdm/formats/uv.py::_UvFileBuilder.build_uv_lock",
+     "src/pdm/installers/uv.py::UvSynchronizer.synchronize",
+     "src/pdm/cli/commands/build.py::Command.do_build"
+    ],
+    "pdm-project__pdm-3250": [
+     "src/pdm/cli/commands/lock.py::Command.handle",
+     "src/pdm/resolver/base.py::Resolver.resolve",
+     "src/pdm/project/config.py::Config.__getitem__"
+    ],
+    "pdm-project__pdm-3255": [
+     "src/pdm/utils.py::expand_env_vars",
+     "src/pdm/project/config.py::Config.env_map",
+     "src/pdm/utils.py::expand_env_vars_in_auth"
+    ],
+    "pdm-project__pdm-3314": [
+     "src/pdm/cli/utils.py::save_version_specifiers",
+     "src/pdm/project/project_file.py::PyProject.write",
+     "src/pdm/resolver/base.py::Resolver.resolve"
+    ],
+    "pdm-project__pdm-3374": [
+     "src/pdm/models/repositories/pypi.py::PyPIRepository._find_candidates",
+     "src/pdm/installers/core.py::install_requirements",
+     "src/pdm/resolver/base.py::Resolver.resolve"
+    ],
+    "pdm-project__pdm-3393": [
+     "src/pdm/project/core.py::Project.use_pyproject_dependencies"
+    ],
+    "pdm-project__pdm-3419": [
+     "src/pdm/cli/commands/update.py::Command.do_update",
+     "src/pdm/project/lockfile.py::Lockfile.compare_groups",
+     "src/pdm/project/lockfile.py::Lockfile.apply_strategy_change"
+    ],
+    "pdm-project__pdm-3420": [
+     "src/pdm/cli/commands/remove.py::Command.do_remove",
+     "src/pdm/cli/actions.py::do_sync",
+     "src/pdm/cli/filters.py::GroupSelection.validate"
+    ],
+    "pdm-project__pdm-3435": [
+     "src/pdm/project/core.py::Project.resolve_interpreter",
+     "src/pdm/project/core.py::Project.python",
+     "src/pdm/project/core.py::Project.env_or_setting"
+    ],
+    "pdm-project__pdm-3440": [
+     "src/pdm/installers/core.py::install_requirements",
+     "src/pdm/resolver/resolvelib.py::RLResolver.resolve",
+     "src/pdm/cli/commands/install.py::Command.install_plugins"
+    ],
+    "pdm-project__pdm-3455": [
+     "src/pdm/models/candidates.py::PreparedCandidate._unpack",
+     "src/pdm/resolver/providers.py::BaseProvider.get_dependencies"
+    ],
+    "pdm-project__pdm-3555": [
+     "src/pdm/resolver/uv.py::UvResolver._build_lock_command",
+     "src/pdm/project/config.py::Config.get_repository_config",
+     "src/pdm/resolver/uv.py::UvResolver.resolve"
+    ]
+   },
+   "hits": {
+    "pdm-project__pdm-3136": false,
+    "pdm-project__pdm-3170": true,
+    "pdm-project__pdm-3191": true,
+    "pdm-project__pdm-3237": true,
+    "pdm-project__pdm-3250": false,
+    "pdm-project__pdm-3255": false,
+    "pdm-project__pdm-3314": true,
+    "pdm-project__pdm-3374": false,
+    "pdm-project__pdm-3393": true,
+    "pdm-project__pdm-3419": false,
+    "pdm-project__pdm-3420": true,
+    "pdm-project__pdm-3435": true,
+    "pdm-project__pdm-3440": false,
+    "pdm-project__pdm-3455": false,
+    "pdm-project__pdm-3555": true
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.7857,
+    "localization_rate": 0.5333,
+    "n_false_positive": 33,
+    "n_flags": 42,
+    "n_localized": 8,
+    "n_tasks": 15,
+    "per_repo": {
+     "pdm-project/pdm": {
+      "false_positive_rate": 0.7857,
+      "localization_rate": 0.5333,
+      "n_false_positive": 33,
+      "n_flags": 42,
+      "n_localized": 8,
+      "n_tasks": 15
+     }
+    }
+   },
+   "retrieved": {
+    "pdm-project__pdm-3136": [],
+    "pdm-project__pdm-3170": [],
+    "pdm-project__pdm-3191": [],
+    "pdm-project__pdm-3237": [],
+    "pdm-project__pdm-3250": [],
+    "pdm-project__pdm-3255": [],
+    "pdm-project__pdm-3314": [],
+    "pdm-project__pdm-3374": [],
+    "pdm-project__pdm-3393": [],
+    "pdm-project__pdm-3419": [],
+    "pdm-project__pdm-3420": [],
+    "pdm-project__pdm-3435": [],
+    "pdm-project__pdm-3440": [],
+    "pdm-project__pdm-3455": [],
+    "pdm-project__pdm-3555": []
+   },
+   "scores": {
+    "pdm-project__pdm-3136": {},
+    "pdm-project__pdm-3170": {},
+    "pdm-project__pdm-3191": {},
+    "pdm-project__pdm-3237": {},
+    "pdm-project__pdm-3250": {},
+    "pdm-project__pdm-3255": {},
+    "pdm-project__pdm-3314": {},
+    "pdm-project__pdm-3374": {},
+    "pdm-project__pdm-3393": {},
+    "pdm-project__pdm-3419": {},
+    "pdm-project__pdm-3420": {},
+    "pdm-project__pdm-3435": {},
+    "pdm-project__pdm-3440": {},
+    "pdm-project__pdm-3455": {},
+    "pdm-project__pdm-3555": {}
+   },
+   "tau": 0.0,
+   "version": null,
+   "versions": {
+    "pdm-project__pdm-3136": null,
+    "pdm-project__pdm-3170": null,
+    "pdm-project__pdm-3191": null,
+    "pdm-project__pdm-3237": null,
+    "pdm-project__pdm-3250": null,
+    "pdm-project__pdm-3255": null,
+    "pdm-project__pdm-3314": null,
+    "pdm-project__pdm-3374": null,
+    "pdm-project__pdm-3393": null,
+    "pdm-project__pdm-3419": null,
+    "pdm-project__pdm-3420": null,
+    "pdm-project__pdm-3435": null,
+    "pdm-project__pdm-3440": null,
+    "pdm-project__pdm-3455": null,
+    "pdm-project__pdm-3555": null
+   }
+  },
+  "gated": {
+   "file_hits": {
+    "pdm-project__pdm-3136": false,
+    "pdm-project__pdm-3170": true,
+    "pdm-project__pdm-3191": true,
+    "pdm-project__pdm-3237": true,
+    "pdm-project__pdm-3250": false,
+    "pdm-project__pdm-3255": false,
+    "pdm-project__pdm-3314": true,
+    "pdm-project__pdm-3374": false,
+    "pdm-project__pdm-3393": true,
+    "pdm-project__pdm-3419": false,
+    "pdm-project__pdm-3420": true,
+    "pdm-project__pdm-3435": true,
+    "pdm-project__pdm-3440": false,
+    "pdm-project__pdm-3455": true,
+    "pdm-project__pdm-3555": true
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.7556,
+    "localization_rate": 0.6,
+    "n_false_positive": 34,
+    "n_flags": 45,
+    "n_localized": 9,
+    "n_tasks": 15,
+    "per_repo": {
+     "pdm-project/pdm": {
+      "false_positive_rate": 0.7556,
+      "localization_rate": 0.6,
+      "n_false_positive": 34,
+      "n_flags": 45,
+      "n_localized": 9,
+      "n_tasks": 15
+     }
+    }
+   },
+   "flags": {
+    "pdm-project__pdm-3136": [
+     "src/pdm/cli/commands/add.py::Command.do_add",
+     "src/pdm/project/project_file.py::_remove_empty_tables",
+     "src/pdm/cli/commands/add.py::Command.handle"
+    ],
+    "pdm-project__pdm-3170": [
+     "src/pdm/utils.py::expand_env_vars_in_auth",
+     "src/pdm/utils.py::expand_env_vars",
+     "src/pdm/models/auth.py::PdmBasicAuth._get_auth_from_index_url"
+    ],
+    "pdm-project__pdm-3191": [
+     "src/pdm/cli/actions.py::do_sync",
+     "src/pdm/cli/actions.py::resolve_from_lockfile",
+     "src/pdm/installers/base.py::BaseSynchronizer.__init__"
+    ],
+    "pdm-project__pdm-3237": [
+     "src/pdm/formats/uv.py::_UvFileBuilder.build_uv_lock",
+     "src/pdm/installers/uv.py::UvSynchronizer.synchronize",
+     "src/pdm/cli/commands/build.py::Command.do_build"
+    ],
+    "pdm-project__pdm-3250": [
+     "src/pdm/cli/commands/lock.py::Command.handle",
+     "src/pdm/project/config.py::Config.__getitem__",
+     "src/pdm/resolver/base.py::Resolver.resolve"
+    ],
+    "pdm-project__pdm-3255": [
+     "src/pdm/utils.py::expand_env_vars",
+     "src/pdm/project/config.py::Config.env_map",
+     "src/pdm/utils.py::expand_env_vars_in_auth"
+    ],
+    "pdm-project__pdm-3314": [
+     "src/pdm/cli/utils.py::save_version_specifiers",
+     "src/pdm/cli/commands/update.py::Command.do_update",
+     "src/pdm/project/config.py::Config.__setitem__"
+    ],
+    "pdm-project__pdm-3374": [
+     "src/pdm/models/repositories/pypi.py::PyPIRepository._find_candidates",
+     "src/pdm/installers/core.py::install_requirements",
+     "src/pdm/resolver/base.py::Resolver.resolve"
+    ],
+    "pdm-project__pdm-3393": [
+     "src/pdm/project/core.py::Project.use_pyproject_dependencies"
+    ],
+    "pdm-project__pdm-3419": [
+     "src/pdm/cli/commands/update.py::Command.do_update",
+     "src/pdm/project/lockfile.py::Lockfile.apply_strategy_change",
+     "src/pdm/project/lockfile.py::Lockfile.compare_groups"
+    ],
+    "pdm-project__pdm-3420": [
+     "src/pdm/cli/commands/remove.py::Command.do_remove",
+     "src/pdm/cli/actions.py::do_sync",
+     "src/pdm/cli/filters.py::GroupSelection.validate"
+    ],
+    "pdm-project__pdm-3435": [
+     "src/pdm/project/core.py::Project.resolve_interpreter",
+     "src/pdm/project/core.py::Project.python",
+     "src/pdm/project/core.py::Project.env_or_setting"
+    ],
+    "pdm-project__pdm-3440": [
+     "src/pdm/installers/core.py::install_requirements",
+     "src/pdm/resolver/resolvelib.py::RLResolver.resolve",
+     "src/pdm/cli/commands/install.py::Command.install_plugins"
+    ],
+    "pdm-project__pdm-3455": [
+     "src/pdm/models/candidates.py::PreparedCandidate._unpack",
+     "src/pdm/resolver/providers.py::BaseProvider.get_dependencies"
+    ],
+    "pdm-project__pdm-3555": [
+     "src/pdm/resolver/uv.py::UvResolver._build_lock_command",
+     "src/pdm/project/config.py::Config.get_repository_config",
+     "src/pdm/resolver/uv.py::UvResolver.resolve"
+    ]
+   },
+   "hits": {
+    "pdm-project__pdm-3136": false,
+    "pdm-project__pdm-3170": true,
+    "pdm-project__pdm-3191": true,
+    "pdm-project__pdm-3237": true,
+    "pdm-project__pdm-3250": false,
+    "pdm-project__pdm-3255": false,
+    "pdm-project__pdm-3314": true,
+    "pdm-project__pdm-3374": false,
+    "pdm-project__pdm-3393": true,
+    "pdm-project__pdm-3419": false,
+    "pdm-project__pdm-3420": true,
+    "pdm-project__pdm-3435": true,
+    "pdm-project__pdm-3440": false,
+    "pdm-project__pdm-3455": false,
+    "pdm-project__pdm-3555": true
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.7857,
+    "localization_rate": 0.5333,
+    "n_false_positive": 33,
+    "n_flags": 42,
+    "n_localized": 8,
+    "n_tasks": 15,
+    "per_repo": {
+     "pdm-project/pdm": {
+      "false_positive_rate": 0.7857,
+      "localization_rate": 0.5333,
+      "n_false_positive": 33,
+      "n_flags": 42,
+      "n_localized": 8,
+      "n_tasks": 15
+     }
+    }
+   },
+   "retrieved": {
+    "pdm-project__pdm-3136": [],
+    "pdm-project__pdm-3170": [],
+    "pdm-project__pdm-3191": [
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70"
+    ],
+    "pdm-project__pdm-3237": [],
+    "pdm-project__pdm-3250": [
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70"
+    ],
+    "pdm-project__pdm-3255": [],
+    "pdm-project__pdm-3314": [
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70"
+    ],
+    "pdm-project__pdm-3374": [],
+    "pdm-project__pdm-3393": [
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70"
+    ],
+    "pdm-project__pdm-3419": [
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70"
+    ],
+    "pdm-project__pdm-3420": [],
+    "pdm-project__pdm-3435": [],
+    "pdm-project__pdm-3440": [],
+    "pdm-project__pdm-3455": [],
+    "pdm-project__pdm-3555": []
+   },
+   "scores": {
+    "pdm-project__pdm-3136": {
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70": 0.415268
+    },
+    "pdm-project__pdm-3170": {
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70": 0.205388
+    },
+    "pdm-project__pdm-3191": {
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4": 0.291933,
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70": 0.56645
+    },
+    "pdm-project__pdm-3237": {
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4": 0.395298,
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70": 0.483036
+    },
+    "pdm-project__pdm-3250": {
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4": 0.328433,
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70": 0.502378
+    },
+    "pdm-project__pdm-3255": {
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4": 0.373479,
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70": 0.469156
+    },
+    "pdm-project__pdm-3314": {
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4": 0.343982,
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70": 0.566071
+    },
+    "pdm-project__pdm-3374": {
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4": 0.226415,
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70": 0.42255
+    },
+    "pdm-project__pdm-3393": {
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4": 0.368346,
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70": 0.550835
+    },
+    "pdm-project__pdm-3419": {
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4": 0.245902,
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70": 0.566971
+    },
+    "pdm-project__pdm-3420": {
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4": 0.295483,
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70": 0.44526
+    },
+    "pdm-project__pdm-3435": {
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4": 0.448688,
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70": 0.437433
+    },
+    "pdm-project__pdm-3440": {
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4": 0.398712,
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70": 0.408707
+    },
+    "pdm-project__pdm-3455": {
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4": 0.373153,
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70": 0.49018
+    },
+    "pdm-project__pdm-3555": {
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4": 0.309388,
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70": 0.338348
+    }
+   },
+   "tau": 0.5,
+   "version": "rolling",
+   "versions": {
+    "pdm-project__pdm-3136": "1d1cfd1ed27d936d2b06714942ee7a8ca184406490108e7ef9a5f153c8ad3f35",
+    "pdm-project__pdm-3170": "1d1cfd1ed27d936d2b06714942ee7a8ca184406490108e7ef9a5f153c8ad3f35",
+    "pdm-project__pdm-3191": "b8fc96f2e07758525530a851d269cd607d33e920b15b61a995ff6e52b2f4c475",
+    "pdm-project__pdm-3237": "b8fc96f2e07758525530a851d269cd607d33e920b15b61a995ff6e52b2f4c475",
+    "pdm-project__pdm-3250": "b8fc96f2e07758525530a851d269cd607d33e920b15b61a995ff6e52b2f4c475",
+    "pdm-project__pdm-3255": "b8fc96f2e07758525530a851d269cd607d33e920b15b61a995ff6e52b2f4c475",
+    "pdm-project__pdm-3314": "b8fc96f2e07758525530a851d269cd607d33e920b15b61a995ff6e52b2f4c475",
+    "pdm-project__pdm-3374": "b8fc96f2e07758525530a851d269cd607d33e920b15b61a995ff6e52b2f4c475",
+    "pdm-project__pdm-3393": "b8fc96f2e07758525530a851d269cd607d33e920b15b61a995ff6e52b2f4c475",
+    "pdm-project__pdm-3419": "b8fc96f2e07758525530a851d269cd607d33e920b15b61a995ff6e52b2f4c475",
+    "pdm-project__pdm-3420": "b8fc96f2e07758525530a851d269cd607d33e920b15b61a995ff6e52b2f4c475",
+    "pdm-project__pdm-3435": "b8fc96f2e07758525530a851d269cd607d33e920b15b61a995ff6e52b2f4c475",
+    "pdm-project__pdm-3440": "b8fc96f2e07758525530a851d269cd607d33e920b15b61a995ff6e52b2f4c475",
+    "pdm-project__pdm-3455": "b8fc96f2e07758525530a851d269cd607d33e920b15b61a995ff6e52b2f4c475",
+    "pdm-project__pdm-3555": "b8fc96f2e07758525530a851d269cd607d33e920b15b61a995ff6e52b2f4c475"
+   }
+  },
+  "placebo": {
+   "file_hits": {
+    "pdm-project__pdm-3136": false,
+    "pdm-project__pdm-3170": true,
+    "pdm-project__pdm-3191": true,
+    "pdm-project__pdm-3237": true,
+    "pdm-project__pdm-3250": false,
+    "pdm-project__pdm-3255": false,
+    "pdm-project__pdm-3314": true,
+    "pdm-project__pdm-3374": false,
+    "pdm-project__pdm-3393": true,
+    "pdm-project__pdm-3419": false,
+    "pdm-project__pdm-3420": true,
+    "pdm-project__pdm-3435": true,
+    "pdm-project__pdm-3440": false,
+    "pdm-project__pdm-3455": true,
+    "pdm-project__pdm-3555": true
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.7556,
+    "localization_rate": 0.6,
+    "n_false_positive": 34,
+    "n_flags": 45,
+    "n_localized": 9,
+    "n_tasks": 15,
+    "per_repo": {
+     "pdm-project/pdm": {
+      "false_positive_rate": 0.7556,
+      "localization_rate": 0.6,
+      "n_false_positive": 34,
+      "n_flags": 45,
+      "n_localized": 9,
+      "n_tasks": 15
+     }
+    }
+   },
+   "flags": {
+    "pdm-project__pdm-3136": [
+     "src/pdm/cli/commands/add.py::Command.do_add",
+     "src/pdm/project/project_file.py::_remove_empty_tables",
+     "src/pdm/cli/commands/add.py::Command.handle"
+    ],
+    "pdm-project__pdm-3170": [
+     "src/pdm/utils.py::expand_env_vars_in_auth",
+     "src/pdm/utils.py::expand_env_vars",
+     "src/pdm/models/auth.py::PdmBasicAuth._get_auth_from_index_url"
+    ],
+    "pdm-project__pdm-3191": [
+     "src/pdm/cli/actions.py::do_sync",
+     "src/pdm/installers/base.py::BaseSynchronizer.__init__",
+     "src/pdm/cli/actions.py::resolve_from_lockfile"
+    ],
+    "pdm-project__pdm-3237": [
+     "src/pdm/formats/uv.py::_UvFileBuilder.build_uv_lock",
+     "src/pdm/installers/uv.py::UvSynchronizer.synchronize",
+     "src/pdm/cli/commands/build.py::Command.do_build"
+    ],
+    "pdm-project__pdm-3250": [
+     "src/pdm/cli/commands/lock.py::Command.handle",
+     "src/pdm/project/config.py::Config.__getitem__",
+     "src/pdm/resolver/base.py::Resolver.resolve"
+    ],
+    "pdm-project__pdm-3255": [
+     "src/pdm/utils.py::expand_env_vars",
+     "src/pdm/project/config.py::Config.env_map",
+     "src/pdm/utils.py::expand_env_vars_in_auth"
+    ],
+    "pdm-project__pdm-3314": [
+     "src/pdm/cli/utils.py::save_version_specifiers",
+     "src/pdm/cli/commands/update.py::Command.do_update",
+     "src/pdm/project/project_file.py::PyProject.write"
+    ],
+    "pdm-project__pdm-3374": [
+     "src/pdm/models/repositories/base.py::BaseRepository.get_dependencies",
+     "src/pdm/models/repositories/base.py::BaseRepository._get_dependencies_from_cache",
+     "src/pdm/models/repositories/base.py::BaseRepository._get_dependencies_from_metadata"
+    ],
+    "pdm-project__pdm-3393": [
+     "src/pdm/project/core.py::Project.use_pyproject_dependencies",
+     "src/pdm/project/core.py::Project.add_dependencies",
+     "src/pdm/cli/commands/add.py::Command.do_add"
+    ],
+    "pdm-project__pdm-3419": [
+     "src/pdm/cli/commands/update.py::Command.do_update",
+     "src/pdm/project/lockfile.py::Lockfile.compare_groups",
+     "src/pdm/project/lockfile.py::Lockfile.apply_strategy_change"
+    ],
+    "pdm-project__pdm-3420": [
+     "src/pdm/cli/commands/remove.py::Command.do_remove",
+     "src/pdm/cli/actions.py::do_sync",
+     "src/pdm/cli/filters.py::GroupSelection.validate"
+    ],
+    "pdm-project__pdm-3435": [
+     "src/pdm/project/core.py::Project.resolve_interpreter",
+     "src/pdm/project/core.py::Project.python",
+     "src/pdm/project/core.py::Project.get_environment"
+    ],
+    "pdm-project__pdm-3440": [
+     "src/pdm/installers/core.py::install_requirements",
+     "src/pdm/resolver/resolvelib.py::RLResolver.resolve",
+     "src/pdm/cli/commands/install.py::Command.install_plugins"
+    ],
+    "pdm-project__pdm-3455": [
+     "src/pdm/models/candidates.py::PreparedCandidate._unpack",
+     "src/pdm/resolver/providers.py::BaseProvider.get_dependencies"
+    ],
+    "pdm-project__pdm-3555": [
+     "src/pdm/resolver/uv.py::UvResolver._build_lock_command"
+    ]
+   },
+   "hits": {
+    "pdm-project__pdm-3136": false,
+    "pdm-project__pdm-3170": true,
+    "pdm-project__pdm-3191": true,
+    "pdm-project__pdm-3237": true,
+    "pdm-project__pdm-3250": false,
+    "pdm-project__pdm-3255": false,
+    "pdm-project__pdm-3314": true,
+    "pdm-project__pdm-3374": false,
+    "pdm-project__pdm-3393": true,
+    "pdm-project__pdm-3419": false,
+    "pdm-project__pdm-3420": true,
+    "pdm-project__pdm-3435": true,
+    "pdm-project__pdm-3440": false,
+    "pdm-project__pdm-3455": false,
+    "pdm-project__pdm-3555": true
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": 2.38,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.8095,
+    "localization_rate": 0.5333,
+    "n_false_positive": 34,
+    "n_flags": 42,
+    "n_localized": 8,
+    "n_tasks": 15,
+    "per_repo": {
+     "pdm-project/pdm": {
+      "false_positive_rate": 0.8095,
+      "localization_rate": 0.5333,
+      "n_false_positive": 34,
+      "n_flags": 42,
+      "n_localized": 8,
+      "n_tasks": 15
+     }
+    }
+   },
+   "retrieved": {
+    "pdm-project__pdm-3136": [
+     "placebo:1"
+    ],
+    "pdm-project__pdm-3170": [
+     "placebo:2"
+    ],
+    "pdm-project__pdm-3191": [
+     "placebo:4",
+     "placebo:3"
+    ],
+    "pdm-project__pdm-3237": [
+     "placebo:3",
+     "placebo:1"
+    ],
+    "pdm-project__pdm-3250": [
+     "placebo:1",
+     "placebo:3"
+    ],
+    "pdm-project__pdm-3255": [
+     "placebo:2",
+     "placebo:3"
+    ],
+    "pdm-project__pdm-3314": [
+     "placebo:1",
+     "placebo:4"
+    ],
+    "pdm-project__pdm-3374": [
+     "placebo:1",
+     "placebo:4"
+    ],
+    "pdm-project__pdm-3393": [
+     "placebo:3",
+     "placebo:4"
+    ],
+    "pdm-project__pdm-3419": [
+     "placebo:3",
+     "placebo:1"
+    ],
+    "pdm-project__pdm-3420": [
+     "placebo:3",
+     "placebo:1"
+    ],
+    "pdm-project__pdm-3435": [
+     "placebo:0",
+     "placebo:4"
+    ],
+    "pdm-project__pdm-3440": [
+     "placebo:0",
+     "placebo:3"
+    ],
+    "pdm-project__pdm-3455": [
+     "placebo:0",
+     "placebo:4"
+    ],
+    "pdm-project__pdm-3555": [
+     "placebo:1",
+     "placebo:3"
+    ]
+   },
+   "scores": {
+    "pdm-project__pdm-3136": {
+     "placebo:1": 0.179238
+    },
+    "pdm-project__pdm-3170": {
+     "placebo:2": 0.252229
+    },
+    "pdm-project__pdm-3191": {
+     "placebo:3": 0.236957,
+     "placebo:4": 0.275112
+    },
+    "pdm-project__pdm-3237": {
+     "placebo:1": 0.203813,
+     "placebo:3": 0.218422
+    },
+    "pdm-project__pdm-3250": {
+     "placebo:1": 0.266151,
+     "placebo:3": 0.186413
+    },
+    "pdm-project__pdm-3255": {
+     "placebo:2": 0.146659,
+     "placebo:3": 0.145063
+    },
+    "pdm-project__pdm-3314": {
+     "placebo:1": 0.268085,
+     "placebo:4": 0.184626
+    },
+    "pdm-project__pdm-3374": {
+     "placebo:1": 0.187052,
+     "placebo:4": 0.175595
+    },
+    "pdm-project__pdm-3393": {
+     "placebo:3": 0.183201,
+     "placebo:4": 0.168573
+    },
+    "pdm-project__pdm-3419": {
+     "placebo:1": 0.183894,
+     "placebo:3": 0.202428
+    },
+    "pdm-project__pdm-3420": {
+     "placebo:1": 0.186731,
+     "placebo:3": 0.193572
+    },
+    "pdm-project__pdm-3435": {
+     "placebo:0": 0.18544,
+     "placebo:4": 0.181143
+    },
+    "pdm-project__pdm-3440": {
+     "placebo:0": 0.215524,
+     "placebo:3": 0.185533
+    },
+    "pdm-project__pdm-3455": {
+     "placebo:0": 0.163686,
+     "placebo:4": 0.158282
+    },
+    "pdm-project__pdm-3555": {
+     "placebo:1": 0.109174,
+     "placebo:3": 0.100928
+    }
+   },
+   "tau": 0.0,
+   "version": "rolling",
+   "versions": {
+    "pdm-project__pdm-3136": null,
+    "pdm-project__pdm-3170": null,
+    "pdm-project__pdm-3191": null,
+    "pdm-project__pdm-3237": null,
+    "pdm-project__pdm-3250": null,
+    "pdm-project__pdm-3255": null,
+    "pdm-project__pdm-3314": null,
+    "pdm-project__pdm-3374": null,
+    "pdm-project__pdm-3393": null,
+    "pdm-project__pdm-3419": null,
+    "pdm-project__pdm-3420": null,
+    "pdm-project__pdm-3435": null,
+    "pdm-project__pdm-3440": null,
+    "pdm-project__pdm-3455": null,
+    "pdm-project__pdm-3555": null
+   }
+  },
+  "treatment": {
+   "file_hits": {
+    "pdm-project__pdm-3136": true,
+    "pdm-project__pdm-3170": true,
+    "pdm-project__pdm-3191": true,
+    "pdm-project__pdm-3237": true,
+    "pdm-project__pdm-3250": false,
+    "pdm-project__pdm-3255": true,
+    "pdm-project__pdm-3314": true,
+    "pdm-project__pdm-3374": false,
+    "pdm-project__pdm-3393": true,
+    "pdm-project__pdm-3419": false,
+    "pdm-project__pdm-3420": true,
+    "pdm-project__pdm-3435": true,
+    "pdm-project__pdm-3440": false,
+    "pdm-project__pdm-3455": true,
+    "pdm-project__pdm-3555": true
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.7111,
+    "localization_rate": 0.7333,
+    "n_false_positive": 32,
+    "n_flags": 45,
+    "n_localized": 11,
+    "n_tasks": 15,
+    "per_repo": {
+     "pdm-project/pdm": {
+      "false_positive_rate": 0.7111,
+      "localization_rate": 0.7333,
+      "n_false_positive": 32,
+      "n_flags": 45,
+      "n_localized": 11,
+      "n_tasks": 15
+     }
+    }
+   },
+   "flags": {
+    "pdm-project__pdm-3136": [
+     "src/pdm/cli/commands/add.py::Command.do_add",
+     "src/pdm/project/project_file.py::PyProject.write",
+     "src/pdm/cli/commands/add.py::Command.handle"
+    ],
+    "pdm-project__pdm-3170": [
+     "src/pdm/utils.py::expand_env_vars_in_auth",
+     "src/pdm/utils.py::expand_env_vars",
+     "src/pdm/models/auth.py::PdmBasicAuth._get_auth_from_index_url"
+    ],
+    "pdm-project__pdm-3191": [
+     "src/pdm/cli/actions.py::do_sync",
+     "src/pdm/cli/actions.py::resolve_from_lockfile",
+     "src/pdm/installers/base.py::BaseSynchronizer.__init__"
+    ],
+    "pdm-project__pdm-3237": [
+     "src/pdm/formats/uv.py::_UvFileBuilder.build_uv_lock",
+     "src/pdm/installers/uv.py::UvSynchronizer.synchronize",
+     "src/pdm/cli/commands/build.py::Command.do_build"
+    ],
+    "pdm-project__pdm-3250": [
+     "src/pdm/cli/commands/lock.py::Command.handle",
+     "src/pdm/project/config.py::Config.__getitem__",
+     "src/pdm/resolver/base.py::Resolver.resolve"
+    ],
+    "pdm-project__pdm-3255": [
+     "src/pdm/models/session.py::PDMPyPIClient._transport_for",
+     "src/pdm/utils.py::expand_env_vars",
+     "src/pdm/models/session.py::PDMPyPIClient.__init__"
+    ],
+    "pdm-project__pdm-3314": [
+     "src/pdm/cli/commands/update.py::Command.do_update",
+     "src/pdm/cli/utils.py::save_version_specifiers",
+     "src/pdm/project/project_file.py::PyProject.write"
+    ],
+    "pdm-project__pdm-3374": [
+     "src/pdm/resolver/providers.py::BaseProvider._find_candidates",
+     "src/pdm/installers/installers.py::install_wheel",
+     "src/pdm/models/repositories/pypi.py::PyPIRepository._find_candidates"
+    ],
+    "pdm-project__pdm-3393": [
+     "src/pdm/project/core.py::Project.use_pyproject_dependencies",
+     "src/pdm/project/core.py::Project.add_dependencies",
+     "src/pdm/cli/commands/add.py::Command.do_add"
+    ],
+    "pdm-project__pdm-3419": [
+     "src/pdm/cli/commands/update.py::Command.do_update",
+     "src/pdm/project/lockfile.py::Lockfile.compare_groups",
+     "src/pdm/project/lockfile.py::Lockfile.set_data"
+    ],
+    "pdm-project__pdm-3420": [
+     "src/pdm/cli/commands/remove.py::Command.do_remove",
+     "src/pdm/cli/actions.py::do_sync",
+     "src/pdm/cli/filters.py::GroupSelection.validate"
+    ],
+    "pdm-project__pdm-3435": [
+     "src/pdm/project/core.py::Project.resolve_interpreter",
+     "src/pdm/utils.py::parse_version",
+     "src/pdm/project/core.py::Project.python"
+    ],
+    "pdm-project__pdm-3440": [
+     "src/pdm/installers/core.py::install_requirements",
+     "src/pdm/resolver/resolvelib.py::RLResolver.resolve",
+     "src/pdm/cli/commands/install.py::Command.install_plugins"
+    ],
+    "pdm-project__pdm-3455": [
+     "src/pdm/models/candidates.py::PreparedCandidate._unpack",
+     "src/pdm/resolver/providers.py::BaseProvider.get_dependencies",
+     "src/pdm/models/candidates.py::PreparedCandidate.prepare_metadata"
+    ],
+    "pdm-project__pdm-3555": [
+     "src/pdm/resolver/uv.py::UvResolver._build_lock_command",
+     "src/pdm/models/auth.py::PdmBasicAuth._get_auth_from_index_url",
+     "src/pdm/resolver/uv.py::UvResolver.resolve"
+    ]
+   },
+   "hits": {
+    "pdm-project__pdm-3136": false,
+    "pdm-project__pdm-3170": true,
+    "pdm-project__pdm-3191": true,
+    "pdm-project__pdm-3237": true,
+    "pdm-project__pdm-3250": false,
+    "pdm-project__pdm-3255": true,
+    "pdm-project__pdm-3314": true,
+    "pdm-project__pdm-3374": false,
+    "pdm-project__pdm-3393": true,
+    "pdm-project__pdm-3419": false,
+    "pdm-project__pdm-3420": true,
+    "pdm-project__pdm-3435": true,
+    "pdm-project__pdm-3440": false,
+    "pdm-project__pdm-3455": false,
+    "pdm-project__pdm-3555": true
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": -0.79,
+    "localization_lift_pts": 6.67
+   },
+   "metrics": {
+    "false_positive_rate": 0.7778,
+    "localization_rate": 0.6,
+    "n_false_positive": 35,
+    "n_flags": 45,
+    "n_localized": 9,
+    "n_tasks": 15,
+    "per_repo": {
+     "pdm-project/pdm": {
+      "false_positive_rate": 0.7778,
+      "localization_rate": 0.6,
+      "n_false_positive": 35,
+      "n_flags": 45,
+      "n_localized": 9,
+      "n_tasks": 15
+     }
+    }
+   },
+   "retrieved": {
+    "pdm-project__pdm-3136": [
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70"
+    ],
+    "pdm-project__pdm-3170": [
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70"
+    ],
+    "pdm-project__pdm-3191": [
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70",
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4"
+    ],
+    "pdm-project__pdm-3237": [
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70",
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4"
+    ],
+    "pdm-project__pdm-3250": [
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70",
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4"
+    ],
+    "pdm-project__pdm-3255": [
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70",
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4"
+    ],
+    "pdm-project__pdm-3314": [
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70",
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4"
+    ],
+    "pdm-project__pdm-3374": [
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70",
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4"
+    ],
+    "pdm-project__pdm-3393": [
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70",
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4"
+    ],
+    "pdm-project__pdm-3419": [
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70",
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4"
+    ],
+    "pdm-project__pdm-3420": [
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70",
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4"
+    ],
+    "pdm-project__pdm-3435": [
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4",
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70"
+    ],
+    "pdm-project__pdm-3440": [
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70",
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4"
+    ],
+    "pdm-project__pdm-3455": [
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70",
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4"
+    ],
+    "pdm-project__pdm-3555": [
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70",
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4"
+    ]
+   },
+   "scores": {
+    "pdm-project__pdm-3136": {
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70": 0.415268
+    },
+    "pdm-project__pdm-3170": {
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70": 0.205388
+    },
+    "pdm-project__pdm-3191": {
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4": 0.291933,
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70": 0.56645
+    },
+    "pdm-project__pdm-3237": {
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4": 0.395298,
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70": 0.483036
+    },
+    "pdm-project__pdm-3250": {
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4": 0.328433,
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70": 0.502378
+    },
+    "pdm-project__pdm-3255": {
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4": 0.373479,
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70": 0.469156
+    },
+    "pdm-project__pdm-3314": {
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4": 0.343982,
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70": 0.566071
+    },
+    "pdm-project__pdm-3374": {
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4": 0.226415,
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70": 0.42255
+    },
+    "pdm-project__pdm-3393": {
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4": 0.368346,
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70": 0.550835
+    },
+    "pdm-project__pdm-3419": {
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4": 0.245902,
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70": 0.566971
+    },
+    "pdm-project__pdm-3420": {
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4": 0.295483,
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70": 0.44526
+    },
+    "pdm-project__pdm-3435": {
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4": 0.448688,
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70": 0.437433
+    },
+    "pdm-project__pdm-3440": {
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4": 0.398712,
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70": 0.408707
+    },
+    "pdm-project__pdm-3455": {
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4": 0.373153,
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70": 0.49018
+    },
+    "pdm-project__pdm-3555": {
+     "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4": 0.309388,
+     "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70": 0.338348
+    }
+   },
+   "tau": 0.0,
+   "version": "rolling",
+   "versions": {
+    "pdm-project__pdm-3136": "1d1cfd1ed27d936d2b06714942ee7a8ca184406490108e7ef9a5f153c8ad3f35",
+    "pdm-project__pdm-3170": "1d1cfd1ed27d936d2b06714942ee7a8ca184406490108e7ef9a5f153c8ad3f35",
+    "pdm-project__pdm-3191": "b8fc96f2e07758525530a851d269cd607d33e920b15b61a995ff6e52b2f4c475",
+    "pdm-project__pdm-3237": "b8fc96f2e07758525530a851d269cd607d33e920b15b61a995ff6e52b2f4c475",
+    "pdm-project__pdm-3250": "b8fc96f2e07758525530a851d269cd607d33e920b15b61a995ff6e52b2f4c475",
+    "pdm-project__pdm-3255": "b8fc96f2e07758525530a851d269cd607d33e920b15b61a995ff6e52b2f4c475",
+    "pdm-project__pdm-3314": "b8fc96f2e07758525530a851d269cd607d33e920b15b61a995ff6e52b2f4c475",
+    "pdm-project__pdm-3374": "b8fc96f2e07758525530a851d269cd607d33e920b15b61a995ff6e52b2f4c475",
+    "pdm-project__pdm-3393": "b8fc96f2e07758525530a851d269cd607d33e920b15b61a995ff6e52b2f4c475",
+    "pdm-project__pdm-3419": "b8fc96f2e07758525530a851d269cd607d33e920b15b61a995ff6e52b2f4c475",
+    "pdm-project__pdm-3420": "b8fc96f2e07758525530a851d269cd607d33e920b15b61a995ff6e52b2f4c475",
+    "pdm-project__pdm-3435": "b8fc96f2e07758525530a851d269cd607d33e920b15b61a995ff6e52b2f4c475",
+    "pdm-project__pdm-3440": "b8fc96f2e07758525530a851d269cd607d33e920b15b61a995ff6e52b2f4c475",
+    "pdm-project__pdm-3455": "b8fc96f2e07758525530a851d269cd607d33e920b15b61a995ff6e52b2f4c475",
+    "pdm-project__pdm-3555": "b8fc96f2e07758525530a851d269cd607d33e920b15b61a995ff6e52b2f4c475"
+   }
+  }
+ },
+ "control": {
+  "false_positive_rate": 0.7857,
+  "localization_rate": 0.5333,
+  "n_false_positive": 33,
+  "n_flags": 42,
+  "n_localized": 8,
+  "n_tasks": 15,
+  "per_repo": {
+   "pdm-project/pdm": {
+    "false_positive_rate": 0.7857,
+    "localization_rate": 0.5333,
+    "n_false_positive": 33,
+    "n_flags": 42,
+    "n_localized": 8,
+    "n_tasks": 15
+   }
+  }
+ },
+ "control_flags": {
+  "pdm-project__pdm-3136": [
+   "src/pdm/cli/commands/add.py",
+   "src/pdm/project/project_file.py",
+   "src/pdm/cli/commands/add.py"
+  ],
+  "pdm-project__pdm-3170": [
+   "src/pdm/utils.py",
+   "src/pdm/utils.py",
+   "src/pdm/models/auth.py"
+  ],
+  "pdm-project__pdm-3191": [
+   "src/pdm/cli/actions.py",
+   "src/pdm/installers/base.py",
+   "src/pdm/cli/actions.py"
+  ],
+  "pdm-project__pdm-3237": [
+   "src/pdm/formats/uv.py",
+   "src/pdm/installers/uv.py",
+   "src/pdm/cli/commands/build.py"
+  ],
+  "pdm-project__pdm-3250": [
+   "src/pdm/cli/commands/lock.py",
+   "src/pdm/resolver/base.py",
+   "src/pdm/project/config.py"
+  ],
+  "pdm-project__pdm-3255": [
+   "src/pdm/utils.py",
+   "src/pdm/project/config.py",
+   "src/pdm/utils.py"
+  ],
+  "pdm-project__pdm-3314": [
+   "src/pdm/cli/utils.py",
+   "src/pdm/project/project_file.py",
+   "src/pdm/resolver/base.py"
+  ],
+  "pdm-project__pdm-3374": [
+   "src/pdm/models/repositories/pypi.py",
+   "src/pdm/installers/core.py",
+   "src/pdm/resolver/base.py"
+  ],
+  "pdm-project__pdm-3393": [
+   "src/pdm/project/core.py"
+  ],
+  "pdm-project__pdm-3419": [
+   "src/pdm/cli/commands/update.py",
+   "src/pdm/project/lockfile.py",
+   "src/pdm/project/lockfile.py"
+  ],
+  "pdm-project__pdm-3420": [
+   "src/pdm/cli/commands/remove.py",
+   "src/pdm/cli/actions.py",
+   "src/pdm/cli/filters.py"
+  ],
+  "pdm-project__pdm-3435": [
+   "src/pdm/project/core.py",
+   "src/pdm/project/core.py",
+   "src/pdm/project/core.py"
+  ],
+  "pdm-project__pdm-3440": [
+   "src/pdm/installers/core.py",
+   "src/pdm/resolver/resolvelib.py",
+   "src/pdm/cli/commands/install.py"
+  ],
+  "pdm-project__pdm-3455": [
+   "src/pdm/models/candidates.py",
+   "src/pdm/resolver/providers.py"
+  ],
+  "pdm-project__pdm-3555": [
+   "src/pdm/resolver/uv.py",
+   "src/pdm/project/config.py",
+   "src/pdm/resolver/uv.py"
+  ]
+ },
+ "errors": {},
+ "gold": {
+  "pdm-project__pdm-3136": [
+   "src/pdm/cli/commands/remove.py::Command.do_remove",
+   "src/pdm/project/core.py::Project.use_pyproject_dependencies"
+  ],
+  "pdm-project__pdm-3170": [
+   "src/pdm/utils.py::<module>",
+   "src/pdm/utils.py::expand_env_vars"
+  ],
+  "pdm-project__pdm-3191": [
+   "src/pdm/cli/actions.py::do_sync"
+  ],
+  "pdm-project__pdm-3237": [
+   "src/pdm/cli/commands/build.py::<module>",
+   "src/pdm/cli/commands/build.py::Command",
+   "src/pdm/cli/commands/build.py::Command.add_arguments",
+   "src/pdm/cli/commands/build.py::Command.do_build",
+   "src/pdm/cli/commands/build.py::Command.handle"
+  ],
+  "pdm-project__pdm-3250": [
+   "src/pdm/cli/commands/add.py::Command.do_add",
+   "src/pdm/cli/filters.py::<module>",
+   "src/pdm/cli/filters.py::GroupSelection._translated_groups",
+   "src/pdm/project/core.py::Project",
+   "src/pdm/project/core.py::Project.all_dependencies",
+   "src/pdm/project/core.py::Project.iter_groups",
+   "src/pdm/project/core.py::Project.use_pyproject_dependencies"
+  ],
+  "pdm-project__pdm-3255": [
+   "src/pdm/models/session.py::PDMPyPIClient.__init__"
+  ],
+  "pdm-project__pdm-3314": [
+   "src/pdm/cli/options.py::<module>",
+   "src/pdm/cli/utils.py::<module>",
+   "src/pdm/cli/utils.py::save_version_specifiers"
+  ],
+  "pdm-project__pdm-3374": [
+   "src/pdm/_types.py::RepositoryConfig",
+   "src/pdm/_types.py::RepositoryConfig.__post_init__",
+   "src/pdm/_types.py::RepositoryConfig.__rich__",
+   "src/pdm/_types.py::RepositoryConfig.populate_auth",
+   "src/pdm/cli/commands/publish/__init__.py::Command",
+   "src/pdm/cli/commands/publish/__init__.py::Command.get_repository",
+   "src/pdm/cli/commands/publish/__init__.py::Command.handle",
+   "src/pdm/models/auth.py::<module>",
+   "src/pdm/models/auth.py::Keyring",
+   "src/pdm/models/auth.py::Keyring.__init__",
+   "src/pdm/models/auth.py::Keyring.get_auth_info",
+   "src/pdm/models/auth.py::PdmBasicAuth",
+   "src/pdm/models/auth.py::PdmBasicAuth.__init__",
+   "src/pdm/models/auth.py::PdmBasicAuth._get_auth_from_index_url",
+   "src/pdm/models/auth.py::PdmBasicAuth._prompt_for_password",
+   "src/pdm/models/auth.py::PdmBasicAuth._should_save_password_to_keyring",
+   "src/pdm/project/config.py::Config.__getitem__",
+   "src/pdm/project/core.py::Project",
+   "src/pdm/project/core.py::Project.default_source",
+   "src/pdm/project/core.py::Project.get_sources",
+   "src/pdm/project/core.py::Project.sources"
+  ],
+  "pdm-project__pdm-3393": [
+   "src/pdm/project/core.py::<module>",
+   "src/pdm/project/core.py::Project.use_pyproject_dependencies"
+  ],
+  "pdm-project__pdm-3419": [
+   "src/pdm/cli/actions.py::do_lock",
+   "src/pdm/cli/actions.py::do_sync",
+   "src/pdm/cli/commands/export.py::Command.handle",
+   "src/pdm/cli/commands/list.py::Command.handle",
+   "src/pdm/project/core.py::<module>",
+   "src/pdm/project/core.py::Project",
+   "src/pdm/project/core.py::Project.all_dependencies",
+   "src/pdm/project/core.py::Project.default_source",
+   "src/pdm/project/core.py::Project.get_dependencies",
+   "src/pdm/project/core.py::Project.iter_groups",
+   "src/pdm/project/core.py::Project.python_requires",
+   "src/pdm/project/core.py::_resolve_dependency_group"
+  ],
+  "pdm-project__pdm-3420": [
+   "src/pdm/cli/commands/remove.py::Command.do_remove",
+   "src/pdm/cli/filters.py::GroupSelection",
+   "src/pdm/cli/filters.py::GroupSelection.__init__",
+   "src/pdm/cli/filters.py::GroupSelection._translated_groups",
+   "src/pdm/cli/filters.py::GroupSelection.from_options"
+  ],
+  "pdm-project__pdm-3435": [
+   "src/pdm/cli/commands/use.py::Command.do_use",
+   "src/pdm/cli/commands/venv/backends.py::Backend._resolved_interpreter",
+   "src/pdm/project/config.py::Config",
+   "src/pdm/project/core.py::Project.iter_interpreters",
+   "src/pdm/project/core.py::Project.resolve_interpreter"
+  ],
+  "pdm-project__pdm-3440": [
+   "src/pdm/cli/commands/run.py::TaskRunner._get_script_env",
+   "src/pdm/models/requirements.py::FileRequirement",
+   "src/pdm/models/requirements.py::FileRequirement._parse_url"
+  ],
+  "pdm-project__pdm-3455": [
+   "src/pdm/models/candidates.py::<module>",
+   "src/pdm/models/candidates.py::PreparedCandidate",
+   "src/pdm/models/candidates.py::PreparedCandidate._get_build_dir",
+   "src/pdm/models/candidates.py::PreparedCandidate._wheel_compatible"
+  ],
+  "pdm-project__pdm-3555": [
+   "src/pdm/_types.py::<module>",
+   "src/pdm/_types.py::RepositoryConfig",
+   "src/pdm/_types.py::RepositoryConfig.__rich__",
+   "src/pdm/_types.py::RepositoryConfig.url_with_credentials",
+   "src/pdm/installers/uv.py::<module>",
+   "src/pdm/installers/uv.py::QuietUvSynchronizer",
+   "src/pdm/installers/uv.py::QuietUvSynchronizer._get_sync_command",
+   "src/pdm/installers/uv.py::UvSynchronizer",
+   "src/pdm/installers/uv.py::UvSynchronizer._get_sync_command",
+   "src/pdm/installers/uv.py::UvSynchronizer.synchronize",
+   "src/pdm/resolver/uv.py::<module>",
+   "src/pdm/resolver/uv.py::UvResolver",
+   "src/pdm/resolver/uv.py::UvResolver.__post_init__",
+   "src/pdm/resolver/uv.py::UvResolver._build_lock_command",
+   "src/pdm/resolver/uv.py::UvResolver.resolve",
+   "src/pdm/utils.py::<module>",
+   "src/pdm/utils.py::get_requirement_from_override"
+  ]
+ },
+ "granularity": "function",
+ "learn_errors": {},
+ "lift": {
+  "false_positive_rise_pts": -0.79,
+  "localization_lift_pts": 6.67
+ },
+ "memory_locations": {
+  "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4": "src/pdm/utils.py::expand_env_vars",
+  "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70": "src/pdm/cli/commands/update.py::Command.do_update"
+ },
+ "mode": "rolling",
+ "n_errors": 0,
+ "n_eval": 15,
+ "retrieval_hit_rate": 1.0,
+ "retrieved": {
+  "pdm-project__pdm-3136": [
+   "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70"
+  ],
+  "pdm-project__pdm-3170": [
+   "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70"
+  ],
+  "pdm-project__pdm-3191": [
+   "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70",
+   "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4"
+  ],
+  "pdm-project__pdm-3237": [
+   "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70",
+   "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4"
+  ],
+  "pdm-project__pdm-3250": [
+   "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70",
+   "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4"
+  ],
+  "pdm-project__pdm-3255": [
+   "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70",
+   "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4"
+  ],
+  "pdm-project__pdm-3314": [
+   "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70",
+   "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4"
+  ],
+  "pdm-project__pdm-3374": [
+   "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70",
+   "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4"
+  ],
+  "pdm-project__pdm-3393": [
+   "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70",
+   "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4"
+  ],
+  "pdm-project__pdm-3419": [
+   "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70",
+   "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4"
+  ],
+  "pdm-project__pdm-3420": [
+   "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70",
+   "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4"
+  ],
+  "pdm-project__pdm-3435": [
+   "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4",
+   "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70"
+  ],
+  "pdm-project__pdm-3440": [
+   "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70",
+   "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4"
+  ],
+  "pdm-project__pdm-3455": [
+   "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70",
+   "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4"
+  ],
+  "pdm-project__pdm-3555": [
+   "e787f08694b3bf3b2c694cce26d0d7bcc6025ac95f0117f4ae6a2bd31a620e70",
+   "8452aa835f393167bfda2e1cf6f0d7cf6039533110e6ffb417b8c8d37f1591f4"
+  ]
+ },
+ "treatment": {
+  "false_positive_rate": 0.7778,
+  "localization_rate": 0.6,
+  "n_false_positive": 35,
+  "n_flags": 45,
+  "n_localized": 9,
+  "n_tasks": 15,
+  "per_repo": {
+   "pdm-project/pdm": {
+    "false_positive_rate": 0.7778,
+    "localization_rate": 0.6,
+    "n_false_positive": 35,
+    "n_flags": 45,
+    "n_localized": 9,
+    "n_tasks": 15
+   }
+  }
+ },
+ "treatment_flags": {
+  "pdm-project__pdm-3136": [
+   "src/pdm/cli/commands/add.py",
+   "src/pdm/project/project_file.py",
+   "src/pdm/cli/commands/add.py"
+  ],
+  "pdm-project__pdm-3170": [
+   "src/pdm/utils.py",
+   "src/pdm/utils.py",
+   "src/pdm/models/auth.py"
+  ],
+  "pdm-project__pdm-3191": [
+   "src/pdm/cli/actions.py",
+   "src/pdm/cli/actions.py",
+   "src/pdm/installers/base.py"
+  ],
+  "pdm-project__pdm-3237": [
+   "src/pdm/formats/uv.py",
+   "src/pdm/installers/uv.py",
+   "src/pdm/cli/commands/build.py"
+  ],
+  "pdm-project__pdm-3250": [
+   "src/pdm/cli/commands/lock.py",
+   "src/pdm/project/config.py",
+   "src/pdm/resolver/base.py"
+  ],
+  "pdm-project__pdm-3255": [
+   "src/pdm/models/session.py",
+   "src/pdm/utils.py",
+   "src/pdm/models/session.py"
+  ],
+  "pdm-project__pdm-3314": [
+   "src/pdm/cli/commands/update.py",
+   "src/pdm/cli/utils.py",
+   "src/pdm/project/project_file.py"
+  ],
+  "pdm-project__pdm-3374": [
+   "src/pdm/resolver/providers.py",
+   "src/pdm/installers/installers.py",
+   "src/pdm/models/repositories/pypi.py"
+  ],
+  "pdm-project__pdm-3393": [
+   "src/pdm/project/core.py",
+   "src/pdm/project/core.py",
+   "src/pdm/cli/commands/add.py"
+  ],
+  "pdm-project__pdm-3419": [
+   "src/pdm/cli/commands/update.py",
+   "src/pdm/project/lockfile.py",
+   "src/pdm/project/lockfile.py"
+  ],
+  "pdm-project__pdm-3420": [
+   "src/pdm/cli/commands/remove.py",
+   "src/pdm/cli/actions.py",
+   "src/pdm/cli/filters.py"
+  ],
+  "pdm-project__pdm-3435": [
+   "src/pdm/project/core.py",
+   "src/pdm/utils.py",
+   "src/pdm/project/core.py"
+  ],
+  "pdm-project__pdm-3440": [
+   "src/pdm/installers/core.py",
+   "src/pdm/resolver/resolvelib.py",
+   "src/pdm/cli/commands/install.py"
+  ],
+  "pdm-project__pdm-3455": [
+   "src/pdm/models/candidates.py",
+   "src/pdm/resolver/providers.py",
+   "src/pdm/models/candidates.py"
+  ],
+  "pdm-project__pdm-3555": [
+   "src/pdm/resolver/uv.py",
+   "src/pdm/models/auth.py",
+   "src/pdm/resolver/uv.py"
+  ]
+ },
+ "warmup": 20
+}

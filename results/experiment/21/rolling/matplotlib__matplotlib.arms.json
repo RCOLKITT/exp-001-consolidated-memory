@@ -1,0 +1,4579 @@
+{
+ "arms": {
+  "control": {
+   "file_hits": {
+    "matplotlib__matplotlib-28104": true,
+    "matplotlib__matplotlib-28116": true,
+    "matplotlib__matplotlib-28177": true,
+    "matplotlib__matplotlib-28261": true,
+    "matplotlib__matplotlib-28292": true,
+    "matplotlib__matplotlib-28306": true,
+    "matplotlib__matplotlib-28363": true,
+    "matplotlib__matplotlib-28388": false,
+    "matplotlib__matplotlib-28397": true,
+    "matplotlib__matplotlib-28401": true,
+    "matplotlib__matplotlib-28436": true,
+    "matplotlib__matplotlib-28437": true,
+    "matplotlib__matplotlib-28458": false,
+    "matplotlib__matplotlib-28465": true,
+    "matplotlib__matplotlib-28473": false,
+    "matplotlib__matplotlib-28478": false,
+    "matplotlib__matplotlib-28486": false,
+    "matplotlib__matplotlib-28487": true,
+    "matplotlib__matplotlib-28501": true,
+    "matplotlib__matplotlib-28504": true,
+    "matplotlib__matplotlib-28525": true,
+    "matplotlib__matplotlib-28573": true,
+    "matplotlib__matplotlib-28577": false,
+    "matplotlib__matplotlib-28584": true,
+    "matplotlib__matplotlib-28609": false,
+    "matplotlib__matplotlib-28629": true,
+    "matplotlib__matplotlib-28649": false,
+    "matplotlib__matplotlib-28734": false,
+    "matplotlib__matplotlib-28786": true,
+    "matplotlib__matplotlib-28830": true,
+    "matplotlib__matplotlib-28841": true,
+    "matplotlib__matplotlib-28853": true,
+    "matplotlib__matplotlib-28881": false,
+    "matplotlib__matplotlib-28933": false,
+    "matplotlib__matplotlib-28970": true,
+    "matplotlib__matplotlib-29007": true,
+    "matplotlib__matplotlib-29013": true,
+    "matplotlib__matplotlib-29052": true,
+    "matplotlib__matplotlib-29054": true,
+    "matplotlib__matplotlib-29209": true,
+    "matplotlib__matplotlib-29249": true,
+    "matplotlib__matplotlib-29258": true,
+    "matplotlib__matplotlib-29285": true,
+    "matplotlib__matplotlib-29317": false,
+    "matplotlib__matplotlib-29388": true,
+    "matplotlib__matplotlib-29401": true,
+    "matplotlib__matplotlib-29411": true,
+    "matplotlib__matplotlib-29431": false,
+    "matplotlib__matplotlib-29481": true,
+    "matplotlib__matplotlib-29486": true,
+    "matplotlib__matplotlib-29503": true,
+    "matplotlib__matplotlib-29520": true,
+    "matplotlib__matplotlib-29537": true,
+    "matplotlib__matplotlib-29612": true,
+    "matplotlib__matplotlib-29689": true,
+    "matplotlib__matplotlib-29696": true,
+    "matplotlib__matplotlib-29698": true,
+    "matplotlib__matplotlib-29719": true,
+    "matplotlib__matplotlib-29721": true,
+    "matplotlib__matplotlib-29781": true,
+    "matplotlib__matplotlib-29783": true,
+    "matplotlib__matplotlib-29798": true,
+    "matplotlib__matplotlib-29808": true,
+    "matplotlib__matplotlib-29873": true,
+    "matplotlib__matplotlib-29879": true,
+    "matplotlib__matplotlib-29892": true,
+    "matplotlib__matplotlib-29919": false,
+    "matplotlib__matplotlib-29958": true,
+    "matplotlib__matplotlib-29993": false,
+    "matplotlib__matplotlib-30030": true,
+    "matplotlib__matplotlib-30079": true,
+    "matplotlib__matplotlib-30089": true,
+    "matplotlib__matplotlib-30098": true,
+    "matplotlib__matplotlib-30186": false,
+    "matplotlib__matplotlib-30198": true,
+    "matplotlib__matplotlib-30223": true,
+    "matplotlib__matplotlib-30328": true,
+    "matplotlib__matplotlib-30363": true,
+    "matplotlib__matplotlib-30423": true,
+    "matplotlib__matplotlib-30467": true,
+    "matplotlib__matplotlib-30475": true
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.6866,
+    "localization_rate": 0.8228,
+    "n_false_positive": 149,
+    "n_flags": 217,
+    "n_localized": 65,
+    "n_tasks": 79,
+    "per_repo": {
+     "matplotlib/matplotlib": {
+      "false_positive_rate": 0.6866,
+      "localization_rate": 0.8228,
+      "n_false_positive": 149,
+      "n_flags": 217,
+      "n_localized": 65,
+      "n_tasks": 79
+     }
+    }
+   },
+   "flags": {
+    "matplotlib__matplotlib-28104": [
+     "lib/matplotlib/patches.py::Patch.set_hatch",
+     "lib/matplotlib/patches.py::Patch._draw_paths_with_artist_properties",
+     "lib/matplotlib/patches.py::Patch.get_hatch"
+    ],
+    "matplotlib__matplotlib-28116": [
+     "lib/matplotlib/cm.py::<module>",
+     "lib/matplotlib/cm.py::ColormapRegistry.register",
+     "lib/matplotlib/cm.py::_ensure_cmap"
+    ],
+    "matplotlib__matplotlib-28177": [
+     "lib/matplotlib/artist.py::Artist.get_figure"
+    ],
+    "matplotlib__matplotlib-28261": [
+     "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D._on_move"
+    ],
+    "matplotlib__matplotlib-28292": [
+     "lib/matplotlib/ticker.py::MaxNLocator._raw_ticks"
+    ],
+    "matplotlib__matplotlib-28306": [
+     "lib/matplotlib/projections/polar.py::PolarAxes.format_coord",
+     "lib/matplotlib/ticker.py::Formatter.__call__"
+    ],
+    "matplotlib__matplotlib-28363": [
+     "lib/matplotlib/figure.py::FigureBase.subfigures",
+     "lib/matplotlib/figure.py::FigureBase.add_subfigure",
+     "lib/matplotlib/figure.py::FigureBase.subplots"
+    ],
+    "matplotlib__matplotlib-28388": [],
+    "matplotlib__matplotlib-28397": [
+     "lib/matplotlib/figure.py::Figure.draw",
+     "lib/matplotlib/figure.py::FigureBase._get_draw_artists",
+     "lib/matplotlib/backends/backend_qt5agg.py::_BackendQT5Agg"
+    ],
+    "matplotlib__matplotlib-28401": [
+     "lib/matplotlib/text.py::Text._get_wrap_line_width",
+     "lib/matplotlib/text.py::Text.set_wrap"
+    ],
+    "matplotlib__matplotlib-28436": [
+     "lib/matplotlib/colors.py::_to_rgba_no_colorcycle",
+     "lib/matplotlib/lines.py::Line2D.set_color",
+     "lib/matplotlib/pyplot.py::plot"
+    ],
+    "matplotlib__matplotlib-28437": [
+     "lib/matplotlib/image.py::_ImageBase.make_image",
+     "lib/matplotlib/image.py::_ImageBase._make_image",
+     "lib/matplotlib/axes/_axes.py::Axes.imshow"
+    ],
+    "matplotlib__matplotlib-28458": [
+     "lib/matplotlib/image.py::_ImageBase._make_image",
+     "lib/matplotlib/image.py::_resample",
+     "lib/matplotlib/animation.py::Animation.save"
+    ],
+    "matplotlib__matplotlib-28465": [
+     "lib/matplotlib/figure.py::Figure.__getstate__",
+     "lib/matplotlib/figure.py::FigureBase.subfigures"
+    ],
+    "matplotlib__matplotlib-28473": [
+     "lib/matplotlib/rcsetup.py::validate_backend",
+     "lib/matplotlib/__init__.py::get_backend",
+     "lib/matplotlib/__init__.py::use"
+    ],
+    "matplotlib__matplotlib-28478": [
+     "lib/matplotlib/path.py::Path.simplify_threshold",
+     "lib/matplotlib/path.py::Path.cleaned",
+     "lib/matplotlib/path.py::Path._create_closed"
+    ],
+    "matplotlib__matplotlib-28486": [
+     "lib/matplotlib/axes/_axes.py::Axes.axvspan",
+     "lib/matplotlib/axis.py::Axis._set_lim",
+     "lib/matplotlib/patches.py::Rectangle.__init__"
+    ],
+    "matplotlib__matplotlib-28487": [
+     "lib/matplotlib/axes/_axes.py::Axes.axhspan",
+     "lib/matplotlib/dates.py::DateConverter.convert",
+     "lib/matplotlib/axes/_axes.py::Axes.plot_date"
+    ],
+    "matplotlib__matplotlib-28501": [
+     "lib/matplotlib/dates.py::ConciseDateFormatter.format_ticks"
+    ],
+    "matplotlib__matplotlib-28504": [
+     "lib/matplotlib/backends/backend_svg.py::RendererSVG._draw_text_as_text",
+     "lib/matplotlib/backends/backend_svg.py::RendererSVG.draw_text",
+     "lib/matplotlib/backends/backend_svg.py::RendererSVG._update_glyph_map_defs"
+    ],
+    "matplotlib__matplotlib-28525": [
+     "lib/mpl_toolkits/axes_grid1/axes_grid.py::ImageGrid.__init__",
+     "lib/mpl_toolkits/axes_grid1/axes_grid.py::ImageGrid._init_locators",
+     "lib/mpl_toolkits/axes_grid1/axes_grid.py::Grid.set_axes_pad"
+    ],
+    "matplotlib__matplotlib-28573": [
+     "lib/matplotlib/artist.py::Artist._update_props"
+    ],
+    "matplotlib__matplotlib-28577": [
+     "lib/matplotlib/_constrained_layout.py::reposition_axes",
+     "lib/matplotlib/_constrained_layout.py::make_layoutgrids",
+     "lib/matplotlib/figure.py::Figure.set_constrained_layout"
+    ],
+    "matplotlib__matplotlib-28584": [
+     "lib/matplotlib/axis.py::Axis.set_label_text",
+     "lib/matplotlib/axis.py::XAxis.set_label_position"
+    ],
+    "matplotlib__matplotlib-28609": [
+     "lib/matplotlib/lines.py::Line2D.draw",
+     "lib/matplotlib/artist.py::Artist.set_url",
+     "lib/matplotlib/lines.py::Line2D.set_linestyle"
+    ],
+    "matplotlib__matplotlib-28629": [
+     "lib/matplotlib/axis.py::Axis._get_ticklabel_bboxes",
+     "lib/matplotlib/_constrained_layout.py::make_layout_margins",
+     "lib/matplotlib/axis.py::Axis.get_tightbbox"
+    ],
+    "matplotlib__matplotlib-28649": [
+     "lib/matplotlib/image.py::AxesImage.get_cursor_data",
+     "lib/matplotlib/image.py::NonUniformImage.get_cursor_data",
+     "lib/matplotlib/axes/_axes.py::Axes.imshow"
+    ],
+    "matplotlib__matplotlib-28734": [
+     "lib/matplotlib/figure.py::FigureBase.suptitle",
+     "lib/matplotlib/figure.py::FigureBase.subplots_adjust",
+     "lib/matplotlib/gridspec.py::GridSpec.tight_layout"
+    ],
+    "matplotlib__matplotlib-28786": [
+     "lib/matplotlib/contour.py::ContourSet._process_colors",
+     "lib/matplotlib/contour.py::ContourSet.__init__",
+     "lib/matplotlib/colors.py::Colormap.set_over"
+    ],
+    "matplotlib__matplotlib-28830": [
+     "lib/matplotlib/table.py::Table.__init__",
+     "lib/matplotlib/table.py::table"
+    ],
+    "matplotlib__matplotlib-28841": [
+     "lib/matplotlib/rcsetup.py::ValidateInStrings.__call__",
+     "lib/matplotlib/rcsetup.py::_make_type_validator",
+     "lib/matplotlib/rcsetup.py::validate_any"
+    ],
+    "matplotlib__matplotlib-28853": [
+     "lib/matplotlib/axes/_axes.py::Axes.pcolorfast",
+     "lib/matplotlib/axes/_axes.py::Axes._pcolorargs"
+    ],
+    "matplotlib__matplotlib-28881": [
+     "lib/matplotlib/axes/_axes.py::Axes.axline",
+     "lib/matplotlib/pyplot.py::axline"
+    ],
+    "matplotlib__matplotlib-28933": [
+     "lib/matplotlib/axes/_axes.py::Axes.axline",
+     "lib/matplotlib/axes/_axes.py::Axes.set_title",
+     "lib/matplotlib/axes/_axes.py::<module>"
+    ],
+    "matplotlib__matplotlib-28970": [
+     "lib/matplotlib/axis.py::Axis.update_units",
+     "lib/matplotlib/axis.py::Axis._update_axisinfo",
+     "lib/matplotlib/units.py::Registry.get_converter"
+    ],
+    "matplotlib__matplotlib-29007": [
+     "lib/matplotlib/figure.py::Figure.__init__",
+     "lib/matplotlib/figure.py::Figure",
+     "lib/matplotlib/pyplot.py::figure"
+    ],
+    "matplotlib__matplotlib-29013": [
+     "lib/matplotlib/figure.py::FigureBase.autofmt_xdate",
+     "lib/matplotlib/_constrained_layout.py::reposition_colorbar",
+     "lib/matplotlib/_constrained_layout.py::do_constrained_layout"
+    ],
+    "matplotlib__matplotlib-29052": [
+     "lib/matplotlib/colors.py::LinearSegmentedColormap.from_list"
+    ],
+    "matplotlib__matplotlib-29054": [
+     "lib/matplotlib/ticker.py::LogFormatter.__init__",
+     "lib/matplotlib/ticker.py::LogFormatter.set_locs",
+     "lib/matplotlib/ticker.py::LogFormatter.set_label_minor"
+    ],
+    "matplotlib__matplotlib-29209": [
+     "lib/matplotlib/axes/_axes.py::Axes.pcolormesh"
+    ],
+    "matplotlib__matplotlib-29249": [
+     "lib/matplotlib/axis.py::Axis.get_tick_params"
+    ],
+    "matplotlib__matplotlib-29258": [
+     "lib/matplotlib/table.py::Table.set_fontsize",
+     "lib/matplotlib/pyplot.py::table",
+     "lib/matplotlib/table.py::Cell.set_fontsize"
+    ],
+    "matplotlib__matplotlib-29285": [
+     "lib/mpl_toolkits/mplot3d/art3d.py::_generate_normals"
+    ],
+    "matplotlib__matplotlib-29317": [
+     "lib/matplotlib/figure.py::Figure.savefig"
+    ],
+    "matplotlib__matplotlib-29388": [
+     "lib/matplotlib/axis.py::Axis._get_ticks_position",
+     "lib/matplotlib/axis.py::Axis.set_tick_params"
+    ],
+    "matplotlib__matplotlib-29401": [
+     "lib/matplotlib/axes/_axes.py::Axes.legend",
+     "lib/matplotlib/legend.py::Legend._auto_legend_data"
+    ],
+    "matplotlib__matplotlib-29411": [
+     "lib/matplotlib/axes/_base.py::_AxesBase.__init__"
+    ],
+    "matplotlib__matplotlib-29431": [
+     "lib/matplotlib/backends/backend_pdf.py::PdfFile.embedTTF",
+     "lib/matplotlib/backends/backend_pdf.py::PdfFile.writeFonts",
+     "lib/matplotlib/font_manager.py::FontManager.findfont"
+    ],
+    "matplotlib__matplotlib-29481": [
+     "lib/matplotlib/rcsetup.py::validate_color_or_inherit",
+     "lib/matplotlib/rcsetup.py::_validate_linestyle",
+     "lib/matplotlib/pyplot.py::grid"
+    ],
+    "matplotlib__matplotlib-29486": [
+     "lib/matplotlib/axes/_axes.py::Axes.stem",
+     "lib/matplotlib/projections/polar.py::PolarAxes._set_lim_and_transforms",
+     "lib/matplotlib/lines.py::Line2D.draw"
+    ],
+    "matplotlib__matplotlib-29503": [
+     "lib/matplotlib/axes/_axes.py::Axes.barh",
+     "lib/matplotlib/pyplot.py::barh"
+    ],
+    "matplotlib__matplotlib-29520": [
+     "lib/matplotlib/animation.py::PillowWriter.grab_frame",
+     "lib/matplotlib/animation.py::PillowWriter.finish",
+     "lib/matplotlib/animation.py::PillowWriter.setup"
+    ],
+    "matplotlib__matplotlib-29537": [
+     "lib/matplotlib/ticker.py::ScalarFormatter.set_useOffset",
+     "lib/matplotlib/ticker.py::ScalarFormatter.__init__",
+     "lib/matplotlib/ticker.py::ScalarFormatter.get_useOffset"
+    ],
+    "matplotlib__matplotlib-29612": [
+     "lib/matplotlib/rcsetup.py::ValidateInStrings.__call__",
+     "lib/matplotlib/figure.py::Figure.__init__",
+     "lib/matplotlib/pyplot.py::figure"
+    ],
+    "matplotlib__matplotlib-29689": [
+     "lib/matplotlib/sphinxext/plot_directive.py::PlotDirective.run",
+     "lib/matplotlib/sphinxext/plot_directive.py::render_figures",
+     "lib/matplotlib/sphinxext/plot_directive.py::_parse_srcset"
+    ],
+    "matplotlib__matplotlib-29696": [
+     "lib/matplotlib/axes/_axes.py::Axes.bar_label",
+     "lib/matplotlib/pyplot.py::bar_label",
+     "lib/matplotlib/axes/_axes.py::Axes._parse_bar_color_args"
+    ],
+    "matplotlib__matplotlib-29698": [
+     "lib/matplotlib/ticker.py::LogLocator.tick_values",
+     "lib/matplotlib/ticker.py::LogLocator.__init__",
+     "lib/matplotlib/ticker.py::LogLocator._set_subs"
+    ],
+    "matplotlib__matplotlib-29719": [
+     "lib/matplotlib/axes/_axes.py::Axes.hist"
+    ],
+    "matplotlib__matplotlib-29721": [
+     "lib/matplotlib/pyplot.py::switch_backend",
+     "lib/matplotlib/pyplot.py::_get_backend_mod",
+     "lib/matplotlib/rcsetup.py::validate_backend"
+    ],
+    "matplotlib__matplotlib-29781": [
+     "lib/matplotlib/backend_bases.py::FigureCanvasBase.get_default_filename"
+    ],
+    "matplotlib__matplotlib-29783": [
+     "lib/matplotlib/axes/_axes.py::Axes.pcolormesh"
+    ],
+    "matplotlib__matplotlib-29798": [
+     "lib/matplotlib/projections/polar.py::PolarAxes.set_rticks",
+     "lib/matplotlib/projections/polar.py::PolarAxes.set_rlim",
+     "lib/matplotlib/axes/_base.py::_AxesBase.autoscale_view"
+    ],
+    "matplotlib__matplotlib-29808": [
+     "lib/matplotlib/rcsetup.py::validate_color_for_prop_cycle",
+     "lib/matplotlib/rcsetup.py::validate_cycler",
+     "lib/matplotlib/rcsetup.py::cycler"
+    ],
+    "matplotlib__matplotlib-29873": [
+     "lib/matplotlib/axes/_axes.py::Axes.pie",
+     "lib/matplotlib/pyplot.py::pie"
+    ],
+    "matplotlib__matplotlib-29879": [
+     "lib/matplotlib/pyplot.py::errorbar",
+     "lib/matplotlib/lines.py::Line2D.set_linestyle"
+    ],
+    "matplotlib__matplotlib-29892": [
+     "lib/matplotlib/image.py::_ImageBase.draw",
+     "lib/matplotlib/image.py::_ImageBase._make_image",
+     "lib/matplotlib/backends/backend_qt.py::FigureCanvasQT.resizeEvent"
+    ],
+    "matplotlib__matplotlib-29919": [
+     "lib/matplotlib/projections/geo.py::MollweideAxes._get_core_transform",
+     "lib/matplotlib/axes/_axes.py::Axes.contourf"
+    ],
+    "matplotlib__matplotlib-29958": [],
+    "matplotlib__matplotlib-29993": [
+     "lib/matplotlib/testing/widgets.py::click_and_drag",
+     "lib/matplotlib/widgets.py::RangeSlider",
+     "lib/matplotlib/testing/widgets.py::mock_event"
+    ],
+    "matplotlib__matplotlib-30030": [
+     "lib/matplotlib/__init__.py::rc",
+     "lib/matplotlib/pyplot.py::rc"
+    ],
+    "matplotlib__matplotlib-30079": [
+     "lib/matplotlib/legend.py::Legend.__init__",
+     "lib/matplotlib/axes/_axes.py::Axes.legend",
+     "lib/matplotlib/pyplot.py::legend"
+    ],
+    "matplotlib__matplotlib-30089": [
+     "lib/matplotlib/figure.py::Figure.tight_layout",
+     "lib/matplotlib/_constrained_layout.py::do_constrained_layout",
+     "lib/matplotlib/gridspec.py::GridSpec.tight_layout"
+    ],
+    "matplotlib__matplotlib-30098": [
+     "lib/matplotlib/colorbar.py::Colorbar.__init__"
+    ],
+    "matplotlib__matplotlib-30186": [
+     "lib/matplotlib/legend.py::Legend.__init__",
+     "lib/matplotlib/axes/_axes.py::Axes.legend"
+    ],
+    "matplotlib__matplotlib-30198": [
+     "lib/matplotlib/path.py::Path.__deepcopy__",
+     "lib/matplotlib/path.py::Path.copy",
+     "lib/matplotlib/path.py::<module>"
+    ],
+    "matplotlib__matplotlib-30223": [
+     "lib/matplotlib/projections/polar.py::PolarAxes.set_rorigin",
+     "lib/matplotlib/projections/polar.py::PolarTransform._get_rorigin",
+     "lib/matplotlib/projections/polar.py::PolarAxes._set_lim_and_transforms"
+    ],
+    "matplotlib__matplotlib-30328": [
+     "lib/matplotlib/legend.py::Legend.__init__"
+    ],
+    "matplotlib__matplotlib-30363": [
+     "lib/matplotlib/pyplot.py::savefig",
+     "lib/matplotlib/backend_bases.py::FigureCanvasBase.print_figure",
+     "lib/matplotlib/image.py::imsave"
+    ],
+    "matplotlib__matplotlib-30423": [
+     "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D.auto_scale_xyz"
+    ],
+    "matplotlib__matplotlib-30467": [
+     "lib/matplotlib/axis.py::Axis._get_ticklabel_bboxes",
+     "lib/matplotlib/axis.py::Axis.get_tightbbox"
+    ],
+    "matplotlib__matplotlib-30475": [
+     "lib/matplotlib/transforms.py::Transform.contains_branch_seperately",
+     "lib/matplotlib/transforms.py::_BlendedMixin.contains_branch_seperately",
+     "lib/matplotlib/transforms.py::CompositeGenericTransform.contains_branch_seperately"
+    ]
+   },
+   "hits": {
+    "matplotlib__matplotlib-28104": true,
+    "matplotlib__matplotlib-28116": false,
+    "matplotlib__matplotlib-28177": true,
+    "matplotlib__matplotlib-28261": true,
+    "matplotlib__matplotlib-28292": true,
+    "matplotlib__matplotlib-28306": true,
+    "matplotlib__matplotlib-28363": true,
+    "matplotlib__matplotlib-28388": false,
+    "matplotlib__matplotlib-28397": false,
+    "matplotlib__matplotlib-28401": true,
+    "matplotlib__matplotlib-28436": true,
+    "matplotlib__matplotlib-28437": true,
+    "matplotlib__matplotlib-28465": false,
+    "matplotlib__matplotlib-28473": false,
+    "matplotlib__matplotlib-28486": false,
+    "matplotlib__matplotlib-28487": true,
+    "matplotlib__matplotlib-28501": true,
+    "matplotlib__matplotlib-28504": true,
+    "matplotlib__matplotlib-28525": true,
+    "matplotlib__matplotlib-28573": true,
+    "matplotlib__matplotlib-28577": false,
+    "matplotlib__matplotlib-28584": false,
+    "matplotlib__matplotlib-28609": false,
+    "matplotlib__matplotlib-28629": true,
+    "matplotlib__matplotlib-28649": false,
+    "matplotlib__matplotlib-28734": false,
+    "matplotlib__matplotlib-28786": true,
+    "matplotlib__matplotlib-28830": true,
+    "matplotlib__matplotlib-28841": false,
+    "matplotlib__matplotlib-28853": true,
+    "matplotlib__matplotlib-28881": false,
+    "matplotlib__matplotlib-28933": false,
+    "matplotlib__matplotlib-28970": true,
+    "matplotlib__matplotlib-29007": true,
+    "matplotlib__matplotlib-29013": true,
+    "matplotlib__matplotlib-29052": false,
+    "matplotlib__matplotlib-29054": true,
+    "matplotlib__matplotlib-29209": false,
+    "matplotlib__matplotlib-29249": true,
+    "matplotlib__matplotlib-29258": false,
+    "matplotlib__matplotlib-29285": true,
+    "matplotlib__matplotlib-29317": false,
+    "matplotlib__matplotlib-29388": true,
+    "matplotlib__matplotlib-29401": false,
+    "matplotlib__matplotlib-29411": true,
+    "matplotlib__matplotlib-29431": false,
+    "matplotlib__matplotlib-29481": true,
+    "matplotlib__matplotlib-29486": true,
+    "matplotlib__matplotlib-29503": false,
+    "matplotlib__matplotlib-29520": true,
+    "matplotlib__matplotlib-29537": true,
+    "matplotlib__matplotlib-29612": true,
+    "matplotlib__matplotlib-29689": false,
+    "matplotlib__matplotlib-29696": true,
+    "matplotlib__matplotlib-29698": true,
+    "matplotlib__matplotlib-29719": true,
+    "matplotlib__matplotlib-29721": false,
+    "matplotlib__matplotlib-29781": true,
+    "matplotlib__matplotlib-29783": true,
+    "matplotlib__matplotlib-29798": true,
+    "matplotlib__matplotlib-29808": false,
+    "matplotlib__matplotlib-29873": true,
+    "matplotlib__matplotlib-29879": true,
+    "matplotlib__matplotlib-29892": true,
+    "matplotlib__matplotlib-29919": false,
+    "matplotlib__matplotlib-29958": false,
+    "matplotlib__matplotlib-29993": false,
+    "matplotlib__matplotlib-30030": true,
+    "matplotlib__matplotlib-30079": true,
+    "matplotlib__matplotlib-30089": false,
+    "matplotlib__matplotlib-30098": false,
+    "matplotlib__matplotlib-30186": false,
+    "matplotlib__matplotlib-30198": true,
+    "matplotlib__matplotlib-30223": true,
+    "matplotlib__matplotlib-30328": true,
+    "matplotlib__matplotlib-30363": false,
+    "matplotlib__matplotlib-30423": false,
+    "matplotlib__matplotlib-30467": true,
+    "matplotlib__matplotlib-30475": true
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.6961,
+    "localization_rate": 0.5949,
+    "n_false_positive": 126,
+    "n_flags": 181,
+    "n_localized": 47,
+    "n_tasks": 79,
+    "per_repo": {
+     "matplotlib/matplotlib": {
+      "false_positive_rate": 0.6961,
+      "localization_rate": 0.5949,
+      "n_false_positive": 126,
+      "n_flags": 181,
+      "n_localized": 47,
+      "n_tasks": 79
+     }
+    }
+   },
+   "retrieved": {
+    "matplotlib__matplotlib-28104": [],
+    "matplotlib__matplotlib-28116": [],
+    "matplotlib__matplotlib-28177": [],
+    "matplotlib__matplotlib-28261": [],
+    "matplotlib__matplotlib-28292": [],
+    "matplotlib__matplotlib-28306": [],
+    "matplotlib__matplotlib-28363": [],
+    "matplotlib__matplotlib-28388": [],
+    "matplotlib__matplotlib-28397": [],
+    "matplotlib__matplotlib-28401": [],
+    "matplotlib__matplotlib-28436": [],
+    "matplotlib__matplotlib-28437": [],
+    "matplotlib__matplotlib-28458": [],
+    "matplotlib__matplotlib-28465": [],
+    "matplotlib__matplotlib-28473": [],
+    "matplotlib__matplotlib-28478": [],
+    "matplotlib__matplotlib-28486": [],
+    "matplotlib__matplotlib-28487": [],
+    "matplotlib__matplotlib-28501": [],
+    "matplotlib__matplotlib-28504": [],
+    "matplotlib__matplotlib-28525": [],
+    "matplotlib__matplotlib-28573": [],
+    "matplotlib__matplotlib-28577": [],
+    "matplotlib__matplotlib-28584": [],
+    "matplotlib__matplotlib-28609": [],
+    "matplotlib__matplotlib-28629": [],
+    "matplotlib__matplotlib-28649": [],
+    "matplotlib__matplotlib-28734": [],
+    "matplotlib__matplotlib-28786": [],
+    "matplotlib__matplotlib-28830": [],
+    "matplotlib__matplotlib-28841": [],
+    "matplotlib__matplotlib-28853": [],
+    "matplotlib__matplotlib-28881": [],
+    "matplotlib__matplotlib-28933": [],
+    "matplotlib__matplotlib-28970": [],
+    "matplotlib__matplotlib-29007": [],
+    "matplotlib__matplotlib-29013": [],
+    "matplotlib__matplotlib-29052": [],
+    "matplotlib__matplotlib-29054": [],
+    "matplotlib__matplotlib-29209": [],
+    "matplotlib__matplotlib-29249": [],
+    "matplotlib__matplotlib-29258": [],
+    "matplotlib__matplotlib-29285": [],
+    "matplotlib__matplotlib-29317": [],
+    "matplotlib__matplotlib-29388": [],
+    "matplotlib__matplotlib-29401": [],
+    "matplotlib__matplotlib-29411": [],
+    "matplotlib__matplotlib-29431": [],
+    "matplotlib__matplotlib-29481": [],
+    "matplotlib__matplotlib-29486": [],
+    "matplotlib__matplotlib-29503": [],
+    "matplotlib__matplotlib-29520": [],
+    "matplotlib__matplotlib-29537": [],
+    "matplotlib__matplotlib-29612": [],
+    "matplotlib__matplotlib-29689": [],
+    "matplotlib__matplotlib-29696": [],
+    "matplotlib__matplotlib-29698": [],
+    "matplotlib__matplotlib-29719": [],
+    "matplotlib__matplotlib-29721": [],
+    "matplotlib__matplotlib-29781": [],
+    "matplotlib__matplotlib-29783": [],
+    "matplotlib__matplotlib-29798": [],
+    "matplotlib__matplotlib-29808": [],
+    "matplotlib__matplotlib-29873": [],
+    "matplotlib__matplotlib-29879": [],
+    "matplotlib__matplotlib-29892": [],
+    "matplotlib__matplotlib-29919": [],
+    "matplotlib__matplotlib-29958": [],
+    "matplotlib__matplotlib-29993": [],
+    "matplotlib__matplotlib-30030": [],
+    "matplotlib__matplotlib-30079": [],
+    "matplotlib__matplotlib-30089": [],
+    "matplotlib__matplotlib-30098": [],
+    "matplotlib__matplotlib-30186": [],
+    "matplotlib__matplotlib-30198": [],
+    "matplotlib__matplotlib-30223": [],
+    "matplotlib__matplotlib-30328": [],
+    "matplotlib__matplotlib-30363": [],
+    "matplotlib__matplotlib-30423": [],
+    "matplotlib__matplotlib-30467": [],
+    "matplotlib__matplotlib-30475": []
+   },
+   "scores": {
+    "matplotlib__matplotlib-28104": {},
+    "matplotlib__matplotlib-28116": {},
+    "matplotlib__matplotlib-28177": {},
+    "matplotlib__matplotlib-28261": {},
+    "matplotlib__matplotlib-28292": {},
+    "matplotlib__matplotlib-28306": {},
+    "matplotlib__matplotlib-28363": {},
+    "matplotlib__matplotlib-28388": {},
+    "matplotlib__matplotlib-28397": {},
+    "matplotlib__matplotlib-28401": {},
+    "matplotlib__matplotlib-28436": {},
+    "matplotlib__matplotlib-28437": {},
+    "matplotlib__matplotlib-28458": {},
+    "matplotlib__matplotlib-28465": {},
+    "matplotlib__matplotlib-28473": {},
+    "matplotlib__matplotlib-28478": {},
+    "matplotlib__matplotlib-28486": {},
+    "matplotlib__matplotlib-28487": {},
+    "matplotlib__matplotlib-28501": {},
+    "matplotlib__matplotlib-28504": {},
+    "matplotlib__matplotlib-28525": {},
+    "matplotlib__matplotlib-28573": {},
+    "matplotlib__matplotlib-28577": {},
+    "matplotlib__matplotlib-28584": {},
+    "matplotlib__matplotlib-28609": {},
+    "matplotlib__matplotlib-28629": {},
+    "matplotlib__matplotlib-28649": {},
+    "matplotlib__matplotlib-28734": {},
+    "matplotlib__matplotlib-28786": {},
+    "matplotlib__matplotlib-28830": {},
+    "matplotlib__matplotlib-28841": {},
+    "matplotlib__matplotlib-28853": {},
+    "matplotlib__matplotlib-28881": {},
+    "matplotlib__matplotlib-28933": {},
+    "matplotlib__matplotlib-28970": {},
+    "matplotlib__matplotlib-29007": {},
+    "matplotlib__matplotlib-29013": {},
+    "matplotlib__matplotlib-29052": {},
+    "matplotlib__matplotlib-29054": {},
+    "matplotlib__matplotlib-29209": {},
+    "matplotlib__matplotlib-29249": {},
+    "matplotlib__matplotlib-29258": {},
+    "matplotlib__matplotlib-29285": {},
+    "matplotlib__matplotlib-29317": {},
+    "matplotlib__matplotlib-29388": {},
+    "matplotlib__matplotlib-29401": {},
+    "matplotlib__matplotlib-29411": {},
+    "matplotlib__matplotlib-29431": {},
+    "matplotlib__matplotlib-29481": {},
+    "matplotlib__matplotlib-29486": {},
+    "matplotlib__matplotlib-29503": {},
+    "matplotlib__matplotlib-29520": {},
+    "matplotlib__matplotlib-29537": {},
+    "matplotlib__matplotlib-29612": {},
+    "matplotlib__matplotlib-29689": {},
+    "matplotlib__matplotlib-29696": {},
+    "matplotlib__matplotlib-29698": {},
+    "matplotlib__matplotlib-29719": {},
+    "matplotlib__matplotlib-29721": {},
+    "matplotlib__matplotlib-29781": {},
+    "matplotlib__matplotlib-29783": {},
+    "matplotlib__matplotlib-29798": {},
+    "matplotlib__matplotlib-29808": {},
+    "matplotlib__matplotlib-29873": {},
+    "matplotlib__matplotlib-29879": {},
+    "matplotlib__matplotlib-29892": {},
+    "matplotlib__matplotlib-29919": {},
+    "matplotlib__matplotlib-29958": {},
+    "matplotlib__matplotlib-29993": {},
+    "matplotlib__matplotlib-30030": {},
+    "matplotlib__matplotlib-30079": {},
+    "matplotlib__matplotlib-30089": {},
+    "matplotlib__matplotlib-30098": {},
+    "matplotlib__matplotlib-30186": {},
+    "matplotlib__matplotlib-30198": {},
+    "matplotlib__matplotlib-30223": {},
+    "matplotlib__matplotlib-30328": {},
+    "matplotlib__matplotlib-30363": {},
+    "matplotlib__matplotlib-30423": {},
+    "matplotlib__matplotlib-30467": {},
+    "matplotlib__matplotlib-30475": {}
+   },
+   "tau": 0.0,
+   "version": null,
+   "versions": {
+    "matplotlib__matplotlib-28104": null,
+    "matplotlib__matplotlib-28116": null,
+    "matplotlib__matplotlib-28177": null,
+    "matplotlib__matplotlib-28261": null,
+    "matplotlib__matplotlib-28292": null,
+    "matplotlib__matplotlib-28306": null,
+    "matplotlib__matplotlib-28363": null,
+    "matplotlib__matplotlib-28388": null,
+    "matplotlib__matplotlib-28397": null,
+    "matplotlib__matplotlib-28401": null,
+    "matplotlib__matplotlib-28436": null,
+    "matplotlib__matplotlib-28437": null,
+    "matplotlib__matplotlib-28458": null,
+    "matplotlib__matplotlib-28465": null,
+    "matplotlib__matplotlib-28473": null,
+    "matplotlib__matplotlib-28478": null,
+    "matplotlib__matplotlib-28486": null,
+    "matplotlib__matplotlib-28487": null,
+    "matplotlib__matplotlib-28501": null,
+    "matplotlib__matplotlib-28504": null,
+    "matplotlib__matplotlib-28525": null,
+    "matplotlib__matplotlib-28573": null,
+    "matplotlib__matplotlib-28577": null,
+    "matplotlib__matplotlib-28584": null,
+    "matplotlib__matplotlib-28609": null,
+    "matplotlib__matplotlib-28629": null,
+    "matplotlib__matplotlib-28649": null,
+    "matplotlib__matplotlib-28734": null,
+    "matplotlib__matplotlib-28786": null,
+    "matplotlib__matplotlib-28830": null,
+    "matplotlib__matplotlib-28841": null,
+    "matplotlib__matplotlib-28853": null,
+    "matplotlib__matplotlib-28881": null,
+    "matplotlib__matplotlib-28933": null,
+    "matplotlib__matplotlib-28970": null,
+    "matplotlib__matplotlib-29007": null,
+    "matplotlib__matplotlib-29013": null,
+    "matplotlib__matplotlib-29052": null,
+    "matplotlib__matplotlib-29054": null,
+    "matplotlib__matplotlib-29209": null,
+    "matplotlib__matplotlib-29249": null,
+    "matplotlib__matplotlib-29258": null,
+    "matplotlib__matplotlib-29285": null,
+    "matplotlib__matplotlib-29317": null,
+    "matplotlib__matplotlib-29388": null,
+    "matplotlib__matplotlib-29401": null,
+    "matplotlib__matplotlib-29411": null,
+    "matplotlib__matplotlib-29431": null,
+    "matplotlib__matplotlib-29481": null,
+    "matplotlib__matplotlib-29486": null,
+    "matplotlib__matplotlib-29503": null,
+    "matplotlib__matplotlib-29520": null,
+    "matplotlib__matplotlib-29537": null,
+    "matplotlib__matplotlib-29612": null,
+    "matplotlib__matplotlib-29689": null,
+    "matplotlib__matplotlib-29696": null,
+    "matplotlib__matplotlib-29698": null,
+    "matplotlib__matplotlib-29719": null,
+    "matplotlib__matplotlib-29721": null,
+    "matplotlib__matplotlib-29781": null,
+    "matplotlib__matplotlib-29783": null,
+    "matplotlib__matplotlib-29798": null,
+    "matplotlib__matplotlib-29808": null,
+    "matplotlib__matplotlib-29873": null,
+    "matplotlib__matplotlib-29879": null,
+    "matplotlib__matplotlib-29892": null,
+    "matplotlib__matplotlib-29919": null,
+    "matplotlib__matplotlib-29958": null,
+    "matplotlib__matplotlib-29993": null,
+    "matplotlib__matplotlib-30030": null,
+    "matplotlib__matplotlib-30079": null,
+    "matplotlib__matplotlib-30089": null,
+    "matplotlib__matplotlib-30098": null,
+    "matplotlib__matplotlib-30186": null,
+    "matplotlib__matplotlib-30198": null,
+    "matplotlib__matplotlib-30223": null,
+    "matplotlib__matplotlib-30328": null,
+    "matplotlib__matplotlib-30363": null,
+    "matplotlib__matplotlib-30423": null,
+    "matplotlib__matplotlib-30467": null,
+    "matplotlib__matplotlib-30475": null
+   }
+  },
+  "gated": {
+   "file_hits": {
+    "matplotlib__matplotlib-28104": true,
+    "matplotlib__matplotlib-28116": true,
+    "matplotlib__matplotlib-28177": true,
+    "matplotlib__matplotlib-28261": true,
+    "matplotlib__matplotlib-28292": true,
+    "matplotlib__matplotlib-28306": true,
+    "matplotlib__matplotlib-28363": true,
+    "matplotlib__matplotlib-28388": false,
+    "matplotlib__matplotlib-28397": true,
+    "matplotlib__matplotlib-28401": true,
+    "matplotlib__matplotlib-28436": true,
+    "matplotlib__matplotlib-28437": true,
+    "matplotlib__matplotlib-28458": false,
+    "matplotlib__matplotlib-28465": true,
+    "matplotlib__matplotlib-28473": false,
+    "matplotlib__matplotlib-28478": false,
+    "matplotlib__matplotlib-28486": false,
+    "matplotlib__matplotlib-28487": true,
+    "matplotlib__matplotlib-28501": true,
+    "matplotlib__matplotlib-28504": true,
+    "matplotlib__matplotlib-28525": true,
+    "matplotlib__matplotlib-28573": true,
+    "matplotlib__matplotlib-28577": false,
+    "matplotlib__matplotlib-28584": true,
+    "matplotlib__matplotlib-28609": false,
+    "matplotlib__matplotlib-28629": true,
+    "matplotlib__matplotlib-28649": false,
+    "matplotlib__matplotlib-28734": false,
+    "matplotlib__matplotlib-28786": true,
+    "matplotlib__matplotlib-28830": true,
+    "matplotlib__matplotlib-28841": true,
+    "matplotlib__matplotlib-28853": true,
+    "matplotlib__matplotlib-28881": false,
+    "matplotlib__matplotlib-28933": false,
+    "matplotlib__matplotlib-28970": true,
+    "matplotlib__matplotlib-29007": true,
+    "matplotlib__matplotlib-29013": true,
+    "matplotlib__matplotlib-29052": true,
+    "matplotlib__matplotlib-29054": true,
+    "matplotlib__matplotlib-29209": true,
+    "matplotlib__matplotlib-29249": true,
+    "matplotlib__matplotlib-29258": true,
+    "matplotlib__matplotlib-29285": true,
+    "matplotlib__matplotlib-29317": false,
+    "matplotlib__matplotlib-29388": true,
+    "matplotlib__matplotlib-29401": true,
+    "matplotlib__matplotlib-29411": true,
+    "matplotlib__matplotlib-29431": false,
+    "matplotlib__matplotlib-29481": true,
+    "matplotlib__matplotlib-29486": true,
+    "matplotlib__matplotlib-29503": true,
+    "matplotlib__matplotlib-29520": true,
+    "matplotlib__matplotlib-29537": true,
+    "matplotlib__matplotlib-29612": true,
+    "matplotlib__matplotlib-29689": true,
+    "matplotlib__matplotlib-29696": true,
+    "matplotlib__matplotlib-29698": true,
+    "matplotlib__matplotlib-29719": true,
+    "matplotlib__matplotlib-29721": true,
+    "matplotlib__matplotlib-29781": true,
+    "matplotlib__matplotlib-29783": true,
+    "matplotlib__matplotlib-29798": true,
+    "matplotlib__matplotlib-29808": true,
+    "matplotlib__matplotlib-29873": true,
+    "matplotlib__matplotlib-29879": true,
+    "matplotlib__matplotlib-29892": true,
+    "matplotlib__matplotlib-29919": false,
+    "matplotlib__matplotlib-29958": true,
+    "matplotlib__matplotlib-29993": false,
+    "matplotlib__matplotlib-30030": true,
+    "matplotlib__matplotlib-30079": true,
+    "matplotlib__matplotlib-30089": true,
+    "matplotlib__matplotlib-30098": true,
+    "matplotlib__matplotlib-30186": false,
+    "matplotlib__matplotlib-30198": true,
+    "matplotlib__matplotlib-30223": true,
+    "matplotlib__matplotlib-30328": true,
+    "matplotlib__matplotlib-30363": true,
+    "matplotlib__matplotlib-30423": true,
+    "matplotlib__matplotlib-30467": true,
+    "matplotlib__matplotlib-30475": true
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.6866,
+    "localization_rate": 0.8228,
+    "n_false_positive": 149,
+    "n_flags": 217,
+    "n_localized": 65,
+    "n_tasks": 79,
+    "per_repo": {
+     "matplotlib/matplotlib": {
+      "false_positive_rate": 0.6866,
+      "localization_rate": 0.8228,
+      "n_false_positive": 149,
+      "n_flags": 217,
+      "n_localized": 65,
+      "n_tasks": 79
+     }
+    }
+   },
+   "flags": {
+    "matplotlib__matplotlib-28104": [
+     "lib/matplotlib/patches.py::Patch.set_hatch",
+     "lib/matplotlib/patches.py::Patch._draw_paths_with_artist_properties",
+     "lib/matplotlib/patches.py::Patch.get_hatch"
+    ],
+    "matplotlib__matplotlib-28116": [
+     "lib/matplotlib/cm.py::<module>",
+     "lib/matplotlib/cm.py::ColormapRegistry.register",
+     "lib/matplotlib/cm.py::_ensure_cmap"
+    ],
+    "matplotlib__matplotlib-28177": [
+     "lib/matplotlib/artist.py::Artist.get_figure"
+    ],
+    "matplotlib__matplotlib-28261": [
+     "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D._on_move"
+    ],
+    "matplotlib__matplotlib-28292": [
+     "lib/matplotlib/ticker.py::MaxNLocator._raw_ticks"
+    ],
+    "matplotlib__matplotlib-28306": [
+     "lib/matplotlib/projections/polar.py::PolarAxes.format_coord",
+     "lib/matplotlib/ticker.py::Formatter.__call__"
+    ],
+    "matplotlib__matplotlib-28363": [
+     "lib/matplotlib/figure.py::FigureBase.subfigures",
+     "lib/matplotlib/figure.py::FigureBase.add_subfigure",
+     "lib/matplotlib/figure.py::FigureBase.subplots"
+    ],
+    "matplotlib__matplotlib-28388": [],
+    "matplotlib__matplotlib-28397": [
+     "lib/matplotlib/figure.py::Figure.draw",
+     "lib/matplotlib/figure.py::FigureBase._get_draw_artists",
+     "lib/matplotlib/backends/backend_qt5agg.py::_BackendQT5Agg"
+    ],
+    "matplotlib__matplotlib-28401": [
+     "lib/matplotlib/text.py::Text._get_wrap_line_width",
+     "lib/matplotlib/text.py::Text.set_wrap"
+    ],
+    "matplotlib__matplotlib-28436": [
+     "lib/matplotlib/colors.py::_to_rgba_no_colorcycle",
+     "lib/matplotlib/lines.py::Line2D.set_color",
+     "lib/matplotlib/pyplot.py::plot"
+    ],
+    "matplotlib__matplotlib-28437": [
+     "lib/matplotlib/image.py::_ImageBase.make_image",
+     "lib/matplotlib/image.py::_ImageBase._make_image",
+     "lib/matplotlib/axes/_axes.py::Axes.imshow"
+    ],
+    "matplotlib__matplotlib-28458": [
+     "lib/matplotlib/image.py::_ImageBase._make_image",
+     "lib/matplotlib/image.py::_resample",
+     "lib/matplotlib/animation.py::Animation.save"
+    ],
+    "matplotlib__matplotlib-28465": [
+     "lib/matplotlib/figure.py::Figure.__getstate__",
+     "lib/matplotlib/figure.py::FigureBase.subfigures"
+    ],
+    "matplotlib__matplotlib-28473": [
+     "lib/matplotlib/rcsetup.py::validate_backend",
+     "lib/matplotlib/__init__.py::get_backend",
+     "lib/matplotlib/__init__.py::use"
+    ],
+    "matplotlib__matplotlib-28478": [
+     "lib/matplotlib/path.py::Path.simplify_threshold",
+     "lib/matplotlib/path.py::Path.cleaned",
+     "lib/matplotlib/path.py::Path._create_closed"
+    ],
+    "matplotlib__matplotlib-28486": [
+     "lib/matplotlib/axes/_axes.py::Axes.axvspan",
+     "lib/matplotlib/axis.py::Axis._set_lim",
+     "lib/matplotlib/patches.py::Rectangle.__init__"
+    ],
+    "matplotlib__matplotlib-28487": [
+     "lib/matplotlib/axes/_axes.py::Axes.axhspan",
+     "lib/matplotlib/dates.py::DateConverter.convert",
+     "lib/matplotlib/axes/_axes.py::Axes.plot_date"
+    ],
+    "matplotlib__matplotlib-28501": [
+     "lib/matplotlib/dates.py::ConciseDateFormatter.format_ticks"
+    ],
+    "matplotlib__matplotlib-28504": [
+     "lib/matplotlib/backends/backend_svg.py::RendererSVG._draw_text_as_text",
+     "lib/matplotlib/backends/backend_svg.py::RendererSVG.draw_text",
+     "lib/matplotlib/backends/backend_svg.py::RendererSVG._update_glyph_map_defs"
+    ],
+    "matplotlib__matplotlib-28525": [
+     "lib/mpl_toolkits/axes_grid1/axes_grid.py::ImageGrid.__init__",
+     "lib/mpl_toolkits/axes_grid1/axes_grid.py::ImageGrid._init_locators",
+     "lib/mpl_toolkits/axes_grid1/axes_grid.py::Grid.set_axes_pad"
+    ],
+    "matplotlib__matplotlib-28573": [
+     "lib/matplotlib/artist.py::Artist._update_props"
+    ],
+    "matplotlib__matplotlib-28577": [
+     "lib/matplotlib/_constrained_layout.py::reposition_axes",
+     "lib/matplotlib/_constrained_layout.py::make_layoutgrids",
+     "lib/matplotlib/figure.py::Figure.set_constrained_layout"
+    ],
+    "matplotlib__matplotlib-28584": [
+     "lib/matplotlib/axis.py::Axis.set_label_text",
+     "lib/matplotlib/axis.py::XAxis.set_label_position"
+    ],
+    "matplotlib__matplotlib-28609": [
+     "lib/matplotlib/lines.py::Line2D.draw",
+     "lib/matplotlib/artist.py::Artist.set_url",
+     "lib/matplotlib/lines.py::Line2D.set_linestyle"
+    ],
+    "matplotlib__matplotlib-28629": [
+     "lib/matplotlib/axis.py::Axis._get_ticklabel_bboxes",
+     "lib/matplotlib/_constrained_layout.py::make_layout_margins",
+     "lib/matplotlib/axis.py::Axis.get_tightbbox"
+    ],
+    "matplotlib__matplotlib-28649": [
+     "lib/matplotlib/image.py::AxesImage.get_cursor_data",
+     "lib/matplotlib/image.py::NonUniformImage.get_cursor_data",
+     "lib/matplotlib/axes/_axes.py::Axes.imshow"
+    ],
+    "matplotlib__matplotlib-28734": [
+     "lib/matplotlib/figure.py::FigureBase.suptitle",
+     "lib/matplotlib/figure.py::FigureBase.subplots_adjust",
+     "lib/matplotlib/gridspec.py::GridSpec.tight_layout"
+    ],
+    "matplotlib__matplotlib-28786": [
+     "lib/matplotlib/contour.py::ContourSet._process_colors",
+     "lib/matplotlib/contour.py::ContourSet.__init__",
+     "lib/matplotlib/colors.py::Colormap.set_over"
+    ],
+    "matplotlib__matplotlib-28830": [
+     "lib/matplotlib/table.py::Table.__init__",
+     "lib/matplotlib/table.py::table"
+    ],
+    "matplotlib__matplotlib-28841": [
+     "lib/matplotlib/rcsetup.py::ValidateInStrings.__call__",
+     "lib/matplotlib/rcsetup.py::_make_type_validator",
+     "lib/matplotlib/rcsetup.py::validate_any"
+    ],
+    "matplotlib__matplotlib-28853": [
+     "lib/matplotlib/axes/_axes.py::Axes.pcolorfast",
+     "lib/matplotlib/axes/_axes.py::Axes._pcolorargs"
+    ],
+    "matplotlib__matplotlib-28881": [
+     "lib/matplotlib/axes/_axes.py::Axes.axline",
+     "lib/matplotlib/pyplot.py::axline"
+    ],
+    "matplotlib__matplotlib-28933": [
+     "lib/matplotlib/axes/_axes.py::Axes.axline",
+     "lib/matplotlib/axes/_axes.py::Axes.set_title",
+     "lib/matplotlib/axes/_axes.py::<module>"
+    ],
+    "matplotlib__matplotlib-28970": [
+     "lib/matplotlib/axis.py::Axis.update_units",
+     "lib/matplotlib/axis.py::Axis._update_axisinfo",
+     "lib/matplotlib/units.py::Registry.get_converter"
+    ],
+    "matplotlib__matplotlib-29007": [
+     "lib/matplotlib/figure.py::Figure.__init__",
+     "lib/matplotlib/figure.py::Figure",
+     "lib/matplotlib/pyplot.py::figure"
+    ],
+    "matplotlib__matplotlib-29013": [
+     "lib/matplotlib/figure.py::FigureBase.autofmt_xdate",
+     "lib/matplotlib/_constrained_layout.py::reposition_colorbar",
+     "lib/matplotlib/_constrained_layout.py::do_constrained_layout"
+    ],
+    "matplotlib__matplotlib-29052": [
+     "lib/matplotlib/colors.py::LinearSegmentedColormap.from_list"
+    ],
+    "matplotlib__matplotlib-29054": [
+     "lib/matplotlib/ticker.py::LogFormatter.__init__",
+     "lib/matplotlib/ticker.py::LogFormatter.set_locs",
+     "lib/matplotlib/ticker.py::LogFormatter.set_label_minor"
+    ],
+    "matplotlib__matplotlib-29209": [
+     "lib/matplotlib/axes/_axes.py::Axes.pcolormesh"
+    ],
+    "matplotlib__matplotlib-29249": [
+     "lib/matplotlib/axis.py::Axis.get_tick_params"
+    ],
+    "matplotlib__matplotlib-29258": [
+     "lib/matplotlib/table.py::Table.set_fontsize",
+     "lib/matplotlib/pyplot.py::table",
+     "lib/matplotlib/table.py::Cell.set_fontsize"
+    ],
+    "matplotlib__matplotlib-29285": [
+     "lib/mpl_toolkits/mplot3d/art3d.py::_generate_normals"
+    ],
+    "matplotlib__matplotlib-29317": [
+     "lib/matplotlib/figure.py::Figure.savefig"
+    ],
+    "matplotlib__matplotlib-29388": [
+     "lib/matplotlib/axis.py::Axis._get_ticks_position",
+     "lib/matplotlib/axis.py::Axis.set_tick_params"
+    ],
+    "matplotlib__matplotlib-29401": [
+     "lib/matplotlib/axes/_axes.py::Axes.legend",
+     "lib/matplotlib/legend.py::Legend._auto_legend_data"
+    ],
+    "matplotlib__matplotlib-29411": [
+     "lib/matplotlib/axes/_base.py::_AxesBase.__init__"
+    ],
+    "matplotlib__matplotlib-29431": [
+     "lib/matplotlib/backends/backend_pdf.py::PdfFile.embedTTF",
+     "lib/matplotlib/backends/backend_pdf.py::PdfFile.writeFonts",
+     "lib/matplotlib/font_manager.py::FontManager.findfont"
+    ],
+    "matplotlib__matplotlib-29481": [
+     "lib/matplotlib/rcsetup.py::validate_color_or_inherit",
+     "lib/matplotlib/rcsetup.py::_validate_linestyle",
+     "lib/matplotlib/pyplot.py::grid"
+    ],
+    "matplotlib__matplotlib-29486": [
+     "lib/matplotlib/axes/_axes.py::Axes.stem",
+     "lib/matplotlib/projections/polar.py::PolarAxes._set_lim_and_transforms",
+     "lib/matplotlib/lines.py::Line2D.draw"
+    ],
+    "matplotlib__matplotlib-29503": [
+     "lib/matplotlib/axes/_axes.py::Axes.barh",
+     "lib/matplotlib/pyplot.py::barh"
+    ],
+    "matplotlib__matplotlib-29520": [
+     "lib/matplotlib/animation.py::PillowWriter.grab_frame",
+     "lib/matplotlib/animation.py::PillowWriter.finish",
+     "lib/matplotlib/animation.py::PillowWriter.setup"
+    ],
+    "matplotlib__matplotlib-29537": [
+     "lib/matplotlib/ticker.py::ScalarFormatter.set_useOffset",
+     "lib/matplotlib/ticker.py::ScalarFormatter.__init__",
+     "lib/matplotlib/ticker.py::ScalarFormatter.get_useOffset"
+    ],
+    "matplotlib__matplotlib-29612": [
+     "lib/matplotlib/rcsetup.py::ValidateInStrings.__call__",
+     "lib/matplotlib/figure.py::Figure.__init__",
+     "lib/matplotlib/pyplot.py::figure"
+    ],
+    "matplotlib__matplotlib-29689": [
+     "lib/matplotlib/sphinxext/plot_directive.py::PlotDirective.run",
+     "lib/matplotlib/sphinxext/plot_directive.py::render_figures",
+     "lib/matplotlib/sphinxext/plot_directive.py::_parse_srcset"
+    ],
+    "matplotlib__matplotlib-29696": [
+     "lib/matplotlib/axes/_axes.py::Axes.bar_label",
+     "lib/matplotlib/pyplot.py::bar_label",
+     "lib/matplotlib/axes/_axes.py::Axes._parse_bar_color_args"
+    ],
+    "matplotlib__matplotlib-29698": [
+     "lib/matplotlib/ticker.py::LogLocator.tick_values",
+     "lib/matplotlib/ticker.py::LogLocator.__init__",
+     "lib/matplotlib/ticker.py::LogLocator._set_subs"
+    ],
+    "matplotlib__matplotlib-29719": [
+     "lib/matplotlib/axes/_axes.py::Axes.hist"
+    ],
+    "matplotlib__matplotlib-29721": [
+     "lib/matplotlib/pyplot.py::switch_backend",
+     "lib/matplotlib/pyplot.py::_get_backend_mod",
+     "lib/matplotlib/rcsetup.py::validate_backend"
+    ],
+    "matplotlib__matplotlib-29781": [
+     "lib/matplotlib/backend_bases.py::FigureCanvasBase.get_default_filename"
+    ],
+    "matplotlib__matplotlib-29783": [
+     "lib/matplotlib/axes/_axes.py::Axes.pcolormesh"
+    ],
+    "matplotlib__matplotlib-29798": [
+     "lib/matplotlib/projections/polar.py::PolarAxes.set_rticks",
+     "lib/matplotlib/projections/polar.py::PolarAxes.set_rlim",
+     "lib/matplotlib/axes/_base.py::_AxesBase.autoscale_view"
+    ],
+    "matplotlib__matplotlib-29808": [
+     "lib/matplotlib/rcsetup.py::validate_color_for_prop_cycle",
+     "lib/matplotlib/rcsetup.py::validate_cycler",
+     "lib/matplotlib/rcsetup.py::cycler"
+    ],
+    "matplotlib__matplotlib-29873": [
+     "lib/matplotlib/axes/_axes.py::Axes.pie",
+     "lib/matplotlib/pyplot.py::pie"
+    ],
+    "matplotlib__matplotlib-29879": [
+     "lib/matplotlib/pyplot.py::errorbar",
+     "lib/matplotlib/lines.py::Line2D.set_linestyle"
+    ],
+    "matplotlib__matplotlib-29892": [
+     "lib/matplotlib/image.py::_ImageBase.draw",
+     "lib/matplotlib/image.py::_ImageBase._make_image",
+     "lib/matplotlib/backends/backend_qt.py::FigureCanvasQT.resizeEvent"
+    ],
+    "matplotlib__matplotlib-29919": [
+     "lib/matplotlib/projections/geo.py::MollweideAxes._get_core_transform",
+     "lib/matplotlib/axes/_axes.py::Axes.contourf"
+    ],
+    "matplotlib__matplotlib-29958": [],
+    "matplotlib__matplotlib-29993": [
+     "lib/matplotlib/testing/widgets.py::click_and_drag",
+     "lib/matplotlib/widgets.py::RangeSlider",
+     "lib/matplotlib/testing/widgets.py::mock_event"
+    ],
+    "matplotlib__matplotlib-30030": [
+     "lib/matplotlib/__init__.py::rc",
+     "lib/matplotlib/pyplot.py::rc"
+    ],
+    "matplotlib__matplotlib-30079": [
+     "lib/matplotlib/legend.py::Legend.__init__",
+     "lib/matplotlib/axes/_axes.py::Axes.legend",
+     "lib/matplotlib/pyplot.py::legend"
+    ],
+    "matplotlib__matplotlib-30089": [
+     "lib/matplotlib/figure.py::Figure.tight_layout",
+     "lib/matplotlib/_constrained_layout.py::do_constrained_layout",
+     "lib/matplotlib/gridspec.py::GridSpec.tight_layout"
+    ],
+    "matplotlib__matplotlib-30098": [
+     "lib/matplotlib/colorbar.py::Colorbar.__init__"
+    ],
+    "matplotlib__matplotlib-30186": [
+     "lib/matplotlib/legend.py::Legend.__init__",
+     "lib/matplotlib/axes/_axes.py::Axes.legend"
+    ],
+    "matplotlib__matplotlib-30198": [
+     "lib/matplotlib/path.py::Path.__deepcopy__",
+     "lib/matplotlib/path.py::Path.copy",
+     "lib/matplotlib/path.py::<module>"
+    ],
+    "matplotlib__matplotlib-30223": [
+     "lib/matplotlib/projections/polar.py::PolarAxes.set_rorigin",
+     "lib/matplotlib/projections/polar.py::PolarTransform._get_rorigin",
+     "lib/matplotlib/projections/polar.py::PolarAxes._set_lim_and_transforms"
+    ],
+    "matplotlib__matplotlib-30328": [
+     "lib/matplotlib/legend.py::Legend.__init__"
+    ],
+    "matplotlib__matplotlib-30363": [
+     "lib/matplotlib/pyplot.py::savefig",
+     "lib/matplotlib/backend_bases.py::FigureCanvasBase.print_figure",
+     "lib/matplotlib/image.py::imsave"
+    ],
+    "matplotlib__matplotlib-30423": [
+     "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D.auto_scale_xyz"
+    ],
+    "matplotlib__matplotlib-30467": [
+     "lib/matplotlib/axis.py::Axis._get_ticklabel_bboxes",
+     "lib/matplotlib/axis.py::Axis.get_tightbbox"
+    ],
+    "matplotlib__matplotlib-30475": [
+     "lib/matplotlib/transforms.py::Transform.contains_branch_seperately",
+     "lib/matplotlib/transforms.py::_BlendedMixin.contains_branch_seperately",
+     "lib/matplotlib/transforms.py::CompositeGenericTransform.contains_branch_seperately"
+    ]
+   },
+   "hits": {
+    "matplotlib__matplotlib-28104": true,
+    "matplotlib__matplotlib-28116": false,
+    "matplotlib__matplotlib-28177": true,
+    "matplotlib__matplotlib-28261": true,
+    "matplotlib__matplotlib-28292": true,
+    "matplotlib__matplotlib-28306": true,
+    "matplotlib__matplotlib-28363": true,
+    "matplotlib__matplotlib-28388": false,
+    "matplotlib__matplotlib-28397": false,
+    "matplotlib__matplotlib-28401": true,
+    "matplotlib__matplotlib-28436": true,
+    "matplotlib__matplotlib-28437": true,
+    "matplotlib__matplotlib-28465": false,
+    "matplotlib__matplotlib-28473": false,
+    "matplotlib__matplotlib-28486": false,
+    "matplotlib__matplotlib-28487": true,
+    "matplotlib__matplotlib-28501": true,
+    "matplotlib__matplotlib-28504": true,
+    "matplotlib__matplotlib-28525": true,
+    "matplotlib__matplotlib-28573": true,
+    "matplotlib__matplotlib-28577": false,
+    "matplotlib__matplotlib-28584": false,
+    "matplotlib__matplotlib-28609": false,
+    "matplotlib__matplotlib-28629": true,
+    "matplotlib__matplotlib-28649": false,
+    "matplotlib__matplotlib-28734": false,
+    "matplotlib__matplotlib-28786": true,
+    "matplotlib__matplotlib-28830": true,
+    "matplotlib__matplotlib-28841": false,
+    "matplotlib__matplotlib-28853": true,
+    "matplotlib__matplotlib-28881": false,
+    "matplotlib__matplotlib-28933": false,
+    "matplotlib__matplotlib-28970": true,
+    "matplotlib__matplotlib-29007": true,
+    "matplotlib__matplotlib-29013": true,
+    "matplotlib__matplotlib-29052": false,
+    "matplotlib__matplotlib-29054": true,
+    "matplotlib__matplotlib-29209": false,
+    "matplotlib__matplotlib-29249": true,
+    "matplotlib__matplotlib-29258": false,
+    "matplotlib__matplotlib-29285": true,
+    "matplotlib__matplotlib-29317": false,
+    "matplotlib__matplotlib-29388": true,
+    "matplotlib__matplotlib-29401": false,
+    "matplotlib__matplotlib-29411": true,
+    "matplotlib__matplotlib-29431": false,
+    "matplotlib__matplotlib-29481": true,
+    "matplotlib__matplotlib-29486": true,
+    "matplotlib__matplotlib-29503": false,
+    "matplotlib__matplotlib-29520": true,
+    "matplotlib__matplotlib-29537": true,
+    "matplotlib__matplotlib-29612": true,
+    "matplotlib__matplotlib-29689": false,
+    "matplotlib__matplotlib-29696": true,
+    "matplotlib__matplotlib-29698": true,
+    "matplotlib__matplotlib-29719": true,
+    "matplotlib__matplotlib-29721": false,
+    "matplotlib__matplotlib-29781": true,
+    "matplotlib__matplotlib-29783": true,
+    "matplotlib__matplotlib-29798": true,
+    "matplotlib__matplotlib-29808": false,
+    "matplotlib__matplotlib-29873": true,
+    "matplotlib__matplotlib-29879": true,
+    "matplotlib__matplotlib-29892": true,
+    "matplotlib__matplotlib-29919": false,
+    "matplotlib__matplotlib-29958": false,
+    "matplotlib__matplotlib-29993": false,
+    "matplotlib__matplotlib-30030": true,
+    "matplotlib__matplotlib-30079": true,
+    "matplotlib__matplotlib-30089": false,
+    "matplotlib__matplotlib-30098": false,
+    "matplotlib__matplotlib-30186": false,
+    "matplotlib__matplotlib-30198": true,
+    "matplotlib__matplotlib-30223": true,
+    "matplotlib__matplotlib-30328": true,
+    "matplotlib__matplotlib-30363": false,
+    "matplotlib__matplotlib-30423": false,
+    "matplotlib__matplotlib-30467": true,
+    "matplotlib__matplotlib-30475": true
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.6961,
+    "localization_rate": 0.5949,
+    "n_false_positive": 126,
+    "n_flags": 181,
+    "n_localized": 47,
+    "n_tasks": 79,
+    "per_repo": {
+     "matplotlib/matplotlib": {
+      "false_positive_rate": 0.6961,
+      "localization_rate": 0.5949,
+      "n_false_positive": 126,
+      "n_flags": 181,
+      "n_localized": 47,
+      "n_tasks": 79
+     }
+    }
+   },
+   "retrieved": {
+    "matplotlib__matplotlib-28104": [],
+    "matplotlib__matplotlib-28116": [],
+    "matplotlib__matplotlib-28177": [],
+    "matplotlib__matplotlib-28261": [],
+    "matplotlib__matplotlib-28292": [],
+    "matplotlib__matplotlib-28306": [],
+    "matplotlib__matplotlib-28363": [],
+    "matplotlib__matplotlib-28388": [],
+    "matplotlib__matplotlib-28397": [],
+    "matplotlib__matplotlib-28401": [],
+    "matplotlib__matplotlib-28436": [],
+    "matplotlib__matplotlib-28437": [],
+    "matplotlib__matplotlib-28458": [],
+    "matplotlib__matplotlib-28465": [],
+    "matplotlib__matplotlib-28473": [],
+    "matplotlib__matplotlib-28478": [],
+    "matplotlib__matplotlib-28486": [],
+    "matplotlib__matplotlib-28487": [],
+    "matplotlib__matplotlib-28501": [],
+    "matplotlib__matplotlib-28504": [],
+    "matplotlib__matplotlib-28525": [],
+    "matplotlib__matplotlib-28573": [],
+    "matplotlib__matplotlib-28577": [],
+    "matplotlib__matplotlib-28584": [],
+    "matplotlib__matplotlib-28609": [],
+    "matplotlib__matplotlib-28629": [],
+    "matplotlib__matplotlib-28649": [],
+    "matplotlib__matplotlib-28734": [],
+    "matplotlib__matplotlib-28786": [],
+    "matplotlib__matplotlib-28830": [],
+    "matplotlib__matplotlib-28841": [],
+    "matplotlib__matplotlib-28853": [],
+    "matplotlib__matplotlib-28881": [],
+    "matplotlib__matplotlib-28933": [],
+    "matplotlib__matplotlib-28970": [],
+    "matplotlib__matplotlib-29007": [],
+    "matplotlib__matplotlib-29013": [],
+    "matplotlib__matplotlib-29052": [],
+    "matplotlib__matplotlib-29054": [],
+    "matplotlib__matplotlib-29209": [],
+    "matplotlib__matplotlib-29249": [],
+    "matplotlib__matplotlib-29258": [],
+    "matplotlib__matplotlib-29285": [],
+    "matplotlib__matplotlib-29317": [],
+    "matplotlib__matplotlib-29388": [],
+    "matplotlib__matplotlib-29401": [],
+    "matplotlib__matplotlib-29411": [],
+    "matplotlib__matplotlib-29431": [],
+    "matplotlib__matplotlib-29481": [],
+    "matplotlib__matplotlib-29486": [],
+    "matplotlib__matplotlib-29503": [],
+    "matplotlib__matplotlib-29520": [],
+    "matplotlib__matplotlib-29537": [],
+    "matplotlib__matplotlib-29612": [],
+    "matplotlib__matplotlib-29689": [],
+    "matplotlib__matplotlib-29696": [],
+    "matplotlib__matplotlib-29698": [],
+    "matplotlib__matplotlib-29719": [],
+    "matplotlib__matplotlib-29721": [],
+    "matplotlib__matplotlib-29781": [],
+    "matplotlib__matplotlib-29783": [],
+    "matplotlib__matplotlib-29798": [],
+    "matplotlib__matplotlib-29808": [],
+    "matplotlib__matplotlib-29873": [],
+    "matplotlib__matplotlib-29879": [],
+    "matplotlib__matplotlib-29892": [],
+    "matplotlib__matplotlib-29919": [],
+    "matplotlib__matplotlib-29958": [],
+    "matplotlib__matplotlib-29993": [],
+    "matplotlib__matplotlib-30030": [],
+    "matplotlib__matplotlib-30079": [],
+    "matplotlib__matplotlib-30089": [],
+    "matplotlib__matplotlib-30098": [],
+    "matplotlib__matplotlib-30186": [],
+    "matplotlib__matplotlib-30198": [],
+    "matplotlib__matplotlib-30223": [],
+    "matplotlib__matplotlib-30328": [],
+    "matplotlib__matplotlib-30363": [],
+    "matplotlib__matplotlib-30423": [],
+    "matplotlib__matplotlib-30467": [],
+    "matplotlib__matplotlib-30475": []
+   },
+   "scores": {
+    "matplotlib__matplotlib-28104": {},
+    "matplotlib__matplotlib-28116": {},
+    "matplotlib__matplotlib-28177": {},
+    "matplotlib__matplotlib-28261": {},
+    "matplotlib__matplotlib-28292": {},
+    "matplotlib__matplotlib-28306": {},
+    "matplotlib__matplotlib-28363": {},
+    "matplotlib__matplotlib-28388": {},
+    "matplotlib__matplotlib-28397": {},
+    "matplotlib__matplotlib-28401": {},
+    "matplotlib__matplotlib-28436": {},
+    "matplotlib__matplotlib-28437": {},
+    "matplotlib__matplotlib-28458": {},
+    "matplotlib__matplotlib-28465": {},
+    "matplotlib__matplotlib-28473": {},
+    "matplotlib__matplotlib-28478": {},
+    "matplotlib__matplotlib-28486": {},
+    "matplotlib__matplotlib-28487": {},
+    "matplotlib__matplotlib-28501": {},
+    "matplotlib__matplotlib-28504": {},
+    "matplotlib__matplotlib-28525": {},
+    "matplotlib__matplotlib-28573": {},
+    "matplotlib__matplotlib-28577": {},
+    "matplotlib__matplotlib-28584": {},
+    "matplotlib__matplotlib-28609": {},
+    "matplotlib__matplotlib-28629": {},
+    "matplotlib__matplotlib-28649": {},
+    "matplotlib__matplotlib-28734": {},
+    "matplotlib__matplotlib-28786": {},
+    "matplotlib__matplotlib-28830": {},
+    "matplotlib__matplotlib-28841": {},
+    "matplotlib__matplotlib-28853": {},
+    "matplotlib__matplotlib-28881": {},
+    "matplotlib__matplotlib-28933": {},
+    "matplotlib__matplotlib-28970": {},
+    "matplotlib__matplotlib-29007": {},
+    "matplotlib__matplotlib-29013": {},
+    "matplotlib__matplotlib-29052": {},
+    "matplotlib__matplotlib-29054": {},
+    "matplotlib__matplotlib-29209": {},
+    "matplotlib__matplotlib-29249": {},
+    "matplotlib__matplotlib-29258": {},
+    "matplotlib__matplotlib-29285": {},
+    "matplotlib__matplotlib-29317": {},
+    "matplotlib__matplotlib-29388": {},
+    "matplotlib__matplotlib-29401": {},
+    "matplotlib__matplotlib-29411": {},
+    "matplotlib__matplotlib-29431": {},
+    "matplotlib__matplotlib-29481": {},
+    "matplotlib__matplotlib-29486": {},
+    "matplotlib__matplotlib-29503": {},
+    "matplotlib__matplotlib-29520": {},
+    "matplotlib__matplotlib-29537": {},
+    "matplotlib__matplotlib-29612": {},
+    "matplotlib__matplotlib-29689": {},
+    "matplotlib__matplotlib-29696": {},
+    "matplotlib__matplotlib-29698": {},
+    "matplotlib__matplotlib-29719": {},
+    "matplotlib__matplotlib-29721": {},
+    "matplotlib__matplotlib-29781": {},
+    "matplotlib__matplotlib-29783": {},
+    "matplotlib__matplotlib-29798": {},
+    "matplotlib__matplotlib-29808": {},
+    "matplotlib__matplotlib-29873": {},
+    "matplotlib__matplotlib-29879": {},
+    "matplotlib__matplotlib-29892": {},
+    "matplotlib__matplotlib-29919": {},
+    "matplotlib__matplotlib-29958": {},
+    "matplotlib__matplotlib-29993": {},
+    "matplotlib__matplotlib-30030": {},
+    "matplotlib__matplotlib-30079": {},
+    "matplotlib__matplotlib-30089": {},
+    "matplotlib__matplotlib-30098": {},
+    "matplotlib__matplotlib-30186": {},
+    "matplotlib__matplotlib-30198": {},
+    "matplotlib__matplotlib-30223": {},
+    "matplotlib__matplotlib-30328": {},
+    "matplotlib__matplotlib-30363": {
+     "ab7eb0219282828cdaf16fc70c9c3bc5ece55b8c86a351e35852122b3dd65d82": 0.308531
+    },
+    "matplotlib__matplotlib-30423": {
+     "ab7eb0219282828cdaf16fc70c9c3bc5ece55b8c86a351e35852122b3dd65d82": 0.376354
+    },
+    "matplotlib__matplotlib-30467": {
+     "ab7eb0219282828cdaf16fc70c9c3bc5ece55b8c86a351e35852122b3dd65d82": 0.288993
+    },
+    "matplotlib__matplotlib-30475": {
+     "ab7eb0219282828cdaf16fc70c9c3bc5ece55b8c86a351e35852122b3dd65d82": 0.388506
+    }
+   },
+   "tau": 0.5,
+   "version": "rolling",
+   "versions": {
+    "matplotlib__matplotlib-28104": null,
+    "matplotlib__matplotlib-28116": null,
+    "matplotlib__matplotlib-28177": null,
+    "matplotlib__matplotlib-28261": null,
+    "matplotlib__matplotlib-28292": null,
+    "matplotlib__matplotlib-28306": null,
+    "matplotlib__matplotlib-28363": null,
+    "matplotlib__matplotlib-28388": null,
+    "matplotlib__matplotlib-28397": null,
+    "matplotlib__matplotlib-28401": null,
+    "matplotlib__matplotlib-28436": null,
+    "matplotlib__matplotlib-28437": null,
+    "matplotlib__matplotlib-28458": null,
+    "matplotlib__matplotlib-28465": null,
+    "matplotlib__matplotlib-28473": null,
+    "matplotlib__matplotlib-28478": null,
+    "matplotlib__matplotlib-28486": null,
+    "matplotlib__matplotlib-28487": null,
+    "matplotlib__matplotlib-28501": null,
+    "matplotlib__matplotlib-28504": null,
+    "matplotlib__matplotlib-28525": null,
+    "matplotlib__matplotlib-28573": null,
+    "matplotlib__matplotlib-28577": null,
+    "matplotlib__matplotlib-28584": null,
+    "matplotlib__matplotlib-28609": null,
+    "matplotlib__matplotlib-28629": null,
+    "matplotlib__matplotlib-28649": null,
+    "matplotlib__matplotlib-28734": null,
+    "matplotlib__matplotlib-28786": null,
+    "matplotlib__matplotlib-28830": null,
+    "matplotlib__matplotlib-28841": null,
+    "matplotlib__matplotlib-28853": null,
+    "matplotlib__matplotlib-28881": null,
+    "matplotlib__matplotlib-28933": null,
+    "matplotlib__matplotlib-28970": null,
+    "matplotlib__matplotlib-29007": null,
+    "matplotlib__matplotlib-29013": null,
+    "matplotlib__matplotlib-29052": null,
+    "matplotlib__matplotlib-29054": null,
+    "matplotlib__matplotlib-29209": null,
+    "matplotlib__matplotlib-29249": null,
+    "matplotlib__matplotlib-29258": null,
+    "matplotlib__matplotlib-29285": null,
+    "matplotlib__matplotlib-29317": null,
+    "matplotlib__matplotlib-29388": null,
+    "matplotlib__matplotlib-29401": null,
+    "matplotlib__matplotlib-29411": null,
+    "matplotlib__matplotlib-29431": null,
+    "matplotlib__matplotlib-29481": null,
+    "matplotlib__matplotlib-29486": null,
+    "matplotlib__matplotlib-29503": null,
+    "matplotlib__matplotlib-29520": null,
+    "matplotlib__matplotlib-29537": null,
+    "matplotlib__matplotlib-29612": null,
+    "matplotlib__matplotlib-29689": null,
+    "matplotlib__matplotlib-29696": null,
+    "matplotlib__matplotlib-29698": null,
+    "matplotlib__matplotlib-29719": null,
+    "matplotlib__matplotlib-29721": null,
+    "matplotlib__matplotlib-29781": null,
+    "matplotlib__matplotlib-29783": null,
+    "matplotlib__matplotlib-29798": null,
+    "matplotlib__matplotlib-29808": null,
+    "matplotlib__matplotlib-29873": null,
+    "matplotlib__matplotlib-29879": null,
+    "matplotlib__matplotlib-29892": null,
+    "matplotlib__matplotlib-29919": null,
+    "matplotlib__matplotlib-29958": null,
+    "matplotlib__matplotlib-29993": null,
+    "matplotlib__matplotlib-30030": null,
+    "matplotlib__matplotlib-30079": null,
+    "matplotlib__matplotlib-30089": null,
+    "matplotlib__matplotlib-30098": null,
+    "matplotlib__matplotlib-30186": null,
+    "matplotlib__matplotlib-30198": null,
+    "matplotlib__matplotlib-30223": null,
+    "matplotlib__matplotlib-30328": null,
+    "matplotlib__matplotlib-30363": "820683fb0f382f72d16134b53092ff780247a18894fe08b33c6edee222db6958",
+    "matplotlib__matplotlib-30423": "820683fb0f382f72d16134b53092ff780247a18894fe08b33c6edee222db6958",
+    "matplotlib__matplotlib-30467": "820683fb0f382f72d16134b53092ff780247a18894fe08b33c6edee222db6958",
+    "matplotlib__matplotlib-30475": "820683fb0f382f72d16134b53092ff780247a18894fe08b33c6edee222db6958"
+   }
+  },
+  "placebo": {
+   "file_hits": {
+    "matplotlib__matplotlib-28104": true,
+    "matplotlib__matplotlib-28116": true,
+    "matplotlib__matplotlib-28177": true,
+    "matplotlib__matplotlib-28261": true,
+    "matplotlib__matplotlib-28292": true,
+    "matplotlib__matplotlib-28306": true,
+    "matplotlib__matplotlib-28363": true,
+    "matplotlib__matplotlib-28388": false,
+    "matplotlib__matplotlib-28397": true,
+    "matplotlib__matplotlib-28401": true,
+    "matplotlib__matplotlib-28436": true,
+    "matplotlib__matplotlib-28437": true,
+    "matplotlib__matplotlib-28458": false,
+    "matplotlib__matplotlib-28465": true,
+    "matplotlib__matplotlib-28473": false,
+    "matplotlib__matplotlib-28478": false,
+    "matplotlib__matplotlib-28486": false,
+    "matplotlib__matplotlib-28487": true,
+    "matplotlib__matplotlib-28501": true,
+    "matplotlib__matplotlib-28504": true,
+    "matplotlib__matplotlib-28525": true,
+    "matplotlib__matplotlib-28573": true,
+    "matplotlib__matplotlib-28577": false,
+    "matplotlib__matplotlib-28584": true,
+    "matplotlib__matplotlib-28609": false,
+    "matplotlib__matplotlib-28629": true,
+    "matplotlib__matplotlib-28649": false,
+    "matplotlib__matplotlib-28734": false,
+    "matplotlib__matplotlib-28786": true,
+    "matplotlib__matplotlib-28830": true,
+    "matplotlib__matplotlib-28841": true,
+    "matplotlib__matplotlib-28853": true,
+    "matplotlib__matplotlib-28881": false,
+    "matplotlib__matplotlib-28933": false,
+    "matplotlib__matplotlib-28970": true,
+    "matplotlib__matplotlib-29007": true,
+    "matplotlib__matplotlib-29013": true,
+    "matplotlib__matplotlib-29052": true,
+    "matplotlib__matplotlib-29054": true,
+    "matplotlib__matplotlib-29209": true,
+    "matplotlib__matplotlib-29249": true,
+    "matplotlib__matplotlib-29258": true,
+    "matplotlib__matplotlib-29285": true,
+    "matplotlib__matplotlib-29317": false,
+    "matplotlib__matplotlib-29388": true,
+    "matplotlib__matplotlib-29401": true,
+    "matplotlib__matplotlib-29411": true,
+    "matplotlib__matplotlib-29431": false,
+    "matplotlib__matplotlib-29481": true,
+    "matplotlib__matplotlib-29486": true,
+    "matplotlib__matplotlib-29503": true,
+    "matplotlib__matplotlib-29520": true,
+    "matplotlib__matplotlib-29537": true,
+    "matplotlib__matplotlib-29612": true,
+    "matplotlib__matplotlib-29689": true,
+    "matplotlib__matplotlib-29696": true,
+    "matplotlib__matplotlib-29698": true,
+    "matplotlib__matplotlib-29719": true,
+    "matplotlib__matplotlib-29721": true,
+    "matplotlib__matplotlib-29781": true,
+    "matplotlib__matplotlib-29783": true,
+    "matplotlib__matplotlib-29798": true,
+    "matplotlib__matplotlib-29808": true,
+    "matplotlib__matplotlib-29873": true,
+    "matplotlib__matplotlib-29879": true,
+    "matplotlib__matplotlib-29892": true,
+    "matplotlib__matplotlib-29919": false,
+    "matplotlib__matplotlib-29958": true,
+    "matplotlib__matplotlib-29993": false,
+    "matplotlib__matplotlib-30030": true,
+    "matplotlib__matplotlib-30079": true,
+    "matplotlib__matplotlib-30089": true,
+    "matplotlib__matplotlib-30098": true,
+    "matplotlib__matplotlib-30186": false,
+    "matplotlib__matplotlib-30198": true,
+    "matplotlib__matplotlib-30223": true,
+    "matplotlib__matplotlib-30328": true,
+    "matplotlib__matplotlib-30363": true,
+    "matplotlib__matplotlib-30423": true,
+    "matplotlib__matplotlib-30467": true,
+    "matplotlib__matplotlib-30475": true
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.6806,
+    "localization_rate": 0.8228,
+    "n_false_positive": 147,
+    "n_flags": 216,
+    "n_localized": 65,
+    "n_tasks": 79,
+    "per_repo": {
+     "matplotlib/matplotlib": {
+      "false_positive_rate": 0.6806,
+      "localization_rate": 0.8228,
+      "n_false_positive": 147,
+      "n_flags": 216,
+      "n_localized": 65,
+      "n_tasks": 79
+     }
+    }
+   },
+   "flags": {
+    "matplotlib__matplotlib-28104": [
+     "lib/matplotlib/patches.py::Patch.set_hatch",
+     "lib/matplotlib/patches.py::Patch._draw_paths_with_artist_properties",
+     "lib/matplotlib/patches.py::Patch.get_hatch"
+    ],
+    "matplotlib__matplotlib-28116": [
+     "lib/matplotlib/cm.py::<module>",
+     "lib/matplotlib/cm.py::ColormapRegistry.register",
+     "lib/matplotlib/cm.py::_ensure_cmap"
+    ],
+    "matplotlib__matplotlib-28177": [
+     "lib/matplotlib/artist.py::Artist.get_figure"
+    ],
+    "matplotlib__matplotlib-28261": [
+     "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D._on_move"
+    ],
+    "matplotlib__matplotlib-28292": [
+     "lib/matplotlib/ticker.py::MaxNLocator._raw_ticks"
+    ],
+    "matplotlib__matplotlib-28306": [
+     "lib/matplotlib/projections/polar.py::PolarAxes.format_coord",
+     "lib/matplotlib/ticker.py::Formatter.__call__"
+    ],
+    "matplotlib__matplotlib-28363": [
+     "lib/matplotlib/figure.py::FigureBase.subfigures",
+     "lib/matplotlib/figure.py::FigureBase.add_subfigure",
+     "lib/matplotlib/figure.py::FigureBase.subplots"
+    ],
+    "matplotlib__matplotlib-28388": [],
+    "matplotlib__matplotlib-28397": [
+     "lib/matplotlib/figure.py::Figure.draw",
+     "lib/matplotlib/figure.py::FigureBase._get_draw_artists",
+     "lib/matplotlib/backends/backend_qt5agg.py::_BackendQT5Agg"
+    ],
+    "matplotlib__matplotlib-28401": [
+     "lib/matplotlib/text.py::Text._get_wrap_line_width",
+     "lib/matplotlib/text.py::Text.set_wrap"
+    ],
+    "matplotlib__matplotlib-28436": [
+     "lib/matplotlib/colors.py::_to_rgba_no_colorcycle",
+     "lib/matplotlib/lines.py::Line2D.set_color",
+     "lib/matplotlib/pyplot.py::plot"
+    ],
+    "matplotlib__matplotlib-28437": [
+     "lib/matplotlib/image.py::_ImageBase.make_image",
+     "lib/matplotlib/image.py::_ImageBase._make_image",
+     "lib/matplotlib/axes/_axes.py::Axes.imshow"
+    ],
+    "matplotlib__matplotlib-28458": [
+     "lib/matplotlib/image.py::_ImageBase._make_image",
+     "lib/matplotlib/image.py::_resample",
+     "lib/matplotlib/animation.py::Animation.save"
+    ],
+    "matplotlib__matplotlib-28465": [
+     "lib/matplotlib/figure.py::Figure.__getstate__",
+     "lib/matplotlib/figure.py::FigureBase.subfigures"
+    ],
+    "matplotlib__matplotlib-28473": [
+     "lib/matplotlib/rcsetup.py::validate_backend",
+     "lib/matplotlib/__init__.py::get_backend",
+     "lib/matplotlib/__init__.py::use"
+    ],
+    "matplotlib__matplotlib-28478": [
+     "lib/matplotlib/path.py::Path.simplify_threshold",
+     "lib/matplotlib/path.py::Path.cleaned",
+     "lib/matplotlib/path.py::Path._create_closed"
+    ],
+    "matplotlib__matplotlib-28486": [
+     "lib/matplotlib/axes/_axes.py::Axes.axvspan",
+     "lib/matplotlib/axis.py::Axis._set_lim",
+     "lib/matplotlib/patches.py::Rectangle.__init__"
+    ],
+    "matplotlib__matplotlib-28487": [
+     "lib/matplotlib/axes/_axes.py::Axes.axhspan",
+     "lib/matplotlib/dates.py::DateConverter.convert",
+     "lib/matplotlib/axes/_axes.py::Axes.plot_date"
+    ],
+    "matplotlib__matplotlib-28501": [
+     "lib/matplotlib/dates.py::ConciseDateFormatter.format_ticks"
+    ],
+    "matplotlib__matplotlib-28504": [
+     "lib/matplotlib/backends/backend_svg.py::RendererSVG._draw_text_as_text",
+     "lib/matplotlib/backends/backend_svg.py::RendererSVG.draw_text",
+     "lib/matplotlib/backends/backend_svg.py::RendererSVG._update_glyph_map_defs"
+    ],
+    "matplotlib__matplotlib-28525": [
+     "lib/mpl_toolkits/axes_grid1/axes_grid.py::ImageGrid.__init__",
+     "lib/mpl_toolkits/axes_grid1/axes_grid.py::ImageGrid._init_locators",
+     "lib/mpl_toolkits/axes_grid1/axes_grid.py::Grid.set_axes_pad"
+    ],
+    "matplotlib__matplotlib-28573": [
+     "lib/matplotlib/artist.py::Artist._update_props"
+    ],
+    "matplotlib__matplotlib-28577": [
+     "lib/matplotlib/_constrained_layout.py::reposition_axes",
+     "lib/matplotlib/_constrained_layout.py::make_layoutgrids",
+     "lib/matplotlib/figure.py::Figure.set_constrained_layout"
+    ],
+    "matplotlib__matplotlib-28584": [
+     "lib/matplotlib/axis.py::Axis.set_label_text",
+     "lib/matplotlib/axis.py::XAxis.set_label_position"
+    ],
+    "matplotlib__matplotlib-28609": [
+     "lib/matplotlib/lines.py::Line2D.draw",
+     "lib/matplotlib/artist.py::Artist.set_url",
+     "lib/matplotlib/lines.py::Line2D.set_linestyle"
+    ],
+    "matplotlib__matplotlib-28629": [
+     "lib/matplotlib/axis.py::Axis._get_ticklabel_bboxes",
+     "lib/matplotlib/_constrained_layout.py::make_layout_margins",
+     "lib/matplotlib/axis.py::Axis.get_tightbbox"
+    ],
+    "matplotlib__matplotlib-28649": [
+     "lib/matplotlib/image.py::AxesImage.get_cursor_data",
+     "lib/matplotlib/image.py::NonUniformImage.get_cursor_data",
+     "lib/matplotlib/axes/_axes.py::Axes.imshow"
+    ],
+    "matplotlib__matplotlib-28734": [
+     "lib/matplotlib/figure.py::FigureBase.suptitle",
+     "lib/matplotlib/figure.py::FigureBase.subplots_adjust",
+     "lib/matplotlib/gridspec.py::GridSpec.tight_layout"
+    ],
+    "matplotlib__matplotlib-28786": [
+     "lib/matplotlib/contour.py::ContourSet._process_colors",
+     "lib/matplotlib/contour.py::ContourSet.__init__",
+     "lib/matplotlib/colors.py::Colormap.set_over"
+    ],
+    "matplotlib__matplotlib-28830": [
+     "lib/matplotlib/table.py::Table.__init__",
+     "lib/matplotlib/table.py::table"
+    ],
+    "matplotlib__matplotlib-28841": [
+     "lib/matplotlib/rcsetup.py::ValidateInStrings.__call__",
+     "lib/matplotlib/rcsetup.py::_make_type_validator",
+     "lib/matplotlib/rcsetup.py::validate_any"
+    ],
+    "matplotlib__matplotlib-28853": [
+     "lib/matplotlib/axes/_axes.py::Axes.pcolorfast",
+     "lib/matplotlib/axes/_axes.py::Axes._pcolorargs"
+    ],
+    "matplotlib__matplotlib-28881": [
+     "lib/matplotlib/axes/_axes.py::Axes.axline",
+     "lib/matplotlib/pyplot.py::axline"
+    ],
+    "matplotlib__matplotlib-28933": [
+     "lib/matplotlib/axes/_axes.py::Axes.axline",
+     "lib/matplotlib/axes/_axes.py::Axes.set_title",
+     "lib/matplotlib/axes/_axes.py::<module>"
+    ],
+    "matplotlib__matplotlib-28970": [
+     "lib/matplotlib/axis.py::Axis.update_units",
+     "lib/matplotlib/axis.py::Axis._update_axisinfo",
+     "lib/matplotlib/units.py::Registry.get_converter"
+    ],
+    "matplotlib__matplotlib-29007": [
+     "lib/matplotlib/figure.py::Figure.__init__",
+     "lib/matplotlib/figure.py::Figure",
+     "lib/matplotlib/pyplot.py::figure"
+    ],
+    "matplotlib__matplotlib-29013": [
+     "lib/matplotlib/figure.py::FigureBase.autofmt_xdate",
+     "lib/matplotlib/_constrained_layout.py::reposition_colorbar",
+     "lib/matplotlib/_constrained_layout.py::do_constrained_layout"
+    ],
+    "matplotlib__matplotlib-29052": [
+     "lib/matplotlib/colors.py::LinearSegmentedColormap.from_list"
+    ],
+    "matplotlib__matplotlib-29054": [
+     "lib/matplotlib/ticker.py::LogFormatter.__init__",
+     "lib/matplotlib/ticker.py::LogFormatter.set_locs",
+     "lib/matplotlib/ticker.py::LogFormatter.set_label_minor"
+    ],
+    "matplotlib__matplotlib-29209": [
+     "lib/matplotlib/axes/_axes.py::Axes.pcolormesh"
+    ],
+    "matplotlib__matplotlib-29249": [
+     "lib/matplotlib/axis.py::Axis.get_tick_params"
+    ],
+    "matplotlib__matplotlib-29258": [
+     "lib/matplotlib/table.py::Table.set_fontsize",
+     "lib/matplotlib/pyplot.py::table",
+     "lib/matplotlib/table.py::Cell.set_fontsize"
+    ],
+    "matplotlib__matplotlib-29285": [
+     "lib/mpl_toolkits/mplot3d/art3d.py::_generate_normals"
+    ],
+    "matplotlib__matplotlib-29317": [
+     "lib/matplotlib/figure.py::Figure.savefig"
+    ],
+    "matplotlib__matplotlib-29388": [
+     "lib/matplotlib/axis.py::Axis._get_ticks_position",
+     "lib/matplotlib/axis.py::Axis.set_tick_params"
+    ],
+    "matplotlib__matplotlib-29401": [
+     "lib/matplotlib/axes/_axes.py::Axes.legend",
+     "lib/matplotlib/legend.py::Legend._auto_legend_data"
+    ],
+    "matplotlib__matplotlib-29411": [
+     "lib/matplotlib/axes/_base.py::_AxesBase.__init__"
+    ],
+    "matplotlib__matplotlib-29431": [
+     "lib/matplotlib/backends/backend_pdf.py::PdfFile.embedTTF",
+     "lib/matplotlib/backends/backend_pdf.py::PdfFile.writeFonts",
+     "lib/matplotlib/font_manager.py::FontManager.findfont"
+    ],
+    "matplotlib__matplotlib-29481": [
+     "lib/matplotlib/rcsetup.py::validate_color_or_inherit",
+     "lib/matplotlib/rcsetup.py::_validate_linestyle",
+     "lib/matplotlib/pyplot.py::grid"
+    ],
+    "matplotlib__matplotlib-29486": [
+     "lib/matplotlib/axes/_axes.py::Axes.stem",
+     "lib/matplotlib/projections/polar.py::PolarAxes._set_lim_and_transforms",
+     "lib/matplotlib/lines.py::Line2D.draw"
+    ],
+    "matplotlib__matplotlib-29503": [
+     "lib/matplotlib/axes/_axes.py::Axes.barh",
+     "lib/matplotlib/pyplot.py::barh"
+    ],
+    "matplotlib__matplotlib-29520": [
+     "lib/matplotlib/animation.py::PillowWriter.grab_frame",
+     "lib/matplotlib/animation.py::PillowWriter.finish",
+     "lib/matplotlib/animation.py::PillowWriter.setup"
+    ],
+    "matplotlib__matplotlib-29537": [
+     "lib/matplotlib/ticker.py::ScalarFormatter.set_useOffset",
+     "lib/matplotlib/ticker.py::ScalarFormatter.__init__",
+     "lib/matplotlib/ticker.py::ScalarFormatter.get_useOffset"
+    ],
+    "matplotlib__matplotlib-29612": [
+     "lib/matplotlib/rcsetup.py::ValidateInStrings.__call__",
+     "lib/matplotlib/figure.py::Figure.__init__",
+     "lib/matplotlib/pyplot.py::figure"
+    ],
+    "matplotlib__matplotlib-29689": [
+     "lib/matplotlib/sphinxext/plot_directive.py::PlotDirective.run",
+     "lib/matplotlib/sphinxext/plot_directive.py::render_figures",
+     "lib/matplotlib/sphinxext/plot_directive.py::_parse_srcset"
+    ],
+    "matplotlib__matplotlib-29696": [
+     "lib/matplotlib/axes/_axes.py::Axes.bar_label",
+     "lib/matplotlib/pyplot.py::bar_label",
+     "lib/matplotlib/axes/_axes.py::Axes._parse_bar_color_args"
+    ],
+    "matplotlib__matplotlib-29698": [
+     "lib/matplotlib/ticker.py::LogLocator.tick_values",
+     "lib/matplotlib/ticker.py::LogLocator.__init__",
+     "lib/matplotlib/ticker.py::LogLocator._set_subs"
+    ],
+    "matplotlib__matplotlib-29719": [
+     "lib/matplotlib/axes/_axes.py::Axes.hist"
+    ],
+    "matplotlib__matplotlib-29721": [
+     "lib/matplotlib/pyplot.py::switch_backend",
+     "lib/matplotlib/pyplot.py::_get_backend_mod",
+     "lib/matplotlib/rcsetup.py::validate_backend"
+    ],
+    "matplotlib__matplotlib-29781": [
+     "lib/matplotlib/backend_bases.py::FigureCanvasBase.get_default_filename"
+    ],
+    "matplotlib__matplotlib-29783": [
+     "lib/matplotlib/axes/_axes.py::Axes.pcolormesh"
+    ],
+    "matplotlib__matplotlib-29798": [
+     "lib/matplotlib/projections/polar.py::PolarAxes.set_rticks",
+     "lib/matplotlib/projections/polar.py::PolarAxes.set_rlim",
+     "lib/matplotlib/axes/_base.py::_AxesBase.autoscale_view"
+    ],
+    "matplotlib__matplotlib-29808": [
+     "lib/matplotlib/rcsetup.py::validate_color_for_prop_cycle",
+     "lib/matplotlib/rcsetup.py::validate_cycler",
+     "lib/matplotlib/rcsetup.py::cycler"
+    ],
+    "matplotlib__matplotlib-29873": [
+     "lib/matplotlib/axes/_axes.py::Axes.pie",
+     "lib/matplotlib/pyplot.py::pie"
+    ],
+    "matplotlib__matplotlib-29879": [
+     "lib/matplotlib/pyplot.py::errorbar",
+     "lib/matplotlib/lines.py::Line2D.set_linestyle"
+    ],
+    "matplotlib__matplotlib-29892": [
+     "lib/matplotlib/image.py::_ImageBase.draw",
+     "lib/matplotlib/image.py::_ImageBase._make_image",
+     "lib/matplotlib/backends/backend_qt.py::FigureCanvasQT.resizeEvent"
+    ],
+    "matplotlib__matplotlib-29919": [
+     "lib/matplotlib/projections/geo.py::MollweideAxes._get_core_transform",
+     "lib/matplotlib/axes/_axes.py::Axes.contourf"
+    ],
+    "matplotlib__matplotlib-29958": [],
+    "matplotlib__matplotlib-29993": [
+     "lib/matplotlib/testing/widgets.py::click_and_drag",
+     "lib/matplotlib/widgets.py::RangeSlider",
+     "lib/matplotlib/testing/widgets.py::mock_event"
+    ],
+    "matplotlib__matplotlib-30030": [
+     "lib/matplotlib/__init__.py::rc",
+     "lib/matplotlib/pyplot.py::rc"
+    ],
+    "matplotlib__matplotlib-30079": [
+     "lib/matplotlib/legend.py::Legend.__init__",
+     "lib/matplotlib/axes/_axes.py::Axes.legend",
+     "lib/matplotlib/pyplot.py::legend"
+    ],
+    "matplotlib__matplotlib-30089": [
+     "lib/matplotlib/figure.py::Figure.tight_layout",
+     "lib/matplotlib/_constrained_layout.py::do_constrained_layout",
+     "lib/matplotlib/gridspec.py::GridSpec.tight_layout"
+    ],
+    "matplotlib__matplotlib-30098": [
+     "lib/matplotlib/colorbar.py::Colorbar.__init__"
+    ],
+    "matplotlib__matplotlib-30186": [
+     "lib/matplotlib/legend.py::Legend.__init__",
+     "lib/matplotlib/axes/_axes.py::Axes.legend"
+    ],
+    "matplotlib__matplotlib-30198": [
+     "lib/matplotlib/path.py::Path.__deepcopy__",
+     "lib/matplotlib/path.py::Path.copy",
+     "lib/matplotlib/path.py::<module>"
+    ],
+    "matplotlib__matplotlib-30223": [
+     "lib/matplotlib/projections/polar.py::PolarAxes.set_rorigin",
+     "lib/matplotlib/projections/polar.py::PolarTransform._get_rorigin",
+     "lib/matplotlib/projections/polar.py::PolarAxes._set_lim_and_transforms"
+    ],
+    "matplotlib__matplotlib-30328": [
+     "lib/matplotlib/legend.py::Legend.__init__"
+    ],
+    "matplotlib__matplotlib-30363": [
+     "lib/matplotlib/pyplot.py::savefig",
+     "lib/matplotlib/backends/backend_agg.py::FigureCanvasAgg.print_webp",
+     "lib/matplotlib/backend_bases.py::FigureCanvasBase.print_figure"
+    ],
+    "matplotlib__matplotlib-30423": [
+     "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D.auto_scale_xyz"
+    ],
+    "matplotlib__matplotlib-30467": [
+     "lib/matplotlib/axis.py::Axis._get_ticklabel_bboxes",
+     "lib/matplotlib/axis.py::Axis.get_tightbbox"
+    ],
+    "matplotlib__matplotlib-30475": [
+     "lib/matplotlib/transforms.py::Transform.contains_branch_seperately"
+    ]
+   },
+   "hits": {
+    "matplotlib__matplotlib-28104": true,
+    "matplotlib__matplotlib-28116": false,
+    "matplotlib__matplotlib-28177": true,
+    "matplotlib__matplotlib-28261": true,
+    "matplotlib__matplotlib-28292": true,
+    "matplotlib__matplotlib-28306": true,
+    "matplotlib__matplotlib-28363": true,
+    "matplotlib__matplotlib-28388": false,
+    "matplotlib__matplotlib-28397": false,
+    "matplotlib__matplotlib-28401": true,
+    "matplotlib__matplotlib-28436": true,
+    "matplotlib__matplotlib-28437": true,
+    "matplotlib__matplotlib-28465": false,
+    "matplotlib__matplotlib-28473": false,
+    "matplotlib__matplotlib-28486": false,
+    "matplotlib__matplotlib-28487": true,
+    "matplotlib__matplotlib-28501": true,
+    "matplotlib__matplotlib-28504": true,
+    "matplotlib__matplotlib-28525": true,
+    "matplotlib__matplotlib-28573": true,
+    "matplotlib__matplotlib-28577": false,
+    "matplotlib__matplotlib-28584": false,
+    "matplotlib__matplotlib-28609": false,
+    "matplotlib__matplotlib-28629": true,
+    "matplotlib__matplotlib-28649": false,
+    "matplotlib__matplotlib-28734": false,
+    "matplotlib__matplotlib-28786": true,
+    "matplotlib__matplotlib-28830": true,
+    "matplotlib__matplotlib-28841": false,
+    "matplotlib__matplotlib-28853": true,
+    "matplotlib__matplotlib-28881": false,
+    "matplotlib__matplotlib-28933": false,
+    "matplotlib__matplotlib-28970": true,
+    "matplotlib__matplotlib-29007": true,
+    "matplotlib__matplotlib-29013": true,
+    "matplotlib__matplotlib-29052": false,
+    "matplotlib__matplotlib-29054": true,
+    "matplotlib__matplotlib-29209": false,
+    "matplotlib__matplotlib-29249": true,
+    "matplotlib__matplotlib-29258": false,
+    "matplotlib__matplotlib-29285": true,
+    "matplotlib__matplotlib-29317": false,
+    "matplotlib__matplotlib-29388": true,
+    "matplotlib__matplotlib-29401": false,
+    "matplotlib__matplotlib-29411": true,
+    "matplotlib__matplotlib-29431": false,
+    "matplotlib__matplotlib-29481": true,
+    "matplotlib__matplotlib-29486": true,
+    "matplotlib__matplotlib-29503": false,
+    "matplotlib__matplotlib-29520": true,
+    "matplotlib__matplotlib-29537": true,
+    "matplotlib__matplotlib-29612": true,
+    "matplotlib__matplotlib-29689": false,
+    "matplotlib__matplotlib-29696": true,
+    "matplotlib__matplotlib-29698": true,
+    "matplotlib__matplotlib-29719": true,
+    "matplotlib__matplotlib-29721": false,
+    "matplotlib__matplotlib-29781": true,
+    "matplotlib__matplotlib-29783": true,
+    "matplotlib__matplotlib-29798": true,
+    "matplotlib__matplotlib-29808": false,
+    "matplotlib__matplotlib-29873": true,
+    "matplotlib__matplotlib-29879": true,
+    "matplotlib__matplotlib-29892": true,
+    "matplotlib__matplotlib-29919": false,
+    "matplotlib__matplotlib-29958": false,
+    "matplotlib__matplotlib-29993": false,
+    "matplotlib__matplotlib-30030": true,
+    "matplotlib__matplotlib-30079": true,
+    "matplotlib__matplotlib-30089": false,
+    "matplotlib__matplotlib-30098": false,
+    "matplotlib__matplotlib-30186": false,
+    "matplotlib__matplotlib-30198": true,
+    "matplotlib__matplotlib-30223": true,
+    "matplotlib__matplotlib-30328": true,
+    "matplotlib__matplotlib-30363": true,
+    "matplotlib__matplotlib-30423": false,
+    "matplotlib__matplotlib-30467": true,
+    "matplotlib__matplotlib-30475": true
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.22,
+    "localization_lift_pts": 1.27
+   },
+   "metrics": {
+    "false_positive_rate": 0.6983,
+    "localization_rate": 0.6076,
+    "n_false_positive": 125,
+    "n_flags": 179,
+    "n_localized": 48,
+    "n_tasks": 79,
+    "per_repo": {
+     "matplotlib/matplotlib": {
+      "false_positive_rate": 0.6983,
+      "localization_rate": 0.6076,
+      "n_false_positive": 125,
+      "n_flags": 179,
+      "n_localized": 48,
+      "n_tasks": 79
+     }
+    }
+   },
+   "retrieved": {
+    "matplotlib__matplotlib-28104": [],
+    "matplotlib__matplotlib-28116": [],
+    "matplotlib__matplotlib-28177": [],
+    "matplotlib__matplotlib-28261": [],
+    "matplotlib__matplotlib-28292": [],
+    "matplotlib__matplotlib-28306": [],
+    "matplotlib__matplotlib-28363": [],
+    "matplotlib__matplotlib-28388": [],
+    "matplotlib__matplotlib-28397": [],
+    "matplotlib__matplotlib-28401": [],
+    "matplotlib__matplotlib-28436": [],
+    "matplotlib__matplotlib-28437": [],
+    "matplotlib__matplotlib-28458": [],
+    "matplotlib__matplotlib-28465": [],
+    "matplotlib__matplotlib-28473": [],
+    "matplotlib__matplotlib-28478": [],
+    "matplotlib__matplotlib-28486": [],
+    "matplotlib__matplotlib-28487": [],
+    "matplotlib__matplotlib-28501": [],
+    "matplotlib__matplotlib-28504": [],
+    "matplotlib__matplotlib-28525": [],
+    "matplotlib__matplotlib-28573": [],
+    "matplotlib__matplotlib-28577": [],
+    "matplotlib__matplotlib-28584": [],
+    "matplotlib__matplotlib-28609": [],
+    "matplotlib__matplotlib-28629": [],
+    "matplotlib__matplotlib-28649": [],
+    "matplotlib__matplotlib-28734": [],
+    "matplotlib__matplotlib-28786": [],
+    "matplotlib__matplotlib-28830": [],
+    "matplotlib__matplotlib-28841": [],
+    "matplotlib__matplotlib-28853": [],
+    "matplotlib__matplotlib-28881": [],
+    "matplotlib__matplotlib-28933": [],
+    "matplotlib__matplotlib-28970": [],
+    "matplotlib__matplotlib-29007": [],
+    "matplotlib__matplotlib-29013": [],
+    "matplotlib__matplotlib-29052": [],
+    "matplotlib__matplotlib-29054": [],
+    "matplotlib__matplotlib-29209": [],
+    "matplotlib__matplotlib-29249": [],
+    "matplotlib__matplotlib-29258": [],
+    "matplotlib__matplotlib-29285": [],
+    "matplotlib__matplotlib-29317": [],
+    "matplotlib__matplotlib-29388": [],
+    "matplotlib__matplotlib-29401": [],
+    "matplotlib__matplotlib-29411": [],
+    "matplotlib__matplotlib-29431": [],
+    "matplotlib__matplotlib-29481": [],
+    "matplotlib__matplotlib-29486": [],
+    "matplotlib__matplotlib-29503": [],
+    "matplotlib__matplotlib-29520": [],
+    "matplotlib__matplotlib-29537": [],
+    "matplotlib__matplotlib-29612": [],
+    "matplotlib__matplotlib-29689": [],
+    "matplotlib__matplotlib-29696": [],
+    "matplotlib__matplotlib-29698": [],
+    "matplotlib__matplotlib-29719": [],
+    "matplotlib__matplotlib-29721": [],
+    "matplotlib__matplotlib-29781": [],
+    "matplotlib__matplotlib-29783": [],
+    "matplotlib__matplotlib-29798": [],
+    "matplotlib__matplotlib-29808": [],
+    "matplotlib__matplotlib-29873": [],
+    "matplotlib__matplotlib-29879": [],
+    "matplotlib__matplotlib-29892": [],
+    "matplotlib__matplotlib-29919": [],
+    "matplotlib__matplotlib-29958": [],
+    "matplotlib__matplotlib-29993": [],
+    "matplotlib__matplotlib-30030": [],
+    "matplotlib__matplotlib-30079": [],
+    "matplotlib__matplotlib-30089": [],
+    "matplotlib__matplotlib-30098": [],
+    "matplotlib__matplotlib-30186": [],
+    "matplotlib__matplotlib-30198": [],
+    "matplotlib__matplotlib-30223": [],
+    "matplotlib__matplotlib-30328": [],
+    "matplotlib__matplotlib-30363": [
+     "placebo:0"
+    ],
+    "matplotlib__matplotlib-30423": [
+     "placebo:0"
+    ],
+    "matplotlib__matplotlib-30467": [
+     "placebo:1"
+    ],
+    "matplotlib__matplotlib-30475": [
+     "placebo:0"
+    ]
+   },
+   "scores": {
+    "matplotlib__matplotlib-28104": {},
+    "matplotlib__matplotlib-28116": {},
+    "matplotlib__matplotlib-28177": {},
+    "matplotlib__matplotlib-28261": {},
+    "matplotlib__matplotlib-28292": {},
+    "matplotlib__matplotlib-28306": {},
+    "matplotlib__matplotlib-28363": {},
+    "matplotlib__matplotlib-28388": {},
+    "matplotlib__matplotlib-28397": {},
+    "matplotlib__matplotlib-28401": {},
+    "matplotlib__matplotlib-28436": {},
+    "matplotlib__matplotlib-28437": {},
+    "matplotlib__matplotlib-28458": {},
+    "matplotlib__matplotlib-28465": {},
+    "matplotlib__matplotlib-28473": {},
+    "matplotlib__matplotlib-28478": {},
+    "matplotlib__matplotlib-28486": {},
+    "matplotlib__matplotlib-28487": {},
+    "matplotlib__matplotlib-28501": {},
+    "matplotlib__matplotlib-28504": {},
+    "matplotlib__matplotlib-28525": {},
+    "matplotlib__matplotlib-28573": {},
+    "matplotlib__matplotlib-28577": {},
+    "matplotlib__matplotlib-28584": {},
+    "matplotlib__matplotlib-28609": {},
+    "matplotlib__matplotlib-28629": {},
+    "matplotlib__matplotlib-28649": {},
+    "matplotlib__matplotlib-28734": {},
+    "matplotlib__matplotlib-28786": {},
+    "matplotlib__matplotlib-28830": {},
+    "matplotlib__matplotlib-28841": {},
+    "matplotlib__matplotlib-28853": {},
+    "matplotlib__matplotlib-28881": {},
+    "matplotlib__matplotlib-28933": {},
+    "matplotlib__matplotlib-28970": {},
+    "matplotlib__matplotlib-29007": {},
+    "matplotlib__matplotlib-29013": {},
+    "matplotlib__matplotlib-29052": {},
+    "matplotlib__matplotlib-29054": {},
+    "matplotlib__matplotlib-29209": {},
+    "matplotlib__matplotlib-29249": {},
+    "matplotlib__matplotlib-29258": {},
+    "matplotlib__matplotlib-29285": {},
+    "matplotlib__matplotlib-29317": {},
+    "matplotlib__matplotlib-29388": {},
+    "matplotlib__matplotlib-29401": {},
+    "matplotlib__matplotlib-29411": {},
+    "matplotlib__matplotlib-29431": {},
+    "matplotlib__matplotlib-29481": {},
+    "matplotlib__matplotlib-29486": {},
+    "matplotlib__matplotlib-29503": {},
+    "matplotlib__matplotlib-29520": {},
+    "matplotlib__matplotlib-29537": {},
+    "matplotlib__matplotlib-29612": {},
+    "matplotlib__matplotlib-29689": {},
+    "matplotlib__matplotlib-29696": {},
+    "matplotlib__matplotlib-29698": {},
+    "matplotlib__matplotlib-29719": {},
+    "matplotlib__matplotlib-29721": {},
+    "matplotlib__matplotlib-29781": {},
+    "matplotlib__matplotlib-29783": {},
+    "matplotlib__matplotlib-29798": {},
+    "matplotlib__matplotlib-29808": {},
+    "matplotlib__matplotlib-29873": {},
+    "matplotlib__matplotlib-29879": {},
+    "matplotlib__matplotlib-29892": {},
+    "matplotlib__matplotlib-29919": {},
+    "matplotlib__matplotlib-29958": {},
+    "matplotlib__matplotlib-29993": {},
+    "matplotlib__matplotlib-30030": {},
+    "matplotlib__matplotlib-30079": {},
+    "matplotlib__matplotlib-30089": {},
+    "matplotlib__matplotlib-30098": {},
+    "matplotlib__matplotlib-30186": {},
+    "matplotlib__matplotlib-30198": {},
+    "matplotlib__matplotlib-30223": {},
+    "matplotlib__matplotlib-30328": {},
+    "matplotlib__matplotlib-30363": {
+     "placebo:0": 0.242491
+    },
+    "matplotlib__matplotlib-30423": {
+     "placebo:0": 0.312103
+    },
+    "matplotlib__matplotlib-30467": {
+     "placebo:1": 0.26955
+    },
+    "matplotlib__matplotlib-30475": {
+     "placebo:0": 0.259025
+    }
+   },
+   "tau": 0.0,
+   "version": "rolling",
+   "versions": {
+    "matplotlib__matplotlib-28104": null,
+    "matplotlib__matplotlib-28116": null,
+    "matplotlib__matplotlib-28177": null,
+    "matplotlib__matplotlib-28261": null,
+    "matplotlib__matplotlib-28292": null,
+    "matplotlib__matplotlib-28306": null,
+    "matplotlib__matplotlib-28363": null,
+    "matplotlib__matplotlib-28388": null,
+    "matplotlib__matplotlib-28397": null,
+    "matplotlib__matplotlib-28401": null,
+    "matplotlib__matplotlib-28436": null,
+    "matplotlib__matplotlib-28437": null,
+    "matplotlib__matplotlib-28458": null,
+    "matplotlib__matplotlib-28465": null,
+    "matplotlib__matplotlib-28473": null,
+    "matplotlib__matplotlib-28478": null,
+    "matplotlib__matplotlib-28486": null,
+    "matplotlib__matplotlib-28487": null,
+    "matplotlib__matplotlib-28501": null,
+    "matplotlib__matplotlib-28504": null,
+    "matplotlib__matplotlib-28525": null,
+    "matplotlib__matplotlib-28573": null,
+    "matplotlib__matplotlib-28577": null,
+    "matplotlib__matplotlib-28584": null,
+    "matplotlib__matplotlib-28609": null,
+    "matplotlib__matplotlib-28629": null,
+    "matplotlib__matplotlib-28649": null,
+    "matplotlib__matplotlib-28734": null,
+    "matplotlib__matplotlib-28786": null,
+    "matplotlib__matplotlib-28830": null,
+    "matplotlib__matplotlib-28841": null,
+    "matplotlib__matplotlib-28853": null,
+    "matplotlib__matplotlib-28881": null,
+    "matplotlib__matplotlib-28933": null,
+    "matplotlib__matplotlib-28970": null,
+    "matplotlib__matplotlib-29007": null,
+    "matplotlib__matplotlib-29013": null,
+    "matplotlib__matplotlib-29052": null,
+    "matplotlib__matplotlib-29054": null,
+    "matplotlib__matplotlib-29209": null,
+    "matplotlib__matplotlib-29249": null,
+    "matplotlib__matplotlib-29258": null,
+    "matplotlib__matplotlib-29285": null,
+    "matplotlib__matplotlib-29317": null,
+    "matplotlib__matplotlib-29388": null,
+    "matplotlib__matplotlib-29401": null,
+    "matplotlib__matplotlib-29411": null,
+    "matplotlib__matplotlib-29431": null,
+    "matplotlib__matplotlib-29481": null,
+    "matplotlib__matplotlib-29486": null,
+    "matplotlib__matplotlib-29503": null,
+    "matplotlib__matplotlib-29520": null,
+    "matplotlib__matplotlib-29537": null,
+    "matplotlib__matplotlib-29612": null,
+    "matplotlib__matplotlib-29689": null,
+    "matplotlib__matplotlib-29696": null,
+    "matplotlib__matplotlib-29698": null,
+    "matplotlib__matplotlib-29719": null,
+    "matplotlib__matplotlib-29721": null,
+    "matplotlib__matplotlib-29781": null,
+    "matplotlib__matplotlib-29783": null,
+    "matplotlib__matplotlib-29798": null,
+    "matplotlib__matplotlib-29808": null,
+    "matplotlib__matplotlib-29873": null,
+    "matplotlib__matplotlib-29879": null,
+    "matplotlib__matplotlib-29892": null,
+    "matplotlib__matplotlib-29919": null,
+    "matplotlib__matplotlib-29958": null,
+    "matplotlib__matplotlib-29993": null,
+    "matplotlib__matplotlib-30030": null,
+    "matplotlib__matplotlib-30079": null,
+    "matplotlib__matplotlib-30089": null,
+    "matplotlib__matplotlib-30098": null,
+    "matplotlib__matplotlib-30186": null,
+    "matplotlib__matplotlib-30198": null,
+    "matplotlib__matplotlib-30223": null,
+    "matplotlib__matplotlib-30328": null,
+    "matplotlib__matplotlib-30363": null,
+    "matplotlib__matplotlib-30423": null,
+    "matplotlib__matplotlib-30467": null,
+    "matplotlib__matplotlib-30475": null
+   }
+  },
+  "treatment": {
+   "file_hits": {
+    "matplotlib__matplotlib-28104": true,
+    "matplotlib__matplotlib-28116": true,
+    "matplotlib__matplotlib-28177": true,
+    "matplotlib__matplotlib-28261": true,
+    "matplotlib__matplotlib-28292": true,
+    "matplotlib__matplotlib-28306": true,
+    "matplotlib__matplotlib-28363": true,
+    "matplotlib__matplotlib-28388": false,
+    "matplotlib__matplotlib-28397": true,
+    "matplotlib__matplotlib-28401": true,
+    "matplotlib__matplotlib-28436": true,
+    "matplotlib__matplotlib-28437": true,
+    "matplotlib__matplotlib-28458": false,
+    "matplotlib__matplotlib-28465": true,
+    "matplotlib__matplotlib-28473": false,
+    "matplotlib__matplotlib-28478": false,
+    "matplotlib__matplotlib-28486": false,
+    "matplotlib__matplotlib-28487": true,
+    "matplotlib__matplotlib-28501": true,
+    "matplotlib__matplotlib-28504": true,
+    "matplotlib__matplotlib-28525": true,
+    "matplotlib__matplotlib-28573": true,
+    "matplotlib__matplotlib-28577": false,
+    "matplotlib__matplotlib-28584": true,
+    "matplotlib__matplotlib-28609": false,
+    "matplotlib__matplotlib-28629": true,
+    "matplotlib__matplotlib-28649": false,
+    "matplotlib__matplotlib-28734": false,
+    "matplotlib__matplotlib-28786": true,
+    "matplotlib__matplotlib-28830": true,
+    "matplotlib__matplotlib-28841": true,
+    "matplotlib__matplotlib-28853": true,
+    "matplotlib__matplotlib-28881": false,
+    "matplotlib__matplotlib-28933": false,
+    "matplotlib__matplotlib-28970": true,
+    "matplotlib__matplotlib-29007": true,
+    "matplotlib__matplotlib-29013": true,
+    "matplotlib__matplotlib-29052": true,
+    "matplotlib__matplotlib-29054": true,
+    "matplotlib__matplotlib-29209": true,
+    "matplotlib__matplotlib-29249": true,
+    "matplotlib__matplotlib-29258": true,
+    "matplotlib__matplotlib-29285": true,
+    "matplotlib__matplotlib-29317": false,
+    "matplotlib__matplotlib-29388": true,
+    "matplotlib__matplotlib-29401": true,
+    "matplotlib__matplotlib-29411": true,
+    "matplotlib__matplotlib-29431": false,
+    "matplotlib__matplotlib-29481": true,
+    "matplotlib__matplotlib-29486": true,
+    "matplotlib__matplotlib-29503": true,
+    "matplotlib__matplotlib-29520": true,
+    "matplotlib__matplotlib-29537": true,
+    "matplotlib__matplotlib-29612": true,
+    "matplotlib__matplotlib-29689": true,
+    "matplotlib__matplotlib-29696": true,
+    "matplotlib__matplotlib-29698": true,
+    "matplotlib__matplotlib-29719": true,
+    "matplotlib__matplotlib-29721": true,
+    "matplotlib__matplotlib-29781": true,
+    "matplotlib__matplotlib-29783": true,
+    "matplotlib__matplotlib-29798": true,
+    "matplotlib__matplotlib-29808": true,
+    "matplotlib__matplotlib-29873": true,
+    "matplotlib__matplotlib-29879": true,
+    "matplotlib__matplotlib-29892": true,
+    "matplotlib__matplotlib-29919": false,
+    "matplotlib__matplotlib-29958": true,
+    "matplotlib__matplotlib-29993": false,
+    "matplotlib__matplotlib-30030": true,
+    "matplotlib__matplotlib-30079": true,
+    "matplotlib__matplotlib-30089": true,
+    "matplotlib__matplotlib-30098": true,
+    "matplotlib__matplotlib-30186": false,
+    "matplotlib__matplotlib-30198": true,
+    "matplotlib__matplotlib-30223": true,
+    "matplotlib__matplotlib-30328": true,
+    "matplotlib__matplotlib-30363": true,
+    "matplotlib__matplotlib-30423": true,
+    "matplotlib__matplotlib-30467": true,
+    "matplotlib__matplotlib-30475": true
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.6761,
+    "localization_rate": 0.8228,
+    "n_false_positive": 144,
+    "n_flags": 213,
+    "n_localized": 65,
+    "n_tasks": 79,
+    "per_repo": {
+     "matplotlib/matplotlib": {
+      "false_positive_rate": 0.6761,
+      "localization_rate": 0.8228,
+      "n_false_positive": 144,
+      "n_flags": 213,
+      "n_localized": 65,
+      "n_tasks": 79
+     }
+    }
+   },
+   "flags": {
+    "matplotlib__matplotlib-28104": [
+     "lib/matplotlib/patches.py::Patch.set_hatch",
+     "lib/matplotlib/patches.py::Patch._draw_paths_with_artist_properties",
+     "lib/matplotlib/patches.py::Patch.get_hatch"
+    ],
+    "matplotlib__matplotlib-28116": [
+     "lib/matplotlib/cm.py::<module>",
+     "lib/matplotlib/cm.py::ColormapRegistry.register",
+     "lib/matplotlib/cm.py::_ensure_cmap"
+    ],
+    "matplotlib__matplotlib-28177": [
+     "lib/matplotlib/artist.py::Artist.get_figure"
+    ],
+    "matplotlib__matplotlib-28261": [
+     "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D._on_move"
+    ],
+    "matplotlib__matplotlib-28292": [
+     "lib/matplotlib/ticker.py::MaxNLocator._raw_ticks"
+    ],
+    "matplotlib__matplotlib-28306": [
+     "lib/matplotlib/projections/polar.py::PolarAxes.format_coord",
+     "lib/matplotlib/ticker.py::Formatter.__call__"
+    ],
+    "matplotlib__matplotlib-28363": [
+     "lib/matplotlib/figure.py::FigureBase.subfigures",
+     "lib/matplotlib/figure.py::FigureBase.add_subfigure",
+     "lib/matplotlib/figure.py::FigureBase.subplots"
+    ],
+    "matplotlib__matplotlib-28388": [],
+    "matplotlib__matplotlib-28397": [
+     "lib/matplotlib/figure.py::Figure.draw",
+     "lib/matplotlib/figure.py::FigureBase._get_draw_artists",
+     "lib/matplotlib/backends/backend_qt5agg.py::_BackendQT5Agg"
+    ],
+    "matplotlib__matplotlib-28401": [
+     "lib/matplotlib/text.py::Text._get_wrap_line_width",
+     "lib/matplotlib/text.py::Text.set_wrap"
+    ],
+    "matplotlib__matplotlib-28436": [
+     "lib/matplotlib/colors.py::_to_rgba_no_colorcycle",
+     "lib/matplotlib/lines.py::Line2D.set_color",
+     "lib/matplotlib/pyplot.py::plot"
+    ],
+    "matplotlib__matplotlib-28437": [
+     "lib/matplotlib/image.py::_ImageBase.make_image",
+     "lib/matplotlib/image.py::_ImageBase._make_image",
+     "lib/matplotlib/axes/_axes.py::Axes.imshow"
+    ],
+    "matplotlib__matplotlib-28458": [
+     "lib/matplotlib/image.py::_ImageBase._make_image",
+     "lib/matplotlib/image.py::_resample",
+     "lib/matplotlib/animation.py::Animation.save"
+    ],
+    "matplotlib__matplotlib-28465": [
+     "lib/matplotlib/figure.py::Figure.__getstate__",
+     "lib/matplotlib/figure.py::FigureBase.subfigures"
+    ],
+    "matplotlib__matplotlib-28473": [
+     "lib/matplotlib/rcsetup.py::validate_backend",
+     "lib/matplotlib/__init__.py::get_backend",
+     "lib/matplotlib/__init__.py::use"
+    ],
+    "matplotlib__matplotlib-28478": [
+     "lib/matplotlib/path.py::Path.simplify_threshold",
+     "lib/matplotlib/path.py::Path.cleaned",
+     "lib/matplotlib/path.py::Path._create_closed"
+    ],
+    "matplotlib__matplotlib-28486": [
+     "lib/matplotlib/axes/_axes.py::Axes.axvspan",
+     "lib/matplotlib/axis.py::Axis._set_lim",
+     "lib/matplotlib/patches.py::Rectangle.__init__"
+    ],
+    "matplotlib__matplotlib-28487": [
+     "lib/matplotlib/axes/_axes.py::Axes.axhspan",
+     "lib/matplotlib/dates.py::DateConverter.convert",
+     "lib/matplotlib/axes/_axes.py::Axes.plot_date"
+    ],
+    "matplotlib__matplotlib-28501": [
+     "lib/matplotlib/dates.py::ConciseDateFormatter.format_ticks"
+    ],
+    "matplotlib__matplotlib-28504": [
+     "lib/matplotlib/backends/backend_svg.py::RendererSVG._draw_text_as_text",
+     "lib/matplotlib/backends/backend_svg.py::RendererSVG.draw_text",
+     "lib/matplotlib/backends/backend_svg.py::RendererSVG._update_glyph_map_defs"
+    ],
+    "matplotlib__matplotlib-28525": [
+     "lib/mpl_toolkits/axes_grid1/axes_grid.py::ImageGrid.__init__",
+     "lib/mpl_toolkits/axes_grid1/axes_grid.py::ImageGrid._init_locators",
+     "lib/mpl_toolkits/axes_grid1/axes_grid.py::Grid.set_axes_pad"
+    ],
+    "matplotlib__matplotlib-28573": [
+     "lib/matplotlib/artist.py::Artist._update_props"
+    ],
+    "matplotlib__matplotlib-28577": [
+     "lib/matplotlib/_constrained_layout.py::reposition_axes",
+     "lib/matplotlib/_constrained_layout.py::make_layoutgrids",
+     "lib/matplotlib/figure.py::Figure.set_constrained_layout"
+    ],
+    "matplotlib__matplotlib-28584": [
+     "lib/matplotlib/axis.py::Axis.set_label_text",
+     "lib/matplotlib/axis.py::XAxis.set_label_position"
+    ],
+    "matplotlib__matplotlib-28609": [
+     "lib/matplotlib/lines.py::Line2D.draw",
+     "lib/matplotlib/artist.py::Artist.set_url",
+     "lib/matplotlib/lines.py::Line2D.set_linestyle"
+    ],
+    "matplotlib__matplotlib-28629": [
+     "lib/matplotlib/axis.py::Axis._get_ticklabel_bboxes",
+     "lib/matplotlib/_constrained_layout.py::make_layout_margins",
+     "lib/matplotlib/axis.py::Axis.get_tightbbox"
+    ],
+    "matplotlib__matplotlib-28649": [
+     "lib/matplotlib/image.py::AxesImage.get_cursor_data",
+     "lib/matplotlib/image.py::NonUniformImage.get_cursor_data",
+     "lib/matplotlib/axes/_axes.py::Axes.imshow"
+    ],
+    "matplotlib__matplotlib-28734": [
+     "lib/matplotlib/figure.py::FigureBase.suptitle",
+     "lib/matplotlib/figure.py::FigureBase.subplots_adjust",
+     "lib/matplotlib/gridspec.py::GridSpec.tight_layout"
+    ],
+    "matplotlib__matplotlib-28786": [
+     "lib/matplotlib/contour.py::ContourSet._process_colors",
+     "lib/matplotlib/contour.py::ContourSet.__init__",
+     "lib/matplotlib/colors.py::Colormap.set_over"
+    ],
+    "matplotlib__matplotlib-28830": [
+     "lib/matplotlib/table.py::Table.__init__",
+     "lib/matplotlib/table.py::table"
+    ],
+    "matplotlib__matplotlib-28841": [
+     "lib/matplotlib/rcsetup.py::ValidateInStrings.__call__",
+     "lib/matplotlib/rcsetup.py::_make_type_validator",
+     "lib/matplotlib/rcsetup.py::validate_any"
+    ],
+    "matplotlib__matplotlib-28853": [
+     "lib/matplotlib/axes/_axes.py::Axes.pcolorfast",
+     "lib/matplotlib/axes/_axes.py::Axes._pcolorargs"
+    ],
+    "matplotlib__matplotlib-28881": [
+     "lib/matplotlib/axes/_axes.py::Axes.axline",
+     "lib/matplotlib/pyplot.py::axline"
+    ],
+    "matplotlib__matplotlib-28933": [
+     "lib/matplotlib/axes/_axes.py::Axes.axline",
+     "lib/matplotlib/axes/_axes.py::Axes.set_title",
+     "lib/matplotlib/axes/_axes.py::<module>"
+    ],
+    "matplotlib__matplotlib-28970": [
+     "lib/matplotlib/axis.py::Axis.update_units",
+     "lib/matplotlib/axis.py::Axis._update_axisinfo",
+     "lib/matplotlib/units.py::Registry.get_converter"
+    ],
+    "matplotlib__matplotlib-29007": [
+     "lib/matplotlib/figure.py::Figure.__init__",
+     "lib/matplotlib/figure.py::Figure",
+     "lib/matplotlib/pyplot.py::figure"
+    ],
+    "matplotlib__matplotlib-29013": [
+     "lib/matplotlib/figure.py::FigureBase.autofmt_xdate",
+     "lib/matplotlib/_constrained_layout.py::reposition_colorbar",
+     "lib/matplotlib/_constrained_layout.py::do_constrained_layout"
+    ],
+    "matplotlib__matplotlib-29052": [
+     "lib/matplotlib/colors.py::LinearSegmentedColormap.from_list"
+    ],
+    "matplotlib__matplotlib-29054": [
+     "lib/matplotlib/ticker.py::LogFormatter.__init__",
+     "lib/matplotlib/ticker.py::LogFormatter.set_locs",
+     "lib/matplotlib/ticker.py::LogFormatter.set_label_minor"
+    ],
+    "matplotlib__matplotlib-29209": [
+     "lib/matplotlib/axes/_axes.py::Axes.pcolormesh"
+    ],
+    "matplotlib__matplotlib-29249": [
+     "lib/matplotlib/axis.py::Axis.get_tick_params"
+    ],
+    "matplotlib__matplotlib-29258": [
+     "lib/matplotlib/table.py::Table.set_fontsize",
+     "lib/matplotlib/pyplot.py::table",
+     "lib/matplotlib/table.py::Cell.set_fontsize"
+    ],
+    "matplotlib__matplotlib-29285": [
+     "lib/mpl_toolkits/mplot3d/art3d.py::_generate_normals"
+    ],
+    "matplotlib__matplotlib-29317": [
+     "lib/matplotlib/figure.py::Figure.savefig"
+    ],
+    "matplotlib__matplotlib-29388": [
+     "lib/matplotlib/axis.py::Axis._get_ticks_position",
+     "lib/matplotlib/axis.py::Axis.set_tick_params"
+    ],
+    "matplotlib__matplotlib-29401": [
+     "lib/matplotlib/axes/_axes.py::Axes.legend",
+     "lib/matplotlib/legend.py::Legend._auto_legend_data"
+    ],
+    "matplotlib__matplotlib-29411": [
+     "lib/matplotlib/axes/_base.py::_AxesBase.__init__"
+    ],
+    "matplotlib__matplotlib-29431": [
+     "lib/matplotlib/backends/backend_pdf.py::PdfFile.embedTTF",
+     "lib/matplotlib/backends/backend_pdf.py::PdfFile.writeFonts",
+     "lib/matplotlib/font_manager.py::FontManager.findfont"
+    ],
+    "matplotlib__matplotlib-29481": [
+     "lib/matplotlib/rcsetup.py::validate_color_or_inherit",
+     "lib/matplotlib/rcsetup.py::_validate_linestyle",
+     "lib/matplotlib/pyplot.py::grid"
+    ],
+    "matplotlib__matplotlib-29486": [
+     "lib/matplotlib/axes/_axes.py::Axes.stem",
+     "lib/matplotlib/projections/polar.py::PolarAxes._set_lim_and_transforms",
+     "lib/matplotlib/lines.py::Line2D.draw"
+    ],
+    "matplotlib__matplotlib-29503": [
+     "lib/matplotlib/axes/_axes.py::Axes.barh",
+     "lib/matplotlib/pyplot.py::barh"
+    ],
+    "matplotlib__matplotlib-29520": [
+     "lib/matplotlib/animation.py::PillowWriter.grab_frame",
+     "lib/matplotlib/animation.py::PillowWriter.finish",
+     "lib/matplotlib/animation.py::PillowWriter.setup"
+    ],
+    "matplotlib__matplotlib-29537": [
+     "lib/matplotlib/ticker.py::ScalarFormatter.set_useOffset",
+     "lib/matplotlib/ticker.py::ScalarFormatter.__init__",
+     "lib/matplotlib/ticker.py::ScalarFormatter.get_useOffset"
+    ],
+    "matplotlib__matplotlib-29612": [
+     "lib/matplotlib/rcsetup.py::ValidateInStrings.__call__",
+     "lib/matplotlib/figure.py::Figure.__init__",
+     "lib/matplotlib/pyplot.py::figure"
+    ],
+    "matplotlib__matplotlib-29689": [
+     "lib/matplotlib/sphinxext/plot_directive.py::PlotDirective.run",
+     "lib/matplotlib/sphinxext/plot_directive.py::render_figures",
+     "lib/matplotlib/sphinxext/plot_directive.py::_parse_srcset"
+    ],
+    "matplotlib__matplotlib-29696": [
+     "lib/matplotlib/axes/_axes.py::Axes.bar_label",
+     "lib/matplotlib/pyplot.py::bar_label",
+     "lib/matplotlib/axes/_axes.py::Axes._parse_bar_color_args"
+    ],
+    "matplotlib__matplotlib-29698": [
+     "lib/matplotlib/ticker.py::LogLocator.tick_values",
+     "lib/matplotlib/ticker.py::LogLocator.__init__",
+     "lib/matplotlib/ticker.py::LogLocator._set_subs"
+    ],
+    "matplotlib__matplotlib-29719": [
+     "lib/matplotlib/axes/_axes.py::Axes.hist"
+    ],
+    "matplotlib__matplotlib-29721": [
+     "lib/matplotlib/pyplot.py::switch_backend",
+     "lib/matplotlib/pyplot.py::_get_backend_mod",
+     "lib/matplotlib/rcsetup.py::validate_backend"
+    ],
+    "matplotlib__matplotlib-29781": [
+     "lib/matplotlib/backend_bases.py::FigureCanvasBase.get_default_filename"
+    ],
+    "matplotlib__matplotlib-29783": [
+     "lib/matplotlib/axes/_axes.py::Axes.pcolormesh"
+    ],
+    "matplotlib__matplotlib-29798": [
+     "lib/matplotlib/projections/polar.py::PolarAxes.set_rticks",
+     "lib/matplotlib/projections/polar.py::PolarAxes.set_rlim",
+     "lib/matplotlib/axes/_base.py::_AxesBase.autoscale_view"
+    ],
+    "matplotlib__matplotlib-29808": [
+     "lib/matplotlib/rcsetup.py::validate_color_for_prop_cycle",
+     "lib/matplotlib/rcsetup.py::validate_cycler",
+     "lib/matplotlib/rcsetup.py::cycler"
+    ],
+    "matplotlib__matplotlib-29873": [
+     "lib/matplotlib/axes/_axes.py::Axes.pie",
+     "lib/matplotlib/pyplot.py::pie"
+    ],
+    "matplotlib__matplotlib-29879": [
+     "lib/matplotlib/pyplot.py::errorbar",
+     "lib/matplotlib/lines.py::Line2D.set_linestyle"
+    ],
+    "matplotlib__matplotlib-29892": [
+     "lib/matplotlib/image.py::_ImageBase.draw",
+     "lib/matplotlib/image.py::_ImageBase._make_image",
+     "lib/matplotlib/backends/backend_qt.py::FigureCanvasQT.resizeEvent"
+    ],
+    "matplotlib__matplotlib-29919": [
+     "lib/matplotlib/projections/geo.py::MollweideAxes._get_core_transform",
+     "lib/matplotlib/axes/_axes.py::Axes.contourf"
+    ],
+    "matplotlib__matplotlib-29958": [],
+    "matplotlib__matplotlib-29993": [
+     "lib/matplotlib/testing/widgets.py::click_and_drag",
+     "lib/matplotlib/widgets.py::RangeSlider",
+     "lib/matplotlib/testing/widgets.py::mock_event"
+    ],
+    "matplotlib__matplotlib-30030": [
+     "lib/matplotlib/__init__.py::rc",
+     "lib/matplotlib/pyplot.py::rc"
+    ],
+    "matplotlib__matplotlib-30079": [
+     "lib/matplotlib/legend.py::Legend.__init__",
+     "lib/matplotlib/axes/_axes.py::Axes.legend",
+     "lib/matplotlib/pyplot.py::legend"
+    ],
+    "matplotlib__matplotlib-30089": [
+     "lib/matplotlib/figure.py::Figure.tight_layout",
+     "lib/matplotlib/_constrained_layout.py::do_constrained_layout",
+     "lib/matplotlib/gridspec.py::GridSpec.tight_layout"
+    ],
+    "matplotlib__matplotlib-30098": [
+     "lib/matplotlib/colorbar.py::Colorbar.__init__"
+    ],
+    "matplotlib__matplotlib-30186": [
+     "lib/matplotlib/legend.py::Legend.__init__",
+     "lib/matplotlib/axes/_axes.py::Axes.legend"
+    ],
+    "matplotlib__matplotlib-30198": [
+     "lib/matplotlib/path.py::Path.__deepcopy__",
+     "lib/matplotlib/path.py::Path.copy",
+     "lib/matplotlib/path.py::<module>"
+    ],
+    "matplotlib__matplotlib-30223": [
+     "lib/matplotlib/projections/polar.py::PolarAxes.set_rorigin",
+     "lib/matplotlib/projections/polar.py::PolarTransform._get_rorigin",
+     "lib/matplotlib/projections/polar.py::PolarAxes._set_lim_and_transforms"
+    ],
+    "matplotlib__matplotlib-30328": [
+     "lib/matplotlib/legend.py::Legend.__init__"
+    ],
+    "matplotlib__matplotlib-30363": [
+     "lib/matplotlib/pyplot.py::savefig",
+     "lib/matplotlib/backend_bases.py::FigureCanvasBase.print_figure",
+     "lib/matplotlib/backends/backend_agg.py::FigureCanvasAgg.print_to_buffer"
+    ],
+    "matplotlib__matplotlib-30423": [
+     "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D.add_collection3d",
+     "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D.auto_scale_xyz"
+    ],
+    "matplotlib__matplotlib-30467": [
+     "lib/matplotlib/axis.py::Axis._get_ticklabel_bboxes",
+     "lib/matplotlib/axis.py::Axis.get_tightbbox"
+    ],
+    "matplotlib__matplotlib-30475": [
+     "lib/matplotlib/transforms.py::Transform.contains_branch_seperately",
+     "lib/matplotlib/transforms.py::_BlendedMixin.contains_branch_seperately",
+     "lib/matplotlib/transforms.py::CompositeGenericTransform.contains_branch_seperately"
+    ]
+   },
+   "hits": {
+    "matplotlib__matplotlib-28104": true,
+    "matplotlib__matplotlib-28116": false,
+    "matplotlib__matplotlib-28177": true,
+    "matplotlib__matplotlib-28261": true,
+    "matplotlib__matplotlib-28292": true,
+    "matplotlib__matplotlib-28306": true,
+    "matplotlib__matplotlib-28363": true,
+    "matplotlib__matplotlib-28388": false,
+    "matplotlib__matplotlib-28397": false,
+    "matplotlib__matplotlib-28401": true,
+    "matplotlib__matplotlib-28436": true,
+    "matplotlib__matplotlib-28437": true,
+    "matplotlib__matplotlib-28465": false,
+    "matplotlib__matplotlib-28473": false,
+    "matplotlib__matplotlib-28486": false,
+    "matplotlib__matplotlib-28487": true,
+    "matplotlib__matplotlib-28501": true,
+    "matplotlib__matplotlib-28504": true,
+    "matplotlib__matplotlib-28525": true,
+    "matplotlib__matplotlib-28573": true,
+    "matplotlib__matplotlib-28577": false,
+    "matplotlib__matplotlib-28584": false,
+    "matplotlib__matplotlib-28609": false,
+    "matplotlib__matplotlib-28629": true,
+    "matplotlib__matplotlib-28649": false,
+    "matplotlib__matplotlib-28734": false,
+    "matplotlib__matplotlib-28786": true,
+    "matplotlib__matplotlib-28830": true,
+    "matplotlib__matplotlib-28841": false,
+    "matplotlib__matplotlib-28853": true,
+    "matplotlib__matplotlib-28881": false,
+    "matplotlib__matplotlib-28933": false,
+    "matplotlib__matplotlib-28970": true,
+    "matplotlib__matplotlib-29007": true,
+    "matplotlib__matplotlib-29013": true,
+    "matplotlib__matplotlib-29052": false,
+    "matplotlib__matplotlib-29054": true,
+    "matplotlib__matplotlib-29209": false,
+    "matplotlib__matplotlib-29249": true,
+    "matplotlib__matplotlib-29258": false,
+    "matplotlib__matplotlib-29285": true,
+    "matplotlib__matplotlib-29317": false,
+    "matplotlib__matplotlib-29388": true,
+    "matplotlib__matplotlib-29401": false,
+    "matplotlib__matplotlib-29411": true,
+    "matplotlib__matplotlib-29431": false,
+    "matplotlib__matplotlib-29481": true,
+    "matplotlib__matplotlib-29486": true,
+    "matplotlib__matplotlib-29503": false,
+    "matplotlib__matplotlib-29520": true,
+    "matplotlib__matplotlib-29537": true,
+    "matplotlib__matplotlib-29612": true,
+    "matplotlib__matplotlib-29689": false,
+    "matplotlib__matplotlib-29696": true,
+    "matplotlib__matplotlib-29698": true,
+    "matplotlib__matplotlib-29719": true,
+    "matplotlib__matplotlib-29721": false,
+    "matplotlib__matplotlib-29781": true,
+    "matplotlib__matplotlib-29783": true,
+    "matplotlib__matplotlib-29798": true,
+    "matplotlib__matplotlib-29808": false,
+    "matplotlib__matplotlib-29873": true,
+    "matplotlib__matplotlib-29879": true,
+    "matplotlib__matplotlib-29892": true,
+    "matplotlib__matplotlib-29919": false,
+    "matplotlib__matplotlib-29958": false,
+    "matplotlib__matplotlib-29993": false,
+    "matplotlib__matplotlib-30030": true,
+    "matplotlib__matplotlib-30079": true,
+    "matplotlib__matplotlib-30089": false,
+    "matplotlib__matplotlib-30098": false,
+    "matplotlib__matplotlib-30186": false,
+    "matplotlib__matplotlib-30198": true,
+    "matplotlib__matplotlib-30223": true,
+    "matplotlib__matplotlib-30328": true,
+    "matplotlib__matplotlib-30363": false,
+    "matplotlib__matplotlib-30423": true,
+    "matplotlib__matplotlib-30467": true,
+    "matplotlib__matplotlib-30475": true
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": -0.38,
+    "localization_lift_pts": 1.27
+   },
+   "metrics": {
+    "false_positive_rate": 0.6923,
+    "localization_rate": 0.6076,
+    "n_false_positive": 126,
+    "n_flags": 182,
+    "n_localized": 48,
+    "n_tasks": 79,
+    "per_repo": {
+     "matplotlib/matplotlib": {
+      "false_positive_rate": 0.6923,
+      "localization_rate": 0.6076,
+      "n_false_positive": 126,
+      "n_flags": 182,
+      "n_localized": 48,
+      "n_tasks": 79
+     }
+    }
+   },
+   "retrieved": {
+    "matplotlib__matplotlib-28104": [],
+    "matplotlib__matplotlib-28116": [],
+    "matplotlib__matplotlib-28177": [],
+    "matplotlib__matplotlib-28261": [],
+    "matplotlib__matplotlib-28292": [],
+    "matplotlib__matplotlib-28306": [],
+    "matplotlib__matplotlib-28363": [],
+    "matplotlib__matplotlib-28388": [],
+    "matplotlib__matplotlib-28397": [],
+    "matplotlib__matplotlib-28401": [],
+    "matplotlib__matplotlib-28436": [],
+    "matplotlib__matplotlib-28437": [],
+    "matplotlib__matplotlib-28458": [],
+    "matplotlib__matplotlib-28465": [],
+    "matplotlib__matplotlib-28473": [],
+    "matplotlib__matplotlib-28478": [],
+    "matplotlib__matplotlib-28486": [],
+    "matplotlib__matplotlib-28487": [],
+    "matplotlib__matplotlib-28501": [],
+    "matplotlib__matplotlib-28504": [],
+    "matplotlib__matplotlib-28525": [],
+    "matplotlib__matplotlib-28573": [],
+    "matplotlib__matplotlib-28577": [],
+    "matplotlib__matplotlib-28584": [],
+    "matplotlib__matplotlib-28609": [],
+    "matplotlib__matplotlib-28629": [],
+    "matplotlib__matplotlib-28649": [],
+    "matplotlib__matplotlib-28734": [],
+    "matplotlib__matplotlib-28786": [],
+    "matplotlib__matplotlib-28830": [],
+    "matplotlib__matplotlib-28841": [],
+    "matplotlib__matplotlib-28853": [],
+    "matplotlib__matplotlib-28881": [],
+    "matplotlib__matplotlib-28933": [],
+    "matplotlib__matplotlib-28970": [],
+    "matplotlib__matplotlib-29007": [],
+    "matplotlib__matplotlib-29013": [],
+    "matplotlib__matplotlib-29052": [],
+    "matplotlib__matplotlib-29054": [],
+    "matplotlib__matplotlib-29209": [],
+    "matplotlib__matplotlib-29249": [],
+    "matplotlib__matplotlib-29258": [],
+    "matplotlib__matplotlib-29285": [],
+    "matplotlib__matplotlib-29317": [],
+    "matplotlib__matplotlib-29388": [],
+    "matplotlib__matplotlib-29401": [],
+    "matplotlib__matplotlib-29411": [],
+    "matplotlib__matplotlib-29431": [],
+    "matplotlib__matplotlib-29481": [],
+    "matplotlib__matplotlib-29486": [],
+    "matplotlib__matplotlib-29503": [],
+    "matplotlib__matplotlib-29520": [],
+    "matplotlib__matplotlib-29537": [],
+    "matplotlib__matplotlib-29612": [],
+    "matplotlib__matplotlib-29689": [],
+    "matplotlib__matplotlib-29696": [],
+    "matplotlib__matplotlib-29698": [],
+    "matplotlib__matplotlib-29719": [],
+    "matplotlib__matplotlib-29721": [],
+    "matplotlib__matplotlib-29781": [],
+    "matplotlib__matplotlib-29783": [],
+    "matplotlib__matplotlib-29798": [],
+    "matplotlib__matplotlib-29808": [],
+    "matplotlib__matplotlib-29873": [],
+    "matplotlib__matplotlib-29879": [],
+    "matplotlib__matplotlib-29892": [],
+    "matplotlib__matplotlib-29919": [],
+    "matplotlib__matplotlib-29958": [],
+    "matplotlib__matplotlib-29993": [],
+    "matplotlib__matplotlib-30030": [],
+    "matplotlib__matplotlib-30079": [],
+    "matplotlib__matplotlib-30089": [],
+    "matplotlib__matplotlib-30098": [],
+    "matplotlib__matplotlib-30186": [],
+    "matplotlib__matplotlib-30198": [],
+    "matplotlib__matplotlib-30223": [],
+    "matplotlib__matplotlib-30328": [],
+    "matplotlib__matplotlib-30363": [
+     "ab7eb0219282828cdaf16fc70c9c3bc5ece55b8c86a351e35852122b3dd65d82"
+    ],
+    "matplotlib__matplotlib-30423": [
+     "ab7eb0219282828cdaf16fc70c9c3bc5ece55b8c86a351e35852122b3dd65d82"
+    ],
+    "matplotlib__matplotlib-30467": [
+     "ab7eb0219282828cdaf16fc70c9c3bc5ece55b8c86a351e35852122b3dd65d82"
+    ],
+    "matplotlib__matplotlib-30475": [
+     "ab7eb0219282828cdaf16fc70c9c3bc5ece55b8c86a351e35852122b3dd65d82"
+    ]
+   },
+   "scores": {
+    "matplotlib__matplotlib-28104": {},
+    "matplotlib__matplotlib-28116": {},
+    "matplotlib__matplotlib-28177": {},
+    "matplotlib__matplotlib-28261": {},
+    "matplotlib__matplotlib-28292": {},
+    "matplotlib__matplotlib-28306": {},
+    "matplotlib__matplotlib-28363": {},
+    "matplotlib__matplotlib-28388": {},
+    "matplotlib__matplotlib-28397": {},
+    "matplotlib__matplotlib-28401": {},
+    "matplotlib__matplotlib-28436": {},
+    "matplotlib__matplotlib-28437": {},
+    "matplotlib__matplotlib-28458": {},
+    "matplotlib__matplotlib-28465": {},
+    "matplotlib__matplotlib-28473": {},
+    "matplotlib__matplotlib-28478": {},
+    "matplotlib__matplotlib-28486": {},
+    "matplotlib__matplotlib-28487": {},
+    "matplotlib__matplotlib-28501": {},
+    "matplotlib__matplotlib-28504": {},
+    "matplotlib__matplotlib-28525": {},
+    "matplotlib__matplotlib-28573": {},
+    "matplotlib__matplotlib-28577": {},
+    "matplotlib__matplotlib-28584": {},
+    "matplotlib__matplotlib-28609": {},
+    "matplotlib__matplotlib-28629": {},
+    "matplotlib__matplotlib-28649": {},
+    "matplotlib__matplotlib-28734": {},
+    "matplotlib__matplotlib-28786": {},
+    "matplotlib__matplotlib-28830": {},
+    "matplotlib__matplotlib-28841": {},
+    "matplotlib__matplotlib-28853": {},
+    "matplotlib__matplotlib-28881": {},
+    "matplotlib__matplotlib-28933": {},
+    "matplotlib__matplotlib-28970": {},
+    "matplotlib__matplotlib-29007": {},
+    "matplotlib__matplotlib-29013": {},
+    "matplotlib__matplotlib-29052": {},
+    "matplotlib__matplotlib-29054": {},
+    "matplotlib__matplotlib-29209": {},
+    "matplotlib__matplotlib-29249": {},
+    "matplotlib__matplotlib-29258": {},
+    "matplotlib__matplotlib-29285": {},
+    "matplotlib__matplotlib-29317": {},
+    "matplotlib__matplotlib-29388": {},
+    "matplotlib__matplotlib-29401": {},
+    "matplotlib__matplotlib-29411": {},
+    "matplotlib__matplotlib-29431": {},
+    "matplotlib__matplotlib-29481": {},
+    "matplotlib__matplotlib-29486": {},
+    "matplotlib__matplotlib-29503": {},
+    "matplotlib__matplotlib-29520": {},
+    "matplotlib__matplotlib-29537": {},
+    "matplotlib__matplotlib-29612": {},
+    "matplotlib__matplotlib-29689": {},
+    "matplotlib__matplotlib-29696": {},
+    "matplotlib__matplotlib-29698": {},
+    "matplotlib__matplotlib-29719": {},
+    "matplotlib__matplotlib-29721": {},
+    "matplotlib__matplotlib-29781": {},
+    "matplotlib__matplotlib-29783": {},
+    "matplotlib__matplotlib-29798": {},
+    "matplotlib__matplotlib-29808": {},
+    "matplotlib__matplotlib-29873": {},
+    "matplotlib__matplotlib-29879": {},
+    "matplotlib__matplotlib-29892": {},
+    "matplotlib__matplotlib-29919": {},
+    "matplotlib__matplotlib-29958": {},
+    "matplotlib__matplotlib-29993": {},
+    "matplotlib__matplotlib-30030": {},
+    "matplotlib__matplotlib-30079": {},
+    "matplotlib__matplotlib-30089": {},
+    "matplotlib__matplotlib-30098": {},
+    "matplotlib__matplotlib-30186": {},
+    "matplotlib__matplotlib-30198": {},
+    "matplotlib__matplotlib-30223": {},
+    "matplotlib__matplotlib-30328": {},
+    "matplotlib__matplotlib-30363": {
+     "ab7eb0219282828cdaf16fc70c9c3bc5ece55b8c86a351e35852122b3dd65d82": 0.308531
+    },
+    "matplotlib__matplotlib-30423": {
+     "ab7eb0219282828cdaf16fc70c9c3bc5ece55b8c86a351e35852122b3dd65d82": 0.376354
+    },
+    "matplotlib__matplotlib-30467": {
+     "ab7eb0219282828cdaf16fc70c9c3bc5ece55b8c86a351e35852122b3dd65d82": 0.288993
+    },
+    "matplotlib__matplotlib-30475": {
+     "ab7eb0219282828cdaf16fc70c9c3bc5ece55b8c86a351e35852122b3dd65d82": 0.388506
+    }
+   },
+   "tau": 0.0,
+   "version": "rolling",
+   "versions": {
+    "matplotlib__matplotlib-28104": null,
+    "matplotlib__matplotlib-28116": null,
+    "matplotlib__matplotlib-28177": null,
+    "matplotlib__matplotlib-28261": null,
+    "matplotlib__matplotlib-28292": null,
+    "matplotlib__matplotlib-28306": null,
+    "matplotlib__matplotlib-28363": null,
+    "matplotlib__matplotlib-28388": null,
+    "matplotlib__matplotlib-28397": null,
+    "matplotlib__matplotlib-28401": null,
+    "matplotlib__matplotlib-28436": null,
+    "matplotlib__matplotlib-28437": null,
+    "matplotlib__matplotlib-28458": null,
+    "matplotlib__matplotlib-28465": null,
+    "matplotlib__matplotlib-28473": null,
+    "matplotlib__matplotlib-28478": null,
+    "matplotlib__matplotlib-28486": null,
+    "matplotlib__matplotlib-28487": null,
+    "matplotlib__matplotlib-28501": null,
+    "matplotlib__matplotlib-28504": null,
+    "matplotlib__matplotlib-28525": null,
+    "matplotlib__matplotlib-28573": null,
+    "matplotlib__matplotlib-28577": null,
+    "matplotlib__matplotlib-28584": null,
+    "matplotlib__matplotlib-28609": null,
+    "matplotlib__matplotlib-28629": null,
+    "matplotlib__matplotlib-28649": null,
+    "matplotlib__matplotlib-28734": null,
+    "matplotlib__matplotlib-28786": null,
+    "matplotlib__matplotlib-28830": null,
+    "matplotlib__matplotlib-28841": null,
+    "matplotlib__matplotlib-28853": null,
+    "matplotlib__matplotlib-28881": null,
+    "matplotlib__matplotlib-28933": null,
+    "matplotlib__matplotlib-28970": null,
+    "matplotlib__matplotlib-29007": null,
+    "matplotlib__matplotlib-29013": null,
+    "matplotlib__matplotlib-29052": null,
+    "matplotlib__matplotlib-29054": null,
+    "matplotlib__matplotlib-29209": null,
+    "matplotlib__matplotlib-29249": null,
+    "matplotlib__matplotlib-29258": null,
+    "matplotlib__matplotlib-29285": null,
+    "matplotlib__matplotlib-29317": null,
+    "matplotlib__matplotlib-29388": null,
+    "matplotlib__matplotlib-29401": null,
+    "matplotlib__matplotlib-29411": null,
+    "matplotlib__matplotlib-29431": null,
+    "matplotlib__matplotlib-29481": null,
+    "matplotlib__matplotlib-29486": null,
+    "matplotlib__matplotlib-29503": null,
+    "matplotlib__matplotlib-29520": null,
+    "matplotlib__matplotlib-29537": null,
+    "matplotlib__matplotlib-29612": null,
+    "matplotlib__matplotlib-29689": null,
+    "matplotlib__matplotlib-29696": null,
+    "matplotlib__matplotlib-29698": null,
+    "matplotlib__matplotlib-29719": null,
+    "matplotlib__matplotlib-29721": null,
+    "matplotlib__matplotlib-29781": null,
+    "matplotlib__matplotlib-29783": null,
+    "matplotlib__matplotlib-29798": null,
+    "matplotlib__matplotlib-29808": null,
+    "matplotlib__matplotlib-29873": null,
+    "matplotlib__matplotlib-29879": null,
+    "matplotlib__matplotlib-29892": null,
+    "matplotlib__matplotlib-29919": null,
+    "matplotlib__matplotlib-29958": null,
+    "matplotlib__matplotlib-29993": null,
+    "matplotlib__matplotlib-30030": null,
+    "matplotlib__matplotlib-30079": null,
+    "matplotlib__matplotlib-30089": null,
+    "matplotlib__matplotlib-30098": null,
+    "matplotlib__matplotlib-30186": null,
+    "matplotlib__matplotlib-30198": null,
+    "matplotlib__matplotlib-30223": null,
+    "matplotlib__matplotlib-30328": null,
+    "matplotlib__matplotlib-30363": "820683fb0f382f72d16134b53092ff780247a18894fe08b33c6edee222db6958",
+    "matplotlib__matplotlib-30423": "820683fb0f382f72d16134b53092ff780247a18894fe08b33c6edee222db6958",
+    "matplotlib__matplotlib-30467": "820683fb0f382f72d16134b53092ff780247a18894fe08b33c6edee222db6958",
+    "matplotlib__matplotlib-30475": "820683fb0f382f72d16134b53092ff780247a18894fe08b33c6edee222db6958"
+   }
+  }
+ },
+ "control": {
+  "false_positive_rate": 0.6961,
+  "localization_rate": 0.5949,
+  "n_false_positive": 126,
+  "n_flags": 181,
+  "n_localized": 47,
+  "n_tasks": 79,
+  "per_repo": {
+   "matplotlib/matplotlib": {
+    "false_positive_rate": 0.6961,
+    "localization_rate": 0.5949,
+    "n_false_positive": 126,
+    "n_flags": 181,
+    "n_localized": 47,
+    "n_tasks": 79
+   }
+  }
+ },
+ "control_flags": {
+  "matplotlib__matplotlib-28104": [
+   "lib/matplotlib/patches.py",
+   "lib/matplotlib/patches.py",
+   "lib/matplotlib/patches.py"
+  ],
+  "matplotlib__matplotlib-28116": [
+   "lib/matplotlib/cm.py",
+   "lib/matplotlib/cm.py",
+   "lib/matplotlib/cm.py"
+  ],
+  "matplotlib__matplotlib-28177": [
+   "lib/matplotlib/artist.py"
+  ],
+  "matplotlib__matplotlib-28261": [
+   "lib/mpl_toolkits/mplot3d/axes3d.py"
+  ],
+  "matplotlib__matplotlib-28292": [
+   "lib/matplotlib/ticker.py"
+  ],
+  "matplotlib__matplotlib-28306": [
+   "lib/matplotlib/projections/polar.py",
+   "lib/matplotlib/ticker.py"
+  ],
+  "matplotlib__matplotlib-28363": [
+   "lib/matplotlib/figure.py",
+   "lib/matplotlib/figure.py",
+   "lib/matplotlib/figure.py"
+  ],
+  "matplotlib__matplotlib-28388": [],
+  "matplotlib__matplotlib-28397": [
+   "lib/matplotlib/figure.py",
+   "lib/matplotlib/figure.py",
+   "lib/matplotlib/backends/backend_qt5agg.py"
+  ],
+  "matplotlib__matplotlib-28401": [
+   "lib/matplotlib/text.py",
+   "lib/matplotlib/text.py"
+  ],
+  "matplotlib__matplotlib-28436": [
+   "lib/matplotlib/colors.py",
+   "lib/matplotlib/lines.py",
+   "lib/matplotlib/pyplot.py"
+  ],
+  "matplotlib__matplotlib-28437": [
+   "lib/matplotlib/image.py",
+   "lib/matplotlib/image.py",
+   "lib/matplotlib/axes/_axes.py"
+  ],
+  "matplotlib__matplotlib-28458": [
+   "lib/matplotlib/image.py",
+   "lib/matplotlib/image.py",
+   "lib/matplotlib/animation.py"
+  ],
+  "matplotlib__matplotlib-28465": [
+   "lib/matplotlib/figure.py",
+   "lib/matplotlib/figure.py"
+  ],
+  "matplotlib__matplotlib-28473": [
+   "lib/matplotlib/rcsetup.py",
+   "lib/matplotlib/__init__.py",
+   "lib/matplotlib/__init__.py"
+  ],
+  "matplotlib__matplotlib-28478": [
+   "lib/matplotlib/path.py",
+   "lib/matplotlib/path.py",
+   "lib/matplotlib/path.py"
+  ],
+  "matplotlib__matplotlib-28486": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/axis.py",
+   "lib/matplotlib/patches.py"
+  ],
+  "matplotlib__matplotlib-28487": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/dates.py",
+   "lib/matplotlib/axes/_axes.py"
+  ],
+  "matplotlib__matplotlib-28501": [
+   "lib/matplotlib/dates.py"
+  ],
+  "matplotlib__matplotlib-28504": [
+   "lib/matplotlib/backends/backend_svg.py",
+   "lib/matplotlib/backends/backend_svg.py",
+   "lib/matplotlib/backends/backend_svg.py"
+  ],
+  "matplotlib__matplotlib-28525": [
+   "lib/mpl_toolkits/axes_grid1/axes_grid.py",
+   "lib/mpl_toolkits/axes_grid1/axes_grid.py",
+   "lib/mpl_toolkits/axes_grid1/axes_grid.py"
+  ],
+  "matplotlib__matplotlib-28573": [
+   "lib/matplotlib/artist.py"
+  ],
+  "matplotlib__matplotlib-28577": [
+   "lib/matplotlib/_constrained_layout.py",
+   "lib/matplotlib/_constrained_layout.py",
+   "lib/matplotlib/figure.py"
+  ],
+  "matplotlib__matplotlib-28584": [
+   "lib/matplotlib/axis.py",
+   "lib/matplotlib/axis.py"
+  ],
+  "matplotlib__matplotlib-28609": [
+   "lib/matplotlib/lines.py",
+   "lib/matplotlib/artist.py",
+   "lib/matplotlib/lines.py"
+  ],
+  "matplotlib__matplotlib-28629": [
+   "lib/matplotlib/axis.py",
+   "lib/matplotlib/_constrained_layout.py",
+   "lib/matplotlib/axis.py"
+  ],
+  "matplotlib__matplotlib-28649": [
+   "lib/matplotlib/image.py",
+   "lib/matplotlib/image.py",
+   "lib/matplotlib/axes/_axes.py"
+  ],
+  "matplotlib__matplotlib-28734": [
+   "lib/matplotlib/figure.py",
+   "lib/matplotlib/figure.py",
+   "lib/matplotlib/gridspec.py"
+  ],
+  "matplotlib__matplotlib-28786": [
+   "lib/matplotlib/contour.py",
+   "lib/matplotlib/contour.py",
+   "lib/matplotlib/colors.py"
+  ],
+  "matplotlib__matplotlib-28830": [
+   "lib/matplotlib/table.py",
+   "lib/matplotlib/table.py"
+  ],
+  "matplotlib__matplotlib-28841": [
+   "lib/matplotlib/rcsetup.py",
+   "lib/matplotlib/rcsetup.py",
+   "lib/matplotlib/rcsetup.py"
+  ],
+  "matplotlib__matplotlib-28853": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/axes/_axes.py"
+  ],
+  "matplotlib__matplotlib-28881": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/pyplot.py"
+  ],
+  "matplotlib__matplotlib-28933": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/axes/_axes.py"
+  ],
+  "matplotlib__matplotlib-28970": [
+   "lib/matplotlib/axis.py",
+   "lib/matplotlib/axis.py",
+   "lib/matplotlib/units.py"
+  ],
+  "matplotlib__matplotlib-29007": [
+   "lib/matplotlib/figure.py",
+   "lib/matplotlib/figure.py",
+   "lib/matplotlib/pyplot.py"
+  ],
+  "matplotlib__matplotlib-29013": [
+   "lib/matplotlib/figure.py",
+   "lib/matplotlib/_constrained_layout.py",
+   "lib/matplotlib/_constrained_layout.py"
+  ],
+  "matplotlib__matplotlib-29052": [
+   "lib/matplotlib/colors.py"
+  ],
+  "matplotlib__matplotlib-29054": [
+   "lib/matplotlib/ticker.py",
+   "lib/matplotlib/ticker.py",
+   "lib/matplotlib/ticker.py"
+  ],
+  "matplotlib__matplotlib-29209": [
+   "lib/matplotlib/axes/_axes.py"
+  ],
+  "matplotlib__matplotlib-29249": [
+   "lib/matplotlib/axis.py"
+  ],
+  "matplotlib__matplotlib-29258": [
+   "lib/matplotlib/table.py",
+   "lib/matplotlib/pyplot.py",
+   "lib/matplotlib/table.py"
+  ],
+  "matplotlib__matplotlib-29285": [
+   "lib/mpl_toolkits/mplot3d/art3d.py"
+  ],
+  "matplotlib__matplotlib-29317": [
+   "lib/matplotlib/figure.py"
+  ],
+  "matplotlib__matplotlib-29388": [
+   "lib/matplotlib/axis.py",
+   "lib/matplotlib/axis.py"
+  ],
+  "matplotlib__matplotlib-29401": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/legend.py"
+  ],
+  "matplotlib__matplotlib-29411": [
+   "lib/matplotlib/axes/_base.py"
+  ],
+  "matplotlib__matplotlib-29431": [
+   "lib/matplotlib/backends/backend_pdf.py",
+   "lib/matplotlib/backends/backend_pdf.py",
+   "lib/matplotlib/font_manager.py"
+  ],
+  "matplotlib__matplotlib-29481": [
+   "lib/matplotlib/rcsetup.py",
+   "lib/matplotlib/rcsetup.py",
+   "lib/matplotlib/pyplot.py"
+  ],
+  "matplotlib__matplotlib-29486": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/projections/polar.py",
+   "lib/matplotlib/lines.py"
+  ],
+  "matplotlib__matplotlib-29503": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/pyplot.py"
+  ],
+  "matplotlib__matplotlib-29520": [
+   "lib/matplotlib/animation.py",
+   "lib/matplotlib/animation.py",
+   "lib/matplotlib/animation.py"
+  ],
+  "matplotlib__matplotlib-29537": [
+   "lib/matplotlib/ticker.py",
+   "lib/matplotlib/ticker.py",
+   "lib/matplotlib/ticker.py"
+  ],
+  "matplotlib__matplotlib-29612": [
+   "lib/matplotlib/rcsetup.py",
+   "lib/matplotlib/figure.py",
+   "lib/matplotlib/pyplot.py"
+  ],
+  "matplotlib__matplotlib-29689": [
+   "lib/matplotlib/sphinxext/plot_directive.py",
+   "lib/matplotlib/sphinxext/plot_directive.py",
+   "lib/matplotlib/sphinxext/plot_directive.py"
+  ],
+  "matplotlib__matplotlib-29696": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/pyplot.py",
+   "lib/matplotlib/axes/_axes.py"
+  ],
+  "matplotlib__matplotlib-29698": [
+   "lib/matplotlib/ticker.py",
+   "lib/matplotlib/ticker.py",
+   "lib/matplotlib/ticker.py"
+  ],
+  "matplotlib__matplotlib-29719": [
+   "lib/matplotlib/axes/_axes.py"
+  ],
+  "matplotlib__matplotlib-29721": [
+   "lib/matplotlib/pyplot.py",
+   "lib/matplotlib/pyplot.py",
+   "lib/matplotlib/rcsetup.py"
+  ],
+  "matplotlib__matplotlib-29781": [
+   "lib/matplotlib/backend_bases.py"
+  ],
+  "matplotlib__matplotlib-29783": [
+   "lib/matplotlib/axes/_axes.py"
+  ],
+  "matplotlib__matplotlib-29798": [
+   "lib/matplotlib/projections/polar.py",
+   "lib/matplotlib/projections/polar.py",
+   "lib/matplotlib/axes/_base.py"
+  ],
+  "matplotlib__matplotlib-29808": [
+   "lib/matplotlib/rcsetup.py",
+   "lib/matplotlib/rcsetup.py",
+   "lib/matplotlib/rcsetup.py"
+  ],
+  "matplotlib__matplotlib-29873": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/pyplot.py"
+  ],
+  "matplotlib__matplotlib-29879": [
+   "lib/matplotlib/pyplot.py",
+   "lib/matplotlib/lines.py"
+  ],
+  "matplotlib__matplotlib-29892": [
+   "lib/matplotlib/image.py",
+   "lib/matplotlib/image.py",
+   "lib/matplotlib/backends/backend_qt.py"
+  ],
+  "matplotlib__matplotlib-29919": [
+   "lib/matplotlib/projections/geo.py",
+   "lib/matplotlib/axes/_axes.py"
+  ],
+  "matplotlib__matplotlib-29958": [],
+  "matplotlib__matplotlib-29993": [
+   "lib/matplotlib/testing/widgets.py",
+   "lib/matplotlib/widgets.py",
+   "lib/matplotlib/testing/widgets.py"
+  ],
+  "matplotlib__matplotlib-30030": [
+   "lib/matplotlib/__init__.py",
+   "lib/matplotlib/pyplot.py"
+  ],
+  "matplotlib__matplotlib-30079": [
+   "lib/matplotlib/legend.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/pyplot.py"
+  ],
+  "matplotlib__matplotlib-30089": [
+   "lib/matplotlib/figure.py",
+   "lib/matplotlib/_constrained_layout.py",
+   "lib/matplotlib/gridspec.py"
+  ],
+  "matplotlib__matplotlib-30098": [
+   "lib/matplotlib/colorbar.py"
+  ],
+  "matplotlib__matplotlib-30186": [
+   "lib/matplotlib/legend.py",
+   "lib/matplotlib/axes/_axes.py"
+  ],
+  "matplotlib__matplotlib-30198": [
+   "lib/matplotlib/path.py",
+   "lib/matplotlib/path.py",
+   "lib/matplotlib/path.py"
+  ],
+  "matplotlib__matplotlib-30223": [
+   "lib/matplotlib/projections/polar.py",
+   "lib/matplotlib/projections/polar.py",
+   "lib/matplotlib/projections/polar.py"
+  ],
+  "matplotlib__matplotlib-30328": [
+   "lib/matplotlib/legend.py"
+  ],
+  "matplotlib__matplotlib-30363": [
+   "lib/matplotlib/pyplot.py",
+   "lib/matplotlib/backend_bases.py",
+   "lib/matplotlib/image.py"
+  ],
+  "matplotlib__matplotlib-30423": [
+   "lib/mpl_toolkits/mplot3d/axes3d.py"
+  ],
+  "matplotlib__matplotlib-30467": [
+   "lib/matplotlib/axis.py",
+   "lib/matplotlib/axis.py"
+  ],
+  "matplotlib__matplotlib-30475": [
+   "lib/matplotlib/transforms.py",
+   "lib/matplotlib/transforms.py",
+   "lib/matplotlib/transforms.py"
+  ]
+ },
+ "errors": {},
+ "gold": {
+  "matplotlib__matplotlib-28104": [
+   "galleries/examples/shapes_and_collections/hatchcolor_demo.py::<module>",
+   "lib/matplotlib/backend_bases.py::GraphicsContextBase.__init__",
+   "lib/matplotlib/collections.py::Collection.__init__",
+   "lib/matplotlib/patches.py::Patch",
+   "lib/matplotlib/patches.py::Patch.__init__",
+   "lib/matplotlib/patches.py::Patch._draw_paths_with_artist_properties",
+   "lib/matplotlib/patches.py::Patch._set_edgecolor",
+   "lib/matplotlib/patches.py::Patch.get_facecolor",
+   "lib/matplotlib/patches.py::Patch.get_fill",
+   "lib/matplotlib/patches.py::Patch.get_linewidth",
+   "lib/matplotlib/patches.py::Patch.set_alpha",
+   "lib/matplotlib/patches.py::Patch.set_antialiased",
+   "lib/matplotlib/patches.py::Patch.set_color",
+   "lib/matplotlib/patches.py::Patch.set_edgecolor",
+   "lib/matplotlib/patches.py::Patch.set_fill",
+   "lib/matplotlib/patches.py::Patch.set_linewidth",
+   "lib/matplotlib/patches.py::Patch.update_from",
+   "lib/matplotlib/rcsetup.py::<module>",
+   "lib/matplotlib/rcsetup.py::validate_color_for_prop_cycle",
+   "lib/matplotlib/rcsetup.py::validate_color_or_auto"
+  ],
+  "matplotlib__matplotlib-28116": [
+   "lib/matplotlib/cm.py::_gen_cmap_registry"
+  ],
+  "matplotlib__matplotlib-28177": [
+   "lib/matplotlib/artist.py::Artist",
+   "lib/matplotlib/artist.py::Artist.__init__",
+   "lib/matplotlib/artist.py::Artist.get_figure",
+   "lib/matplotlib/artist.py::Artist.get_path_effects",
+   "lib/matplotlib/artist.py::Artist.remove",
+   "lib/matplotlib/artist.py::Artist.set_clip_box",
+   "lib/matplotlib/artist.py::Artist.set_figure",
+   "lib/matplotlib/axes/_base.py::_AxesBase.__clear",
+   "lib/matplotlib/figure.py::<module>",
+   "lib/matplotlib/figure.py::Figure.__init__",
+   "lib/matplotlib/figure.py::FigureBase",
+   "lib/matplotlib/figure.py::FigureBase.contains",
+   "lib/matplotlib/figure.py::FigureBase.get_children",
+   "lib/matplotlib/figure.py::SubFigure.__init__"
+  ],
+  "matplotlib__matplotlib-28261": [
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D._on_move"
+  ],
+  "matplotlib__matplotlib-28292": [
+   "lib/matplotlib/ticker.py::MaxNLocator._raw_ticks"
+  ],
+  "matplotlib__matplotlib-28306": [
+   "lib/matplotlib/projections/polar.py::PolarAxes",
+   "lib/matplotlib/projections/polar.py::PolarAxes.format_coord",
+   "lib/matplotlib/projections/polar.py::PolarAxes.get_data_ratio"
+  ],
+  "matplotlib__matplotlib-28363": [
+   "lib/matplotlib/figure.py::FigureBase.subfigures"
+  ],
+  "matplotlib__matplotlib-28388": [
+   "lib/matplotlib/backends/registry.py::BackendRegistry._validate_and_store_entry_points"
+  ],
+  "matplotlib__matplotlib-28397": [
+   "lib/matplotlib/figure.py::FigureBase",
+   "lib/matplotlib/figure.py::FigureBase.add_subfigure",
+   "lib/matplotlib/figure.py::FigureBase.sca"
+  ],
+  "matplotlib__matplotlib-28401": [
+   "lib/matplotlib/text.py::Text._get_dist_to_box",
+   "lib/matplotlib/text.py::Text.set_wrap"
+  ],
+  "matplotlib__matplotlib-28436": [
+   "lib/matplotlib/colors.py::_to_rgba_no_colorcycle",
+   "lib/matplotlib/colors.py::is_color_like",
+   "lib/matplotlib/colors.py::to_rgba"
+  ],
+  "matplotlib__matplotlib-28437": [
+   "lib/matplotlib/image.py::_ImageBase._make_image"
+  ],
+  "matplotlib__matplotlib-28465": [
+   "lib/matplotlib/figure.py::SubFigure",
+   "lib/matplotlib/figure.py::SubFigure.__init__",
+   "lib/matplotlib/figure.py::SubFigure.dpi"
+  ],
+  "matplotlib__matplotlib-28473": [
+   "lib/matplotlib/backends/registry.py::BackendRegistry",
+   "lib/matplotlib/backends/registry.py::BackendRegistry.__init__",
+   "lib/matplotlib/backends/registry.py::BackendRegistry._backend_module_name",
+   "lib/matplotlib/backends/registry.py::BackendRegistry.is_valid_backend",
+   "lib/matplotlib/backends/registry.py::BackendRegistry.resolve_backend",
+   "lib/matplotlib/backends/registry.py::BackendRegistry.resolve_gui_or_backend"
+  ],
+  "matplotlib__matplotlib-28486": [
+   "lib/matplotlib/transforms.py::CompositeGenericTransform",
+   "lib/matplotlib/transforms.py::CompositeGenericTransform._iter_break_from_left_to_right",
+   "lib/matplotlib/transforms.py::Transform",
+   "lib/matplotlib/transforms.py::Transform.__sub__",
+   "lib/matplotlib/transforms.py::Transform.contains_branch_seperately"
+  ],
+  "matplotlib__matplotlib-28487": [
+   "lib/matplotlib/axes/_axes.py::Axes.axhspan"
+  ],
+  "matplotlib__matplotlib-28501": [
+   "lib/matplotlib/dates.py::ConciseDateFormatter.format_ticks"
+  ],
+  "matplotlib__matplotlib-28504": [
+   "lib/matplotlib/backends/backend_svg.py::RendererSVG._draw_text_as_path",
+   "lib/matplotlib/backends/backend_svg.py::RendererSVG._draw_text_as_text"
+  ],
+  "matplotlib__matplotlib-28525": [
+   "lib/mpl_toolkits/axes_grid1/axes_grid.py::ImageGrid.__init__",
+   "lib/mpl_toolkits/axes_grid1/axes_grid.py::ImageGrid._init_locators"
+  ],
+  "matplotlib__matplotlib-28573": [
+   "lib/matplotlib/artist.py::Artist._update_props"
+  ],
+  "matplotlib__matplotlib-28577": [
+   "lib/matplotlib/axis.py::<module>",
+   "lib/matplotlib/axis.py::Axis",
+   "lib/matplotlib/axis.py::Axis._copy_tick_props",
+   "lib/matplotlib/axis.py::Axis.get_label_text",
+   "lib/matplotlib/axis.py::Tick",
+   "lib/matplotlib/axis.py::Tick._apply_tickdir",
+   "lib/matplotlib/axis.py::Tick._set_labelrotation",
+   "lib/matplotlib/axis.py::Tick.get_tickdir",
+   "lib/matplotlib/axis.py::XTick",
+   "lib/matplotlib/axis.py::XTick._apply_tickdir"
+  ],
+  "matplotlib__matplotlib-28584": [
+   "galleries/examples/axes_grid1/parasite_simple.py::<module>",
+   "lib/matplotlib/axes/_base.py::_AxesBase",
+   "lib/matplotlib/axes/_base.py::_AxesBase.__repr__",
+   "lib/matplotlib/axes/_base.py::_AxesBase.get_subplotspec",
+   "lib/matplotlib/axes/_base.py::_AxesBase.get_xlabel",
+   "lib/matplotlib/axes/_base.py::_AxesBase.get_ylabel",
+   "lib/matplotlib/axes/_base.py::_AxesBase.set_xlabel",
+   "lib/matplotlib/axes/_base.py::_AxesBase.set_ylabel",
+   "lib/matplotlib/axis.py::Axis",
+   "lib/matplotlib/axis.py::Axis.get_gridlines",
+   "lib/matplotlib/axis.py::Axis.get_label",
+   "lib/matplotlib/axis.py::Axis.get_offset_text",
+   "lib/matplotlib/backends/qt_editor/figureoptions.py::figure_edit",
+   "lib/mpl_toolkits/axisartist/axis_artist.py::AxisLabel",
+   "lib/mpl_toolkits/axisartist/axis_artist.py::AxisLabel.get_ref_artist",
+   "lib/mpl_toolkits/axisartist/axis_artist.py::AxisLabel.get_text",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D.get_zlabel"
+  ],
+  "matplotlib__matplotlib-28609": [
+   "lib/matplotlib/backends/backend_svg.py::RendererSVG",
+   "lib/matplotlib/backends/backend_svg.py::RendererSVG.draw_markers",
+   "lib/matplotlib/backends/backend_svg.py::RendererSVG.draw_path_collection"
+  ],
+  "matplotlib__matplotlib-28629": [
+   "lib/matplotlib/axis.py::Axis.get_tightbbox"
+  ],
+  "matplotlib__matplotlib-28649": [
+   "lib/matplotlib/artist.py::Artist.format_cursor_data",
+   "lib/matplotlib/cbook.py::_g_sig_digits"
+  ],
+  "matplotlib__matplotlib-28734": [
+   "lib/matplotlib/_constrained_layout.py::do_constrained_layout"
+  ],
+  "matplotlib__matplotlib-28786": [
+   "lib/matplotlib/contour.py::<module>",
+   "lib/matplotlib/contour.py::ContourSet.__init__"
+  ],
+  "matplotlib__matplotlib-28830": [
+   "lib/matplotlib/cbook.py::_auto_format_str",
+   "lib/matplotlib/table.py::<module>",
+   "lib/matplotlib/table.py::Cell",
+   "lib/matplotlib/table.py::table"
+  ],
+  "matplotlib__matplotlib-28841": [
+   "lib/matplotlib/rcsetup.py::<module>",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D._arcball",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D._on_move",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::_Quaternion",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::_Quaternion.as_cardan_angles",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::_Quaternion.from_cardan_angles",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::_Quaternion.rotate_from_to"
+  ],
+  "matplotlib__matplotlib-28853": [
+   "lib/matplotlib/axes/_axes.py::Axes.pcolorfast"
+  ],
+  "matplotlib__matplotlib-28881": [
+   "lib/matplotlib/lines.py::AxLine.get_transform"
+  ],
+  "matplotlib__matplotlib-28933": [
+   "lib/matplotlib/lines.py::AxLine",
+   "lib/matplotlib/lines.py::AxLine.get_slope",
+   "lib/matplotlib/lines.py::AxLine.set_xy1",
+   "lib/matplotlib/lines.py::AxLine.set_xy2"
+  ],
+  "matplotlib__matplotlib-28970": [
+   "lib/matplotlib/axis.py::Axis",
+   "lib/matplotlib/axis.py::Axis.__init__",
+   "lib/matplotlib/axis.py::Axis.__str__",
+   "lib/matplotlib/axis.py::Axis._update_axisinfo",
+   "lib/matplotlib/axis.py::Axis.clear",
+   "lib/matplotlib/axis.py::Axis.convert_units",
+   "lib/matplotlib/axis.py::Axis.have_units",
+   "lib/matplotlib/axis.py::Axis.set_units",
+   "lib/matplotlib/axis.py::Axis.update_units",
+   "lib/matplotlib/axis.py::XAxis.set_default_intervals",
+   "lib/matplotlib/axis.py::YAxis.set_default_intervals",
+   "lib/matplotlib/backends/qt_editor/figureoptions.py::figure_edit"
+  ],
+  "matplotlib__matplotlib-29007": [
+   "lib/matplotlib/_pylab_helpers.py::Gcf._set_new_active_manager",
+   "lib/matplotlib/figure.py::Figure",
+   "lib/matplotlib/figure.py::Figure._get_renderer"
+  ],
+  "matplotlib__matplotlib-29013": [
+   "lib/matplotlib/figure.py::FigureBase",
+   "lib/matplotlib/figure.py::FigureBase.autofmt_xdate"
+  ],
+  "matplotlib__matplotlib-29052": [
+   "lib/matplotlib/colors.py::<module>",
+   "lib/matplotlib/colors.py::LinearSegmentedColormap.__init__"
+  ],
+  "matplotlib__matplotlib-29054": [
+   "lib/matplotlib/ticker.py::<module>",
+   "lib/matplotlib/ticker.py::LogFormatter",
+   "lib/matplotlib/ticker.py::LogFormatter.set_locs",
+   "lib/matplotlib/ticker.py::ScalarFormatter._set_format"
+  ],
+  "matplotlib__matplotlib-29209": [
+   "lib/matplotlib/axes/_axes.py::Axes._pcolorargs"
+  ],
+  "matplotlib__matplotlib-29249": [
+   "lib/matplotlib/axis.py::Axis",
+   "lib/matplotlib/axis.py::Axis._translate_tick_params",
+   "lib/matplotlib/axis.py::Axis.get_tick_params"
+  ],
+  "matplotlib__matplotlib-29258": [
+   "lib/matplotlib/table.py::table"
+  ],
+  "matplotlib__matplotlib-29285": [
+   "lib/mpl_toolkits/mplot3d/art3d.py::_generate_normals"
+  ],
+  "matplotlib__matplotlib-29317": [
+   "lib/matplotlib/legend.py::Legend",
+   "lib/matplotlib/legend.py::Legend._auto_legend_data",
+   "lib/matplotlib/legend.py::Legend._find_best_position",
+   "lib/matplotlib/legend.py::Legend._init_legend_box"
+  ],
+  "matplotlib__matplotlib-29388": [
+   "lib/matplotlib/axis.py::<module>",
+   "lib/matplotlib/axis.py::Axis._get_ticks_position"
+  ],
+  "matplotlib__matplotlib-29401": [
+   "lib/matplotlib/axes/_axes.py::Axes",
+   "lib/matplotlib/axes/_axes.py::Axes.errorbar"
+  ],
+  "matplotlib__matplotlib-29411": [
+   "lib/matplotlib/axes/_base.py::_AxesBase.__init__"
+  ],
+  "matplotlib__matplotlib-29431": [
+   "galleries/examples/misc/ftface_props.py::<module>"
+  ],
+  "matplotlib__matplotlib-29481": [
+   "lib/matplotlib/__init__.py::<module>",
+   "lib/matplotlib/__init__.py::_init_tests",
+   "lib/matplotlib/__init__.py::_val_or_rc",
+   "lib/matplotlib/__init__.py::is_interactive",
+   "lib/matplotlib/axis.py::Tick.__init__",
+   "lib/matplotlib/rcsetup.py::<module>",
+   "lib/matplotlib/rcsetup.py::_validate_linestyle",
+   "lib/matplotlib/rcsetup.py::validate_color"
+  ],
+  "matplotlib__matplotlib-29486": [
+   "lib/matplotlib/axes/_axes.py::Axes.stem"
+  ],
+  "matplotlib__matplotlib-29503": [
+   "lib/matplotlib/axes/_axes.py::Axes.bar"
+  ],
+  "matplotlib__matplotlib-29520": [
+   "lib/matplotlib/animation.py::PillowWriter.grab_frame"
+  ],
+  "matplotlib__matplotlib-29537": [
+   "lib/matplotlib/ticker.py::ScalarFormatter.set_useOffset"
+  ],
+  "matplotlib__matplotlib-29612": [
+   "lib/matplotlib/figure.py::Figure.__init__",
+   "lib/matplotlib/figure.py::figaspect",
+   "lib/matplotlib/pyplot.py::figure"
+  ],
+  "matplotlib__matplotlib-29689": [
+   "lib/matplotlib/sphinxext/figmpl_directive.py::<module>",
+   "lib/matplotlib/sphinxext/figmpl_directive.py::visit_figmpl_html",
+   "lib/matplotlib/sphinxext/figmpl_directive.py::visit_figmpl_latex",
+   "lib/matplotlib/sphinxext/plot_directive.py::run"
+  ],
+  "matplotlib__matplotlib-29696": [
+   "lib/matplotlib/axes/_axes.py::Axes.bar_label",
+   "lib/matplotlib/pyplot.py::bar_label"
+  ],
+  "matplotlib__matplotlib-29698": [
+   "lib/matplotlib/ticker.py::LogLocator",
+   "lib/matplotlib/ticker.py::LogLocator.__call__",
+   "lib/matplotlib/ticker.py::LogLocator.tick_values"
+  ],
+  "matplotlib__matplotlib-29719": [
+   "lib/matplotlib/axes/_axes.py::Axes.hist",
+   "lib/matplotlib/collections.py::Collection.set_linestyle",
+   "lib/matplotlib/lines.py::<module>",
+   "lib/matplotlib/lines.py::_get_dash_pattern",
+   "lib/matplotlib/lines.py::_get_inverse_dash_pattern"
+  ],
+  "matplotlib__matplotlib-29721": [
+   "lib/matplotlib/pyplot.py::<module>"
+  ],
+  "matplotlib__matplotlib-29781": [
+   "lib/matplotlib/backend_bases.py::<module>",
+   "lib/matplotlib/backend_bases.py::FigureCanvasBase.get_default_filename",
+   "lib/matplotlib/backend_bases.py::FigureManagerBase",
+   "lib/matplotlib/backend_bases.py::FigureManagerBase.get_window_title",
+   "lib/matplotlib/backend_bases.py::FigureManagerBase.resize",
+   "lib/matplotlib/backend_bases.py::FigureManagerBase.set_window_title"
+  ],
+  "matplotlib__matplotlib-29783": [
+   "lib/matplotlib/axes/_axes.py::Axes",
+   "lib/matplotlib/axes/_axes.py::Axes.pcolor",
+   "lib/matplotlib/axes/_axes.py::Axes.pcolorfast",
+   "lib/matplotlib/axes/_axes.py::Axes.pcolormesh"
+  ],
+  "matplotlib__matplotlib-29798": [
+   "lib/matplotlib/projections/polar.py::PolarAxes",
+   "lib/matplotlib/projections/polar.py::PolarAxes.set_rscale",
+   "lib/matplotlib/projections/polar.py::PolarAxes.set_rticks",
+   "lib/matplotlib/projections/polar.py::PolarAxes.set_thetagrids"
+  ],
+  "matplotlib__matplotlib-29808": [
+   "galleries/users_explain/artists/color_cycle.py::<module>",
+   "lib/matplotlib/__init__.py::<module>",
+   "lib/matplotlib/rcsetup.py::<module>",
+   "lib/matplotlib/rcsetup.py::ValidateInStrings.__call__",
+   "lib/matplotlib/rcsetup.py::_listify_validator"
+  ],
+  "matplotlib__matplotlib-29873": [
+   "lib/matplotlib/axes/_axes.py::Axes.pie"
+  ],
+  "matplotlib__matplotlib-29879": [
+   "lib/matplotlib/axes/_axes.py::Axes.errorbar",
+   "lib/matplotlib/pyplot.py::errorbar"
+  ],
+  "matplotlib__matplotlib-29892": [
+   "lib/matplotlib/image.py::_ImageBase._make_image"
+  ],
+  "matplotlib__matplotlib-29919": [
+   "lib/matplotlib/path.py::Path",
+   "lib/matplotlib/path.py::Path.interpolated"
+  ],
+  "matplotlib__matplotlib-29958": [
+   "galleries/examples/lines_bars_and_markers/multicolored_line.py::<module>",
+   "galleries/examples/lines_bars_and_markers/multicolored_line.py::colored_line",
+   "galleries/examples/shapes_and_collections/collections.py::<module>",
+   "galleries/examples/shapes_and_collections/ellipse_collection.py::<module>",
+   "galleries/users_explain/axes/autoscale.py::<module>",
+   "lib/matplotlib/axes/_axes.py::Axes",
+   "lib/matplotlib/axes/_axes.py::Axes._fill_between_x_or_y",
+   "lib/matplotlib/axes/_axes.py::Axes._quiver_units",
+   "lib/matplotlib/axes/_axes.py::Axes.broken_barh",
+   "lib/matplotlib/axes/_axes.py::Axes.quiver",
+   "lib/matplotlib/axes/_axes.py::Axes.quiverkey",
+   "lib/matplotlib/axes/_axes.py::Axes.scatter",
+   "lib/matplotlib/axes/_base.py::_AxesBase.add_collection",
+   "lib/matplotlib/colorbar.py::Colorbar",
+   "lib/matplotlib/colorbar.py::Colorbar.__init__",
+   "lib/matplotlib/colorbar.py::Colorbar.add_lines",
+   "lib/matplotlib/colorbar.py::Colorbar.update_ticks",
+   "lib/matplotlib/tri/_tripcolor.py::tripcolor",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D.add_collection3d",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D.bar3d",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D.errorbar",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D.fill_between",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D.plot_surface",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D.plot_trisurf",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D.plot_wireframe",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D.quiver",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D.scatter",
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D.stem"
+  ],
+  "matplotlib__matplotlib-29993": [
+   "lib/matplotlib/backend_bases.py::<module>",
+   "lib/matplotlib/backend_bases.py::KeyEvent.__init__",
+   "lib/matplotlib/backend_bases.py::MouseEvent",
+   "lib/matplotlib/backend_bases.py::MouseEvent.__init__",
+   "lib/matplotlib/backend_bases.py::MouseEvent.__str__",
+   "lib/matplotlib/backend_bases.py::_key_handler"
+  ],
+  "matplotlib__matplotlib-30030": [
+   "lib/matplotlib/__init__.py::rc"
+  ],
+  "matplotlib__matplotlib-30079": [
+   "lib/matplotlib/legend.py::Legend.__init__"
+  ],
+  "matplotlib__matplotlib-30089": [
+   "lib/matplotlib/_constrained_layout.py::<module>",
+   "lib/matplotlib/_constrained_layout.py::get_cb_parent_spans",
+   "lib/matplotlib/_constrained_layout.py::match_submerged_margins"
+  ],
+  "matplotlib__matplotlib-30098": [
+   "lib/matplotlib/axes/_base.py::_AxesBase",
+   "lib/matplotlib/axes/_base.py::_AxesBase._label_outer_xaxis",
+   "lib/matplotlib/axes/_base.py::_AxesBase._label_outer_yaxis",
+   "lib/matplotlib/axes/_base.py::_AxesBase.label_outer",
+   "lib/matplotlib/colorbar.py::make_axes",
+   "lib/matplotlib/colorbar.py::make_axes_gridspec"
+  ],
+  "matplotlib__matplotlib-30186": [
+   "lib/matplotlib/legend_handler.py::HandlerPolyCollection",
+   "lib/matplotlib/legend_handler.py::HandlerPolyCollection._update_prop",
+   "lib/matplotlib/legend_handler.py::HandlerPolyCollection.create_artists"
+  ],
+  "matplotlib__matplotlib-30198": [
+   "lib/matplotlib/path.py::Path",
+   "lib/matplotlib/path.py::Path.__deepcopy__",
+   "lib/matplotlib/path.py::Path.copy",
+   "lib/matplotlib/path.py::Path.make_compound_path_from_polys",
+   "lib/matplotlib/transforms.py::<module>",
+   "lib/matplotlib/transforms.py::TransformNode",
+   "lib/matplotlib/transforms.py::TransformNode.__copy__",
+   "lib/matplotlib/transforms.py::TransformNode.__setstate__"
+  ],
+  "matplotlib__matplotlib-30223": [
+   "lib/matplotlib/projections/polar.py::PolarAxes",
+   "lib/matplotlib/projections/polar.py::PolarAxes._init_axis",
+   "lib/matplotlib/projections/polar.py::PolarAxes._set_lim_and_transforms",
+   "lib/matplotlib/projections/polar.py::PolarAxes.draw",
+   "lib/matplotlib/spines.py::Spine._adjust_location"
+  ],
+  "matplotlib__matplotlib-30328": [
+   "lib/matplotlib/legend.py::Legend.__init__"
+  ],
+  "matplotlib__matplotlib-30363": [
+   "lib/matplotlib/backend_bases.py::<module>",
+   "lib/matplotlib/backends/backend_agg.py::<module>",
+   "lib/matplotlib/backends/backend_agg.py::FigureCanvasAgg",
+   "lib/matplotlib/backends/backend_agg.py::FigureCanvasAgg.print_webp",
+   "lib/matplotlib/backends/backend_agg.py::_BackendAgg"
+  ],
+  "matplotlib__matplotlib-30423": [
+   "lib/mpl_toolkits/mplot3d/axes3d.py::Axes3D.add_collection3d"
+  ],
+  "matplotlib__matplotlib-30467": [
+   "lib/matplotlib/axis.py::Axis",
+   "lib/matplotlib/axis.py::Axis._get_ticklabel_bboxes",
+   "lib/matplotlib/axis.py::Axis.get_tightbbox"
+  ],
+  "matplotlib__matplotlib-30475": [
+   "lib/matplotlib/axes/_axes.py::Axes._update_pcolor_lims",
+   "lib/matplotlib/axes/_axes.py::Axes.hlines",
+   "lib/matplotlib/axes/_axes.py::Axes.vlines",
+   "lib/matplotlib/axes/_base.py::_AxesBase._update_line_limits",
+   "lib/matplotlib/axes/_base.py::_AxesBase._update_patch_limits",
+   "lib/matplotlib/axes/_base.py::_AxesBase.add_collection",
+   "lib/matplotlib/collections.py::Collection.get_datalim",
+   "lib/matplotlib/contour.py::QuadContourSet._process_args",
+   "lib/matplotlib/transforms.py::CompositeGenericTransform",
+   "lib/matplotlib/transforms.py::CompositeGenericTransform._iter_break_from_left_to_right",
+   "lib/matplotlib/transforms.py::CompositeGenericTransform.contains_branch_seperately",
+   "lib/matplotlib/transforms.py::Transform",
+   "lib/matplotlib/transforms.py::Transform.__sub__",
+   "lib/matplotlib/transforms.py::Transform.contains_branch",
+   "lib/matplotlib/transforms.py::Transform.contains_branch_seperately",
+   "lib/matplotlib/transforms.py::_BlendedMixin",
+   "lib/matplotlib/transforms.py::_BlendedMixin.__eq__",
+   "lib/matplotlib/transforms.py::_BlendedMixin.contains_branch_seperately"
+  ]
+ },
+ "granularity": "function",
+ "learn_errors": {},
+ "lift": {
+  "false_positive_rise_pts": -0.38,
+  "localization_lift_pts": 1.27
+ },
+ "memory_locations": {
+  "ab7eb0219282828cdaf16fc70c9c3bc5ece55b8c86a351e35852122b3dd65d82": "lib/matplotlib/legend.py::Legend.__init__"
+ },
+ "mode": "rolling",
+ "n_errors": 0,
+ "n_eval": 81,
+ "retrieval_hit_rate": 0.04938271604938271,
+ "retrieved": {
+  "matplotlib__matplotlib-28104": [],
+  "matplotlib__matplotlib-28116": [],
+  "matplotlib__matplotlib-28177": [],
+  "matplotlib__matplotlib-28261": [],
+  "matplotlib__matplotlib-28292": [],
+  "matplotlib__matplotlib-28306": [],
+  "matplotlib__matplotlib-28363": [],
+  "matplotlib__matplotlib-28388": [],
+  "matplotlib__matplotlib-28397": [],
+  "matplotlib__matplotlib-28401": [],
+  "matplotlib__matplotlib-28436": [],
+  "matplotlib__matplotlib-28437": [],
+  "matplotlib__matplotlib-28458": [],
+  "matplotlib__matplotlib-28465": [],
+  "matplotlib__matplotlib-28473": [],
+  "matplotlib__matplotlib-28478": [],
+  "matplotlib__matplotlib-28486": [],
+  "matplotlib__matplotlib-28487": [],
+  "matplotlib__matplotlib-28501": [],
+  "matplotlib__matplotlib-28504": [],
+  "matplotlib__matplotlib-28525": [],
+  "matplotlib__matplotlib-28573": [],
+  "matplotlib__matplotlib-28577": [],
+  "matplotlib__matplotlib-28584": [],
+  "matplotlib__matplotlib-28609": [],
+  "matplotlib__matplotlib-28629": [],
+  "matplotlib__matplotlib-28649": [],
+  "matplotlib__matplotlib-28734": [],
+  "matplotlib__matplotlib-28786": [],
+  "matplotlib__matplotlib-28830": [],
+  "matplotlib__matplotlib-28841": [],
+  "matplotlib__matplotlib-28853": [],
+  "matplotlib__matplotlib-28881": [],
+  "matplotlib__matplotlib-28933": [],
+  "matplotlib__matplotlib-28970": [],
+  "matplotlib__matplotlib-29007": [],
+  "matplotlib__matplotlib-29013": [],
+  "matplotlib__matplotlib-29052": [],
+  "matplotlib__matplotlib-29054": [],
+  "matplotlib__matplotlib-29209": [],
+  "matplotlib__matplotlib-29249": [],
+  "matplotlib__matplotlib-29258": [],
+  "matplotlib__matplotlib-29285": [],
+  "matplotlib__matplotlib-29317": [],
+  "matplotlib__matplotlib-29388": [],
+  "matplotlib__matplotlib-29401": [],
+  "matplotlib__matplotlib-29411": [],
+  "matplotlib__matplotlib-29431": [],
+  "matplotlib__matplotlib-29481": [],
+  "matplotlib__matplotlib-29486": [],
+  "matplotlib__matplotlib-29503": [],
+  "matplotlib__matplotlib-29520": [],
+  "matplotlib__matplotlib-29537": [],
+  "matplotlib__matplotlib-29612": [],
+  "matplotlib__matplotlib-29689": [],
+  "matplotlib__matplotlib-29696": [],
+  "matplotlib__matplotlib-29698": [],
+  "matplotlib__matplotlib-29719": [],
+  "matplotlib__matplotlib-29721": [],
+  "matplotlib__matplotlib-29781": [],
+  "matplotlib__matplotlib-29783": [],
+  "matplotlib__matplotlib-29798": [],
+  "matplotlib__matplotlib-29808": [],
+  "matplotlib__matplotlib-29873": [],
+  "matplotlib__matplotlib-29879": [],
+  "matplotlib__matplotlib-29892": [],
+  "matplotlib__matplotlib-29919": [],
+  "matplotlib__matplotlib-29958": [],
+  "matplotlib__matplotlib-29993": [],
+  "matplotlib__matplotlib-30030": [],
+  "matplotlib__matplotlib-30079": [],
+  "matplotlib__matplotlib-30089": [],
+  "matplotlib__matplotlib-30098": [],
+  "matplotlib__matplotlib-30186": [],
+  "matplotlib__matplotlib-30198": [],
+  "matplotlib__matplotlib-30223": [],
+  "matplotlib__matplotlib-30328": [],
+  "matplotlib__matplotlib-30363": [
+   "ab7eb0219282828cdaf16fc70c9c3bc5ece55b8c86a351e35852122b3dd65d82"
+  ],
+  "matplotlib__matplotlib-30423": [
+   "ab7eb0219282828cdaf16fc70c9c3bc5ece55b8c86a351e35852122b3dd65d82"
+  ],
+  "matplotlib__matplotlib-30467": [
+   "ab7eb0219282828cdaf16fc70c9c3bc5ece55b8c86a351e35852122b3dd65d82"
+  ],
+  "matplotlib__matplotlib-30475": [
+   "ab7eb0219282828cdaf16fc70c9c3bc5ece55b8c86a351e35852122b3dd65d82"
+  ]
+ },
+ "treatment": {
+  "false_positive_rate": 0.6923,
+  "localization_rate": 0.6076,
+  "n_false_positive": 126,
+  "n_flags": 182,
+  "n_localized": 48,
+  "n_tasks": 79,
+  "per_repo": {
+   "matplotlib/matplotlib": {
+    "false_positive_rate": 0.6923,
+    "localization_rate": 0.6076,
+    "n_false_positive": 126,
+    "n_flags": 182,
+    "n_localized": 48,
+    "n_tasks": 79
+   }
+  }
+ },
+ "treatment_flags": {
+  "matplotlib__matplotlib-28104": [
+   "lib/matplotlib/patches.py",
+   "lib/matplotlib/patches.py",
+   "lib/matplotlib/patches.py"
+  ],
+  "matplotlib__matplotlib-28116": [
+   "lib/matplotlib/cm.py",
+   "lib/matplotlib/cm.py",
+   "lib/matplotlib/cm.py"
+  ],
+  "matplotlib__matplotlib-28177": [
+   "lib/matplotlib/artist.py"
+  ],
+  "matplotlib__matplotlib-28261": [
+   "lib/mpl_toolkits/mplot3d/axes3d.py"
+  ],
+  "matplotlib__matplotlib-28292": [
+   "lib/matplotlib/ticker.py"
+  ],
+  "matplotlib__matplotlib-28306": [
+   "lib/matplotlib/projections/polar.py",
+   "lib/matplotlib/ticker.py"
+  ],
+  "matplotlib__matplotlib-28363": [
+   "lib/matplotlib/figure.py",
+   "lib/matplotlib/figure.py",
+   "lib/matplotlib/figure.py"
+  ],
+  "matplotlib__matplotlib-28388": [],
+  "matplotlib__matplotlib-28397": [
+   "lib/matplotlib/figure.py",
+   "lib/matplotlib/figure.py",
+   "lib/matplotlib/backends/backend_qt5agg.py"
+  ],
+  "matplotlib__matplotlib-28401": [
+   "lib/matplotlib/text.py",
+   "lib/matplotlib/text.py"
+  ],
+  "matplotlib__matplotlib-28436": [
+   "lib/matplotlib/colors.py",
+   "lib/matplotlib/lines.py",
+   "lib/matplotlib/pyplot.py"
+  ],
+  "matplotlib__matplotlib-28437": [
+   "lib/matplotlib/image.py",
+   "lib/matplotlib/image.py",
+   "lib/matplotlib/axes/_axes.py"
+  ],
+  "matplotlib__matplotlib-28458": [
+   "lib/matplotlib/image.py",
+   "lib/matplotlib/image.py",
+   "lib/matplotlib/animation.py"
+  ],
+  "matplotlib__matplotlib-28465": [
+   "lib/matplotlib/figure.py",
+   "lib/matplotlib/figure.py"
+  ],
+  "matplotlib__matplotlib-28473": [
+   "lib/matplotlib/rcsetup.py",
+   "lib/matplotlib/__init__.py",
+   "lib/matplotlib/__init__.py"
+  ],
+  "matplotlib__matplotlib-28478": [
+   "lib/matplotlib/path.py",
+   "lib/matplotlib/path.py",
+   "lib/matplotlib/path.py"
+  ],
+  "matplotlib__matplotlib-28486": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/axis.py",
+   "lib/matplotlib/patches.py"
+  ],
+  "matplotlib__matplotlib-28487": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/dates.py",
+   "lib/matplotlib/axes/_axes.py"
+  ],
+  "matplotlib__matplotlib-28501": [
+   "lib/matplotlib/dates.py"
+  ],
+  "matplotlib__matplotlib-28504": [
+   "lib/matplotlib/backends/backend_svg.py",
+   "lib/matplotlib/backends/backend_svg.py",
+   "lib/matplotlib/backends/backend_svg.py"
+  ],
+  "matplotlib__matplotlib-28525": [
+   "lib/mpl_toolkits/axes_grid1/axes_grid.py",
+   "lib/mpl_toolkits/axes_grid1/axes_grid.py",
+   "lib/mpl_toolkits/axes_grid1/axes_grid.py"
+  ],
+  "matplotlib__matplotlib-28573": [
+   "lib/matplotlib/artist.py"
+  ],
+  "matplotlib__matplotlib-28577": [
+   "lib/matplotlib/_constrained_layout.py",
+   "lib/matplotlib/_constrained_layout.py",
+   "lib/matplotlib/figure.py"
+  ],
+  "matplotlib__matplotlib-28584": [
+   "lib/matplotlib/axis.py",
+   "lib/matplotlib/axis.py"
+  ],
+  "matplotlib__matplotlib-28609": [
+   "lib/matplotlib/lines.py",
+   "lib/matplotlib/artist.py",
+   "lib/matplotlib/lines.py"
+  ],
+  "matplotlib__matplotlib-28629": [
+   "lib/matplotlib/axis.py",
+   "lib/matplotlib/_constrained_layout.py",
+   "lib/matplotlib/axis.py"
+  ],
+  "matplotlib__matplotlib-28649": [
+   "lib/matplotlib/image.py",
+   "lib/matplotlib/image.py",
+   "lib/matplotlib/axes/_axes.py"
+  ],
+  "matplotlib__matplotlib-28734": [
+   "lib/matplotlib/figure.py",
+   "lib/matplotlib/figure.py",
+   "lib/matplotlib/gridspec.py"
+  ],
+  "matplotlib__matplotlib-28786": [
+   "lib/matplotlib/contour.py",
+   "lib/matplotlib/contour.py",
+   "lib/matplotlib/colors.py"
+  ],
+  "matplotlib__matplotlib-28830": [
+   "lib/matplotlib/table.py",
+   "lib/matplotlib/table.py"
+  ],
+  "matplotlib__matplotlib-28841": [
+   "lib/matplotlib/rcsetup.py",
+   "lib/matplotlib/rcsetup.py",
+   "lib/matplotlib/rcsetup.py"
+  ],
+  "matplotlib__matplotlib-28853": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/axes/_axes.py"
+  ],
+  "matplotlib__matplotlib-28881": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/pyplot.py"
+  ],
+  "matplotlib__matplotlib-28933": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/axes/_axes.py"
+  ],
+  "matplotlib__matplotlib-28970": [
+   "lib/matplotlib/axis.py",
+   "lib/matplotlib/axis.py",
+   "lib/matplotlib/units.py"
+  ],
+  "matplotlib__matplotlib-29007": [
+   "lib/matplotlib/figure.py",
+   "lib/matplotlib/figure.py",
+   "lib/matplotlib/pyplot.py"
+  ],
+  "matplotlib__matplotlib-29013": [
+   "lib/matplotlib/figure.py",
+   "lib/matplotlib/_constrained_layout.py",
+   "lib/matplotlib/_constrained_layout.py"
+  ],
+  "matplotlib__matplotlib-29052": [
+   "lib/matplotlib/colors.py"
+  ],
+  "matplotlib__matplotlib-29054": [
+   "lib/matplotlib/ticker.py",
+   "lib/matplotlib/ticker.py",
+   "lib/matplotlib/ticker.py"
+  ],
+  "matplotlib__matplotlib-29209": [
+   "lib/matplotlib/axes/_axes.py"
+  ],
+  "matplotlib__matplotlib-29249": [
+   "lib/matplotlib/axis.py"
+  ],
+  "matplotlib__matplotlib-29258": [
+   "lib/matplotlib/table.py",
+   "lib/matplotlib/pyplot.py",
+   "lib/matplotlib/table.py"
+  ],
+  "matplotlib__matplotlib-29285": [
+   "lib/mpl_toolkits/mplot3d/art3d.py"
+  ],
+  "matplotlib__matplotlib-29317": [
+   "lib/matplotlib/figure.py"
+  ],
+  "matplotlib__matplotlib-29388": [
+   "lib/matplotlib/axis.py",
+   "lib/matplotlib/axis.py"
+  ],
+  "matplotlib__matplotlib-29401": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/legend.py"
+  ],
+  "matplotlib__matplotlib-29411": [
+   "lib/matplotlib/axes/_base.py"
+  ],
+  "matplotlib__matplotlib-29431": [
+   "lib/matplotlib/backends/backend_pdf.py",
+   "lib/matplotlib/backends/backend_pdf.py",
+   "lib/matplotlib/font_manager.py"
+  ],
+  "matplotlib__matplotlib-29481": [
+   "lib/matplotlib/rcsetup.py",
+   "lib/matplotlib/rcsetup.py",
+   "lib/matplotlib/pyplot.py"
+  ],
+  "matplotlib__matplotlib-29486": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/projections/polar.py",
+   "lib/matplotlib/lines.py"
+  ],
+  "matplotlib__matplotlib-29503": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/pyplot.py"
+  ],
+  "matplotlib__matplotlib-29520": [
+   "lib/matplotlib/animation.py",
+   "lib/matplotlib/animation.py",
+   "lib/matplotlib/animation.py"
+  ],
+  "matplotlib__matplotlib-29537": [
+   "lib/matplotlib/ticker.py",
+   "lib/matplotlib/ticker.py",
+   "lib/matplotlib/ticker.py"
+  ],
+  "matplotlib__matplotlib-29612": [
+   "lib/matplotlib/rcsetup.py",
+   "lib/matplotlib/figure.py",
+   "lib/matplotlib/pyplot.py"
+  ],
+  "matplotlib__matplotlib-29689": [
+   "lib/matplotlib/sphinxext/plot_directive.py",
+   "lib/matplotlib/sphinxext/plot_directive.py",
+   "lib/matplotlib/sphinxext/plot_directive.py"
+  ],
+  "matplotlib__matplotlib-29696": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/pyplot.py",
+   "lib/matplotlib/axes/_axes.py"
+  ],
+  "matplotlib__matplotlib-29698": [
+   "lib/matplotlib/ticker.py",
+   "lib/matplotlib/ticker.py",
+   "lib/matplotlib/ticker.py"
+  ],
+  "matplotlib__matplotlib-29719": [
+   "lib/matplotlib/axes/_axes.py"
+  ],
+  "matplotlib__matplotlib-29721": [
+   "lib/matplotlib/pyplot.py",
+   "lib/matplotlib/pyplot.py",
+   "lib/matplotlib/rcsetup.py"
+  ],
+  "matplotlib__matplotlib-29781": [
+   "lib/matplotlib/backend_bases.py"
+  ],
+  "matplotlib__matplotlib-29783": [
+   "lib/matplotlib/axes/_axes.py"
+  ],
+  "matplotlib__matplotlib-29798": [
+   "lib/matplotlib/projections/polar.py",
+   "lib/matplotlib/projections/polar.py",
+   "lib/matplotlib/axes/_base.py"
+  ],
+  "matplotlib__matplotlib-29808": [
+   "lib/matplotlib/rcsetup.py",
+   "lib/matplotlib/rcsetup.py",
+   "lib/matplotlib/rcsetup.py"
+  ],
+  "matplotlib__matplotlib-29873": [
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/pyplot.py"
+  ],
+  "matplotlib__matplotlib-29879": [
+   "lib/matplotlib/pyplot.py",
+   "lib/matplotlib/lines.py"
+  ],
+  "matplotlib__matplotlib-29892": [
+   "lib/matplotlib/image.py",
+   "lib/matplotlib/image.py",
+   "lib/matplotlib/backends/backend_qt.py"
+  ],
+  "matplotlib__matplotlib-29919": [
+   "lib/matplotlib/projections/geo.py",
+   "lib/matplotlib/axes/_axes.py"
+  ],
+  "matplotlib__matplotlib-29958": [],
+  "matplotlib__matplotlib-29993": [
+   "lib/matplotlib/testing/widgets.py",
+   "lib/matplotlib/widgets.py",
+   "lib/matplotlib/testing/widgets.py"
+  ],
+  "matplotlib__matplotlib-30030": [
+   "lib/matplotlib/__init__.py",
+   "lib/matplotlib/pyplot.py"
+  ],
+  "matplotlib__matplotlib-30079": [
+   "lib/matplotlib/legend.py",
+   "lib/matplotlib/axes/_axes.py",
+   "lib/matplotlib/pyplot.py"
+  ],
+  "matplotlib__matplotlib-30089": [
+   "lib/matplotlib/figure.py",
+   "lib/matplotlib/_constrained_layout.py",
+   "lib/matplotlib/gridspec.py"
+  ],
+  "matplotlib__matplotlib-30098": [
+   "lib/matplotlib/colorbar.py"
+  ],
+  "matplotlib__matplotlib-30186": [
+   "lib/matplotlib/legend.py",
+   "lib/matplotlib/axes/_axes.py"
+  ],
+  "matplotlib__matplotlib-30198": [
+   "lib/matplotlib/path.py",
+   "lib/matplotlib/path.py",
+   "lib/matplotlib/path.py"
+  ],
+  "matplotlib__matplotlib-30223": [
+   "lib/matplotlib/projections/polar.py",
+   "lib/matplotlib/projections/polar.py",
+   "lib/matplotlib/projections/polar.py"
+  ],
+  "matplotlib__matplotlib-30328": [
+   "lib/matplotlib/legend.py"
+  ],
+  "matplotlib__matplotlib-30363": [
+   "lib/matplotlib/pyplot.py",
+   "lib/matplotlib/backend_bases.py",
+   "lib/matplotlib/backends/backend_agg.py"
+  ],
+  "matplotlib__matplotlib-30423": [
+   "lib/mpl_toolkits/mplot3d/axes3d.py",
+   "lib/mpl_toolkits/mplot3d/axes3d.py"
+  ],
+  "matplotlib__matplotlib-30467": [
+   "lib/matplotlib/axis.py",
+   "lib/matplotlib/axis.py"
+  ],
+  "matplotlib__matplotlib-30475": [
+   "lib/matplotlib/transforms.py",
+   "lib/matplotlib/transforms.py",
+   "lib/matplotlib/transforms.py"
+  ]
+ },
+ "warmup": 20
+}
