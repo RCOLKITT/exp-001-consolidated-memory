@@ -1,0 +1,35 @@
+{
+ "pool": [
+  {
+   "content": "Expression for calculating wind speed at different heights => pvlib / atmosphere # <module> :: The issue mentions calculating wind speed at different heights, which is related to atmospheric conditions. The atmosphere.py module is likely to contain relevant functions.",
+   "source": "pvlib/pvlib-python",
+   "id": "cdba71c8d7f717f65c98ef652cc68381689284eeb0a7ed1ae99fef7af3296b12"
+  },
+  {
+   "content": "Simple closed-form solution for alpha in detect_clearsky - clarified => pvlib / clearsky # detect_clearsky :: The issue discusses the detect_clearsky function and its optimization for the scaling parameter alpha.",
+   "source": "pvlib/pvlib-python",
+   "id": "74934d27339199aa7e33c1faa01a2d414717d4feb40289d04d970feb9a1eb0f7"
+  },
+  {
+   "content": "plugins.mangomolo: error: No plugin can handle URL => src / streamlink / plugins / mangomolo # Mangomolo._get_player_url :: The `_get_player_url` method in `mangomolo.py` is responsible for extracting the player URL from a webpage, and this method may need to be updated to handle the specific URL in question.",
+   "source": "streamlink/streamlink",
+   "id": "605334b4cd46973664f1644ceec75b6636836f2381ec3b9e9fd376d389c7c602"
+  },
+  {
+   "content": "plugins.twitch: incorrect discontinuity tags lead to warnings being spammed => src / streamlink / plugins / twitch # TwitchM3U8Parser._is_segment_ad :: The function is related to identifying ad segments, which could be relevant to the issue of incorrect discontinuity tags.",
+   "source": "streamlink/streamlink",
+   "id": "6c1cc35d9d8c03ade7338f3c4f7dc3e47a65351e46b6c49c372037008186b467"
+  },
+  {
+   "content": "plugins.twitch: incorrect discontinuity tags lead to warnings being spammed => src / streamlink / plugins / twitch # TwitchM3U8Parser.parse_tag_ext_x_twitch_prefetch :: The function is related to parsing Twitch M3U8 tags, which could be relevant to the issue of incorrect discontinuity tags.",
+   "source": "streamlink/streamlink",
+   "id": "4fd99812984c50edd106be7175c50249374c1e5b97e668be49626ff6c8651440"
+  }
+ ],
+ "n": 5,
+ "sha256": "6c717cf770566ec9a6f6e2f5b4d63793bef142202c251aa2dfdd28f6eb2749c8",
+ "sources": [
+  "pvlib/pvlib-python",
+  "streamlink/streamlink"
+ ]
+}
