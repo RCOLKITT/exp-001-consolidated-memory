@@ -453,3 +453,16 @@ consecutive task failures instead of burning through the chain; and
 `secondary_repos`). The registered block's wording ("except the repos
 list") predates the `shard`/`resume_run` keys; this decision, not the
 block, is the record of that clarification.
+
+### D37. One duplicated corpus row (conan-18153) dropped at load; registered pool 530 → 529
+The resumed shard A (run 13) crashed deterministically at the second
+occurrence of `conan-io__conan-18153`, which the published SWE-bench-Live
+`full` split carries twice: identical record ids hit the buffer's
+"already supports" invariant. `read_tasks` now keeps the first occurrence
+of an instance id and reports the drop. Effect on registered values:
+conan's chain is 164 not 165, the eval pool 529 not 530; MDE (8.6), ceiling
+(15.6), kill number (9) and every other value are unchanged at this
+precision, and v1's registered pool of 373 is unaffected (the duplicate sat
+past v1's split). No design value was touched; the fix is corpus hygiene
+and applies identically to every arm. Run 13 made no model calls (every
+call was a cache hit), so the key's status is still untested.

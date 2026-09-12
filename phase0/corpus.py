@@ -99,7 +99,17 @@ def read_tasks(path: str | Path) -> list[Task]:
         rows = json.loads(text)
     else:
         rows = [json.loads(line) for line in text.splitlines() if line.strip()]
-    return [normalise(r) for r in rows]
+    tasks, seen, dups = [], set(), []
+    for r in rows:                       # the published corpus carries one duplicated row (conan-18153); keep the first occurrence
+        t = normalise(r)
+        if t.instance_id in seen:
+            dups.append(t.instance_id)
+            continue
+        seen.add(t.instance_id)
+        tasks.append(t)
+    if dups:
+        sys.stderr.write(f"read_tasks: dropped {len(dups)} duplicated instance_id(s): {sorted(set(dups))}\n")
+    return tasks
 
 
 def write_tasks(tasks: Iterable[Task], path: str | Path) -> int:

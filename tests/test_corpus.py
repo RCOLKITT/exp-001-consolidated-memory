@@ -27,3 +27,14 @@ def test_roundtrip_and_freshness(tmp_path):
     fresh = apply_freshness(tasks, models, tmp_path / "fresh.jsonl")
     assert [t.instance_id for t in fresh] == ["owner__repo-12"]
     assert len((tmp_path / "fresh.jsonl").read_text().splitlines()) == 2
+
+
+def test_read_tasks_drops_duplicated_instance_ids_keeping_the_first(tmp_path, capsys):
+    import json
+    from phase0.corpus import read_tasks
+    row = {"instance_id": "o__r-1", "repo": "o/r", "base_commit": "c", "created_at": "2025-01-01T00:00:00Z", "problem_statement": "first", "patch": "diff --git a/x b/x\n"}
+    p = tmp_path / "t.jsonl"
+    p.write_text(json.dumps(row) + "\n" + json.dumps({**row, "problem_statement": "second"}) + "\n" + json.dumps({**row, "instance_id": "o__r-2"}) + "\n")
+    ts = read_tasks(p)
+    assert [t.instance_id for t in ts] == ["o__r-1", "o__r-2"] and ts[0].problem_statement == "first"
+    assert "dropped 1 duplicated" in capsys.readouterr().err
