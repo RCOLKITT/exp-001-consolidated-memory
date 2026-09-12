@@ -1,0 +1,1066 @@
+{
+ "arms": {
+  "control": {
+   "file_hits": {
+    "sissbruecker__linkding-1014": false,
+    "sissbruecker__linkding-1045": true,
+    "sissbruecker__linkding-1051": false,
+    "sissbruecker__linkding-1101": false,
+    "sissbruecker__linkding-1114": true,
+    "sissbruecker__linkding-1153": true,
+    "sissbruecker__linkding-1175": false,
+    "sissbruecker__linkding-866": false,
+    "sissbruecker__linkding-971": true,
+    "sissbruecker__linkding-984": true,
+    "sissbruecker__linkding-989": true,
+    "sissbruecker__linkding-993": true,
+    "sissbruecker__linkding-995": true,
+    "sissbruecker__linkding-999": true
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.7368,
+    "localization_rate": 0.6429,
+    "n_false_positive": 28,
+    "n_flags": 38,
+    "n_localized": 9,
+    "n_tasks": 14,
+    "per_repo": {
+     "sissbruecker/linkding": {
+      "false_positive_rate": 0.7368,
+      "localization_rate": 0.6429,
+      "n_false_positive": 28,
+      "n_flags": 38,
+      "n_localized": 9,
+      "n_tasks": 14
+     }
+    }
+   },
+   "flags": {
+    "sissbruecker__linkding-1014": [
+     "bookmarks/views/root.py::root",
+     "bookmarks/views/root.py::<module>",
+     "bookmarks/templatetags/bookmarks.py::bookmark_search"
+    ],
+    "sissbruecker__linkding-1045": [
+     "bookmarks/services/auto_tagging.py::_path_matches",
+     "bookmarks/services/auto_tagging.py::get_tags",
+     "bookmarks/services/auto_tagging.py::_domains_matches"
+    ],
+    "sissbruecker__linkding-1051": [
+     "bookmarks/services/parser.py::BookmarkParser.handle_data",
+     "bookmarks/services/parser.py::BookmarkParser.handle_a_data",
+     "bookmarks/services/parser.py::BookmarkParser.handle_start_a"
+    ],
+    "sissbruecker__linkding-1101": [
+     "bookmarks/services/exporter.py::export_netscape_html",
+     "bookmarks/services/exporter.py::<module>",
+     "bookmarks/utils.py::parse_timestamp"
+    ],
+    "sissbruecker__linkding-1114": [
+     "bookmarks/views/bundles.py::action",
+     "bookmarks/models.py::BookmarkBundle",
+     "bookmarks/views/bundles.py::_handle_edit"
+    ],
+    "sissbruecker__linkding-1153": [
+     "bookmarks/services/importer.py::import_netscape_html",
+     "bookmarks/services/importer.py::_create_missing_tags",
+     "bookmarks/views/settings.py::bookmark_import"
+    ],
+    "sissbruecker__linkding-1175": [
+     "bookmarks/services/tags.py::get_or_create_tag",
+     "bookmarks/models.py::Tag",
+     "bookmarks/views/bookmarks.py::handle_action"
+    ],
+    "sissbruecker__linkding-866": [
+     "bookmarks/views/bookmarks.py::archive",
+     "bookmarks/views/bookmarks.py::create_html_snapshot",
+     "bookmarks/services/singlefile.py::create_snapshot"
+    ],
+    "sissbruecker__linkding-971": [
+     "siteroot/settings/base.py::<module>"
+    ],
+    "sissbruecker__linkding-984": [
+     "bookmarks/views/bookmarks.py::shared",
+     "bookmarks/views/bookmarks.py::render_bookmarks_view",
+     "bookmarks/feeds.py::PublicSharedBookmarksFeed.link"
+    ],
+    "sissbruecker__linkding-989": [
+     "bookmarks/services/preview_image_loader.py::load_preview_image",
+     "bookmarks/services/tasks.py::_load_preview_image_task",
+     "bookmarks/services/preview_image_loader.py::_get_image_path"
+    ],
+    "sissbruecker__linkding-993": [
+     "bookmarks/services/wayback.py::generate_fallback_webarchive_url",
+     "bookmarks/api/serializers.py::BookmarkSerializer.validate"
+    ],
+    "sissbruecker__linkding-995": [
+     "bookmarks/middlewares.py::LinkdingMiddleware.__call__",
+     "bookmarks/middlewares.py::LinkdingMiddleware.__init__",
+     "bookmarks/middlewares.py::<module>"
+    ],
+    "sissbruecker__linkding-999": [
+     "bookmarks/views/bookmarks.py::handle_action",
+     "bookmarks/services/bookmarks.py::update_bookmark",
+     "bookmarks/services/bookmarks.py::enhance_with_website_metadata"
+    ]
+   },
+   "hits": {
+    "sissbruecker__linkding-1014": false,
+    "sissbruecker__linkding-1045": true,
+    "sissbruecker__linkding-1051": false,
+    "sissbruecker__linkding-1101": false,
+    "sissbruecker__linkding-1114": true,
+    "sissbruecker__linkding-1153": true,
+    "sissbruecker__linkding-1175": false,
+    "sissbruecker__linkding-866": false,
+    "sissbruecker__linkding-971": true,
+    "sissbruecker__linkding-984": true,
+    "sissbruecker__linkding-989": false,
+    "sissbruecker__linkding-993": false,
+    "sissbruecker__linkding-995": false,
+    "sissbruecker__linkding-999": true
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.8205,
+    "localization_rate": 0.4286,
+    "n_false_positive": 32,
+    "n_flags": 39,
+    "n_localized": 6,
+    "n_tasks": 14,
+    "per_repo": {
+     "sissbruecker/linkding": {
+      "false_positive_rate": 0.8205,
+      "localization_rate": 0.4286,
+      "n_false_positive": 32,
+      "n_flags": 39,
+      "n_localized": 6,
+      "n_tasks": 14
+     }
+    }
+   },
+   "retrieved": {
+    "sissbruecker__linkding-1014": [],
+    "sissbruecker__linkding-1045": [],
+    "sissbruecker__linkding-1051": [],
+    "sissbruecker__linkding-1101": [],
+    "sissbruecker__linkding-1114": [],
+    "sissbruecker__linkding-1153": [],
+    "sissbruecker__linkding-1175": [],
+    "sissbruecker__linkding-866": [],
+    "sissbruecker__linkding-971": [],
+    "sissbruecker__linkding-984": [],
+    "sissbruecker__linkding-989": [],
+    "sissbruecker__linkding-993": [],
+    "sissbruecker__linkding-995": [],
+    "sissbruecker__linkding-999": []
+   },
+   "scores": {
+    "sissbruecker__linkding-1014": {},
+    "sissbruecker__linkding-1045": {},
+    "sissbruecker__linkding-1051": {},
+    "sissbruecker__linkding-1101": {},
+    "sissbruecker__linkding-1114": {},
+    "sissbruecker__linkding-1153": {},
+    "sissbruecker__linkding-1175": {},
+    "sissbruecker__linkding-866": {},
+    "sissbruecker__linkding-971": {},
+    "sissbruecker__linkding-984": {},
+    "sissbruecker__linkding-989": {},
+    "sissbruecker__linkding-993": {},
+    "sissbruecker__linkding-995": {},
+    "sissbruecker__linkding-999": {}
+   },
+   "tau": 0.0,
+   "version": null,
+   "versions": {
+    "sissbruecker__linkding-1014": null,
+    "sissbruecker__linkding-1045": null,
+    "sissbruecker__linkding-1051": null,
+    "sissbruecker__linkding-1101": null,
+    "sissbruecker__linkding-1114": null,
+    "sissbruecker__linkding-1153": null,
+    "sissbruecker__linkding-1175": null,
+    "sissbruecker__linkding-866": null,
+    "sissbruecker__linkding-971": null,
+    "sissbruecker__linkding-984": null,
+    "sissbruecker__linkding-989": null,
+    "sissbruecker__linkding-993": null,
+    "sissbruecker__linkding-995": null,
+    "sissbruecker__linkding-999": null
+   }
+  },
+  "gated": {
+   "file_hits": {
+    "sissbruecker__linkding-1014": false,
+    "sissbruecker__linkding-1045": true,
+    "sissbruecker__linkding-1051": false,
+    "sissbruecker__linkding-1101": false,
+    "sissbruecker__linkding-1114": true,
+    "sissbruecker__linkding-1153": true,
+    "sissbruecker__linkding-1175": false,
+    "sissbruecker__linkding-866": false,
+    "sissbruecker__linkding-971": true,
+    "sissbruecker__linkding-984": true,
+    "sissbruecker__linkding-989": true,
+    "sissbruecker__linkding-993": true,
+    "sissbruecker__linkding-995": true,
+    "sissbruecker__linkding-999": true
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.7368,
+    "localization_rate": 0.6429,
+    "n_false_positive": 28,
+    "n_flags": 38,
+    "n_localized": 9,
+    "n_tasks": 14,
+    "per_repo": {
+     "sissbruecker/linkding": {
+      "false_positive_rate": 0.7368,
+      "localization_rate": 0.6429,
+      "n_false_positive": 28,
+      "n_flags": 38,
+      "n_localized": 9,
+      "n_tasks": 14
+     }
+    }
+   },
+   "flags": {
+    "sissbruecker__linkding-1014": [
+     "bookmarks/views/root.py::root",
+     "bookmarks/views/root.py::<module>",
+     "bookmarks/templatetags/bookmarks.py::bookmark_search"
+    ],
+    "sissbruecker__linkding-1045": [
+     "bookmarks/services/auto_tagging.py::_path_matches",
+     "bookmarks/services/auto_tagging.py::get_tags",
+     "bookmarks/services/auto_tagging.py::_domains_matches"
+    ],
+    "sissbruecker__linkding-1051": [
+     "bookmarks/services/parser.py::BookmarkParser.handle_data",
+     "bookmarks/services/parser.py::BookmarkParser.handle_a_data",
+     "bookmarks/services/parser.py::BookmarkParser.handle_start_a"
+    ],
+    "sissbruecker__linkding-1101": [
+     "bookmarks/services/exporter.py::export_netscape_html",
+     "bookmarks/services/exporter.py::<module>",
+     "bookmarks/utils.py::parse_timestamp"
+    ],
+    "sissbruecker__linkding-1114": [
+     "bookmarks/views/bundles.py::action",
+     "bookmarks/models.py::BookmarkBundle",
+     "bookmarks/views/bundles.py::_handle_edit"
+    ],
+    "sissbruecker__linkding-1153": [
+     "bookmarks/services/importer.py::import_netscape_html",
+     "bookmarks/services/importer.py::_create_missing_tags",
+     "bookmarks/views/settings.py::bookmark_import"
+    ],
+    "sissbruecker__linkding-1175": [
+     "bookmarks/services/tags.py::get_or_create_tag",
+     "bookmarks/models.py::Tag",
+     "bookmarks/views/bookmarks.py::handle_action"
+    ],
+    "sissbruecker__linkding-866": [
+     "bookmarks/views/bookmarks.py::archive",
+     "bookmarks/views/bookmarks.py::create_html_snapshot",
+     "bookmarks/services/singlefile.py::create_snapshot"
+    ],
+    "sissbruecker__linkding-971": [
+     "siteroot/settings/base.py::<module>"
+    ],
+    "sissbruecker__linkding-984": [
+     "bookmarks/views/bookmarks.py::shared",
+     "bookmarks/views/bookmarks.py::render_bookmarks_view",
+     "bookmarks/feeds.py::PublicSharedBookmarksFeed.link"
+    ],
+    "sissbruecker__linkding-989": [
+     "bookmarks/services/preview_image_loader.py::load_preview_image",
+     "bookmarks/services/tasks.py::_load_preview_image_task",
+     "bookmarks/services/preview_image_loader.py::_get_image_path"
+    ],
+    "sissbruecker__linkding-993": [
+     "bookmarks/services/wayback.py::generate_fallback_webarchive_url",
+     "bookmarks/api/serializers.py::BookmarkSerializer.validate"
+    ],
+    "sissbruecker__linkding-995": [
+     "bookmarks/middlewares.py::LinkdingMiddleware.__call__",
+     "bookmarks/middlewares.py::LinkdingMiddleware.__init__",
+     "bookmarks/middlewares.py::<module>"
+    ],
+    "sissbruecker__linkding-999": [
+     "bookmarks/views/bookmarks.py::handle_action",
+     "bookmarks/services/bookmarks.py::update_bookmark",
+     "bookmarks/services/bookmarks.py::enhance_with_website_metadata"
+    ]
+   },
+   "hits": {
+    "sissbruecker__linkding-1014": false,
+    "sissbruecker__linkding-1045": true,
+    "sissbruecker__linkding-1051": false,
+    "sissbruecker__linkding-1101": false,
+    "sissbruecker__linkding-1114": true,
+    "sissbruecker__linkding-1153": true,
+    "sissbruecker__linkding-1175": false,
+    "sissbruecker__linkding-866": false,
+    "sissbruecker__linkding-971": true,
+    "sissbruecker__linkding-984": true,
+    "sissbruecker__linkding-989": false,
+    "sissbruecker__linkding-993": false,
+    "sissbruecker__linkding-995": false,
+    "sissbruecker__linkding-999": true
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.8205,
+    "localization_rate": 0.4286,
+    "n_false_positive": 32,
+    "n_flags": 39,
+    "n_localized": 6,
+    "n_tasks": 14,
+    "per_repo": {
+     "sissbruecker/linkding": {
+      "false_positive_rate": 0.8205,
+      "localization_rate": 0.4286,
+      "n_false_positive": 32,
+      "n_flags": 39,
+      "n_localized": 6,
+      "n_tasks": 14
+     }
+    }
+   },
+   "retrieved": {
+    "sissbruecker__linkding-1014": [],
+    "sissbruecker__linkding-1045": [],
+    "sissbruecker__linkding-1051": [],
+    "sissbruecker__linkding-1101": [],
+    "sissbruecker__linkding-1114": [],
+    "sissbruecker__linkding-1153": [],
+    "sissbruecker__linkding-1175": [],
+    "sissbruecker__linkding-866": [],
+    "sissbruecker__linkding-971": [],
+    "sissbruecker__linkding-984": [],
+    "sissbruecker__linkding-989": [],
+    "sissbruecker__linkding-993": [],
+    "sissbruecker__linkding-995": [],
+    "sissbruecker__linkding-999": []
+   },
+   "scores": {
+    "sissbruecker__linkding-1014": {},
+    "sissbruecker__linkding-1045": {},
+    "sissbruecker__linkding-1051": {},
+    "sissbruecker__linkding-1101": {},
+    "sissbruecker__linkding-1114": {},
+    "sissbruecker__linkding-1153": {},
+    "sissbruecker__linkding-1175": {},
+    "sissbruecker__linkding-866": {},
+    "sissbruecker__linkding-971": {},
+    "sissbruecker__linkding-984": {},
+    "sissbruecker__linkding-989": {},
+    "sissbruecker__linkding-993": {},
+    "sissbruecker__linkding-995": {},
+    "sissbruecker__linkding-999": {}
+   },
+   "tau": 0.5,
+   "version": "rolling",
+   "versions": {
+    "sissbruecker__linkding-1014": null,
+    "sissbruecker__linkding-1045": null,
+    "sissbruecker__linkding-1051": null,
+    "sissbruecker__linkding-1101": null,
+    "sissbruecker__linkding-1114": null,
+    "sissbruecker__linkding-1153": null,
+    "sissbruecker__linkding-1175": null,
+    "sissbruecker__linkding-866": null,
+    "sissbruecker__linkding-971": null,
+    "sissbruecker__linkding-984": null,
+    "sissbruecker__linkding-989": null,
+    "sissbruecker__linkding-993": null,
+    "sissbruecker__linkding-995": null,
+    "sissbruecker__linkding-999": null
+   }
+  },
+  "placebo": {
+   "file_hits": {
+    "sissbruecker__linkding-1014": false,
+    "sissbruecker__linkding-1045": true,
+    "sissbruecker__linkding-1051": false,
+    "sissbruecker__linkding-1101": false,
+    "sissbruecker__linkding-1114": true,
+    "sissbruecker__linkding-1153": true,
+    "sissbruecker__linkding-1175": false,
+    "sissbruecker__linkding-866": false,
+    "sissbruecker__linkding-971": true,
+    "sissbruecker__linkding-984": true,
+    "sissbruecker__linkding-989": true,
+    "sissbruecker__linkding-993": true,
+    "sissbruecker__linkding-995": true,
+    "sissbruecker__linkding-999": true
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.7368,
+    "localization_rate": 0.6429,
+    "n_false_positive": 28,
+    "n_flags": 38,
+    "n_localized": 9,
+    "n_tasks": 14,
+    "per_repo": {
+     "sissbruecker/linkding": {
+      "false_positive_rate": 0.7368,
+      "localization_rate": 0.6429,
+      "n_false_positive": 28,
+      "n_flags": 38,
+      "n_localized": 9,
+      "n_tasks": 14
+     }
+    }
+   },
+   "flags": {
+    "sissbruecker__linkding-1014": [
+     "bookmarks/views/root.py::root",
+     "bookmarks/views/root.py::<module>",
+     "bookmarks/templatetags/bookmarks.py::bookmark_search"
+    ],
+    "sissbruecker__linkding-1045": [
+     "bookmarks/services/auto_tagging.py::_path_matches",
+     "bookmarks/services/auto_tagging.py::get_tags",
+     "bookmarks/services/auto_tagging.py::_domains_matches"
+    ],
+    "sissbruecker__linkding-1051": [
+     "bookmarks/services/parser.py::BookmarkParser.handle_data",
+     "bookmarks/services/parser.py::BookmarkParser.handle_a_data",
+     "bookmarks/services/parser.py::BookmarkParser.handle_start_a"
+    ],
+    "sissbruecker__linkding-1101": [
+     "bookmarks/services/exporter.py::export_netscape_html",
+     "bookmarks/services/exporter.py::<module>",
+     "bookmarks/utils.py::parse_timestamp"
+    ],
+    "sissbruecker__linkding-1114": [
+     "bookmarks/views/bundles.py::action",
+     "bookmarks/models.py::BookmarkBundle",
+     "bookmarks/views/bundles.py::_handle_edit"
+    ],
+    "sissbruecker__linkding-1153": [
+     "bookmarks/services/importer.py::import_netscape_html",
+     "bookmarks/services/importer.py::_create_missing_tags",
+     "bookmarks/views/settings.py::bookmark_import"
+    ],
+    "sissbruecker__linkding-1175": [
+     "bookmarks/services/tags.py::get_or_create_tag",
+     "bookmarks/models.py::Tag",
+     "bookmarks/views/bookmarks.py::handle_action"
+    ],
+    "sissbruecker__linkding-866": [
+     "bookmarks/views/bookmarks.py::archive",
+     "bookmarks/views/bookmarks.py::create_html_snapshot",
+     "bookmarks/services/singlefile.py::create_snapshot"
+    ],
+    "sissbruecker__linkding-971": [
+     "siteroot/settings/base.py::<module>"
+    ],
+    "sissbruecker__linkding-984": [
+     "bookmarks/views/bookmarks.py::shared",
+     "bookmarks/views/bookmarks.py::render_bookmarks_view",
+     "bookmarks/feeds.py::PublicSharedBookmarksFeed.link"
+    ],
+    "sissbruecker__linkding-989": [
+     "bookmarks/services/preview_image_loader.py::load_preview_image",
+     "bookmarks/services/tasks.py::_load_preview_image_task",
+     "bookmarks/services/preview_image_loader.py::_get_image_path"
+    ],
+    "sissbruecker__linkding-993": [
+     "bookmarks/services/wayback.py::generate_fallback_webarchive_url",
+     "bookmarks/api/serializers.py::BookmarkSerializer.validate"
+    ],
+    "sissbruecker__linkding-995": [
+     "bookmarks/middlewares.py::LinkdingMiddleware.__call__",
+     "bookmarks/middlewares.py::LinkdingMiddleware.__init__",
+     "bookmarks/middlewares.py::<module>"
+    ],
+    "sissbruecker__linkding-999": [
+     "bookmarks/views/bookmarks.py::handle_action",
+     "bookmarks/services/bookmarks.py::update_bookmark",
+     "bookmarks/services/bookmarks.py::enhance_with_website_metadata"
+    ]
+   },
+   "hits": {
+    "sissbruecker__linkding-1014": false,
+    "sissbruecker__linkding-1045": true,
+    "sissbruecker__linkding-1051": false,
+    "sissbruecker__linkding-1101": false,
+    "sissbruecker__linkding-1114": true,
+    "sissbruecker__linkding-1153": true,
+    "sissbruecker__linkding-1175": false,
+    "sissbruecker__linkding-866": false,
+    "sissbruecker__linkding-971": true,
+    "sissbruecker__linkding-984": true,
+    "sissbruecker__linkding-989": false,
+    "sissbruecker__linkding-993": false,
+    "sissbruecker__linkding-995": false,
+    "sissbruecker__linkding-999": true
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.8205,
+    "localization_rate": 0.4286,
+    "n_false_positive": 32,
+    "n_flags": 39,
+    "n_localized": 6,
+    "n_tasks": 14,
+    "per_repo": {
+     "sissbruecker/linkding": {
+      "false_positive_rate": 0.8205,
+      "localization_rate": 0.4286,
+      "n_false_positive": 32,
+      "n_flags": 39,
+      "n_localized": 6,
+      "n_tasks": 14
+     }
+    }
+   },
+   "retrieved": {
+    "sissbruecker__linkding-1014": [],
+    "sissbruecker__linkding-1045": [],
+    "sissbruecker__linkding-1051": [],
+    "sissbruecker__linkding-1101": [],
+    "sissbruecker__linkding-1114": [],
+    "sissbruecker__linkding-1153": [],
+    "sissbruecker__linkding-1175": [],
+    "sissbruecker__linkding-866": [],
+    "sissbruecker__linkding-971": [],
+    "sissbruecker__linkding-984": [],
+    "sissbruecker__linkding-989": [],
+    "sissbruecker__linkding-993": [],
+    "sissbruecker__linkding-995": [],
+    "sissbruecker__linkding-999": []
+   },
+   "scores": {
+    "sissbruecker__linkding-1014": {},
+    "sissbruecker__linkding-1045": {},
+    "sissbruecker__linkding-1051": {},
+    "sissbruecker__linkding-1101": {},
+    "sissbruecker__linkding-1114": {},
+    "sissbruecker__linkding-1153": {},
+    "sissbruecker__linkding-1175": {},
+    "sissbruecker__linkding-866": {},
+    "sissbruecker__linkding-971": {},
+    "sissbruecker__linkding-984": {},
+    "sissbruecker__linkding-989": {},
+    "sissbruecker__linkding-993": {},
+    "sissbruecker__linkding-995": {},
+    "sissbruecker__linkding-999": {}
+   },
+   "tau": 0.0,
+   "version": "rolling",
+   "versions": {
+    "sissbruecker__linkding-1014": null,
+    "sissbruecker__linkding-1045": null,
+    "sissbruecker__linkding-1051": null,
+    "sissbruecker__linkding-1101": null,
+    "sissbruecker__linkding-1114": null,
+    "sissbruecker__linkding-1153": null,
+    "sissbruecker__linkding-1175": null,
+    "sissbruecker__linkding-866": null,
+    "sissbruecker__linkding-971": null,
+    "sissbruecker__linkding-984": null,
+    "sissbruecker__linkding-989": null,
+    "sissbruecker__linkding-993": null,
+    "sissbruecker__linkding-995": null,
+    "sissbruecker__linkding-999": null
+   }
+  },
+  "treatment": {
+   "file_hits": {
+    "sissbruecker__linkding-1014": false,
+    "sissbruecker__linkding-1045": true,
+    "sissbruecker__linkding-1051": false,
+    "sissbruecker__linkding-1101": false,
+    "sissbruecker__linkding-1114": true,
+    "sissbruecker__linkding-1153": true,
+    "sissbruecker__linkding-1175": false,
+    "sissbruecker__linkding-866": false,
+    "sissbruecker__linkding-971": true,
+    "sissbruecker__linkding-984": true,
+    "sissbruecker__linkding-989": true,
+    "sissbruecker__linkding-993": true,
+    "sissbruecker__linkding-995": true,
+    "sissbruecker__linkding-999": true
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.7368,
+    "localization_rate": 0.6429,
+    "n_false_positive": 28,
+    "n_flags": 38,
+    "n_localized": 9,
+    "n_tasks": 14,
+    "per_repo": {
+     "sissbruecker/linkding": {
+      "false_positive_rate": 0.7368,
+      "localization_rate": 0.6429,
+      "n_false_positive": 28,
+      "n_flags": 38,
+      "n_localized": 9,
+      "n_tasks": 14
+     }
+    }
+   },
+   "flags": {
+    "sissbruecker__linkding-1014": [
+     "bookmarks/views/root.py::root",
+     "bookmarks/views/root.py::<module>",
+     "bookmarks/templatetags/bookmarks.py::bookmark_search"
+    ],
+    "sissbruecker__linkding-1045": [
+     "bookmarks/services/auto_tagging.py::_path_matches",
+     "bookmarks/services/auto_tagging.py::get_tags",
+     "bookmarks/services/auto_tagging.py::_domains_matches"
+    ],
+    "sissbruecker__linkding-1051": [
+     "bookmarks/services/parser.py::BookmarkParser.handle_data",
+     "bookmarks/services/parser.py::BookmarkParser.handle_a_data",
+     "bookmarks/services/parser.py::BookmarkParser.handle_start_a"
+    ],
+    "sissbruecker__linkding-1101": [
+     "bookmarks/services/exporter.py::export_netscape_html",
+     "bookmarks/services/exporter.py::<module>",
+     "bookmarks/utils.py::parse_timestamp"
+    ],
+    "sissbruecker__linkding-1114": [
+     "bookmarks/views/bundles.py::action",
+     "bookmarks/models.py::BookmarkBundle",
+     "bookmarks/views/bundles.py::_handle_edit"
+    ],
+    "sissbruecker__linkding-1153": [
+     "bookmarks/services/importer.py::import_netscape_html",
+     "bookmarks/services/importer.py::_create_missing_tags",
+     "bookmarks/views/settings.py::bookmark_import"
+    ],
+    "sissbruecker__linkding-1175": [
+     "bookmarks/services/tags.py::get_or_create_tag",
+     "bookmarks/models.py::Tag",
+     "bookmarks/views/bookmarks.py::handle_action"
+    ],
+    "sissbruecker__linkding-866": [
+     "bookmarks/views/bookmarks.py::archive",
+     "bookmarks/views/bookmarks.py::create_html_snapshot",
+     "bookmarks/services/singlefile.py::create_snapshot"
+    ],
+    "sissbruecker__linkding-971": [
+     "siteroot/settings/base.py::<module>"
+    ],
+    "sissbruecker__linkding-984": [
+     "bookmarks/views/bookmarks.py::shared",
+     "bookmarks/views/bookmarks.py::render_bookmarks_view",
+     "bookmarks/feeds.py::PublicSharedBookmarksFeed.link"
+    ],
+    "sissbruecker__linkding-989": [
+     "bookmarks/services/preview_image_loader.py::load_preview_image",
+     "bookmarks/services/tasks.py::_load_preview_image_task",
+     "bookmarks/services/preview_image_loader.py::_get_image_path"
+    ],
+    "sissbruecker__linkding-993": [
+     "bookmarks/services/wayback.py::generate_fallback_webarchive_url",
+     "bookmarks/api/serializers.py::BookmarkSerializer.validate"
+    ],
+    "sissbruecker__linkding-995": [
+     "bookmarks/middlewares.py::LinkdingMiddleware.__call__",
+     "bookmarks/middlewares.py::LinkdingMiddleware.__init__",
+     "bookmarks/middlewares.py::<module>"
+    ],
+    "sissbruecker__linkding-999": [
+     "bookmarks/views/bookmarks.py::handle_action",
+     "bookmarks/services/bookmarks.py::update_bookmark",
+     "bookmarks/services/bookmarks.py::enhance_with_website_metadata"
+    ]
+   },
+   "hits": {
+    "sissbruecker__linkding-1014": false,
+    "sissbruecker__linkding-1045": true,
+    "sissbruecker__linkding-1051": false,
+    "sissbruecker__linkding-1101": false,
+    "sissbruecker__linkding-1114": true,
+    "sissbruecker__linkding-1153": true,
+    "sissbruecker__linkding-1175": false,
+    "sissbruecker__linkding-866": false,
+    "sissbruecker__linkding-971": true,
+    "sissbruecker__linkding-984": true,
+    "sissbruecker__linkding-989": false,
+    "sissbruecker__linkding-993": false,
+    "sissbruecker__linkding-995": false,
+    "sissbruecker__linkding-999": true
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.8205,
+    "localization_rate": 0.4286,
+    "n_false_positive": 32,
+    "n_flags": 39,
+    "n_localized": 6,
+    "n_tasks": 14,
+    "per_repo": {
+     "sissbruecker/linkding": {
+      "false_positive_rate": 0.8205,
+      "localization_rate": 0.4286,
+      "n_false_positive": 32,
+      "n_flags": 39,
+      "n_localized": 6,
+      "n_tasks": 14
+     }
+    }
+   },
+   "retrieved": {
+    "sissbruecker__linkding-1014": [],
+    "sissbruecker__linkding-1045": [],
+    "sissbruecker__linkding-1051": [],
+    "sissbruecker__linkding-1101": [],
+    "sissbruecker__linkding-1114": [],
+    "sissbruecker__linkding-1153": [],
+    "sissbruecker__linkding-1175": [],
+    "sissbruecker__linkding-866": [],
+    "sissbruecker__linkding-971": [],
+    "sissbruecker__linkding-984": [],
+    "sissbruecker__linkding-989": [],
+    "sissbruecker__linkding-993": [],
+    "sissbruecker__linkding-995": [],
+    "sissbruecker__linkding-999": []
+   },
+   "scores": {
+    "sissbruecker__linkding-1014": {},
+    "sissbruecker__linkding-1045": {},
+    "sissbruecker__linkding-1051": {},
+    "sissbruecker__linkding-1101": {},
+    "sissbruecker__linkding-1114": {},
+    "sissbruecker__linkding-1153": {},
+    "sissbruecker__linkding-1175": {},
+    "sissbruecker__linkding-866": {},
+    "sissbruecker__linkding-971": {},
+    "sissbruecker__linkding-984": {},
+    "sissbruecker__linkding-989": {},
+    "sissbruecker__linkding-993": {},
+    "sissbruecker__linkding-995": {},
+    "sissbruecker__linkding-999": {}
+   },
+   "tau": 0.0,
+   "version": "rolling",
+   "versions": {
+    "sissbruecker__linkding-1014": null,
+    "sissbruecker__linkding-1045": null,
+    "sissbruecker__linkding-1051": null,
+    "sissbruecker__linkding-1101": null,
+    "sissbruecker__linkding-1114": null,
+    "sissbruecker__linkding-1153": null,
+    "sissbruecker__linkding-1175": null,
+    "sissbruecker__linkding-866": null,
+    "sissbruecker__linkding-971": null,
+    "sissbruecker__linkding-984": null,
+    "sissbruecker__linkding-989": null,
+    "sissbruecker__linkding-993": null,
+    "sissbruecker__linkding-995": null,
+    "sissbruecker__linkding-999": null
+   }
+  }
+ },
+ "control": {
+  "false_positive_rate": 0.8205,
+  "localization_rate": 0.4286,
+  "n_false_positive": 32,
+  "n_flags": 39,
+  "n_localized": 6,
+  "n_tasks": 14,
+  "per_repo": {
+   "sissbruecker/linkding": {
+    "false_positive_rate": 0.8205,
+    "localization_rate": 0.4286,
+    "n_false_positive": 32,
+    "n_flags": 39,
+    "n_localized": 6,
+    "n_tasks": 14
+   }
+  }
+ },
+ "control_flags": {
+  "sissbruecker__linkding-1014": [
+   "bookmarks/views/root.py",
+   "bookmarks/views/root.py",
+   "bookmarks/templatetags/bookmarks.py"
+  ],
+  "sissbruecker__linkding-1045": [
+   "bookmarks/services/auto_tagging.py",
+   "bookmarks/services/auto_tagging.py",
+   "bookmarks/services/auto_tagging.py"
+  ],
+  "sissbruecker__linkding-1051": [
+   "bookmarks/services/parser.py",
+   "bookmarks/services/parser.py",
+   "bookmarks/services/parser.py"
+  ],
+  "sissbruecker__linkding-1101": [
+   "bookmarks/services/exporter.py",
+   "bookmarks/services/exporter.py",
+   "bookmarks/utils.py"
+  ],
+  "sissbruecker__linkding-1114": [
+   "bookmarks/views/bundles.py",
+   "bookmarks/models.py",
+   "bookmarks/views/bundles.py"
+  ],
+  "sissbruecker__linkding-1153": [
+   "bookmarks/services/importer.py",
+   "bookmarks/services/importer.py",
+   "bookmarks/views/settings.py"
+  ],
+  "sissbruecker__linkding-1175": [
+   "bookmarks/services/tags.py",
+   "bookmarks/models.py",
+   "bookmarks/views/bookmarks.py"
+  ],
+  "sissbruecker__linkding-866": [
+   "bookmarks/views/bookmarks.py",
+   "bookmarks/views/bookmarks.py",
+   "bookmarks/services/singlefile.py"
+  ],
+  "sissbruecker__linkding-971": [
+   "siteroot/settings/base.py"
+  ],
+  "sissbruecker__linkding-984": [
+   "bookmarks/views/bookmarks.py",
+   "bookmarks/views/bookmarks.py",
+   "bookmarks/feeds.py"
+  ],
+  "sissbruecker__linkding-989": [
+   "bookmarks/services/preview_image_loader.py",
+   "bookmarks/services/tasks.py",
+   "bookmarks/services/preview_image_loader.py"
+  ],
+  "sissbruecker__linkding-993": [
+   "bookmarks/services/wayback.py",
+   "bookmarks/api/serializers.py"
+  ],
+  "sissbruecker__linkding-995": [
+   "bookmarks/middlewares.py",
+   "bookmarks/middlewares.py",
+   "bookmarks/middlewares.py"
+  ],
+  "sissbruecker__linkding-999": [
+   "bookmarks/views/bookmarks.py",
+   "bookmarks/services/bookmarks.py",
+   "bookmarks/services/bookmarks.py"
+  ]
+ },
+ "errors": {},
+ "gold": {
+  "sissbruecker__linkding-1014": [
+   "bookmarks/views/bookmarks.py::<module>",
+   "bookmarks/views/bookmarks.py::archived",
+   "bookmarks/views/bookmarks.py::index",
+   "bookmarks/views/bookmarks.py::render_bookmarks_view",
+   "bookmarks/views/bookmarks.py::shared"
+  ],
+  "sissbruecker__linkding-1045": [
+   "bookmarks/services/auto_tagging.py::_qs_matches",
+   "bookmarks/services/auto_tagging.py::get_tags"
+  ],
+  "sissbruecker__linkding-1051": [
+   "bookmarks/templatetags/shared.py::render_markdown"
+  ],
+  "sissbruecker__linkding-1101": [
+   "bookmarks/views/settings.py::<module>",
+   "bookmarks/views/settings.py::bookmark_export"
+  ],
+  "sissbruecker__linkding-1114": [
+   "bookmarks/api/routes.py::<module>",
+   "bookmarks/api/routes.py::BookmarkBundleViewSet.get_serializer_context",
+   "bookmarks/api/serializers.py::<module>",
+   "bookmarks/api/serializers.py::BookmarkBundleSerializer",
+   "bookmarks/api/serializers.py::BookmarkBundleSerializer.create",
+   "bookmarks/api/serializers.py::BookmarkSerializer",
+   "bookmarks/services/bundles.py::<module>",
+   "bookmarks/views/bundles.py::<module>",
+   "bookmarks/views/bundles.py::_handle_edit",
+   "bookmarks/views/bundles.py::action"
+  ],
+  "sissbruecker__linkding-1153": [
+   "bookmarks/services/importer.py::_create_missing_tags"
+  ],
+  "sissbruecker__linkding-1175": [
+   "bookmarks/forms.py::<module>",
+   "bookmarks/forms.py::CustomErrorList",
+   "bookmarks/forms.py::convert_tag_string",
+   "bookmarks/urls.py::<module>",
+   "bookmarks/views/__init__.py::<module>",
+   "bookmarks/views/tags.py::<module>"
+  ],
+  "sissbruecker__linkding-866": [
+   "siteroot/settings/base.py::<module>"
+  ],
+  "sissbruecker__linkding-971": [
+   "bookmarks/utils.py::<module>",
+   "bookmarks/utils.py::generate_username",
+   "bookmarks/utils.py::redirect_with_query",
+   "siteroot/settings/base.py::<module>"
+  ],
+  "sissbruecker__linkding-984": [
+   "bookmarks/views/bookmarks.py::<module>",
+   "bookmarks/views/bookmarks.py::shared"
+  ],
+  "sissbruecker__linkding-989": [
+   "bookmarks/models.py::<module>",
+   "bookmarks/models.py::Bookmark.__str__",
+   "bookmarks/models.py::BookmarkAsset"
+  ],
+  "sissbruecker__linkding-993": [
+   "bookmarks/api/serializers.py::<module>",
+   "bookmarks/api/serializers.py::BookmarkSerializer",
+   "bookmarks/api/serializers.py::BookmarkSerializer.get_preview_image_url",
+   "bookmarks/api/serializers.py::BookmarkSerializer.get_website_title",
+   "bookmarks/api/serializers.py::TagListField"
+  ],
+  "sissbruecker__linkding-995": [
+   "bookmarks/api/auth.py::<module>",
+   "siteroot/settings/base.py::<module>"
+  ],
+  "sissbruecker__linkding-999": [
+   "bookmarks/api/routes.py::BookmarkViewSet.check",
+   "bookmarks/services/bookmarks.py::<module>",
+   "bookmarks/services/bookmarks.py::_merge_bookmark_data",
+   "bookmarks/services/bookmarks.py::unshare_bookmarks",
+   "bookmarks/services/tasks.py::<module>",
+   "bookmarks/services/tasks.py::_schedule_bookmarks_without_previews_task",
+   "bookmarks/services/tasks.py::is_html_snapshot_feature_active",
+   "bookmarks/services/website_loader.py::<module>",
+   "bookmarks/services/website_loader.py::WebsiteMetadata.to_dict",
+   "bookmarks/services/website_loader.py::load_website_metadata",
+   "bookmarks/views/bookmarks.py::<module>",
+   "bookmarks/views/bookmarks.py::close",
+   "bookmarks/views/bookmarks.py::handle_action"
+  ]
+ },
+ "granularity": "function",
+ "learn_errors": {},
+ "lift": {
+  "false_positive_rise_pts": 0.0,
+  "localization_lift_pts": 0.0
+ },
+ "memory_locations": {},
+ "mode": "rolling",
+ "n_errors": 0,
+ "n_eval": 14,
+ "retrieval_hit_rate": 0.0,
+ "retrieved": {
+  "sissbruecker__linkding-1014": [],
+  "sissbruecker__linkding-1045": [],
+  "sissbruecker__linkding-1051": [],
+  "sissbruecker__linkding-1101": [],
+  "sissbruecker__linkding-1114": [],
+  "sissbruecker__linkding-1153": [],
+  "sissbruecker__linkding-1175": [],
+  "sissbruecker__linkding-866": [],
+  "sissbruecker__linkding-971": [],
+  "sissbruecker__linkding-984": [],
+  "sissbruecker__linkding-989": [],
+  "sissbruecker__linkding-993": [],
+  "sissbruecker__linkding-995": [],
+  "sissbruecker__linkding-999": []
+ },
+ "treatment": {
+  "false_positive_rate": 0.8205,
+  "localization_rate": 0.4286,
+  "n_false_positive": 32,
+  "n_flags": 39,
+  "n_localized": 6,
+  "n_tasks": 14,
+  "per_repo": {
+   "sissbruecker/linkding": {
+    "false_positive_rate": 0.8205,
+    "localization_rate": 0.4286,
+    "n_false_positive": 32,
+    "n_flags": 39,
+    "n_localized": 6,
+    "n_tasks": 14
+   }
+  }
+ },
+ "treatment_flags": {
+  "sissbruecker__linkding-1014": [
+   "bookmarks/views/root.py",
+   "bookmarks/views/root.py",
+   "bookmarks/templatetags/bookmarks.py"
+  ],
+  "sissbruecker__linkding-1045": [
+   "bookmarks/services/auto_tagging.py",
+   "bookmarks/services/auto_tagging.py",
+   "bookmarks/services/auto_tagging.py"
+  ],
+  "sissbruecker__linkding-1051": [
+   "bookmarks/services/parser.py",
+   "bookmarks/services/parser.py",
+   "bookmarks/services/parser.py"
+  ],
+  "sissbruecker__linkding-1101": [
+   "bookmarks/services/exporter.py",
+   "bookmarks/services/exporter.py",
+   "bookmarks/utils.py"
+  ],
+  "sissbruecker__linkding-1114": [
+   "bookmarks/views/bundles.py",
+   "bookmarks/models.py",
+   "bookmarks/views/bundles.py"
+  ],
+  "sissbruecker__linkding-1153": [
+   "bookmarks/services/importer.py",
+   "bookmarks/services/importer.py",
+   "bookmarks/views/settings.py"
+  ],
+  "sissbruecker__linkding-1175": [
+   "bookmarks/services/tags.py",
+   "bookmarks/models.py",
+   "bookmarks/views/bookmarks.py"
+  ],
+  "sissbruecker__linkding-866": [
+   "bookmarks/views/bookmarks.py",
+   "bookmarks/views/bookmarks.py",
+   "bookmarks/services/singlefile.py"
+  ],
+  "sissbruecker__linkding-971": [
+   "siteroot/settings/base.py"
+  ],
+  "sissbruecker__linkding-984": [
+   "bookmarks/views/bookmarks.py",
+   "bookmarks/views/bookmarks.py",
+   "bookmarks/feeds.py"
+  ],
+  "sissbruecker__linkding-989": [
+   "bookmarks/services/preview_image_loader.py",
+   "bookmarks/services/tasks.py",
+   "bookmarks/services/preview_image_loader.py"
+  ],
+  "sissbruecker__linkding-993": [
+   "bookmarks/services/wayback.py",
+   "bookmarks/api/serializers.py"
+  ],
+  "sissbruecker__linkding-995": [
+   "bookmarks/middlewares.py",
+   "bookmarks/middlewares.py",
+   "bookmarks/middlewares.py"
+  ],
+  "sissbruecker__linkding-999": [
+   "bookmarks/views/bookmarks.py",
+   "bookmarks/services/bookmarks.py",
+   "bookmarks/services/bookmarks.py"
+  ]
+ },
+ "warmup": 20
+}

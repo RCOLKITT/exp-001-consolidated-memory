@@ -1,0 +1,1619 @@
+{
+ "arms": {
+  "control": {
+   "file_hits": {
+    "sphinx-doc__sphinx-12583": false,
+    "sphinx-doc__sphinx-12586": true,
+    "sphinx-doc__sphinx-12598": true,
+    "sphinx-doc__sphinx-12622": true,
+    "sphinx-doc__sphinx-12647": true,
+    "sphinx-doc__sphinx-12726": true,
+    "sphinx-doc__sphinx-12737": true,
+    "sphinx-doc__sphinx-12807": true,
+    "sphinx-doc__sphinx-12875": false,
+    "sphinx-doc__sphinx-12975": true,
+    "sphinx-doc__sphinx-13127": true,
+    "sphinx-doc__sphinx-13172": true,
+    "sphinx-doc__sphinx-13200": true,
+    "sphinx-doc__sphinx-13253": false,
+    "sphinx-doc__sphinx-13261": false,
+    "sphinx-doc__sphinx-13318": true,
+    "sphinx-doc__sphinx-13319": true
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.6444,
+    "localization_rate": 0.7647,
+    "n_false_positive": 29,
+    "n_flags": 45,
+    "n_localized": 13,
+    "n_tasks": 17,
+    "per_repo": {
+     "sphinx-doc/sphinx": {
+      "false_positive_rate": 0.6444,
+      "localization_rate": 0.7647,
+      "n_false_positive": 29,
+      "n_flags": 45,
+      "n_localized": 13,
+      "n_tasks": 17
+     }
+    }
+   },
+   "flags": {
+    "sphinx-doc__sphinx-12583": [
+     "sphinx/domains/c/_symbol.py::Symbol.get_all_symbols",
+     "sphinx/domains/c/_symbol.py::Symbol.__init__",
+     "sphinx/domains/c/_symbol.py::Symbol._children"
+    ],
+    "sphinx-doc__sphinx-12586": [
+     "sphinx/util/inventory.py::InventoryFile.load",
+     "sphinx/ext/intersphinx/_load.py::load_mappings",
+     "sphinx/ext/intersphinx/_load.py::fetch_inventory"
+    ],
+    "sphinx-doc__sphinx-12598": [
+     "sphinx/writers/latex.py::LaTeXTranslator.visit_figure",
+     "sphinx/writers/latex.py::LaTeXTranslator.visit_admonition",
+     "sphinx/directives/other.py::SeeAlso"
+    ],
+    "sphinx-doc__sphinx-12622": [
+     "sphinx/ext/autodoc/__init__.py::Documenter.filter_members",
+     "sphinx/util/typing.py::stringify_annotation",
+     "sphinx/ext/autodoc/__init__.py::Documenter.get_object_members"
+    ],
+    "sphinx-doc__sphinx-12647": [
+     "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder.init_css_files",
+     "sphinx/application.py::Sphinx.add_css_file",
+     "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder.copy_html_static_files"
+    ],
+    "sphinx-doc__sphinx-12726": [
+     "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder.copy_html_static_files",
+     "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder.copy_static_files",
+     "sphinx/builders/html/__init__.py::<module>"
+    ],
+    "sphinx-doc__sphinx-12737": [
+     "sphinx/directives/__init__.py::ObjectDescription.handle_signature",
+     "sphinx/domains/python/__init__.py::PyClasslike.get_signature_prefix",
+     "sphinx/writers/latex.py::LaTeXTranslator._visit_signature_line"
+    ],
+    "sphinx-doc__sphinx-12807": [
+     "sphinx/ext/intersphinx/_load.py::fetch_inventory",
+     "sphinx/ext/intersphinx/_load.py::_get_safe_url",
+     "sphinx/ext/intersphinx/_load.py::_fetch_inventory"
+    ],
+    "sphinx-doc__sphinx-12875": [
+     "sphinx/util/docutils.py::patch_docutils",
+     "sphinx/util/docutils.py::patched_get_language",
+     "sphinx/util/docutils.py::CustomReSTDispatcher.disable"
+    ],
+    "sphinx-doc__sphinx-12975": [
+     "sphinx/writers/html5.py::HTML5Translator._visit_sig_parameter_list",
+     "sphinx/writers/latex.py::LaTeXTranslator._visit_sig_parameter_list",
+     "sphinx/writers/text.py::TextTranslator._visit_sig_parameter_list"
+    ],
+    "sphinx-doc__sphinx-13127": [
+     "sphinx/builders/linkcheck.py::HyperlinkAvailabilityChecker.is_ignored_uri",
+     "sphinx/builders/linkcheck.py::HyperlinkAvailabilityCheckWorker._check_uri",
+     "sphinx/builders/linkcheck.py::HyperlinkAvailabilityChecker.check"
+    ],
+    "sphinx-doc__sphinx-13172": [
+     "sphinx/ext/autodoc/directive.py::AutodocDirective.run",
+     "sphinx/ext/autosummary/__init__.py::Autosummary.run",
+     "sphinx/ext/autodoc/__init__.py::Documenter.format_signature"
+    ],
+    "sphinx-doc__sphinx-13200": [
+     "sphinx/ext/autodoc/directive.py::AutodocDirective.run",
+     "sphinx/util/inspect.py::is_builtin_class_method",
+     "sphinx/ext/autodoc/importer.py::get_class_members"
+    ],
+    "sphinx-doc__sphinx-13253": [
+     "sphinx/ext/autodoc/__init__.py::Documenter.format_signature",
+     "sphinx/ext/autodoc/__init__.py::ClassDocumenter._get_signature",
+     "sphinx/ext/autodoc/__init__.py::FunctionDocumenter.format_signature"
+    ],
+    "sphinx-doc__sphinx-13261": [
+     "sphinx/ext/autodoc/__init__.py::Documenter.format_signature",
+     "sphinx/ext/autodoc/__init__.py::Documenter.get_attr",
+     "sphinx/ext/autodoc/typehints.py::modify_field_list"
+    ],
+    "sphinx-doc__sphinx-13318": [
+     "sphinx/config.py::Config.convert_overrides",
+     "sphinx/config.py::check_confval_types",
+     "sphinx/application.py::Sphinx.__init__"
+    ],
+    "sphinx-doc__sphinx-13319": [
+     "sphinx/writers/text.py::TextTranslator.visit_productionlist"
+    ]
+   },
+   "hits": {
+    "sphinx-doc__sphinx-12583": false,
+    "sphinx-doc__sphinx-12586": false,
+    "sphinx-doc__sphinx-12598": true,
+    "sphinx-doc__sphinx-12622": true,
+    "sphinx-doc__sphinx-12647": false,
+    "sphinx-doc__sphinx-12726": true,
+    "sphinx-doc__sphinx-12737": true,
+    "sphinx-doc__sphinx-12807": false,
+    "sphinx-doc__sphinx-12875": false,
+    "sphinx-doc__sphinx-12975": true,
+    "sphinx-doc__sphinx-13127": true,
+    "sphinx-doc__sphinx-13172": true,
+    "sphinx-doc__sphinx-13200": false,
+    "sphinx-doc__sphinx-13253": false,
+    "sphinx-doc__sphinx-13261": false,
+    "sphinx-doc__sphinx-13318": true,
+    "sphinx-doc__sphinx-13319": true
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.7551,
+    "localization_rate": 0.5294,
+    "n_false_positive": 37,
+    "n_flags": 49,
+    "n_localized": 9,
+    "n_tasks": 17,
+    "per_repo": {
+     "sphinx-doc/sphinx": {
+      "false_positive_rate": 0.7551,
+      "localization_rate": 0.5294,
+      "n_false_positive": 37,
+      "n_flags": 49,
+      "n_localized": 9,
+      "n_tasks": 17
+     }
+    }
+   },
+   "retrieved": {
+    "sphinx-doc__sphinx-12583": [],
+    "sphinx-doc__sphinx-12586": [],
+    "sphinx-doc__sphinx-12598": [],
+    "sphinx-doc__sphinx-12622": [],
+    "sphinx-doc__sphinx-12647": [],
+    "sphinx-doc__sphinx-12726": [],
+    "sphinx-doc__sphinx-12737": [],
+    "sphinx-doc__sphinx-12807": [],
+    "sphinx-doc__sphinx-12875": [],
+    "sphinx-doc__sphinx-12975": [],
+    "sphinx-doc__sphinx-13127": [],
+    "sphinx-doc__sphinx-13172": [],
+    "sphinx-doc__sphinx-13200": [],
+    "sphinx-doc__sphinx-13253": [],
+    "sphinx-doc__sphinx-13261": [],
+    "sphinx-doc__sphinx-13318": [],
+    "sphinx-doc__sphinx-13319": []
+   },
+   "scores": {
+    "sphinx-doc__sphinx-12583": {},
+    "sphinx-doc__sphinx-12586": {},
+    "sphinx-doc__sphinx-12598": {},
+    "sphinx-doc__sphinx-12622": {},
+    "sphinx-doc__sphinx-12647": {},
+    "sphinx-doc__sphinx-12726": {},
+    "sphinx-doc__sphinx-12737": {},
+    "sphinx-doc__sphinx-12807": {},
+    "sphinx-doc__sphinx-12875": {},
+    "sphinx-doc__sphinx-12975": {},
+    "sphinx-doc__sphinx-13127": {},
+    "sphinx-doc__sphinx-13172": {},
+    "sphinx-doc__sphinx-13200": {},
+    "sphinx-doc__sphinx-13253": {},
+    "sphinx-doc__sphinx-13261": {},
+    "sphinx-doc__sphinx-13318": {},
+    "sphinx-doc__sphinx-13319": {}
+   },
+   "tau": 0.0,
+   "version": null,
+   "versions": {
+    "sphinx-doc__sphinx-12583": null,
+    "sphinx-doc__sphinx-12586": null,
+    "sphinx-doc__sphinx-12598": null,
+    "sphinx-doc__sphinx-12622": null,
+    "sphinx-doc__sphinx-12647": null,
+    "sphinx-doc__sphinx-12726": null,
+    "sphinx-doc__sphinx-12737": null,
+    "sphinx-doc__sphinx-12807": null,
+    "sphinx-doc__sphinx-12875": null,
+    "sphinx-doc__sphinx-12975": null,
+    "sphinx-doc__sphinx-13127": null,
+    "sphinx-doc__sphinx-13172": null,
+    "sphinx-doc__sphinx-13200": null,
+    "sphinx-doc__sphinx-13253": null,
+    "sphinx-doc__sphinx-13261": null,
+    "sphinx-doc__sphinx-13318": null,
+    "sphinx-doc__sphinx-13319": null
+   }
+  },
+  "gated": {
+   "file_hits": {
+    "sphinx-doc__sphinx-12583": false,
+    "sphinx-doc__sphinx-12586": true,
+    "sphinx-doc__sphinx-12598": true,
+    "sphinx-doc__sphinx-12622": true,
+    "sphinx-doc__sphinx-12647": true,
+    "sphinx-doc__sphinx-12726": true,
+    "sphinx-doc__sphinx-12737": true,
+    "sphinx-doc__sphinx-12807": true,
+    "sphinx-doc__sphinx-12875": false,
+    "sphinx-doc__sphinx-12975": true,
+    "sphinx-doc__sphinx-13127": true,
+    "sphinx-doc__sphinx-13172": true,
+    "sphinx-doc__sphinx-13200": true,
+    "sphinx-doc__sphinx-13253": false,
+    "sphinx-doc__sphinx-13261": false,
+    "sphinx-doc__sphinx-13318": true,
+    "sphinx-doc__sphinx-13319": true
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.619,
+    "localization_rate": 0.7647,
+    "n_false_positive": 26,
+    "n_flags": 42,
+    "n_localized": 13,
+    "n_tasks": 17,
+    "per_repo": {
+     "sphinx-doc/sphinx": {
+      "false_positive_rate": 0.619,
+      "localization_rate": 0.7647,
+      "n_false_positive": 26,
+      "n_flags": 42,
+      "n_localized": 13,
+      "n_tasks": 17
+     }
+    }
+   },
+   "flags": {
+    "sphinx-doc__sphinx-12583": [
+     "sphinx/domains/c/_symbol.py::Symbol.__init__",
+     "sphinx/domains/c/_symbol.py::Symbol._children",
+     "sphinx/domains/c/_symbol.py::Symbol.get_all_symbols"
+    ],
+    "sphinx-doc__sphinx-12586": [
+     "sphinx/util/inventory.py::InventoryFile.load",
+     "sphinx/ext/intersphinx/_load.py::fetch_inventory",
+     "sphinx/util/inventory.py::InventoryFile.load_v2"
+    ],
+    "sphinx-doc__sphinx-12598": [
+     "sphinx/writers/latex.py::LaTeXTranslator.visit_figure",
+     "sphinx/writers/latex.py::LaTeXTranslator.visit_admonition",
+     "sphinx/directives/other.py::SeeAlso"
+    ],
+    "sphinx-doc__sphinx-12622": [
+     "sphinx/ext/autodoc/__init__.py::Documenter.filter_members",
+     "sphinx/util/typing.py::stringify_annotation",
+     "sphinx/ext/autodoc/__init__.py::Documenter.get_object_members"
+    ],
+    "sphinx-doc__sphinx-12647": [
+     "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder.init_css_files",
+     "sphinx/application.py::Sphinx.add_css_file",
+     "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder.copy_html_static_files"
+    ],
+    "sphinx-doc__sphinx-12726": [
+     "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder.copy_html_static_files",
+     "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder.copy_static_files",
+     "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder.copy_theme_static_files"
+    ],
+    "sphinx-doc__sphinx-12737": [
+     "sphinx/directives/__init__.py::ObjectDescription.handle_signature",
+     "sphinx/domains/python/__init__.py::PyClasslike.get_signature_prefix",
+     "sphinx/writers/latex.py::LaTeXTranslator._visit_signature_line"
+    ],
+    "sphinx-doc__sphinx-12807": [
+     "sphinx/ext/intersphinx/_load.py::fetch_inventory",
+     "sphinx/ext/intersphinx/_load.py::_get_safe_url",
+     "sphinx/ext/intersphinx/_load.py::_fetch_inventory"
+    ],
+    "sphinx-doc__sphinx-12875": [
+     "sphinx/util/docutils.py::patch_docutils",
+     "sphinx/util/docutils.py::patched_get_language",
+     "sphinx/util/docutils.py::CustomReSTDispatcher.disable"
+    ],
+    "sphinx-doc__sphinx-12975": [
+     "sphinx/writers/html5.py::HTML5Translator._visit_sig_parameter_list",
+     "sphinx/writers/latex.py::LaTeXTranslator._visit_sig_parameter_list",
+     "sphinx/writers/text.py::TextTranslator._visit_sig_parameter_list"
+    ],
+    "sphinx-doc__sphinx-13127": [
+     "sphinx/builders/linkcheck.py::HyperlinkAvailabilityChecker.is_ignored_uri",
+     "sphinx/builders/linkcheck.py::HyperlinkAvailabilityCheckWorker._check_uri",
+     "sphinx/builders/linkcheck.py::HyperlinkAvailabilityChecker.check"
+    ],
+    "sphinx-doc__sphinx-13172": [
+     "sphinx/ext/autodoc/directive.py::AutodocDirective.run",
+     "sphinx/ext/autosummary/__init__.py::Autosummary.run",
+     "sphinx/ext/autodoc/__init__.py::Documenter.format_signature"
+    ],
+    "sphinx-doc__sphinx-13200": [
+     "sphinx/ext/autodoc/directive.py::AutodocDirective.run",
+     "sphinx/util/inspect.py::is_builtin_class_method",
+     "sphinx/ext/autodoc/importer.py::get_class_members"
+    ],
+    "sphinx-doc__sphinx-13253": [
+     "sphinx/ext/autodoc/__init__.py::Documenter.format_signature",
+     "sphinx/ext/autodoc/__init__.py::ClassDocumenter._get_signature",
+     "sphinx/ext/autodoc/__init__.py::FunctionDocumenter.format_signature"
+    ],
+    "sphinx-doc__sphinx-13261": [
+     "sphinx/ext/autodoc/__init__.py::Documenter.format_signature",
+     "sphinx/ext/autodoc/__init__.py::Documenter.get_attr",
+     "sphinx/ext/autodoc/typehints.py::modify_field_list"
+    ],
+    "sphinx-doc__sphinx-13318": [
+     "sphinx/config.py::Config.convert_overrides",
+     "sphinx/config.py::check_confval_types",
+     "sphinx/application.py::Sphinx.__init__"
+    ],
+    "sphinx-doc__sphinx-13319": [
+     "sphinx/writers/text.py::TextTranslator.visit_productionlist"
+    ]
+   },
+   "hits": {
+    "sphinx-doc__sphinx-12583": false,
+    "sphinx-doc__sphinx-12586": true,
+    "sphinx-doc__sphinx-12598": true,
+    "sphinx-doc__sphinx-12622": true,
+    "sphinx-doc__sphinx-12647": false,
+    "sphinx-doc__sphinx-12726": true,
+    "sphinx-doc__sphinx-12737": true,
+    "sphinx-doc__sphinx-12807": false,
+    "sphinx-doc__sphinx-12875": false,
+    "sphinx-doc__sphinx-12975": true,
+    "sphinx-doc__sphinx-13127": true,
+    "sphinx-doc__sphinx-13172": true,
+    "sphinx-doc__sphinx-13200": false,
+    "sphinx-doc__sphinx-13253": false,
+    "sphinx-doc__sphinx-13261": false,
+    "sphinx-doc__sphinx-13318": true,
+    "sphinx-doc__sphinx-13319": true
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": -2.04,
+    "localization_lift_pts": 5.88
+   },
+   "metrics": {
+    "false_positive_rate": 0.7347,
+    "localization_rate": 0.5882,
+    "n_false_positive": 36,
+    "n_flags": 49,
+    "n_localized": 10,
+    "n_tasks": 17,
+    "per_repo": {
+     "sphinx-doc/sphinx": {
+      "false_positive_rate": 0.7347,
+      "localization_rate": 0.5882,
+      "n_false_positive": 36,
+      "n_flags": 49,
+      "n_localized": 10,
+      "n_tasks": 17
+     }
+    }
+   },
+   "retrieved": {
+    "sphinx-doc__sphinx-12583": [
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32"
+    ],
+    "sphinx-doc__sphinx-12586": [
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32"
+    ],
+    "sphinx-doc__sphinx-12598": [],
+    "sphinx-doc__sphinx-12622": [],
+    "sphinx-doc__sphinx-12647": [],
+    "sphinx-doc__sphinx-12726": [
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32",
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c"
+    ],
+    "sphinx-doc__sphinx-12737": [],
+    "sphinx-doc__sphinx-12807": [
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32"
+    ],
+    "sphinx-doc__sphinx-12875": [],
+    "sphinx-doc__sphinx-12975": [],
+    "sphinx-doc__sphinx-13127": [],
+    "sphinx-doc__sphinx-13172": [],
+    "sphinx-doc__sphinx-13200": [],
+    "sphinx-doc__sphinx-13253": [],
+    "sphinx-doc__sphinx-13261": [],
+    "sphinx-doc__sphinx-13318": [],
+    "sphinx-doc__sphinx-13319": []
+   },
+   "scores": {
+    "sphinx-doc__sphinx-12583": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.533036,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.394961
+    },
+    "sphinx-doc__sphinx-12586": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.506777,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.357702
+    },
+    "sphinx-doc__sphinx-12598": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.338222,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.323017
+    },
+    "sphinx-doc__sphinx-12622": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.459554,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.371256
+    },
+    "sphinx-doc__sphinx-12647": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.259651,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.119644
+    },
+    "sphinx-doc__sphinx-12726": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.549207,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.500076
+    },
+    "sphinx-doc__sphinx-12737": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.466194,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.378246
+    },
+    "sphinx-doc__sphinx-12807": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.527738,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.417762
+    },
+    "sphinx-doc__sphinx-12875": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.412891,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.287386
+    },
+    "sphinx-doc__sphinx-12975": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.465656,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.373181
+    },
+    "sphinx-doc__sphinx-13127": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.28837,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.479413
+    },
+    "sphinx-doc__sphinx-13172": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.114392,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.039513
+    },
+    "sphinx-doc__sphinx-13200": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.242517,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.062567
+    },
+    "sphinx-doc__sphinx-13253": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.464407,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.415821
+    },
+    "sphinx-doc__sphinx-13261": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.291911,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.26121
+    },
+    "sphinx-doc__sphinx-13318": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.499198,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.336593
+    },
+    "sphinx-doc__sphinx-13319": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.498937,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.393539
+    }
+   },
+   "tau": 0.5,
+   "version": "rolling",
+   "versions": {
+    "sphinx-doc__sphinx-12583": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8",
+    "sphinx-doc__sphinx-12586": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8",
+    "sphinx-doc__sphinx-12598": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8",
+    "sphinx-doc__sphinx-12622": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8",
+    "sphinx-doc__sphinx-12647": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8",
+    "sphinx-doc__sphinx-12726": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8",
+    "sphinx-doc__sphinx-12737": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8",
+    "sphinx-doc__sphinx-12807": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8",
+    "sphinx-doc__sphinx-12875": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8",
+    "sphinx-doc__sphinx-12975": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8",
+    "sphinx-doc__sphinx-13127": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8",
+    "sphinx-doc__sphinx-13172": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8",
+    "sphinx-doc__sphinx-13200": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8",
+    "sphinx-doc__sphinx-13253": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8",
+    "sphinx-doc__sphinx-13261": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8",
+    "sphinx-doc__sphinx-13318": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8",
+    "sphinx-doc__sphinx-13319": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8"
+   }
+  },
+  "placebo": {
+   "file_hits": {
+    "sphinx-doc__sphinx-12583": false,
+    "sphinx-doc__sphinx-12586": true,
+    "sphinx-doc__sphinx-12598": false,
+    "sphinx-doc__sphinx-12622": true,
+    "sphinx-doc__sphinx-12647": true,
+    "sphinx-doc__sphinx-12726": true,
+    "sphinx-doc__sphinx-12737": true,
+    "sphinx-doc__sphinx-12807": true,
+    "sphinx-doc__sphinx-12875": false,
+    "sphinx-doc__sphinx-12975": true,
+    "sphinx-doc__sphinx-13127": true,
+    "sphinx-doc__sphinx-13172": true,
+    "sphinx-doc__sphinx-13200": false,
+    "sphinx-doc__sphinx-13253": false,
+    "sphinx-doc__sphinx-13261": false,
+    "sphinx-doc__sphinx-13318": true,
+    "sphinx-doc__sphinx-13319": true
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.6809,
+    "localization_rate": 0.6471,
+    "n_false_positive": 32,
+    "n_flags": 47,
+    "n_localized": 11,
+    "n_tasks": 17,
+    "per_repo": {
+     "sphinx-doc/sphinx": {
+      "false_positive_rate": 0.6809,
+      "localization_rate": 0.6471,
+      "n_false_positive": 32,
+      "n_flags": 47,
+      "n_localized": 11,
+      "n_tasks": 17
+     }
+    }
+   },
+   "flags": {
+    "sphinx-doc__sphinx-12583": [
+     "sphinx/domains/c/_symbol.py::Symbol.get_all_symbols",
+     "sphinx/domains/c/_symbol.py::Symbol._children",
+     "sphinx/domains/c/_symbol.py::Symbol.__init__"
+    ],
+    "sphinx-doc__sphinx-12586": [
+     "sphinx/util/inventory.py::InventoryFile.load",
+     "sphinx/ext/intersphinx/_load.py::load_mappings",
+     "sphinx/ext/intersphinx/_load.py::fetch_inventory"
+    ],
+    "sphinx-doc__sphinx-12598": [
+     "sphinx/builders/latex/transforms.py::LaTeXFootnoteVisitor.visit_figure",
+     "sphinx/builders/latex/transforms.py::LaTeXFootnoteTransform.run"
+    ],
+    "sphinx-doc__sphinx-12622": [
+     "sphinx/domains/python/_annotations.py::_parse_annotation",
+     "sphinx/util/typing.py::stringify_annotation",
+     "sphinx/ext/autodoc/__init__.py::Documenter.get_attr"
+    ],
+    "sphinx-doc__sphinx-12647": [
+     "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder.init_css_files",
+     "sphinx/application.py::Sphinx.add_css_file",
+     "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder.css_files"
+    ],
+    "sphinx-doc__sphinx-12726": [
+     "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder.copy_html_static_files"
+    ],
+    "sphinx-doc__sphinx-12737": [
+     "sphinx/writers/latex.py::LaTeXTranslator._visit_signature_line",
+     "sphinx/directives/__init__.py::ObjectDescription.handle_signature",
+     "sphinx/writers/latex.py::LaTeXTranslator.visit_desc_signature"
+    ],
+    "sphinx-doc__sphinx-12807": [
+     "sphinx/ext/intersphinx/_load.py::fetch_inventory",
+     "sphinx/ext/intersphinx/_load.py::_get_safe_url",
+     "sphinx/ext/intersphinx/_load.py::_fetch_inventory"
+    ],
+    "sphinx-doc__sphinx-12875": [
+     "sphinx/util/docutils.py::patched_get_language",
+     "sphinx/util/docutils.py::patched_rst_get_language",
+     "sphinx/util/docutils.py::CustomReSTDispatcher.disable"
+    ],
+    "sphinx-doc__sphinx-12975": [
+     "sphinx/writers/html5.py::HTML5Translator._visit_sig_parameter_list",
+     "sphinx/writers/latex.py::LaTeXTranslator._visit_sig_parameter_list",
+     "sphinx/writers/text.py::TextTranslator._visit_sig_parameter_list"
+    ],
+    "sphinx-doc__sphinx-13127": [
+     "sphinx/builders/linkcheck.py::HyperlinkAvailabilityChecker.is_ignored_uri",
+     "sphinx/builders/linkcheck.py::HyperlinkAvailabilityCheckWorker._check_uri",
+     "sphinx/builders/linkcheck.py::compile_linkcheck_allowed_redirects"
+    ],
+    "sphinx-doc__sphinx-13172": [
+     "sphinx/ext/autosummary/__init__.py::_cleanup_signature",
+     "sphinx/ext/autosummary/__init__.py::mangle_signature",
+     "sphinx/ext/autodoc/directive.py::process_documenter_options"
+    ],
+    "sphinx-doc__sphinx-13200": [
+     "sphinx/domains/python/__init__.py::PyClassMethod.run",
+     "sphinx/ext/autodoc/importer.py::get_class_members",
+     "sphinx/ext/autodoc/directive.py::AutodocDirective.run"
+    ],
+    "sphinx-doc__sphinx-13253": [
+     "sphinx/ext/autodoc/__init__.py::Documenter.format_signature",
+     "sphinx/ext/autodoc/__init__.py::FunctionDocumenter.format_signature",
+     "sphinx/ext/autodoc/__init__.py::ClassDocumenter._get_signature"
+    ],
+    "sphinx-doc__sphinx-13261": [
+     "sphinx/ext/autodoc/typehints.py::record_typehints",
+     "sphinx/ext/autodoc/typehints.py::merge_typehints",
+     "sphinx/ext/autodoc/directive.py::AutodocDirective.run"
+    ],
+    "sphinx-doc__sphinx-13318": [
+     "sphinx/config.py::Config.convert_overrides",
+     "sphinx/config.py::check_confval_types",
+     "sphinx/application.py::Sphinx.add_config_value"
+    ],
+    "sphinx-doc__sphinx-13319": [
+     "sphinx/writers/text.py::TextTranslator.visit_productionlist",
+     "sphinx/writers/text.py::TextTranslator.__init__",
+     "sphinx/writers/text.py::<module>"
+    ]
+   },
+   "hits": {
+    "sphinx-doc__sphinx-12583": false,
+    "sphinx-doc__sphinx-12586": false,
+    "sphinx-doc__sphinx-12598": false,
+    "sphinx-doc__sphinx-12622": true,
+    "sphinx-doc__sphinx-12647": false,
+    "sphinx-doc__sphinx-12726": false,
+    "sphinx-doc__sphinx-12737": true,
+    "sphinx-doc__sphinx-12807": false,
+    "sphinx-doc__sphinx-12875": false,
+    "sphinx-doc__sphinx-12975": true,
+    "sphinx-doc__sphinx-13127": true,
+    "sphinx-doc__sphinx-13172": false,
+    "sphinx-doc__sphinx-13200": false,
+    "sphinx-doc__sphinx-13253": false,
+    "sphinx-doc__sphinx-13261": false,
+    "sphinx-doc__sphinx-13318": true,
+    "sphinx-doc__sphinx-13319": true
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": 7.82,
+    "localization_lift_pts": -17.65
+   },
+   "metrics": {
+    "false_positive_rate": 0.8333,
+    "localization_rate": 0.3529,
+    "n_false_positive": 40,
+    "n_flags": 48,
+    "n_localized": 6,
+    "n_tasks": 17,
+    "per_repo": {
+     "sphinx-doc/sphinx": {
+      "false_positive_rate": 0.8333,
+      "localization_rate": 0.3529,
+      "n_false_positive": 40,
+      "n_flags": 48,
+      "n_localized": 6,
+      "n_tasks": 17
+     }
+    }
+   },
+   "retrieved": {
+    "sphinx-doc__sphinx-12583": [
+     "placebo:4",
+     "placebo:3"
+    ],
+    "sphinx-doc__sphinx-12586": [
+     "placebo:4",
+     "placebo:3"
+    ],
+    "sphinx-doc__sphinx-12598": [
+     "placebo:4",
+     "placebo:3"
+    ],
+    "sphinx-doc__sphinx-12622": [
+     "placebo:4",
+     "placebo:3"
+    ],
+    "sphinx-doc__sphinx-12647": [
+     "placebo:4",
+     "placebo:2"
+    ],
+    "sphinx-doc__sphinx-12726": [
+     "placebo:4",
+     "placebo:3"
+    ],
+    "sphinx-doc__sphinx-12737": [
+     "placebo:4",
+     "placebo:3"
+    ],
+    "sphinx-doc__sphinx-12807": [
+     "placebo:4",
+     "placebo:2"
+    ],
+    "sphinx-doc__sphinx-12875": [
+     "placebo:4",
+     "placebo:3"
+    ],
+    "sphinx-doc__sphinx-12975": [
+     "placebo:4",
+     "placebo:3"
+    ],
+    "sphinx-doc__sphinx-13127": [
+     "placebo:4",
+     "placebo:3"
+    ],
+    "sphinx-doc__sphinx-13172": [
+     "placebo:1",
+     "placebo:0"
+    ],
+    "sphinx-doc__sphinx-13200": [
+     "placebo:0",
+     "placebo:1"
+    ],
+    "sphinx-doc__sphinx-13253": [
+     "placebo:4",
+     "placebo:3"
+    ],
+    "sphinx-doc__sphinx-13261": [
+     "placebo:2",
+     "placebo:3"
+    ],
+    "sphinx-doc__sphinx-13318": [
+     "placebo:4",
+     "placebo:3"
+    ],
+    "sphinx-doc__sphinx-13319": [
+     "placebo:4",
+     "placebo:3"
+    ]
+   },
+   "scores": {
+    "sphinx-doc__sphinx-12583": {
+     "placebo:3": 0.243432,
+     "placebo:4": 0.261852
+    },
+    "sphinx-doc__sphinx-12586": {
+     "placebo:3": 0.284685,
+     "placebo:4": 0.339554
+    },
+    "sphinx-doc__sphinx-12598": {
+     "placebo:3": 0.249438,
+     "placebo:4": 0.264348
+    },
+    "sphinx-doc__sphinx-12622": {
+     "placebo:3": 0.234235,
+     "placebo:4": 0.273979
+    },
+    "sphinx-doc__sphinx-12647": {
+     "placebo:2": 0.194997,
+     "placebo:4": 0.198528
+    },
+    "sphinx-doc__sphinx-12726": {
+     "placebo:3": 0.23213,
+     "placebo:4": 0.30884
+    },
+    "sphinx-doc__sphinx-12737": {
+     "placebo:3": 0.277058,
+     "placebo:4": 0.344862
+    },
+    "sphinx-doc__sphinx-12807": {
+     "placebo:2": 0.322826,
+     "placebo:4": 0.341857
+    },
+    "sphinx-doc__sphinx-12875": {
+     "placebo:3": 0.183217,
+     "placebo:4": 0.243697
+    },
+    "sphinx-doc__sphinx-12975": {
+     "placebo:3": 0.297066,
+     "placebo:4": 0.356245
+    },
+    "sphinx-doc__sphinx-13127": {
+     "placebo:3": 0.288588,
+     "placebo:4": 0.295849
+    },
+    "sphinx-doc__sphinx-13172": {
+     "placebo:0": 0.154764,
+     "placebo:1": 0.201476
+    },
+    "sphinx-doc__sphinx-13200": {
+     "placebo:0": 0.30104,
+     "placebo:1": 0.271387
+    },
+    "sphinx-doc__sphinx-13253": {
+     "placebo:3": 0.182318,
+     "placebo:4": 0.26161
+    },
+    "sphinx-doc__sphinx-13261": {
+     "placebo:2": 0.195404,
+     "placebo:3": 0.176667
+    },
+    "sphinx-doc__sphinx-13318": {
+     "placebo:3": 0.248843,
+     "placebo:4": 0.311225
+    },
+    "sphinx-doc__sphinx-13319": {
+     "placebo:3": 0.235052,
+     "placebo:4": 0.306193
+    }
+   },
+   "tau": 0.0,
+   "version": "rolling",
+   "versions": {
+    "sphinx-doc__sphinx-12583": null,
+    "sphinx-doc__sphinx-12586": null,
+    "sphinx-doc__sphinx-12598": null,
+    "sphinx-doc__sphinx-12622": null,
+    "sphinx-doc__sphinx-12647": null,
+    "sphinx-doc__sphinx-12726": null,
+    "sphinx-doc__sphinx-12737": null,
+    "sphinx-doc__sphinx-12807": null,
+    "sphinx-doc__sphinx-12875": null,
+    "sphinx-doc__sphinx-12975": null,
+    "sphinx-doc__sphinx-13127": null,
+    "sphinx-doc__sphinx-13172": null,
+    "sphinx-doc__sphinx-13200": null,
+    "sphinx-doc__sphinx-13253": null,
+    "sphinx-doc__sphinx-13261": null,
+    "sphinx-doc__sphinx-13318": null,
+    "sphinx-doc__sphinx-13319": null
+   }
+  },
+  "treatment": {
+   "file_hits": {
+    "sphinx-doc__sphinx-12583": false,
+    "sphinx-doc__sphinx-12586": true,
+    "sphinx-doc__sphinx-12598": true,
+    "sphinx-doc__sphinx-12622": true,
+    "sphinx-doc__sphinx-12647": true,
+    "sphinx-doc__sphinx-12726": true,
+    "sphinx-doc__sphinx-12737": true,
+    "sphinx-doc__sphinx-12807": true,
+    "sphinx-doc__sphinx-12875": true,
+    "sphinx-doc__sphinx-12975": true,
+    "sphinx-doc__sphinx-13127": true,
+    "sphinx-doc__sphinx-13172": true,
+    "sphinx-doc__sphinx-13200": true,
+    "sphinx-doc__sphinx-13253": false,
+    "sphinx-doc__sphinx-13261": false,
+    "sphinx-doc__sphinx-13318": true,
+    "sphinx-doc__sphinx-13319": true
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.6444,
+    "localization_rate": 0.8235,
+    "n_false_positive": 29,
+    "n_flags": 45,
+    "n_localized": 14,
+    "n_tasks": 17,
+    "per_repo": {
+     "sphinx-doc/sphinx": {
+      "false_positive_rate": 0.6444,
+      "localization_rate": 0.8235,
+      "n_false_positive": 29,
+      "n_flags": 45,
+      "n_localized": 14,
+      "n_tasks": 17
+     }
+    }
+   },
+   "flags": {
+    "sphinx-doc__sphinx-12583": [
+     "sphinx/domains/c/_symbol.py::Symbol.__init__",
+     "sphinx/domains/c/_symbol.py::Symbol._children",
+     "sphinx/domains/c/_symbol.py::Symbol.get_all_symbols"
+    ],
+    "sphinx-doc__sphinx-12586": [
+     "sphinx/ext/intersphinx/_load.py::load_mappings",
+     "sphinx/util/inventory.py::InventoryFile.load",
+     "sphinx/ext/intersphinx/_load.py::fetch_inventory"
+    ],
+    "sphinx-doc__sphinx-12598": [
+     "sphinx/writers/latex.py::LaTeXTranslator.visit_seealso",
+     "sphinx/writers/latex.py::LaTeXTranslator.visit_figure",
+     "sphinx/directives/other.py::SeeAlso"
+    ],
+    "sphinx-doc__sphinx-12622": [
+     "sphinx/ext/autodoc/typehints.py::merge_typehints",
+     "sphinx/domains/python/_annotations.py::_parse_annotation",
+     "sphinx/ext/autodoc/__init__.py::Documenter.get_attr"
+    ],
+    "sphinx-doc__sphinx-12647": [
+     "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder.copy_html_static_files",
+     "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder.init_css_files",
+     "sphinx/application.py::Sphinx.add_css_file"
+    ],
+    "sphinx-doc__sphinx-12726": [
+     "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder.copy_html_static_files",
+     "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder.copy_static_files",
+     "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder.copy_theme_static_files"
+    ],
+    "sphinx-doc__sphinx-12737": [
+     "sphinx/directives/__init__.py::ObjectDescription.handle_signature",
+     "sphinx/writers/latex.py::LaTeXTranslator.visit_desc_signature"
+    ],
+    "sphinx-doc__sphinx-12807": [
+     "sphinx/ext/intersphinx/_load.py::fetch_inventory",
+     "sphinx/ext/intersphinx/_load.py::_get_safe_url",
+     "sphinx/ext/intersphinx/_load.py::_fetch_inventory"
+    ],
+    "sphinx-doc__sphinx-12875": [
+     "sphinx/util/docutils.py::patch_docutils",
+     "sphinx/config.py::Config.__init__",
+     "sphinx/util/docutils.py::CustomReSTDispatcher.disable"
+    ],
+    "sphinx-doc__sphinx-12975": [
+     "sphinx/writers/html5.py::HTML5Translator._visit_sig_parameter_list",
+     "sphinx/writers/latex.py::LaTeXTranslator._visit_sig_parameter_list",
+     "sphinx/writers/text.py::TextTranslator._visit_sig_parameter_list"
+    ],
+    "sphinx-doc__sphinx-13127": [
+     "sphinx/builders/linkcheck.py::HyperlinkAvailabilityCheckWorker._check_uri",
+     "sphinx/builders/linkcheck.py::HyperlinkAvailabilityChecker.is_ignored_uri",
+     "sphinx/config.py::Config.__getitem__"
+    ],
+    "sphinx-doc__sphinx-13172": [
+     "sphinx/ext/autodoc/directive.py::AutodocDirective.run",
+     "sphinx/ext/autosummary/__init__.py::Autosummary.run",
+     "sphinx/ext/autodoc/__init__.py::Documenter.format_signature"
+    ],
+    "sphinx-doc__sphinx-13200": [
+     "sphinx/ext/autodoc/directive.py::AutodocDirective.run",
+     "sphinx/util/inspect.py::is_builtin_class_method",
+     "sphinx/util/inspect.py::signature"
+    ],
+    "sphinx-doc__sphinx-13253": [
+     "sphinx/ext/autodoc/__init__.py::Documenter.format_signature"
+    ],
+    "sphinx-doc__sphinx-13261": [
+     "sphinx/ext/autodoc/__init__.py::Documenter.parse_name",
+     "sphinx/ext/autodoc/__init__.py::Documenter.resolve_name",
+     "sphinx/ext/autodoc/typehints.py::record_typehints"
+    ],
+    "sphinx-doc__sphinx-13318": [
+     "sphinx/config.py::check_confval_types",
+     "sphinx/config.py::Config.convert_overrides",
+     "sphinx/application.py::Sphinx.add_config_value"
+    ],
+    "sphinx-doc__sphinx-13319": [
+     "sphinx/writers/text.py::TextTranslator.visit_productionlist"
+    ]
+   },
+   "hits": {
+    "sphinx-doc__sphinx-12583": false,
+    "sphinx-doc__sphinx-12586": false,
+    "sphinx-doc__sphinx-12598": true,
+    "sphinx-doc__sphinx-12622": false,
+    "sphinx-doc__sphinx-12647": false,
+    "sphinx-doc__sphinx-12726": true,
+    "sphinx-doc__sphinx-12737": false,
+    "sphinx-doc__sphinx-12807": false,
+    "sphinx-doc__sphinx-12875": false,
+    "sphinx-doc__sphinx-12975": true,
+    "sphinx-doc__sphinx-13127": true,
+    "sphinx-doc__sphinx-13172": true,
+    "sphinx-doc__sphinx-13200": true,
+    "sphinx-doc__sphinx-13253": false,
+    "sphinx-doc__sphinx-13261": false,
+    "sphinx-doc__sphinx-13318": true,
+    "sphinx-doc__sphinx-13319": true
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.58,
+    "localization_lift_pts": -5.88
+   },
+   "metrics": {
+    "false_positive_rate": 0.7609,
+    "localization_rate": 0.4706,
+    "n_false_positive": 35,
+    "n_flags": 46,
+    "n_localized": 8,
+    "n_tasks": 17,
+    "per_repo": {
+     "sphinx-doc/sphinx": {
+      "false_positive_rate": 0.7609,
+      "localization_rate": 0.4706,
+      "n_false_positive": 35,
+      "n_flags": 46,
+      "n_localized": 8,
+      "n_tasks": 17
+     }
+    }
+   },
+   "retrieved": {
+    "sphinx-doc__sphinx-12583": [
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32",
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c"
+    ],
+    "sphinx-doc__sphinx-12586": [
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32",
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c"
+    ],
+    "sphinx-doc__sphinx-12598": [
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32",
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c"
+    ],
+    "sphinx-doc__sphinx-12622": [
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32",
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c"
+    ],
+    "sphinx-doc__sphinx-12647": [
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32",
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c"
+    ],
+    "sphinx-doc__sphinx-12726": [
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32",
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c"
+    ],
+    "sphinx-doc__sphinx-12737": [
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32",
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c"
+    ],
+    "sphinx-doc__sphinx-12807": [
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32",
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c"
+    ],
+    "sphinx-doc__sphinx-12875": [
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32",
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c"
+    ],
+    "sphinx-doc__sphinx-12975": [
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32",
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c"
+    ],
+    "sphinx-doc__sphinx-13127": [
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c",
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32"
+    ],
+    "sphinx-doc__sphinx-13172": [
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32",
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c"
+    ],
+    "sphinx-doc__sphinx-13200": [
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32",
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c"
+    ],
+    "sphinx-doc__sphinx-13253": [
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32",
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c"
+    ],
+    "sphinx-doc__sphinx-13261": [
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32",
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c"
+    ],
+    "sphinx-doc__sphinx-13318": [
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32",
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c"
+    ],
+    "sphinx-doc__sphinx-13319": [
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32",
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c"
+    ]
+   },
+   "scores": {
+    "sphinx-doc__sphinx-12583": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.533036,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.394961
+    },
+    "sphinx-doc__sphinx-12586": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.506777,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.357702
+    },
+    "sphinx-doc__sphinx-12598": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.338222,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.323017
+    },
+    "sphinx-doc__sphinx-12622": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.459554,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.371256
+    },
+    "sphinx-doc__sphinx-12647": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.259651,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.119644
+    },
+    "sphinx-doc__sphinx-12726": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.549207,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.500076
+    },
+    "sphinx-doc__sphinx-12737": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.466194,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.378246
+    },
+    "sphinx-doc__sphinx-12807": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.527738,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.417762
+    },
+    "sphinx-doc__sphinx-12875": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.412891,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.287386
+    },
+    "sphinx-doc__sphinx-12975": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.465656,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.373181
+    },
+    "sphinx-doc__sphinx-13127": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.28837,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.479413
+    },
+    "sphinx-doc__sphinx-13172": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.114392,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.039513
+    },
+    "sphinx-doc__sphinx-13200": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.242517,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.062567
+    },
+    "sphinx-doc__sphinx-13253": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.464407,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.415821
+    },
+    "sphinx-doc__sphinx-13261": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.291911,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.26121
+    },
+    "sphinx-doc__sphinx-13318": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.499198,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.336593
+    },
+    "sphinx-doc__sphinx-13319": {
+     "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": 0.498937,
+     "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": 0.393539
+    }
+   },
+   "tau": 0.0,
+   "version": "rolling",
+   "versions": {
+    "sphinx-doc__sphinx-12583": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8",
+    "sphinx-doc__sphinx-12586": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8",
+    "sphinx-doc__sphinx-12598": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8",
+    "sphinx-doc__sphinx-12622": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8",
+    "sphinx-doc__sphinx-12647": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8",
+    "sphinx-doc__sphinx-12726": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8",
+    "sphinx-doc__sphinx-12737": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8",
+    "sphinx-doc__sphinx-12807": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8",
+    "sphinx-doc__sphinx-12875": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8",
+    "sphinx-doc__sphinx-12975": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8",
+    "sphinx-doc__sphinx-13127": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8",
+    "sphinx-doc__sphinx-13172": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8",
+    "sphinx-doc__sphinx-13200": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8",
+    "sphinx-doc__sphinx-13253": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8",
+    "sphinx-doc__sphinx-13261": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8",
+    "sphinx-doc__sphinx-13318": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8",
+    "sphinx-doc__sphinx-13319": "d4c03ec446d2df7e5d4936438cbf38ea6fecd9943db72c117b3cd09b697d6fb8"
+   }
+  }
+ },
+ "control": {
+  "false_positive_rate": 0.7551,
+  "localization_rate": 0.5294,
+  "n_false_positive": 37,
+  "n_flags": 49,
+  "n_localized": 9,
+  "n_tasks": 17,
+  "per_repo": {
+   "sphinx-doc/sphinx": {
+    "false_positive_rate": 0.7551,
+    "localization_rate": 0.5294,
+    "n_false_positive": 37,
+    "n_flags": 49,
+    "n_localized": 9,
+    "n_tasks": 17
+   }
+  }
+ },
+ "control_flags": {
+  "sphinx-doc__sphinx-12583": [
+   "sphinx/domains/c/_symbol.py",
+   "sphinx/domains/c/_symbol.py",
+   "sphinx/domains/c/_symbol.py"
+  ],
+  "sphinx-doc__sphinx-12586": [
+   "sphinx/util/inventory.py",
+   "sphinx/ext/intersphinx/_load.py",
+   "sphinx/ext/intersphinx/_load.py"
+  ],
+  "sphinx-doc__sphinx-12598": [
+   "sphinx/writers/latex.py",
+   "sphinx/writers/latex.py",
+   "sphinx/directives/other.py"
+  ],
+  "sphinx-doc__sphinx-12622": [
+   "sphinx/ext/autodoc/__init__.py",
+   "sphinx/util/typing.py",
+   "sphinx/ext/autodoc/__init__.py"
+  ],
+  "sphinx-doc__sphinx-12647": [
+   "sphinx/builders/html/__init__.py",
+   "sphinx/application.py",
+   "sphinx/builders/html/__init__.py"
+  ],
+  "sphinx-doc__sphinx-12726": [
+   "sphinx/builders/html/__init__.py",
+   "sphinx/builders/html/__init__.py",
+   "sphinx/builders/html/__init__.py"
+  ],
+  "sphinx-doc__sphinx-12737": [
+   "sphinx/directives/__init__.py",
+   "sphinx/domains/python/__init__.py",
+   "sphinx/writers/latex.py"
+  ],
+  "sphinx-doc__sphinx-12807": [
+   "sphinx/ext/intersphinx/_load.py",
+   "sphinx/ext/intersphinx/_load.py",
+   "sphinx/ext/intersphinx/_load.py"
+  ],
+  "sphinx-doc__sphinx-12875": [
+   "sphinx/util/docutils.py",
+   "sphinx/util/docutils.py",
+   "sphinx/util/docutils.py"
+  ],
+  "sphinx-doc__sphinx-12975": [
+   "sphinx/writers/html5.py",
+   "sphinx/writers/latex.py",
+   "sphinx/writers/text.py"
+  ],
+  "sphinx-doc__sphinx-13127": [
+   "sphinx/builders/linkcheck.py",
+   "sphinx/builders/linkcheck.py",
+   "sphinx/builders/linkcheck.py"
+  ],
+  "sphinx-doc__sphinx-13172": [
+   "sphinx/ext/autodoc/directive.py",
+   "sphinx/ext/autosummary/__init__.py",
+   "sphinx/ext/autodoc/__init__.py"
+  ],
+  "sphinx-doc__sphinx-13200": [
+   "sphinx/ext/autodoc/directive.py",
+   "sphinx/util/inspect.py",
+   "sphinx/ext/autodoc/importer.py"
+  ],
+  "sphinx-doc__sphinx-13253": [
+   "sphinx/ext/autodoc/__init__.py",
+   "sphinx/ext/autodoc/__init__.py",
+   "sphinx/ext/autodoc/__init__.py"
+  ],
+  "sphinx-doc__sphinx-13261": [
+   "sphinx/ext/autodoc/__init__.py",
+   "sphinx/ext/autodoc/__init__.py",
+   "sphinx/ext/autodoc/typehints.py"
+  ],
+  "sphinx-doc__sphinx-13318": [
+   "sphinx/config.py",
+   "sphinx/config.py",
+   "sphinx/application.py"
+  ],
+  "sphinx-doc__sphinx-13319": [
+   "sphinx/writers/text.py"
+  ]
+ },
+ "errors": {
+  "sphinx-doc__sphinx-12615": "RuntimeError: all response modes failed: Expecting value: line 1 column 1 (char 0) | finish_reason=length | text='{\\n\\n\\n    \\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\",
+  "sphinx-doc__sphinx-12745": "RuntimeError: all response modes failed: Expecting value: line 1 column 1 (char 0) | finish_reason=length | text='{\\n\\n\\n    \\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\"
+ },
+ "gold": {
+  "sphinx-doc__sphinx-12583": [
+   "sphinx/environment/__init__.py::<module>",
+   "utils/generate_js_fixtures.py::<module>"
+  ],
+  "sphinx-doc__sphinx-12586": [
+   "sphinx/util/inventory.py::InventoryFile.load_v2"
+  ],
+  "sphinx-doc__sphinx-12598": [
+   "sphinx/ext/todo.py::<module>",
+   "sphinx/ext/todo.py::latex_depart_todo_node",
+   "sphinx/ext/todo.py::latex_visit_todo_node",
+   "sphinx/ext/todo.py::setup",
+   "sphinx/writers/latex.py::LaTeXTranslator",
+   "sphinx/writers/latex.py::LaTeXTranslator.__init__",
+   "sphinx/writers/latex.py::LaTeXTranslator._depart_named_admonition",
+   "sphinx/writers/latex.py::LaTeXTranslator._visit_named_admonition",
+   "sphinx/writers/latex.py::LaTeXTranslator.depart_admonition",
+   "sphinx/writers/latex.py::LaTeXTranslator.depart_seealso",
+   "sphinx/writers/latex.py::LaTeXTranslator.visit_admonition",
+   "sphinx/writers/latex.py::LaTeXTranslator.visit_figure",
+   "sphinx/writers/latex.py::LaTeXTranslator.visit_rubric",
+   "sphinx/writers/latex.py::LaTeXTranslator.visit_seealso"
+  ],
+  "sphinx-doc__sphinx-12615": [
+   "sphinx/util/inventory.py::InventoryFile",
+   "sphinx/util/inventory.py::InventoryFile.dump",
+   "sphinx/util/inventory.py::InventoryFile.load_v2"
+  ],
+  "sphinx-doc__sphinx-12622": [
+   "sphinx/ext/autodoc/__init__.py::AttributeDocumenter.add_directive_header",
+   "sphinx/ext/autodoc/__init__.py::DataDocumenter.add_directive_header",
+   "sphinx/ext/autodoc/__init__.py::UninitializedGlobalVariableMixin.import_object",
+   "sphinx/ext/autodoc/__init__.py::UninitializedInstanceAttributeMixin",
+   "sphinx/ext/autodoc/__init__.py::UninitializedInstanceAttributeMixin.import_object",
+   "sphinx/ext/autodoc/__init__.py::UninitializedInstanceAttributeMixin.is_uninitialized_instance_attribute",
+   "sphinx/util/inspect.py::signature",
+   "sphinx/util/typing.py::<module>",
+   "sphinx/util/typing.py::get_type_hints",
+   "sphinx/util/typing.py::restify",
+   "sphinx/util/typing.py::stringify_annotation"
+  ],
+  "sphinx-doc__sphinx-12647": [
+   "sphinx/builders/_epub_base.py::EpubBuilder",
+   "sphinx/builders/_epub_base.py::EpubBuilder.build_content",
+   "sphinx/builders/_epub_base.py::EpubBuilder.build_epub",
+   "sphinx/builders/_epub_base.py::EpubBuilder.build_toc",
+   "sphinx/builders/_epub_base.py::EpubBuilder.new_navpoint",
+   "sphinx/builders/epub3.py::Epub3Builder.build_navigation_doc",
+   "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder",
+   "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder.handle_page",
+   "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder.update_page_context",
+   "sphinx/util/fileutil.py::<module>",
+   "sphinx/util/fileutil.py::copy_asset",
+   "sphinx/util/fileutil.py::copy_asset_file",
+   "sphinx/util/osutil.py::<module>",
+   "sphinx/util/osutil.py::copyfile"
+  ],
+  "sphinx-doc__sphinx-12726": [
+   "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder",
+   "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder.copy_extra_files",
+   "sphinx/builders/html/__init__.py::StandaloneHTMLBuilder.copy_static_files",
+   "sphinx/util/fileutil.py::copy_asset_file"
+  ],
+  "sphinx-doc__sphinx-12737": [
+   "sphinx/writers/latex.py::LaTeXTranslator",
+   "sphinx/writers/latex.py::LaTeXTranslator._depart_signature_line",
+   "sphinx/writers/latex.py::LaTeXTranslator._visit_sig_parameter",
+   "sphinx/writers/latex.py::LaTeXTranslator._visit_signature_line",
+   "sphinx/writers/latex.py::LaTeXTranslator.depart_desc_parameterlist",
+   "sphinx/writers/latex.py::LaTeXTranslator.depart_desc_type_parameter_list",
+   "sphinx/writers/latex.py::LaTeXTranslator.visit_desc_parameterlist",
+   "sphinx/writers/latex.py::LaTeXTranslator.visit_desc_type_parameter_list"
+  ],
+  "sphinx-doc__sphinx-12745": [
+   "sphinx/writers/latex.py::LaTeXTranslator",
+   "sphinx/writers/latex.py::LaTeXTranslator.visit_inline"
+  ],
+  "sphinx-doc__sphinx-12807": [
+   "sphinx/ext/intersphinx/_load.py::_fetch_inventory_group"
+  ],
+  "sphinx-doc__sphinx-12875": [
+   "sphinx/config.py::Config"
+  ],
+  "sphinx-doc__sphinx-12975": [
+   "sphinx/addnodes.py::desc_parameterlist",
+   "sphinx/addnodes.py::desc_type_parameter_list",
+   "sphinx/domains/javascript.py::JSObject",
+   "sphinx/domains/javascript.py::JSObject._object_hierarchy_parts",
+   "sphinx/domains/javascript.py::JSObject.handle_signature",
+   "sphinx/domains/javascript.py::setup",
+   "sphinx/domains/python/__init__.py::setup",
+   "sphinx/domains/python/_annotations.py::<module>",
+   "sphinx/domains/python/_annotations.py::_parse_arglist",
+   "sphinx/domains/python/_annotations.py::_parse_type_list",
+   "sphinx/domains/python/_annotations.py::_pseudo_parse_arglist",
+   "sphinx/domains/python/_object.py::PyObject.handle_signature",
+   "sphinx/writers/html5.py::HTML5Translator",
+   "sphinx/writers/html5.py::HTML5Translator._visit_sig_parameter_list",
+   "sphinx/writers/html5.py::HTML5Translator.depart_desc_optional",
+   "sphinx/writers/html5.py::HTML5Translator.depart_desc_parameter",
+   "sphinx/writers/html5.py::HTML5Translator.visit_desc_annotation",
+   "sphinx/writers/latex.py::LaTeXTranslator",
+   "sphinx/writers/latex.py::LaTeXTranslator._depart_sig_parameter",
+   "sphinx/writers/latex.py::LaTeXTranslator._visit_sig_parameter_list",
+   "sphinx/writers/latex.py::LaTeXTranslator.depart_desc_optional",
+   "sphinx/writers/latex.py::LaTeXTranslator.visit_desc_annotation",
+   "sphinx/writers/latex.py::LaTeXTranslator.visit_desc_parameterlist",
+   "sphinx/writers/text.py::TextTranslator",
+   "sphinx/writers/text.py::TextTranslator._visit_sig_parameter_list",
+   "sphinx/writers/text.py::TextTranslator.depart_desc_optional",
+   "sphinx/writers/text.py::TextTranslator.visit_desc_annotation",
+   "sphinx/writers/text.py::TextTranslator.visit_desc_parameter"
+  ],
+  "sphinx-doc__sphinx-13127": [
+   "sphinx/builders/linkcheck.py::HyperlinkAvailabilityCheckWorker",
+   "sphinx/builders/linkcheck.py::HyperlinkAvailabilityCheckWorker.__init__",
+   "sphinx/builders/linkcheck.py::HyperlinkAvailabilityCheckWorker._check_uri",
+   "sphinx/util/requests.py::<module>",
+   "sphinx/util/requests.py::_Session",
+   "sphinx/util/requests.py::_Session.request",
+   "sphinx/util/requests.py::_get_tls_cacert"
+  ],
+  "sphinx-doc__sphinx-13172": [
+   "sphinx/ext/autosummary/__init__.py::<module>",
+   "sphinx/ext/autosummary/__init__.py::Autosummary",
+   "sphinx/ext/autosummary/__init__.py::Autosummary.create_documenter",
+   "sphinx/ext/autosummary/__init__.py::Autosummary.get_items",
+   "sphinx/ext/autosummary/__init__.py::Autosummary.get_table",
+   "sphinx/ext/autosummary/__init__.py::Autosummary.run"
+  ],
+  "sphinx-doc__sphinx-13200": [
+   "sphinx/ext/autodoc/__init__.py::MethodDocumenter.add_directive_header",
+   "sphinx/util/inspect.py::<module>",
+   "sphinx/util/inspect.py::getdoc",
+   "sphinx/util/inspect.py::isclassmethod",
+   "sphinx/util/inspect.py::isstaticmethod",
+   "sphinx/util/inspect.py::signature"
+  ],
+  "sphinx-doc__sphinx-13253": [
+   "sphinx/ext/autodoc/importer.py::<module>",
+   "sphinx/ext/autodoc/importer.py::_reload_module",
+   "sphinx/ext/autodoc/importer.py::import_module",
+   "sphinx/ext/autodoc/importer.py::import_object",
+   "sphinx/ext/autodoc/importer.py::unmangle"
+  ],
+  "sphinx-doc__sphinx-13261": [
+   "sphinx/util/typing.py::<module>"
+  ],
+  "sphinx-doc__sphinx-13318": [
+   "sphinx/builders/gettext.py::<module>",
+   "sphinx/builders/gettext.py::MessageCatalogBuilder.finish",
+   "sphinx/builders/gettext.py::_gettext_compact_validator",
+   "sphinx/builders/gettext.py::setup",
+   "sphinx/config.py::<module>",
+   "sphinx/config.py::Config.convert_overrides",
+   "sphinx/config.py::ENUM",
+   "sphinx/config.py::ENUM.__repr__",
+   "sphinx/config.py::ENUM.match"
+  ],
+  "sphinx-doc__sphinx-13319": [
+   "sphinx/writers/html5.py::HTML5Translator.visit_productionlist",
+   "sphinx/writers/manpage.py::ManualPageTranslator.visit_productionlist",
+   "sphinx/writers/texinfo.py::TexinfoTranslator.visit_productionlist",
+   "sphinx/writers/text.py::TextTranslator.visit_productionlist"
+  ]
+ },
+ "granularity": "function",
+ "learn_errors": {},
+ "lift": {
+  "false_positive_rise_pts": 0.58,
+  "localization_lift_pts": -5.88
+ },
+ "memory_locations": {
+  "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32": "sphinx/config.py::_substitute_copyright_year",
+  "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c": "sphinx/builders/linkcheck.py::HyperlinkAvailabilityCheckWorker._check_uri"
+ },
+ "mode": "rolling",
+ "n_errors": 2,
+ "n_eval": 19,
+ "retrieval_hit_rate": 1.0,
+ "retrieved": {
+  "sphinx-doc__sphinx-12583": [
+   "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32",
+   "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c"
+  ],
+  "sphinx-doc__sphinx-12586": [
+   "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32",
+   "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c"
+  ],
+  "sphinx-doc__sphinx-12598": [
+   "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32",
+   "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c"
+  ],
+  "sphinx-doc__sphinx-12622": [
+   "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32",
+   "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c"
+  ],
+  "sphinx-doc__sphinx-12647": [
+   "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32",
+   "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c"
+  ],
+  "sphinx-doc__sphinx-12726": [
+   "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32",
+   "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c"
+  ],
+  "sphinx-doc__sphinx-12737": [
+   "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32",
+   "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c"
+  ],
+  "sphinx-doc__sphinx-12807": [
+   "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32",
+   "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c"
+  ],
+  "sphinx-doc__sphinx-12875": [
+   "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32",
+   "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c"
+  ],
+  "sphinx-doc__sphinx-12975": [
+   "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32",
+   "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c"
+  ],
+  "sphinx-doc__sphinx-13127": [
+   "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c",
+   "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32"
+  ],
+  "sphinx-doc__sphinx-13172": [
+   "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32",
+   "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c"
+  ],
+  "sphinx-doc__sphinx-13200": [
+   "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32",
+   "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c"
+  ],
+  "sphinx-doc__sphinx-13253": [
+   "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32",
+   "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c"
+  ],
+  "sphinx-doc__sphinx-13261": [
+   "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32",
+   "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c"
+  ],
+  "sphinx-doc__sphinx-13318": [
+   "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32",
+   "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c"
+  ],
+  "sphinx-doc__sphinx-13319": [
+   "2e88e1f9aeb44dce196570fe28945a91cec704d90a4a4bc916bb94a39e32cb32",
+   "a45a1dbea9a5fc8c4e0bb2be4323ce83ab3a1919eb30ea6c3f2fd4a5611d5f8c"
+  ]
+ },
+ "treatment": {
+  "false_positive_rate": 0.7609,
+  "localization_rate": 0.4706,
+  "n_false_positive": 35,
+  "n_flags": 46,
+  "n_localized": 8,
+  "n_tasks": 17,
+  "per_repo": {
+   "sphinx-doc/sphinx": {
+    "false_positive_rate": 0.7609,
+    "localization_rate": 0.4706,
+    "n_false_positive": 35,
+    "n_flags": 46,
+    "n_localized": 8,
+    "n_tasks": 17
+   }
+  }
+ },
+ "treatment_flags": {
+  "sphinx-doc__sphinx-12583": [
+   "sphinx/domains/c/_symbol.py",
+   "sphinx/domains/c/_symbol.py",
+   "sphinx/domains/c/_symbol.py"
+  ],
+  "sphinx-doc__sphinx-12586": [
+   "sphinx/ext/intersphinx/_load.py",
+   "sphinx/util/inventory.py",
+   "sphinx/ext/intersphinx/_load.py"
+  ],
+  "sphinx-doc__sphinx-12598": [
+   "sphinx/writers/latex.py",
+   "sphinx/writers/latex.py",
+   "sphinx/directives/other.py"
+  ],
+  "sphinx-doc__sphinx-12622": [
+   "sphinx/ext/autodoc/typehints.py",
+   "sphinx/domains/python/_annotations.py",
+   "sphinx/ext/autodoc/__init__.py"
+  ],
+  "sphinx-doc__sphinx-12647": [
+   "sphinx/builders/html/__init__.py",
+   "sphinx/builders/html/__init__.py",
+   "sphinx/application.py"
+  ],
+  "sphinx-doc__sphinx-12726": [
+   "sphinx/builders/html/__init__.py",
+   "sphinx/builders/html/__init__.py",
+   "sphinx/builders/html/__init__.py"
+  ],
+  "sphinx-doc__sphinx-12737": [
+   "sphinx/directives/__init__.py",
+   "sphinx/writers/latex.py"
+  ],
+  "sphinx-doc__sphinx-12807": [
+   "sphinx/ext/intersphinx/_load.py",
+   "sphinx/ext/intersphinx/_load.py",
+   "sphinx/ext/intersphinx/_load.py"
+  ],
+  "sphinx-doc__sphinx-12875": [
+   "sphinx/util/docutils.py",
+   "sphinx/config.py",
+   "sphinx/util/docutils.py"
+  ],
+  "sphinx-doc__sphinx-12975": [
+   "sphinx/writers/html5.py",
+   "sphinx/writers/latex.py",
+   "sphinx/writers/text.py"
+  ],
+  "sphinx-doc__sphinx-13127": [
+   "sphinx/builders/linkcheck.py",
+   "sphinx/builders/linkcheck.py",
+   "sphinx/config.py"
+  ],
+  "sphinx-doc__sphinx-13172": [
+   "sphinx/ext/autodoc/directive.py",
+   "sphinx/ext/autosummary/__init__.py",
+   "sphinx/ext/autodoc/__init__.py"
+  ],
+  "sphinx-doc__sphinx-13200": [
+   "sphinx/ext/autodoc/directive.py",
+   "sphinx/util/inspect.py",
+   "sphinx/util/inspect.py"
+  ],
+  "sphinx-doc__sphinx-13253": [
+   "sphinx/ext/autodoc/__init__.py"
+  ],
+  "sphinx-doc__sphinx-13261": [
+   "sphinx/ext/autodoc/__init__.py",
+   "sphinx/ext/autodoc/__init__.py",
+   "sphinx/ext/autodoc/typehints.py"
+  ],
+  "sphinx-doc__sphinx-13318": [
+   "sphinx/config.py",
+   "sphinx/config.py",
+   "sphinx/application.py"
+  ],
+  "sphinx-doc__sphinx-13319": [
+   "sphinx/writers/text.py"
+  ]
+ },
+ "warmup": 20
+}

@@ -1,0 +1,1143 @@
+{
+ "arm": "placebo",
+ "baseline": "control",
+ "errors": {
+  "sphinx-doc/sphinx": {
+   "sphinx-doc__sphinx-12615": "RuntimeError: all response modes failed: Expecting value: line 1 column 1 (char 0) | finish_reason=length | text='{\\n\\n\\n    \\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\",
+   "sphinx-doc__sphinx-12745": "RuntimeError: all response modes failed: Expecting value: line 1 column 1 (char 0) | finish_reason=length | text='{\\n\\n\\n    \\n\\n\\n\\n\\n\\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\n\\n\\n\\n\\n    \\n\\"
+  }
+ },
+ "negative_control": {
+  "both_hit": 6,
+  "control_localized": 6,
+  "control_only_hit": 0,
+  "control_rate": 0.4286,
+  "flags_differed": 0,
+  "flags_differed_rate": 0.0,
+  "label": "sissbruecker/linkding",
+  "lift_ci95_bootstrap_pts": [
+   0.0,
+   0.0
+  ],
+  "lift_ci95_paired_wald_pts": [
+   0.0,
+   0.0
+  ],
+  "lift_pts": 0.0,
+  "mcnemar_exact_p": 1.0,
+  "n_tasks": 14,
+  "neither_hit": 8,
+  "retrieval_coverage": 0.0,
+  "retrieved_any": 0,
+  "treatment_localized": 6,
+  "treatment_only_hit": 0,
+  "treatment_rate": 0.4286
+ },
+ "per_repo": {
+  "instructlab/instructlab": {
+   "both_hit": 15,
+   "control_localized": 16,
+   "control_only_hit": 1,
+   "control_rate": 0.5161,
+   "flags_differed": 17,
+   "flags_differed_rate": 0.5484,
+   "label": "instructlab/instructlab",
+   "lift_ci95_bootstrap_pts": [
+    -6.45,
+    16.13
+   ],
+   "lift_ci95_paired_wald_pts": [
+    -7.67,
+    14.12
+   ],
+   "lift_pts": 3.23,
+   "mcnemar_exact_p": 1.0,
+   "n_tasks": 31,
+   "neither_hit": 13,
+   "retrieval_coverage": 1.0,
+   "retrieved_any": 31,
+   "treatment_localized": 17,
+   "treatment_only_hit": 2,
+   "treatment_rate": 0.5484
+  },
+  "keras-team/keras": {
+   "both_hit": 9,
+   "control_localized": 9,
+   "control_only_hit": 0,
+   "control_rate": 0.3214,
+   "flags_differed": 0,
+   "flags_differed_rate": 0.0,
+   "label": "keras-team/keras",
+   "lift_ci95_bootstrap_pts": [
+    0.0,
+    0.0
+   ],
+   "lift_ci95_paired_wald_pts": [
+    0.0,
+    0.0
+   ],
+   "lift_pts": 0.0,
+   "mcnemar_exact_p": 1.0,
+   "n_tasks": 28,
+   "neither_hit": 19,
+   "retrieval_coverage": 0.0,
+   "retrieved_any": 0,
+   "treatment_localized": 9,
+   "treatment_only_hit": 0,
+   "treatment_rate": 0.3214
+  },
+  "pdm-project/pdm": {
+   "both_hit": 8,
+   "control_localized": 8,
+   "control_only_hit": 0,
+   "control_rate": 0.5333,
+   "flags_differed": 6,
+   "flags_differed_rate": 0.4,
+   "label": "pdm-project/pdm",
+   "lift_ci95_bootstrap_pts": [
+    0.0,
+    0.0
+   ],
+   "lift_ci95_paired_wald_pts": [
+    0.0,
+    0.0
+   ],
+   "lift_pts": 0.0,
+   "mcnemar_exact_p": 1.0,
+   "n_tasks": 15,
+   "neither_hit": 7,
+   "retrieval_coverage": 1.0,
+   "retrieved_any": 15,
+   "treatment_localized": 8,
+   "treatment_only_hit": 0,
+   "treatment_rate": 0.5333
+  },
+  "reflex-dev/reflex": {
+   "both_hit": 11,
+   "control_localized": 11,
+   "control_only_hit": 0,
+   "control_rate": 0.4583,
+   "flags_differed": 7,
+   "flags_differed_rate": 0.2917,
+   "label": "reflex-dev/reflex",
+   "lift_ci95_bootstrap_pts": [
+    0.0,
+    0.0
+   ],
+   "lift_ci95_paired_wald_pts": [
+    0.0,
+    0.0
+   ],
+   "lift_pts": 0.0,
+   "mcnemar_exact_p": 1.0,
+   "n_tasks": 24,
+   "neither_hit": 13,
+   "retrieval_coverage": 0.5833,
+   "retrieved_any": 14,
+   "treatment_localized": 11,
+   "treatment_only_hit": 0,
+   "treatment_rate": 0.4583
+  },
+  "sissbruecker/linkding": {
+   "both_hit": 6,
+   "control_localized": 6,
+   "control_only_hit": 0,
+   "control_rate": 0.4286,
+   "flags_differed": 0,
+   "flags_differed_rate": 0.0,
+   "label": "sissbruecker/linkding",
+   "lift_ci95_bootstrap_pts": [
+    0.0,
+    0.0
+   ],
+   "lift_ci95_paired_wald_pts": [
+    0.0,
+    0.0
+   ],
+   "lift_pts": 0.0,
+   "mcnemar_exact_p": 1.0,
+   "n_tasks": 14,
+   "neither_hit": 8,
+   "retrieval_coverage": 0.0,
+   "retrieved_any": 0,
+   "treatment_localized": 6,
+   "treatment_only_hit": 0,
+   "treatment_rate": 0.4286
+  },
+  "sphinx-doc/sphinx": {
+   "both_hit": 6,
+   "control_localized": 9,
+   "control_only_hit": 3,
+   "control_rate": 0.5294,
+   "flags_differed": 14,
+   "flags_differed_rate": 0.8235,
+   "label": "sphinx-doc/sphinx",
+   "lift_ci95_bootstrap_pts": [
+    -35.29,
+    0.0
+   ],
+   "lift_ci95_paired_wald_pts": [
+    -35.77,
+    0.47
+   ],
+   "lift_pts": -17.65,
+   "mcnemar_exact_p": 0.25,
+   "n_tasks": 17,
+   "neither_hit": 8,
+   "retrieval_coverage": 1.0,
+   "retrieved_any": 17,
+   "treatment_localized": 6,
+   "treatment_only_hit": 0,
+   "treatment_rate": 0.3529
+  }
+ },
+ "primary": {
+  "both_hit": 49,
+  "control_localized": 53,
+  "control_only_hit": 4,
+  "control_rate": 0.4609,
+  "flags_differed": 44,
+  "flags_differed_rate": 0.3826,
+  "label": "primary: all treatment repos (registered)",
+  "lift_ci95_bootstrap_pts": [
+   -6.09,
+   2.61
+  ],
+  "lift_ci95_paired_wald_pts": [
+   -5.9,
+   2.42
+  ],
+  "lift_pts": -1.74,
+  "mcnemar_exact_p": 0.6875,
+  "n_tasks": 115,
+  "neither_hit": 60,
+  "retrieval_coverage": 0.6696,
+  "retrieved_any": 77,
+  "treatment_localized": 51,
+  "treatment_only_hit": 2,
+  "treatment_rate": 0.4435
+ },
+ "secondary": null,
+ "tasks": [
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "instructlab__instructlab-1762",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-1847",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "instructlab__instructlab-1923",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "instructlab__instructlab-1945",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-2004",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "instructlab__instructlab-2005",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-2055",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-2065",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "instructlab__instructlab-2119",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-2144",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "instructlab__instructlab-2208",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-2236",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-2247",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "instructlab__instructlab-2316",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-2526",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "instructlab__instructlab-2540",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "instructlab__instructlab-2548",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-2572",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "instructlab__instructlab-2585",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-2592",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "instructlab__instructlab-2741",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-2789",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-2825",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-2886",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "instructlab__instructlab-2927",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-3045",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "instructlab__instructlab-3060",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "instructlab__instructlab-3118",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-3125",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-3135",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "instructlab__instructlab-3184",
+   "repo": "instructlab/instructlab",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-19915",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-19924",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-19931",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-19937",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-19955",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-19973",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-19998",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20064",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20079",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20120",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20122",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20123",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20125",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20168",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20197",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20206",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20296",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20383",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20389",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20396",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20443",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20534",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20609",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20703",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20765",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20824",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-20880",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "keras-team__keras-21072",
+   "repo": "keras-team/keras",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "pdm-project__pdm-3136",
+   "repo": "pdm-project/pdm",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "pdm-project__pdm-3170",
+   "repo": "pdm-project/pdm",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "pdm-project__pdm-3191",
+   "repo": "pdm-project/pdm",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "pdm-project__pdm-3237",
+   "repo": "pdm-project/pdm",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "pdm-project__pdm-3250",
+   "repo": "pdm-project/pdm",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "pdm-project__pdm-3255",
+   "repo": "pdm-project/pdm",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "pdm-project__pdm-3314",
+   "repo": "pdm-project/pdm",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "pdm-project__pdm-3374",
+   "repo": "pdm-project/pdm",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "pdm-project__pdm-3393",
+   "repo": "pdm-project/pdm",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "pdm-project__pdm-3419",
+   "repo": "pdm-project/pdm",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "pdm-project__pdm-3420",
+   "repo": "pdm-project/pdm",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "pdm-project__pdm-3435",
+   "repo": "pdm-project/pdm",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "pdm-project__pdm-3440",
+   "repo": "pdm-project/pdm",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "pdm-project__pdm-3455",
+   "repo": "pdm-project/pdm",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "pdm-project__pdm-3555",
+   "repo": "pdm-project/pdm",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "reflex-dev__reflex-3842",
+   "repo": "reflex-dev/reflex",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "reflex-dev__reflex-3895",
+   "repo": "reflex-dev/reflex",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "reflex-dev__reflex-3982",
+   "repo": "reflex-dev/reflex",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "reflex-dev__reflex-4087",
+   "repo": "reflex-dev/reflex",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "reflex-dev__reflex-4129",
+   "repo": "reflex-dev/reflex",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "reflex-dev__reflex-4205",
+   "repo": "reflex-dev/reflex",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "reflex-dev__reflex-4230",
+   "repo": "reflex-dev/reflex",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "reflex-dev__reflex-4256",
+   "repo": "reflex-dev/reflex",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "reflex-dev__reflex-4266",
+   "repo": "reflex-dev/reflex",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "reflex-dev__reflex-4347",
+   "repo": "reflex-dev/reflex",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "reflex-dev__reflex-4371",
+   "repo": "reflex-dev/reflex",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "reflex-dev__reflex-4427",
+   "repo": "reflex-dev/reflex",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "reflex-dev__reflex-4510",
+   "repo": "reflex-dev/reflex",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "reflex-dev__reflex-4563",
+   "repo": "reflex-dev/reflex",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "reflex-dev__reflex-4620",
+   "repo": "reflex-dev/reflex",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "reflex-dev__reflex-4688",
+   "repo": "reflex-dev/reflex",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "reflex-dev__reflex-4708",
+   "repo": "reflex-dev/reflex",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "reflex-dev__reflex-4711",
+   "repo": "reflex-dev/reflex",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "reflex-dev__reflex-4717",
+   "repo": "reflex-dev/reflex",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "reflex-dev__reflex-4720",
+   "repo": "reflex-dev/reflex",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "reflex-dev__reflex-4958",
+   "repo": "reflex-dev/reflex",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "reflex-dev__reflex-5039",
+   "repo": "reflex-dev/reflex",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "reflex-dev__reflex-5077",
+   "repo": "reflex-dev/reflex",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "reflex-dev__reflex-5081",
+   "repo": "reflex-dev/reflex",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "sphinx-doc__sphinx-12583",
+   "repo": "sphinx-doc/sphinx",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "sphinx-doc__sphinx-12586",
+   "repo": "sphinx-doc/sphinx",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "sphinx-doc__sphinx-12598",
+   "repo": "sphinx-doc/sphinx",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "sphinx-doc__sphinx-12622",
+   "repo": "sphinx-doc/sphinx",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "sphinx-doc__sphinx-12647",
+   "repo": "sphinx-doc/sphinx",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "sphinx-doc__sphinx-12726",
+   "repo": "sphinx-doc/sphinx",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "sphinx-doc__sphinx-12737",
+   "repo": "sphinx-doc/sphinx",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "sphinx-doc__sphinx-12807",
+   "repo": "sphinx-doc/sphinx",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "sphinx-doc__sphinx-12875",
+   "repo": "sphinx-doc/sphinx",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "sphinx-doc__sphinx-12975",
+   "repo": "sphinx-doc/sphinx",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "sphinx-doc__sphinx-13127",
+   "repo": "sphinx-doc/sphinx",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "sphinx-doc__sphinx-13172",
+   "repo": "sphinx-doc/sphinx",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "sphinx-doc__sphinx-13200",
+   "repo": "sphinx-doc/sphinx",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "sphinx-doc__sphinx-13253",
+   "repo": "sphinx-doc/sphinx",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "sphinx-doc__sphinx-13261",
+   "repo": "sphinx-doc/sphinx",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "sphinx-doc__sphinx-13318",
+   "repo": "sphinx-doc/sphinx",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "sphinx-doc__sphinx-13319",
+   "repo": "sphinx-doc/sphinx",
+   "retrieved": true,
+   "treatment_hit": true
+  }
+ ]
+}

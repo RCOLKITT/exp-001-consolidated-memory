@@ -1,0 +1,513 @@
+{
+ "arms": [
+  "control",
+  "treatment",
+  "gated",
+  "placebo"
+ ],
+ "control": {
+  "false_positive_rate": 0.7383,
+  "localization_rate": 0.4609,
+  "n_false_positive": 237,
+  "n_flags": 321,
+  "n_localized": 53,
+  "n_tasks": 115,
+  "per_repo": {
+   "instructlab/instructlab": {
+    "false_positive_rate": 0.6591,
+    "localization_rate": 0.5161,
+    "n_false_positive": 58,
+    "n_flags": 88,
+    "n_localized": 16,
+    "n_tasks": 31
+   },
+   "keras-team/keras": {
+    "false_positive_rate": 0.7733,
+    "localization_rate": 0.3214,
+    "n_false_positive": 58,
+    "n_flags": 75,
+    "n_localized": 9,
+    "n_tasks": 28
+   },
+   "pdm-project/pdm": {
+    "false_positive_rate": 0.7857,
+    "localization_rate": 0.5333,
+    "n_false_positive": 33,
+    "n_flags": 42,
+    "n_localized": 8,
+    "n_tasks": 15
+   },
+   "reflex-dev/reflex": {
+    "false_positive_rate": 0.7612,
+    "localization_rate": 0.4583,
+    "n_false_positive": 51,
+    "n_flags": 67,
+    "n_localized": 11,
+    "n_tasks": 24
+   },
+   "sphinx-doc/sphinx": {
+    "false_positive_rate": 0.7551,
+    "localization_rate": 0.5294,
+    "n_false_positive": 37,
+    "n_flags": 49,
+    "n_localized": 9,
+    "n_tasks": 17
+   }
+  }
+ },
+ "effect_in_majority_of_repos": true,
+ "false_positive_rise_pts": -1.86,
+ "file_level_secondary": {
+  "control": {
+   "false_positive_rate": 0.6944,
+   "localization_rate": 0.7304,
+   "n_false_positive": 225,
+   "n_flags": 324,
+   "n_localized": 84,
+   "n_tasks": 115,
+   "per_repo": {
+    "instructlab/instructlab": {
+     "false_positive_rate": 0.6235,
+     "localization_rate": 0.8065,
+     "n_false_positive": 53,
+     "n_flags": 85,
+     "n_localized": 25,
+     "n_tasks": 31
+    },
+    "keras-team/keras": {
+     "false_positive_rate": 0.7722,
+     "localization_rate": 0.6071,
+     "n_false_positive": 61,
+     "n_flags": 79,
+     "n_localized": 17,
+     "n_tasks": 28
+    },
+    "pdm-project/pdm": {
+     "false_positive_rate": 0.7556,
+     "localization_rate": 0.6,
+     "n_false_positive": 34,
+     "n_flags": 45,
+     "n_localized": 9,
+     "n_tasks": 15
+    },
+    "reflex-dev/reflex": {
+     "false_positive_rate": 0.6857,
+     "localization_rate": 0.8333,
+     "n_false_positive": 48,
+     "n_flags": 70,
+     "n_localized": 20,
+     "n_tasks": 24
+    },
+    "sphinx-doc/sphinx": {
+     "false_positive_rate": 0.6444,
+     "localization_rate": 0.7647,
+     "n_false_positive": 29,
+     "n_flags": 45,
+     "n_localized": 13,
+     "n_tasks": 17
+    }
+   }
+  },
+  "false_positive_rise_pts": -0.62,
+  "localization_lift_pts": 1.74,
+  "treatment": {
+   "false_positive_rate": 0.6883,
+   "localization_rate": 0.7478,
+   "n_false_positive": 223,
+   "n_flags": 324,
+   "n_localized": 86,
+   "n_tasks": 115,
+   "per_repo": {
+    "instructlab/instructlab": {
+     "false_positive_rate": 0.6071,
+     "localization_rate": 0.8065,
+     "n_false_positive": 51,
+     "n_flags": 84,
+     "n_localized": 25,
+     "n_tasks": 31
+    },
+    "keras-team/keras": {
+     "false_positive_rate": 0.7722,
+     "localization_rate": 0.6071,
+     "n_false_positive": 61,
+     "n_flags": 79,
+     "n_localized": 17,
+     "n_tasks": 28
+    },
+    "pdm-project/pdm": {
+     "false_positive_rate": 0.7111,
+     "localization_rate": 0.7333,
+     "n_false_positive": 32,
+     "n_flags": 45,
+     "n_localized": 11,
+     "n_tasks": 15
+    },
+    "reflex-dev/reflex": {
+     "false_positive_rate": 0.7042,
+     "localization_rate": 0.7917,
+     "n_false_positive": 50,
+     "n_flags": 71,
+     "n_localized": 19,
+     "n_tasks": 24
+    },
+    "sphinx-doc/sphinx": {
+     "false_positive_rate": 0.6444,
+     "localization_rate": 0.8235,
+     "n_false_positive": 29,
+     "n_flags": 45,
+     "n_localized": 14,
+     "n_tasks": 17
+    }
+   }
+  }
+ },
+ "granularity": "function",
+ "localization_lift_pts": 2.61,
+ "mode": "rolling",
+ "negative_control_lift": {
+  "false_positive_rise_pts": 0.0,
+  "localization_lift_pts": 0.0
+ },
+ "per_repo_lift": {
+  "instructlab/instructlab": {
+   "false_positive_rise_pts": -2.99,
+   "localization_lift_pts": 6.45
+  },
+  "keras-team/keras": {
+   "false_positive_rise_pts": 0.0,
+   "localization_lift_pts": 0.0
+  },
+  "pdm-project/pdm": {
+   "false_positive_rise_pts": -0.79,
+   "localization_lift_pts": 6.67
+  },
+  "reflex-dev/reflex": {
+   "false_positive_rise_pts": -4.93,
+   "localization_lift_pts": 4.17
+  },
+  "sphinx-doc/sphinx": {
+   "false_positive_rise_pts": 0.58,
+   "localization_lift_pts": -5.88
+  }
+ },
+ "secondary_arms": {
+  "gated": {
+   "control": {
+    "false_positive_rate": 0.7383,
+    "localization_rate": 0.4609,
+    "n_false_positive": 237,
+    "n_flags": 321,
+    "n_localized": 53,
+    "n_tasks": 115,
+    "per_repo": {
+     "instructlab/instructlab": {
+      "false_positive_rate": 0.6591,
+      "localization_rate": 0.5161,
+      "n_false_positive": 58,
+      "n_flags": 88,
+      "n_localized": 16,
+      "n_tasks": 31
+     },
+     "keras-team/keras": {
+      "false_positive_rate": 0.7733,
+      "localization_rate": 0.3214,
+      "n_false_positive": 58,
+      "n_flags": 75,
+      "n_localized": 9,
+      "n_tasks": 28
+     },
+     "pdm-project/pdm": {
+      "false_positive_rate": 0.7857,
+      "localization_rate": 0.5333,
+      "n_false_positive": 33,
+      "n_flags": 42,
+      "n_localized": 8,
+      "n_tasks": 15
+     },
+     "reflex-dev/reflex": {
+      "false_positive_rate": 0.7612,
+      "localization_rate": 0.4583,
+      "n_false_positive": 51,
+      "n_flags": 67,
+      "n_localized": 11,
+      "n_tasks": 24
+     },
+     "sphinx-doc/sphinx": {
+      "false_positive_rate": 0.7551,
+      "localization_rate": 0.5294,
+      "n_false_positive": 37,
+      "n_flags": 49,
+      "n_localized": 9,
+      "n_tasks": 17
+     }
+    }
+   },
+   "effect_in_majority_of_repos": false,
+   "false_positive_rise_pts": -0.39,
+   "localization_lift_pts": 0.87,
+   "negative_control_lift": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "per_repo_lift": {
+    "instructlab/instructlab": {
+     "false_positive_rise_pts": 0.38,
+     "localization_lift_pts": 0.0
+    },
+    "keras-team/keras": {
+     "false_positive_rise_pts": 0.0,
+     "localization_lift_pts": 0.0
+    },
+    "pdm-project/pdm": {
+     "false_positive_rise_pts": 0.0,
+     "localization_lift_pts": 0.0
+    },
+    "reflex-dev/reflex": {
+     "false_positive_rise_pts": -0.73,
+     "localization_lift_pts": 0.0
+    },
+    "sphinx-doc/sphinx": {
+     "false_positive_rise_pts": -2.04,
+     "localization_lift_pts": 5.88
+    }
+   },
+   "treatment": {
+    "false_positive_rate": 0.7344,
+    "localization_rate": 0.4696,
+    "n_false_positive": 235,
+    "n_flags": 320,
+    "n_localized": 54,
+    "n_tasks": 115,
+    "per_repo": {
+     "instructlab/instructlab": {
+      "false_positive_rate": 0.6629,
+      "localization_rate": 0.5161,
+      "n_false_positive": 59,
+      "n_flags": 89,
+      "n_localized": 16,
+      "n_tasks": 31
+     },
+     "keras-team/keras": {
+      "false_positive_rate": 0.7733,
+      "localization_rate": 0.3214,
+      "n_false_positive": 58,
+      "n_flags": 75,
+      "n_localized": 9,
+      "n_tasks": 28
+     },
+     "pdm-project/pdm": {
+      "false_positive_rate": 0.7857,
+      "localization_rate": 0.5333,
+      "n_false_positive": 33,
+      "n_flags": 42,
+      "n_localized": 8,
+      "n_tasks": 15
+     },
+     "reflex-dev/reflex": {
+      "false_positive_rate": 0.7538,
+      "localization_rate": 0.4583,
+      "n_false_positive": 49,
+      "n_flags": 65,
+      "n_localized": 11,
+      "n_tasks": 24
+     },
+     "sphinx-doc/sphinx": {
+      "false_positive_rate": 0.7347,
+      "localization_rate": 0.5882,
+      "n_false_positive": 36,
+      "n_flags": 49,
+      "n_localized": 10,
+      "n_tasks": 17
+     }
+    }
+   }
+  },
+  "placebo": {
+   "control": {
+    "false_positive_rate": 0.7383,
+    "localization_rate": 0.4609,
+    "n_false_positive": 237,
+    "n_flags": 321,
+    "n_localized": 53,
+    "n_tasks": 115,
+    "per_repo": {
+     "instructlab/instructlab": {
+      "false_positive_rate": 0.6591,
+      "localization_rate": 0.5161,
+      "n_false_positive": 58,
+      "n_flags": 88,
+      "n_localized": 16,
+      "n_tasks": 31
+     },
+     "keras-team/keras": {
+      "false_positive_rate": 0.7733,
+      "localization_rate": 0.3214,
+      "n_false_positive": 58,
+      "n_flags": 75,
+      "n_localized": 9,
+      "n_tasks": 28
+     },
+     "pdm-project/pdm": {
+      "false_positive_rate": 0.7857,
+      "localization_rate": 0.5333,
+      "n_false_positive": 33,
+      "n_flags": 42,
+      "n_localized": 8,
+      "n_tasks": 15
+     },
+     "reflex-dev/reflex": {
+      "false_positive_rate": 0.7612,
+      "localization_rate": 0.4583,
+      "n_false_positive": 51,
+      "n_flags": 67,
+      "n_localized": 11,
+      "n_tasks": 24
+     },
+     "sphinx-doc/sphinx": {
+      "false_positive_rate": 0.7551,
+      "localization_rate": 0.5294,
+      "n_false_positive": 37,
+      "n_flags": 49,
+      "n_localized": 9,
+      "n_tasks": 17
+     }
+    }
+   },
+   "effect_in_majority_of_repos": false,
+   "false_positive_rise_pts": 0.78,
+   "localization_lift_pts": -1.74,
+   "negative_control_lift": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "per_repo_lift": {
+    "instructlab/instructlab": {
+     "false_positive_rise_pts": -2.27,
+     "localization_lift_pts": 3.23
+    },
+    "keras-team/keras": {
+     "false_positive_rise_pts": 0.0,
+     "localization_lift_pts": 0.0
+    },
+    "pdm-project/pdm": {
+     "false_positive_rise_pts": 2.38,
+     "localization_lift_pts": 0.0
+    },
+    "reflex-dev/reflex": {
+     "false_positive_rise_pts": -0.36,
+     "localization_lift_pts": 0.0
+    },
+    "sphinx-doc/sphinx": {
+     "false_positive_rise_pts": 7.82,
+     "localization_lift_pts": -17.65
+    }
+   },
+   "treatment": {
+    "false_positive_rate": 0.7461,
+    "localization_rate": 0.4435,
+    "n_false_positive": 238,
+    "n_flags": 319,
+    "n_localized": 51,
+    "n_tasks": 115,
+    "per_repo": {
+     "instructlab/instructlab": {
+      "false_positive_rate": 0.6364,
+      "localization_rate": 0.5484,
+      "n_false_positive": 56,
+      "n_flags": 88,
+      "n_localized": 17,
+      "n_tasks": 31
+     },
+     "keras-team/keras": {
+      "false_positive_rate": 0.7733,
+      "localization_rate": 0.3214,
+      "n_false_positive": 58,
+      "n_flags": 75,
+      "n_localized": 9,
+      "n_tasks": 28
+     },
+     "pdm-project/pdm": {
+      "false_positive_rate": 0.8095,
+      "localization_rate": 0.5333,
+      "n_false_positive": 34,
+      "n_flags": 42,
+      "n_localized": 8,
+      "n_tasks": 15
+     },
+     "reflex-dev/reflex": {
+      "false_positive_rate": 0.7576,
+      "localization_rate": 0.4583,
+      "n_false_positive": 50,
+      "n_flags": 66,
+      "n_localized": 11,
+      "n_tasks": 24
+     },
+     "sphinx-doc/sphinx": {
+      "false_positive_rate": 0.8333,
+      "localization_rate": 0.3529,
+      "n_false_positive": 40,
+      "n_flags": 48,
+      "n_localized": 6,
+      "n_tasks": 17
+     }
+    }
+   }
+  }
+ },
+ "tau": 0.5,
+ "treatment": {
+  "false_positive_rate": 0.7197,
+  "localization_rate": 0.487,
+  "n_false_positive": 226,
+  "n_flags": 314,
+  "n_localized": 56,
+  "n_tasks": 115,
+  "per_repo": {
+   "instructlab/instructlab": {
+    "false_positive_rate": 0.6292,
+    "localization_rate": 0.5806,
+    "n_false_positive": 56,
+    "n_flags": 89,
+    "n_localized": 18,
+    "n_tasks": 31
+   },
+   "keras-team/keras": {
+    "false_positive_rate": 0.7733,
+    "localization_rate": 0.3214,
+    "n_false_positive": 58,
+    "n_flags": 75,
+    "n_localized": 9,
+    "n_tasks": 28
+   },
+   "pdm-project/pdm": {
+    "false_positive_rate": 0.7778,
+    "localization_rate": 0.6,
+    "n_false_positive": 35,
+    "n_flags": 45,
+    "n_localized": 9,
+    "n_tasks": 15
+   },
+   "reflex-dev/reflex": {
+    "false_positive_rate": 0.7119,
+    "localization_rate": 0.5,
+    "n_false_positive": 42,
+    "n_flags": 59,
+    "n_localized": 12,
+    "n_tasks": 24
+   },
+   "sphinx-doc/sphinx": {
+    "false_positive_rate": 0.7609,
+    "localization_rate": 0.4706,
+    "n_false_positive": 35,
+    "n_flags": 46,
+    "n_localized": 8,
+    "n_tasks": 17
+   }
+  }
+ },
+ "treatment_minus_placebo": {
+  "false_positive_pts": -2.63,
+  "localization_pts": 4.35
+ },
+ "warmup": 20
+}

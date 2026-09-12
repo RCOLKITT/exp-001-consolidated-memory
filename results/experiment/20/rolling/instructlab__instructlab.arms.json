@@ -1,0 +1,3164 @@
+{
+ "arms": {
+  "control": {
+   "file_hits": {
+    "instructlab__instructlab-1762": true,
+    "instructlab__instructlab-1847": true,
+    "instructlab__instructlab-1923": true,
+    "instructlab__instructlab-1945": true,
+    "instructlab__instructlab-2004": true,
+    "instructlab__instructlab-2005": true,
+    "instructlab__instructlab-2055": true,
+    "instructlab__instructlab-2065": true,
+    "instructlab__instructlab-2119": true,
+    "instructlab__instructlab-2144": true,
+    "instructlab__instructlab-2208": true,
+    "instructlab__instructlab-2236": true,
+    "instructlab__instructlab-2247": true,
+    "instructlab__instructlab-2316": true,
+    "instructlab__instructlab-2526": true,
+    "instructlab__instructlab-2540": true,
+    "instructlab__instructlab-2548": true,
+    "instructlab__instructlab-2572": false,
+    "instructlab__instructlab-2579": false,
+    "instructlab__instructlab-2585": true,
+    "instructlab__instructlab-2592": true,
+    "instructlab__instructlab-2741": false,
+    "instructlab__instructlab-2789": true,
+    "instructlab__instructlab-2825": false,
+    "instructlab__instructlab-2886": true,
+    "instructlab__instructlab-2927": false,
+    "instructlab__instructlab-3045": true,
+    "instructlab__instructlab-3060": true,
+    "instructlab__instructlab-3118": true,
+    "instructlab__instructlab-3125": true,
+    "instructlab__instructlab-3135": false,
+    "instructlab__instructlab-3184": false
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.6235,
+    "localization_rate": 0.8065,
+    "n_false_positive": 53,
+    "n_flags": 85,
+    "n_localized": 25,
+    "n_tasks": 31,
+    "per_repo": {
+     "instructlab/instructlab": {
+      "false_positive_rate": 0.6235,
+      "localization_rate": 0.8065,
+      "n_false_positive": 53,
+      "n_flags": 85,
+      "n_localized": 25,
+      "n_tasks": 31
+     }
+    }
+   },
+   "flags": {
+    "instructlab__instructlab-1762": [
+     "src/instructlab/model/download.py::download",
+     "src/instructlab/configuration.py::_InstructlabDefaults.MODELS_DIR",
+     "src/instructlab/configuration.py::ensure_storage_directories_exist"
+    ],
+    "instructlab__instructlab-1847": [
+     "src/instructlab/configuration.py::read_config",
+     "src/instructlab/configuration.py::get_default_config",
+     "src/instructlab/configuration.py::Lab.ensure_config"
+    ],
+    "instructlab__instructlab-1923": [
+     "src/instructlab/data/generate.py::generate",
+     "src/instructlab/configuration.py::_generate",
+     "src/instructlab/__main__.py::<module>"
+    ],
+    "instructlab__instructlab-1945": [
+     "src/instructlab/model/train.py::train",
+     "src/instructlab/configuration.py::read_train_profile",
+     "src/instructlab/model/train.py::_run_phased_training"
+    ],
+    "instructlab__instructlab-2004": [
+     "src/instructlab/model/train.py::train",
+     "src/instructlab/model/train.py::_run_phased_training",
+     "src/instructlab/configuration.py::_train.fill_defaults"
+    ],
+    "instructlab__instructlab-2005": [
+     "src/instructlab/model/train.py::train",
+     "src/instructlab/model/train.py::_run_phased_training",
+     "src/instructlab/model/train.py::_training_phase"
+    ],
+    "instructlab__instructlab-2055": [
+     "src/instructlab/config/config.py::config",
+     "src/instructlab/config/init.py::init"
+    ],
+    "instructlab__instructlab-2065": [
+     "src/instructlab/model/evaluate.py::get_evaluator",
+     "src/instructlab/model/evaluate.py::evaluate",
+     "src/instructlab/config/init.py::init"
+    ],
+    "instructlab__instructlab-2119": [
+     "src/instructlab/model/evaluate.py::validate_options",
+     "src/instructlab/model/evaluate.py::evaluate",
+     "src/instructlab/model/evaluate.py::get_gpus"
+    ],
+    "instructlab__instructlab-2144": [
+     "src/instructlab/model/train.py::train",
+     "src/instructlab/model/evaluate.py::evaluate",
+     "src/instructlab/configuration.py::_mtbench"
+    ],
+    "instructlab__instructlab-2208": [
+     "src/instructlab/configuration.py::recreate_train_profiles",
+     "src/instructlab/configuration.py::get_default_config",
+     "src/instructlab/system/info.py::get_sysinfo"
+    ],
+    "instructlab__instructlab-2236": [
+     "src/instructlab/model/train.py::train",
+     "src/instructlab/model/train.py::_run_phased_training",
+     "src/instructlab/model/train.py::_training_phase"
+    ],
+    "instructlab__instructlab-2247": [
+     "src/instructlab/train/linux_train.py::linux_train",
+     "src/instructlab/train/linux_train.py::<module>"
+    ],
+    "instructlab__instructlab-2316": [
+     "src/instructlab/model/evaluate.py::display_branch_eval_summary",
+     "src/instructlab/model/evaluate.py::display_model",
+     "src/instructlab/model/evaluate.py::qa_pairs_to_qna_to_avg_scores"
+    ],
+    "instructlab__instructlab-2526": [
+     "src/instructlab/configuration.py::recreate_train_profiles",
+     "src/instructlab/configuration.py::read_train_profile",
+     "src/instructlab/model/accelerated_train.py::accelerated_train"
+    ],
+    "instructlab__instructlab-2540": [
+     "src/instructlab/model/chat.py::ConsoleChatBot.start_prompt",
+     "src/instructlab/model/chat.py::ConsoleChatBot.__init__",
+     "src/instructlab/config/config.py::config"
+    ],
+    "instructlab__instructlab-2548": [
+     "src/instructlab/cli/model/train.py::train",
+     "src/instructlab/cli/model/train.py::is_high_fidelity",
+     "src/instructlab/cli/model/train.py::<module>"
+    ],
+    "instructlab__instructlab-2572": [
+     "src/instructlab/configuration.py::read_and_create_system_profiles",
+     "src/instructlab/configuration.py::recreate_system_profiles",
+     "src/instructlab/system/system.py::system"
+    ],
+    "instructlab__instructlab-2579": [
+     "src/instructlab/configuration.py::read_and_create_system_profiles",
+     "src/instructlab/configuration.py::recreate_system_profiles",
+     "src/instructlab/configuration.py::ensure_storage_directories_exist"
+    ],
+    "instructlab__instructlab-2585": [
+     "src/instructlab/configuration.py::get_model_family",
+     "src/instructlab/configuration.py::Config"
+    ],
+    "instructlab__instructlab-2592": [
+     "src/instructlab/model/chat.py::ConsoleChatBot._right_prompt",
+     "src/instructlab/model/chat.py::ConsoleChatBot.start_prompt",
+     "src/instructlab/model/chat.py::chat"
+    ],
+    "instructlab__instructlab-2741": [
+     "src/instructlab/model/download.py::download",
+     "src/instructlab/model/download.py::HFDownloader.download",
+     "src/instructlab/model/download.py::OCIDownloader.download"
+    ],
+    "instructlab__instructlab-2789": [
+     "src/instructlab/configuration.py::_chat",
+     "src/instructlab/configuration.py::Lab.__init__"
+    ],
+    "instructlab__instructlab-2825": [
+     "src/instructlab/model/backends/llama_cpp.py::Server.__init__",
+     "src/instructlab/model/backends/llama_cpp.py::augment_chat_template"
+    ],
+    "instructlab__instructlab-2886": [
+     "src/instructlab/cli/model/chat.py::chat",
+     "src/instructlab/configuration.py::_rag",
+     "src/instructlab/cli/model/chat.py::<module>"
+    ],
+    "instructlab__instructlab-2927": [
+     "src/instructlab/configuration.py::_serve_vllm",
+     "src/instructlab/model/backends/vllm.py::build_vllm_cmd",
+     "src/instructlab/cli/model/serve.py::serve"
+    ],
+    "instructlab__instructlab-3045": [
+     "src/instructlab/configuration.py::Lab.__init__",
+     "src/instructlab/configuration.py::init",
+     "src/instructlab/configuration.py::get_default_config"
+    ],
+    "instructlab__instructlab-3060": [
+     "src/instructlab/rag/taxonomy_utils.py::lookup_knowledge_files",
+     "src/instructlab/rag/convert.py::convert_documents_from_taxonomy",
+     "src/instructlab/cli/rag/convert.py::convert"
+    ],
+    "instructlab__instructlab-3118": [
+     "src/instructlab/cli/model/download.py::download",
+     "src/instructlab/defaults.py::_InstructlabDefaults.DEFAULT_EMBEDDING_MODEL",
+     "src/instructlab/cli/model/download.py::<module>"
+    ],
+    "instructlab__instructlab-3125": [
+     "src/instructlab/process/process.py::ProcessRegistry.load",
+     "src/instructlab/process/process.py::ProcessRegistry.persist",
+     "src/instructlab/cli/process/list.py::list"
+    ],
+    "instructlab__instructlab-3135": [
+     "src/instructlab/log.py::CustomFormatter.format",
+     "src/instructlab/log.py::LoggerWriter.write",
+     "src/instructlab/log.py::add_file_handler_to_logger"
+    ],
+    "instructlab__instructlab-3184": [
+     "src/instructlab/cli/rag/ingest.py::ingest",
+     "src/instructlab/rag/haystack/document_store_ingestor.py::HaystackDocumentStoreIngestor.ingest_documents",
+     "src/instructlab/rag/convert.py::_initialize_docling"
+    ]
+   },
+   "hits": {
+    "instructlab__instructlab-1762": true,
+    "instructlab__instructlab-1847": true,
+    "instructlab__instructlab-1923": true,
+    "instructlab__instructlab-1945": false,
+    "instructlab__instructlab-2004": true,
+    "instructlab__instructlab-2005": true,
+    "instructlab__instructlab-2055": false,
+    "instructlab__instructlab-2065": true,
+    "instructlab__instructlab-2119": false,
+    "instructlab__instructlab-2144": true,
+    "instructlab__instructlab-2208": true,
+    "instructlab__instructlab-2236": true,
+    "instructlab__instructlab-2247": false,
+    "instructlab__instructlab-2316": true,
+    "instructlab__instructlab-2526": false,
+    "instructlab__instructlab-2540": true,
+    "instructlab__instructlab-2548": true,
+    "instructlab__instructlab-2572": false,
+    "instructlab__instructlab-2585": false,
+    "instructlab__instructlab-2592": false,
+    "instructlab__instructlab-2741": false,
+    "instructlab__instructlab-2789": false,
+    "instructlab__instructlab-2825": false,
+    "instructlab__instructlab-2886": true,
+    "instructlab__instructlab-2927": false,
+    "instructlab__instructlab-3045": false,
+    "instructlab__instructlab-3060": true,
+    "instructlab__instructlab-3118": true,
+    "instructlab__instructlab-3125": true,
+    "instructlab__instructlab-3135": false,
+    "instructlab__instructlab-3184": false
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.6591,
+    "localization_rate": 0.5161,
+    "n_false_positive": 58,
+    "n_flags": 88,
+    "n_localized": 16,
+    "n_tasks": 31,
+    "per_repo": {
+     "instructlab/instructlab": {
+      "false_positive_rate": 0.6591,
+      "localization_rate": 0.5161,
+      "n_false_positive": 58,
+      "n_flags": 88,
+      "n_localized": 16,
+      "n_tasks": 31
+     }
+    }
+   },
+   "retrieved": {
+    "instructlab__instructlab-1762": [],
+    "instructlab__instructlab-1847": [],
+    "instructlab__instructlab-1923": [],
+    "instructlab__instructlab-1945": [],
+    "instructlab__instructlab-2004": [],
+    "instructlab__instructlab-2005": [],
+    "instructlab__instructlab-2055": [],
+    "instructlab__instructlab-2065": [],
+    "instructlab__instructlab-2119": [],
+    "instructlab__instructlab-2144": [],
+    "instructlab__instructlab-2208": [],
+    "instructlab__instructlab-2236": [],
+    "instructlab__instructlab-2247": [],
+    "instructlab__instructlab-2316": [],
+    "instructlab__instructlab-2526": [],
+    "instructlab__instructlab-2540": [],
+    "instructlab__instructlab-2548": [],
+    "instructlab__instructlab-2572": [],
+    "instructlab__instructlab-2579": [],
+    "instructlab__instructlab-2585": [],
+    "instructlab__instructlab-2592": [],
+    "instructlab__instructlab-2741": [],
+    "instructlab__instructlab-2789": [],
+    "instructlab__instructlab-2825": [],
+    "instructlab__instructlab-2886": [],
+    "instructlab__instructlab-2927": [],
+    "instructlab__instructlab-3045": [],
+    "instructlab__instructlab-3060": [],
+    "instructlab__instructlab-3118": [],
+    "instructlab__instructlab-3125": [],
+    "instructlab__instructlab-3135": [],
+    "instructlab__instructlab-3184": []
+   },
+   "scores": {
+    "instructlab__instructlab-1762": {},
+    "instructlab__instructlab-1847": {},
+    "instructlab__instructlab-1923": {},
+    "instructlab__instructlab-1945": {},
+    "instructlab__instructlab-2004": {},
+    "instructlab__instructlab-2005": {},
+    "instructlab__instructlab-2055": {},
+    "instructlab__instructlab-2065": {},
+    "instructlab__instructlab-2119": {},
+    "instructlab__instructlab-2144": {},
+    "instructlab__instructlab-2208": {},
+    "instructlab__instructlab-2236": {},
+    "instructlab__instructlab-2247": {},
+    "instructlab__instructlab-2316": {},
+    "instructlab__instructlab-2526": {},
+    "instructlab__instructlab-2540": {},
+    "instructlab__instructlab-2548": {},
+    "instructlab__instructlab-2572": {},
+    "instructlab__instructlab-2579": {},
+    "instructlab__instructlab-2585": {},
+    "instructlab__instructlab-2592": {},
+    "instructlab__instructlab-2741": {},
+    "instructlab__instructlab-2789": {},
+    "instructlab__instructlab-2825": {},
+    "instructlab__instructlab-2886": {},
+    "instructlab__instructlab-2927": {},
+    "instructlab__instructlab-3045": {},
+    "instructlab__instructlab-3060": {},
+    "instructlab__instructlab-3118": {},
+    "instructlab__instructlab-3125": {},
+    "instructlab__instructlab-3135": {},
+    "instructlab__instructlab-3184": {}
+   },
+   "tau": 0.0,
+   "version": null,
+   "versions": {
+    "instructlab__instructlab-1762": null,
+    "instructlab__instructlab-1847": null,
+    "instructlab__instructlab-1923": null,
+    "instructlab__instructlab-1945": null,
+    "instructlab__instructlab-2004": null,
+    "instructlab__instructlab-2005": null,
+    "instructlab__instructlab-2055": null,
+    "instructlab__instructlab-2065": null,
+    "instructlab__instructlab-2119": null,
+    "instructlab__instructlab-2144": null,
+    "instructlab__instructlab-2208": null,
+    "instructlab__instructlab-2236": null,
+    "instructlab__instructlab-2247": null,
+    "instructlab__instructlab-2316": null,
+    "instructlab__instructlab-2526": null,
+    "instructlab__instructlab-2540": null,
+    "instructlab__instructlab-2548": null,
+    "instructlab__instructlab-2572": null,
+    "instructlab__instructlab-2579": null,
+    "instructlab__instructlab-2585": null,
+    "instructlab__instructlab-2592": null,
+    "instructlab__instructlab-2741": null,
+    "instructlab__instructlab-2789": null,
+    "instructlab__instructlab-2825": null,
+    "instructlab__instructlab-2886": null,
+    "instructlab__instructlab-2927": null,
+    "instructlab__instructlab-3045": null,
+    "instructlab__instructlab-3060": null,
+    "instructlab__instructlab-3118": null,
+    "instructlab__instructlab-3125": null,
+    "instructlab__instructlab-3135": null,
+    "instructlab__instructlab-3184": null
+   }
+  },
+  "gated": {
+   "file_hits": {
+    "instructlab__instructlab-1762": true,
+    "instructlab__instructlab-1847": true,
+    "instructlab__instructlab-1923": true,
+    "instructlab__instructlab-1945": true,
+    "instructlab__instructlab-2004": true,
+    "instructlab__instructlab-2005": true,
+    "instructlab__instructlab-2055": true,
+    "instructlab__instructlab-2065": true,
+    "instructlab__instructlab-2119": true,
+    "instructlab__instructlab-2144": true,
+    "instructlab__instructlab-2208": true,
+    "instructlab__instructlab-2236": true,
+    "instructlab__instructlab-2247": true,
+    "instructlab__instructlab-2316": true,
+    "instructlab__instructlab-2526": true,
+    "instructlab__instructlab-2540": true,
+    "instructlab__instructlab-2548": true,
+    "instructlab__instructlab-2572": false,
+    "instructlab__instructlab-2579": false,
+    "instructlab__instructlab-2585": true,
+    "instructlab__instructlab-2592": true,
+    "instructlab__instructlab-2741": false,
+    "instructlab__instructlab-2789": true,
+    "instructlab__instructlab-2825": false,
+    "instructlab__instructlab-2886": true,
+    "instructlab__instructlab-2927": false,
+    "instructlab__instructlab-3045": true,
+    "instructlab__instructlab-3060": true,
+    "instructlab__instructlab-3118": true,
+    "instructlab__instructlab-3125": true,
+    "instructlab__instructlab-3135": false,
+    "instructlab__instructlab-3184": false
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.619,
+    "localization_rate": 0.8065,
+    "n_false_positive": 52,
+    "n_flags": 84,
+    "n_localized": 25,
+    "n_tasks": 31,
+    "per_repo": {
+     "instructlab/instructlab": {
+      "false_positive_rate": 0.619,
+      "localization_rate": 0.8065,
+      "n_false_positive": 52,
+      "n_flags": 84,
+      "n_localized": 25,
+      "n_tasks": 31
+     }
+    }
+   },
+   "flags": {
+    "instructlab__instructlab-1762": [
+     "src/instructlab/model/download.py::download",
+     "src/instructlab/configuration.py::_InstructlabDefaults.MODELS_DIR",
+     "src/instructlab/configuration.py::ensure_storage_directories_exist"
+    ],
+    "instructlab__instructlab-1847": [
+     "src/instructlab/configuration.py::read_config",
+     "src/instructlab/configuration.py::get_default_config",
+     "src/instructlab/configuration.py::Lab.ensure_config"
+    ],
+    "instructlab__instructlab-1923": [
+     "src/instructlab/data/generate.py::generate",
+     "src/instructlab/configuration.py::_generate",
+     "src/instructlab/__main__.py::<module>"
+    ],
+    "instructlab__instructlab-1945": [
+     "src/instructlab/model/train.py::train",
+     "src/instructlab/configuration.py::read_train_profile",
+     "src/instructlab/model/train.py::_run_phased_training"
+    ],
+    "instructlab__instructlab-2004": [
+     "src/instructlab/model/train.py::train",
+     "src/instructlab/model/train.py::_run_phased_training",
+     "src/instructlab/configuration.py::_train.fill_defaults"
+    ],
+    "instructlab__instructlab-2005": [
+     "src/instructlab/model/train.py::train",
+     "src/instructlab/model/train.py::_run_phased_training",
+     "src/instructlab/model/train.py::_training_phase"
+    ],
+    "instructlab__instructlab-2055": [
+     "src/instructlab/config/config.py::config",
+     "src/instructlab/config/init.py::init"
+    ],
+    "instructlab__instructlab-2065": [
+     "src/instructlab/model/evaluate.py::get_evaluator",
+     "src/instructlab/model/evaluate.py::evaluate",
+     "src/instructlab/config/init.py::init"
+    ],
+    "instructlab__instructlab-2119": [
+     "src/instructlab/model/evaluate.py::validate_options",
+     "src/instructlab/model/evaluate.py::evaluate",
+     "src/instructlab/model/evaluate.py::get_gpus"
+    ],
+    "instructlab__instructlab-2144": [
+     "src/instructlab/model/train.py::train",
+     "src/instructlab/model/evaluate.py::evaluate",
+     "src/instructlab/configuration.py::_mtbench"
+    ],
+    "instructlab__instructlab-2208": [
+     "src/instructlab/configuration.py::recreate_train_profiles",
+     "src/instructlab/configuration.py::get_default_config",
+     "src/instructlab/system/info.py::get_sysinfo"
+    ],
+    "instructlab__instructlab-2236": [
+     "src/instructlab/model/train.py::train",
+     "src/instructlab/model/train.py::_run_phased_training",
+     "src/instructlab/model/train.py::_training_phase"
+    ],
+    "instructlab__instructlab-2247": [
+     "src/instructlab/train/linux_train.py::linux_train",
+     "src/instructlab/model/train.py::_training_phase",
+     "src/instructlab/train/__init__.py::<module>"
+    ],
+    "instructlab__instructlab-2316": [
+     "src/instructlab/model/evaluate.py::display_branch_eval_summary",
+     "src/instructlab/model/evaluate.py::display_model",
+     "src/instructlab/model/evaluate.py::qa_pairs_to_qna_to_avg_scores"
+    ],
+    "instructlab__instructlab-2526": [
+     "src/instructlab/configuration.py::recreate_train_profiles",
+     "src/instructlab/configuration.py::read_train_profile",
+     "src/instructlab/model/accelerated_train.py::accelerated_train"
+    ],
+    "instructlab__instructlab-2540": [
+     "src/instructlab/model/chat.py::ConsoleChatBot.start_prompt",
+     "src/instructlab/model/chat.py::ConsoleChatBot.__init__",
+     "src/instructlab/config/config.py::config"
+    ],
+    "instructlab__instructlab-2548": [
+     "src/instructlab/cli/model/train.py::train",
+     "src/instructlab/cli/model/train.py::is_high_fidelity",
+     "src/instructlab/cli/model/train.py::<module>"
+    ],
+    "instructlab__instructlab-2572": [
+     "src/instructlab/configuration.py::read_and_create_system_profiles",
+     "src/instructlab/configuration.py::recreate_system_profiles",
+     "src/instructlab/system/system.py::system"
+    ],
+    "instructlab__instructlab-2579": [
+     "src/instructlab/configuration.py::read_and_create_system_profiles",
+     "src/instructlab/configuration.py::recreate_system_profiles",
+     "src/instructlab/configuration.py::ensure_storage_directories_exist"
+    ],
+    "instructlab__instructlab-2585": [
+     "src/instructlab/configuration.py::get_model_family",
+     "src/instructlab/configuration.py::Config"
+    ],
+    "instructlab__instructlab-2592": [
+     "src/instructlab/model/chat.py::ConsoleChatBot._right_prompt",
+     "src/instructlab/model/chat.py::ConsoleChatBot.start_prompt",
+     "src/instructlab/model/chat.py::chat"
+    ],
+    "instructlab__instructlab-2741": [
+     "src/instructlab/model/download.py::download",
+     "src/instructlab/model/download.py::HFDownloader.download",
+     "src/instructlab/model/download.py::OCIDownloader.download"
+    ],
+    "instructlab__instructlab-2789": [
+     "src/instructlab/configuration.py::_chat",
+     "src/instructlab/configuration.py::Lab.__init__"
+    ],
+    "instructlab__instructlab-2825": [
+     "src/instructlab/model/backends/llama_cpp.py::Server.__init__",
+     "src/instructlab/model/backends/llama_cpp.py::augment_chat_template"
+    ],
+    "instructlab__instructlab-2886": [
+     "src/instructlab/cli/model/chat.py::chat",
+     "src/instructlab/configuration.py::_rag",
+     "src/instructlab/cli/model/chat.py::<module>"
+    ],
+    "instructlab__instructlab-2927": [
+     "src/instructlab/configuration.py::_serve_vllm",
+     "src/instructlab/model/backends/vllm.py::build_vllm_cmd",
+     "src/instructlab/cli/model/serve.py::serve"
+    ],
+    "instructlab__instructlab-3045": [
+     "src/instructlab/configuration.py::Lab.__init__",
+     "src/instructlab/configuration.py::init",
+     "src/instructlab/configuration.py::get_default_config"
+    ],
+    "instructlab__instructlab-3060": [
+     "src/instructlab/rag/taxonomy_utils.py::lookup_knowledge_files",
+     "src/instructlab/rag/convert.py::convert_documents_from_taxonomy",
+     "src/instructlab/cli/rag/convert.py::convert"
+    ],
+    "instructlab__instructlab-3118": [
+     "src/instructlab/cli/model/download.py::download",
+     "src/instructlab/defaults.py::_InstructlabDefaults.DEFAULT_EMBEDDING_MODEL",
+     "src/instructlab/cli/model/download.py::<module>"
+    ],
+    "instructlab__instructlab-3125": [
+     "src/instructlab/process/process.py::ProcessRegistry.load",
+     "src/instructlab/process/process.py::ProcessRegistry.persist",
+     "src/instructlab/cli/process/list.py::list"
+    ],
+    "instructlab__instructlab-3135": [
+     "src/instructlab/log.py::CustomFormatter.format",
+     "src/instructlab/log.py::LoggerWriter.write",
+     "src/instructlab/log.py::add_file_handler_to_logger"
+    ],
+    "instructlab__instructlab-3184": [
+     "src/instructlab/cli/rag/ingest.py::ingest",
+     "src/instructlab/rag/haystack/document_store_ingestor.py::HaystackDocumentStoreIngestor.ingest_documents",
+     "src/instructlab/rag/convert.py::_initialize_docling"
+    ]
+   },
+   "hits": {
+    "instructlab__instructlab-1762": true,
+    "instructlab__instructlab-1847": true,
+    "instructlab__instructlab-1923": true,
+    "instructlab__instructlab-1945": false,
+    "instructlab__instructlab-2004": true,
+    "instructlab__instructlab-2005": true,
+    "instructlab__instructlab-2055": false,
+    "instructlab__instructlab-2065": true,
+    "instructlab__instructlab-2119": false,
+    "instructlab__instructlab-2144": true,
+    "instructlab__instructlab-2208": true,
+    "instructlab__instructlab-2236": true,
+    "instructlab__instructlab-2247": false,
+    "instructlab__instructlab-2316": true,
+    "instructlab__instructlab-2526": false,
+    "instructlab__instructlab-2540": true,
+    "instructlab__instructlab-2548": true,
+    "instructlab__instructlab-2572": false,
+    "instructlab__instructlab-2585": false,
+    "instructlab__instructlab-2592": false,
+    "instructlab__instructlab-2741": false,
+    "instructlab__instructlab-2789": false,
+    "instructlab__instructlab-2825": false,
+    "instructlab__instructlab-2886": true,
+    "instructlab__instructlab-2927": false,
+    "instructlab__instructlab-3045": false,
+    "instructlab__instructlab-3060": true,
+    "instructlab__instructlab-3118": true,
+    "instructlab__instructlab-3125": true,
+    "instructlab__instructlab-3135": false,
+    "instructlab__instructlab-3184": false
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.38,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.6629,
+    "localization_rate": 0.5161,
+    "n_false_positive": 59,
+    "n_flags": 89,
+    "n_localized": 16,
+    "n_tasks": 31,
+    "per_repo": {
+     "instructlab/instructlab": {
+      "false_positive_rate": 0.6629,
+      "localization_rate": 0.5161,
+      "n_false_positive": 59,
+      "n_flags": 89,
+      "n_localized": 16,
+      "n_tasks": 31
+     }
+    }
+   },
+   "retrieved": {
+    "instructlab__instructlab-1762": [],
+    "instructlab__instructlab-1847": [],
+    "instructlab__instructlab-1923": [],
+    "instructlab__instructlab-1945": [],
+    "instructlab__instructlab-2004": [],
+    "instructlab__instructlab-2005": [],
+    "instructlab__instructlab-2055": [],
+    "instructlab__instructlab-2065": [],
+    "instructlab__instructlab-2119": [],
+    "instructlab__instructlab-2144": [],
+    "instructlab__instructlab-2208": [],
+    "instructlab__instructlab-2236": [],
+    "instructlab__instructlab-2247": [
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83"
+    ],
+    "instructlab__instructlab-2316": [],
+    "instructlab__instructlab-2526": [],
+    "instructlab__instructlab-2540": [],
+    "instructlab__instructlab-2548": [
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f"
+    ],
+    "instructlab__instructlab-2572": [],
+    "instructlab__instructlab-2579": [],
+    "instructlab__instructlab-2585": [],
+    "instructlab__instructlab-2592": [],
+    "instructlab__instructlab-2741": [],
+    "instructlab__instructlab-2789": [],
+    "instructlab__instructlab-2825": [],
+    "instructlab__instructlab-2886": [],
+    "instructlab__instructlab-2927": [],
+    "instructlab__instructlab-3045": [],
+    "instructlab__instructlab-3060": [],
+    "instructlab__instructlab-3118": [],
+    "instructlab__instructlab-3125": [],
+    "instructlab__instructlab-3135": [],
+    "instructlab__instructlab-3184": []
+   },
+   "scores": {
+    "instructlab__instructlab-1762": {
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.107507
+    },
+    "instructlab__instructlab-1847": {
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.447198
+    },
+    "instructlab__instructlab-1923": {
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.170238
+    },
+    "instructlab__instructlab-1945": {
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.141017
+    },
+    "instructlab__instructlab-2004": {
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.17834
+    },
+    "instructlab__instructlab-2005": {
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.168115,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.463377
+    },
+    "instructlab__instructlab-2055": {
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.30168,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.104814
+    },
+    "instructlab__instructlab-2065": {
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.260136,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.27877
+    },
+    "instructlab__instructlab-2119": {
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.181038,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.124277,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.206115
+    },
+    "instructlab__instructlab-2144": {
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.165979,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.266045,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.38459
+    },
+    "instructlab__instructlab-2208": {
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.215657,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.212843,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.253605
+    },
+    "instructlab__instructlab-2236": {
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.197033,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.461623,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.15216
+    },
+    "instructlab__instructlab-2247": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.529055,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.136577,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.477288,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.468933,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.315728
+    },
+    "instructlab__instructlab-2316": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.342034,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.188263,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.22037,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.263733,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.260571
+    },
+    "instructlab__instructlab-2526": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.286429,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.15666,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.357297,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.324717,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.182518
+    },
+    "instructlab__instructlab-2540": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.298273,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.229932,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.137354,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.174566,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.086444
+    },
+    "instructlab__instructlab-2548": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.614635,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.20901,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.578764,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.594351,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.252423
+    },
+    "instructlab__instructlab-2572": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.085868,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.116406,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.008248,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.0,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.063146
+    },
+    "instructlab__instructlab-2579": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.272101,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.266094,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.257911,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.217912,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.278658
+    },
+    "instructlab__instructlab-2585": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.327414,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.235011,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.379453,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.301908,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.261712
+    },
+    "instructlab__instructlab-2592": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.141363,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.076024,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.059418,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.169906,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.161256
+    },
+    "instructlab__instructlab-2741": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.342008,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.203688,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.170713,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.293839,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.271461
+    },
+    "instructlab__instructlab-2789": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.351648,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.185257,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.182262,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.238191,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.190162
+    },
+    "instructlab__instructlab-2825": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.307722,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.177927,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.317219,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.300338,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.272424
+    },
+    "instructlab__instructlab-2886": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.371219,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.280171,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.105591,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.256143,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.145466
+    },
+    "instructlab__instructlab-2927": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.413589,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.12981,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.312297,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.318144,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.142807
+    },
+    "instructlab__instructlab-3045": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.299792,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.318072,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.310525,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.240166,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.466435
+    },
+    "instructlab__instructlab-3060": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.336884,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.278449,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.310186,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.332376,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.241668
+    },
+    "instructlab__instructlab-3118": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.452432,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.23584,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.223095,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.269367,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.256608
+    },
+    "instructlab__instructlab-3125": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.308313,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.20503,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.082067,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.154896,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.213331
+    },
+    "instructlab__instructlab-3135": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.267031,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.421243,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.278118,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.202523,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.295344
+    },
+    "instructlab__instructlab-3184": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.318677,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.115769,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.214988,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.29841,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.224508
+    }
+   },
+   "tau": 0.5,
+   "version": "rolling",
+   "versions": {
+    "instructlab__instructlab-1762": "3451773e48ca62325adf5b18a32782d5980ef7f7486420ade436369a1b49c94e",
+    "instructlab__instructlab-1847": "3451773e48ca62325adf5b18a32782d5980ef7f7486420ade436369a1b49c94e",
+    "instructlab__instructlab-1923": "3451773e48ca62325adf5b18a32782d5980ef7f7486420ade436369a1b49c94e",
+    "instructlab__instructlab-1945": "3451773e48ca62325adf5b18a32782d5980ef7f7486420ade436369a1b49c94e",
+    "instructlab__instructlab-2004": "3451773e48ca62325adf5b18a32782d5980ef7f7486420ade436369a1b49c94e",
+    "instructlab__instructlab-2005": "451e18eefcffb4a7b4b373456ba095adc4ea53e17c688a3a927ecd385de64afe",
+    "instructlab__instructlab-2055": "451e18eefcffb4a7b4b373456ba095adc4ea53e17c688a3a927ecd385de64afe",
+    "instructlab__instructlab-2065": "451e18eefcffb4a7b4b373456ba095adc4ea53e17c688a3a927ecd385de64afe",
+    "instructlab__instructlab-2119": "1cc196c02ae5afdf3653191d439bd8f0b832f4317e8bdba6974db6b989dac297",
+    "instructlab__instructlab-2144": "1cc196c02ae5afdf3653191d439bd8f0b832f4317e8bdba6974db6b989dac297",
+    "instructlab__instructlab-2208": "1cc196c02ae5afdf3653191d439bd8f0b832f4317e8bdba6974db6b989dac297",
+    "instructlab__instructlab-2236": "1cc196c02ae5afdf3653191d439bd8f0b832f4317e8bdba6974db6b989dac297",
+    "instructlab__instructlab-2247": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-2316": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-2526": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-2540": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-2548": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-2572": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-2579": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-2585": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-2592": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-2741": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-2789": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-2825": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-2886": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-2927": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-3045": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-3060": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-3118": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-3125": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-3135": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-3184": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19"
+   }
+  },
+  "placebo": {
+   "file_hits": {
+    "instructlab__instructlab-1762": true,
+    "instructlab__instructlab-1847": true,
+    "instructlab__instructlab-1923": true,
+    "instructlab__instructlab-1945": true,
+    "instructlab__instructlab-2004": true,
+    "instructlab__instructlab-2005": true,
+    "instructlab__instructlab-2055": true,
+    "instructlab__instructlab-2065": true,
+    "instructlab__instructlab-2119": true,
+    "instructlab__instructlab-2144": true,
+    "instructlab__instructlab-2208": true,
+    "instructlab__instructlab-2236": true,
+    "instructlab__instructlab-2247": true,
+    "instructlab__instructlab-2316": true,
+    "instructlab__instructlab-2526": false,
+    "instructlab__instructlab-2540": true,
+    "instructlab__instructlab-2548": true,
+    "instructlab__instructlab-2572": false,
+    "instructlab__instructlab-2579": false,
+    "instructlab__instructlab-2585": true,
+    "instructlab__instructlab-2592": true,
+    "instructlab__instructlab-2741": false,
+    "instructlab__instructlab-2789": true,
+    "instructlab__instructlab-2825": false,
+    "instructlab__instructlab-2886": true,
+    "instructlab__instructlab-2927": false,
+    "instructlab__instructlab-3045": true,
+    "instructlab__instructlab-3060": true,
+    "instructlab__instructlab-3118": true,
+    "instructlab__instructlab-3125": true,
+    "instructlab__instructlab-3135": false,
+    "instructlab__instructlab-3184": false
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.6471,
+    "localization_rate": 0.7742,
+    "n_false_positive": 55,
+    "n_flags": 85,
+    "n_localized": 24,
+    "n_tasks": 31,
+    "per_repo": {
+     "instructlab/instructlab": {
+      "false_positive_rate": 0.6471,
+      "localization_rate": 0.7742,
+      "n_false_positive": 55,
+      "n_flags": 85,
+      "n_localized": 24,
+      "n_tasks": 31
+     }
+    }
+   },
+   "flags": {
+    "instructlab__instructlab-1762": [
+     "src/instructlab/model/download.py::download",
+     "src/instructlab/configuration.py::_InstructlabDefaults.MODELS_DIR",
+     "src/instructlab/configuration.py::ensure_storage_directories_exist"
+    ],
+    "instructlab__instructlab-1847": [
+     "src/instructlab/configuration.py::read_config",
+     "src/instructlab/configuration.py::get_default_config",
+     "src/instructlab/configuration.py::Config"
+    ],
+    "instructlab__instructlab-1923": [
+     "src/instructlab/data/generate.py::generate",
+     "src/instructlab/configuration.py::_generate",
+     "src/instructlab/__main__.py::<module>"
+    ],
+    "instructlab__instructlab-1945": [
+     "src/instructlab/model/train.py::train",
+     "src/instructlab/configuration.py::read_train_profile",
+     "src/instructlab/model/train.py::_run_phased_training"
+    ],
+    "instructlab__instructlab-2004": [
+     "src/instructlab/model/train.py::train",
+     "src/instructlab/configuration.py::_train.fill_defaults",
+     "src/instructlab/model/train.py::_run_phased_training"
+    ],
+    "instructlab__instructlab-2005": [
+     "src/instructlab/model/train.py::train",
+     "src/instructlab/model/train.py::_run_phased_training",
+     "src/instructlab/model/train.py::_training_phase"
+    ],
+    "instructlab__instructlab-2055": [
+     "src/instructlab/config/config.py::config",
+     "src/instructlab/configuration.py::write_config",
+     "src/instructlab/configuration.py::Config"
+    ],
+    "instructlab__instructlab-2065": [
+     "src/instructlab/model/evaluate.py::get_evaluator",
+     "src/instructlab/model/evaluate.py::evaluate",
+     "src/instructlab/model/convert.py::convert"
+    ],
+    "instructlab__instructlab-2119": [
+     "src/instructlab/model/evaluate.py::validate_options",
+     "src/instructlab/model/evaluate.py::evaluate",
+     "src/instructlab/model/evaluate.py::get_gpus"
+    ],
+    "instructlab__instructlab-2144": [
+     "src/instructlab/model/evaluate.py::evaluate",
+     "src/instructlab/model/train.py::train",
+     "src/instructlab/model/evaluate.py::<module>"
+    ],
+    "instructlab__instructlab-2208": [
+     "src/instructlab/configuration.py::recreate_train_profiles",
+     "src/instructlab/configuration.py::get_default_config",
+     "src/instructlab/system/info.py::get_sysinfo"
+    ],
+    "instructlab__instructlab-2236": [
+     "src/instructlab/model/train.py::train",
+     "src/instructlab/model/train.py::_run_phased_training",
+     "src/instructlab/model/train.py::_prepare_phased_base_dir"
+    ],
+    "instructlab__instructlab-2247": [
+     "src/instructlab/train/linux_train.py::linux_train",
+     "src/instructlab/train/__init__.py::<module>",
+     "src/instructlab/model/train.py::train"
+    ],
+    "instructlab__instructlab-2316": [
+     "src/instructlab/model/evaluate.py::display_branch_eval_summary",
+     "src/instructlab/model/evaluate.py::display_model",
+     "src/instructlab/model/evaluate.py::qa_pairs_to_qna_to_avg_scores"
+    ],
+    "instructlab__instructlab-2526": [
+     "src/instructlab/model/accelerated_train.py::accelerated_train",
+     "src/instructlab/model/accelerated_train.py::SupportedTrainingStrategies",
+     "src/instructlab/model/accelerated_train.py::_run_phased_training"
+    ],
+    "instructlab__instructlab-2540": [
+     "src/instructlab/model/chat.py::ConsoleChatBot.start_prompt",
+     "src/instructlab/model/chat.py::ConsoleChatBot.__init__",
+     "src/instructlab/config/config.py::config"
+    ],
+    "instructlab__instructlab-2548": [
+     "src/instructlab/cli/model/train.py::train",
+     "src/instructlab/cli/model/train.py::is_high_fidelity",
+     "src/instructlab/cli/model/train.py::<module>"
+    ],
+    "instructlab__instructlab-2572": [
+     "src/instructlab/system/info.py::info",
+     "src/instructlab/configuration.py::read_and_create_system_profiles",
+     "src/instructlab/configuration.py::recreate_system_profiles"
+    ],
+    "instructlab__instructlab-2579": [
+     "src/instructlab/configuration.py::read_and_create_system_profiles",
+     "src/instructlab/configuration.py::recreate_system_profiles",
+     "src/instructlab/configuration.py::ensure_storage_directories_exist"
+    ],
+    "instructlab__instructlab-2585": [
+     "src/instructlab/configuration.py::get_model_family",
+     "src/instructlab/configuration.py::Config"
+    ],
+    "instructlab__instructlab-2592": [
+     "src/instructlab/model/chat.py::ConsoleChatBot._right_prompt",
+     "src/instructlab/model/chat.py::ConsoleChatBot.start_prompt",
+     "src/instructlab/model/download.py::HFDownloader.download_gguf"
+    ],
+    "instructlab__instructlab-2741": [
+     "src/instructlab/model/download.py::download",
+     "src/instructlab/model/download.py::HFDownloader.download",
+     "src/instructlab/model/download.py::OCIDownloader.download"
+    ],
+    "instructlab__instructlab-2789": [
+     "src/instructlab/configuration.py::Config",
+     "src/instructlab/configuration.py::_chat",
+     "src/instructlab/configuration.py::Lab.__init__"
+    ],
+    "instructlab__instructlab-2825": [],
+    "instructlab__instructlab-2886": [
+     "src/instructlab/cli/model/chat.py::chat",
+     "src/instructlab/configuration.py::_rag",
+     "src/instructlab/configuration.py::_retriever"
+    ],
+    "instructlab__instructlab-2927": [
+     "src/instructlab/configuration.py::_serve_vllm",
+     "src/instructlab/model/backends/vllm.py::build_vllm_cmd",
+     "src/instructlab/cli/model/serve.py::serve"
+    ],
+    "instructlab__instructlab-3045": [
+     "src/instructlab/configuration.py::Config",
+     "src/instructlab/cli/config/init.py::init",
+     "src/instructlab/configuration.py::get_default_config"
+    ],
+    "instructlab__instructlab-3060": [
+     "src/instructlab/rag/taxonomy_utils.py::lookup_knowledge_files",
+     "src/instructlab/rag/convert.py::convert_documents_from_taxonomy",
+     "src/instructlab/cli/rag/convert.py::convert"
+    ],
+    "instructlab__instructlab-3118": [
+     "src/instructlab/cli/model/download.py::download",
+     "src/instructlab/defaults.py::_InstructlabDefaults.DEFAULT_EMBEDDING_MODEL",
+     "src/instructlab/cli/model/download.py::<module>"
+    ],
+    "instructlab__instructlab-3125": [
+     "src/instructlab/process/process.py::ProcessRegistry.persist",
+     "src/instructlab/process/process.py::ProcessRegistry.load",
+     "src/instructlab/cli/process/list.py::list"
+    ],
+    "instructlab__instructlab-3135": [
+     "src/instructlab/log.py::add_file_handler_to_logger",
+     "src/instructlab/log.py::configure_logging"
+    ],
+    "instructlab__instructlab-3184": [
+     "src/instructlab/cli/rag/ingest.py::ingest",
+     "src/instructlab/rag/haystack/document_store_ingestor.py::HaystackDocumentStoreIngestor.ingest_documents",
+     "src/instructlab/rag/haystack/component_factory.py::create_converter"
+    ]
+   },
+   "hits": {
+    "instructlab__instructlab-1762": true,
+    "instructlab__instructlab-1847": false,
+    "instructlab__instructlab-1923": true,
+    "instructlab__instructlab-1945": false,
+    "instructlab__instructlab-2004": true,
+    "instructlab__instructlab-2005": true,
+    "instructlab__instructlab-2055": true,
+    "instructlab__instructlab-2065": true,
+    "instructlab__instructlab-2119": false,
+    "instructlab__instructlab-2144": true,
+    "instructlab__instructlab-2208": true,
+    "instructlab__instructlab-2236": true,
+    "instructlab__instructlab-2247": true,
+    "instructlab__instructlab-2316": true,
+    "instructlab__instructlab-2526": false,
+    "instructlab__instructlab-2540": true,
+    "instructlab__instructlab-2548": true,
+    "instructlab__instructlab-2572": false,
+    "instructlab__instructlab-2585": false,
+    "instructlab__instructlab-2592": false,
+    "instructlab__instructlab-2741": false,
+    "instructlab__instructlab-2789": false,
+    "instructlab__instructlab-2825": false,
+    "instructlab__instructlab-2886": true,
+    "instructlab__instructlab-2927": false,
+    "instructlab__instructlab-3045": false,
+    "instructlab__instructlab-3060": true,
+    "instructlab__instructlab-3118": true,
+    "instructlab__instructlab-3125": true,
+    "instructlab__instructlab-3135": false,
+    "instructlab__instructlab-3184": false
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": -2.27,
+    "localization_lift_pts": 3.23
+   },
+   "metrics": {
+    "false_positive_rate": 0.6364,
+    "localization_rate": 0.5484,
+    "n_false_positive": 56,
+    "n_flags": 88,
+    "n_localized": 17,
+    "n_tasks": 31,
+    "per_repo": {
+     "instructlab/instructlab": {
+      "false_positive_rate": 0.6364,
+      "localization_rate": 0.5484,
+      "n_false_positive": 56,
+      "n_flags": 88,
+      "n_localized": 17,
+      "n_tasks": 31
+     }
+    }
+   },
+   "retrieved": {
+    "instructlab__instructlab-1762": [
+     "placebo:3"
+    ],
+    "instructlab__instructlab-1847": [
+     "placebo:4"
+    ],
+    "instructlab__instructlab-1923": [
+     "placebo:1"
+    ],
+    "instructlab__instructlab-1945": [
+     "placebo:4"
+    ],
+    "instructlab__instructlab-2004": [
+     "placebo:1"
+    ],
+    "instructlab__instructlab-2005": [
+     "placebo:1",
+     "placebo:0"
+    ],
+    "instructlab__instructlab-2055": [
+     "placebo:4",
+     "placebo:3"
+    ],
+    "instructlab__instructlab-2065": [
+     "placebo:1",
+     "placebo:4"
+    ],
+    "instructlab__instructlab-2119": [
+     "placebo:1",
+     "placebo:3",
+     "placebo:4"
+    ],
+    "instructlab__instructlab-2144": [
+     "placebo:1",
+     "placebo:0",
+     "placebo:4"
+    ],
+    "instructlab__instructlab-2208": [
+     "placebo:1",
+     "placebo:0",
+     "placebo:4"
+    ],
+    "instructlab__instructlab-2236": [
+     "placebo:1",
+     "placebo:4",
+     "placebo:3"
+    ],
+    "instructlab__instructlab-2247": [
+     "placebo:4",
+     "placebo:1",
+     "placebo:3",
+     "placebo:0",
+     "placebo:2"
+    ],
+    "instructlab__instructlab-2316": [
+     "placebo:1",
+     "placebo:0",
+     "placebo:4",
+     "placebo:3",
+     "placebo:2"
+    ],
+    "instructlab__instructlab-2526": [
+     "placebo:4",
+     "placebo:1",
+     "placebo:3",
+     "placebo:0",
+     "placebo:2"
+    ],
+    "instructlab__instructlab-2540": [
+     "placebo:1",
+     "placebo:0",
+     "placebo:4",
+     "placebo:3",
+     "placebo:2"
+    ],
+    "instructlab__instructlab-2548": [
+     "placebo:0",
+     "placebo:1",
+     "placebo:4",
+     "placebo:3",
+     "placebo:2"
+    ],
+    "instructlab__instructlab-2572": [
+     "placebo:1",
+     "placebo:0",
+     "placebo:3",
+     "placebo:2"
+    ],
+    "instructlab__instructlab-2579": [
+     "placebo:3",
+     "placebo:4",
+     "placebo:1",
+     "placebo:2",
+     "placebo:0"
+    ],
+    "instructlab__instructlab-2585": [
+     "placebo:4",
+     "placebo:3",
+     "placebo:1",
+     "placebo:2",
+     "placebo:0"
+    ],
+    "instructlab__instructlab-2592": [
+     "placebo:4",
+     "placebo:3",
+     "placebo:2",
+     "placebo:1",
+     "placebo:0"
+    ],
+    "instructlab__instructlab-2741": [
+     "placebo:1",
+     "placebo:3",
+     "placebo:4",
+     "placebo:2",
+     "placebo:0"
+    ],
+    "instructlab__instructlab-2789": [
+     "placebo:4",
+     "placebo:1",
+     "placebo:3",
+     "placebo:0",
+     "placebo:2"
+    ],
+    "instructlab__instructlab-2825": [
+     "placebo:2",
+     "placebo:0",
+     "placebo:1",
+     "placebo:4",
+     "placebo:3"
+    ],
+    "instructlab__instructlab-2886": [
+     "placebo:1",
+     "placebo:4",
+     "placebo:3",
+     "placebo:0",
+     "placebo:2"
+    ],
+    "instructlab__instructlab-2927": [
+     "placebo:1",
+     "placebo:0",
+     "placebo:4",
+     "placebo:3",
+     "placebo:2"
+    ],
+    "instructlab__instructlab-3045": [
+     "placebo:4",
+     "placebo:3",
+     "placebo:1",
+     "placebo:0",
+     "placebo:2"
+    ],
+    "instructlab__instructlab-3060": [
+     "placebo:4",
+     "placebo:1",
+     "placebo:3",
+     "placebo:0",
+     "placebo:2"
+    ],
+    "instructlab__instructlab-3118": [
+     "placebo:4",
+     "placebo:1",
+     "placebo:3",
+     "placebo:2",
+     "placebo:0"
+    ],
+    "instructlab__instructlab-3125": [
+     "placebo:1",
+     "placebo:4",
+     "placebo:3",
+     "placebo:0",
+     "placebo:2"
+    ],
+    "instructlab__instructlab-3135": [
+     "placebo:4",
+     "placebo:3",
+     "placebo:1",
+     "placebo:0",
+     "placebo:2"
+    ],
+    "instructlab__instructlab-3184": [
+     "placebo:1",
+     "placebo:4",
+     "placebo:2",
+     "placebo:3",
+     "placebo:0"
+    ]
+   },
+   "scores": {
+    "instructlab__instructlab-1762": {
+     "placebo:3": 0.125422
+    },
+    "instructlab__instructlab-1847": {
+     "placebo:4": 0.269366
+    },
+    "instructlab__instructlab-1923": {
+     "placebo:1": 0.156229
+    },
+    "instructlab__instructlab-1945": {
+     "placebo:4": 0.167756
+    },
+    "instructlab__instructlab-2004": {
+     "placebo:1": 0.232598
+    },
+    "instructlab__instructlab-2005": {
+     "placebo:0": 0.038525,
+     "placebo:1": 0.223121
+    },
+    "instructlab__instructlab-2055": {
+     "placebo:3": 0.14777,
+     "placebo:4": 0.210819
+    },
+    "instructlab__instructlab-2065": {
+     "placebo:1": 0.310431,
+     "placebo:4": 0.260295
+    },
+    "instructlab__instructlab-2119": {
+     "placebo:1": 0.230576,
+     "placebo:3": 0.109182,
+     "placebo:4": 0.073365
+    },
+    "instructlab__instructlab-2144": {
+     "placebo:0": 0.118343,
+     "placebo:1": 0.220314,
+     "placebo:4": 0.077132
+    },
+    "instructlab__instructlab-2208": {
+     "placebo:0": 0.050925,
+     "placebo:1": 0.229337,
+     "placebo:4": 0.03557
+    },
+    "instructlab__instructlab-2236": {
+     "placebo:1": 0.164548,
+     "placebo:3": 0.081265,
+     "placebo:4": 0.089969
+    },
+    "instructlab__instructlab-2247": {
+     "placebo:0": 0.10414,
+     "placebo:1": 0.190612,
+     "placebo:2": 0.101565,
+     "placebo:3": 0.144387,
+     "placebo:4": 0.214871
+    },
+    "instructlab__instructlab-2316": {
+     "placebo:0": 0.169609,
+     "placebo:1": 0.1974,
+     "placebo:2": 0.089007,
+     "placebo:3": 0.092434,
+     "placebo:4": 0.116075
+    },
+    "instructlab__instructlab-2526": {
+     "placebo:0": 0.0,
+     "placebo:1": 0.155585,
+     "placebo:2": 0.0,
+     "placebo:3": 0.13749,
+     "placebo:4": 0.177642
+    },
+    "instructlab__instructlab-2540": {
+     "placebo:0": 0.112377,
+     "placebo:1": 0.162933,
+     "placebo:2": 0.0,
+     "placebo:3": 0.022096,
+     "placebo:4": 0.072287
+    },
+    "instructlab__instructlab-2548": {
+     "placebo:0": 0.208997,
+     "placebo:1": 0.202615,
+     "placebo:2": 0.0,
+     "placebo:3": 0.09412,
+     "placebo:4": 0.104869
+    },
+    "instructlab__instructlab-2572": {
+     "placebo:0": 0.057382,
+     "placebo:1": 0.156873,
+     "placebo:2": 0.0,
+     "placebo:3": 0.013462
+    },
+    "instructlab__instructlab-2579": {
+     "placebo:0": 0.0,
+     "placebo:1": 0.141664,
+     "placebo:2": 0.052477,
+     "placebo:3": 0.197946,
+     "placebo:4": 0.17577
+    },
+    "instructlab__instructlab-2585": {
+     "placebo:0": 0.078113,
+     "placebo:1": 0.110153,
+     "placebo:2": 0.10759,
+     "placebo:3": 0.147509,
+     "placebo:4": 0.185395
+    },
+    "instructlab__instructlab-2592": {
+     "placebo:0": 0.008157,
+     "placebo:1": 0.081655,
+     "placebo:2": 0.096244,
+     "placebo:3": 0.123337,
+     "placebo:4": 0.179713
+    },
+    "instructlab__instructlab-2741": {
+     "placebo:0": 0.0,
+     "placebo:1": 0.171117,
+     "placebo:2": 0.032456,
+     "placebo:3": 0.089817,
+     "placebo:4": 0.081636
+    },
+    "instructlab__instructlab-2789": {
+     "placebo:0": 0.0,
+     "placebo:1": 0.06489,
+     "placebo:2": 0.0,
+     "placebo:3": 0.052077,
+     "placebo:4": 0.066148
+    },
+    "instructlab__instructlab-2825": {
+     "placebo:0": 0.147497,
+     "placebo:1": 0.145899,
+     "placebo:2": 0.154315,
+     "placebo:3": 0.076399,
+     "placebo:4": 0.123368
+    },
+    "instructlab__instructlab-2886": {
+     "placebo:0": 0.018523,
+     "placebo:1": 0.126029,
+     "placebo:2": 0.0,
+     "placebo:3": 0.068578,
+     "placebo:4": 0.107584
+    },
+    "instructlab__instructlab-2927": {
+     "placebo:0": 0.200314,
+     "placebo:1": 0.28562,
+     "placebo:2": 0.0,
+     "placebo:3": 0.178727,
+     "placebo:4": 0.185866
+    },
+    "instructlab__instructlab-3045": {
+     "placebo:0": 0.120183,
+     "placebo:1": 0.171393,
+     "placebo:2": 0.088119,
+     "placebo:3": 0.201153,
+     "placebo:4": 0.240581
+    },
+    "instructlab__instructlab-3060": {
+     "placebo:0": 0.132109,
+     "placebo:1": 0.207209,
+     "placebo:2": 0.0,
+     "placebo:3": 0.200525,
+     "placebo:4": 0.236261
+    },
+    "instructlab__instructlab-3118": {
+     "placebo:0": 0.0,
+     "placebo:1": 0.13313,
+     "placebo:2": 0.044296,
+     "placebo:3": 0.129115,
+     "placebo:4": 0.140703
+    },
+    "instructlab__instructlab-3125": {
+     "placebo:0": 0.0,
+     "placebo:1": 0.126519,
+     "placebo:2": 0.0,
+     "placebo:3": 0.04944,
+     "placebo:4": 0.061939
+    },
+    "instructlab__instructlab-3135": {
+     "placebo:0": 0.011364,
+     "placebo:1": 0.083905,
+     "placebo:2": 0.0,
+     "placebo:3": 0.202958,
+     "placebo:4": 0.253342
+    },
+    "instructlab__instructlab-3184": {
+     "placebo:0": 0.043036,
+     "placebo:1": 0.128875,
+     "placebo:2": 0.093667,
+     "placebo:3": 0.078504,
+     "placebo:4": 0.120933
+    }
+   },
+   "tau": 0.0,
+   "version": "rolling",
+   "versions": {
+    "instructlab__instructlab-1762": null,
+    "instructlab__instructlab-1847": null,
+    "instructlab__instructlab-1923": null,
+    "instructlab__instructlab-1945": null,
+    "instructlab__instructlab-2004": null,
+    "instructlab__instructlab-2005": null,
+    "instructlab__instructlab-2055": null,
+    "instructlab__instructlab-2065": null,
+    "instructlab__instructlab-2119": null,
+    "instructlab__instructlab-2144": null,
+    "instructlab__instructlab-2208": null,
+    "instructlab__instructlab-2236": null,
+    "instructlab__instructlab-2247": null,
+    "instructlab__instructlab-2316": null,
+    "instructlab__instructlab-2526": null,
+    "instructlab__instructlab-2540": null,
+    "instructlab__instructlab-2548": null,
+    "instructlab__instructlab-2572": null,
+    "instructlab__instructlab-2579": null,
+    "instructlab__instructlab-2585": null,
+    "instructlab__instructlab-2592": null,
+    "instructlab__instructlab-2741": null,
+    "instructlab__instructlab-2789": null,
+    "instructlab__instructlab-2825": null,
+    "instructlab__instructlab-2886": null,
+    "instructlab__instructlab-2927": null,
+    "instructlab__instructlab-3045": null,
+    "instructlab__instructlab-3060": null,
+    "instructlab__instructlab-3118": null,
+    "instructlab__instructlab-3125": null,
+    "instructlab__instructlab-3135": null,
+    "instructlab__instructlab-3184": null
+   }
+  },
+  "treatment": {
+   "file_hits": {
+    "instructlab__instructlab-1762": true,
+    "instructlab__instructlab-1847": true,
+    "instructlab__instructlab-1923": true,
+    "instructlab__instructlab-1945": true,
+    "instructlab__instructlab-2004": true,
+    "instructlab__instructlab-2005": true,
+    "instructlab__instructlab-2055": true,
+    "instructlab__instructlab-2065": true,
+    "instructlab__instructlab-2119": true,
+    "instructlab__instructlab-2144": true,
+    "instructlab__instructlab-2208": true,
+    "instructlab__instructlab-2236": true,
+    "instructlab__instructlab-2247": true,
+    "instructlab__instructlab-2316": true,
+    "instructlab__instructlab-2526": true,
+    "instructlab__instructlab-2540": true,
+    "instructlab__instructlab-2548": true,
+    "instructlab__instructlab-2572": false,
+    "instructlab__instructlab-2579": false,
+    "instructlab__instructlab-2585": true,
+    "instructlab__instructlab-2592": true,
+    "instructlab__instructlab-2741": false,
+    "instructlab__instructlab-2789": true,
+    "instructlab__instructlab-2825": false,
+    "instructlab__instructlab-2886": true,
+    "instructlab__instructlab-2927": false,
+    "instructlab__instructlab-3045": true,
+    "instructlab__instructlab-3060": true,
+    "instructlab__instructlab-3118": true,
+    "instructlab__instructlab-3125": true,
+    "instructlab__instructlab-3135": false,
+    "instructlab__instructlab-3184": false
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.6071,
+    "localization_rate": 0.8065,
+    "n_false_positive": 51,
+    "n_flags": 84,
+    "n_localized": 25,
+    "n_tasks": 31,
+    "per_repo": {
+     "instructlab/instructlab": {
+      "false_positive_rate": 0.6071,
+      "localization_rate": 0.8065,
+      "n_false_positive": 51,
+      "n_flags": 84,
+      "n_localized": 25,
+      "n_tasks": 31
+     }
+    }
+   },
+   "flags": {
+    "instructlab__instructlab-1762": [
+     "src/instructlab/configuration.py::_InstructlabDefaults.MODELS_DIR",
+     "src/instructlab/configuration.py::ensure_storage_directories_exist",
+     "src/instructlab/model/download.py::download"
+    ],
+    "instructlab__instructlab-1847": [
+     "src/instructlab/configuration.py::read_config",
+     "src/instructlab/configuration.py::get_default_config",
+     "src/instructlab/configuration.py::Lab.ensure_config"
+    ],
+    "instructlab__instructlab-1923": [
+     "src/instructlab/data/generate.py::generate",
+     "src/instructlab/configuration.py::_generate"
+    ],
+    "instructlab__instructlab-1945": [
+     "src/instructlab/model/train.py::train",
+     "src/instructlab/configuration.py::read_train_profile",
+     "src/instructlab/model/train.py::_run_phased_training"
+    ],
+    "instructlab__instructlab-2004": [
+     "src/instructlab/model/train.py::train",
+     "src/instructlab/configuration.py::_train.fill_defaults",
+     "src/instructlab/model/train.py::_run_phased_training"
+    ],
+    "instructlab__instructlab-2005": [
+     "src/instructlab/model/train.py::train",
+     "src/instructlab/model/train.py::_run_phased_training",
+     "src/instructlab/configuration.py::_train"
+    ],
+    "instructlab__instructlab-2055": [
+     "src/instructlab/config/init.py::init",
+     "src/instructlab/configuration.py::Config"
+    ],
+    "instructlab__instructlab-2065": [
+     "src/instructlab/model/evaluate.py::get_evaluator",
+     "src/instructlab/model/evaluate.py::evaluate",
+     "src/instructlab/config/init.py::init"
+    ],
+    "instructlab__instructlab-2119": [
+     "src/instructlab/model/evaluate.py::evaluate",
+     "src/instructlab/model/evaluate.py::validate_options",
+     "src/instructlab/model/evaluate.py::get_gpus"
+    ],
+    "instructlab__instructlab-2144": [
+     "src/instructlab/model/train.py::train",
+     "src/instructlab/model/evaluate.py::evaluate",
+     "src/instructlab/model/train.py::_mtbench"
+    ],
+    "instructlab__instructlab-2208": [
+     "src/instructlab/configuration.py::recreate_train_profiles",
+     "src/instructlab/configuration.py::get_default_config",
+     "src/instructlab/system/info.py::get_sysinfo"
+    ],
+    "instructlab__instructlab-2236": [
+     "src/instructlab/model/train.py::train",
+     "src/instructlab/model/train.py::_run_phased_training",
+     "src/instructlab/model/train.py::_training_phase"
+    ],
+    "instructlab__instructlab-2247": [
+     "src/instructlab/model/train.py::train",
+     "src/instructlab/model/train.py::_run_phased_training",
+     "src/instructlab/train/linux_train.py::linux_train"
+    ],
+    "instructlab__instructlab-2316": [
+     "src/instructlab/model/evaluate.py::display_branch_eval_summary",
+     "src/instructlab/model/evaluate.py::evaluate",
+     "src/instructlab/model/evaluate.py::qa_pairs_to_qna_to_avg_scores"
+    ],
+    "instructlab__instructlab-2526": [
+     "src/instructlab/configuration.py::recreate_train_profiles",
+     "src/instructlab/model/accelerated_train.py::_run_phased_training",
+     "src/instructlab/configuration.py::read_train_profile"
+    ],
+    "instructlab__instructlab-2540": [
+     "src/instructlab/configuration.py::_chat",
+     "src/instructlab/model/chat.py::ConsoleChatBot.start_prompt",
+     "src/instructlab/model/chat.py::chat_cli"
+    ],
+    "instructlab__instructlab-2548": [
+     "src/instructlab/cli/model/train.py::train",
+     "src/instructlab/cli/model/train.py::is_high_fidelity",
+     "src/instructlab/cli/model/train.py::<module>"
+    ],
+    "instructlab__instructlab-2572": [
+     "src/instructlab/configuration.py::read_and_create_system_profiles",
+     "src/instructlab/configuration.py::recreate_system_profiles",
+     "src/instructlab/system/info.py::info"
+    ],
+    "instructlab__instructlab-2579": [
+     "src/instructlab/configuration.py::read_and_create_system_profiles",
+     "src/instructlab/configuration.py::recreate_system_profiles",
+     "src/instructlab/configuration.py::ensure_storage_directories_exist"
+    ],
+    "instructlab__instructlab-2585": [
+     "src/instructlab/configuration.py::get_model_family"
+    ],
+    "instructlab__instructlab-2592": [
+     "src/instructlab/model/chat.py::ConsoleChatBot._right_prompt",
+     "src/instructlab/model/chat.py::ConsoleChatBot.start_prompt",
+     "src/instructlab/model/chat.py::chat"
+    ],
+    "instructlab__instructlab-2741": [
+     "src/instructlab/model/download.py::Downloader.download",
+     "src/instructlab/model/download.py::HFDownloader.download",
+     "src/instructlab/model/download.py::<module>"
+    ],
+    "instructlab__instructlab-2789": [
+     "src/instructlab/configuration.py::_chat",
+     "src/instructlab/configuration.py::Config",
+     "src/instructlab/configuration.py::_train"
+    ],
+    "instructlab__instructlab-2825": [
+     "src/instructlab/model/backends/llama_cpp.py::Server.__init__",
+     "src/instructlab/model/backends/llama_cpp.py::server",
+     "src/instructlab/model/backends/llama_cpp.py::augment_chat_template"
+    ],
+    "instructlab__instructlab-2886": [
+     "src/instructlab/cli/model/chat.py::chat",
+     "src/instructlab/configuration.py::_rag",
+     "src/instructlab/configuration.py::_chat"
+    ],
+    "instructlab__instructlab-2927": [
+     "src/instructlab/configuration.py::_serve_vllm",
+     "src/instructlab/model/backends/vllm.py::build_vllm_cmd",
+     "src/instructlab/cli/model/serve.py::serve"
+    ],
+    "instructlab__instructlab-3045": [
+     "src/instructlab/configuration.py::Config",
+     "src/instructlab/cli/model/train.py::train",
+     "src/instructlab/configuration.py::_train"
+    ],
+    "instructlab__instructlab-3060": [
+     "src/instructlab/rag/taxonomy_utils.py::lookup_knowledge_files",
+     "src/instructlab/rag/convert.py::convert_documents_from_taxonomy",
+     "src/instructlab/cli/rag/convert.py::convert"
+    ],
+    "instructlab__instructlab-3118": [
+     "src/instructlab/cli/model/download.py::download",
+     "src/instructlab/defaults.py::_InstructlabDefaults.DEFAULT_EMBEDDING_MODEL",
+     "src/instructlab/cli/model/download.py::<module>"
+    ],
+    "instructlab__instructlab-3125": [
+     "src/instructlab/process/process.py::ProcessRegistry.load",
+     "src/instructlab/process/process.py::ProcessRegistry.persist",
+     "src/instructlab/cli/process/list.py::list"
+    ],
+    "instructlab__instructlab-3135": [
+     "src/instructlab/log.py::CustomFormatter.format",
+     "src/instructlab/log.py::configure_logging",
+     "src/instructlab/log.py::<module>"
+    ],
+    "instructlab__instructlab-3184": [
+     "src/instructlab/cli/rag/ingest.py::ingest",
+     "src/instructlab/rag/haystack/document_store_ingestor.py::HaystackDocumentStoreIngestor.ingest_documents",
+     "src/instructlab/rag/convert.py::_initialize_docling"
+    ]
+   },
+   "hits": {
+    "instructlab__instructlab-1762": true,
+    "instructlab__instructlab-1847": true,
+    "instructlab__instructlab-1923": true,
+    "instructlab__instructlab-1945": false,
+    "instructlab__instructlab-2004": true,
+    "instructlab__instructlab-2005": true,
+    "instructlab__instructlab-2055": true,
+    "instructlab__instructlab-2065": true,
+    "instructlab__instructlab-2119": false,
+    "instructlab__instructlab-2144": true,
+    "instructlab__instructlab-2208": true,
+    "instructlab__instructlab-2236": true,
+    "instructlab__instructlab-2247": true,
+    "instructlab__instructlab-2316": true,
+    "instructlab__instructlab-2526": false,
+    "instructlab__instructlab-2540": true,
+    "instructlab__instructlab-2548": true,
+    "instructlab__instructlab-2572": false,
+    "instructlab__instructlab-2585": false,
+    "instructlab__instructlab-2592": false,
+    "instructlab__instructlab-2741": false,
+    "instructlab__instructlab-2789": false,
+    "instructlab__instructlab-2825": false,
+    "instructlab__instructlab-2886": true,
+    "instructlab__instructlab-2927": false,
+    "instructlab__instructlab-3045": false,
+    "instructlab__instructlab-3060": true,
+    "instructlab__instructlab-3118": true,
+    "instructlab__instructlab-3125": true,
+    "instructlab__instructlab-3135": false,
+    "instructlab__instructlab-3184": false
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": -2.99,
+    "localization_lift_pts": 6.45
+   },
+   "metrics": {
+    "false_positive_rate": 0.6292,
+    "localization_rate": 0.5806,
+    "n_false_positive": 56,
+    "n_flags": 89,
+    "n_localized": 18,
+    "n_tasks": 31,
+    "per_repo": {
+     "instructlab/instructlab": {
+      "false_positive_rate": 0.6292,
+      "localization_rate": 0.5806,
+      "n_false_positive": 56,
+      "n_flags": 89,
+      "n_localized": 18,
+      "n_tasks": 31
+     }
+    }
+   },
+   "retrieved": {
+    "instructlab__instructlab-1762": [
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f"
+    ],
+    "instructlab__instructlab-1847": [
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f"
+    ],
+    "instructlab__instructlab-1923": [
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f"
+    ],
+    "instructlab__instructlab-1945": [
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f"
+    ],
+    "instructlab__instructlab-2004": [
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f"
+    ],
+    "instructlab__instructlab-2005": [
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f"
+    ],
+    "instructlab__instructlab-2055": [
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f",
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029"
+    ],
+    "instructlab__instructlab-2065": [
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f"
+    ],
+    "instructlab__instructlab-2119": [
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f",
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029"
+    ],
+    "instructlab__instructlab-2144": [
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f"
+    ],
+    "instructlab__instructlab-2208": [
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f",
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029"
+    ],
+    "instructlab__instructlab-2236": [
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f",
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151"
+    ],
+    "instructlab__instructlab-2247": [
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f",
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f"
+    ],
+    "instructlab__instructlab-2316": [
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f",
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f"
+    ],
+    "instructlab__instructlab-2526": [
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f",
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f"
+    ],
+    "instructlab__instructlab-2540": [
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f",
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f",
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151"
+    ],
+    "instructlab__instructlab-2548": [
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f",
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f"
+    ],
+    "instructlab__instructlab-2572": [
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f",
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f"
+    ],
+    "instructlab__instructlab-2579": [
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f",
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f",
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029"
+    ],
+    "instructlab__instructlab-2585": [
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f",
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f"
+    ],
+    "instructlab__instructlab-2592": [
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f",
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f"
+    ],
+    "instructlab__instructlab-2741": [
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f",
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f"
+    ],
+    "instructlab__instructlab-2789": [
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f",
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f"
+    ],
+    "instructlab__instructlab-2825": [
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f",
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f"
+    ],
+    "instructlab__instructlab-2886": [
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f",
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f"
+    ],
+    "instructlab__instructlab-2927": [
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f",
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f"
+    ],
+    "instructlab__instructlab-3045": [
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f",
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f",
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029"
+    ],
+    "instructlab__instructlab-3060": [
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f",
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f",
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151"
+    ],
+    "instructlab__instructlab-3118": [
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f",
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f"
+    ],
+    "instructlab__instructlab-3125": [
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f",
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f"
+    ],
+    "instructlab__instructlab-3135": [
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f",
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f",
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029"
+    ],
+    "instructlab__instructlab-3184": [
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f",
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f"
+    ]
+   },
+   "scores": {
+    "instructlab__instructlab-1762": {
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.107507
+    },
+    "instructlab__instructlab-1847": {
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.447198
+    },
+    "instructlab__instructlab-1923": {
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.170238
+    },
+    "instructlab__instructlab-1945": {
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.141017
+    },
+    "instructlab__instructlab-2004": {
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.17834
+    },
+    "instructlab__instructlab-2005": {
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.168115,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.463377
+    },
+    "instructlab__instructlab-2055": {
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.30168,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.104814
+    },
+    "instructlab__instructlab-2065": {
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.260136,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.27877
+    },
+    "instructlab__instructlab-2119": {
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.181038,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.124277,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.206115
+    },
+    "instructlab__instructlab-2144": {
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.165979,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.266045,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.38459
+    },
+    "instructlab__instructlab-2208": {
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.215657,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.212843,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.253605
+    },
+    "instructlab__instructlab-2236": {
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.197033,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.461623,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.15216
+    },
+    "instructlab__instructlab-2247": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.529055,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.136577,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.477288,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.468933,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.315728
+    },
+    "instructlab__instructlab-2316": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.342034,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.188263,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.22037,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.263733,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.260571
+    },
+    "instructlab__instructlab-2526": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.286429,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.15666,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.357297,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.324717,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.182518
+    },
+    "instructlab__instructlab-2540": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.298273,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.229932,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.137354,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.174566,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.086444
+    },
+    "instructlab__instructlab-2548": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.614635,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.20901,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.578764,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.594351,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.252423
+    },
+    "instructlab__instructlab-2572": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.085868,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.116406,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.008248,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.0,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.063146
+    },
+    "instructlab__instructlab-2579": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.272101,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.266094,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.257911,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.217912,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.278658
+    },
+    "instructlab__instructlab-2585": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.327414,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.235011,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.379453,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.301908,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.261712
+    },
+    "instructlab__instructlab-2592": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.141363,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.076024,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.059418,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.169906,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.161256
+    },
+    "instructlab__instructlab-2741": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.342008,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.203688,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.170713,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.293839,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.271461
+    },
+    "instructlab__instructlab-2789": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.351648,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.185257,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.182262,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.238191,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.190162
+    },
+    "instructlab__instructlab-2825": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.307722,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.177927,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.317219,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.300338,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.272424
+    },
+    "instructlab__instructlab-2886": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.371219,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.280171,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.105591,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.256143,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.145466
+    },
+    "instructlab__instructlab-2927": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.413589,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.12981,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.312297,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.318144,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.142807
+    },
+    "instructlab__instructlab-3045": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.299792,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.318072,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.310525,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.240166,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.466435
+    },
+    "instructlab__instructlab-3060": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.336884,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.278449,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.310186,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.332376,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.241668
+    },
+    "instructlab__instructlab-3118": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.452432,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.23584,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.223095,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.269367,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.256608
+    },
+    "instructlab__instructlab-3125": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.308313,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.20503,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.082067,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.154896,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.213331
+    },
+    "instructlab__instructlab-3135": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.267031,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.421243,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.278118,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.202523,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.295344
+    },
+    "instructlab__instructlab-3184": {
+     "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": 0.318677,
+     "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": 0.115769,
+     "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": 0.214988,
+     "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": 0.29841,
+     "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": 0.224508
+    }
+   },
+   "tau": 0.0,
+   "version": "rolling",
+   "versions": {
+    "instructlab__instructlab-1762": "3451773e48ca62325adf5b18a32782d5980ef7f7486420ade436369a1b49c94e",
+    "instructlab__instructlab-1847": "3451773e48ca62325adf5b18a32782d5980ef7f7486420ade436369a1b49c94e",
+    "instructlab__instructlab-1923": "3451773e48ca62325adf5b18a32782d5980ef7f7486420ade436369a1b49c94e",
+    "instructlab__instructlab-1945": "3451773e48ca62325adf5b18a32782d5980ef7f7486420ade436369a1b49c94e",
+    "instructlab__instructlab-2004": "3451773e48ca62325adf5b18a32782d5980ef7f7486420ade436369a1b49c94e",
+    "instructlab__instructlab-2005": "451e18eefcffb4a7b4b373456ba095adc4ea53e17c688a3a927ecd385de64afe",
+    "instructlab__instructlab-2055": "451e18eefcffb4a7b4b373456ba095adc4ea53e17c688a3a927ecd385de64afe",
+    "instructlab__instructlab-2065": "451e18eefcffb4a7b4b373456ba095adc4ea53e17c688a3a927ecd385de64afe",
+    "instructlab__instructlab-2119": "1cc196c02ae5afdf3653191d439bd8f0b832f4317e8bdba6974db6b989dac297",
+    "instructlab__instructlab-2144": "1cc196c02ae5afdf3653191d439bd8f0b832f4317e8bdba6974db6b989dac297",
+    "instructlab__instructlab-2208": "1cc196c02ae5afdf3653191d439bd8f0b832f4317e8bdba6974db6b989dac297",
+    "instructlab__instructlab-2236": "1cc196c02ae5afdf3653191d439bd8f0b832f4317e8bdba6974db6b989dac297",
+    "instructlab__instructlab-2247": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-2316": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-2526": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-2540": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-2548": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-2572": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-2579": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-2585": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-2592": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-2741": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-2789": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-2825": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-2886": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-2927": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-3045": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-3060": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-3118": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-3125": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-3135": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19",
+    "instructlab__instructlab-3184": "6269d4e20ecee9cd1cfb27fa5f8aaa2753ce205674acd6aa7185c4207b79be19"
+   }
+  }
+ },
+ "control": {
+  "false_positive_rate": 0.6591,
+  "localization_rate": 0.5161,
+  "n_false_positive": 58,
+  "n_flags": 88,
+  "n_localized": 16,
+  "n_tasks": 31,
+  "per_repo": {
+   "instructlab/instructlab": {
+    "false_positive_rate": 0.6591,
+    "localization_rate": 0.5161,
+    "n_false_positive": 58,
+    "n_flags": 88,
+    "n_localized": 16,
+    "n_tasks": 31
+   }
+  }
+ },
+ "control_flags": {
+  "instructlab__instructlab-1762": [
+   "src/instructlab/model/download.py",
+   "src/instructlab/configuration.py",
+   "src/instructlab/configuration.py"
+  ],
+  "instructlab__instructlab-1847": [
+   "src/instructlab/configuration.py",
+   "src/instructlab/configuration.py",
+   "src/instructlab/configuration.py"
+  ],
+  "instructlab__instructlab-1923": [
+   "src/instructlab/data/generate.py",
+   "src/instructlab/configuration.py",
+   "src/instructlab/__main__.py"
+  ],
+  "instructlab__instructlab-1945": [
+   "src/instructlab/model/train.py",
+   "src/instructlab/configuration.py",
+   "src/instructlab/model/train.py"
+  ],
+  "instructlab__instructlab-2004": [
+   "src/instructlab/model/train.py",
+   "src/instructlab/model/train.py",
+   "src/instructlab/configuration.py"
+  ],
+  "instructlab__instructlab-2005": [
+   "src/instructlab/model/train.py",
+   "src/instructlab/model/train.py",
+   "src/instructlab/model/train.py"
+  ],
+  "instructlab__instructlab-2055": [
+   "src/instructlab/config/config.py",
+   "src/instructlab/config/init.py"
+  ],
+  "instructlab__instructlab-2065": [
+   "src/instructlab/model/evaluate.py",
+   "src/instructlab/model/evaluate.py",
+   "src/instructlab/config/init.py"
+  ],
+  "instructlab__instructlab-2119": [
+   "src/instructlab/model/evaluate.py",
+   "src/instructlab/model/evaluate.py",
+   "src/instructlab/model/evaluate.py"
+  ],
+  "instructlab__instructlab-2144": [
+   "src/instructlab/model/train.py",
+   "src/instructlab/model/evaluate.py",
+   "src/instructlab/configuration.py"
+  ],
+  "instructlab__instructlab-2208": [
+   "src/instructlab/configuration.py",
+   "src/instructlab/configuration.py",
+   "src/instructlab/system/info.py"
+  ],
+  "instructlab__instructlab-2236": [
+   "src/instructlab/model/train.py",
+   "src/instructlab/model/train.py",
+   "src/instructlab/model/train.py"
+  ],
+  "instructlab__instructlab-2247": [
+   "src/instructlab/train/linux_train.py",
+   "src/instructlab/train/linux_train.py"
+  ],
+  "instructlab__instructlab-2316": [
+   "src/instructlab/model/evaluate.py",
+   "src/instructlab/model/evaluate.py",
+   "src/instructlab/model/evaluate.py"
+  ],
+  "instructlab__instructlab-2526": [
+   "src/instructlab/configuration.py",
+   "src/instructlab/configuration.py",
+   "src/instructlab/model/accelerated_train.py"
+  ],
+  "instructlab__instructlab-2540": [
+   "src/instructlab/model/chat.py",
+   "src/instructlab/model/chat.py",
+   "src/instructlab/config/config.py"
+  ],
+  "instructlab__instructlab-2548": [
+   "src/instructlab/cli/model/train.py",
+   "src/instructlab/cli/model/train.py",
+   "src/instructlab/cli/model/train.py"
+  ],
+  "instructlab__instructlab-2572": [
+   "src/instructlab/configuration.py",
+   "src/instructlab/configuration.py",
+   "src/instructlab/system/system.py"
+  ],
+  "instructlab__instructlab-2579": [
+   "src/instructlab/configuration.py",
+   "src/instructlab/configuration.py",
+   "src/instructlab/configuration.py"
+  ],
+  "instructlab__instructlab-2585": [
+   "src/instructlab/configuration.py",
+   "src/instructlab/configuration.py"
+  ],
+  "instructlab__instructlab-2592": [
+   "src/instructlab/model/chat.py",
+   "src/instructlab/model/chat.py",
+   "src/instructlab/model/chat.py"
+  ],
+  "instructlab__instructlab-2741": [
+   "src/instructlab/model/download.py",
+   "src/instructlab/model/download.py",
+   "src/instructlab/model/download.py"
+  ],
+  "instructlab__instructlab-2789": [
+   "src/instructlab/configuration.py",
+   "src/instructlab/configuration.py"
+  ],
+  "instructlab__instructlab-2825": [
+   "src/instructlab/model/backends/llama_cpp.py",
+   "src/instructlab/model/backends/llama_cpp.py"
+  ],
+  "instructlab__instructlab-2886": [
+   "src/instructlab/cli/model/chat.py",
+   "src/instructlab/configuration.py",
+   "src/instructlab/cli/model/chat.py"
+  ],
+  "instructlab__instructlab-2927": [
+   "src/instructlab/configuration.py",
+   "src/instructlab/model/backends/vllm.py",
+   "src/instructlab/cli/model/serve.py"
+  ],
+  "instructlab__instructlab-3045": [
+   "src/instructlab/configuration.py",
+   "src/instructlab/configuration.py",
+   "src/instructlab/configuration.py"
+  ],
+  "instructlab__instructlab-3060": [
+   "src/instructlab/rag/taxonomy_utils.py",
+   "src/instructlab/rag/convert.py",
+   "src/instructlab/cli/rag/convert.py"
+  ],
+  "instructlab__instructlab-3118": [
+   "src/instructlab/cli/model/download.py",
+   "src/instructlab/defaults.py",
+   "src/instructlab/cli/model/download.py"
+  ],
+  "instructlab__instructlab-3125": [
+   "src/instructlab/process/process.py",
+   "src/instructlab/process/process.py",
+   "src/instructlab/cli/process/list.py"
+  ],
+  "instructlab__instructlab-3135": [
+   "src/instructlab/log.py",
+   "src/instructlab/log.py",
+   "src/instructlab/log.py"
+  ],
+  "instructlab__instructlab-3184": [
+   "src/instructlab/cli/rag/ingest.py",
+   "src/instructlab/rag/haystack/document_store_ingestor.py",
+   "src/instructlab/rag/convert.py"
+  ]
+ },
+ "errors": {},
+ "gold": {
+  "instructlab__instructlab-1762": [
+   "src/instructlab/configuration.py::_InstructlabDefaults",
+   "src/instructlab/configuration.py::_InstructlabDefaults.CHECKPOINTS_DIR",
+   "src/instructlab/configuration.py::_InstructlabDefaults.DATASETS_DIR",
+   "src/instructlab/configuration.py::_InstructlabDefaults.DEFAULT_MODEL",
+   "src/instructlab/configuration.py::_InstructlabDefaults.MODELS_DIR"
+  ],
+  "instructlab__instructlab-1847": [
+   "src/instructlab/configuration.py::<module>",
+   "src/instructlab/configuration.py::Lab.ensure_config"
+  ],
+  "instructlab__instructlab-1923": [
+   "src/instructlab/configuration.py::<module>",
+   "src/instructlab/configuration.py::_generate",
+   "src/instructlab/configuration.py::_mmlu",
+   "src/instructlab/data/generate.py::<module>",
+   "src/instructlab/data/generate.py::generate",
+   "src/instructlab/model/backends/backends.py::<module>",
+   "src/instructlab/model/backends/backends.py::BackendServer.register_resources",
+   "src/instructlab/model/backends/backends.py::safe_close_all",
+   "src/instructlab/model/backends/llama_cpp.py::<module>",
+   "src/instructlab/model/backends/llama_cpp.py::Server.shutdown",
+   "src/instructlab/model/backends/llama_cpp.py::server",
+   "src/instructlab/model/backends/vllm.py::<module>",
+   "src/instructlab/model/backends/vllm.py::Server.shutdown",
+   "src/instructlab/model/backends/vllm.py::format_template",
+   "src/instructlab/model/evaluate.py::evaluate"
+  ],
+  "instructlab__instructlab-1945": [
+   "src/instructlab/configuration.py::<module>",
+   "src/instructlab/configuration.py::_general.after_debug_level",
+   "src/instructlab/configuration.py::_generate",
+   "src/instructlab/configuration.py::_mtbench",
+   "src/instructlab/configuration.py::_serve",
+   "src/instructlab/configuration.py::_train",
+   "src/instructlab/configuration.py::ensure_storage_directories_exist",
+   "src/instructlab/configuration.py::get_model_family"
+  ],
+  "instructlab__instructlab-2004": [
+   "src/instructlab/configuration.py::_train",
+   "src/instructlab/model/train.py::train"
+  ],
+  "instructlab__instructlab-2005": [
+   "src/instructlab/configuration.py::<module>",
+   "src/instructlab/configuration.py::STORAGE_DIR_NAMES",
+   "src/instructlab/configuration.py::_train",
+   "src/instructlab/configuration.py::get_default_config",
+   "src/instructlab/model/train.py::_run_phased_training",
+   "src/instructlab/model/train.py::_training_phase",
+   "src/instructlab/model/train.py::train"
+  ],
+  "instructlab__instructlab-2055": [
+   "src/instructlab/config/show.py::<module>",
+   "src/instructlab/config/show.py::show",
+   "src/instructlab/configuration.py::<module>",
+   "src/instructlab/configuration.py::Config",
+   "src/instructlab/configuration.py::Config.fill_defaults",
+   "src/instructlab/configuration.py::STORAGE_DIR_NAMES",
+   "src/instructlab/configuration.py::_chat",
+   "src/instructlab/configuration.py::_chat.fill_defaults",
+   "src/instructlab/configuration.py::_evaluate",
+   "src/instructlab/configuration.py::_evaluate.fill_defaults",
+   "src/instructlab/configuration.py::_general",
+   "src/instructlab/configuration.py::_general.validate_log_level",
+   "src/instructlab/configuration.py::_generate",
+   "src/instructlab/configuration.py::_generate.fill_defaults",
+   "src/instructlab/configuration.py::_mmlu",
+   "src/instructlab/configuration.py::_mmlu.fill_defaults",
+   "src/instructlab/configuration.py::_mmlubranch",
+   "src/instructlab/configuration.py::_mmlubranch.fill_defaults",
+   "src/instructlab/configuration.py::_mtbench",
+   "src/instructlab/configuration.py::_mtbench.fill_defaults",
+   "src/instructlab/configuration.py::_mtbenchbranch",
+   "src/instructlab/configuration.py::_mtbenchbranch.fill_defaults",
+   "src/instructlab/configuration.py::_serve",
+   "src/instructlab/configuration.py::_serve.api_base",
+   "src/instructlab/configuration.py::_serve_llama_cpp",
+   "src/instructlab/configuration.py::_serve_vllm",
+   "src/instructlab/configuration.py::_train",
+   "src/instructlab/configuration.py::_train.fill_defaults",
+   "src/instructlab/configuration.py::finish_additional_train_args",
+   "src/instructlab/configuration.py::get_api_base",
+   "src/instructlab/configuration.py::read_config",
+   "src/instructlab/configuration.py::read_train_profile",
+   "src/instructlab/configuration.py::recreate_train_profiles",
+   "src/instructlab/configuration.py::write_config"
+  ],
+  "instructlab__instructlab-2065": [
+   "src/instructlab/configuration.py::<module>",
+   "src/instructlab/configuration.py::_generate",
+   "src/instructlab/configuration.py::_mmlu",
+   "src/instructlab/configuration.py::_mmlubranch",
+   "src/instructlab/configuration.py::_mtbenchbranch",
+   "src/instructlab/model/evaluate.py::<module>",
+   "src/instructlab/model/evaluate.py::evaluate",
+   "src/instructlab/model/evaluate.py::get_evaluator",
+   "src/instructlab/model/evaluate.py::launch_server",
+   "src/instructlab/model/evaluate.py::sort_score"
+  ],
+  "instructlab__instructlab-2119": [
+   "src/instructlab/model/evaluate.py::launch_server"
+  ],
+  "instructlab__instructlab-2144": [
+   "src/instructlab/configuration.py::<module>",
+   "src/instructlab/configuration.py::_mtbench",
+   "src/instructlab/model/evaluate.py::<module>",
+   "src/instructlab/model/evaluate.py::Benchmark",
+   "src/instructlab/model/evaluate.py::evaluate",
+   "src/instructlab/model/evaluate.py::get_cpu_count",
+   "src/instructlab/model/evaluate.py::get_evaluator",
+   "src/instructlab/model/evaluate.py::launch_server",
+   "src/instructlab/model/evaluate.py::validate_model",
+   "src/instructlab/model/train.py::<module>",
+   "src/instructlab/model/train.py::_mtbench"
+  ],
+  "instructlab__instructlab-2208": [
+   "src/instructlab/config/init.py::<module>",
+   "src/instructlab/config/init.py::check_if_configs_exist",
+   "src/instructlab/config/init.py::init",
+   "src/instructlab/configuration.py::<module>",
+   "src/instructlab/configuration.py::Config",
+   "src/instructlab/configuration.py::get_default_config",
+   "src/instructlab/configuration.py::recreate_train_profiles",
+   "src/instructlab/configuration.py::storage_dirs_exist"
+  ],
+  "instructlab__instructlab-2236": [
+   "src/instructlab/configuration.py::<module>",
+   "src/instructlab/configuration.py::Config",
+   "src/instructlab/configuration.py::_train",
+   "src/instructlab/model/evaluate.py::evaluate",
+   "src/instructlab/model/phased_training.py::<module>",
+   "src/instructlab/model/train.py::<module>",
+   "src/instructlab/model/train.py::_evaluate_dir_of_checkpoints",
+   "src/instructlab/model/train.py::_mmlu",
+   "src/instructlab/model/train.py::_mtbench",
+   "src/instructlab/model/train.py::_prepare_phased_base_dir",
+   "src/instructlab/model/train.py::_run_phased_training",
+   "src/instructlab/model/train.py::_setup_phase_dirs",
+   "src/instructlab/model/train.py::_training_phase",
+   "src/instructlab/model/train.py::is_high_fidelity",
+   "src/instructlab/model/train.py::train"
+  ],
+  "instructlab__instructlab-2247": [
+   "src/instructlab/configuration.py::<module>",
+   "src/instructlab/configuration.py::map_train_to_library",
+   "src/instructlab/model/full_train.py::<module>",
+   "src/instructlab/model/train.py::<module>",
+   "src/instructlab/model/train.py::_mtbench",
+   "src/instructlab/model/train.py::_prepare_phased_base_dir",
+   "src/instructlab/model/train.py::train"
+  ],
+  "instructlab__instructlab-2316": [
+   "src/instructlab/model/evaluate.py::<module>",
+   "src/instructlab/model/evaluate.py::display_branch_eval_summary",
+   "src/instructlab/model/evaluate.py::display_error_rate",
+   "src/instructlab/model/evaluate.py::display_model",
+   "src/instructlab/model/evaluate.py::display_models",
+   "src/instructlab/model/evaluate.py::evaluate",
+   "src/instructlab/model/evaluate.py::qa_pairs_to_qna_to_avg_scores",
+   "src/instructlab/model/evaluate.py::sort_score",
+   "src/instructlab/model/evaluate.py::validate_model"
+  ],
+  "instructlab__instructlab-2526": [
+   "src/instructlab/configuration.py::_train"
+  ],
+  "instructlab__instructlab-2540": [
+   "src/instructlab/configuration.py::<module>",
+   "src/instructlab/configuration.py::_chat",
+   "src/instructlab/configuration.py::_serve_vllm",
+   "src/instructlab/model/chat.py::ConsoleChatBot.__init__",
+   "src/instructlab/model/chat.py::ConsoleChatBot.start_prompt",
+   "src/instructlab/model/chat.py::chat",
+   "src/instructlab/model/chat.py::chat_cli"
+  ],
+  "instructlab__instructlab-2548": [
+   "src/instructlab/cli/model/train.py::<module>",
+   "src/instructlab/cli/model/train.py::train"
+  ],
+  "instructlab__instructlab-2572": [
+   "src/instructlab/config/init.py::<module>",
+   "src/instructlab/config/init.py::check_if_configs_exist",
+   "src/instructlab/config/init.py::get_separator",
+   "src/instructlab/config/init.py::init",
+   "src/instructlab/config/init.py::walk_and_print_system_profiles"
+  ],
+  "instructlab__instructlab-2585": [
+   "src/instructlab/clickext.py::ConfigOption",
+   "src/instructlab/configuration.py::<module>",
+   "src/instructlab/configuration.py::_serve_llama_cpp",
+   "src/instructlab/configuration.py::_serve_vllm",
+   "src/instructlab/defaults.py::<module>",
+   "src/instructlab/defaults.py::_InstructlabDefaults",
+   "src/instructlab/defaults.py::_InstructlabDefaults.DEFAULT_CHAT_MODEL",
+   "src/instructlab/defaults.py::_InstructlabDefaults.DEFAULT_TEACHER_MODEL",
+   "src/instructlab/model/backends/common.py::<module>",
+   "src/instructlab/model/chat.py::chat",
+   "src/instructlab/model/chat.py::chat_cli",
+   "src/instructlab/model/download.py::download",
+   "src/instructlab/train/lora_mlx/utils.py::fetch_from_hub"
+  ],
+  "instructlab__instructlab-2592": [
+   "src/instructlab/cli/data/generate.py::<module>",
+   "src/instructlab/cli/data/generate.py::generate",
+   "src/instructlab/cli/model/train.py::train",
+   "src/instructlab/common.py::<module>",
+   "src/instructlab/configuration.py::<module>",
+   "src/instructlab/configuration.py::map_train_to_library",
+   "src/instructlab/data/generate_data.py::gen_data",
+   "src/instructlab/defaults.py::_InstructlabDefaults",
+   "src/instructlab/defaults.py::_InstructlabDefaults.__init__",
+   "src/instructlab/model/backends/common.py::<module>",
+   "src/instructlab/model/backends/common.py::ServerException",
+   "src/instructlab/model/backends/common.py::get_model_template",
+   "src/instructlab/model/backends/vllm.py::<module>",
+   "src/instructlab/model/backends/vllm.py::Server.get_backend_type",
+   "src/instructlab/model/backends/vllm.py::build_vllm_cmd",
+   "src/instructlab/model/backends/vllm.py::format_template",
+   "src/instructlab/model/backends/vllm.py::get_argument",
+   "src/instructlab/model/chat.py::<module>",
+   "src/instructlab/model/chat.py::ConsoleChatBot",
+   "src/instructlab/model/chat.py::ConsoleChatBot._handle_context",
+   "src/instructlab/model/chat.py::ConsoleChatBot._handle_list_contexts",
+   "src/instructlab/model/chat.py::ConsoleChatBot._update_conversation",
+   "src/instructlab/model/chat.py::chat_cli",
+   "src/instructlab/train/linux_train.py::<module>",
+   "src/instructlab/train/linux_train.py::create_prompt",
+   "src/instructlab/train/linux_train.py::linux_train",
+   "src/instructlab/train/lora_mlx/make_data.py::make_data",
+   "src/instructlab/utils.py::<module>",
+   "src/instructlab/utils.py::contains_argument",
+   "src/instructlab/utils.py::get_sysprompt"
+  ],
+  "instructlab__instructlab-2741": [
+   "src/instructlab/cli/data/generate.py::generate",
+   "src/instructlab/cli/model/train.py::train",
+   "src/instructlab/model/accelerated_train.py::<module>",
+   "src/instructlab/model/accelerated_train.py::_run_phased_training",
+   "src/instructlab/model/convert.py::convert",
+   "src/instructlab/model/evaluate.py::evaluate"
+  ],
+  "instructlab__instructlab-2789": [
+   "src/instructlab/cli/data/generate.py::generate",
+   "src/instructlab/configuration.py::<module>",
+   "src/instructlab/configuration.py::_general",
+   "src/instructlab/configuration.py::_general.validate_log_level",
+   "src/instructlab/configuration.py::map_train_to_library"
+  ],
+  "instructlab__instructlab-2825": [
+   "src/instructlab/cli/model/serve.py::<module>",
+   "src/instructlab/cli/model/serve.py::serve",
+   "src/instructlab/configuration.py::<module>",
+   "src/instructlab/configuration.py::_serve",
+   "src/instructlab/configuration.py::_serve_llama_cpp",
+   "src/instructlab/configuration.py::_serve_server",
+   "src/instructlab/configuration.py::read_config",
+   "src/instructlab/configuration.py::write_config_to_yaml",
+   "src/instructlab/defaults.py::<module>",
+   "src/instructlab/defaults.py::_InstructlabDefaults",
+   "src/instructlab/defaults.py::_InstructlabDefaults.CONFIG_FILE",
+   "src/instructlab/defaults.py::_InstructlabDefaults.MODELS_DIR",
+   "src/instructlab/model/chat.py::<module>",
+   "src/instructlab/model/chat.py::ConsoleChatBot.__init__",
+   "src/instructlab/model/chat.py::ConsoleChatBot.start_prompt",
+   "src/instructlab/model/chat.py::chat",
+   "src/instructlab/model/chat.py::chat_cli",
+   "src/instructlab/model/serve_backend.py::<module>",
+   "src/instructlab/model/serve_backend.py::serve_backend",
+   "src/instructlab/taxonomy/diff.py::diff"
+  ],
+  "instructlab__instructlab-2886": [
+   "src/instructlab/cli/model/chat.py::<module>",
+   "src/instructlab/cli/model/chat.py::chat",
+   "src/instructlab/configuration.py::<module>",
+   "src/instructlab/configuration.py::_chat",
+   "src/instructlab/configuration.py::_convert",
+   "src/instructlab/configuration.py::_document_store",
+   "src/instructlab/configuration.py::_embedding_model",
+   "src/instructlab/configuration.py::_embedding_model.local_model_path",
+   "src/instructlab/configuration.py::_general.after_debug_level",
+   "src/instructlab/configuration.py::_metadata",
+   "src/instructlab/configuration.py::_rag",
+   "src/instructlab/configuration.py::_retriever",
+   "src/instructlab/configuration.py::_train",
+   "src/instructlab/defaults.py::_InstructlabDefaults",
+   "src/instructlab/defaults.py::_InstructlabDefaults.DEFAULT_EMBEDDING_MODEL",
+   "src/instructlab/defaults.py::_InstructlabDefaults.DEFAULT_TEACHER_MODEL",
+   "src/instructlab/model/chat.py::<module>",
+   "src/instructlab/model/chat.py::ConsoleChatBot.__init__",
+   "src/instructlab/model/chat.py::ConsoleChatBot.start_prompt",
+   "src/instructlab/model/chat.py::chat_cli",
+   "src/instructlab/model/chat.py::chat_model"
+  ],
+  "instructlab__instructlab-2927": [
+   "src/instructlab/model/serve_backend.py::<module>",
+   "src/instructlab/model/serve_backend.py::serve_backend",
+   "src/instructlab/model/serve_backend.py::signal_handler"
+  ],
+  "instructlab__instructlab-3045": [
+   "src/instructlab/configuration.py::<module>",
+   "src/instructlab/configuration.py::_generate",
+   "src/instructlab/configuration.py::_mmlu",
+   "src/instructlab/defaults.py::_InstructlabDefaults",
+   "src/instructlab/defaults.py::_InstructlabDefaults.EVAL_DATA_DIR",
+   "src/instructlab/defaults.py::_InstructlabDefaults.PROMPT_FILE",
+   "src/instructlab/defaults.py::_InstructlabDefaults.SEED_FILE"
+  ],
+  "instructlab__instructlab-3060": [
+   "src/instructlab/rag/taxonomy_utils.py::lookup_knowledge_files"
+  ],
+  "instructlab__instructlab-3118": [
+   "src/instructlab/cli/model/download.py::download",
+   "src/instructlab/defaults.py::_InstructlabDefaults"
+  ],
+  "instructlab__instructlab-3125": [
+   "src/instructlab/cli/process/list.py::<module>",
+   "src/instructlab/cli/process/list.py::list",
+   "src/instructlab/data/generate_data.py::create_server_and_generate",
+   "src/instructlab/defaults.py::<module>",
+   "src/instructlab/defaults.py::ILAB_PROCESS_STATUS",
+   "src/instructlab/process/process.py::<module>",
+   "src/instructlab/process/process.py::Process",
+   "src/instructlab/process/process.py::Process.__init__",
+   "src/instructlab/process/process.py::Process.completed",
+   "src/instructlab/process/process.py::Process.started",
+   "src/instructlab/process/process.py::complete_process",
+   "src/instructlab/process/process.py::list_processes",
+   "src/instructlab/process/process.py::stop_process"
+  ],
+  "instructlab__instructlab-3135": [
+   "src/instructlab/model/accelerated_train.py::<module>",
+   "src/instructlab/model/accelerated_train.py::_run_phase",
+   "src/instructlab/model/accelerated_train.py::accelerated_train"
+  ],
+  "instructlab__instructlab-3184": [
+   "src/instructlab/rag/haystack/components/document_splitter.py::<module>",
+   "src/instructlab/rag/haystack/components/document_splitter.py::DoclingDocumentSplitter",
+   "src/instructlab/rag/haystack/components/document_splitter.py::DoclingDocumentSplitter.__init__",
+   "src/instructlab/rag/haystack/components/document_splitter.py::DoclingDocumentSplitter._split_with_docling",
+   "src/instructlab/rag/haystack/components/document_splitter.py::DoclingDocumentSplitter.run",
+   "src/instructlab/rag/haystack/components/document_splitter.py::DoclingDocumentSplitter.to_dict"
+  ]
+ },
+ "granularity": "function",
+ "learn_errors": {},
+ "lift": {
+  "false_positive_rise_pts": -2.99,
+  "localization_lift_pts": 6.45
+ },
+ "memory_locations": {
+  "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83": "src/instructlab/model/train.py::_training_phase",
+  "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f": "src/instructlab/log.py::configure_logging",
+  "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f": "src/instructlab/model/train.py::_run_phased_training",
+  "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029": "src/instructlab/model/train.py::train",
+  "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151": "src/instructlab/model/evaluate.py::evaluate"
+ },
+ "mode": "rolling",
+ "n_errors": 0,
+ "n_eval": 32,
+ "retrieval_hit_rate": 1.0,
+ "retrieved": {
+  "instructlab__instructlab-1762": [
+   "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f"
+  ],
+  "instructlab__instructlab-1847": [
+   "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f"
+  ],
+  "instructlab__instructlab-1923": [
+   "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f"
+  ],
+  "instructlab__instructlab-1945": [
+   "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f"
+  ],
+  "instructlab__instructlab-2004": [
+   "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f"
+  ],
+  "instructlab__instructlab-2005": [
+   "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+   "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f"
+  ],
+  "instructlab__instructlab-2055": [
+   "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f",
+   "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029"
+  ],
+  "instructlab__instructlab-2065": [
+   "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+   "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f"
+  ],
+  "instructlab__instructlab-2119": [
+   "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+   "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f",
+   "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029"
+  ],
+  "instructlab__instructlab-2144": [
+   "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+   "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+   "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f"
+  ],
+  "instructlab__instructlab-2208": [
+   "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+   "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f",
+   "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029"
+  ],
+  "instructlab__instructlab-2236": [
+   "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+   "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f",
+   "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151"
+  ],
+  "instructlab__instructlab-2247": [
+   "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+   "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f",
+   "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+   "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+   "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f"
+  ],
+  "instructlab__instructlab-2316": [
+   "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+   "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+   "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+   "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f",
+   "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f"
+  ],
+  "instructlab__instructlab-2526": [
+   "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f",
+   "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+   "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+   "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+   "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f"
+  ],
+  "instructlab__instructlab-2540": [
+   "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+   "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f",
+   "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+   "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f",
+   "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151"
+  ],
+  "instructlab__instructlab-2548": [
+   "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+   "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+   "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f",
+   "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+   "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f"
+  ],
+  "instructlab__instructlab-2572": [
+   "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f",
+   "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+   "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+   "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f"
+  ],
+  "instructlab__instructlab-2579": [
+   "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+   "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+   "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f",
+   "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f",
+   "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029"
+  ],
+  "instructlab__instructlab-2585": [
+   "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f",
+   "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+   "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+   "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+   "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f"
+  ],
+  "instructlab__instructlab-2592": [
+   "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+   "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+   "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+   "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f",
+   "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f"
+  ],
+  "instructlab__instructlab-2741": [
+   "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+   "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+   "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+   "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f",
+   "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f"
+  ],
+  "instructlab__instructlab-2789": [
+   "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+   "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+   "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+   "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f",
+   "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f"
+  ],
+  "instructlab__instructlab-2825": [
+   "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f",
+   "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+   "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+   "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+   "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f"
+  ],
+  "instructlab__instructlab-2886": [
+   "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+   "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f",
+   "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+   "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+   "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f"
+  ],
+  "instructlab__instructlab-2927": [
+   "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+   "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+   "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f",
+   "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+   "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f"
+  ],
+  "instructlab__instructlab-3045": [
+   "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+   "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f",
+   "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f",
+   "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+   "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029"
+  ],
+  "instructlab__instructlab-3060": [
+   "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+   "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+   "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f",
+   "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f",
+   "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151"
+  ],
+  "instructlab__instructlab-3118": [
+   "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+   "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+   "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+   "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f",
+   "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f"
+  ],
+  "instructlab__instructlab-3125": [
+   "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+   "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+   "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f",
+   "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+   "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f"
+  ],
+  "instructlab__instructlab-3135": [
+   "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f",
+   "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+   "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f",
+   "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+   "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029"
+  ],
+  "instructlab__instructlab-3184": [
+   "02cd628c08ed72d25cfdfc226082e06ae441e697806c39c386a380d238ecbb83",
+   "b5e6cbba1cc54b9091a611a7ed83f7a3ceb36139fc5538ab0548fb3287845029",
+   "c7b6f40ccc9544be8400817d34c5c4fca2285bb51abbd03d7382ce59f048b151",
+   "483a7ec405b356f8d07cc3d2f167a792e3c47e3a327f79833bf01c1e11bdfd6f",
+   "0c0be8d593cf27f24e5ba15efba213ea7ca6ae5524645fc20c0138e33399645f"
+  ]
+ },
+ "treatment": {
+  "false_positive_rate": 0.6292,
+  "localization_rate": 0.5806,
+  "n_false_positive": 56,
+  "n_flags": 89,
+  "n_localized": 18,
+  "n_tasks": 31,
+  "per_repo": {
+   "instructlab/instructlab": {
+    "false_positive_rate": 0.6292,
+    "localization_rate": 0.5806,
+    "n_false_positive": 56,
+    "n_flags": 89,
+    "n_localized": 18,
+    "n_tasks": 31
+   }
+  }
+ },
+ "treatment_flags": {
+  "instructlab__instructlab-1762": [
+   "src/instructlab/configuration.py",
+   "src/instructlab/configuration.py",
+   "src/instructlab/model/download.py"
+  ],
+  "instructlab__instructlab-1847": [
+   "src/instructlab/configuration.py",
+   "src/instructlab/configuration.py",
+   "src/instructlab/configuration.py"
+  ],
+  "instructlab__instructlab-1923": [
+   "src/instructlab/data/generate.py",
+   "src/instructlab/configuration.py"
+  ],
+  "instructlab__instructlab-1945": [
+   "src/instructlab/model/train.py",
+   "src/instructlab/configuration.py",
+   "src/instructlab/model/train.py"
+  ],
+  "instructlab__instructlab-2004": [
+   "src/instructlab/model/train.py",
+   "src/instructlab/configuration.py",
+   "src/instructlab/model/train.py"
+  ],
+  "instructlab__instructlab-2005": [
+   "src/instructlab/model/train.py",
+   "src/instructlab/model/train.py",
+   "src/instructlab/configuration.py"
+  ],
+  "instructlab__instructlab-2055": [
+   "src/instructlab/config/init.py",
+   "src/instructlab/configuration.py"
+  ],
+  "instructlab__instructlab-2065": [
+   "src/instructlab/model/evaluate.py",
+   "src/instructlab/model/evaluate.py",
+   "src/instructlab/config/init.py"
+  ],
+  "instructlab__instructlab-2119": [
+   "src/instructlab/model/evaluate.py",
+   "src/instructlab/model/evaluate.py",
+   "src/instructlab/model/evaluate.py"
+  ],
+  "instructlab__instructlab-2144": [
+   "src/instructlab/model/train.py",
+   "src/instructlab/model/evaluate.py",
+   "src/instructlab/model/train.py"
+  ],
+  "instructlab__instructlab-2208": [
+   "src/instructlab/configuration.py",
+   "src/instructlab/configuration.py",
+   "src/instructlab/system/info.py"
+  ],
+  "instructlab__instructlab-2236": [
+   "src/instructlab/model/train.py",
+   "src/instructlab/model/train.py",
+   "src/instructlab/model/train.py"
+  ],
+  "instructlab__instructlab-2247": [
+   "src/instructlab/model/train.py",
+   "src/instructlab/model/train.py",
+   "src/instructlab/train/linux_train.py"
+  ],
+  "instructlab__instructlab-2316": [
+   "src/instructlab/model/evaluate.py",
+   "src/instructlab/model/evaluate.py",
+   "src/instructlab/model/evaluate.py"
+  ],
+  "instructlab__instructlab-2526": [
+   "src/instructlab/configuration.py",
+   "src/instructlab/model/accelerated_train.py",
+   "src/instructlab/configuration.py"
+  ],
+  "instructlab__instructlab-2540": [
+   "src/instructlab/configuration.py",
+   "src/instructlab/model/chat.py",
+   "src/instructlab/model/chat.py"
+  ],
+  "instructlab__instructlab-2548": [
+   "src/instructlab/cli/model/train.py",
+   "src/instructlab/cli/model/train.py",
+   "src/instructlab/cli/model/train.py"
+  ],
+  "instructlab__instructlab-2572": [
+   "src/instructlab/configuration.py",
+   "src/instructlab/configuration.py",
+   "src/instructlab/system/info.py"
+  ],
+  "instructlab__instructlab-2579": [
+   "src/instructlab/configuration.py",
+   "src/instructlab/configuration.py",
+   "src/instructlab/configuration.py"
+  ],
+  "instructlab__instructlab-2585": [
+   "src/instructlab/configuration.py"
+  ],
+  "instructlab__instructlab-2592": [
+   "src/instructlab/model/chat.py",
+   "src/instructlab/model/chat.py",
+   "src/instructlab/model/chat.py"
+  ],
+  "instructlab__instructlab-2741": [
+   "src/instructlab/model/download.py",
+   "src/instructlab/model/download.py",
+   "src/instructlab/model/download.py"
+  ],
+  "instructlab__instructlab-2789": [
+   "src/instructlab/configuration.py",
+   "src/instructlab/configuration.py",
+   "src/instructlab/configuration.py"
+  ],
+  "instructlab__instructlab-2825": [
+   "src/instructlab/model/backends/llama_cpp.py",
+   "src/instructlab/model/backends/llama_cpp.py",
+   "src/instructlab/model/backends/llama_cpp.py"
+  ],
+  "instructlab__instructlab-2886": [
+   "src/instructlab/cli/model/chat.py",
+   "src/instructlab/configuration.py",
+   "src/instructlab/configuration.py"
+  ],
+  "instructlab__instructlab-2927": [
+   "src/instructlab/configuration.py",
+   "src/instructlab/model/backends/vllm.py",
+   "src/instructlab/cli/model/serve.py"
+  ],
+  "instructlab__instructlab-3045": [
+   "src/instructlab/configuration.py",
+   "src/instructlab/cli/model/train.py",
+   "src/instructlab/configuration.py"
+  ],
+  "instructlab__instructlab-3060": [
+   "src/instructlab/rag/taxonomy_utils.py",
+   "src/instructlab/rag/convert.py",
+   "src/instructlab/cli/rag/convert.py"
+  ],
+  "instructlab__instructlab-3118": [
+   "src/instructlab/cli/model/download.py",
+   "src/instructlab/defaults.py",
+   "src/instructlab/cli/model/download.py"
+  ],
+  "instructlab__instructlab-3125": [
+   "src/instructlab/process/process.py",
+   "src/instructlab/process/process.py",
+   "src/instructlab/cli/process/list.py"
+  ],
+  "instructlab__instructlab-3135": [
+   "src/instructlab/log.py",
+   "src/instructlab/log.py",
+   "src/instructlab/log.py"
+  ],
+  "instructlab__instructlab-3184": [
+   "src/instructlab/cli/rag/ingest.py",
+   "src/instructlab/rag/haystack/document_store_ingestor.py",
+   "src/instructlab/rag/convert.py"
+  ]
+ },
+ "warmup": 20
+}
