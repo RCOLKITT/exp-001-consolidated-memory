@@ -1,0 +1,2937 @@
+{
+ "arms": {
+  "control": {
+   "file_hits": {
+    "pylint-dev__pylint-10034": true,
+    "pylint-dev__pylint-10036": false,
+    "pylint-dev__pylint-10044": true,
+    "pylint-dev__pylint-10045": true,
+    "pylint-dev__pylint-10062": true,
+    "pylint-dev__pylint-10075": true,
+    "pylint-dev__pylint-10089": false,
+    "pylint-dev__pylint-10097": false,
+    "pylint-dev__pylint-10141": true,
+    "pylint-dev__pylint-10170": false,
+    "pylint-dev__pylint-10209": false,
+    "pylint-dev__pylint-10225": false,
+    "pylint-dev__pylint-10228": true,
+    "pylint-dev__pylint-10232": true,
+    "pylint-dev__pylint-10240": true,
+    "pylint-dev__pylint-10246": true,
+    "pylint-dev__pylint-10250": false,
+    "pylint-dev__pylint-10275": false,
+    "pylint-dev__pylint-10300": true,
+    "pylint-dev__pylint-10328": true,
+    "pylint-dev__pylint-10344": true,
+    "pylint-dev__pylint-10350": true,
+    "pylint-dev__pylint-10362": true,
+    "pylint-dev__pylint-10379": false,
+    "pylint-dev__pylint-10403": true,
+    "pylint-dev__pylint-9714": true,
+    "pylint-dev__pylint-9744": false,
+    "pylint-dev__pylint-9753": false,
+    "pylint-dev__pylint-9771": false,
+    "pylint-dev__pylint-9772": false,
+    "pylint-dev__pylint-9785": true,
+    "pylint-dev__pylint-9802": false,
+    "pylint-dev__pylint-9817": true,
+    "pylint-dev__pylint-9838": true,
+    "pylint-dev__pylint-9842": false,
+    "pylint-dev__pylint-9844": false,
+    "pylint-dev__pylint-9866": true,
+    "pylint-dev__pylint-9868": true,
+    "pylint-dev__pylint-9876": true,
+    "pylint-dev__pylint-9882": true,
+    "pylint-dev__pylint-9917": false,
+    "pylint-dev__pylint-9990": false
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.7797,
+    "localization_rate": 0.5714,
+    "n_false_positive": 92,
+    "n_flags": 118,
+    "n_localized": 24,
+    "n_tasks": 42,
+    "per_repo": {
+     "pylint-dev/pylint": {
+      "false_positive_rate": 0.7797,
+      "localization_rate": 0.5714,
+      "n_false_positive": 92,
+      "n_flags": 118,
+      "n_localized": 24,
+      "n_tasks": 42
+     }
+    }
+   },
+   "flags": {
+    "pylint-dev__pylint-10034": [
+     "pylint/checkers/variables.py::VariablesChecker._undefined_and_used_before_checker",
+     "pylint/checkers/variables.py::VariablesChecker._filter_type_checking_definitions_from_consumption",
+     "pylint/checkers/typecheck.py::TypeChecker.visit_functiondef"
+    ],
+    "pylint-dev__pylint-10036": [
+     "pylint/pyreverse/inspector.py::Linker.compute_module",
+     "pylint/pyreverse/inspector.py::Project.add_module",
+     "pylint/pyreverse/main.py::Run.run"
+    ],
+    "pylint-dev__pylint-10044": [],
+    "pylint-dev__pylint-10045": [
+     "pylint/pyreverse/main.py::<module>",
+     "pylint/pyreverse/main.py::Run",
+     "doc/conf.py::<module>"
+    ],
+    "pylint-dev__pylint-10062": [
+     "pylint/checkers/variables.py::NamesConsumer._node_guarded_by_same_test",
+     "pylint/checkers/variables.py::NamesConsumer._uncertain_nodes_if_tests",
+     "pylint/checkers/variables.py::VariablesChecker._is_variable_violation"
+    ],
+    "pylint-dev__pylint-10075": [
+     "pylint/checkers/variables.py::VariablesChecker.visit_functiondef",
+     "pylint/checkers/variables.py::VariablesChecker._has_nonlocal_binding"
+    ],
+    "pylint-dev__pylint-10089": [
+     "pylint/lint/parallel.py::check_parallel",
+     "pylint/lint/pylinter.py::PyLinter.check",
+     "pylint/lint/parallel.py::_worker_initialize"
+    ],
+    "pylint-dev__pylint-10097": [
+     "pylint/checkers/typecheck.py::TypeChecker._check_invalid_sequence_index",
+     "pylint/checkers/typecheck.py::TypeChecker.visit_subscript",
+     "pylint/lint/pylinter.py::PyLinter._add_one_message"
+    ],
+    "pylint-dev__pylint-10141": [
+     "pylint/lint/pylinter.py::PyLinter._discover_files",
+     "pylint/lint/pylinter.py::PyLinter._lint_files",
+     "pylint/lint/pylinter.py::PyLinter._report_evaluation"
+    ],
+    "pylint-dev__pylint-10170": [
+     "pylint/checkers/typecheck.py::TypeChecker._check_membership_test",
+     "pylint/checkers/typecheck.py::TypeChecker._check_isinstance_args",
+     "pylint/checkers/typecheck.py::TypeChecker.visit_compare"
+    ],
+    "pylint-dev__pylint-10209": [
+     "pylint/checkers/typecheck.py::TypeChecker.visit_call",
+     "pylint/checkers/typecheck.py::TypeChecker._check_dundername_is_string",
+     "pylint/lint/pylinter.py::PyLinter.add_message"
+    ],
+    "pylint-dev__pylint-10225": [
+     "pylint/checkers/typecheck.py::TypeChecker.visit_compare",
+     "pylint/checkers/typecheck.py::TypeChecker._check_membership_test",
+     "pylint/checkers/typecheck.py::TypeChecker._check_binop_errors"
+    ],
+    "pylint-dev__pylint-10228": [
+     "pylint/checkers/base/name_checker/naming_style.py::CamelCaseStyle",
+     "pylint/checkers/base/name_checker/naming_style.py::NamingStyle.get_regex",
+     "pylint/lint/pylinter.py::PyLinter.add_message"
+    ],
+    "pylint-dev__pylint-10232": [
+     "pylint/checkers/utils.py::has_known_bases",
+     "pylint/checkers/exceptions.py::ExceptionsChecker._check_catching_non_exception",
+     "pylint/checkers/exceptions.py::ExceptionsChecker.visit_try"
+    ],
+    "pylint-dev__pylint-10240": [
+     "pylint/checkers/variables.py::VariablesChecker.visit_assignname",
+     "pylint/checkers/variables.py::VariablesChecker._check_consumer"
+    ],
+    "pylint-dev__pylint-10246": [
+     "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker._check_use_implicit_booleaness_not_comparison",
+     "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker.visit_compare",
+     "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker._check_compare_to_str_or_zero"
+    ],
+    "pylint-dev__pylint-10250": [
+     "pylint/pyreverse/printer.py::Printer.emit_node",
+     "pylint/pyreverse/printer.py::Printer.generate",
+     "pylint/pyreverse/diagrams.py::ClassDiagram.get_relationships"
+    ],
+    "pylint-dev__pylint-10275": [
+     "pylint/checkers/typecheck.py::TypeChecker.visit_functiondef",
+     "pylint/checkers/typecheck.py::TypeChecker._check_assignment_from_function_call",
+     "pylint/lint/pylinter.py::PyLinter.check"
+    ],
+    "pylint-dev__pylint-10300": [
+     "pylint/checkers/utils.py::parse_format_method_string",
+     "pylint/checkers/refactoring/recommendation_checker.py::RecommendationChecker._detect_replacable_format_call"
+    ],
+    "pylint-dev__pylint-10328": [
+     "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker._check_use_implicit_booleaness_not_comparison",
+     "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker.visit_compare",
+     "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker._implicit_booleaness_message_args"
+    ],
+    "pylint-dev__pylint-10344": [],
+    "pylint-dev__pylint-10350": [
+     "pylint/checkers/utils.py::decorated_with",
+     "pylint/checkers/utils.py::is_overload_stub",
+     "pylint/checkers/base/basic_error_checker.py::BasicErrorChecker._check_redefinition"
+    ],
+    "pylint-dev__pylint-10362": [
+     "pylint/checkers/variables.py::VariablesChecker._is_only_type_assignment",
+     "pylint/checkers/variables.py::VariablesChecker._check_consumer",
+     "pylint/checkers/variables.py::VariablesChecker.visit_name"
+    ],
+    "pylint-dev__pylint-10379": [
+     "pylint/pyreverse/inspector.py::AggregationsHandler.handle",
+     "pylint/pyreverse/diadefslib.py::DiaDefGenerator.get_associated",
+     "pylint/pyreverse/diadefslib.py::ClassDiadefGenerator.class_diagram"
+    ],
+    "pylint-dev__pylint-10403": [
+     "pylint/pyreverse/mermaidjs_printer.py::MermaidJSPrinter.emit_node",
+     "pylint/pyreverse/mermaidjs_printer.py::MermaidJSPrinter.emit_edge",
+     "pylint/pyreverse/mermaidjs_printer.py::<module>"
+    ],
+    "pylint-dev__pylint-9714": [
+     "pylint/checkers/utils.py::is_terminating_func",
+     "pylint/checkers/utils.py::node_ignores_exception",
+     "pylint/lint/pylinter.py::PyLinter.add_message"
+    ],
+    "pylint-dev__pylint-9744": [
+     "pylint/checkers/base_checker.py::BaseChecker.add_message",
+     "pylint/lint/pylinter.py::PyLinter.add_message",
+     "pylint/checkers/base_checker.py::BaseChecker.check_consistency"
+    ],
+    "pylint-dev__pylint-9753": [
+     "pylint/lint/pylinter.py::PyLinter.get_ast",
+     "pylint/lint/pylinter.py::PyLinter._check_astroid_module",
+     "pylint/utils/ast_walker.py::ASTWalker.walk"
+    ],
+    "pylint-dev__pylint-9771": [
+     "pylint/checkers/variables.py::VariablesChecker.visit_module"
+    ],
+    "pylint-dev__pylint-9772": [
+     "pylint/checkers/variables.py::VariablesChecker._check_module_attrs",
+     "pylint/checkers/variables.py::VariablesChecker._is_variable_violation",
+     "pylint/lint/pylinter.py::PyLinter.add_message"
+    ],
+    "pylint-dev__pylint-9785": [
+     "pylint/checkers/typecheck.py::TypeChecker.visit_call",
+     "pylint/extensions/typing.py::TypingChecker._check_for_typing_alias"
+    ],
+    "pylint-dev__pylint-9802": [
+     "pylint/lint/pylinter.py::PyLinter._add_one_message",
+     "pylint/lint/pylinter.py::PyLinter.check_astroid_module",
+     "pylint/checkers/utils.py::safe_infer"
+    ],
+    "pylint-dev__pylint-9817": [
+     "pylint/checkers/classes/class_checker.py::ClassChecker._check_slots",
+     "pylint/checkers/classes/class_checker.py::ClassChecker.visit_classdef",
+     "pylint/lint/pylinter.py::PyLinter._check_astroid_module"
+    ],
+    "pylint-dev__pylint-9838": [
+     "pylint/checkers/unsupported_version.py::UnsupportedVersionChecker",
+     "pylint/checkers/unsupported_version.py::<module>"
+    ],
+    "pylint-dev__pylint-9842": [
+     "pylint/lint/pylinter.py::PyLinter.add_message",
+     "pylint/checkers/utils.py::function_arguments_are_ambiguous",
+     "pylint/lint/pylinter.py::PyLinter._check_astroid_module"
+    ],
+    "pylint-dev__pylint-9844": [
+     "pylint/checkers/async.py::AsyncChecker.visit_asyncfunctiondef",
+     "pylint/lint/pylinter.py::PyLinter._add_one_message",
+     "pylint/checkers/base_checker.py::BaseChecker.add_message"
+    ],
+    "pylint-dev__pylint-9866": [
+     "pylint/checkers/refactoring/refactoring_checker.py::RefactoringChecker._is_node_return_ended",
+     "pylint/checkers/refactoring/refactoring_checker.py::RefactoringChecker._is_function_def_never_returning",
+     "pylint/checkers/refactoring/refactoring_checker.py::RefactoringChecker._check_consistent_returns"
+    ],
+    "pylint-dev__pylint-9868": [
+     "pylint/checkers/typecheck.py::TypeChecker._check_isinstance_args",
+     "pylint/checkers/stdlib.py::StdlibChecker.visit_call"
+    ],
+    "pylint-dev__pylint-9876": [
+     "pylint/checkers/variables.py::VariablesChecker._loopvar_name",
+     "pylint/utils/ast_walker.py::ASTWalker.walk",
+     "pylint/lint/pylinter.py::PyLinter.check_astroid_module"
+    ],
+    "pylint-dev__pylint-9882": [
+     "pylint/checkers/typecheck.py::TypeChecker.visit_call",
+     "pylint/checkers/typecheck.py::TypeChecker._check_argument_order",
+     "pylint/checkers/typecheck.py::TypeChecker._check_isinstance_args"
+    ],
+    "pylint-dev__pylint-9917": [
+     "pylint/checkers/misc.py::EncodingChecker.process_module",
+     "pylint/lint/pylinter.py::PyLinter._check_file",
+     "pylint/checkers/base_checker.py::BaseChecker.add_message"
+    ],
+    "pylint-dev__pylint-9990": [
+     "pylint/checkers/typecheck.py::TypeChecker.visit_attribute",
+     "pylint/checkers/typecheck.py::TypeChecker._check_assignment_from_function_call",
+     "pylint/lint/pylinter.py::PyLinter._add_one_message"
+    ]
+   },
+   "hits": {
+    "pylint-dev__pylint-10034": false,
+    "pylint-dev__pylint-10036": false,
+    "pylint-dev__pylint-10044": false,
+    "pylint-dev__pylint-10045": true,
+    "pylint-dev__pylint-10062": true,
+    "pylint-dev__pylint-10075": true,
+    "pylint-dev__pylint-10089": false,
+    "pylint-dev__pylint-10097": false,
+    "pylint-dev__pylint-10141": true,
+    "pylint-dev__pylint-10170": false,
+    "pylint-dev__pylint-10209": false,
+    "pylint-dev__pylint-10225": false,
+    "pylint-dev__pylint-10228": true,
+    "pylint-dev__pylint-10232": true,
+    "pylint-dev__pylint-10240": false,
+    "pylint-dev__pylint-10246": true,
+    "pylint-dev__pylint-10250": false,
+    "pylint-dev__pylint-10275": false,
+    "pylint-dev__pylint-10300": true,
+    "pylint-dev__pylint-10328": true,
+    "pylint-dev__pylint-10344": false,
+    "pylint-dev__pylint-10350": true,
+    "pylint-dev__pylint-10362": true,
+    "pylint-dev__pylint-10379": false,
+    "pylint-dev__pylint-10403": true,
+    "pylint-dev__pylint-9714": true,
+    "pylint-dev__pylint-9744": false,
+    "pylint-dev__pylint-9753": false,
+    "pylint-dev__pylint-9771": false,
+    "pylint-dev__pylint-9772": false,
+    "pylint-dev__pylint-9785": true,
+    "pylint-dev__pylint-9802": false,
+    "pylint-dev__pylint-9817": true,
+    "pylint-dev__pylint-9838": true,
+    "pylint-dev__pylint-9842": false,
+    "pylint-dev__pylint-9844": false,
+    "pylint-dev__pylint-9866": true,
+    "pylint-dev__pylint-9868": true,
+    "pylint-dev__pylint-9876": true,
+    "pylint-dev__pylint-9882": true,
+    "pylint-dev__pylint-9917": false,
+    "pylint-dev__pylint-9990": false
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.7589,
+    "localization_rate": 0.4762,
+    "n_false_positive": 85,
+    "n_flags": 112,
+    "n_localized": 20,
+    "n_tasks": 42,
+    "per_repo": {
+     "pylint-dev/pylint": {
+      "false_positive_rate": 0.7589,
+      "localization_rate": 0.4762,
+      "n_false_positive": 85,
+      "n_flags": 112,
+      "n_localized": 20,
+      "n_tasks": 42
+     }
+    }
+   },
+   "retrieved": {
+    "pylint-dev__pylint-10034": [],
+    "pylint-dev__pylint-10036": [],
+    "pylint-dev__pylint-10044": [],
+    "pylint-dev__pylint-10045": [],
+    "pylint-dev__pylint-10062": [],
+    "pylint-dev__pylint-10075": [],
+    "pylint-dev__pylint-10089": [],
+    "pylint-dev__pylint-10097": [],
+    "pylint-dev__pylint-10141": [],
+    "pylint-dev__pylint-10170": [],
+    "pylint-dev__pylint-10209": [],
+    "pylint-dev__pylint-10225": [],
+    "pylint-dev__pylint-10228": [],
+    "pylint-dev__pylint-10232": [],
+    "pylint-dev__pylint-10240": [],
+    "pylint-dev__pylint-10246": [],
+    "pylint-dev__pylint-10250": [],
+    "pylint-dev__pylint-10275": [],
+    "pylint-dev__pylint-10300": [],
+    "pylint-dev__pylint-10328": [],
+    "pylint-dev__pylint-10344": [],
+    "pylint-dev__pylint-10350": [],
+    "pylint-dev__pylint-10362": [],
+    "pylint-dev__pylint-10379": [],
+    "pylint-dev__pylint-10403": [],
+    "pylint-dev__pylint-9714": [],
+    "pylint-dev__pylint-9744": [],
+    "pylint-dev__pylint-9753": [],
+    "pylint-dev__pylint-9771": [],
+    "pylint-dev__pylint-9772": [],
+    "pylint-dev__pylint-9785": [],
+    "pylint-dev__pylint-9802": [],
+    "pylint-dev__pylint-9817": [],
+    "pylint-dev__pylint-9838": [],
+    "pylint-dev__pylint-9842": [],
+    "pylint-dev__pylint-9844": [],
+    "pylint-dev__pylint-9866": [],
+    "pylint-dev__pylint-9868": [],
+    "pylint-dev__pylint-9876": [],
+    "pylint-dev__pylint-9882": [],
+    "pylint-dev__pylint-9917": [],
+    "pylint-dev__pylint-9990": []
+   },
+   "scores": {
+    "pylint-dev__pylint-10034": {},
+    "pylint-dev__pylint-10036": {},
+    "pylint-dev__pylint-10044": {},
+    "pylint-dev__pylint-10045": {},
+    "pylint-dev__pylint-10062": {},
+    "pylint-dev__pylint-10075": {},
+    "pylint-dev__pylint-10089": {},
+    "pylint-dev__pylint-10097": {},
+    "pylint-dev__pylint-10141": {},
+    "pylint-dev__pylint-10170": {},
+    "pylint-dev__pylint-10209": {},
+    "pylint-dev__pylint-10225": {},
+    "pylint-dev__pylint-10228": {},
+    "pylint-dev__pylint-10232": {},
+    "pylint-dev__pylint-10240": {},
+    "pylint-dev__pylint-10246": {},
+    "pylint-dev__pylint-10250": {},
+    "pylint-dev__pylint-10275": {},
+    "pylint-dev__pylint-10300": {},
+    "pylint-dev__pylint-10328": {},
+    "pylint-dev__pylint-10344": {},
+    "pylint-dev__pylint-10350": {},
+    "pylint-dev__pylint-10362": {},
+    "pylint-dev__pylint-10379": {},
+    "pylint-dev__pylint-10403": {},
+    "pylint-dev__pylint-9714": {},
+    "pylint-dev__pylint-9744": {},
+    "pylint-dev__pylint-9753": {},
+    "pylint-dev__pylint-9771": {},
+    "pylint-dev__pylint-9772": {},
+    "pylint-dev__pylint-9785": {},
+    "pylint-dev__pylint-9802": {},
+    "pylint-dev__pylint-9817": {},
+    "pylint-dev__pylint-9838": {},
+    "pylint-dev__pylint-9842": {},
+    "pylint-dev__pylint-9844": {},
+    "pylint-dev__pylint-9866": {},
+    "pylint-dev__pylint-9868": {},
+    "pylint-dev__pylint-9876": {},
+    "pylint-dev__pylint-9882": {},
+    "pylint-dev__pylint-9917": {},
+    "pylint-dev__pylint-9990": {}
+   },
+   "tau": 0.0,
+   "version": null,
+   "versions": {
+    "pylint-dev__pylint-10034": null,
+    "pylint-dev__pylint-10036": null,
+    "pylint-dev__pylint-10044": null,
+    "pylint-dev__pylint-10045": null,
+    "pylint-dev__pylint-10062": null,
+    "pylint-dev__pylint-10075": null,
+    "pylint-dev__pylint-10089": null,
+    "pylint-dev__pylint-10097": null,
+    "pylint-dev__pylint-10141": null,
+    "pylint-dev__pylint-10170": null,
+    "pylint-dev__pylint-10209": null,
+    "pylint-dev__pylint-10225": null,
+    "pylint-dev__pylint-10228": null,
+    "pylint-dev__pylint-10232": null,
+    "pylint-dev__pylint-10240": null,
+    "pylint-dev__pylint-10246": null,
+    "pylint-dev__pylint-10250": null,
+    "pylint-dev__pylint-10275": null,
+    "pylint-dev__pylint-10300": null,
+    "pylint-dev__pylint-10328": null,
+    "pylint-dev__pylint-10344": null,
+    "pylint-dev__pylint-10350": null,
+    "pylint-dev__pylint-10362": null,
+    "pylint-dev__pylint-10379": null,
+    "pylint-dev__pylint-10403": null,
+    "pylint-dev__pylint-9714": null,
+    "pylint-dev__pylint-9744": null,
+    "pylint-dev__pylint-9753": null,
+    "pylint-dev__pylint-9771": null,
+    "pylint-dev__pylint-9772": null,
+    "pylint-dev__pylint-9785": null,
+    "pylint-dev__pylint-9802": null,
+    "pylint-dev__pylint-9817": null,
+    "pylint-dev__pylint-9838": null,
+    "pylint-dev__pylint-9842": null,
+    "pylint-dev__pylint-9844": null,
+    "pylint-dev__pylint-9866": null,
+    "pylint-dev__pylint-9868": null,
+    "pylint-dev__pylint-9876": null,
+    "pylint-dev__pylint-9882": null,
+    "pylint-dev__pylint-9917": null,
+    "pylint-dev__pylint-9990": null
+   }
+  },
+  "gated": {
+   "file_hits": {
+    "pylint-dev__pylint-10034": false,
+    "pylint-dev__pylint-10036": false,
+    "pylint-dev__pylint-10044": true,
+    "pylint-dev__pylint-10045": true,
+    "pylint-dev__pylint-10062": true,
+    "pylint-dev__pylint-10075": false,
+    "pylint-dev__pylint-10089": false,
+    "pylint-dev__pylint-10097": false,
+    "pylint-dev__pylint-10141": true,
+    "pylint-dev__pylint-10170": false,
+    "pylint-dev__pylint-10209": false,
+    "pylint-dev__pylint-10225": false,
+    "pylint-dev__pylint-10228": true,
+    "pylint-dev__pylint-10232": true,
+    "pylint-dev__pylint-10240": false,
+    "pylint-dev__pylint-10246": true,
+    "pylint-dev__pylint-10250": false,
+    "pylint-dev__pylint-10275": false,
+    "pylint-dev__pylint-10300": false,
+    "pylint-dev__pylint-10328": true,
+    "pylint-dev__pylint-10344": true,
+    "pylint-dev__pylint-10350": true,
+    "pylint-dev__pylint-10362": true,
+    "pylint-dev__pylint-10379": false,
+    "pylint-dev__pylint-10403": true,
+    "pylint-dev__pylint-9714": true,
+    "pylint-dev__pylint-9744": false,
+    "pylint-dev__pylint-9753": false,
+    "pylint-dev__pylint-9771": false,
+    "pylint-dev__pylint-9772": false,
+    "pylint-dev__pylint-9785": true,
+    "pylint-dev__pylint-9802": false,
+    "pylint-dev__pylint-9817": true,
+    "pylint-dev__pylint-9838": true,
+    "pylint-dev__pylint-9842": false,
+    "pylint-dev__pylint-9844": false,
+    "pylint-dev__pylint-9866": true,
+    "pylint-dev__pylint-9868": true,
+    "pylint-dev__pylint-9876": true,
+    "pylint-dev__pylint-9882": true,
+    "pylint-dev__pylint-9917": false,
+    "pylint-dev__pylint-9990": false
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.8053,
+    "localization_rate": 0.4762,
+    "n_false_positive": 91,
+    "n_flags": 113,
+    "n_localized": 20,
+    "n_tasks": 42,
+    "per_repo": {
+     "pylint-dev/pylint": {
+      "false_positive_rate": 0.8053,
+      "localization_rate": 0.4762,
+      "n_false_positive": 91,
+      "n_flags": 113,
+      "n_localized": 20,
+      "n_tasks": 42
+     }
+    }
+   },
+   "flags": {
+    "pylint-dev__pylint-10034": [
+     "pylint/checkers/typecheck.py::TypeChecker.visit_functiondef",
+     "pylint/checkers/typecheck.py::TypeChecker._check_assignment_from_function_call",
+     "pylint/checkers/typecheck.py::TypeChecker._is_ignored_function"
+    ],
+    "pylint-dev__pylint-10036": [
+     "pylint/pyreverse/inspector.py::Linker.compute_module",
+     "pylint/pyreverse/inspector.py::Project.add_module",
+     "pylint/pyreverse/main.py::Run.run"
+    ],
+    "pylint-dev__pylint-10044": [],
+    "pylint-dev__pylint-10045": [
+     "pylint/pyreverse/main.py::<module>",
+     "pylint/pyreverse/main.py::Run",
+     "doc/conf.py::<module>"
+    ],
+    "pylint-dev__pylint-10062": [
+     "pylint/checkers/variables.py::NamesConsumer._node_guarded_by_same_test",
+     "pylint/checkers/variables.py::NamesConsumer._uncertain_nodes_if_tests",
+     "pylint/checkers/variables.py::VariablesChecker._is_variable_violation"
+    ],
+    "pylint-dev__pylint-10075": [
+     "pylint/checkers/typecheck.py::TypeChecker.visit_call",
+     "pylint/checkers/typecheck.py::TypeChecker._check_uninferable_call",
+     "pylint/checkers/typecheck.py::TypeChecker._check_assignment_from_function_call"
+    ],
+    "pylint-dev__pylint-10089": [
+     "pylint/lint/parallel.py::check_parallel",
+     "pylint/lint/pylinter.py::PyLinter.check",
+     "pylint/lint/parallel.py::_worker_initialize"
+    ],
+    "pylint-dev__pylint-10097": [
+     "pylint/checkers/typecheck.py::TypeChecker._check_invalid_sequence_index",
+     "pylint/checkers/typecheck.py::TypeChecker.visit_subscript",
+     "pylint/lint/pylinter.py::PyLinter._add_one_message"
+    ],
+    "pylint-dev__pylint-10141": [
+     "pylint/lint/pylinter.py::PyLinter._discover_files",
+     "pylint/lint/pylinter.py::PyLinter._lint_files",
+     "pylint/lint/pylinter.py::PyLinter._report_evaluation"
+    ],
+    "pylint-dev__pylint-10170": [
+     "pylint/checkers/typecheck.py::TypeChecker._check_isinstance_args",
+     "pylint/checkers/typecheck.py::TypeChecker.visit_compare",
+     "pylint/checkers/typecheck.py::TypeChecker._check_membership_test"
+    ],
+    "pylint-dev__pylint-10209": [
+     "pylint/checkers/typecheck.py::TypeChecker._check_dundername_is_string",
+     "pylint/checkers/typecheck.py::TypeChecker._check_isinstance_args",
+     "pylint/checkers/typecheck.py::TypeChecker.visit_call"
+    ],
+    "pylint-dev__pylint-10225": [
+     "pylint/checkers/typecheck.py::TypeChecker._check_isinstance_args",
+     "pylint/checkers/typecheck.py::TypeChecker.visit_compare",
+     "pylint/checkers/typecheck.py::TypeChecker.visit_binop"
+    ],
+    "pylint-dev__pylint-10228": [
+     "pylint/checkers/base/name_checker/naming_style.py::CamelCaseStyle",
+     "pylint/checkers/base/name_checker/naming_style.py::NamingStyle.get_regex",
+     "pylint/lint/pylinter.py::PyLinter.add_message"
+    ],
+    "pylint-dev__pylint-10232": [
+     "pylint/checkers/utils.py::has_known_bases",
+     "pylint/checkers/exceptions.py::ExceptionsChecker._check_catching_non_exception",
+     "pylint/checkers/exceptions.py::ExceptionsChecker.visit_try"
+    ],
+    "pylint-dev__pylint-10240": [
+     "pylint/checkers/utils.py::is_defined_before",
+     "pylint/checkers/utils.py::defnode_in_scope",
+     "pylint/lint/pylinter.py::PyLinter.check"
+    ],
+    "pylint-dev__pylint-10246": [
+     "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker._check_use_implicit_booleaness_not_comparison",
+     "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker.visit_compare",
+     "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker._check_compare_to_str_or_zero"
+    ],
+    "pylint-dev__pylint-10250": [
+     "pylint/pyreverse/printer.py::Printer.emit_node",
+     "pylint/pyreverse/printer.py::Printer.generate",
+     "pylint/pyreverse/diagrams.py::ClassDiagram.get_relationships"
+    ],
+    "pylint-dev__pylint-10275": [
+     "pylint/checkers/typecheck.py::TypeChecker._is_ignored_function"
+    ],
+    "pylint-dev__pylint-10300": [
+     "pylint/checkers/utils.py::parse_format_method_string"
+    ],
+    "pylint-dev__pylint-10328": [
+     "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker._check_use_implicit_booleaness_not_comparison",
+     "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker.visit_compare"
+    ],
+    "pylint-dev__pylint-10344": [],
+    "pylint-dev__pylint-10350": [
+     "pylint/checkers/utils.py::decorated_with",
+     "pylint/checkers/utils.py::is_overload_stub",
+     "pylint/checkers/base/basic_error_checker.py::BasicErrorChecker._check_redefinition"
+    ],
+    "pylint-dev__pylint-10362": [
+     "pylint/checkers/variables.py::VariablesChecker._is_only_type_assignment",
+     "pylint/checkers/variables.py::VariablesChecker._check_consumer",
+     "pylint/checkers/variables.py::VariablesChecker.visit_name"
+    ],
+    "pylint-dev__pylint-10379": [
+     "pylint/pyreverse/inspector.py::AggregationsHandler.handle",
+     "pylint/pyreverse/diadefslib.py::DiaDefGenerator.get_associated",
+     "pylint/pyreverse/diadefslib.py::ClassDiadefGenerator.class_diagram"
+    ],
+    "pylint-dev__pylint-10403": [
+     "pylint/pyreverse/mermaidjs_printer.py::MermaidJSPrinter.emit_node",
+     "pylint/pyreverse/mermaidjs_printer.py::MermaidJSPrinter.emit_edge",
+     "pylint/pyreverse/mermaidjs_printer.py::<module>"
+    ],
+    "pylint-dev__pylint-9714": [
+     "pylint/checkers/utils.py::is_terminating_func",
+     "pylint/checkers/utils.py::node_ignores_exception",
+     "pylint/lint/pylinter.py::PyLinter.add_message"
+    ],
+    "pylint-dev__pylint-9744": [
+     "pylint/checkers/base_checker.py::BaseChecker.add_message",
+     "pylint/lint/pylinter.py::PyLinter.add_message",
+     "pylint/checkers/base_checker.py::BaseChecker.check_consistency"
+    ],
+    "pylint-dev__pylint-9753": [
+     "pylint/lint/pylinter.py::PyLinter.get_ast",
+     "pylint/lint/pylinter.py::PyLinter._check_astroid_module",
+     "pylint/utils/ast_walker.py::ASTWalker.walk"
+    ],
+    "pylint-dev__pylint-9771": [
+     "pylint/checkers/variables.py::VariablesChecker.visit_module"
+    ],
+    "pylint-dev__pylint-9772": [
+     "pylint/checkers/variables.py::VariablesChecker._check_module_attrs",
+     "pylint/checkers/variables.py::VariablesChecker._is_variable_violation",
+     "pylint/lint/pylinter.py::PyLinter.add_message"
+    ],
+    "pylint-dev__pylint-9785": [
+     "pylint/checkers/typecheck.py::TypeChecker.visit_call",
+     "pylint/extensions/typing.py::TypingChecker._check_for_typing_alias"
+    ],
+    "pylint-dev__pylint-9802": [
+     "pylint/lint/pylinter.py::PyLinter._add_one_message",
+     "pylint/lint/pylinter.py::PyLinter.check_astroid_module",
+     "pylint/checkers/utils.py::safe_infer"
+    ],
+    "pylint-dev__pylint-9817": [
+     "pylint/checkers/classes/class_checker.py::ClassChecker._check_slots",
+     "pylint/checkers/classes/class_checker.py::ClassChecker.visit_classdef",
+     "pylint/lint/pylinter.py::PyLinter._check_astroid_module"
+    ],
+    "pylint-dev__pylint-9838": [
+     "pylint/checkers/unsupported_version.py::UnsupportedVersionChecker",
+     "pylint/checkers/unsupported_version.py::<module>"
+    ],
+    "pylint-dev__pylint-9842": [
+     "pylint/lint/pylinter.py::PyLinter.add_message",
+     "pylint/checkers/utils.py::function_arguments_are_ambiguous",
+     "pylint/lint/pylinter.py::PyLinter._check_astroid_module"
+    ],
+    "pylint-dev__pylint-9844": [
+     "pylint/checkers/async.py::AsyncChecker.visit_asyncfunctiondef",
+     "pylint/lint/pylinter.py::PyLinter._add_one_message",
+     "pylint/checkers/base_checker.py::BaseChecker.add_message"
+    ],
+    "pylint-dev__pylint-9866": [
+     "pylint/checkers/refactoring/refactoring_checker.py::RefactoringChecker._is_node_return_ended",
+     "pylint/checkers/refactoring/refactoring_checker.py::RefactoringChecker._is_function_def_never_returning",
+     "pylint/checkers/refactoring/refactoring_checker.py::RefactoringChecker._check_consistent_returns"
+    ],
+    "pylint-dev__pylint-9868": [
+     "pylint/checkers/typecheck.py::TypeChecker._check_isinstance_args",
+     "pylint/checkers/stdlib.py::StdlibChecker.visit_call"
+    ],
+    "pylint-dev__pylint-9876": [
+     "pylint/checkers/variables.py::VariablesChecker._loopvar_name",
+     "pylint/utils/ast_walker.py::ASTWalker.walk",
+     "pylint/lint/pylinter.py::PyLinter.check_astroid_module"
+    ],
+    "pylint-dev__pylint-9882": [
+     "pylint/checkers/typecheck.py::TypeChecker.visit_call",
+     "pylint/checkers/typecheck.py::TypeChecker._check_argument_order",
+     "pylint/checkers/typecheck.py::TypeChecker._check_isinstance_args"
+    ],
+    "pylint-dev__pylint-9917": [
+     "pylint/checkers/misc.py::EncodingChecker.process_module",
+     "pylint/lint/pylinter.py::PyLinter.check",
+     "pylint/checkers/misc.py::ByIdManagedMessagesChecker.process_module"
+    ],
+    "pylint-dev__pylint-9990": [
+     "pylint/checkers/typecheck.py::TypeChecker.visit_assign",
+     "pylint/checkers/typecheck.py::TypeChecker._check_assignment_from_function_call",
+     "pylint/checkers/typecheck.py::TypeChecker.visit_call"
+    ]
+   },
+   "hits": {
+    "pylint-dev__pylint-10034": false,
+    "pylint-dev__pylint-10036": false,
+    "pylint-dev__pylint-10044": false,
+    "pylint-dev__pylint-10045": true,
+    "pylint-dev__pylint-10062": true,
+    "pylint-dev__pylint-10075": false,
+    "pylint-dev__pylint-10089": false,
+    "pylint-dev__pylint-10097": false,
+    "pylint-dev__pylint-10141": true,
+    "pylint-dev__pylint-10170": false,
+    "pylint-dev__pylint-10209": false,
+    "pylint-dev__pylint-10225": false,
+    "pylint-dev__pylint-10228": true,
+    "pylint-dev__pylint-10232": true,
+    "pylint-dev__pylint-10240": false,
+    "pylint-dev__pylint-10246": true,
+    "pylint-dev__pylint-10250": false,
+    "pylint-dev__pylint-10275": false,
+    "pylint-dev__pylint-10300": false,
+    "pylint-dev__pylint-10328": true,
+    "pylint-dev__pylint-10344": false,
+    "pylint-dev__pylint-10350": true,
+    "pylint-dev__pylint-10362": true,
+    "pylint-dev__pylint-10379": false,
+    "pylint-dev__pylint-10403": true,
+    "pylint-dev__pylint-9714": true,
+    "pylint-dev__pylint-9744": false,
+    "pylint-dev__pylint-9753": false,
+    "pylint-dev__pylint-9771": false,
+    "pylint-dev__pylint-9772": false,
+    "pylint-dev__pylint-9785": true,
+    "pylint-dev__pylint-9802": false,
+    "pylint-dev__pylint-9817": true,
+    "pylint-dev__pylint-9838": true,
+    "pylint-dev__pylint-9842": false,
+    "pylint-dev__pylint-9844": false,
+    "pylint-dev__pylint-9866": true,
+    "pylint-dev__pylint-9868": true,
+    "pylint-dev__pylint-9876": true,
+    "pylint-dev__pylint-9882": true,
+    "pylint-dev__pylint-9917": false,
+    "pylint-dev__pylint-9990": false
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": 2.29,
+    "localization_lift_pts": -4.76
+   },
+   "metrics": {
+    "false_positive_rate": 0.7818,
+    "localization_rate": 0.4286,
+    "n_false_positive": 86,
+    "n_flags": 110,
+    "n_localized": 18,
+    "n_tasks": 42,
+    "per_repo": {
+     "pylint-dev/pylint": {
+      "false_positive_rate": 0.7818,
+      "localization_rate": 0.4286,
+      "n_false_positive": 86,
+      "n_flags": 110,
+      "n_localized": 18,
+      "n_tasks": 42
+     }
+    }
+   },
+   "retrieved": {
+    "pylint-dev__pylint-10034": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10036": [],
+    "pylint-dev__pylint-10044": [],
+    "pylint-dev__pylint-10045": [],
+    "pylint-dev__pylint-10062": [],
+    "pylint-dev__pylint-10075": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10089": [],
+    "pylint-dev__pylint-10097": [],
+    "pylint-dev__pylint-10141": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10170": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10209": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10225": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10228": [],
+    "pylint-dev__pylint-10232": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10240": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10246": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10250": [],
+    "pylint-dev__pylint-10275": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10300": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10328": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10344": [],
+    "pylint-dev__pylint-10350": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10362": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363",
+     "a049f98d50afd978d08a7002bbba4825a2fafb413c08ef091913c6bfa79fcef1"
+    ],
+    "pylint-dev__pylint-10379": [],
+    "pylint-dev__pylint-10403": [],
+    "pylint-dev__pylint-9714": [],
+    "pylint-dev__pylint-9744": [],
+    "pylint-dev__pylint-9753": [],
+    "pylint-dev__pylint-9771": [],
+    "pylint-dev__pylint-9772": [],
+    "pylint-dev__pylint-9785": [],
+    "pylint-dev__pylint-9802": [],
+    "pylint-dev__pylint-9817": [],
+    "pylint-dev__pylint-9838": [],
+    "pylint-dev__pylint-9842": [],
+    "pylint-dev__pylint-9844": [],
+    "pylint-dev__pylint-9866": [],
+    "pylint-dev__pylint-9868": [],
+    "pylint-dev__pylint-9876": [],
+    "pylint-dev__pylint-9882": [],
+    "pylint-dev__pylint-9917": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-9990": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ]
+   },
+   "scores": {
+    "pylint-dev__pylint-10034": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.676533
+    },
+    "pylint-dev__pylint-10036": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.452597
+    },
+    "pylint-dev__pylint-10044": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.313171
+    },
+    "pylint-dev__pylint-10045": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.479541
+    },
+    "pylint-dev__pylint-10062": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.444292
+    },
+    "pylint-dev__pylint-10075": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.622823
+    },
+    "pylint-dev__pylint-10089": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.463898
+    },
+    "pylint-dev__pylint-10097": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.423952
+    },
+    "pylint-dev__pylint-10141": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.553596
+    },
+    "pylint-dev__pylint-10170": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.753447
+    },
+    "pylint-dev__pylint-10209": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.551846
+    },
+    "pylint-dev__pylint-10225": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.783519
+    },
+    "pylint-dev__pylint-10228": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.456663
+    },
+    "pylint-dev__pylint-10232": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.657748
+    },
+    "pylint-dev__pylint-10240": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.614747
+    },
+    "pylint-dev__pylint-10246": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.647121
+    },
+    "pylint-dev__pylint-10250": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.278434
+    },
+    "pylint-dev__pylint-10275": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.52615
+    },
+    "pylint-dev__pylint-10300": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.58847
+    },
+    "pylint-dev__pylint-10328": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.606741
+    },
+    "pylint-dev__pylint-10344": {
+     "a049f98d50afd978d08a7002bbba4825a2fafb413c08ef091913c6bfa79fcef1": 0.22202,
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.232189
+    },
+    "pylint-dev__pylint-10350": {
+     "a049f98d50afd978d08a7002bbba4825a2fafb413c08ef091913c6bfa79fcef1": 0.466642,
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.592194
+    },
+    "pylint-dev__pylint-10362": {
+     "a049f98d50afd978d08a7002bbba4825a2fafb413c08ef091913c6bfa79fcef1": 0.568851,
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.676202
+    },
+    "pylint-dev__pylint-10379": {
+     "a049f98d50afd978d08a7002bbba4825a2fafb413c08ef091913c6bfa79fcef1": 0.382004,
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.324238
+    },
+    "pylint-dev__pylint-10403": {
+     "a049f98d50afd978d08a7002bbba4825a2fafb413c08ef091913c6bfa79fcef1": 0.430581,
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.402088
+    },
+    "pylint-dev__pylint-9714": {},
+    "pylint-dev__pylint-9744": {},
+    "pylint-dev__pylint-9753": {},
+    "pylint-dev__pylint-9771": {},
+    "pylint-dev__pylint-9772": {},
+    "pylint-dev__pylint-9785": {},
+    "pylint-dev__pylint-9802": {},
+    "pylint-dev__pylint-9817": {},
+    "pylint-dev__pylint-9838": {},
+    "pylint-dev__pylint-9842": {},
+    "pylint-dev__pylint-9844": {},
+    "pylint-dev__pylint-9866": {},
+    "pylint-dev__pylint-9868": {},
+    "pylint-dev__pylint-9876": {},
+    "pylint-dev__pylint-9882": {},
+    "pylint-dev__pylint-9917": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.549151
+    },
+    "pylint-dev__pylint-9990": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.511656
+    }
+   },
+   "tau": 0.5,
+   "version": "rolling",
+   "versions": {
+    "pylint-dev__pylint-10034": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10036": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10044": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10045": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10062": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10075": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10089": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10097": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10141": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10170": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10209": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10225": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10228": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10232": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10240": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10246": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10250": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10275": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10300": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10328": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10344": "6c24d33a61c36678e9ab22f1f095300c13ead0821b584443395d2c9b1689d02c",
+    "pylint-dev__pylint-10350": "6c24d33a61c36678e9ab22f1f095300c13ead0821b584443395d2c9b1689d02c",
+    "pylint-dev__pylint-10362": "6c24d33a61c36678e9ab22f1f095300c13ead0821b584443395d2c9b1689d02c",
+    "pylint-dev__pylint-10379": "6c24d33a61c36678e9ab22f1f095300c13ead0821b584443395d2c9b1689d02c",
+    "pylint-dev__pylint-10403": "6c24d33a61c36678e9ab22f1f095300c13ead0821b584443395d2c9b1689d02c",
+    "pylint-dev__pylint-9714": null,
+    "pylint-dev__pylint-9744": null,
+    "pylint-dev__pylint-9753": null,
+    "pylint-dev__pylint-9771": null,
+    "pylint-dev__pylint-9772": null,
+    "pylint-dev__pylint-9785": null,
+    "pylint-dev__pylint-9802": null,
+    "pylint-dev__pylint-9817": null,
+    "pylint-dev__pylint-9838": null,
+    "pylint-dev__pylint-9842": null,
+    "pylint-dev__pylint-9844": null,
+    "pylint-dev__pylint-9866": null,
+    "pylint-dev__pylint-9868": null,
+    "pylint-dev__pylint-9876": null,
+    "pylint-dev__pylint-9882": null,
+    "pylint-dev__pylint-9917": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-9990": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d"
+   }
+  },
+  "placebo": {
+   "file_hits": {
+    "pylint-dev__pylint-10034": true,
+    "pylint-dev__pylint-10036": false,
+    "pylint-dev__pylint-10044": true,
+    "pylint-dev__pylint-10045": true,
+    "pylint-dev__pylint-10062": true,
+    "pylint-dev__pylint-10075": true,
+    "pylint-dev__pylint-10089": false,
+    "pylint-dev__pylint-10097": false,
+    "pylint-dev__pylint-10141": true,
+    "pylint-dev__pylint-10170": false,
+    "pylint-dev__pylint-10209": false,
+    "pylint-dev__pylint-10225": false,
+    "pylint-dev__pylint-10228": true,
+    "pylint-dev__pylint-10232": true,
+    "pylint-dev__pylint-10240": true,
+    "pylint-dev__pylint-10246": true,
+    "pylint-dev__pylint-10250": false,
+    "pylint-dev__pylint-10275": false,
+    "pylint-dev__pylint-10300": false,
+    "pylint-dev__pylint-10328": true,
+    "pylint-dev__pylint-10344": true,
+    "pylint-dev__pylint-10350": true,
+    "pylint-dev__pylint-10362": true,
+    "pylint-dev__pylint-10379": false,
+    "pylint-dev__pylint-10403": true,
+    "pylint-dev__pylint-9714": true,
+    "pylint-dev__pylint-9744": false,
+    "pylint-dev__pylint-9753": false,
+    "pylint-dev__pylint-9771": false,
+    "pylint-dev__pylint-9772": false,
+    "pylint-dev__pylint-9785": true,
+    "pylint-dev__pylint-9802": false,
+    "pylint-dev__pylint-9817": true,
+    "pylint-dev__pylint-9838": true,
+    "pylint-dev__pylint-9842": false,
+    "pylint-dev__pylint-9844": false,
+    "pylint-dev__pylint-9866": true,
+    "pylint-dev__pylint-9868": true,
+    "pylint-dev__pylint-9876": true,
+    "pylint-dev__pylint-9882": true,
+    "pylint-dev__pylint-9917": false,
+    "pylint-dev__pylint-9990": false
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.7863,
+    "localization_rate": 0.5476,
+    "n_false_positive": 92,
+    "n_flags": 117,
+    "n_localized": 23,
+    "n_tasks": 42,
+    "per_repo": {
+     "pylint-dev/pylint": {
+      "false_positive_rate": 0.7863,
+      "localization_rate": 0.5476,
+      "n_false_positive": 92,
+      "n_flags": 117,
+      "n_localized": 23,
+      "n_tasks": 42
+     }
+    }
+   },
+   "flags": {
+    "pylint-dev__pylint-10034": [
+     "pylint/checkers/variables.py::VariablesChecker._filter_type_checking_definitions_from_consumption",
+     "pylint/checkers/variables.py::VariablesChecker._undefined_and_used_before_checker",
+     "pylint/checkers/typecheck.py::TypeChecker._check_assignment_from_function_call"
+    ],
+    "pylint-dev__pylint-10036": [
+     "pylint/pyreverse/inspector.py::Linker.compute_module",
+     "pylint/pyreverse/inspector.py::Project.add_module",
+     "pylint/pyreverse/main.py::Run.run"
+    ],
+    "pylint-dev__pylint-10044": [],
+    "pylint-dev__pylint-10045": [
+     "doc/conf.py::<module>"
+    ],
+    "pylint-dev__pylint-10062": [
+     "pylint/checkers/variables.py::NamesConsumer._node_guarded_by_same_test",
+     "pylint/checkers/variables.py::NamesConsumer._uncertain_nodes_if_tests",
+     "pylint/checkers/variables.py::VariablesChecker.visit_assign"
+    ],
+    "pylint-dev__pylint-10075": [
+     "pylint/checkers/variables.py::VariablesChecker.visit_functiondef",
+     "pylint/checkers/variables.py::VariablesChecker._has_nonlocal_binding"
+    ],
+    "pylint-dev__pylint-10089": [
+     "pylint/lint/parallel.py::check_parallel",
+     "pylint/utils/utils.py::<module>"
+    ],
+    "pylint-dev__pylint-10097": [
+     "pylint/checkers/typecheck.py::TypeChecker._check_invalid_sequence_index",
+     "pylint/checkers/typecheck.py::TypeChecker.visit_subscript",
+     "pylint/checkers/utils.py::supports_getitem"
+    ],
+    "pylint-dev__pylint-10141": [
+     "pylint/lint/pylinter.py::PyLinter._discover_files",
+     "pylint/lint/pylinter.py::PyLinter._lint_files",
+     "pylint/lint/pylinter.py::PyLinter._report_evaluation"
+    ],
+    "pylint-dev__pylint-10170": [
+     "pylint/checkers/typecheck.py::TypeChecker._check_isinstance_args",
+     "pylint/checkers/typecheck.py::TypeChecker.visit_compare",
+     "pylint/checkers/typecheck.py::TypeChecker._check_membership_test"
+    ],
+    "pylint-dev__pylint-10209": [
+     "pylint/checkers/typecheck.py::TypeChecker.visit_call",
+     "pylint/checkers/typecheck.py::TypeChecker._check_dundername_is_string",
+     "pylint/checkers/typecheck.py::TypeChecker._check_uninferable_call"
+    ],
+    "pylint-dev__pylint-10225": [
+     "pylint/checkers/typecheck.py::TypeChecker.visit_compare",
+     "pylint/checkers/typecheck.py::TypeChecker._check_membership_test",
+     "pylint/checkers/typecheck.py::TypeChecker._check_binop_errors"
+    ],
+    "pylint-dev__pylint-10228": [
+     "pylint/checkers/base/name_checker/naming_style.py::CamelCaseStyle",
+     "pylint/checkers/base/name_checker/naming_style.py::<module>"
+    ],
+    "pylint-dev__pylint-10232": [
+     "pylint/checkers/utils.py::has_known_bases",
+     "pylint/checkers/exceptions.py::ExceptionsChecker._check_catching_non_exception",
+     "pylint/checkers/exceptions.py::ExceptionsChecker.visit_try"
+    ],
+    "pylint-dev__pylint-10240": [
+     "pylint/checkers/variables.py::VariablesChecker.visit_assignname",
+     "pylint/checkers/variables.py::VariablesChecker._check_consumer"
+    ],
+    "pylint-dev__pylint-10246": [
+     "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker._check_use_implicit_booleaness_not_comparison",
+     "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker.visit_compare",
+     "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker._check_compare_to_str_or_zero"
+    ],
+    "pylint-dev__pylint-10250": [
+     "pylint/pyreverse/printer.py::Printer.emit_node",
+     "pylint/pyreverse/printer.py::Printer.generate",
+     "pylint/pyreverse/diagrams.py::ClassDiagram.get_relationships"
+    ],
+    "pylint-dev__pylint-10275": [
+     "pylint/checkers/typecheck.py::TypeChecker.visit_functiondef"
+    ],
+    "pylint-dev__pylint-10300": [],
+    "pylint-dev__pylint-10328": [
+     "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker._check_use_implicit_booleaness_not_comparison",
+     "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker.visit_compare",
+     "pylint/checkers/refactoring/implicit_booleaness_checker.py::<module>"
+    ],
+    "pylint-dev__pylint-10344": [],
+    "pylint-dev__pylint-10350": [
+     "pylint/checkers/utils.py::decorated_with",
+     "pylint/checkers/base/basic_error_checker.py::BasicErrorChecker._check_redefinition",
+     "pylint/utils/ast_walker.py::ASTWalker.walk"
+    ],
+    "pylint-dev__pylint-10362": [
+     "pylint/checkers/variables.py::VariablesChecker._is_only_type_assignment",
+     "pylint/checkers/variables.py::VariablesChecker._check_consumer",
+     "pylint/checkers/variables.py::VariablesChecker.visit_name"
+    ],
+    "pylint-dev__pylint-10379": [
+     "pylint/pyreverse/inspector.py::AggregationsHandler.handle",
+     "pylint/pyreverse/inspector.py::Linker.visit_assignname",
+     "pylint/pyreverse/diadefslib.py::DiaDefGenerator.get_associated"
+    ],
+    "pylint-dev__pylint-10403": [
+     "pylint/pyreverse/mermaidjs_printer.py::MermaidJSPrinter.emit_node"
+    ],
+    "pylint-dev__pylint-9714": [
+     "pylint/checkers/utils.py::is_terminating_func",
+     "pylint/checkers/utils.py::node_ignores_exception",
+     "pylint/lint/pylinter.py::PyLinter.add_message"
+    ],
+    "pylint-dev__pylint-9744": [
+     "pylint/checkers/base_checker.py::BaseChecker.add_message",
+     "pylint/lint/pylinter.py::PyLinter.add_message",
+     "pylint/checkers/base_checker.py::BaseChecker.check_consistency"
+    ],
+    "pylint-dev__pylint-9753": [
+     "pylint/lint/pylinter.py::PyLinter.get_ast",
+     "pylint/lint/pylinter.py::PyLinter._check_astroid_module",
+     "pylint/utils/ast_walker.py::ASTWalker.walk"
+    ],
+    "pylint-dev__pylint-9771": [
+     "pylint/checkers/variables.py::VariablesChecker.visit_module"
+    ],
+    "pylint-dev__pylint-9772": [
+     "pylint/checkers/variables.py::VariablesChecker._check_module_attrs",
+     "pylint/checkers/variables.py::VariablesChecker._is_variable_violation",
+     "pylint/lint/pylinter.py::PyLinter.add_message"
+    ],
+    "pylint-dev__pylint-9785": [
+     "pylint/checkers/typecheck.py::TypeChecker.visit_call",
+     "pylint/extensions/typing.py::TypingChecker._check_for_typing_alias"
+    ],
+    "pylint-dev__pylint-9802": [
+     "pylint/lint/pylinter.py::PyLinter._add_one_message",
+     "pylint/lint/pylinter.py::PyLinter.check_astroid_module",
+     "pylint/checkers/utils.py::safe_infer"
+    ],
+    "pylint-dev__pylint-9817": [
+     "pylint/checkers/classes/class_checker.py::ClassChecker._check_slots",
+     "pylint/checkers/classes/class_checker.py::ClassChecker.visit_classdef",
+     "pylint/lint/pylinter.py::PyLinter._check_astroid_module"
+    ],
+    "pylint-dev__pylint-9838": [
+     "pylint/checkers/unsupported_version.py::UnsupportedVersionChecker",
+     "pylint/checkers/unsupported_version.py::<module>"
+    ],
+    "pylint-dev__pylint-9842": [
+     "pylint/lint/pylinter.py::PyLinter.add_message",
+     "pylint/checkers/utils.py::function_arguments_are_ambiguous",
+     "pylint/lint/pylinter.py::PyLinter._check_astroid_module"
+    ],
+    "pylint-dev__pylint-9844": [
+     "pylint/checkers/async.py::AsyncChecker.visit_asyncfunctiondef",
+     "pylint/lint/pylinter.py::PyLinter._add_one_message",
+     "pylint/checkers/base_checker.py::BaseChecker.add_message"
+    ],
+    "pylint-dev__pylint-9866": [
+     "pylint/checkers/refactoring/refactoring_checker.py::RefactoringChecker._is_node_return_ended",
+     "pylint/checkers/refactoring/refactoring_checker.py::RefactoringChecker._is_function_def_never_returning",
+     "pylint/checkers/refactoring/refactoring_checker.py::RefactoringChecker._check_consistent_returns"
+    ],
+    "pylint-dev__pylint-9868": [
+     "pylint/checkers/typecheck.py::TypeChecker._check_isinstance_args",
+     "pylint/checkers/stdlib.py::StdlibChecker.visit_call"
+    ],
+    "pylint-dev__pylint-9876": [
+     "pylint/checkers/variables.py::VariablesChecker._loopvar_name",
+     "pylint/utils/ast_walker.py::ASTWalker.walk",
+     "pylint/lint/pylinter.py::PyLinter.check_astroid_module"
+    ],
+    "pylint-dev__pylint-9882": [
+     "pylint/checkers/typecheck.py::TypeChecker.visit_call",
+     "pylint/checkers/typecheck.py::TypeChecker._check_argument_order",
+     "pylint/checkers/typecheck.py::TypeChecker._check_isinstance_args"
+    ],
+    "pylint-dev__pylint-9917": [
+     "pylint/checkers/misc.py::EncodingChecker.process_module",
+     "pylint/lint/pylinter.py::PyLinter.check_astroid_module",
+     "pylint/checkers/base_checker.py::BaseChecker.add_message"
+    ],
+    "pylint-dev__pylint-9990": [
+     "pylint/checkers/typecheck.py::TypeChecker._check_assignment_from_function_call",
+     "pylint/lint/pylinter.py::PyLinter.add_message"
+    ]
+   },
+   "hits": {
+    "pylint-dev__pylint-10034": false,
+    "pylint-dev__pylint-10036": false,
+    "pylint-dev__pylint-10044": false,
+    "pylint-dev__pylint-10045": true,
+    "pylint-dev__pylint-10062": true,
+    "pylint-dev__pylint-10075": true,
+    "pylint-dev__pylint-10089": false,
+    "pylint-dev__pylint-10097": false,
+    "pylint-dev__pylint-10141": true,
+    "pylint-dev__pylint-10170": false,
+    "pylint-dev__pylint-10209": false,
+    "pylint-dev__pylint-10225": false,
+    "pylint-dev__pylint-10228": true,
+    "pylint-dev__pylint-10232": true,
+    "pylint-dev__pylint-10240": false,
+    "pylint-dev__pylint-10246": true,
+    "pylint-dev__pylint-10250": false,
+    "pylint-dev__pylint-10275": false,
+    "pylint-dev__pylint-10300": false,
+    "pylint-dev__pylint-10328": true,
+    "pylint-dev__pylint-10344": false,
+    "pylint-dev__pylint-10350": true,
+    "pylint-dev__pylint-10362": true,
+    "pylint-dev__pylint-10379": false,
+    "pylint-dev__pylint-10403": true,
+    "pylint-dev__pylint-9714": true,
+    "pylint-dev__pylint-9744": false,
+    "pylint-dev__pylint-9753": false,
+    "pylint-dev__pylint-9771": false,
+    "pylint-dev__pylint-9772": false,
+    "pylint-dev__pylint-9785": true,
+    "pylint-dev__pylint-9802": false,
+    "pylint-dev__pylint-9817": true,
+    "pylint-dev__pylint-9838": true,
+    "pylint-dev__pylint-9842": false,
+    "pylint-dev__pylint-9844": false,
+    "pylint-dev__pylint-9866": true,
+    "pylint-dev__pylint-9868": true,
+    "pylint-dev__pylint-9876": true,
+    "pylint-dev__pylint-9882": true,
+    "pylint-dev__pylint-9917": false,
+    "pylint-dev__pylint-9990": false
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": 1.33,
+    "localization_lift_pts": -2.38
+   },
+   "metrics": {
+    "false_positive_rate": 0.7723,
+    "localization_rate": 0.4524,
+    "n_false_positive": 78,
+    "n_flags": 101,
+    "n_localized": 19,
+    "n_tasks": 42,
+    "per_repo": {
+     "pylint-dev/pylint": {
+      "false_positive_rate": 0.7723,
+      "localization_rate": 0.4524,
+      "n_false_positive": 78,
+      "n_flags": 101,
+      "n_localized": 19,
+      "n_tasks": 42
+     }
+    }
+   },
+   "retrieved": {
+    "pylint-dev__pylint-10034": [
+     "placebo:1"
+    ],
+    "pylint-dev__pylint-10036": [
+     "placebo:0"
+    ],
+    "pylint-dev__pylint-10044": [
+     "placebo:4"
+    ],
+    "pylint-dev__pylint-10045": [
+     "placebo:4"
+    ],
+    "pylint-dev__pylint-10062": [
+     "placebo:1"
+    ],
+    "pylint-dev__pylint-10075": [
+     "placebo:1"
+    ],
+    "pylint-dev__pylint-10089": [
+     "placebo:0"
+    ],
+    "pylint-dev__pylint-10097": [
+     "placebo:4"
+    ],
+    "pylint-dev__pylint-10141": [
+     "placebo:4"
+    ],
+    "pylint-dev__pylint-10170": [
+     "placebo:0"
+    ],
+    "pylint-dev__pylint-10209": [
+     "placebo:0"
+    ],
+    "pylint-dev__pylint-10225": [
+     "placebo:0"
+    ],
+    "pylint-dev__pylint-10228": [
+     "placebo:0"
+    ],
+    "pylint-dev__pylint-10232": [
+     "placebo:0"
+    ],
+    "pylint-dev__pylint-10240": [
+     "placebo:0"
+    ],
+    "pylint-dev__pylint-10246": [
+     "placebo:0"
+    ],
+    "pylint-dev__pylint-10250": [
+     "placebo:4"
+    ],
+    "pylint-dev__pylint-10275": [
+     "placebo:0"
+    ],
+    "pylint-dev__pylint-10300": [
+     "placebo:0"
+    ],
+    "pylint-dev__pylint-10328": [
+     "placebo:0"
+    ],
+    "pylint-dev__pylint-10344": [
+     "placebo:0",
+     "placebo:4"
+    ],
+    "pylint-dev__pylint-10350": [
+     "placebo:0",
+     "placebo:4"
+    ],
+    "pylint-dev__pylint-10362": [
+     "placebo:0",
+     "placebo:4"
+    ],
+    "pylint-dev__pylint-10379": [
+     "placebo:0",
+     "placebo:4"
+    ],
+    "pylint-dev__pylint-10403": [
+     "placebo:4",
+     "placebo:3"
+    ],
+    "pylint-dev__pylint-9714": [],
+    "pylint-dev__pylint-9744": [],
+    "pylint-dev__pylint-9753": [],
+    "pylint-dev__pylint-9771": [],
+    "pylint-dev__pylint-9772": [],
+    "pylint-dev__pylint-9785": [],
+    "pylint-dev__pylint-9802": [],
+    "pylint-dev__pylint-9817": [],
+    "pylint-dev__pylint-9838": [],
+    "pylint-dev__pylint-9842": [],
+    "pylint-dev__pylint-9844": [],
+    "pylint-dev__pylint-9866": [],
+    "pylint-dev__pylint-9868": [],
+    "pylint-dev__pylint-9876": [],
+    "pylint-dev__pylint-9882": [],
+    "pylint-dev__pylint-9917": [
+     "placebo:0"
+    ],
+    "pylint-dev__pylint-9990": [
+     "placebo:0"
+    ]
+   },
+   "scores": {
+    "pylint-dev__pylint-10034": {
+     "placebo:1": 0.256516
+    },
+    "pylint-dev__pylint-10036": {
+     "placebo:0": 0.302462
+    },
+    "pylint-dev__pylint-10044": {
+     "placebo:4": 0.228494
+    },
+    "pylint-dev__pylint-10045": {
+     "placebo:4": 0.262865
+    },
+    "pylint-dev__pylint-10062": {
+     "placebo:1": 0.277812
+    },
+    "pylint-dev__pylint-10075": {
+     "placebo:1": 0.340764
+    },
+    "pylint-dev__pylint-10089": {
+     "placebo:0": 0.217936
+    },
+    "pylint-dev__pylint-10097": {
+     "placebo:4": 0.225894
+    },
+    "pylint-dev__pylint-10141": {
+     "placebo:4": 0.24087
+    },
+    "pylint-dev__pylint-10170": {
+     "placebo:0": 0.307363
+    },
+    "pylint-dev__pylint-10209": {
+     "placebo:0": 0.339063
+    },
+    "pylint-dev__pylint-10225": {
+     "placebo:0": 0.299983
+    },
+    "pylint-dev__pylint-10228": {
+     "placebo:0": 0.261617
+    },
+    "pylint-dev__pylint-10232": {
+     "placebo:0": 0.336393
+    },
+    "pylint-dev__pylint-10240": {
+     "placebo:0": 0.381227
+    },
+    "pylint-dev__pylint-10246": {
+     "placebo:0": 0.333644
+    },
+    "pylint-dev__pylint-10250": {
+     "placebo:4": 0.154924
+    },
+    "pylint-dev__pylint-10275": {
+     "placebo:0": 0.287619
+    },
+    "pylint-dev__pylint-10300": {
+     "placebo:0": 0.311618
+    },
+    "pylint-dev__pylint-10328": {
+     "placebo:0": 0.285668
+    },
+    "pylint-dev__pylint-10344": {
+     "placebo:0": 0.208224,
+     "placebo:4": 0.075626
+    },
+    "pylint-dev__pylint-10350": {
+     "placebo:0": 0.297533,
+     "placebo:4": 0.285153
+    },
+    "pylint-dev__pylint-10362": {
+     "placebo:0": 0.342592,
+     "placebo:4": 0.223229
+    },
+    "pylint-dev__pylint-10379": {
+     "placebo:0": 0.220673,
+     "placebo:4": 0.218303
+    },
+    "pylint-dev__pylint-10403": {
+     "placebo:3": 0.268471,
+     "placebo:4": 0.314423
+    },
+    "pylint-dev__pylint-9714": {},
+    "pylint-dev__pylint-9744": {},
+    "pylint-dev__pylint-9753": {},
+    "pylint-dev__pylint-9771": {},
+    "pylint-dev__pylint-9772": {},
+    "pylint-dev__pylint-9785": {},
+    "pylint-dev__pylint-9802": {},
+    "pylint-dev__pylint-9817": {},
+    "pylint-dev__pylint-9838": {},
+    "pylint-dev__pylint-9842": {},
+    "pylint-dev__pylint-9844": {},
+    "pylint-dev__pylint-9866": {},
+    "pylint-dev__pylint-9868": {},
+    "pylint-dev__pylint-9876": {},
+    "pylint-dev__pylint-9882": {},
+    "pylint-dev__pylint-9917": {
+     "placebo:0": 0.363855
+    },
+    "pylint-dev__pylint-9990": {
+     "placebo:0": 0.162749
+    }
+   },
+   "tau": 0.0,
+   "version": "rolling",
+   "versions": {
+    "pylint-dev__pylint-10034": null,
+    "pylint-dev__pylint-10036": null,
+    "pylint-dev__pylint-10044": null,
+    "pylint-dev__pylint-10045": null,
+    "pylint-dev__pylint-10062": null,
+    "pylint-dev__pylint-10075": null,
+    "pylint-dev__pylint-10089": null,
+    "pylint-dev__pylint-10097": null,
+    "pylint-dev__pylint-10141": null,
+    "pylint-dev__pylint-10170": null,
+    "pylint-dev__pylint-10209": null,
+    "pylint-dev__pylint-10225": null,
+    "pylint-dev__pylint-10228": null,
+    "pylint-dev__pylint-10232": null,
+    "pylint-dev__pylint-10240": null,
+    "pylint-dev__pylint-10246": null,
+    "pylint-dev__pylint-10250": null,
+    "pylint-dev__pylint-10275": null,
+    "pylint-dev__pylint-10300": null,
+    "pylint-dev__pylint-10328": null,
+    "pylint-dev__pylint-10344": null,
+    "pylint-dev__pylint-10350": null,
+    "pylint-dev__pylint-10362": null,
+    "pylint-dev__pylint-10379": null,
+    "pylint-dev__pylint-10403": null,
+    "pylint-dev__pylint-9714": null,
+    "pylint-dev__pylint-9744": null,
+    "pylint-dev__pylint-9753": null,
+    "pylint-dev__pylint-9771": null,
+    "pylint-dev__pylint-9772": null,
+    "pylint-dev__pylint-9785": null,
+    "pylint-dev__pylint-9802": null,
+    "pylint-dev__pylint-9817": null,
+    "pylint-dev__pylint-9838": null,
+    "pylint-dev__pylint-9842": null,
+    "pylint-dev__pylint-9844": null,
+    "pylint-dev__pylint-9866": null,
+    "pylint-dev__pylint-9868": null,
+    "pylint-dev__pylint-9876": null,
+    "pylint-dev__pylint-9882": null,
+    "pylint-dev__pylint-9917": null,
+    "pylint-dev__pylint-9990": null
+   }
+  },
+  "treatment": {
+   "file_hits": {
+    "pylint-dev__pylint-10034": false,
+    "pylint-dev__pylint-10036": false,
+    "pylint-dev__pylint-10044": true,
+    "pylint-dev__pylint-10045": true,
+    "pylint-dev__pylint-10062": true,
+    "pylint-dev__pylint-10075": false,
+    "pylint-dev__pylint-10089": false,
+    "pylint-dev__pylint-10097": false,
+    "pylint-dev__pylint-10141": true,
+    "pylint-dev__pylint-10170": false,
+    "pylint-dev__pylint-10209": false,
+    "pylint-dev__pylint-10225": false,
+    "pylint-dev__pylint-10228": true,
+    "pylint-dev__pylint-10232": true,
+    "pylint-dev__pylint-10240": false,
+    "pylint-dev__pylint-10246": true,
+    "pylint-dev__pylint-10250": false,
+    "pylint-dev__pylint-10275": false,
+    "pylint-dev__pylint-10300": false,
+    "pylint-dev__pylint-10328": true,
+    "pylint-dev__pylint-10344": true,
+    "pylint-dev__pylint-10350": true,
+    "pylint-dev__pylint-10362": true,
+    "pylint-dev__pylint-10379": false,
+    "pylint-dev__pylint-10403": true,
+    "pylint-dev__pylint-9714": true,
+    "pylint-dev__pylint-9744": false,
+    "pylint-dev__pylint-9753": false,
+    "pylint-dev__pylint-9771": false,
+    "pylint-dev__pylint-9772": false,
+    "pylint-dev__pylint-9785": true,
+    "pylint-dev__pylint-9802": false,
+    "pylint-dev__pylint-9817": true,
+    "pylint-dev__pylint-9838": true,
+    "pylint-dev__pylint-9842": false,
+    "pylint-dev__pylint-9844": false,
+    "pylint-dev__pylint-9866": true,
+    "pylint-dev__pylint-9868": true,
+    "pylint-dev__pylint-9876": true,
+    "pylint-dev__pylint-9882": true,
+    "pylint-dev__pylint-9917": false,
+    "pylint-dev__pylint-9990": false
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.807,
+    "localization_rate": 0.4762,
+    "n_false_positive": 92,
+    "n_flags": 114,
+    "n_localized": 20,
+    "n_tasks": 42,
+    "per_repo": {
+     "pylint-dev/pylint": {
+      "false_positive_rate": 0.807,
+      "localization_rate": 0.4762,
+      "n_false_positive": 92,
+      "n_flags": 114,
+      "n_localized": 20,
+      "n_tasks": 42
+     }
+    }
+   },
+   "flags": {
+    "pylint-dev__pylint-10034": [
+     "pylint/checkers/typecheck.py::TypeChecker.visit_functiondef",
+     "pylint/checkers/typecheck.py::TypeChecker._check_assignment_from_function_call",
+     "pylint/checkers/typecheck.py::TypeChecker._is_ignored_function"
+    ],
+    "pylint-dev__pylint-10036": [
+     "pylint/pyreverse/main.py::Run.run",
+     "pylint/pyreverse/inspector.py::Linker.compute_module",
+     "pylint/pyreverse/inspector.py::Project.add_module"
+    ],
+    "pylint-dev__pylint-10044": [
+     "pylint/extensions/typing.py::TypingChecker._check_for_alternative_union_syntax",
+     "pylint/extensions/typing.py::TypingChecker._is_deprecated_union_annotation",
+     "pylint/checkers/typecheck.py::TypeChecker._detect_unsupported_alternative_union_syntax"
+    ],
+    "pylint-dev__pylint-10045": [],
+    "pylint-dev__pylint-10062": [],
+    "pylint-dev__pylint-10075": [
+     "pylint/checkers/typecheck.py::TypeChecker.visit_call",
+     "pylint/checkers/typecheck.py::TypeChecker._check_uninferable_call",
+     "pylint/checkers/typecheck.py::TypeChecker._check_assignment_from_function_call"
+    ],
+    "pylint-dev__pylint-10089": [
+     "pylint/lint/parallel.py::check_parallel",
+     "pylint/checkers/typecheck.py::TypeChecker.visit_call",
+     "pylint/checkers/typecheck.py::TypeChecker._check_isinstance_args"
+    ],
+    "pylint-dev__pylint-10097": [
+     "pylint/checkers/typecheck.py::TypeChecker._check_invalid_sequence_index",
+     "pylint/checkers/typecheck.py::TypeChecker.visit_subscript",
+     "pylint/checkers/typecheck.py::TypeChecker._check_isinstance_args"
+    ],
+    "pylint-dev__pylint-10141": [
+     "pylint/lint/pylinter.py::PyLinter._discover_files",
+     "pylint/lint/pylinter.py::PyLinter._lint_files",
+     "pylint/lint/pylinter.py::PyLinter._report_evaluation"
+    ],
+    "pylint-dev__pylint-10170": [
+     "pylint/checkers/typecheck.py::TypeChecker._check_isinstance_args",
+     "pylint/checkers/typecheck.py::TypeChecker.visit_compare",
+     "pylint/checkers/typecheck.py::TypeChecker._check_membership_test"
+    ],
+    "pylint-dev__pylint-10209": [
+     "pylint/checkers/typecheck.py::TypeChecker._check_dundername_is_string",
+     "pylint/checkers/typecheck.py::TypeChecker._check_isinstance_args",
+     "pylint/checkers/typecheck.py::TypeChecker.visit_call"
+    ],
+    "pylint-dev__pylint-10225": [
+     "pylint/checkers/typecheck.py::TypeChecker._check_isinstance_args",
+     "pylint/checkers/typecheck.py::TypeChecker.visit_compare",
+     "pylint/checkers/typecheck.py::TypeChecker.visit_binop"
+    ],
+    "pylint-dev__pylint-10228": [
+     "pylint/checkers/base/name_checker/naming_style.py::NamingStyle.get_regex",
+     "pylint/checkers/utils.py::is_attr_private"
+    ],
+    "pylint-dev__pylint-10232": [
+     "pylint/checkers/utils.py::has_known_bases",
+     "pylint/checkers/exceptions.py::ExceptionsChecker._check_catching_non_exception",
+     "pylint/checkers/exceptions.py::ExceptionsChecker.visit_try"
+    ],
+    "pylint-dev__pylint-10240": [
+     "pylint/checkers/utils.py::is_defined_before",
+     "pylint/checkers/utils.py::defnode_in_scope",
+     "pylint/lint/pylinter.py::PyLinter.check"
+    ],
+    "pylint-dev__pylint-10246": [
+     "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker._check_use_implicit_booleaness_not_comparison",
+     "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker.visit_compare",
+     "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker._check_compare_to_str_or_zero"
+    ],
+    "pylint-dev__pylint-10250": [
+     "pylint/pyreverse/printer.py::Printer.emit_node",
+     "pylint/pyreverse/printer.py::Printer.generate",
+     "pylint/pyreverse/diagrams.py::ClassDiagram.get_relationships"
+    ],
+    "pylint-dev__pylint-10275": [
+     "pylint/checkers/typecheck.py::TypeChecker._is_ignored_function"
+    ],
+    "pylint-dev__pylint-10300": [
+     "pylint/checkers/utils.py::parse_format_method_string"
+    ],
+    "pylint-dev__pylint-10328": [
+     "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker._check_use_implicit_booleaness_not_comparison",
+     "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker.visit_compare"
+    ],
+    "pylint-dev__pylint-10344": [
+     "pylint/pyreverse/inspector.py::Linker.visit_assignname",
+     "pylint/pyreverse/inspector.py::Linker.handle_assignattr_type"
+    ],
+    "pylint-dev__pylint-10350": [
+     "pylint/checkers/utils.py::decorated_with",
+     "pylint/checkers/base/basic_error_checker.py::BasicErrorChecker._check_redefinition"
+    ],
+    "pylint-dev__pylint-10362": [
+     "pylint/checkers/variables.py::VariablesChecker._is_only_type_assignment",
+     "pylint/checkers/variables.py::VariablesChecker._check_consumer",
+     "pylint/checkers/variables.py::VariablesChecker.visit_name"
+    ],
+    "pylint-dev__pylint-10379": [
+     "pylint/pyreverse/diadefslib.py::ClassDiadefGenerator.class_diagram",
+     "pylint/pyreverse/inspector.py::AggregationsHandler.handle",
+     "pylint/pyreverse/utils.py::FilterMixIn.show_attr"
+    ],
+    "pylint-dev__pylint-10403": [
+     "pylint/pyreverse/mermaidjs_printer.py::MermaidJSPrinter.emit_node",
+     "pylint/pyreverse/mermaidjs_printer.py::MermaidJSPrinter._open_graph",
+     "pylint/pyreverse/mermaidjs_printer.py::HTMLMermaidJSPrinter._open_graph"
+    ],
+    "pylint-dev__pylint-9714": [
+     "pylint/checkers/utils.py::is_terminating_func",
+     "pylint/checkers/utils.py::node_ignores_exception",
+     "pylint/lint/pylinter.py::PyLinter.add_message"
+    ],
+    "pylint-dev__pylint-9744": [
+     "pylint/checkers/base_checker.py::BaseChecker.add_message",
+     "pylint/lint/pylinter.py::PyLinter.add_message",
+     "pylint/checkers/base_checker.py::BaseChecker.check_consistency"
+    ],
+    "pylint-dev__pylint-9753": [
+     "pylint/lint/pylinter.py::PyLinter.get_ast",
+     "pylint/lint/pylinter.py::PyLinter._check_astroid_module",
+     "pylint/utils/ast_walker.py::ASTWalker.walk"
+    ],
+    "pylint-dev__pylint-9771": [
+     "pylint/checkers/variables.py::VariablesChecker.visit_module"
+    ],
+    "pylint-dev__pylint-9772": [
+     "pylint/checkers/variables.py::VariablesChecker._check_module_attrs",
+     "pylint/checkers/variables.py::VariablesChecker._is_variable_violation",
+     "pylint/lint/pylinter.py::PyLinter.add_message"
+    ],
+    "pylint-dev__pylint-9785": [
+     "pylint/checkers/typecheck.py::TypeChecker.visit_call",
+     "pylint/extensions/typing.py::TypingChecker._check_for_typing_alias"
+    ],
+    "pylint-dev__pylint-9802": [
+     "pylint/lint/pylinter.py::PyLinter._add_one_message",
+     "pylint/lint/pylinter.py::PyLinter.check_astroid_module",
+     "pylint/checkers/utils.py::safe_infer"
+    ],
+    "pylint-dev__pylint-9817": [
+     "pylint/checkers/classes/class_checker.py::ClassChecker._check_slots",
+     "pylint/checkers/classes/class_checker.py::ClassChecker.visit_classdef",
+     "pylint/lint/pylinter.py::PyLinter._check_astroid_module"
+    ],
+    "pylint-dev__pylint-9838": [
+     "pylint/checkers/unsupported_version.py::UnsupportedVersionChecker",
+     "pylint/checkers/unsupported_version.py::<module>"
+    ],
+    "pylint-dev__pylint-9842": [
+     "pylint/lint/pylinter.py::PyLinter.add_message",
+     "pylint/checkers/utils.py::function_arguments_are_ambiguous",
+     "pylint/lint/pylinter.py::PyLinter._check_astroid_module"
+    ],
+    "pylint-dev__pylint-9844": [
+     "pylint/checkers/async.py::AsyncChecker.visit_asyncfunctiondef",
+     "pylint/lint/pylinter.py::PyLinter._add_one_message",
+     "pylint/checkers/base_checker.py::BaseChecker.add_message"
+    ],
+    "pylint-dev__pylint-9866": [
+     "pylint/checkers/refactoring/refactoring_checker.py::RefactoringChecker._is_node_return_ended",
+     "pylint/checkers/refactoring/refactoring_checker.py::RefactoringChecker._is_function_def_never_returning",
+     "pylint/checkers/refactoring/refactoring_checker.py::RefactoringChecker._check_consistent_returns"
+    ],
+    "pylint-dev__pylint-9868": [
+     "pylint/checkers/typecheck.py::TypeChecker._check_isinstance_args",
+     "pylint/checkers/stdlib.py::StdlibChecker.visit_call"
+    ],
+    "pylint-dev__pylint-9876": [
+     "pylint/checkers/variables.py::VariablesChecker._loopvar_name",
+     "pylint/utils/ast_walker.py::ASTWalker.walk",
+     "pylint/lint/pylinter.py::PyLinter.check_astroid_module"
+    ],
+    "pylint-dev__pylint-9882": [
+     "pylint/checkers/typecheck.py::TypeChecker.visit_call",
+     "pylint/checkers/typecheck.py::TypeChecker._check_argument_order",
+     "pylint/checkers/typecheck.py::TypeChecker._check_isinstance_args"
+    ],
+    "pylint-dev__pylint-9917": [
+     "pylint/checkers/misc.py::EncodingChecker.process_module",
+     "pylint/lint/pylinter.py::PyLinter.check",
+     "pylint/checkers/misc.py::ByIdManagedMessagesChecker.process_module"
+    ],
+    "pylint-dev__pylint-9990": [
+     "pylint/checkers/typecheck.py::TypeChecker.visit_assign",
+     "pylint/checkers/typecheck.py::TypeChecker._check_assignment_from_function_call",
+     "pylint/checkers/typecheck.py::TypeChecker.visit_call"
+    ]
+   },
+   "hits": {
+    "pylint-dev__pylint-10034": false,
+    "pylint-dev__pylint-10036": false,
+    "pylint-dev__pylint-10044": false,
+    "pylint-dev__pylint-10045": false,
+    "pylint-dev__pylint-10062": false,
+    "pylint-dev__pylint-10075": false,
+    "pylint-dev__pylint-10089": false,
+    "pylint-dev__pylint-10097": false,
+    "pylint-dev__pylint-10141": true,
+    "pylint-dev__pylint-10170": false,
+    "pylint-dev__pylint-10209": false,
+    "pylint-dev__pylint-10225": false,
+    "pylint-dev__pylint-10228": false,
+    "pylint-dev__pylint-10232": true,
+    "pylint-dev__pylint-10240": false,
+    "pylint-dev__pylint-10246": true,
+    "pylint-dev__pylint-10250": false,
+    "pylint-dev__pylint-10275": false,
+    "pylint-dev__pylint-10300": false,
+    "pylint-dev__pylint-10328": true,
+    "pylint-dev__pylint-10344": false,
+    "pylint-dev__pylint-10350": true,
+    "pylint-dev__pylint-10362": true,
+    "pylint-dev__pylint-10379": false,
+    "pylint-dev__pylint-10403": true,
+    "pylint-dev__pylint-9714": true,
+    "pylint-dev__pylint-9744": false,
+    "pylint-dev__pylint-9753": false,
+    "pylint-dev__pylint-9771": false,
+    "pylint-dev__pylint-9772": false,
+    "pylint-dev__pylint-9785": true,
+    "pylint-dev__pylint-9802": false,
+    "pylint-dev__pylint-9817": true,
+    "pylint-dev__pylint-9838": true,
+    "pylint-dev__pylint-9842": false,
+    "pylint-dev__pylint-9844": false,
+    "pylint-dev__pylint-9866": true,
+    "pylint-dev__pylint-9868": true,
+    "pylint-dev__pylint-9876": true,
+    "pylint-dev__pylint-9882": true,
+    "pylint-dev__pylint-9917": false,
+    "pylint-dev__pylint-9990": false
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": 6.35,
+    "localization_lift_pts": -11.9
+   },
+   "metrics": {
+    "false_positive_rate": 0.8224,
+    "localization_rate": 0.3571,
+    "n_false_positive": 88,
+    "n_flags": 107,
+    "n_localized": 15,
+    "n_tasks": 42,
+    "per_repo": {
+     "pylint-dev/pylint": {
+      "false_positive_rate": 0.8224,
+      "localization_rate": 0.3571,
+      "n_false_positive": 88,
+      "n_flags": 107,
+      "n_localized": 15,
+      "n_tasks": 42
+     }
+    }
+   },
+   "retrieved": {
+    "pylint-dev__pylint-10034": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10036": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10044": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10045": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10062": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10075": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10089": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10097": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10141": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10170": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10209": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10225": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10228": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10232": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10240": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10246": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10250": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10275": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10300": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10328": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10344": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363",
+     "a049f98d50afd978d08a7002bbba4825a2fafb413c08ef091913c6bfa79fcef1"
+    ],
+    "pylint-dev__pylint-10350": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363",
+     "a049f98d50afd978d08a7002bbba4825a2fafb413c08ef091913c6bfa79fcef1"
+    ],
+    "pylint-dev__pylint-10362": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363",
+     "a049f98d50afd978d08a7002bbba4825a2fafb413c08ef091913c6bfa79fcef1"
+    ],
+    "pylint-dev__pylint-10379": [
+     "a049f98d50afd978d08a7002bbba4825a2fafb413c08ef091913c6bfa79fcef1",
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-10403": [
+     "a049f98d50afd978d08a7002bbba4825a2fafb413c08ef091913c6bfa79fcef1",
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-9714": [],
+    "pylint-dev__pylint-9744": [],
+    "pylint-dev__pylint-9753": [],
+    "pylint-dev__pylint-9771": [],
+    "pylint-dev__pylint-9772": [],
+    "pylint-dev__pylint-9785": [],
+    "pylint-dev__pylint-9802": [],
+    "pylint-dev__pylint-9817": [],
+    "pylint-dev__pylint-9838": [],
+    "pylint-dev__pylint-9842": [],
+    "pylint-dev__pylint-9844": [],
+    "pylint-dev__pylint-9866": [],
+    "pylint-dev__pylint-9868": [],
+    "pylint-dev__pylint-9876": [],
+    "pylint-dev__pylint-9882": [],
+    "pylint-dev__pylint-9917": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ],
+    "pylint-dev__pylint-9990": [
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+    ]
+   },
+   "scores": {
+    "pylint-dev__pylint-10034": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.676533
+    },
+    "pylint-dev__pylint-10036": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.452597
+    },
+    "pylint-dev__pylint-10044": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.313171
+    },
+    "pylint-dev__pylint-10045": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.479541
+    },
+    "pylint-dev__pylint-10062": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.444292
+    },
+    "pylint-dev__pylint-10075": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.622823
+    },
+    "pylint-dev__pylint-10089": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.463898
+    },
+    "pylint-dev__pylint-10097": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.423952
+    },
+    "pylint-dev__pylint-10141": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.553596
+    },
+    "pylint-dev__pylint-10170": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.753447
+    },
+    "pylint-dev__pylint-10209": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.551846
+    },
+    "pylint-dev__pylint-10225": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.783519
+    },
+    "pylint-dev__pylint-10228": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.456663
+    },
+    "pylint-dev__pylint-10232": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.657748
+    },
+    "pylint-dev__pylint-10240": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.614747
+    },
+    "pylint-dev__pylint-10246": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.647121
+    },
+    "pylint-dev__pylint-10250": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.278434
+    },
+    "pylint-dev__pylint-10275": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.52615
+    },
+    "pylint-dev__pylint-10300": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.58847
+    },
+    "pylint-dev__pylint-10328": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.606741
+    },
+    "pylint-dev__pylint-10344": {
+     "a049f98d50afd978d08a7002bbba4825a2fafb413c08ef091913c6bfa79fcef1": 0.22202,
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.232189
+    },
+    "pylint-dev__pylint-10350": {
+     "a049f98d50afd978d08a7002bbba4825a2fafb413c08ef091913c6bfa79fcef1": 0.466642,
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.592194
+    },
+    "pylint-dev__pylint-10362": {
+     "a049f98d50afd978d08a7002bbba4825a2fafb413c08ef091913c6bfa79fcef1": 0.568851,
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.676202
+    },
+    "pylint-dev__pylint-10379": {
+     "a049f98d50afd978d08a7002bbba4825a2fafb413c08ef091913c6bfa79fcef1": 0.382004,
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.324238
+    },
+    "pylint-dev__pylint-10403": {
+     "a049f98d50afd978d08a7002bbba4825a2fafb413c08ef091913c6bfa79fcef1": 0.430581,
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.402088
+    },
+    "pylint-dev__pylint-9714": {},
+    "pylint-dev__pylint-9744": {},
+    "pylint-dev__pylint-9753": {},
+    "pylint-dev__pylint-9771": {},
+    "pylint-dev__pylint-9772": {},
+    "pylint-dev__pylint-9785": {},
+    "pylint-dev__pylint-9802": {},
+    "pylint-dev__pylint-9817": {},
+    "pylint-dev__pylint-9838": {},
+    "pylint-dev__pylint-9842": {},
+    "pylint-dev__pylint-9844": {},
+    "pylint-dev__pylint-9866": {},
+    "pylint-dev__pylint-9868": {},
+    "pylint-dev__pylint-9876": {},
+    "pylint-dev__pylint-9882": {},
+    "pylint-dev__pylint-9917": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.549151
+    },
+    "pylint-dev__pylint-9990": {
+     "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": 0.511656
+    }
+   },
+   "tau": 0.0,
+   "version": "rolling",
+   "versions": {
+    "pylint-dev__pylint-10034": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10036": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10044": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10045": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10062": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10075": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10089": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10097": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10141": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10170": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10209": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10225": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10228": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10232": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10240": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10246": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10250": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10275": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10300": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10328": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-10344": "6c24d33a61c36678e9ab22f1f095300c13ead0821b584443395d2c9b1689d02c",
+    "pylint-dev__pylint-10350": "6c24d33a61c36678e9ab22f1f095300c13ead0821b584443395d2c9b1689d02c",
+    "pylint-dev__pylint-10362": "6c24d33a61c36678e9ab22f1f095300c13ead0821b584443395d2c9b1689d02c",
+    "pylint-dev__pylint-10379": "6c24d33a61c36678e9ab22f1f095300c13ead0821b584443395d2c9b1689d02c",
+    "pylint-dev__pylint-10403": "6c24d33a61c36678e9ab22f1f095300c13ead0821b584443395d2c9b1689d02c",
+    "pylint-dev__pylint-9714": null,
+    "pylint-dev__pylint-9744": null,
+    "pylint-dev__pylint-9753": null,
+    "pylint-dev__pylint-9771": null,
+    "pylint-dev__pylint-9772": null,
+    "pylint-dev__pylint-9785": null,
+    "pylint-dev__pylint-9802": null,
+    "pylint-dev__pylint-9817": null,
+    "pylint-dev__pylint-9838": null,
+    "pylint-dev__pylint-9842": null,
+    "pylint-dev__pylint-9844": null,
+    "pylint-dev__pylint-9866": null,
+    "pylint-dev__pylint-9868": null,
+    "pylint-dev__pylint-9876": null,
+    "pylint-dev__pylint-9882": null,
+    "pylint-dev__pylint-9917": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d",
+    "pylint-dev__pylint-9990": "b3c5f2e5f5d5a870a0caee5a8eefdbfa5997db9fc6263477c360ed96a308239d"
+   }
+  }
+ },
+ "control": {
+  "false_positive_rate": 0.7589,
+  "localization_rate": 0.4762,
+  "n_false_positive": 85,
+  "n_flags": 112,
+  "n_localized": 20,
+  "n_tasks": 42,
+  "per_repo": {
+   "pylint-dev/pylint": {
+    "false_positive_rate": 0.7589,
+    "localization_rate": 0.4762,
+    "n_false_positive": 85,
+    "n_flags": 112,
+    "n_localized": 20,
+    "n_tasks": 42
+   }
+  }
+ },
+ "control_flags": {
+  "pylint-dev__pylint-10034": [
+   "pylint/checkers/variables.py",
+   "pylint/checkers/variables.py",
+   "pylint/checkers/typecheck.py"
+  ],
+  "pylint-dev__pylint-10036": [
+   "pylint/pyreverse/inspector.py",
+   "pylint/pyreverse/inspector.py",
+   "pylint/pyreverse/main.py"
+  ],
+  "pylint-dev__pylint-10044": [],
+  "pylint-dev__pylint-10045": [
+   "pylint/pyreverse/main.py",
+   "pylint/pyreverse/main.py",
+   "doc/conf.py"
+  ],
+  "pylint-dev__pylint-10062": [
+   "pylint/checkers/variables.py",
+   "pylint/checkers/variables.py",
+   "pylint/checkers/variables.py"
+  ],
+  "pylint-dev__pylint-10075": [
+   "pylint/checkers/variables.py",
+   "pylint/checkers/variables.py"
+  ],
+  "pylint-dev__pylint-10089": [
+   "pylint/lint/parallel.py",
+   "pylint/lint/pylinter.py",
+   "pylint/lint/parallel.py"
+  ],
+  "pylint-dev__pylint-10097": [
+   "pylint/checkers/typecheck.py",
+   "pylint/checkers/typecheck.py",
+   "pylint/lint/pylinter.py"
+  ],
+  "pylint-dev__pylint-10141": [
+   "pylint/lint/pylinter.py",
+   "pylint/lint/pylinter.py",
+   "pylint/lint/pylinter.py"
+  ],
+  "pylint-dev__pylint-10170": [
+   "pylint/checkers/typecheck.py",
+   "pylint/checkers/typecheck.py",
+   "pylint/checkers/typecheck.py"
+  ],
+  "pylint-dev__pylint-10209": [
+   "pylint/checkers/typecheck.py",
+   "pylint/checkers/typecheck.py",
+   "pylint/lint/pylinter.py"
+  ],
+  "pylint-dev__pylint-10225": [
+   "pylint/checkers/typecheck.py",
+   "pylint/checkers/typecheck.py",
+   "pylint/checkers/typecheck.py"
+  ],
+  "pylint-dev__pylint-10228": [
+   "pylint/checkers/base/name_checker/naming_style.py",
+   "pylint/checkers/base/name_checker/naming_style.py",
+   "pylint/lint/pylinter.py"
+  ],
+  "pylint-dev__pylint-10232": [
+   "pylint/checkers/utils.py",
+   "pylint/checkers/exceptions.py",
+   "pylint/checkers/exceptions.py"
+  ],
+  "pylint-dev__pylint-10240": [
+   "pylint/checkers/variables.py",
+   "pylint/checkers/variables.py"
+  ],
+  "pylint-dev__pylint-10246": [
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py",
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py",
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py"
+  ],
+  "pylint-dev__pylint-10250": [
+   "pylint/pyreverse/printer.py",
+   "pylint/pyreverse/printer.py",
+   "pylint/pyreverse/diagrams.py"
+  ],
+  "pylint-dev__pylint-10275": [
+   "pylint/checkers/typecheck.py",
+   "pylint/checkers/typecheck.py",
+   "pylint/lint/pylinter.py"
+  ],
+  "pylint-dev__pylint-10300": [
+   "pylint/checkers/utils.py",
+   "pylint/checkers/refactoring/recommendation_checker.py"
+  ],
+  "pylint-dev__pylint-10328": [
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py",
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py",
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py"
+  ],
+  "pylint-dev__pylint-10344": [],
+  "pylint-dev__pylint-10350": [
+   "pylint/checkers/utils.py",
+   "pylint/checkers/utils.py",
+   "pylint/checkers/base/basic_error_checker.py"
+  ],
+  "pylint-dev__pylint-10362": [
+   "pylint/checkers/variables.py",
+   "pylint/checkers/variables.py",
+   "pylint/checkers/variables.py"
+  ],
+  "pylint-dev__pylint-10379": [
+   "pylint/pyreverse/inspector.py",
+   "pylint/pyreverse/diadefslib.py",
+   "pylint/pyreverse/diadefslib.py"
+  ],
+  "pylint-dev__pylint-10403": [
+   "pylint/pyreverse/mermaidjs_printer.py",
+   "pylint/pyreverse/mermaidjs_printer.py",
+   "pylint/pyreverse/mermaidjs_printer.py"
+  ],
+  "pylint-dev__pylint-9714": [
+   "pylint/checkers/utils.py",
+   "pylint/checkers/utils.py",
+   "pylint/lint/pylinter.py"
+  ],
+  "pylint-dev__pylint-9744": [
+   "pylint/checkers/base_checker.py",
+   "pylint/lint/pylinter.py",
+   "pylint/checkers/base_checker.py"
+  ],
+  "pylint-dev__pylint-9753": [
+   "pylint/lint/pylinter.py",
+   "pylint/lint/pylinter.py",
+   "pylint/utils/ast_walker.py"
+  ],
+  "pylint-dev__pylint-9771": [
+   "pylint/checkers/variables.py"
+  ],
+  "pylint-dev__pylint-9772": [
+   "pylint/checkers/variables.py",
+   "pylint/checkers/variables.py",
+   "pylint/lint/pylinter.py"
+  ],
+  "pylint-dev__pylint-9785": [
+   "pylint/checkers/typecheck.py",
+   "pylint/extensions/typing.py"
+  ],
+  "pylint-dev__pylint-9802": [
+   "pylint/lint/pylinter.py",
+   "pylint/lint/pylinter.py",
+   "pylint/checkers/utils.py"
+  ],
+  "pylint-dev__pylint-9817": [
+   "pylint/checkers/classes/class_checker.py",
+   "pylint/checkers/classes/class_checker.py",
+   "pylint/lint/pylinter.py"
+  ],
+  "pylint-dev__pylint-9838": [
+   "pylint/checkers/unsupported_version.py",
+   "pylint/checkers/unsupported_version.py"
+  ],
+  "pylint-dev__pylint-9842": [
+   "pylint/lint/pylinter.py",
+   "pylint/checkers/utils.py",
+   "pylint/lint/pylinter.py"
+  ],
+  "pylint-dev__pylint-9844": [
+   "pylint/checkers/async.py",
+   "pylint/lint/pylinter.py",
+   "pylint/checkers/base_checker.py"
+  ],
+  "pylint-dev__pylint-9866": [
+   "pylint/checkers/refactoring/refactoring_checker.py",
+   "pylint/checkers/refactoring/refactoring_checker.py",
+   "pylint/checkers/refactoring/refactoring_checker.py"
+  ],
+  "pylint-dev__pylint-9868": [
+   "pylint/checkers/typecheck.py",
+   "pylint/checkers/stdlib.py"
+  ],
+  "pylint-dev__pylint-9876": [
+   "pylint/checkers/variables.py",
+   "pylint/utils/ast_walker.py",
+   "pylint/lint/pylinter.py"
+  ],
+  "pylint-dev__pylint-9882": [
+   "pylint/checkers/typecheck.py",
+   "pylint/checkers/typecheck.py",
+   "pylint/checkers/typecheck.py"
+  ],
+  "pylint-dev__pylint-9917": [
+   "pylint/checkers/misc.py",
+   "pylint/lint/pylinter.py",
+   "pylint/checkers/base_checker.py"
+  ],
+  "pylint-dev__pylint-9990": [
+   "pylint/checkers/typecheck.py",
+   "pylint/checkers/typecheck.py",
+   "pylint/lint/pylinter.py"
+  ]
+ },
+ "errors": {},
+ "gold": {
+  "pylint-dev__pylint-10034": [
+   "pylint/checkers/variables.py::<module>",
+   "pylint/checkers/variables.py::NamesConsumer._uncertain_nodes_if_tests",
+   "pylint/checkers/variables.py::NamesConsumer.get_next_to_consume",
+   "pylint/checkers/variables.py::VariablesChecker",
+   "pylint/checkers/variables.py::VariablesChecker._is_builtin",
+   "pylint/checkers/variables.py::VariablesChecker._is_only_type_assignment",
+   "pylint/checkers/variables.py::VariablesChecker._is_variable_violation",
+   "pylint/checkers/variables.py::VariablesChecker._report_unfound_name_definition",
+   "pylint/checkers/variables.py::_assigned_locally",
+   "pylint/checkers/variables.py::_has_locals_call_after_node"
+  ],
+  "pylint-dev__pylint-10036": [
+   "pylint/lint/expand_modules.py::discover_package_path"
+  ],
+  "pylint-dev__pylint-10044": [
+   "doc/data/messages/c/consider-alternative-union-syntax/bad.py::<module>",
+   "doc/data/messages/c/consider-alternative-union-syntax/good.py::<module>",
+   "pylint/extensions/typing.py::TypingChecker"
+  ],
+  "pylint-dev__pylint-10045": [
+   "doc/conf.py::<module>",
+   "doc/exts/pyreverse_configuration.py::<module>",
+   "pylint/__init__.py::<module>",
+   "pylint/__init__.py::run_pyreverse",
+   "pylint/__init__.py::run_symilar",
+   "pylint/pyreverse/inspector.py::<module>",
+   "pylint/pyreverse/inspector.py::project_from_files",
+   "pylint/pyreverse/main.py::<module>",
+   "pylint/pyreverse/main.py::Run",
+   "pylint/pyreverse/main.py::Run.__init__",
+   "pylint/pyreverse/main.py::Run.run"
+  ],
+  "pylint-dev__pylint-10062": [
+   "pylint/checkers/variables.py::NamesConsumer._node_guarded_by_same_test"
+  ],
+  "pylint-dev__pylint-10075": [
+   "pylint/checkers/variables.py::VariablesChecker",
+   "pylint/checkers/variables.py::VariablesChecker._has_nonlocal_binding",
+   "pylint/checkers/variables.py::VariablesChecker._is_builtin",
+   "pylint/checkers/variables.py::VariablesChecker._report_unfound_name_definition"
+  ],
+  "pylint-dev__pylint-10089": [
+   "pylint/lint/run.py::_query_cpu"
+  ],
+  "pylint-dev__pylint-10097": [
+   "pylint/checkers/variables.py::VariablesChecker",
+   "pylint/checkers/variables.py::VariablesChecker._check_potential_index_error",
+   "pylint/checkers/variables.py::VariablesChecker.visit_subscript"
+  ],
+  "pylint-dev__pylint-10141": [
+   "pylint/lint/expand_modules.py::expand_modules",
+   "pylint/lint/pylinter.py::PyLinter",
+   "pylint/lint/pylinter.py::PyLinter._expand_files",
+   "pylint/lint/pylinter.py::PyLinter._get_file_descr_from_stdin",
+   "pylint/lint/pylinter.py::PyLinter._iterate_file_descrs",
+   "pylint/lint/pylinter.py::PyLinter._report_evaluation",
+   "pylint/lint/pylinter.py::PyLinter.generate_reports",
+   "pylint/typing.py::<module>",
+   "pylint/typing.py::ErrorDescriptionDict",
+   "pylint/typing.py::ModuleDescriptionDict",
+   "pylint/utils/linterstats.py::LinterStats.__init__",
+   "pylint/utils/linterstats.py::LinterStats.__str__",
+   "pylint/utils/linterstats.py::merge_stats"
+  ],
+  "pylint-dev__pylint-10170": [
+   "pylint/checkers/base/comparison_checker.py::ComparisonChecker",
+   "pylint/checkers/base/comparison_checker.py::ComparisonChecker._check_type_x_is_y",
+   "pylint/checkers/base/comparison_checker.py::ComparisonChecker._check_unidiomatic_typecheck"
+  ],
+  "pylint-dev__pylint-10209": [
+   "pylint/checkers/classes/special_methods_checker.py::SpecialMethodsChecker._check_getnewargs_ex"
+  ],
+  "pylint-dev__pylint-10225": [
+   "pylint/checkers/base/comparison_checker.py::ComparisonChecker",
+   "pylint/checkers/base/comparison_checker.py::ComparisonChecker._check_type_x_is_y",
+   "pylint/checkers/base/comparison_checker.py::ComparisonChecker._check_unidiomatic_typecheck"
+  ],
+  "pylint-dev__pylint-10228": [
+   "pylint/checkers/base/name_checker/naming_style.py::<module>",
+   "pylint/checkers/base/name_checker/naming_style.py::CamelCaseStyle"
+  ],
+  "pylint-dev__pylint-10232": [
+   "pylint/checkers/exceptions.py::ExceptionsChecker._check_catching_non_exception"
+  ],
+  "pylint-dev__pylint-10240": [
+   "pylint/checkers/variables.py::NamesConsumer._defines_name_raises_or_returns"
+  ],
+  "pylint-dev__pylint-10246": [
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker",
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker._check_compare_to_str_or_zero",
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker._check_use_implicit_booleaness_not_comparison",
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker._get_node_description",
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker.visit_compare"
+  ],
+  "pylint-dev__pylint-10250": [
+   "pylint/pyreverse/mermaidjs_printer.py::MermaidJSPrinter",
+   "pylint/pyreverse/mermaidjs_printer.py::MermaidJSPrinter.emit_edge",
+   "pylint/pyreverse/mermaidjs_printer.py::MermaidJSPrinter.emit_node"
+  ],
+  "pylint-dev__pylint-10275": [
+   "pylint/checkers/variables.py::VariablesChecker._is_variable_violation"
+  ],
+  "pylint-dev__pylint-10300": [
+   "pylint/checkers/refactoring/recommendation_checker.py::RecommendationChecker._detect_replacable_format_call"
+  ],
+  "pylint-dev__pylint-10328": [
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker",
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker._check_compare_to_str_or_zero",
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker._check_use_implicit_booleaness_not_comparison",
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker._get_node_description",
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker._implicit_booleaness_message_args",
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker.base_names_of_instance"
+  ],
+  "pylint-dev__pylint-10344": [
+   "pylint/pyreverse/inspector.py::<module>",
+   "pylint/pyreverse/inspector.py::AggregationsHandler",
+   "pylint/pyreverse/inspector.py::AggregationsHandler.handle",
+   "pylint/pyreverse/inspector.py::OtherAssociationsHandler"
+  ],
+  "pylint-dev__pylint-10350": [
+   "pylint/checkers/deprecated.py::DeprecatedMixin.visit_decorators",
+   "pylint/checkers/utils.py::decorated_with"
+  ],
+  "pylint-dev__pylint-10362": [
+   "pylint/checkers/variables.py::VariablesChecker._is_only_type_assignment"
+  ],
+  "pylint-dev__pylint-10379": [
+   "pylint/pyreverse/diagrams.py::ClassDiagram.extract_relationships"
+  ],
+  "pylint-dev__pylint-10403": [
+   "pylint/pyreverse/mermaidjs_printer.py::MermaidJSPrinter",
+   "pylint/pyreverse/mermaidjs_printer.py::MermaidJSPrinter._close_graph",
+   "pylint/pyreverse/mermaidjs_printer.py::MermaidJSPrinter._open_graph",
+   "pylint/pyreverse/mermaidjs_printer.py::MermaidJSPrinter.emit_edge",
+   "pylint/pyreverse/mermaidjs_printer.py::MermaidJSPrinter.emit_node"
+  ],
+  "pylint-dev__pylint-9714": [
+   "pylint/checkers/utils.py::<module>",
+   "pylint/checkers/utils.py::is_terminating_func",
+   "pylint/checkers/variables.py::VariablesChecker._loopvar_name"
+  ],
+  "pylint-dev__pylint-9744": [
+   "pylint/checkers/misc.py::<module>",
+   "pylint/checkers/misc.py::EncodingChecker",
+   "pylint/checkers/misc.py::EncodingChecker._check_encoding",
+   "pylint/checkers/misc.py::EncodingChecker.open",
+   "pylint/checkers/misc.py::EncodingChecker.process_tokens",
+   "pylint/checkers/misc.py::register"
+  ],
+  "pylint-dev__pylint-9753": [
+   "pylint/checkers/utils.py::is_terminating_func"
+  ],
+  "pylint-dev__pylint-9771": [
+   "pylint/checkers/base/name_checker/checker.py::NameChecker.visit_assignname"
+  ],
+  "pylint-dev__pylint-9772": [
+   "pylint/checkers/base/name_checker/checker.py::NameChecker.visit_assignname"
+  ],
+  "pylint-dev__pylint-9785": [
+   "pylint/checkers/typecheck.py::TypeChecker.visit_call",
+   "pylint/checkers/utils.py::<module>",
+   "pylint/checkers/utils.py::function_arguments_are_ambiguous",
+   "pylint/checkers/utils.py::has_known_bases",
+   "pylint/checkers/utils.py::safe_infer"
+  ],
+  "pylint-dev__pylint-9802": [
+   "pylint/checkers/refactoring/refactoring_checker.py::RefactoringChecker._check_consider_using_min_max_builtin"
+  ],
+  "pylint-dev__pylint-9817": [
+   "pylint/checkers/classes/class_checker.py::ClassChecker",
+   "pylint/checkers/classes/class_checker.py::ClassChecker._check_slots",
+   "pylint/checkers/classes/class_checker.py::ClassChecker._get_classdef_slots_names",
+   "pylint/checkers/classes/class_checker.py::ClassChecker._has_valid_slots"
+  ],
+  "pylint-dev__pylint-9838": [
+   "doc/data/messages/u/using-assignment-expression-in-unsupported-version/bad.py::<module>",
+   "doc/data/messages/u/using-assignment-expression-in-unsupported-version/good.py::<module>",
+   "doc/data/messages/u/using-positional-only-args-in-unsupported-version/bad.py::<module>",
+   "doc/data/messages/u/using-positional-only-args-in-unsupported-version/good.py::<module>",
+   "pylint/checkers/unsupported_version.py::<module>",
+   "pylint/checkers/unsupported_version.py::UnsupportedVersionChecker",
+   "pylint/checkers/unsupported_version.py::UnsupportedVersionChecker._check_typing_final",
+   "pylint/checkers/unsupported_version.py::UnsupportedVersionChecker.open",
+   "pylint/checkers/unsupported_version.py::UnsupportedVersionChecker.visit_decorators",
+   "pylint/checkers/unsupported_version.py::UnsupportedVersionChecker.visit_excepthandler",
+   "pylint/checkers/unsupported_version.py::UnsupportedVersionChecker.visit_joinedstr",
+   "pylint/checkers/unsupported_version.py::UnsupportedVersionChecker.visit_raise",
+   "pylint/checkers/unsupported_version.py::UnsupportedVersionChecker.visit_trystar",
+   "pylint/checkers/unsupported_version.py::UnsupportedVersionChecker.visit_typealias",
+   "pylint/checkers/unsupported_version.py::UnsupportedVersionChecker.visit_typevar",
+   "pylint/checkers/unsupported_version.py::UnsupportedVersionChecker.visit_typevartuple"
+  ],
+  "pylint-dev__pylint-9842": [
+   "doc/data/messages/t/too-many-positional-arguments/bad.py::<module>",
+   "doc/data/messages/t/too-many-positional-arguments/good.py::<module>",
+   "pylint/checkers/design_analysis.py::<module>",
+   "pylint/checkers/design_analysis.py::MisdesignChecker",
+   "pylint/checkers/design_analysis.py::MisdesignChecker.visit_functiondef"
+  ],
+  "pylint-dev__pylint-9844": [
+   "pylint/checkers/utils.py::is_terminating_func"
+  ],
+  "pylint-dev__pylint-9866": [
+   "pylint/checkers/refactoring/refactoring_checker.py::RefactoringChecker",
+   "pylint/checkers/refactoring/refactoring_checker.py::RefactoringChecker._check_return_at_the_end",
+   "pylint/checkers/refactoring/refactoring_checker.py::RefactoringChecker._is_function_def_never_returning"
+  ],
+  "pylint-dev__pylint-9868": [
+   "doc/data/messages/t/too-few-function-args/bad.py::<module>",
+   "doc/data/messages/t/too-few-function-args/good.py::<module>",
+   "pylint/checkers/typecheck.py::<module>",
+   "pylint/checkers/typecheck.py::TypeChecker",
+   "pylint/checkers/typecheck.py::TypeChecker._check_argument_order",
+   "pylint/checkers/typecheck.py::TypeChecker._check_isinstance_args",
+   "pylint/checkers/typecheck.py::TypeChecker.visit_call"
+  ],
+  "pylint-dev__pylint-9876": [
+   "pylint/checkers/variables.py::VariablesChecker._loopvar_name"
+  ],
+  "pylint-dev__pylint-9882": [
+   "doc/data/messages/t/too-few-function-args/bad.py::<module>",
+   "doc/data/messages/t/too-few-function-args/good.py::<module>",
+   "pylint/checkers/typecheck.py::<module>",
+   "pylint/checkers/typecheck.py::TypeChecker._check_isinstance_args"
+  ],
+  "pylint-dev__pylint-9917": [
+   "pylint/checkers/format.py::FormatChecker",
+   "pylint/checkers/format.py::FormatChecker._check_multi_statement_line",
+   "pylint/checkers/format.py::FormatChecker.visit_default"
+  ],
+  "pylint-dev__pylint-9990": [
+   "pylint/checkers/variables.py::NamesConsumer._uncertain_nodes_if_tests",
+   "pylint/checkers/variables.py::VariablesChecker",
+   "pylint/checkers/variables.py::VariablesChecker.__init__",
+   "pylint/checkers/variables.py::VariablesChecker._check_consumer",
+   "pylint/checkers/variables.py::VariablesChecker._filter_type_checking_import_from_consumption",
+   "pylint/checkers/variables.py::VariablesChecker._report_unfound_name_definition",
+   "pylint/checkers/variables.py::VariablesChecker.visit_import"
+  ]
+ },
+ "granularity": "function",
+ "learn_errors": {},
+ "lift": {
+  "false_positive_rise_pts": 6.35,
+  "localization_lift_pts": -11.9
+ },
+ "memory_locations": {
+  "a049f98d50afd978d08a7002bbba4825a2fafb413c08ef091913c6bfa79fcef1": "pylint/checkers/refactoring/implicit_booleaness_checker.py::ImplicitBooleanessChecker._check_use_implicit_booleaness_not_comparison",
+  "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363": "pylint/checkers/typecheck.py::TypeChecker._check_isinstance_args"
+ },
+ "mode": "rolling",
+ "n_errors": 0,
+ "n_eval": 42,
+ "retrieval_hit_rate": 0.6428571428571429,
+ "retrieved": {
+  "pylint-dev__pylint-10034": [
+   "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+  ],
+  "pylint-dev__pylint-10036": [
+   "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+  ],
+  "pylint-dev__pylint-10044": [
+   "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+  ],
+  "pylint-dev__pylint-10045": [
+   "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+  ],
+  "pylint-dev__pylint-10062": [
+   "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+  ],
+  "pylint-dev__pylint-10075": [
+   "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+  ],
+  "pylint-dev__pylint-10089": [
+   "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+  ],
+  "pylint-dev__pylint-10097": [
+   "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+  ],
+  "pylint-dev__pylint-10141": [
+   "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+  ],
+  "pylint-dev__pylint-10170": [
+   "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+  ],
+  "pylint-dev__pylint-10209": [
+   "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+  ],
+  "pylint-dev__pylint-10225": [
+   "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+  ],
+  "pylint-dev__pylint-10228": [
+   "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+  ],
+  "pylint-dev__pylint-10232": [
+   "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+  ],
+  "pylint-dev__pylint-10240": [
+   "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+  ],
+  "pylint-dev__pylint-10246": [
+   "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+  ],
+  "pylint-dev__pylint-10250": [
+   "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+  ],
+  "pylint-dev__pylint-10275": [
+   "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+  ],
+  "pylint-dev__pylint-10300": [
+   "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+  ],
+  "pylint-dev__pylint-10328": [
+   "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+  ],
+  "pylint-dev__pylint-10344": [
+   "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363",
+   "a049f98d50afd978d08a7002bbba4825a2fafb413c08ef091913c6bfa79fcef1"
+  ],
+  "pylint-dev__pylint-10350": [
+   "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363",
+   "a049f98d50afd978d08a7002bbba4825a2fafb413c08ef091913c6bfa79fcef1"
+  ],
+  "pylint-dev__pylint-10362": [
+   "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363",
+   "a049f98d50afd978d08a7002bbba4825a2fafb413c08ef091913c6bfa79fcef1"
+  ],
+  "pylint-dev__pylint-10379": [
+   "a049f98d50afd978d08a7002bbba4825a2fafb413c08ef091913c6bfa79fcef1",
+   "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+  ],
+  "pylint-dev__pylint-10403": [
+   "a049f98d50afd978d08a7002bbba4825a2fafb413c08ef091913c6bfa79fcef1",
+   "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+  ],
+  "pylint-dev__pylint-9714": [],
+  "pylint-dev__pylint-9744": [],
+  "pylint-dev__pylint-9753": [],
+  "pylint-dev__pylint-9771": [],
+  "pylint-dev__pylint-9772": [],
+  "pylint-dev__pylint-9785": [],
+  "pylint-dev__pylint-9802": [],
+  "pylint-dev__pylint-9817": [],
+  "pylint-dev__pylint-9838": [],
+  "pylint-dev__pylint-9842": [],
+  "pylint-dev__pylint-9844": [],
+  "pylint-dev__pylint-9866": [],
+  "pylint-dev__pylint-9868": [],
+  "pylint-dev__pylint-9876": [],
+  "pylint-dev__pylint-9882": [],
+  "pylint-dev__pylint-9917": [
+   "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+  ],
+  "pylint-dev__pylint-9990": [
+   "c323199ccc1ac8c23e480cf1534f63d26e94284299c221a5c010b359b7bad363"
+  ]
+ },
+ "treatment": {
+  "false_positive_rate": 0.8224,
+  "localization_rate": 0.3571,
+  "n_false_positive": 88,
+  "n_flags": 107,
+  "n_localized": 15,
+  "n_tasks": 42,
+  "per_repo": {
+   "pylint-dev/pylint": {
+    "false_positive_rate": 0.8224,
+    "localization_rate": 0.3571,
+    "n_false_positive": 88,
+    "n_flags": 107,
+    "n_localized": 15,
+    "n_tasks": 42
+   }
+  }
+ },
+ "treatment_flags": {
+  "pylint-dev__pylint-10034": [
+   "pylint/checkers/typecheck.py",
+   "pylint/checkers/typecheck.py",
+   "pylint/checkers/typecheck.py"
+  ],
+  "pylint-dev__pylint-10036": [
+   "pylint/pyreverse/main.py",
+   "pylint/pyreverse/inspector.py",
+   "pylint/pyreverse/inspector.py"
+  ],
+  "pylint-dev__pylint-10044": [
+   "pylint/extensions/typing.py",
+   "pylint/extensions/typing.py",
+   "pylint/checkers/typecheck.py"
+  ],
+  "pylint-dev__pylint-10045": [],
+  "pylint-dev__pylint-10062": [],
+  "pylint-dev__pylint-10075": [
+   "pylint/checkers/typecheck.py",
+   "pylint/checkers/typecheck.py",
+   "pylint/checkers/typecheck.py"
+  ],
+  "pylint-dev__pylint-10089": [
+   "pylint/lint/parallel.py",
+   "pylint/checkers/typecheck.py",
+   "pylint/checkers/typecheck.py"
+  ],
+  "pylint-dev__pylint-10097": [
+   "pylint/checkers/typecheck.py",
+   "pylint/checkers/typecheck.py",
+   "pylint/checkers/typecheck.py"
+  ],
+  "pylint-dev__pylint-10141": [
+   "pylint/lint/pylinter.py",
+   "pylint/lint/pylinter.py",
+   "pylint/lint/pylinter.py"
+  ],
+  "pylint-dev__pylint-10170": [
+   "pylint/checkers/typecheck.py",
+   "pylint/checkers/typecheck.py",
+   "pylint/checkers/typecheck.py"
+  ],
+  "pylint-dev__pylint-10209": [
+   "pylint/checkers/typecheck.py",
+   "pylint/checkers/typecheck.py",
+   "pylint/checkers/typecheck.py"
+  ],
+  "pylint-dev__pylint-10225": [
+   "pylint/checkers/typecheck.py",
+   "pylint/checkers/typecheck.py",
+   "pylint/checkers/typecheck.py"
+  ],
+  "pylint-dev__pylint-10228": [
+   "pylint/checkers/base/name_checker/naming_style.py",
+   "pylint/checkers/utils.py"
+  ],
+  "pylint-dev__pylint-10232": [
+   "pylint/checkers/utils.py",
+   "pylint/checkers/exceptions.py",
+   "pylint/checkers/exceptions.py"
+  ],
+  "pylint-dev__pylint-10240": [
+   "pylint/checkers/utils.py",
+   "pylint/checkers/utils.py",
+   "pylint/lint/pylinter.py"
+  ],
+  "pylint-dev__pylint-10246": [
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py",
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py",
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py"
+  ],
+  "pylint-dev__pylint-10250": [
+   "pylint/pyreverse/printer.py",
+   "pylint/pyreverse/printer.py",
+   "pylint/pyreverse/diagrams.py"
+  ],
+  "pylint-dev__pylint-10275": [
+   "pylint/checkers/typecheck.py"
+  ],
+  "pylint-dev__pylint-10300": [
+   "pylint/checkers/utils.py"
+  ],
+  "pylint-dev__pylint-10328": [
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py",
+   "pylint/checkers/refactoring/implicit_booleaness_checker.py"
+  ],
+  "pylint-dev__pylint-10344": [
+   "pylint/pyreverse/inspector.py",
+   "pylint/pyreverse/inspector.py"
+  ],
+  "pylint-dev__pylint-10350": [
+   "pylint/checkers/utils.py",
+   "pylint/checkers/base/basic_error_checker.py"
+  ],
+  "pylint-dev__pylint-10362": [
+   "pylint/checkers/variables.py",
+   "pylint/checkers/variables.py",
+   "pylint/checkers/variables.py"
+  ],
+  "pylint-dev__pylint-10379": [
+   "pylint/pyreverse/diadefslib.py",
+   "pylint/pyreverse/inspector.py",
+   "pylint/pyreverse/utils.py"
+  ],
+  "pylint-dev__pylint-10403": [
+   "pylint/pyreverse/mermaidjs_printer.py",
+   "pylint/pyreverse/mermaidjs_printer.py",
+   "pylint/pyreverse/mermaidjs_printer.py"
+  ],
+  "pylint-dev__pylint-9714": [
+   "pylint/checkers/utils.py",
+   "pylint/checkers/utils.py",
+   "pylint/lint/pylinter.py"
+  ],
+  "pylint-dev__pylint-9744": [
+   "pylint/checkers/base_checker.py",
+   "pylint/lint/pylinter.py",
+   "pylint/checkers/base_checker.py"
+  ],
+  "pylint-dev__pylint-9753": [
+   "pylint/lint/pylinter.py",
+   "pylint/lint/pylinter.py",
+   "pylint/utils/ast_walker.py"
+  ],
+  "pylint-dev__pylint-9771": [
+   "pylint/checkers/variables.py"
+  ],
+  "pylint-dev__pylint-9772": [
+   "pylint/checkers/variables.py",
+   "pylint/checkers/variables.py",
+   "pylint/lint/pylinter.py"
+  ],
+  "pylint-dev__pylint-9785": [
+   "pylint/checkers/typecheck.py",
+   "pylint/extensions/typing.py"
+  ],
+  "pylint-dev__pylint-9802": [
+   "pylint/lint/pylinter.py",
+   "pylint/lint/pylinter.py",
+   "pylint/checkers/utils.py"
+  ],
+  "pylint-dev__pylint-9817": [
+   "pylint/checkers/classes/class_checker.py",
+   "pylint/checkers/classes/class_checker.py",
+   "pylint/lint/pylinter.py"
+  ],
+  "pylint-dev__pylint-9838": [
+   "pylint/checkers/unsupported_version.py",
+   "pylint/checkers/unsupported_version.py"
+  ],
+  "pylint-dev__pylint-9842": [
+   "pylint/lint/pylinter.py",
+   "pylint/checkers/utils.py",
+   "pylint/lint/pylinter.py"
+  ],
+  "pylint-dev__pylint-9844": [
+   "pylint/checkers/async.py",
+   "pylint/lint/pylinter.py",
+   "pylint/checkers/base_checker.py"
+  ],
+  "pylint-dev__pylint-9866": [
+   "pylint/checkers/refactoring/refactoring_checker.py",
+   "pylint/checkers/refactoring/refactoring_checker.py",
+   "pylint/checkers/refactoring/refactoring_checker.py"
+  ],
+  "pylint-dev__pylint-9868": [
+   "pylint/checkers/typecheck.py",
+   "pylint/checkers/stdlib.py"
+  ],
+  "pylint-dev__pylint-9876": [
+   "pylint/checkers/variables.py",
+   "pylint/utils/ast_walker.py",
+   "pylint/lint/pylinter.py"
+  ],
+  "pylint-dev__pylint-9882": [
+   "pylint/checkers/typecheck.py",
+   "pylint/checkers/typecheck.py",
+   "pylint/checkers/typecheck.py"
+  ],
+  "pylint-dev__pylint-9917": [
+   "pylint/checkers/misc.py",
+   "pylint/lint/pylinter.py",
+   "pylint/checkers/misc.py"
+  ],
+  "pylint-dev__pylint-9990": [
+   "pylint/checkers/typecheck.py",
+   "pylint/checkers/typecheck.py",
+   "pylint/checkers/typecheck.py"
+  ]
+ },
+ "warmup": 20
+}

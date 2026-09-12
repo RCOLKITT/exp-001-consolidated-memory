@@ -1,0 +1,1715 @@
+{
+ "arm": "gated",
+ "baseline": "control",
+ "errors": {},
+ "negative_control": null,
+ "per_repo": {
+  "aws-cloudformation/cfn-lint": {
+   "both_hit": 25,
+   "control_localized": 26,
+   "control_only_hit": 1,
+   "control_rate": 0.3291,
+   "flags_differed": 15,
+   "flags_differed_rate": 0.1899,
+   "label": "aws-cloudformation/cfn-lint",
+   "lift_ci95_bootstrap_pts": [
+    -2.53,
+    6.33
+   ],
+   "lift_ci95_paired_wald_pts": [
+    -3.02,
+    5.55
+   ],
+   "lift_pts": 1.27,
+   "mcnemar_exact_p": 1.0,
+   "n_tasks": 79,
+   "neither_hit": 51,
+   "retrieval_coverage": 0.2405,
+   "retrieved_any": 19,
+   "treatment_localized": 27,
+   "treatment_only_hit": 2,
+   "treatment_rate": 0.3418
+  },
+  "matplotlib/matplotlib": {
+   "both_hit": 47,
+   "control_localized": 47,
+   "control_only_hit": 0,
+   "control_rate": 0.5949,
+   "flags_differed": 0,
+   "flags_differed_rate": 0.0,
+   "label": "matplotlib/matplotlib",
+   "lift_ci95_bootstrap_pts": [
+    0.0,
+    0.0
+   ],
+   "lift_ci95_paired_wald_pts": [
+    0.0,
+    0.0
+   ],
+   "lift_pts": 0.0,
+   "mcnemar_exact_p": 1.0,
+   "n_tasks": 79,
+   "neither_hit": 32,
+   "retrieval_coverage": 0.0,
+   "retrieved_any": 0,
+   "treatment_localized": 47,
+   "treatment_only_hit": 0,
+   "treatment_rate": 0.5949
+  },
+  "pylint-dev/pylint": {
+   "both_hit": 18,
+   "control_localized": 20,
+   "control_only_hit": 2,
+   "control_rate": 0.4762,
+   "flags_differed": 11,
+   "flags_differed_rate": 0.2619,
+   "label": "pylint-dev/pylint",
+   "lift_ci95_bootstrap_pts": [
+    -11.9,
+    0.0
+   ],
+   "lift_ci95_paired_wald_pts": [
+    -11.2,
+    1.68
+   ],
+   "lift_pts": -4.76,
+   "mcnemar_exact_p": 0.5,
+   "n_tasks": 42,
+   "neither_hit": 22,
+   "retrieval_coverage": 0.381,
+   "retrieved_any": 16,
+   "treatment_localized": 18,
+   "treatment_only_hit": 0,
+   "treatment_rate": 0.4286
+  }
+ },
+ "primary": {
+  "both_hit": 90,
+  "control_localized": 93,
+  "control_only_hit": 3,
+  "control_rate": 0.465,
+  "flags_differed": 26,
+  "flags_differed_rate": 0.13,
+  "label": "primary: all treatment repos (registered)",
+  "lift_ci95_bootstrap_pts": [
+   -3.0,
+   1.5
+  ],
+  "lift_ci95_paired_wald_pts": [
+   -2.69,
+   1.69
+  ],
+  "lift_pts": -0.5,
+  "mcnemar_exact_p": 1.0,
+  "n_tasks": 200,
+  "neither_hit": 105,
+  "retrieval_coverage": 0.175,
+  "retrieved_any": 35,
+  "treatment_localized": 92,
+  "treatment_only_hit": 2,
+  "treatment_rate": 0.46
+ },
+ "secondary": null,
+ "tasks": [
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3442",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3450",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3461",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3475",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3481",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3498",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3501",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3508",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3548",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3552",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3557",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3563",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3579",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3582",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3593",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3605",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3607",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3629",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3633",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3639",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3650",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3653",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "aws-cloudformation__cfn-lint-3659",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3663",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3684",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3686",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3688",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "aws-cloudformation__cfn-lint-3700",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "aws-cloudformation__cfn-lint-3707",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "aws-cloudformation__cfn-lint-3712",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "aws-cloudformation__cfn-lint-3714",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3731",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3734",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "aws-cloudformation__cfn-lint-3749",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3759",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "aws-cloudformation__cfn-lint-3764",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3768",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3770",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3785",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3789",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3798",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3805",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "aws-cloudformation__cfn-lint-3817",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3821",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3854",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3855",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "aws-cloudformation__cfn-lint-3856",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3861",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3862",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "aws-cloudformation__cfn-lint-3866",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "aws-cloudformation__cfn-lint-3875",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3890",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3900",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3908",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3915",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "aws-cloudformation__cfn-lint-3920",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3931",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3937",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3940",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3947",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "aws-cloudformation__cfn-lint-3965",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3969",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3972",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-3981",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-4002",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-4009",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-4016",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-4023",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-4026",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "aws-cloudformation__cfn-lint-4032",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-4045",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-4051",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-4116",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-4137",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-4138",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-4149",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-4162",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "aws-cloudformation__cfn-lint-4197",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "aws-cloudformation__cfn-lint-4236",
+   "repo": "aws-cloudformation/cfn-lint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-28104",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-28116",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-28177",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-28261",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-28292",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-28306",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-28363",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-28388",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-28397",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-28401",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-28436",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-28437",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-28465",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-28473",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-28486",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-28487",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-28501",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-28504",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-28525",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-28573",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-28577",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-28584",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-28609",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-28629",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-28649",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-28734",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-28786",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-28830",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-28841",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-28853",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-28881",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-28933",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-28970",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29007",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29013",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29052",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29054",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29209",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29249",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29258",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29285",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29317",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29388",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29401",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29411",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29431",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29481",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29486",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29503",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29520",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29537",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29612",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29689",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29696",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29698",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29719",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29721",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29781",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29783",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29798",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29808",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29873",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29879",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29892",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29919",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29958",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-29993",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-30030",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-30079",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-30089",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-30098",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-30186",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-30198",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-30223",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-30328",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-30363",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-30423",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-30467",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "matplotlib__matplotlib-30475",
+   "repo": "matplotlib/matplotlib",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "pylint-dev__pylint-10034",
+   "repo": "pylint-dev/pylint",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "pylint-dev__pylint-10036",
+   "repo": "pylint-dev/pylint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "pylint-dev__pylint-10044",
+   "repo": "pylint-dev/pylint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "pylint-dev__pylint-10045",
+   "repo": "pylint-dev/pylint",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "pylint-dev__pylint-10062",
+   "repo": "pylint-dev/pylint",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "pylint-dev__pylint-10075",
+   "repo": "pylint-dev/pylint",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "pylint-dev__pylint-10089",
+   "repo": "pylint-dev/pylint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "pylint-dev__pylint-10097",
+   "repo": "pylint-dev/pylint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "pylint-dev__pylint-10141",
+   "repo": "pylint-dev/pylint",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "pylint-dev__pylint-10170",
+   "repo": "pylint-dev/pylint",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "pylint-dev__pylint-10209",
+   "repo": "pylint-dev/pylint",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "pylint-dev__pylint-10225",
+   "repo": "pylint-dev/pylint",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "pylint-dev__pylint-10228",
+   "repo": "pylint-dev/pylint",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "pylint-dev__pylint-10232",
+   "repo": "pylint-dev/pylint",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "pylint-dev__pylint-10240",
+   "repo": "pylint-dev/pylint",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "pylint-dev__pylint-10246",
+   "repo": "pylint-dev/pylint",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "pylint-dev__pylint-10250",
+   "repo": "pylint-dev/pylint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "pylint-dev__pylint-10275",
+   "repo": "pylint-dev/pylint",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "pylint-dev__pylint-10300",
+   "repo": "pylint-dev/pylint",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "pylint-dev__pylint-10328",
+   "repo": "pylint-dev/pylint",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "pylint-dev__pylint-10344",
+   "repo": "pylint-dev/pylint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "pylint-dev__pylint-10350",
+   "repo": "pylint-dev/pylint",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "pylint-dev__pylint-10362",
+   "repo": "pylint-dev/pylint",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "pylint-dev__pylint-10379",
+   "repo": "pylint-dev/pylint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "pylint-dev__pylint-10403",
+   "repo": "pylint-dev/pylint",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "pylint-dev__pylint-9714",
+   "repo": "pylint-dev/pylint",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "pylint-dev__pylint-9744",
+   "repo": "pylint-dev/pylint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "pylint-dev__pylint-9753",
+   "repo": "pylint-dev/pylint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "pylint-dev__pylint-9771",
+   "repo": "pylint-dev/pylint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "pylint-dev__pylint-9772",
+   "repo": "pylint-dev/pylint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "pylint-dev__pylint-9785",
+   "repo": "pylint-dev/pylint",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "pylint-dev__pylint-9802",
+   "repo": "pylint-dev/pylint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "pylint-dev__pylint-9817",
+   "repo": "pylint-dev/pylint",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "pylint-dev__pylint-9838",
+   "repo": "pylint-dev/pylint",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "pylint-dev__pylint-9842",
+   "repo": "pylint-dev/pylint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": false,
+   "instance_id": "pylint-dev__pylint-9844",
+   "repo": "pylint-dev/pylint",
+   "retrieved": false,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "pylint-dev__pylint-9866",
+   "repo": "pylint-dev/pylint",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "pylint-dev__pylint-9868",
+   "repo": "pylint-dev/pylint",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "pylint-dev__pylint-9876",
+   "repo": "pylint-dev/pylint",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "pylint-dev__pylint-9882",
+   "repo": "pylint-dev/pylint",
+   "retrieved": false,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "pylint-dev__pylint-9917",
+   "repo": "pylint-dev/pylint",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "pylint-dev__pylint-9990",
+   "repo": "pylint-dev/pylint",
+   "retrieved": true,
+   "treatment_hit": false
+  }
+ ]
+}

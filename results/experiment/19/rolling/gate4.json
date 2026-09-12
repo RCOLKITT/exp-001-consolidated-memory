@@ -1,0 +1,352 @@
+{
+ "arms": [
+  "control",
+  "treatment",
+  "gated",
+  "placebo"
+ ],
+ "control": {
+  "false_positive_rate": 0.7782,
+  "localization_rate": 0.465,
+  "n_false_positive": 400,
+  "n_flags": 514,
+  "n_localized": 93,
+  "n_tasks": 200,
+  "per_repo": {
+   "aws-cloudformation/cfn-lint": {
+    "false_positive_rate": 0.8552,
+    "localization_rate": 0.3291,
+    "n_false_positive": 189,
+    "n_flags": 221,
+    "n_localized": 26,
+    "n_tasks": 79
+   },
+   "matplotlib/matplotlib": {
+    "false_positive_rate": 0.6961,
+    "localization_rate": 0.5949,
+    "n_false_positive": 126,
+    "n_flags": 181,
+    "n_localized": 47,
+    "n_tasks": 79
+   },
+   "pylint-dev/pylint": {
+    "false_positive_rate": 0.7589,
+    "localization_rate": 0.4762,
+    "n_false_positive": 85,
+    "n_flags": 112,
+    "n_localized": 20,
+    "n_tasks": 42
+   }
+  }
+ },
+ "effect_in_majority_of_repos": false,
+ "false_positive_rise_pts": 2.26,
+ "file_level_secondary": {
+  "control": {
+   "false_positive_rate": 0.769,
+   "localization_rate": 0.61,
+   "n_false_positive": 426,
+   "n_flags": 554,
+   "n_localized": 122,
+   "n_tasks": 200,
+   "per_repo": {
+    "aws-cloudformation/cfn-lint": {
+     "false_positive_rate": 0.8447,
+     "localization_rate": 0.4177,
+     "n_false_positive": 185,
+     "n_flags": 219,
+     "n_localized": 33,
+     "n_tasks": 79
+    },
+    "matplotlib/matplotlib": {
+     "false_positive_rate": 0.6866,
+     "localization_rate": 0.8228,
+     "n_false_positive": 149,
+     "n_flags": 217,
+     "n_localized": 65,
+     "n_tasks": 79
+    },
+    "pylint-dev/pylint": {
+     "false_positive_rate": 0.7797,
+     "localization_rate": 0.5714,
+     "n_false_positive": 92,
+     "n_flags": 118,
+     "n_localized": 24,
+     "n_tasks": 42
+    }
+   }
+  },
+  "false_positive_rise_pts": 0.49,
+  "localization_lift_pts": -3.5,
+  "treatment": {
+   "false_positive_rate": 0.7739,
+   "localization_rate": 0.575,
+   "n_false_positive": 421,
+   "n_flags": 544,
+   "n_localized": 115,
+   "n_tasks": 200,
+   "per_repo": {
+    "aws-cloudformation/cfn-lint": {
+     "false_positive_rate": 0.8525,
+     "localization_rate": 0.3797,
+     "n_false_positive": 185,
+     "n_flags": 217,
+     "n_localized": 30,
+     "n_tasks": 79
+    },
+    "matplotlib/matplotlib": {
+     "false_positive_rate": 0.6761,
+     "localization_rate": 0.8228,
+     "n_false_positive": 144,
+     "n_flags": 213,
+     "n_localized": 65,
+     "n_tasks": 79
+    },
+    "pylint-dev/pylint": {
+     "false_positive_rate": 0.807,
+     "localization_rate": 0.4762,
+     "n_false_positive": 92,
+     "n_flags": 114,
+     "n_localized": 20,
+     "n_tasks": 42
+    }
+   }
+  }
+ },
+ "granularity": "function",
+ "localization_lift_pts": -4.0,
+ "mode": "rolling",
+ "negative_control_lift": null,
+ "per_repo_lift": {
+  "aws-cloudformation/cfn-lint": {
+   "false_positive_rise_pts": 2.55,
+   "localization_lift_pts": -5.06
+  },
+  "matplotlib/matplotlib": {
+   "false_positive_rise_pts": -0.38,
+   "localization_lift_pts": 1.27
+  },
+  "pylint-dev/pylint": {
+   "false_positive_rise_pts": 6.35,
+   "localization_lift_pts": -11.9
+  }
+ },
+ "secondary_arms": {
+  "gated": {
+   "control": {
+    "false_positive_rate": 0.7782,
+    "localization_rate": 0.465,
+    "n_false_positive": 400,
+    "n_flags": 514,
+    "n_localized": 93,
+    "n_tasks": 200,
+    "per_repo": {
+     "aws-cloudformation/cfn-lint": {
+      "false_positive_rate": 0.8552,
+      "localization_rate": 0.3291,
+      "n_false_positive": 189,
+      "n_flags": 221,
+      "n_localized": 26,
+      "n_tasks": 79
+     },
+     "matplotlib/matplotlib": {
+      "false_positive_rate": 0.6961,
+      "localization_rate": 0.5949,
+      "n_false_positive": 126,
+      "n_flags": 181,
+      "n_localized": 47,
+      "n_tasks": 79
+     },
+     "pylint-dev/pylint": {
+      "false_positive_rate": 0.7589,
+      "localization_rate": 0.4762,
+      "n_false_positive": 85,
+      "n_flags": 112,
+      "n_localized": 20,
+      "n_tasks": 42
+     }
+    }
+   },
+   "effect_in_majority_of_repos": false,
+   "false_positive_rise_pts": 0.35,
+   "localization_lift_pts": -0.5,
+   "negative_control_lift": null,
+   "per_repo_lift": {
+    "aws-cloudformation/cfn-lint": {
+     "false_positive_rise_pts": -0.39,
+     "localization_lift_pts": 1.27
+    },
+    "matplotlib/matplotlib": {
+     "false_positive_rise_pts": 0.0,
+     "localization_lift_pts": 0.0
+    },
+    "pylint-dev/pylint": {
+     "false_positive_rise_pts": 2.29,
+     "localization_lift_pts": -4.76
+    }
+   },
+   "treatment": {
+    "false_positive_rate": 0.7817,
+    "localization_rate": 0.46,
+    "n_false_positive": 401,
+    "n_flags": 513,
+    "n_localized": 92,
+    "n_tasks": 200,
+    "per_repo": {
+     "aws-cloudformation/cfn-lint": {
+      "false_positive_rate": 0.8514,
+      "localization_rate": 0.3418,
+      "n_false_positive": 189,
+      "n_flags": 222,
+      "n_localized": 27,
+      "n_tasks": 79
+     },
+     "matplotlib/matplotlib": {
+      "false_positive_rate": 0.6961,
+      "localization_rate": 0.5949,
+      "n_false_positive": 126,
+      "n_flags": 181,
+      "n_localized": 47,
+      "n_tasks": 79
+     },
+     "pylint-dev/pylint": {
+      "false_positive_rate": 0.7818,
+      "localization_rate": 0.4286,
+      "n_false_positive": 86,
+      "n_flags": 110,
+      "n_localized": 18,
+      "n_tasks": 42
+     }
+    }
+   }
+  },
+  "placebo": {
+   "control": {
+    "false_positive_rate": 0.7782,
+    "localization_rate": 0.465,
+    "n_false_positive": 400,
+    "n_flags": 514,
+    "n_localized": 93,
+    "n_tasks": 200,
+    "per_repo": {
+     "aws-cloudformation/cfn-lint": {
+      "false_positive_rate": 0.8552,
+      "localization_rate": 0.3291,
+      "n_false_positive": 189,
+      "n_flags": 221,
+      "n_localized": 26,
+      "n_tasks": 79
+     },
+     "matplotlib/matplotlib": {
+      "false_positive_rate": 0.6961,
+      "localization_rate": 0.5949,
+      "n_false_positive": 126,
+      "n_flags": 181,
+      "n_localized": 47,
+      "n_tasks": 79
+     },
+     "pylint-dev/pylint": {
+      "false_positive_rate": 0.7589,
+      "localization_rate": 0.4762,
+      "n_false_positive": 85,
+      "n_flags": 112,
+      "n_localized": 20,
+      "n_tasks": 42
+     }
+    }
+   },
+   "effect_in_majority_of_repos": false,
+   "false_positive_rise_pts": 0.34,
+   "localization_lift_pts": -1.0,
+   "negative_control_lift": null,
+   "per_repo_lift": {
+    "aws-cloudformation/cfn-lint": {
+     "false_positive_rise_pts": -0.13,
+     "localization_lift_pts": -2.53
+    },
+    "matplotlib/matplotlib": {
+     "false_positive_rise_pts": 0.22,
+     "localization_lift_pts": 1.27
+    },
+    "pylint-dev/pylint": {
+     "false_positive_rise_pts": 1.33,
+     "localization_lift_pts": -2.38
+    }
+   },
+   "treatment": {
+    "false_positive_rate": 0.7816,
+    "localization_rate": 0.455,
+    "n_false_positive": 390,
+    "n_flags": 499,
+    "n_localized": 91,
+    "n_tasks": 200,
+    "per_repo": {
+     "aws-cloudformation/cfn-lint": {
+      "false_positive_rate": 0.8539,
+      "localization_rate": 0.3038,
+      "n_false_positive": 187,
+      "n_flags": 219,
+      "n_localized": 24,
+      "n_tasks": 79
+     },
+     "matplotlib/matplotlib": {
+      "false_positive_rate": 0.6983,
+      "localization_rate": 0.6076,
+      "n_false_positive": 125,
+      "n_flags": 179,
+      "n_localized": 48,
+      "n_tasks": 79
+     },
+     "pylint-dev/pylint": {
+      "false_positive_rate": 0.7723,
+      "localization_rate": 0.4524,
+      "n_false_positive": 78,
+      "n_flags": 101,
+      "n_localized": 19,
+      "n_tasks": 42
+     }
+    }
+   }
+  }
+ },
+ "tau": 0.5,
+ "treatment": {
+  "false_positive_rate": 0.8008,
+  "localization_rate": 0.425,
+  "n_false_positive": 406,
+  "n_flags": 507,
+  "n_localized": 85,
+  "n_tasks": 200,
+  "per_repo": {
+   "aws-cloudformation/cfn-lint": {
+    "false_positive_rate": 0.8807,
+    "localization_rate": 0.2785,
+    "n_false_positive": 192,
+    "n_flags": 218,
+    "n_localized": 22,
+    "n_tasks": 79
+   },
+   "matplotlib/matplotlib": {
+    "false_positive_rate": 0.6923,
+    "localization_rate": 0.6076,
+    "n_false_positive": 126,
+    "n_flags": 182,
+    "n_localized": 48,
+    "n_tasks": 79
+   },
+   "pylint-dev/pylint": {
+    "false_positive_rate": 0.8224,
+    "localization_rate": 0.3571,
+    "n_false_positive": 88,
+    "n_flags": 107,
+    "n_localized": 15,
+    "n_tasks": 42
+   }
+  }
+ },
+ "treatment_minus_placebo": {
+  "false_positive_pts": 1.92,
+  "localization_pts": -3.0
+ },
+ "warmup": 20
+}
