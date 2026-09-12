@@ -1,0 +1,1848 @@
+{
+ "arms": {
+  "control": {
+   "file_hits": {
+    "reflex-dev__reflex-3842": true,
+    "reflex-dev__reflex-3895": true,
+    "reflex-dev__reflex-3982": true,
+    "reflex-dev__reflex-4087": true,
+    "reflex-dev__reflex-4129": true,
+    "reflex-dev__reflex-4205": true,
+    "reflex-dev__reflex-4230": true,
+    "reflex-dev__reflex-4256": true,
+    "reflex-dev__reflex-4266": true,
+    "reflex-dev__reflex-4347": true,
+    "reflex-dev__reflex-4371": true,
+    "reflex-dev__reflex-4427": true,
+    "reflex-dev__reflex-4510": true,
+    "reflex-dev__reflex-4563": true,
+    "reflex-dev__reflex-4620": false,
+    "reflex-dev__reflex-4688": true,
+    "reflex-dev__reflex-4708": false,
+    "reflex-dev__reflex-4711": true,
+    "reflex-dev__reflex-4717": true,
+    "reflex-dev__reflex-4720": true,
+    "reflex-dev__reflex-4958": false,
+    "reflex-dev__reflex-5039": false,
+    "reflex-dev__reflex-5077": true,
+    "reflex-dev__reflex-5081": true
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.6857,
+    "localization_rate": 0.8333,
+    "n_false_positive": 48,
+    "n_flags": 70,
+    "n_localized": 20,
+    "n_tasks": 24,
+    "per_repo": {
+     "reflex-dev/reflex": {
+      "false_positive_rate": 0.6857,
+      "localization_rate": 0.8333,
+      "n_false_positive": 48,
+      "n_flags": 70,
+      "n_localized": 20,
+      "n_tasks": 24
+     }
+    }
+   },
+   "flags": {
+    "reflex-dev__reflex-3842": [
+     "reflex/vars.py::Var._merge",
+     "reflex/vars.py::Var._decode",
+     "reflex/state.py::BaseState._mark_dirty_computed_vars"
+    ],
+    "reflex-dev__reflex-3895": [
+     "reflex/ivars/base.py::ImmutableVar.guess_type",
+     "reflex/ivars/base.py::ImmutableVar.create"
+    ],
+    "reflex-dev__reflex-3982": [
+     "reflex/style.py::format_style_key",
+     "reflex/style.py::convert",
+     "reflex/components/component.py::Component.add_style"
+    ],
+    "reflex-dev__reflex-4087": [
+     "reflex/state.py::BaseState.reset",
+     "reflex/state.py::BaseState.__setattr__",
+     "reflex/state.py::BaseState._reset_client_storage"
+    ],
+    "reflex-dev__reflex-4129": [
+     "reflex/state.py::BaseState.__getstate__",
+     "reflex/state.py::BaseState._serialize",
+     "reflex/utils/serializers.py::serialize"
+    ],
+    "reflex-dev__reflex-4205": [
+     "reflex/config.py::Config.update_from_env",
+     "reflex/utils/types.py::_issubclass",
+     "reflex/config.py::interpret_env_var_value"
+    ],
+    "reflex-dev__reflex-4230": [
+     "reflex/state.py::BaseState._populate_parent_states",
+     "reflex/state.py::BaseState.get_state",
+     "reflex/app.py::App.modify_state"
+    ],
+    "reflex-dev__reflex-4256": [
+     "reflex/state.py::BaseState.__init__",
+     "reflex/state.py::BaseState._check_valid",
+     "reflex/base.py::Base.set"
+    ],
+    "reflex-dev__reflex-4266": [
+     "reflex/utils/export.py::export"
+    ],
+    "reflex-dev__reflex-4347": [
+     "reflex/state.py::BaseState.__init__",
+     "reflex/state.py::BaseState._init_var",
+     "reflex/state.py::ComponentState.__init_subclass__"
+    ],
+    "reflex-dev__reflex-4371": [
+     "reflex/state.py::BaseState.__setattr__",
+     "reflex/state.py::StateProxy.__setattr__",
+     "reflex/state.py::BaseState._set_var"
+    ],
+    "reflex-dev__reflex-4427": [
+     "reflex/state.py::BaseState._process_event",
+     "reflex/state.py::BaseState._process",
+     "reflex/app.py::process"
+    ],
+    "reflex-dev__reflex-4510": [
+     "reflex/state.py::BaseState._get_var_default",
+     "reflex/state.py::BaseState._init_var",
+     "reflex/components/core/foreach.py::Foreach._render"
+    ],
+    "reflex-dev__reflex-4563": [
+     "reflex/app.py::health",
+     "reflex/model.py::get_db_status",
+     "reflex/model.py::get_engine"
+    ],
+    "reflex-dev__reflex-4620": [
+     "reflex/components/core/cond.py::cond",
+     "reflex/compiler/compiler.py::_compile_component",
+     "reflex/components/tags/cond_tag.py::CondTag"
+    ],
+    "reflex-dev__reflex-4688": [
+     "reflex/utils/prerequisites.py::install_bun",
+     "reflex/utils/prerequisites.py::validate_bun",
+     "reflex/utils/prerequisites.py::initialize_bun_config"
+    ],
+    "reflex-dev__reflex-4708": [
+     "reflex/components/core/match.py::Match._process_cases",
+     "reflex/components/core/match.py::Match._process_match_cases",
+     "reflex/components/core/match.py::Match._create_match_cond_var_or_component"
+    ],
+    "reflex-dev__reflex-4711": [
+     "reflex/state.py::BaseState._get_computed_vars",
+     "reflex/state.py::BaseState._init_var",
+     "reflex/state.py::BaseState.get_var_value"
+    ],
+    "reflex-dev__reflex-4717": [
+     "reflex/event.py::LiteralEventChainVar.create",
+     "reflex/event.py::EventChain.create"
+    ],
+    "reflex-dev__reflex-4720": [
+     "reflex/app.py::App._setup_state",
+     "reflex/state.py::BaseState._process_event",
+     "reflex/app.py::App.modify_state"
+    ],
+    "reflex-dev__reflex-4958": [
+     "reflex/state.py::BaseState._get_var_default",
+     "reflex/state.py::BaseState.get_var_value",
+     "reflex/app.py::App._setup_state"
+    ],
+    "reflex-dev__reflex-5039": [
+     "reflex/components/core/foreach.py::Foreach.render",
+     "reflex/components/core/match.py::Match._process_match_cases",
+     "reflex/components/core/foreach.py::Foreach._render"
+    ],
+    "reflex-dev__reflex-5077": [
+     "reflex/compiler/compiler.py::compile_root_stylesheet",
+     "reflex/compiler/compiler.py::_compile_root_stylesheet",
+     "reflex/app.py::App._compile"
+    ],
+    "reflex-dev__reflex-5081": [
+     "reflex/utils/types.py::is_literal",
+     "reflex/utils/types.py::check_prop_in_allowed_types"
+    ]
+   },
+   "hits": {
+    "reflex-dev__reflex-3842": false,
+    "reflex-dev__reflex-3895": true,
+    "reflex-dev__reflex-3982": true,
+    "reflex-dev__reflex-4087": true,
+    "reflex-dev__reflex-4129": false,
+    "reflex-dev__reflex-4205": true,
+    "reflex-dev__reflex-4230": false,
+    "reflex-dev__reflex-4256": true,
+    "reflex-dev__reflex-4266": false,
+    "reflex-dev__reflex-4347": true,
+    "reflex-dev__reflex-4371": false,
+    "reflex-dev__reflex-4427": true,
+    "reflex-dev__reflex-4510": false,
+    "reflex-dev__reflex-4563": true,
+    "reflex-dev__reflex-4620": false,
+    "reflex-dev__reflex-4688": true,
+    "reflex-dev__reflex-4708": false,
+    "reflex-dev__reflex-4711": false,
+    "reflex-dev__reflex-4717": true,
+    "reflex-dev__reflex-4720": false,
+    "reflex-dev__reflex-4958": false,
+    "reflex-dev__reflex-5039": false,
+    "reflex-dev__reflex-5077": true,
+    "reflex-dev__reflex-5081": false
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.7612,
+    "localization_rate": 0.4583,
+    "n_false_positive": 51,
+    "n_flags": 67,
+    "n_localized": 11,
+    "n_tasks": 24,
+    "per_repo": {
+     "reflex-dev/reflex": {
+      "false_positive_rate": 0.7612,
+      "localization_rate": 0.4583,
+      "n_false_positive": 51,
+      "n_flags": 67,
+      "n_localized": 11,
+      "n_tasks": 24
+     }
+    }
+   },
+   "retrieved": {
+    "reflex-dev__reflex-3842": [],
+    "reflex-dev__reflex-3895": [],
+    "reflex-dev__reflex-3982": [],
+    "reflex-dev__reflex-4087": [],
+    "reflex-dev__reflex-4129": [],
+    "reflex-dev__reflex-4205": [],
+    "reflex-dev__reflex-4230": [],
+    "reflex-dev__reflex-4256": [],
+    "reflex-dev__reflex-4266": [],
+    "reflex-dev__reflex-4347": [],
+    "reflex-dev__reflex-4371": [],
+    "reflex-dev__reflex-4427": [],
+    "reflex-dev__reflex-4510": [],
+    "reflex-dev__reflex-4563": [],
+    "reflex-dev__reflex-4620": [],
+    "reflex-dev__reflex-4688": [],
+    "reflex-dev__reflex-4708": [],
+    "reflex-dev__reflex-4711": [],
+    "reflex-dev__reflex-4717": [],
+    "reflex-dev__reflex-4720": [],
+    "reflex-dev__reflex-4958": [],
+    "reflex-dev__reflex-5039": [],
+    "reflex-dev__reflex-5077": [],
+    "reflex-dev__reflex-5081": []
+   },
+   "scores": {
+    "reflex-dev__reflex-3842": {},
+    "reflex-dev__reflex-3895": {},
+    "reflex-dev__reflex-3982": {},
+    "reflex-dev__reflex-4087": {},
+    "reflex-dev__reflex-4129": {},
+    "reflex-dev__reflex-4205": {},
+    "reflex-dev__reflex-4230": {},
+    "reflex-dev__reflex-4256": {},
+    "reflex-dev__reflex-4266": {},
+    "reflex-dev__reflex-4347": {},
+    "reflex-dev__reflex-4371": {},
+    "reflex-dev__reflex-4427": {},
+    "reflex-dev__reflex-4510": {},
+    "reflex-dev__reflex-4563": {},
+    "reflex-dev__reflex-4620": {},
+    "reflex-dev__reflex-4688": {},
+    "reflex-dev__reflex-4708": {},
+    "reflex-dev__reflex-4711": {},
+    "reflex-dev__reflex-4717": {},
+    "reflex-dev__reflex-4720": {},
+    "reflex-dev__reflex-4958": {},
+    "reflex-dev__reflex-5039": {},
+    "reflex-dev__reflex-5077": {},
+    "reflex-dev__reflex-5081": {}
+   },
+   "tau": 0.0,
+   "version": null,
+   "versions": {
+    "reflex-dev__reflex-3842": null,
+    "reflex-dev__reflex-3895": null,
+    "reflex-dev__reflex-3982": null,
+    "reflex-dev__reflex-4087": null,
+    "reflex-dev__reflex-4129": null,
+    "reflex-dev__reflex-4205": null,
+    "reflex-dev__reflex-4230": null,
+    "reflex-dev__reflex-4256": null,
+    "reflex-dev__reflex-4266": null,
+    "reflex-dev__reflex-4347": null,
+    "reflex-dev__reflex-4371": null,
+    "reflex-dev__reflex-4427": null,
+    "reflex-dev__reflex-4510": null,
+    "reflex-dev__reflex-4563": null,
+    "reflex-dev__reflex-4620": null,
+    "reflex-dev__reflex-4688": null,
+    "reflex-dev__reflex-4708": null,
+    "reflex-dev__reflex-4711": null,
+    "reflex-dev__reflex-4717": null,
+    "reflex-dev__reflex-4720": null,
+    "reflex-dev__reflex-4958": null,
+    "reflex-dev__reflex-5039": null,
+    "reflex-dev__reflex-5077": null,
+    "reflex-dev__reflex-5081": null
+   }
+  },
+  "gated": {
+   "file_hits": {
+    "reflex-dev__reflex-3842": true,
+    "reflex-dev__reflex-3895": true,
+    "reflex-dev__reflex-3982": true,
+    "reflex-dev__reflex-4087": true,
+    "reflex-dev__reflex-4129": true,
+    "reflex-dev__reflex-4205": true,
+    "reflex-dev__reflex-4230": true,
+    "reflex-dev__reflex-4256": true,
+    "reflex-dev__reflex-4266": true,
+    "reflex-dev__reflex-4347": true,
+    "reflex-dev__reflex-4371": true,
+    "reflex-dev__reflex-4427": true,
+    "reflex-dev__reflex-4510": true,
+    "reflex-dev__reflex-4563": true,
+    "reflex-dev__reflex-4620": false,
+    "reflex-dev__reflex-4688": true,
+    "reflex-dev__reflex-4708": false,
+    "reflex-dev__reflex-4711": true,
+    "reflex-dev__reflex-4717": true,
+    "reflex-dev__reflex-4720": true,
+    "reflex-dev__reflex-4958": false,
+    "reflex-dev__reflex-5039": false,
+    "reflex-dev__reflex-5077": true,
+    "reflex-dev__reflex-5081": true
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.6857,
+    "localization_rate": 0.8333,
+    "n_false_positive": 48,
+    "n_flags": 70,
+    "n_localized": 20,
+    "n_tasks": 24,
+    "per_repo": {
+     "reflex-dev/reflex": {
+      "false_positive_rate": 0.6857,
+      "localization_rate": 0.8333,
+      "n_false_positive": 48,
+      "n_flags": 70,
+      "n_localized": 20,
+      "n_tasks": 24
+     }
+    }
+   },
+   "flags": {
+    "reflex-dev__reflex-3842": [
+     "reflex/vars.py::Var._merge",
+     "reflex/vars.py::Var._decode",
+     "reflex/state.py::BaseState._mark_dirty_computed_vars"
+    ],
+    "reflex-dev__reflex-3895": [
+     "reflex/ivars/base.py::ImmutableVar.guess_type",
+     "reflex/ivars/base.py::ImmutableVar.create"
+    ],
+    "reflex-dev__reflex-3982": [
+     "reflex/style.py::format_style_key",
+     "reflex/style.py::convert",
+     "reflex/components/component.py::Component.add_style"
+    ],
+    "reflex-dev__reflex-4087": [
+     "reflex/state.py::BaseState.reset",
+     "reflex/state.py::BaseState.__setattr__",
+     "reflex/state.py::BaseState._reset_client_storage"
+    ],
+    "reflex-dev__reflex-4129": [
+     "reflex/state.py::BaseState.__getstate__",
+     "reflex/state.py::BaseState._serialize",
+     "reflex/utils/serializers.py::serialize"
+    ],
+    "reflex-dev__reflex-4205": [
+     "reflex/config.py::Config.update_from_env",
+     "reflex/utils/types.py::_issubclass",
+     "reflex/config.py::interpret_env_var_value"
+    ],
+    "reflex-dev__reflex-4230": [
+     "reflex/state.py::BaseState._populate_parent_states",
+     "reflex/state.py::BaseState.get_state",
+     "reflex/app.py::App.modify_state"
+    ],
+    "reflex-dev__reflex-4256": [
+     "reflex/state.py::BaseState.__init__",
+     "reflex/state.py::BaseState._check_valid",
+     "reflex/base.py::Base.set"
+    ],
+    "reflex-dev__reflex-4266": [
+     "reflex/utils/export.py::export"
+    ],
+    "reflex-dev__reflex-4347": [
+     "reflex/state.py::BaseState.__init__",
+     "reflex/state.py::BaseState._init_var",
+     "reflex/state.py::ComponentState.__init_subclass__"
+    ],
+    "reflex-dev__reflex-4371": [
+     "reflex/state.py::BaseState.__setattr__",
+     "reflex/state.py::StateProxy.__setattr__",
+     "reflex/state.py::BaseState._set_var"
+    ],
+    "reflex-dev__reflex-4427": [
+     "reflex/state.py::BaseState._process_event",
+     "reflex/state.py::BaseState._process",
+     "reflex/app.py::process"
+    ],
+    "reflex-dev__reflex-4510": [
+     "reflex/state.py::BaseState._get_var_default",
+     "reflex/state.py::BaseState._init_var",
+     "reflex/components/core/foreach.py::Foreach._render"
+    ],
+    "reflex-dev__reflex-4563": [
+     "reflex/app.py::health",
+     "reflex/model.py::get_db_status",
+     "reflex/model.py::get_engine"
+    ],
+    "reflex-dev__reflex-4620": [
+     "reflex/components/core/cond.py::cond",
+     "reflex/compiler/compiler.py::_compile_component",
+     "reflex/components/tags/cond_tag.py::CondTag"
+    ],
+    "reflex-dev__reflex-4688": [
+     "reflex/utils/prerequisites.py::install_bun",
+     "reflex/utils/prerequisites.py::validate_bun",
+     "reflex/utils/prerequisites.py::initialize_bun_config"
+    ],
+    "reflex-dev__reflex-4708": [
+     "reflex/components/core/match.py::Match._process_cases",
+     "reflex/components/core/match.py::Match._process_match_cases",
+     "reflex/components/core/match.py::Match._create_match_cond_var_or_component"
+    ],
+    "reflex-dev__reflex-4711": [
+     "reflex/state.py::BaseState._get_computed_vars",
+     "reflex/state.py::BaseState._init_var",
+     "reflex/state.py::BaseState.get_var_value"
+    ],
+    "reflex-dev__reflex-4717": [
+     "reflex/event.py::LiteralEventChainVar.create",
+     "reflex/event.py::EventChain.create"
+    ],
+    "reflex-dev__reflex-4720": [
+     "reflex/app.py::App._setup_state",
+     "reflex/state.py::BaseState._process_event",
+     "reflex/app.py::App.modify_state"
+    ],
+    "reflex-dev__reflex-4958": [
+     "reflex/state.py::BaseState.__init__"
+    ],
+    "reflex-dev__reflex-5039": [
+     "reflex/components/core/foreach.py::Foreach.render",
+     "reflex/components/core/match.py::Match.render",
+     "reflex/components/core/foreach.py::Foreach._render"
+    ],
+    "reflex-dev__reflex-5077": [
+     "reflex/compiler/compiler.py::compile_root_stylesheet",
+     "reflex/compiler/compiler.py::_compile_root_stylesheet",
+     "reflex/app.py::App._compile"
+    ],
+    "reflex-dev__reflex-5081": [
+     "reflex/utils/types.py::is_literal",
+     "reflex/utils/types.py::check_prop_in_allowed_types"
+    ]
+   },
+   "hits": {
+    "reflex-dev__reflex-3842": false,
+    "reflex-dev__reflex-3895": true,
+    "reflex-dev__reflex-3982": true,
+    "reflex-dev__reflex-4087": true,
+    "reflex-dev__reflex-4129": false,
+    "reflex-dev__reflex-4205": true,
+    "reflex-dev__reflex-4230": false,
+    "reflex-dev__reflex-4256": true,
+    "reflex-dev__reflex-4266": false,
+    "reflex-dev__reflex-4347": true,
+    "reflex-dev__reflex-4371": false,
+    "reflex-dev__reflex-4427": true,
+    "reflex-dev__reflex-4510": false,
+    "reflex-dev__reflex-4563": true,
+    "reflex-dev__reflex-4620": false,
+    "reflex-dev__reflex-4688": true,
+    "reflex-dev__reflex-4708": false,
+    "reflex-dev__reflex-4711": false,
+    "reflex-dev__reflex-4717": true,
+    "reflex-dev__reflex-4720": false,
+    "reflex-dev__reflex-4958": false,
+    "reflex-dev__reflex-5039": false,
+    "reflex-dev__reflex-5077": true,
+    "reflex-dev__reflex-5081": false
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": -0.73,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.7538,
+    "localization_rate": 0.4583,
+    "n_false_positive": 49,
+    "n_flags": 65,
+    "n_localized": 11,
+    "n_tasks": 24,
+    "per_repo": {
+     "reflex-dev/reflex": {
+      "false_positive_rate": 0.7538,
+      "localization_rate": 0.4583,
+      "n_false_positive": 49,
+      "n_flags": 65,
+      "n_localized": 11,
+      "n_tasks": 24
+     }
+    }
+   },
+   "retrieved": {
+    "reflex-dev__reflex-3842": [],
+    "reflex-dev__reflex-3895": [],
+    "reflex-dev__reflex-3982": [],
+    "reflex-dev__reflex-4087": [],
+    "reflex-dev__reflex-4129": [],
+    "reflex-dev__reflex-4205": [],
+    "reflex-dev__reflex-4230": [],
+    "reflex-dev__reflex-4256": [],
+    "reflex-dev__reflex-4266": [],
+    "reflex-dev__reflex-4347": [],
+    "reflex-dev__reflex-4371": [],
+    "reflex-dev__reflex-4427": [],
+    "reflex-dev__reflex-4510": [],
+    "reflex-dev__reflex-4563": [],
+    "reflex-dev__reflex-4620": [],
+    "reflex-dev__reflex-4688": [],
+    "reflex-dev__reflex-4708": [],
+    "reflex-dev__reflex-4711": [],
+    "reflex-dev__reflex-4717": [],
+    "reflex-dev__reflex-4720": [],
+    "reflex-dev__reflex-4958": [
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb"
+    ],
+    "reflex-dev__reflex-5039": [
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb"
+    ],
+    "reflex-dev__reflex-5077": [],
+    "reflex-dev__reflex-5081": []
+   },
+   "scores": {
+    "reflex-dev__reflex-3842": {},
+    "reflex-dev__reflex-3895": {},
+    "reflex-dev__reflex-3982": {},
+    "reflex-dev__reflex-4087": {},
+    "reflex-dev__reflex-4129": {},
+    "reflex-dev__reflex-4205": {},
+    "reflex-dev__reflex-4230": {},
+    "reflex-dev__reflex-4256": {},
+    "reflex-dev__reflex-4266": {},
+    "reflex-dev__reflex-4347": {},
+    "reflex-dev__reflex-4371": {
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb": 0.329482
+    },
+    "reflex-dev__reflex-4427": {
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb": 0.369243
+    },
+    "reflex-dev__reflex-4510": {
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb": 0.44195
+    },
+    "reflex-dev__reflex-4563": {
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb": 0.229665
+    },
+    "reflex-dev__reflex-4620": {
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb": 0.283882
+    },
+    "reflex-dev__reflex-4688": {
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb": 0.192328
+    },
+    "reflex-dev__reflex-4708": {
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb": 0.321985
+    },
+    "reflex-dev__reflex-4711": {
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb": 0.253354
+    },
+    "reflex-dev__reflex-4717": {
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb": 0.24315
+    },
+    "reflex-dev__reflex-4720": {
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb": 0.247522
+    },
+    "reflex-dev__reflex-4958": {
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb": 0.548337
+    },
+    "reflex-dev__reflex-5039": {
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb": 0.526336
+    },
+    "reflex-dev__reflex-5077": {
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb": 0.421727
+    },
+    "reflex-dev__reflex-5081": {
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb": 0.332262
+    }
+   },
+   "tau": 0.5,
+   "version": "rolling",
+   "versions": {
+    "reflex-dev__reflex-3842": null,
+    "reflex-dev__reflex-3895": null,
+    "reflex-dev__reflex-3982": null,
+    "reflex-dev__reflex-4087": null,
+    "reflex-dev__reflex-4129": null,
+    "reflex-dev__reflex-4205": null,
+    "reflex-dev__reflex-4230": null,
+    "reflex-dev__reflex-4256": null,
+    "reflex-dev__reflex-4266": null,
+    "reflex-dev__reflex-4347": null,
+    "reflex-dev__reflex-4371": "7daa3786c21b491a795bfeb8de38fe645c25b8a0f590fbf9c155d48087c143b5",
+    "reflex-dev__reflex-4427": "7daa3786c21b491a795bfeb8de38fe645c25b8a0f590fbf9c155d48087c143b5",
+    "reflex-dev__reflex-4510": "7daa3786c21b491a795bfeb8de38fe645c25b8a0f590fbf9c155d48087c143b5",
+    "reflex-dev__reflex-4563": "7daa3786c21b491a795bfeb8de38fe645c25b8a0f590fbf9c155d48087c143b5",
+    "reflex-dev__reflex-4620": "7daa3786c21b491a795bfeb8de38fe645c25b8a0f590fbf9c155d48087c143b5",
+    "reflex-dev__reflex-4688": "7daa3786c21b491a795bfeb8de38fe645c25b8a0f590fbf9c155d48087c143b5",
+    "reflex-dev__reflex-4708": "7daa3786c21b491a795bfeb8de38fe645c25b8a0f590fbf9c155d48087c143b5",
+    "reflex-dev__reflex-4711": "7daa3786c21b491a795bfeb8de38fe645c25b8a0f590fbf9c155d48087c143b5",
+    "reflex-dev__reflex-4717": "7daa3786c21b491a795bfeb8de38fe645c25b8a0f590fbf9c155d48087c143b5",
+    "reflex-dev__reflex-4720": "7daa3786c21b491a795bfeb8de38fe645c25b8a0f590fbf9c155d48087c143b5",
+    "reflex-dev__reflex-4958": "7daa3786c21b491a795bfeb8de38fe645c25b8a0f590fbf9c155d48087c143b5",
+    "reflex-dev__reflex-5039": "7daa3786c21b491a795bfeb8de38fe645c25b8a0f590fbf9c155d48087c143b5",
+    "reflex-dev__reflex-5077": "7daa3786c21b491a795bfeb8de38fe645c25b8a0f590fbf9c155d48087c143b5",
+    "reflex-dev__reflex-5081": "7daa3786c21b491a795bfeb8de38fe645c25b8a0f590fbf9c155d48087c143b5"
+   }
+  },
+  "placebo": {
+   "file_hits": {
+    "reflex-dev__reflex-3842": true,
+    "reflex-dev__reflex-3895": true,
+    "reflex-dev__reflex-3982": true,
+    "reflex-dev__reflex-4087": true,
+    "reflex-dev__reflex-4129": true,
+    "reflex-dev__reflex-4205": true,
+    "reflex-dev__reflex-4230": true,
+    "reflex-dev__reflex-4256": true,
+    "reflex-dev__reflex-4266": true,
+    "reflex-dev__reflex-4347": true,
+    "reflex-dev__reflex-4371": true,
+    "reflex-dev__reflex-4427": true,
+    "reflex-dev__reflex-4510": true,
+    "reflex-dev__reflex-4563": true,
+    "reflex-dev__reflex-4620": false,
+    "reflex-dev__reflex-4688": true,
+    "reflex-dev__reflex-4708": false,
+    "reflex-dev__reflex-4711": true,
+    "reflex-dev__reflex-4717": true,
+    "reflex-dev__reflex-4720": true,
+    "reflex-dev__reflex-4958": false,
+    "reflex-dev__reflex-5039": false,
+    "reflex-dev__reflex-5077": true,
+    "reflex-dev__reflex-5081": false
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.6957,
+    "localization_rate": 0.7917,
+    "n_false_positive": 48,
+    "n_flags": 69,
+    "n_localized": 19,
+    "n_tasks": 24,
+    "per_repo": {
+     "reflex-dev/reflex": {
+      "false_positive_rate": 0.6957,
+      "localization_rate": 0.7917,
+      "n_false_positive": 48,
+      "n_flags": 69,
+      "n_localized": 19,
+      "n_tasks": 24
+     }
+    }
+   },
+   "flags": {
+    "reflex-dev__reflex-3842": [
+     "reflex/vars.py::Var._merge",
+     "reflex/vars.py::Var._decode",
+     "reflex/state.py::BaseState._mark_dirty_computed_vars"
+    ],
+    "reflex-dev__reflex-3895": [
+     "reflex/ivars/base.py::ImmutableVar.guess_type",
+     "reflex/ivars/base.py::ImmutableVar.create"
+    ],
+    "reflex-dev__reflex-3982": [
+     "reflex/style.py::format_style_key",
+     "reflex/style.py::convert",
+     "reflex/components/component.py::Component.add_style"
+    ],
+    "reflex-dev__reflex-4087": [
+     "reflex/state.py::BaseState.reset",
+     "reflex/state.py::BaseState.__setattr__",
+     "reflex/state.py::BaseState._reset_client_storage"
+    ],
+    "reflex-dev__reflex-4129": [
+     "reflex/state.py::BaseState.__getstate__",
+     "reflex/state.py::BaseState._serialize",
+     "reflex/utils/serializers.py::serialize"
+    ],
+    "reflex-dev__reflex-4205": [
+     "reflex/config.py::Config.update_from_env",
+     "reflex/utils/types.py::_issubclass",
+     "reflex/config.py::interpret_env_var_value"
+    ],
+    "reflex-dev__reflex-4230": [
+     "reflex/state.py::BaseState._populate_parent_states",
+     "reflex/state.py::BaseState.get_state",
+     "reflex/app.py::App.modify_state"
+    ],
+    "reflex-dev__reflex-4256": [
+     "reflex/state.py::BaseState.__init__",
+     "reflex/state.py::BaseState._check_valid",
+     "reflex/base.py::Base.set"
+    ],
+    "reflex-dev__reflex-4266": [
+     "reflex/utils/export.py::export"
+    ],
+    "reflex-dev__reflex-4347": [
+     "reflex/state.py::BaseState.__init__",
+     "reflex/state.py::BaseState._init_var",
+     "reflex/state.py::ComponentState.__init_subclass__"
+    ],
+    "reflex-dev__reflex-4371": [
+     "reflex/state.py::BaseState.__setattr__",
+     "reflex/state.py::StateProxy.__setattr__",
+     "reflex/state.py::MutableProxy.__setattr__"
+    ],
+    "reflex-dev__reflex-4427": [
+     "reflex/state.py::BaseState._process_event",
+     "reflex/state.py::BaseState._get_type_hints",
+     "reflex/model.py::Model.__init_subclass__"
+    ],
+    "reflex-dev__reflex-4510": [
+     "reflex/state.py::BaseState._get_type_hints",
+     "reflex/state.py::BaseState._init_var",
+     "reflex/utils/types.py::is_valid_var_type"
+    ],
+    "reflex-dev__reflex-4563": [
+     "reflex/app.py::health",
+     "reflex/model.py::get_db_status",
+     "reflex/model.py::get_engine"
+    ],
+    "reflex-dev__reflex-4620": [
+     "reflex/components/core/cond.py::cond",
+     "reflex/compiler/compiler.py::_compile_component",
+     "reflex/components/tags/cond_tag.py::CondTag"
+    ],
+    "reflex-dev__reflex-4688": [
+     "reflex/utils/prerequisites.py::install_bun",
+     "reflex/utils/prerequisites.py::validate_bun",
+     "reflex/utils/prerequisites.py::initialize_bun_config"
+    ],
+    "reflex-dev__reflex-4708": [
+     "reflex/components/core/match.py::Match._process_cases",
+     "reflex/components/core/match.py::Match._process_match_cases",
+     "reflex/components/core/match.py::Match._create_match_cond_var_or_component"
+    ],
+    "reflex-dev__reflex-4711": [
+     "reflex/state.py::BaseState._get_computed_vars",
+     "reflex/state.py::BaseState.add_var",
+     "reflex/state.py::BaseState._init_var"
+    ],
+    "reflex-dev__reflex-4717": [
+     "reflex/event.py::LiteralEventChainVar.create",
+     "reflex/event.py::EventChain.create"
+    ],
+    "reflex-dev__reflex-4720": [
+     "reflex/app.py::App._setup_state",
+     "reflex/state.py::BaseState._process_event",
+     "reflex/event.py::EventHandler.__call__"
+    ],
+    "reflex-dev__reflex-4958": [
+     "reflex/state.py::BaseState.get_var_value"
+    ],
+    "reflex-dev__reflex-5039": [
+     "reflex/components/core/foreach.py::Foreach.render",
+     "reflex/components/core/match.py::Match._process_match_cases",
+     "reflex/components/core/foreach.py::Foreach._render"
+    ],
+    "reflex-dev__reflex-5077": [
+     "reflex/compiler/compiler.py::compile_root_stylesheet",
+     "reflex/compiler/compiler.py::_compile_root_stylesheet",
+     "reflex/app.py::App._compile"
+    ],
+    "reflex-dev__reflex-5081": [
+     "reflex/compiler/compiler.py::_compile_component",
+     "reflex/vars/__init__.py::<module>",
+     "reflex/components/props.py::NoExtrasAllowedProps.__init__"
+    ]
+   },
+   "hits": {
+    "reflex-dev__reflex-3842": false,
+    "reflex-dev__reflex-3895": true,
+    "reflex-dev__reflex-3982": true,
+    "reflex-dev__reflex-4087": true,
+    "reflex-dev__reflex-4129": false,
+    "reflex-dev__reflex-4205": true,
+    "reflex-dev__reflex-4230": false,
+    "reflex-dev__reflex-4256": true,
+    "reflex-dev__reflex-4266": false,
+    "reflex-dev__reflex-4347": true,
+    "reflex-dev__reflex-4371": false,
+    "reflex-dev__reflex-4427": true,
+    "reflex-dev__reflex-4510": false,
+    "reflex-dev__reflex-4563": true,
+    "reflex-dev__reflex-4620": false,
+    "reflex-dev__reflex-4688": true,
+    "reflex-dev__reflex-4708": false,
+    "reflex-dev__reflex-4711": false,
+    "reflex-dev__reflex-4717": true,
+    "reflex-dev__reflex-4720": false,
+    "reflex-dev__reflex-4958": false,
+    "reflex-dev__reflex-5039": false,
+    "reflex-dev__reflex-5077": true,
+    "reflex-dev__reflex-5081": false
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": -0.36,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.7576,
+    "localization_rate": 0.4583,
+    "n_false_positive": 50,
+    "n_flags": 66,
+    "n_localized": 11,
+    "n_tasks": 24,
+    "per_repo": {
+     "reflex-dev/reflex": {
+      "false_positive_rate": 0.7576,
+      "localization_rate": 0.4583,
+      "n_false_positive": 50,
+      "n_flags": 66,
+      "n_localized": 11,
+      "n_tasks": 24
+     }
+    }
+   },
+   "retrieved": {
+    "reflex-dev__reflex-3842": [],
+    "reflex-dev__reflex-3895": [],
+    "reflex-dev__reflex-3982": [],
+    "reflex-dev__reflex-4087": [],
+    "reflex-dev__reflex-4129": [],
+    "reflex-dev__reflex-4205": [],
+    "reflex-dev__reflex-4230": [],
+    "reflex-dev__reflex-4256": [],
+    "reflex-dev__reflex-4266": [],
+    "reflex-dev__reflex-4347": [],
+    "reflex-dev__reflex-4371": [
+     "placebo:0"
+    ],
+    "reflex-dev__reflex-4427": [
+     "placebo:3"
+    ],
+    "reflex-dev__reflex-4510": [
+     "placebo:4"
+    ],
+    "reflex-dev__reflex-4563": [
+     "placebo:4"
+    ],
+    "reflex-dev__reflex-4620": [
+     "placebo:4"
+    ],
+    "reflex-dev__reflex-4688": [
+     "placebo:4"
+    ],
+    "reflex-dev__reflex-4708": [
+     "placebo:4"
+    ],
+    "reflex-dev__reflex-4711": [
+     "placebo:1"
+    ],
+    "reflex-dev__reflex-4717": [
+     "placebo:4"
+    ],
+    "reflex-dev__reflex-4720": [
+     "placebo:4"
+    ],
+    "reflex-dev__reflex-4958": [
+     "placebo:4"
+    ],
+    "reflex-dev__reflex-5039": [
+     "placebo:4"
+    ],
+    "reflex-dev__reflex-5077": [
+     "placebo:4"
+    ],
+    "reflex-dev__reflex-5081": [
+     "placebo:4"
+    ]
+   },
+   "scores": {
+    "reflex-dev__reflex-3842": {},
+    "reflex-dev__reflex-3895": {},
+    "reflex-dev__reflex-3982": {},
+    "reflex-dev__reflex-4087": {},
+    "reflex-dev__reflex-4129": {},
+    "reflex-dev__reflex-4205": {},
+    "reflex-dev__reflex-4230": {},
+    "reflex-dev__reflex-4256": {},
+    "reflex-dev__reflex-4266": {},
+    "reflex-dev__reflex-4347": {},
+    "reflex-dev__reflex-4371": {
+     "placebo:0": 0.113578
+    },
+    "reflex-dev__reflex-4427": {
+     "placebo:3": 0.228391
+    },
+    "reflex-dev__reflex-4510": {
+     "placebo:4": 0.211327
+    },
+    "reflex-dev__reflex-4563": {
+     "placebo:4": 0.183162
+    },
+    "reflex-dev__reflex-4620": {
+     "placebo:4": 0.236697
+    },
+    "reflex-dev__reflex-4688": {
+     "placebo:4": 0.171189
+    },
+    "reflex-dev__reflex-4708": {
+     "placebo:4": 0.235828
+    },
+    "reflex-dev__reflex-4711": {
+     "placebo:1": 0.062891
+    },
+    "reflex-dev__reflex-4717": {
+     "placebo:4": 0.276135
+    },
+    "reflex-dev__reflex-4720": {
+     "placebo:4": 0.157906
+    },
+    "reflex-dev__reflex-4958": {
+     "placebo:4": 0.193195
+    },
+    "reflex-dev__reflex-5039": {
+     "placebo:4": 0.171719
+    },
+    "reflex-dev__reflex-5077": {
+     "placebo:4": 0.157949
+    },
+    "reflex-dev__reflex-5081": {
+     "placebo:4": 0.229605
+    }
+   },
+   "tau": 0.0,
+   "version": "rolling",
+   "versions": {
+    "reflex-dev__reflex-3842": null,
+    "reflex-dev__reflex-3895": null,
+    "reflex-dev__reflex-3982": null,
+    "reflex-dev__reflex-4087": null,
+    "reflex-dev__reflex-4129": null,
+    "reflex-dev__reflex-4205": null,
+    "reflex-dev__reflex-4230": null,
+    "reflex-dev__reflex-4256": null,
+    "reflex-dev__reflex-4266": null,
+    "reflex-dev__reflex-4347": null,
+    "reflex-dev__reflex-4371": null,
+    "reflex-dev__reflex-4427": null,
+    "reflex-dev__reflex-4510": null,
+    "reflex-dev__reflex-4563": null,
+    "reflex-dev__reflex-4620": null,
+    "reflex-dev__reflex-4688": null,
+    "reflex-dev__reflex-4708": null,
+    "reflex-dev__reflex-4711": null,
+    "reflex-dev__reflex-4717": null,
+    "reflex-dev__reflex-4720": null,
+    "reflex-dev__reflex-4958": null,
+    "reflex-dev__reflex-5039": null,
+    "reflex-dev__reflex-5077": null,
+    "reflex-dev__reflex-5081": null
+   }
+  },
+  "treatment": {
+   "file_hits": {
+    "reflex-dev__reflex-3842": true,
+    "reflex-dev__reflex-3895": true,
+    "reflex-dev__reflex-3982": true,
+    "reflex-dev__reflex-4087": true,
+    "reflex-dev__reflex-4129": true,
+    "reflex-dev__reflex-4205": true,
+    "reflex-dev__reflex-4230": true,
+    "reflex-dev__reflex-4256": true,
+    "reflex-dev__reflex-4266": true,
+    "reflex-dev__reflex-4347": true,
+    "reflex-dev__reflex-4371": true,
+    "reflex-dev__reflex-4427": true,
+    "reflex-dev__reflex-4510": true,
+    "reflex-dev__reflex-4563": true,
+    "reflex-dev__reflex-4620": false,
+    "reflex-dev__reflex-4688": true,
+    "reflex-dev__reflex-4708": false,
+    "reflex-dev__reflex-4711": true,
+    "reflex-dev__reflex-4717": true,
+    "reflex-dev__reflex-4720": true,
+    "reflex-dev__reflex-4958": false,
+    "reflex-dev__reflex-5039": false,
+    "reflex-dev__reflex-5077": true,
+    "reflex-dev__reflex-5081": false
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.7042,
+    "localization_rate": 0.7917,
+    "n_false_positive": 50,
+    "n_flags": 71,
+    "n_localized": 19,
+    "n_tasks": 24,
+    "per_repo": {
+     "reflex-dev/reflex": {
+      "false_positive_rate": 0.7042,
+      "localization_rate": 0.7917,
+      "n_false_positive": 50,
+      "n_flags": 71,
+      "n_localized": 19,
+      "n_tasks": 24
+     }
+    }
+   },
+   "flags": {
+    "reflex-dev__reflex-3842": [
+     "reflex/vars.py::Var._merge",
+     "reflex/vars.py::Var._decode",
+     "reflex/state.py::BaseState._mark_dirty_computed_vars"
+    ],
+    "reflex-dev__reflex-3895": [
+     "reflex/ivars/base.py::ImmutableVar.guess_type",
+     "reflex/ivars/base.py::ImmutableVar.create"
+    ],
+    "reflex-dev__reflex-3982": [
+     "reflex/style.py::format_style_key",
+     "reflex/style.py::convert",
+     "reflex/components/component.py::Component.add_style"
+    ],
+    "reflex-dev__reflex-4087": [
+     "reflex/state.py::BaseState.reset",
+     "reflex/state.py::BaseState.__setattr__",
+     "reflex/state.py::BaseState._reset_client_storage"
+    ],
+    "reflex-dev__reflex-4129": [
+     "reflex/state.py::BaseState.__getstate__",
+     "reflex/state.py::BaseState._serialize",
+     "reflex/utils/serializers.py::serialize"
+    ],
+    "reflex-dev__reflex-4205": [
+     "reflex/config.py::Config.update_from_env",
+     "reflex/utils/types.py::_issubclass",
+     "reflex/config.py::interpret_env_var_value"
+    ],
+    "reflex-dev__reflex-4230": [
+     "reflex/state.py::BaseState._populate_parent_states",
+     "reflex/state.py::BaseState.get_state",
+     "reflex/app.py::App.modify_state"
+    ],
+    "reflex-dev__reflex-4256": [
+     "reflex/state.py::BaseState.__init__",
+     "reflex/state.py::BaseState._check_valid",
+     "reflex/base.py::Base.set"
+    ],
+    "reflex-dev__reflex-4266": [
+     "reflex/utils/export.py::export"
+    ],
+    "reflex-dev__reflex-4347": [
+     "reflex/state.py::BaseState.__init__",
+     "reflex/state.py::BaseState._init_var",
+     "reflex/state.py::ComponentState.__init_subclass__"
+    ],
+    "reflex-dev__reflex-4371": [
+     "reflex/state.py::BaseState.__setattr__"
+    ],
+    "reflex-dev__reflex-4427": [
+     "reflex/state.py::BaseState._process_event",
+     "reflex/state.py::BaseState.__init_subclass__",
+     "reflex/state.py::BaseState._get_type_hints"
+    ],
+    "reflex-dev__reflex-4510": [
+     "reflex/state.py::BaseState.__init__"
+    ],
+    "reflex-dev__reflex-4563": [
+     "reflex/app.py::health",
+     "reflex/model.py::get_db_status",
+     "reflex/model.py::get_engine"
+    ],
+    "reflex-dev__reflex-4620": [
+     "reflex/components/core/cond.py::cond",
+     "reflex/compiler/compiler.py::_compile_component",
+     "reflex/components/core/cond.py::Cond._render"
+    ],
+    "reflex-dev__reflex-4688": [
+     "reflex/utils/prerequisites.py::install_bun",
+     "reflex/utils/prerequisites.py::validate_bun",
+     "reflex/utils/prerequisites.py::initialize_bun_config"
+    ],
+    "reflex-dev__reflex-4708": [
+     "reflex/components/core/match.py::Match._process_match_cases",
+     "reflex/components/core/match.py::Match._process_cases",
+     "reflex/components/core/match.py::Match.render"
+    ],
+    "reflex-dev__reflex-4711": [
+     "reflex/state.py::BaseState.__init__",
+     "reflex/state.py::BaseState._get_computed_vars",
+     "reflex/state.py::BaseState._mark_dirty_computed_vars"
+    ],
+    "reflex-dev__reflex-4717": [
+     "reflex/event.py::LiteralEventChainVar.create",
+     "reflex/event.py::EventChain.create"
+    ],
+    "reflex-dev__reflex-4720": [
+     "reflex/app.py::App._setup_state"
+    ],
+    "reflex-dev__reflex-4958": [
+     "reflex/state.py::BaseState.__init__"
+    ],
+    "reflex-dev__reflex-5039": [
+     "reflex/components/core/foreach.py::Foreach.render",
+     "reflex/components/core/match.py::Match.render",
+     "reflex/components/core/foreach.py::Foreach._render"
+    ],
+    "reflex-dev__reflex-5077": [
+     "reflex/compiler/compiler.py::compile_root_stylesheet",
+     "reflex/app.py::App._compile",
+     "reflex/compiler/compiler.py::_compile_root_stylesheet"
+    ],
+    "reflex-dev__reflex-5081": [
+     "reflex/vars/base.py::Var.guess_type",
+     "reflex/compiler/compiler.py::compile_components"
+    ]
+   },
+   "hits": {
+    "reflex-dev__reflex-3842": false,
+    "reflex-dev__reflex-3895": true,
+    "reflex-dev__reflex-3982": true,
+    "reflex-dev__reflex-4087": true,
+    "reflex-dev__reflex-4129": false,
+    "reflex-dev__reflex-4205": true,
+    "reflex-dev__reflex-4230": false,
+    "reflex-dev__reflex-4256": true,
+    "reflex-dev__reflex-4266": false,
+    "reflex-dev__reflex-4347": true,
+    "reflex-dev__reflex-4371": false,
+    "reflex-dev__reflex-4427": true,
+    "reflex-dev__reflex-4510": false,
+    "reflex-dev__reflex-4563": true,
+    "reflex-dev__reflex-4620": false,
+    "reflex-dev__reflex-4688": true,
+    "reflex-dev__reflex-4708": false,
+    "reflex-dev__reflex-4711": true,
+    "reflex-dev__reflex-4717": true,
+    "reflex-dev__reflex-4720": false,
+    "reflex-dev__reflex-4958": false,
+    "reflex-dev__reflex-5039": false,
+    "reflex-dev__reflex-5077": true,
+    "reflex-dev__reflex-5081": false
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": -4.93,
+    "localization_lift_pts": 4.17
+   },
+   "metrics": {
+    "false_positive_rate": 0.7119,
+    "localization_rate": 0.5,
+    "n_false_positive": 42,
+    "n_flags": 59,
+    "n_localized": 12,
+    "n_tasks": 24,
+    "per_repo": {
+     "reflex-dev/reflex": {
+      "false_positive_rate": 0.7119,
+      "localization_rate": 0.5,
+      "n_false_positive": 42,
+      "n_flags": 59,
+      "n_localized": 12,
+      "n_tasks": 24
+     }
+    }
+   },
+   "retrieved": {
+    "reflex-dev__reflex-3842": [],
+    "reflex-dev__reflex-3895": [],
+    "reflex-dev__reflex-3982": [],
+    "reflex-dev__reflex-4087": [],
+    "reflex-dev__reflex-4129": [],
+    "reflex-dev__reflex-4205": [],
+    "reflex-dev__reflex-4230": [],
+    "reflex-dev__reflex-4256": [],
+    "reflex-dev__reflex-4266": [],
+    "reflex-dev__reflex-4347": [],
+    "reflex-dev__reflex-4371": [
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb"
+    ],
+    "reflex-dev__reflex-4427": [
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb"
+    ],
+    "reflex-dev__reflex-4510": [
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb"
+    ],
+    "reflex-dev__reflex-4563": [
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb"
+    ],
+    "reflex-dev__reflex-4620": [
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb"
+    ],
+    "reflex-dev__reflex-4688": [
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb"
+    ],
+    "reflex-dev__reflex-4708": [
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb"
+    ],
+    "reflex-dev__reflex-4711": [
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb"
+    ],
+    "reflex-dev__reflex-4717": [
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb"
+    ],
+    "reflex-dev__reflex-4720": [
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb"
+    ],
+    "reflex-dev__reflex-4958": [
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb"
+    ],
+    "reflex-dev__reflex-5039": [
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb"
+    ],
+    "reflex-dev__reflex-5077": [
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb"
+    ],
+    "reflex-dev__reflex-5081": [
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb"
+    ]
+   },
+   "scores": {
+    "reflex-dev__reflex-3842": {},
+    "reflex-dev__reflex-3895": {},
+    "reflex-dev__reflex-3982": {},
+    "reflex-dev__reflex-4087": {},
+    "reflex-dev__reflex-4129": {},
+    "reflex-dev__reflex-4205": {},
+    "reflex-dev__reflex-4230": {},
+    "reflex-dev__reflex-4256": {},
+    "reflex-dev__reflex-4266": {},
+    "reflex-dev__reflex-4347": {},
+    "reflex-dev__reflex-4371": {
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb": 0.329482
+    },
+    "reflex-dev__reflex-4427": {
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb": 0.369243
+    },
+    "reflex-dev__reflex-4510": {
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb": 0.44195
+    },
+    "reflex-dev__reflex-4563": {
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb": 0.229665
+    },
+    "reflex-dev__reflex-4620": {
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb": 0.283882
+    },
+    "reflex-dev__reflex-4688": {
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb": 0.192328
+    },
+    "reflex-dev__reflex-4708": {
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb": 0.321985
+    },
+    "reflex-dev__reflex-4711": {
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb": 0.253354
+    },
+    "reflex-dev__reflex-4717": {
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb": 0.24315
+    },
+    "reflex-dev__reflex-4720": {
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb": 0.247522
+    },
+    "reflex-dev__reflex-4958": {
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb": 0.548337
+    },
+    "reflex-dev__reflex-5039": {
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb": 0.526336
+    },
+    "reflex-dev__reflex-5077": {
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb": 0.421727
+    },
+    "reflex-dev__reflex-5081": {
+     "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb": 0.332262
+    }
+   },
+   "tau": 0.0,
+   "version": "rolling",
+   "versions": {
+    "reflex-dev__reflex-3842": null,
+    "reflex-dev__reflex-3895": null,
+    "reflex-dev__reflex-3982": null,
+    "reflex-dev__reflex-4087": null,
+    "reflex-dev__reflex-4129": null,
+    "reflex-dev__reflex-4205": null,
+    "reflex-dev__reflex-4230": null,
+    "reflex-dev__reflex-4256": null,
+    "reflex-dev__reflex-4266": null,
+    "reflex-dev__reflex-4347": null,
+    "reflex-dev__reflex-4371": "7daa3786c21b491a795bfeb8de38fe645c25b8a0f590fbf9c155d48087c143b5",
+    "reflex-dev__reflex-4427": "7daa3786c21b491a795bfeb8de38fe645c25b8a0f590fbf9c155d48087c143b5",
+    "reflex-dev__reflex-4510": "7daa3786c21b491a795bfeb8de38fe645c25b8a0f590fbf9c155d48087c143b5",
+    "reflex-dev__reflex-4563": "7daa3786c21b491a795bfeb8de38fe645c25b8a0f590fbf9c155d48087c143b5",
+    "reflex-dev__reflex-4620": "7daa3786c21b491a795bfeb8de38fe645c25b8a0f590fbf9c155d48087c143b5",
+    "reflex-dev__reflex-4688": "7daa3786c21b491a795bfeb8de38fe645c25b8a0f590fbf9c155d48087c143b5",
+    "reflex-dev__reflex-4708": "7daa3786c21b491a795bfeb8de38fe645c25b8a0f590fbf9c155d48087c143b5",
+    "reflex-dev__reflex-4711": "7daa3786c21b491a795bfeb8de38fe645c25b8a0f590fbf9c155d48087c143b5",
+    "reflex-dev__reflex-4717": "7daa3786c21b491a795bfeb8de38fe645c25b8a0f590fbf9c155d48087c143b5",
+    "reflex-dev__reflex-4720": "7daa3786c21b491a795bfeb8de38fe645c25b8a0f590fbf9c155d48087c143b5",
+    "reflex-dev__reflex-4958": "7daa3786c21b491a795bfeb8de38fe645c25b8a0f590fbf9c155d48087c143b5",
+    "reflex-dev__reflex-5039": "7daa3786c21b491a795bfeb8de38fe645c25b8a0f590fbf9c155d48087c143b5",
+    "reflex-dev__reflex-5077": "7daa3786c21b491a795bfeb8de38fe645c25b8a0f590fbf9c155d48087c143b5",
+    "reflex-dev__reflex-5081": "7daa3786c21b491a795bfeb8de38fe645c25b8a0f590fbf9c155d48087c143b5"
+   }
+  }
+ },
+ "control": {
+  "false_positive_rate": 0.7612,
+  "localization_rate": 0.4583,
+  "n_false_positive": 51,
+  "n_flags": 67,
+  "n_localized": 11,
+  "n_tasks": 24,
+  "per_repo": {
+   "reflex-dev/reflex": {
+    "false_positive_rate": 0.7612,
+    "localization_rate": 0.4583,
+    "n_false_positive": 51,
+    "n_flags": 67,
+    "n_localized": 11,
+    "n_tasks": 24
+   }
+  }
+ },
+ "control_flags": {
+  "reflex-dev__reflex-3842": [
+   "reflex/vars.py",
+   "reflex/vars.py",
+   "reflex/state.py"
+  ],
+  "reflex-dev__reflex-3895": [
+   "reflex/ivars/base.py",
+   "reflex/ivars/base.py"
+  ],
+  "reflex-dev__reflex-3982": [
+   "reflex/style.py",
+   "reflex/style.py",
+   "reflex/components/component.py"
+  ],
+  "reflex-dev__reflex-4087": [
+   "reflex/state.py",
+   "reflex/state.py",
+   "reflex/state.py"
+  ],
+  "reflex-dev__reflex-4129": [
+   "reflex/state.py",
+   "reflex/state.py",
+   "reflex/utils/serializers.py"
+  ],
+  "reflex-dev__reflex-4205": [
+   "reflex/config.py",
+   "reflex/utils/types.py",
+   "reflex/config.py"
+  ],
+  "reflex-dev__reflex-4230": [
+   "reflex/state.py",
+   "reflex/state.py",
+   "reflex/app.py"
+  ],
+  "reflex-dev__reflex-4256": [
+   "reflex/state.py",
+   "reflex/state.py",
+   "reflex/base.py"
+  ],
+  "reflex-dev__reflex-4266": [
+   "reflex/utils/export.py"
+  ],
+  "reflex-dev__reflex-4347": [
+   "reflex/state.py",
+   "reflex/state.py",
+   "reflex/state.py"
+  ],
+  "reflex-dev__reflex-4371": [
+   "reflex/state.py",
+   "reflex/state.py",
+   "reflex/state.py"
+  ],
+  "reflex-dev__reflex-4427": [
+   "reflex/state.py",
+   "reflex/state.py",
+   "reflex/app.py"
+  ],
+  "reflex-dev__reflex-4510": [
+   "reflex/state.py",
+   "reflex/state.py",
+   "reflex/components/core/foreach.py"
+  ],
+  "reflex-dev__reflex-4563": [
+   "reflex/app.py",
+   "reflex/model.py",
+   "reflex/model.py"
+  ],
+  "reflex-dev__reflex-4620": [
+   "reflex/components/core/cond.py",
+   "reflex/compiler/compiler.py",
+   "reflex/components/tags/cond_tag.py"
+  ],
+  "reflex-dev__reflex-4688": [
+   "reflex/utils/prerequisites.py",
+   "reflex/utils/prerequisites.py",
+   "reflex/utils/prerequisites.py"
+  ],
+  "reflex-dev__reflex-4708": [
+   "reflex/components/core/match.py",
+   "reflex/components/core/match.py",
+   "reflex/components/core/match.py"
+  ],
+  "reflex-dev__reflex-4711": [
+   "reflex/state.py",
+   "reflex/state.py",
+   "reflex/state.py"
+  ],
+  "reflex-dev__reflex-4717": [
+   "reflex/event.py",
+   "reflex/event.py"
+  ],
+  "reflex-dev__reflex-4720": [
+   "reflex/app.py",
+   "reflex/state.py",
+   "reflex/app.py"
+  ],
+  "reflex-dev__reflex-4958": [
+   "reflex/state.py",
+   "reflex/state.py",
+   "reflex/app.py"
+  ],
+  "reflex-dev__reflex-5039": [
+   "reflex/components/core/foreach.py",
+   "reflex/components/core/match.py",
+   "reflex/components/core/foreach.py"
+  ],
+  "reflex-dev__reflex-5077": [
+   "reflex/compiler/compiler.py",
+   "reflex/compiler/compiler.py",
+   "reflex/app.py"
+  ],
+  "reflex-dev__reflex-5081": [
+   "reflex/utils/types.py",
+   "reflex/utils/types.py"
+  ]
+ },
+ "errors": {},
+ "gold": {
+  "reflex-dev__reflex-3842": [
+   "reflex/state.py::BaseState",
+   "reflex/state.py::BaseState.__getattribute__",
+   "reflex/state.py::BaseState.__init_subclass__",
+   "reflex/state.py::BaseState._copy_fn",
+   "reflex/state.py::BaseState._init_var_dependency_dicts",
+   "reflex/state.py::BaseState.setup_dynamic_args",
+   "reflex/state.py::reload_state_module"
+  ],
+  "reflex-dev__reflex-3895": [
+   "reflex/ivars/base.py::ImmutableVar.guess_type",
+   "reflex/ivars/base.py::ImmutableVar.to"
+  ],
+  "reflex-dev__reflex-3982": [
+   "reflex/components/component.py::Component.__init__",
+   "reflex/style.py::<module>",
+   "reflex/style.py::_format_emotion_style_pseudo_selector",
+   "reflex/style.py::convert"
+  ],
+  "reflex-dev__reflex-4087": [
+   "reflex/state.py::BaseState.reset"
+  ],
+  "reflex-dev__reflex-4129": [
+   "reflex/istate/dynamic.py::<module>",
+   "reflex/state.py::<module>",
+   "reflex/state.py::BaseState",
+   "reflex/state.py::BaseState.__init_subclass__",
+   "reflex/state.py::BaseState.__setattr__",
+   "reflex/state.py::BaseState._init_var_dependency_dicts",
+   "reflex/state.py::BaseState._mixins",
+   "reflex/state.py::ComponentState.create",
+   "reflex/utils/types.py::is_backend_base_variable"
+  ],
+  "reflex-dev__reflex-4205": [
+   "reflex/config.py::<module>",
+   "reflex/config.py::Config",
+   "reflex/config.py::Config.update_from_env",
+   "reflex/config.py::EnvironmentVariables.__init__",
+   "reflex/config.py::get_default_value_for_field",
+   "reflex/config.py::interpret_boolean_env",
+   "reflex/config.py::interpret_env_var_value",
+   "reflex/config.py::interpret_int_env",
+   "reflex/config.py::interpret_path_env"
+  ],
+  "reflex-dev__reflex-4230": [
+   "reflex/state.py::StateManagerDisk.populate_substates"
+  ],
+  "reflex-dev__reflex-4256": [
+   "reflex/state.py::BaseState",
+   "reflex/state.py::BaseState.__init__"
+  ],
+  "reflex-dev__reflex-4266": [
+   "reflex/config.py::Config",
+   "reflex/utils/prerequisites.py::_update_next_config"
+  ],
+  "reflex-dev__reflex-4347": [
+   "reflex/state.py::<module>",
+   "reflex/state.py::BaseState.__init__",
+   "reflex/state.py::ComponentState",
+   "reflex/state.py::ComponentState.__init_subclass__"
+  ],
+  "reflex-dev__reflex-4371": [
+   "reflex/base.py::Base.get_value",
+   "reflex/state.py::BaseState",
+   "reflex/state.py::BaseState.dict",
+   "reflex/state.py::BaseState.get_delta",
+   "reflex/state.py::BaseState.get_value"
+  ],
+  "reflex-dev__reflex-4427": [
+   "reflex/state.py::BaseState._process_event"
+  ],
+  "reflex-dev__reflex-4510": [
+   "reflex/state.py::BaseState._set_default_value"
+  ],
+  "reflex-dev__reflex-4563": [
+   "reflex/app.py::health",
+   "reflex/model.py::<module>",
+   "reflex/model.py::get_async_engine",
+   "reflex/model.py::get_db_status",
+   "reflex/utils/prerequisites.py::<module>",
+   "reflex/utils/prerequisites.py::check_db_initialized",
+   "reflex/utils/prerequisites.py::get_redis_status",
+   "reflex/utils/prerequisites.py::initialize_frontend_dependencies",
+   "reflex/utils/prerequisites.py::parse_redis_url",
+   "reflex/utils/prerequisites.py::validate_app_name"
+  ],
+  "reflex-dev__reflex-4620": [
+   "reflex/vars/number.py::<module>",
+   "reflex/vars/number.py::NumberVar",
+   "reflex/vars/number.py::NumberVar.__eq__",
+   "reflex/vars/number.py::NumberVar.__ge__",
+   "reflex/vars/number.py::NumberVar.__gt__",
+   "reflex/vars/number.py::NumberVar.__le__",
+   "reflex/vars/number.py::NumberVar.__lt__",
+   "reflex/vars/number.py::NumberVar.__ne__",
+   "reflex/vars/number.py::NumberVar._is_strict_float",
+   "reflex/vars/number.py::NumberVar.bool"
+  ],
+  "reflex-dev__reflex-4688": [
+   "reflex/utils/exec.py::output_system_info",
+   "reflex/utils/path_ops.py::<module>",
+   "reflex/utils/path_ops.py::get_node_bin_path",
+   "reflex/utils/path_ops.py::get_node_path",
+   "reflex/utils/path_ops.py::get_npm_path",
+   "reflex/utils/path_ops.py::ln",
+   "reflex/utils/path_ops.py::update_json_file",
+   "reflex/utils/path_ops.py::use_system_node",
+   "reflex/utils/path_ops.py::which",
+   "reflex/utils/prerequisites.py::get_bun_version",
+   "reflex/utils/prerequisites.py::install_bun",
+   "reflex/utils/prerequisites.py::validate_bun"
+  ],
+  "reflex-dev__reflex-4708": [
+   "reflex/components/tags/tag.py::Tag",
+   "reflex/components/tags/tag.py::Tag.__iter__",
+   "reflex/components/tags/tag.py::Tag.add_props"
+  ],
+  "reflex-dev__reflex-4711": [
+   "reflex/app.py::App._validate_var_dependencies",
+   "reflex/compiler/utils.py::<module>",
+   "reflex/compiler/utils.py::_compile_client_storage_field",
+   "reflex/compiler/utils.py::compile_state",
+   "reflex/middleware/hydrate_middleware.py::<module>",
+   "reflex/middleware/hydrate_middleware.py::HydrateMiddleware.preprocess",
+   "reflex/state.py::<module>",
+   "reflex/state.py::BaseState",
+   "reflex/state.py::BaseState.__init_subclass__",
+   "reflex/state.py::BaseState.__setattr__",
+   "reflex/state.py::BaseState._as_state_update",
+   "reflex/state.py::BaseState._check_valid",
+   "reflex/state.py::BaseState._copy_fn",
+   "reflex/state.py::BaseState._determine_missing_parent_states",
+   "reflex/state.py::BaseState._dirty_computed_vars",
+   "reflex/state.py::BaseState._expired_computed_vars",
+   "reflex/state.py::BaseState._get_common_ancestor",
+   "reflex/state.py::BaseState._get_parent_states",
+   "reflex/state.py::BaseState._get_root_state",
+   "reflex/state.py::BaseState._get_state_from_cache",
+   "reflex/state.py::BaseState._get_state_from_redis",
+   "reflex/state.py::BaseState._init_var_dependency_dicts",
+   "reflex/state.py::BaseState._mark_dirty",
+   "reflex/state.py::BaseState._mark_dirty_computed_vars",
+   "reflex/state.py::BaseState._mark_dirty_substates",
+   "reflex/state.py::BaseState._populate_parent_states",
+   "reflex/state.py::BaseState._potentially_dirty_substates",
+   "reflex/state.py::BaseState._process_event",
+   "reflex/state.py::BaseState._update_was_touched",
+   "reflex/state.py::BaseState.dict",
+   "reflex/state.py::BaseState.get_delta",
+   "reflex/state.py::BaseState.get_parent_state",
+   "reflex/state.py::BaseState.get_state",
+   "reflex/state.py::BaseState.get_substate",
+   "reflex/state.py::BaseState.get_substates",
+   "reflex/state.py::StateManagerRedis",
+   "reflex/state.py::StateManagerRedis._get_parent_state",
+   "reflex/state.py::StateManagerRedis._populate_substates",
+   "reflex/state.py::StateManagerRedis.get_state",
+   "reflex/state.py::StateManagerRedis.set_state",
+   "reflex/state.py::StateProxy",
+   "reflex/state.py::StateProxy._as_state_update",
+   "reflex/state.py::StateProxy.get_state",
+   "reflex/state.py::get_var_for_field",
+   "reflex/state.py::reload_state_module",
+   "reflex/utils/exec.py::output_system_info",
+   "reflex/vars/base.py::<module>",
+   "reflex/vars/base.py::ComputedVar",
+   "reflex/vars/base.py::ComputedVar.__get__",
+   "reflex/vars/base.py::ComputedVar.__init__",
+   "reflex/vars/base.py::ComputedVar._deps",
+   "reflex/vars/base.py::ComputedVar._determine_var_type",
+   "reflex/vars/base.py::ComputedVar.mark_dirty",
+   "reflex/vars/base.py::ComputedVar.needs_update",
+   "reflex/vars/base.py::DynamicRouteVar",
+   "reflex/vars/base.py::computed_var",
+   "reflex/vars/dep_tracking.py::<module>"
+  ],
+  "reflex-dev__reflex-4717": [
+   "reflex/event.py::<module>",
+   "reflex/event.py::LiteralEventChainVar.create",
+   "reflex/vars/base.py::<module>",
+   "reflex/vars/base.py::VarData",
+   "reflex/vars/base.py::VarData.__init__",
+   "reflex/vars/base.py::VarData.old_school_imports"
+  ],
+  "reflex-dev__reflex-4720": [
+   "reflex/app.py::<module>",
+   "reflex/app.py::App._compile",
+   "reflex/components/base/strict_mode.py::<module>",
+   "reflex/utils/prerequisites.py::_update_next_config"
+  ],
+  "reflex-dev__reflex-4958": [
+   "reflex/istate/data.py::<module>",
+   "reflex/istate/data.py::HeaderData",
+   "reflex/istate/data.py::HeaderData.__init__",
+   "reflex/istate/data.py::PageData",
+   "reflex/utils/exec.py::run_granian_backend",
+   "reflex/utils/exec.py::run_granian_backend_prod"
+  ],
+  "reflex-dev__reflex-5039": [
+   "reflex/config.py::Config",
+   "reflex/config.py::EnvironmentVariables",
+   "reflex/constants/installer.py::<module>",
+   "reflex/constants/installer.py::PackageJson",
+   "reflex/utils/prerequisites.py::_update_next_config"
+  ],
+  "reflex-dev__reflex-5077": [
+   "reflex/compiler/compiler.py::<module>",
+   "reflex/compiler/compiler.py::_compile_root_stylesheet",
+   "reflex/compiler/compiler.py::compile_root_stylesheet",
+   "reflex/constants/compiler.py::PageNames"
+  ],
+  "reflex-dev__reflex-5081": [
+   "reflex/utils/types.py::typehint_issubclass"
+  ]
+ },
+ "granularity": "function",
+ "learn_errors": {},
+ "lift": {
+  "false_positive_rise_pts": -4.93,
+  "localization_lift_pts": 4.17
+ },
+ "memory_locations": {
+  "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb": "reflex/state.py::BaseState.__init__"
+ },
+ "mode": "rolling",
+ "n_errors": 0,
+ "n_eval": 24,
+ "retrieval_hit_rate": 0.5833333333333334,
+ "retrieved": {
+  "reflex-dev__reflex-3842": [],
+  "reflex-dev__reflex-3895": [],
+  "reflex-dev__reflex-3982": [],
+  "reflex-dev__reflex-4087": [],
+  "reflex-dev__reflex-4129": [],
+  "reflex-dev__reflex-4205": [],
+  "reflex-dev__reflex-4230": [],
+  "reflex-dev__reflex-4256": [],
+  "reflex-dev__reflex-4266": [],
+  "reflex-dev__reflex-4347": [],
+  "reflex-dev__reflex-4371": [
+   "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb"
+  ],
+  "reflex-dev__reflex-4427": [
+   "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb"
+  ],
+  "reflex-dev__reflex-4510": [
+   "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb"
+  ],
+  "reflex-dev__reflex-4563": [
+   "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb"
+  ],
+  "reflex-dev__reflex-4620": [
+   "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb"
+  ],
+  "reflex-dev__reflex-4688": [
+   "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb"
+  ],
+  "reflex-dev__reflex-4708": [
+   "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb"
+  ],
+  "reflex-dev__reflex-4711": [
+   "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb"
+  ],
+  "reflex-dev__reflex-4717": [
+   "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb"
+  ],
+  "reflex-dev__reflex-4720": [
+   "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb"
+  ],
+  "reflex-dev__reflex-4958": [
+   "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb"
+  ],
+  "reflex-dev__reflex-5039": [
+   "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb"
+  ],
+  "reflex-dev__reflex-5077": [
+   "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb"
+  ],
+  "reflex-dev__reflex-5081": [
+   "dff8686539211108cd711c5539358b4069a958c41d76efc2ee0b36c2e6c2fbdb"
+  ]
+ },
+ "treatment": {
+  "false_positive_rate": 0.7119,
+  "localization_rate": 0.5,
+  "n_false_positive": 42,
+  "n_flags": 59,
+  "n_localized": 12,
+  "n_tasks": 24,
+  "per_repo": {
+   "reflex-dev/reflex": {
+    "false_positive_rate": 0.7119,
+    "localization_rate": 0.5,
+    "n_false_positive": 42,
+    "n_flags": 59,
+    "n_localized": 12,
+    "n_tasks": 24
+   }
+  }
+ },
+ "treatment_flags": {
+  "reflex-dev__reflex-3842": [
+   "reflex/vars.py",
+   "reflex/vars.py",
+   "reflex/state.py"
+  ],
+  "reflex-dev__reflex-3895": [
+   "reflex/ivars/base.py",
+   "reflex/ivars/base.py"
+  ],
+  "reflex-dev__reflex-3982": [
+   "reflex/style.py",
+   "reflex/style.py",
+   "reflex/components/component.py"
+  ],
+  "reflex-dev__reflex-4087": [
+   "reflex/state.py",
+   "reflex/state.py",
+   "reflex/state.py"
+  ],
+  "reflex-dev__reflex-4129": [
+   "reflex/state.py",
+   "reflex/state.py",
+   "reflex/utils/serializers.py"
+  ],
+  "reflex-dev__reflex-4205": [
+   "reflex/config.py",
+   "reflex/utils/types.py",
+   "reflex/config.py"
+  ],
+  "reflex-dev__reflex-4230": [
+   "reflex/state.py",
+   "reflex/state.py",
+   "reflex/app.py"
+  ],
+  "reflex-dev__reflex-4256": [
+   "reflex/state.py",
+   "reflex/state.py",
+   "reflex/base.py"
+  ],
+  "reflex-dev__reflex-4266": [
+   "reflex/utils/export.py"
+  ],
+  "reflex-dev__reflex-4347": [
+   "reflex/state.py",
+   "reflex/state.py",
+   "reflex/state.py"
+  ],
+  "reflex-dev__reflex-4371": [
+   "reflex/state.py"
+  ],
+  "reflex-dev__reflex-4427": [
+   "reflex/state.py",
+   "reflex/state.py",
+   "reflex/state.py"
+  ],
+  "reflex-dev__reflex-4510": [
+   "reflex/state.py"
+  ],
+  "reflex-dev__reflex-4563": [
+   "reflex/app.py",
+   "reflex/model.py",
+   "reflex/model.py"
+  ],
+  "reflex-dev__reflex-4620": [
+   "reflex/components/core/cond.py",
+   "reflex/compiler/compiler.py",
+   "reflex/components/core/cond.py"
+  ],
+  "reflex-dev__reflex-4688": [
+   "reflex/utils/prerequisites.py",
+   "reflex/utils/prerequisites.py",
+   "reflex/utils/prerequisites.py"
+  ],
+  "reflex-dev__reflex-4708": [
+   "reflex/components/core/match.py",
+   "reflex/components/core/match.py",
+   "reflex/components/core/match.py"
+  ],
+  "reflex-dev__reflex-4711": [
+   "reflex/state.py",
+   "reflex/state.py",
+   "reflex/state.py"
+  ],
+  "reflex-dev__reflex-4717": [
+   "reflex/event.py",
+   "reflex/event.py"
+  ],
+  "reflex-dev__reflex-4720": [
+   "reflex/app.py"
+  ],
+  "reflex-dev__reflex-4958": [
+   "reflex/state.py"
+  ],
+  "reflex-dev__reflex-5039": [
+   "reflex/components/core/foreach.py",
+   "reflex/components/core/match.py",
+   "reflex/components/core/foreach.py"
+  ],
+  "reflex-dev__reflex-5077": [
+   "reflex/compiler/compiler.py",
+   "reflex/app.py",
+   "reflex/compiler/compiler.py"
+  ],
+  "reflex-dev__reflex-5081": [
+   "reflex/vars/base.py",
+   "reflex/compiler/compiler.py"
+  ]
+ },
+ "warmup": 20
+}

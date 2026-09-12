@@ -1,0 +1,2102 @@
+{
+ "arms": {
+  "control": {
+   "file_hits": {
+    "keras-team__keras-19915": false,
+    "keras-team__keras-19924": true,
+    "keras-team__keras-19931": true,
+    "keras-team__keras-19937": false,
+    "keras-team__keras-19955": false,
+    "keras-team__keras-19973": true,
+    "keras-team__keras-19998": false,
+    "keras-team__keras-20064": true,
+    "keras-team__keras-20079": true,
+    "keras-team__keras-20120": false,
+    "keras-team__keras-20122": true,
+    "keras-team__keras-20123": true,
+    "keras-team__keras-20125": true,
+    "keras-team__keras-20168": false,
+    "keras-team__keras-20197": true,
+    "keras-team__keras-20206": true,
+    "keras-team__keras-20296": true,
+    "keras-team__keras-20383": false,
+    "keras-team__keras-20389": true,
+    "keras-team__keras-20396": true,
+    "keras-team__keras-20443": false,
+    "keras-team__keras-20534": true,
+    "keras-team__keras-20609": true,
+    "keras-team__keras-20703": false,
+    "keras-team__keras-20765": true,
+    "keras-team__keras-20824": false,
+    "keras-team__keras-20880": true,
+    "keras-team__keras-21072": false
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.7722,
+    "localization_rate": 0.6071,
+    "n_false_positive": 61,
+    "n_flags": 79,
+    "n_localized": 17,
+    "n_tasks": 28,
+    "per_repo": {
+     "keras-team/keras": {
+      "false_positive_rate": 0.7722,
+      "localization_rate": 0.6071,
+      "n_false_positive": 61,
+      "n_flags": 79,
+      "n_localized": 17,
+      "n_tasks": 28
+     }
+    }
+   },
+   "flags": {
+    "keras-team__keras-19915": [
+     "keras/src/export/__init__.py::<module>",
+     "keras/src/saving/__init__.py::<module>",
+     "keras/src/layers/layer.py::Layer.get_config"
+    ],
+    "keras-team__keras-19924": [
+     "keras/src/saving/saving_lib.py::_load_model_from_fileobj",
+     "keras/src/saving/saving_api.py::load_model",
+     "keras/src/saving/saving_lib.py::load_model"
+    ],
+    "keras-team__keras-19931": [
+     "keras/src/backend/tensorflow/numpy.py::tril",
+     "keras/src/backend/tensorflow/numpy.py::triu",
+     "keras/src/backend/tensorflow/numpy.py::<module>"
+    ],
+    "keras-team__keras-19937": [],
+    "keras-team__keras-19955": [
+     "keras/src/callbacks/learning_rate_scheduler.py::LearningRateScheduler.on_epoch_begin",
+     "keras/src/callbacks/learning_rate_scheduler.py::LearningRateScheduler.__init__",
+     "keras/src/callbacks/learning_rate_scheduler.py::<module>"
+    ],
+    "keras-team__keras-19973": [
+     "keras/src/layers/attention/multi_head_attention.py::MultiHeadAttention.call",
+     "keras/src/layers/attention/multi_head_attention.py::MultiHeadAttention._compute_attention",
+     "keras/src/layers/attention/multi_head_attention.py::MultiHeadAttention.compute_output_shape"
+    ],
+    "keras-team__keras-19998": [
+     "keras/src/optimizers/sgd.py::SGD.update_step",
+     "keras/src/optimizers/adam.py::Adam.update_step",
+     "keras/src/optimizers/sgd.py::SGD.__init__"
+    ],
+    "keras-team__keras-20064": [
+     "keras/src/backend/tensorflow/core.py::map"
+    ],
+    "keras-team__keras-20079": [
+     "keras/src/layers/layer.py::Layer.__call__",
+     "keras/src/layers/preprocessing/rescaling.py::Rescaling.__init__"
+    ],
+    "keras-team__keras-20120": [
+     "keras/src/models/model.py::Model.from_config",
+     "keras/src/models/model.py::Model.build_from_config",
+     "keras/src/models/model.py::Model.__init__"
+    ],
+    "keras-team__keras-20122": [
+     "keras/src/backend/tensorflow/linalg.py::svd",
+     "keras/src/ops/linalg.py::svd",
+     "keras/src/backend/tensorflow/linalg.py::<module>"
+    ],
+    "keras-team__keras-20123": [
+     "keras/src/trainers/data_adapters/py_dataset_adapter.py::PyDatasetAdapter._make_multiprocessed_generator_fn",
+     "keras/src/trainers/data_adapters/py_dataset_adapter.py::PyDatasetAdapter.get_tf_dataset",
+     "keras/src/trainers/data_adapters/py_dataset_adapter.py::PyDatasetAdapter._get_iterator"
+    ],
+    "keras-team__keras-20125": [
+     "keras/src/backend/tensorflow/core.py::stop_gradient",
+     "keras/src/backend/common/keras_tensor.py::KerasTensor.__tf_tensor__"
+    ],
+    "keras-team__keras-20168": [
+     "keras/src/saving/saving_lib.py::save_model",
+     "keras/src/saving/saving_lib.py::_save_model_to_fileobj",
+     "keras/src/saving/serialization_lib.py::serialize_keras_object"
+    ],
+    "keras-team__keras-20197": [
+     "keras/src/trainers/compile_utils.py::CompileMetrics.build",
+     "keras/src/trainers/compile_utils.py::CompileMetrics._build_metrics_set",
+     "keras/src/trainers/compile_utils.py::CompileMetrics.result"
+    ],
+    "keras-team__keras-20206": [
+     "keras/src/models/sequential.py::Sequential._maybe_rebuild",
+     "keras/src/models/sequential.py::Sequential.__init__",
+     "keras/src/models/sequential.py::<module>"
+    ],
+    "keras-team__keras-20296": [
+     "keras/src/trainers/compile_utils.py::CompileLoss.__init__",
+     "keras/src/trainers/compile_utils.py::CompileLoss.build",
+     "keras/src/trainers/compile_utils.py::CompileLoss.call"
+    ],
+    "keras-team__keras-20383": [
+     "keras/src/ops/operation_utils.py::compute_take_along_axis_output_shape",
+     "keras/src/layers/core/dense.py::Dense.call"
+    ],
+    "keras-team__keras-20389": [
+     "keras/src/models/functional.py::Functional.get_config",
+     "keras/src/layers/layer.py::Layer.get_config",
+     "keras/src/models/functional.py::functional_from_config"
+    ],
+    "keras-team__keras-20396": [
+     "keras/src/trainers/trainer.py::Trainer.fit",
+     "keras/src/trainers/trainer.py::Trainer._symbolic_build",
+     "keras/src/backend/tensorflow/trainer.py::TensorFlowTrainer.fit"
+    ],
+    "keras-team__keras-20443": [
+     "keras/src/utils/traceback_utils.py::filter_traceback",
+     "keras/src/utils/traceback_utils.py::inject_argument_info_in_traceback",
+     "keras/src/utils/traceback_utils.py::format_argument_value"
+    ],
+    "keras-team__keras-20534": [
+     "keras/src/optimizers/base_optimizer.py::BaseOptimizer.apply_gradients",
+     "keras/src/optimizers/base_optimizer.py::BaseOptimizer._overwrite_variables_directly_with_gradients",
+     "keras/src/optimizers/base_optimizer.py::BaseOptimizer._check_variables_are_known"
+    ],
+    "keras-team__keras-20609": [
+     "keras/src/trainers/trainer.py::Trainer.evaluate",
+     "keras/src/trainers/trainer.py::Trainer.compute_loss",
+     "keras/src/trainers/trainer.py::Trainer._compute_loss"
+    ],
+    "keras-team__keras-20703": [
+     "keras/api/_tf_keras/keras/optimizers/__init__.py::<module>",
+     "keras/src/optimizers/__init__.py::<module>"
+    ],
+    "keras-team__keras-20765": [
+     "keras/src/layers/core/embedding.py::Embedding.compute_mask",
+     "keras/src/layers/rnn/time_distributed.py::TimeDistributed.call",
+     "keras/src/backend/common/masking.py::set_keras_mask"
+    ],
+    "keras-team__keras-20824": [
+     "keras/src/saving/object_registration.py::register_keras_serializable",
+     "keras/src/saving/saving_lib.py::_load_model_from_fileobj",
+     "keras/src/saving/object_registration.py::get_registered_object"
+    ],
+    "keras-team__keras-20880": [
+     "keras/src/layers/layer.py::Layer.__init__",
+     "keras/src/layers/layer.py::Layer._maybe_build",
+     "keras/src/layers/layer.py::Layer.build"
+    ],
+    "keras-team__keras-21072": [
+     "keras/src/trainers/trainer.py::Trainer.compute_loss",
+     "keras/src/trainers/trainer.py::Trainer.stateless_compute_loss",
+     "keras/src/trainers/trainer.py::Trainer._compute_loss"
+    ]
+   },
+   "hits": {
+    "keras-team__keras-19915": false,
+    "keras-team__keras-19924": true,
+    "keras-team__keras-19931": true,
+    "keras-team__keras-19937": false,
+    "keras-team__keras-19955": false,
+    "keras-team__keras-19973": false,
+    "keras-team__keras-19998": false,
+    "keras-team__keras-20064": true,
+    "keras-team__keras-20079": false,
+    "keras-team__keras-20120": false,
+    "keras-team__keras-20122": true,
+    "keras-team__keras-20123": true,
+    "keras-team__keras-20125": false,
+    "keras-team__keras-20168": false,
+    "keras-team__keras-20197": false,
+    "keras-team__keras-20206": false,
+    "keras-team__keras-20296": false,
+    "keras-team__keras-20383": false,
+    "keras-team__keras-20389": false,
+    "keras-team__keras-20396": true,
+    "keras-team__keras-20443": false,
+    "keras-team__keras-20534": true,
+    "keras-team__keras-20609": true,
+    "keras-team__keras-20703": false,
+    "keras-team__keras-20765": true,
+    "keras-team__keras-20824": false,
+    "keras-team__keras-20880": false,
+    "keras-team__keras-21072": false
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.7733,
+    "localization_rate": 0.3214,
+    "n_false_positive": 58,
+    "n_flags": 75,
+    "n_localized": 9,
+    "n_tasks": 28,
+    "per_repo": {
+     "keras-team/keras": {
+      "false_positive_rate": 0.7733,
+      "localization_rate": 0.3214,
+      "n_false_positive": 58,
+      "n_flags": 75,
+      "n_localized": 9,
+      "n_tasks": 28
+     }
+    }
+   },
+   "retrieved": {
+    "keras-team__keras-19915": [],
+    "keras-team__keras-19924": [],
+    "keras-team__keras-19931": [],
+    "keras-team__keras-19937": [],
+    "keras-team__keras-19955": [],
+    "keras-team__keras-19973": [],
+    "keras-team__keras-19998": [],
+    "keras-team__keras-20064": [],
+    "keras-team__keras-20079": [],
+    "keras-team__keras-20120": [],
+    "keras-team__keras-20122": [],
+    "keras-team__keras-20123": [],
+    "keras-team__keras-20125": [],
+    "keras-team__keras-20168": [],
+    "keras-team__keras-20197": [],
+    "keras-team__keras-20206": [],
+    "keras-team__keras-20296": [],
+    "keras-team__keras-20383": [],
+    "keras-team__keras-20389": [],
+    "keras-team__keras-20396": [],
+    "keras-team__keras-20443": [],
+    "keras-team__keras-20534": [],
+    "keras-team__keras-20609": [],
+    "keras-team__keras-20703": [],
+    "keras-team__keras-20765": [],
+    "keras-team__keras-20824": [],
+    "keras-team__keras-20880": [],
+    "keras-team__keras-21072": []
+   },
+   "scores": {
+    "keras-team__keras-19915": {},
+    "keras-team__keras-19924": {},
+    "keras-team__keras-19931": {},
+    "keras-team__keras-19937": {},
+    "keras-team__keras-19955": {},
+    "keras-team__keras-19973": {},
+    "keras-team__keras-19998": {},
+    "keras-team__keras-20064": {},
+    "keras-team__keras-20079": {},
+    "keras-team__keras-20120": {},
+    "keras-team__keras-20122": {},
+    "keras-team__keras-20123": {},
+    "keras-team__keras-20125": {},
+    "keras-team__keras-20168": {},
+    "keras-team__keras-20197": {},
+    "keras-team__keras-20206": {},
+    "keras-team__keras-20296": {},
+    "keras-team__keras-20383": {},
+    "keras-team__keras-20389": {},
+    "keras-team__keras-20396": {},
+    "keras-team__keras-20443": {},
+    "keras-team__keras-20534": {},
+    "keras-team__keras-20609": {},
+    "keras-team__keras-20703": {},
+    "keras-team__keras-20765": {},
+    "keras-team__keras-20824": {},
+    "keras-team__keras-20880": {},
+    "keras-team__keras-21072": {}
+   },
+   "tau": 0.0,
+   "version": null,
+   "versions": {
+    "keras-team__keras-19915": null,
+    "keras-team__keras-19924": null,
+    "keras-team__keras-19931": null,
+    "keras-team__keras-19937": null,
+    "keras-team__keras-19955": null,
+    "keras-team__keras-19973": null,
+    "keras-team__keras-19998": null,
+    "keras-team__keras-20064": null,
+    "keras-team__keras-20079": null,
+    "keras-team__keras-20120": null,
+    "keras-team__keras-20122": null,
+    "keras-team__keras-20123": null,
+    "keras-team__keras-20125": null,
+    "keras-team__keras-20168": null,
+    "keras-team__keras-20197": null,
+    "keras-team__keras-20206": null,
+    "keras-team__keras-20296": null,
+    "keras-team__keras-20383": null,
+    "keras-team__keras-20389": null,
+    "keras-team__keras-20396": null,
+    "keras-team__keras-20443": null,
+    "keras-team__keras-20534": null,
+    "keras-team__keras-20609": null,
+    "keras-team__keras-20703": null,
+    "keras-team__keras-20765": null,
+    "keras-team__keras-20824": null,
+    "keras-team__keras-20880": null,
+    "keras-team__keras-21072": null
+   }
+  },
+  "gated": {
+   "file_hits": {
+    "keras-team__keras-19915": false,
+    "keras-team__keras-19924": true,
+    "keras-team__keras-19931": true,
+    "keras-team__keras-19937": false,
+    "keras-team__keras-19955": false,
+    "keras-team__keras-19973": true,
+    "keras-team__keras-19998": false,
+    "keras-team__keras-20064": true,
+    "keras-team__keras-20079": true,
+    "keras-team__keras-20120": false,
+    "keras-team__keras-20122": true,
+    "keras-team__keras-20123": true,
+    "keras-team__keras-20125": true,
+    "keras-team__keras-20168": false,
+    "keras-team__keras-20197": true,
+    "keras-team__keras-20206": true,
+    "keras-team__keras-20296": true,
+    "keras-team__keras-20383": false,
+    "keras-team__keras-20389": true,
+    "keras-team__keras-20396": true,
+    "keras-team__keras-20443": false,
+    "keras-team__keras-20534": true,
+    "keras-team__keras-20609": true,
+    "keras-team__keras-20703": false,
+    "keras-team__keras-20765": true,
+    "keras-team__keras-20824": false,
+    "keras-team__keras-20880": true,
+    "keras-team__keras-21072": false
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.7722,
+    "localization_rate": 0.6071,
+    "n_false_positive": 61,
+    "n_flags": 79,
+    "n_localized": 17,
+    "n_tasks": 28,
+    "per_repo": {
+     "keras-team/keras": {
+      "false_positive_rate": 0.7722,
+      "localization_rate": 0.6071,
+      "n_false_positive": 61,
+      "n_flags": 79,
+      "n_localized": 17,
+      "n_tasks": 28
+     }
+    }
+   },
+   "flags": {
+    "keras-team__keras-19915": [
+     "keras/src/export/__init__.py::<module>",
+     "keras/src/saving/__init__.py::<module>",
+     "keras/src/layers/layer.py::Layer.get_config"
+    ],
+    "keras-team__keras-19924": [
+     "keras/src/saving/saving_lib.py::_load_model_from_fileobj",
+     "keras/src/saving/saving_api.py::load_model",
+     "keras/src/saving/saving_lib.py::load_model"
+    ],
+    "keras-team__keras-19931": [
+     "keras/src/backend/tensorflow/numpy.py::tril",
+     "keras/src/backend/tensorflow/numpy.py::triu",
+     "keras/src/backend/tensorflow/numpy.py::<module>"
+    ],
+    "keras-team__keras-19937": [],
+    "keras-team__keras-19955": [
+     "keras/src/callbacks/learning_rate_scheduler.py::LearningRateScheduler.on_epoch_begin",
+     "keras/src/callbacks/learning_rate_scheduler.py::LearningRateScheduler.__init__",
+     "keras/src/callbacks/learning_rate_scheduler.py::<module>"
+    ],
+    "keras-team__keras-19973": [
+     "keras/src/layers/attention/multi_head_attention.py::MultiHeadAttention.call",
+     "keras/src/layers/attention/multi_head_attention.py::MultiHeadAttention._compute_attention",
+     "keras/src/layers/attention/multi_head_attention.py::MultiHeadAttention.compute_output_shape"
+    ],
+    "keras-team__keras-19998": [
+     "keras/src/optimizers/sgd.py::SGD.update_step",
+     "keras/src/optimizers/adam.py::Adam.update_step",
+     "keras/src/optimizers/sgd.py::SGD.__init__"
+    ],
+    "keras-team__keras-20064": [
+     "keras/src/backend/tensorflow/core.py::map"
+    ],
+    "keras-team__keras-20079": [
+     "keras/src/layers/layer.py::Layer.__call__",
+     "keras/src/layers/preprocessing/rescaling.py::Rescaling.__init__"
+    ],
+    "keras-team__keras-20120": [
+     "keras/src/models/model.py::Model.from_config",
+     "keras/src/models/model.py::Model.build_from_config",
+     "keras/src/models/model.py::Model.__init__"
+    ],
+    "keras-team__keras-20122": [
+     "keras/src/backend/tensorflow/linalg.py::svd",
+     "keras/src/ops/linalg.py::svd",
+     "keras/src/backend/tensorflow/linalg.py::<module>"
+    ],
+    "keras-team__keras-20123": [
+     "keras/src/trainers/data_adapters/py_dataset_adapter.py::PyDatasetAdapter._make_multiprocessed_generator_fn",
+     "keras/src/trainers/data_adapters/py_dataset_adapter.py::PyDatasetAdapter.get_tf_dataset",
+     "keras/src/trainers/data_adapters/py_dataset_adapter.py::PyDatasetAdapter._get_iterator"
+    ],
+    "keras-team__keras-20125": [
+     "keras/src/backend/tensorflow/core.py::stop_gradient",
+     "keras/src/backend/common/keras_tensor.py::KerasTensor.__tf_tensor__"
+    ],
+    "keras-team__keras-20168": [
+     "keras/src/saving/saving_lib.py::save_model",
+     "keras/src/saving/saving_lib.py::_save_model_to_fileobj",
+     "keras/src/saving/serialization_lib.py::serialize_keras_object"
+    ],
+    "keras-team__keras-20197": [
+     "keras/src/trainers/compile_utils.py::CompileMetrics.build",
+     "keras/src/trainers/compile_utils.py::CompileMetrics._build_metrics_set",
+     "keras/src/trainers/compile_utils.py::CompileMetrics.result"
+    ],
+    "keras-team__keras-20206": [
+     "keras/src/models/sequential.py::Sequential._maybe_rebuild",
+     "keras/src/models/sequential.py::Sequential.__init__",
+     "keras/src/models/sequential.py::<module>"
+    ],
+    "keras-team__keras-20296": [
+     "keras/src/trainers/compile_utils.py::CompileLoss.__init__",
+     "keras/src/trainers/compile_utils.py::CompileLoss.build",
+     "keras/src/trainers/compile_utils.py::CompileLoss.call"
+    ],
+    "keras-team__keras-20383": [
+     "keras/src/ops/operation_utils.py::compute_take_along_axis_output_shape",
+     "keras/src/layers/core/dense.py::Dense.call"
+    ],
+    "keras-team__keras-20389": [
+     "keras/src/models/functional.py::Functional.get_config",
+     "keras/src/layers/layer.py::Layer.get_config",
+     "keras/src/models/functional.py::functional_from_config"
+    ],
+    "keras-team__keras-20396": [
+     "keras/src/trainers/trainer.py::Trainer.fit",
+     "keras/src/trainers/trainer.py::Trainer._symbolic_build",
+     "keras/src/backend/tensorflow/trainer.py::TensorFlowTrainer.fit"
+    ],
+    "keras-team__keras-20443": [
+     "keras/src/utils/traceback_utils.py::filter_traceback",
+     "keras/src/utils/traceback_utils.py::inject_argument_info_in_traceback",
+     "keras/src/utils/traceback_utils.py::format_argument_value"
+    ],
+    "keras-team__keras-20534": [
+     "keras/src/optimizers/base_optimizer.py::BaseOptimizer.apply_gradients",
+     "keras/src/optimizers/base_optimizer.py::BaseOptimizer._overwrite_variables_directly_with_gradients",
+     "keras/src/optimizers/base_optimizer.py::BaseOptimizer._check_variables_are_known"
+    ],
+    "keras-team__keras-20609": [
+     "keras/src/trainers/trainer.py::Trainer.evaluate",
+     "keras/src/trainers/trainer.py::Trainer.compute_loss",
+     "keras/src/trainers/trainer.py::Trainer._compute_loss"
+    ],
+    "keras-team__keras-20703": [
+     "keras/api/_tf_keras/keras/optimizers/__init__.py::<module>",
+     "keras/src/optimizers/__init__.py::<module>"
+    ],
+    "keras-team__keras-20765": [
+     "keras/src/layers/core/embedding.py::Embedding.compute_mask",
+     "keras/src/layers/rnn/time_distributed.py::TimeDistributed.call",
+     "keras/src/backend/common/masking.py::set_keras_mask"
+    ],
+    "keras-team__keras-20824": [
+     "keras/src/saving/object_registration.py::register_keras_serializable",
+     "keras/src/saving/saving_lib.py::_load_model_from_fileobj",
+     "keras/src/saving/object_registration.py::get_registered_object"
+    ],
+    "keras-team__keras-20880": [
+     "keras/src/layers/layer.py::Layer.__init__",
+     "keras/src/layers/layer.py::Layer._maybe_build",
+     "keras/src/layers/layer.py::Layer.build"
+    ],
+    "keras-team__keras-21072": [
+     "keras/src/trainers/trainer.py::Trainer.compute_loss",
+     "keras/src/trainers/trainer.py::Trainer.stateless_compute_loss",
+     "keras/src/trainers/trainer.py::Trainer._compute_loss"
+    ]
+   },
+   "hits": {
+    "keras-team__keras-19915": false,
+    "keras-team__keras-19924": true,
+    "keras-team__keras-19931": true,
+    "keras-team__keras-19937": false,
+    "keras-team__keras-19955": false,
+    "keras-team__keras-19973": false,
+    "keras-team__keras-19998": false,
+    "keras-team__keras-20064": true,
+    "keras-team__keras-20079": false,
+    "keras-team__keras-20120": false,
+    "keras-team__keras-20122": true,
+    "keras-team__keras-20123": true,
+    "keras-team__keras-20125": false,
+    "keras-team__keras-20168": false,
+    "keras-team__keras-20197": false,
+    "keras-team__keras-20206": false,
+    "keras-team__keras-20296": false,
+    "keras-team__keras-20383": false,
+    "keras-team__keras-20389": false,
+    "keras-team__keras-20396": true,
+    "keras-team__keras-20443": false,
+    "keras-team__keras-20534": true,
+    "keras-team__keras-20609": true,
+    "keras-team__keras-20703": false,
+    "keras-team__keras-20765": true,
+    "keras-team__keras-20824": false,
+    "keras-team__keras-20880": false,
+    "keras-team__keras-21072": false
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.7733,
+    "localization_rate": 0.3214,
+    "n_false_positive": 58,
+    "n_flags": 75,
+    "n_localized": 9,
+    "n_tasks": 28,
+    "per_repo": {
+     "keras-team/keras": {
+      "false_positive_rate": 0.7733,
+      "localization_rate": 0.3214,
+      "n_false_positive": 58,
+      "n_flags": 75,
+      "n_localized": 9,
+      "n_tasks": 28
+     }
+    }
+   },
+   "retrieved": {
+    "keras-team__keras-19915": [],
+    "keras-team__keras-19924": [],
+    "keras-team__keras-19931": [],
+    "keras-team__keras-19937": [],
+    "keras-team__keras-19955": [],
+    "keras-team__keras-19973": [],
+    "keras-team__keras-19998": [],
+    "keras-team__keras-20064": [],
+    "keras-team__keras-20079": [],
+    "keras-team__keras-20120": [],
+    "keras-team__keras-20122": [],
+    "keras-team__keras-20123": [],
+    "keras-team__keras-20125": [],
+    "keras-team__keras-20168": [],
+    "keras-team__keras-20197": [],
+    "keras-team__keras-20206": [],
+    "keras-team__keras-20296": [],
+    "keras-team__keras-20383": [],
+    "keras-team__keras-20389": [],
+    "keras-team__keras-20396": [],
+    "keras-team__keras-20443": [],
+    "keras-team__keras-20534": [],
+    "keras-team__keras-20609": [],
+    "keras-team__keras-20703": [],
+    "keras-team__keras-20765": [],
+    "keras-team__keras-20824": [],
+    "keras-team__keras-20880": [],
+    "keras-team__keras-21072": []
+   },
+   "scores": {
+    "keras-team__keras-19915": {},
+    "keras-team__keras-19924": {},
+    "keras-team__keras-19931": {},
+    "keras-team__keras-19937": {},
+    "keras-team__keras-19955": {},
+    "keras-team__keras-19973": {},
+    "keras-team__keras-19998": {},
+    "keras-team__keras-20064": {},
+    "keras-team__keras-20079": {},
+    "keras-team__keras-20120": {},
+    "keras-team__keras-20122": {},
+    "keras-team__keras-20123": {},
+    "keras-team__keras-20125": {},
+    "keras-team__keras-20168": {},
+    "keras-team__keras-20197": {},
+    "keras-team__keras-20206": {},
+    "keras-team__keras-20296": {},
+    "keras-team__keras-20383": {},
+    "keras-team__keras-20389": {},
+    "keras-team__keras-20396": {},
+    "keras-team__keras-20443": {},
+    "keras-team__keras-20534": {},
+    "keras-team__keras-20609": {},
+    "keras-team__keras-20703": {},
+    "keras-team__keras-20765": {},
+    "keras-team__keras-20824": {},
+    "keras-team__keras-20880": {},
+    "keras-team__keras-21072": {}
+   },
+   "tau": 0.5,
+   "version": "rolling",
+   "versions": {
+    "keras-team__keras-19915": null,
+    "keras-team__keras-19924": null,
+    "keras-team__keras-19931": null,
+    "keras-team__keras-19937": null,
+    "keras-team__keras-19955": null,
+    "keras-team__keras-19973": null,
+    "keras-team__keras-19998": null,
+    "keras-team__keras-20064": null,
+    "keras-team__keras-20079": null,
+    "keras-team__keras-20120": null,
+    "keras-team__keras-20122": null,
+    "keras-team__keras-20123": null,
+    "keras-team__keras-20125": null,
+    "keras-team__keras-20168": null,
+    "keras-team__keras-20197": null,
+    "keras-team__keras-20206": null,
+    "keras-team__keras-20296": null,
+    "keras-team__keras-20383": null,
+    "keras-team__keras-20389": null,
+    "keras-team__keras-20396": null,
+    "keras-team__keras-20443": null,
+    "keras-team__keras-20534": null,
+    "keras-team__keras-20609": null,
+    "keras-team__keras-20703": null,
+    "keras-team__keras-20765": null,
+    "keras-team__keras-20824": null,
+    "keras-team__keras-20880": null,
+    "keras-team__keras-21072": null
+   }
+  },
+  "placebo": {
+   "file_hits": {
+    "keras-team__keras-19915": false,
+    "keras-team__keras-19924": true,
+    "keras-team__keras-19931": true,
+    "keras-team__keras-19937": false,
+    "keras-team__keras-19955": false,
+    "keras-team__keras-19973": true,
+    "keras-team__keras-19998": false,
+    "keras-team__keras-20064": true,
+    "keras-team__keras-20079": true,
+    "keras-team__keras-20120": false,
+    "keras-team__keras-20122": true,
+    "keras-team__keras-20123": true,
+    "keras-team__keras-20125": true,
+    "keras-team__keras-20168": false,
+    "keras-team__keras-20197": true,
+    "keras-team__keras-20206": true,
+    "keras-team__keras-20296": true,
+    "keras-team__keras-20383": false,
+    "keras-team__keras-20389": true,
+    "keras-team__keras-20396": true,
+    "keras-team__keras-20443": false,
+    "keras-team__keras-20534": true,
+    "keras-team__keras-20609": true,
+    "keras-team__keras-20703": false,
+    "keras-team__keras-20765": true,
+    "keras-team__keras-20824": false,
+    "keras-team__keras-20880": true,
+    "keras-team__keras-21072": false
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.7722,
+    "localization_rate": 0.6071,
+    "n_false_positive": 61,
+    "n_flags": 79,
+    "n_localized": 17,
+    "n_tasks": 28,
+    "per_repo": {
+     "keras-team/keras": {
+      "false_positive_rate": 0.7722,
+      "localization_rate": 0.6071,
+      "n_false_positive": 61,
+      "n_flags": 79,
+      "n_localized": 17,
+      "n_tasks": 28
+     }
+    }
+   },
+   "flags": {
+    "keras-team__keras-19915": [
+     "keras/src/export/__init__.py::<module>",
+     "keras/src/saving/__init__.py::<module>",
+     "keras/src/layers/layer.py::Layer.get_config"
+    ],
+    "keras-team__keras-19924": [
+     "keras/src/saving/saving_lib.py::_load_model_from_fileobj",
+     "keras/src/saving/saving_api.py::load_model",
+     "keras/src/saving/saving_lib.py::load_model"
+    ],
+    "keras-team__keras-19931": [
+     "keras/src/backend/tensorflow/numpy.py::tril",
+     "keras/src/backend/tensorflow/numpy.py::triu",
+     "keras/src/backend/tensorflow/numpy.py::<module>"
+    ],
+    "keras-team__keras-19937": [],
+    "keras-team__keras-19955": [
+     "keras/src/callbacks/learning_rate_scheduler.py::LearningRateScheduler.on_epoch_begin",
+     "keras/src/callbacks/learning_rate_scheduler.py::LearningRateScheduler.__init__",
+     "keras/src/callbacks/learning_rate_scheduler.py::<module>"
+    ],
+    "keras-team__keras-19973": [
+     "keras/src/layers/attention/multi_head_attention.py::MultiHeadAttention.call",
+     "keras/src/layers/attention/multi_head_attention.py::MultiHeadAttention._compute_attention",
+     "keras/src/layers/attention/multi_head_attention.py::MultiHeadAttention.compute_output_shape"
+    ],
+    "keras-team__keras-19998": [
+     "keras/src/optimizers/sgd.py::SGD.update_step",
+     "keras/src/optimizers/adam.py::Adam.update_step",
+     "keras/src/optimizers/sgd.py::SGD.__init__"
+    ],
+    "keras-team__keras-20064": [
+     "keras/src/backend/tensorflow/core.py::map"
+    ],
+    "keras-team__keras-20079": [
+     "keras/src/layers/layer.py::Layer.__call__",
+     "keras/src/layers/preprocessing/rescaling.py::Rescaling.__init__"
+    ],
+    "keras-team__keras-20120": [
+     "keras/src/models/model.py::Model.from_config",
+     "keras/src/models/model.py::Model.build_from_config",
+     "keras/src/models/model.py::Model.__init__"
+    ],
+    "keras-team__keras-20122": [
+     "keras/src/backend/tensorflow/linalg.py::svd",
+     "keras/src/ops/linalg.py::svd",
+     "keras/src/backend/tensorflow/linalg.py::<module>"
+    ],
+    "keras-team__keras-20123": [
+     "keras/src/trainers/data_adapters/py_dataset_adapter.py::PyDatasetAdapter._make_multiprocessed_generator_fn",
+     "keras/src/trainers/data_adapters/py_dataset_adapter.py::PyDatasetAdapter.get_tf_dataset",
+     "keras/src/trainers/data_adapters/py_dataset_adapter.py::PyDatasetAdapter._get_iterator"
+    ],
+    "keras-team__keras-20125": [
+     "keras/src/backend/tensorflow/core.py::stop_gradient",
+     "keras/src/backend/common/keras_tensor.py::KerasTensor.__tf_tensor__"
+    ],
+    "keras-team__keras-20168": [
+     "keras/src/saving/saving_lib.py::save_model",
+     "keras/src/saving/saving_lib.py::_save_model_to_fileobj",
+     "keras/src/saving/serialization_lib.py::serialize_keras_object"
+    ],
+    "keras-team__keras-20197": [
+     "keras/src/trainers/compile_utils.py::CompileMetrics.build",
+     "keras/src/trainers/compile_utils.py::CompileMetrics._build_metrics_set",
+     "keras/src/trainers/compile_utils.py::CompileMetrics.result"
+    ],
+    "keras-team__keras-20206": [
+     "keras/src/models/sequential.py::Sequential._maybe_rebuild",
+     "keras/src/models/sequential.py::Sequential.__init__",
+     "keras/src/models/sequential.py::<module>"
+    ],
+    "keras-team__keras-20296": [
+     "keras/src/trainers/compile_utils.py::CompileLoss.__init__",
+     "keras/src/trainers/compile_utils.py::CompileLoss.build",
+     "keras/src/trainers/compile_utils.py::CompileLoss.call"
+    ],
+    "keras-team__keras-20383": [
+     "keras/src/ops/operation_utils.py::compute_take_along_axis_output_shape",
+     "keras/src/layers/core/dense.py::Dense.call"
+    ],
+    "keras-team__keras-20389": [
+     "keras/src/models/functional.py::Functional.get_config",
+     "keras/src/layers/layer.py::Layer.get_config",
+     "keras/src/models/functional.py::functional_from_config"
+    ],
+    "keras-team__keras-20396": [
+     "keras/src/trainers/trainer.py::Trainer.fit",
+     "keras/src/trainers/trainer.py::Trainer._symbolic_build",
+     "keras/src/backend/tensorflow/trainer.py::TensorFlowTrainer.fit"
+    ],
+    "keras-team__keras-20443": [
+     "keras/src/utils/traceback_utils.py::filter_traceback",
+     "keras/src/utils/traceback_utils.py::inject_argument_info_in_traceback",
+     "keras/src/utils/traceback_utils.py::format_argument_value"
+    ],
+    "keras-team__keras-20534": [
+     "keras/src/optimizers/base_optimizer.py::BaseOptimizer.apply_gradients",
+     "keras/src/optimizers/base_optimizer.py::BaseOptimizer._overwrite_variables_directly_with_gradients",
+     "keras/src/optimizers/base_optimizer.py::BaseOptimizer._check_variables_are_known"
+    ],
+    "keras-team__keras-20609": [
+     "keras/src/trainers/trainer.py::Trainer.evaluate",
+     "keras/src/trainers/trainer.py::Trainer.compute_loss",
+     "keras/src/trainers/trainer.py::Trainer._compute_loss"
+    ],
+    "keras-team__keras-20703": [
+     "keras/api/_tf_keras/keras/optimizers/__init__.py::<module>",
+     "keras/src/optimizers/__init__.py::<module>"
+    ],
+    "keras-team__keras-20765": [
+     "keras/src/layers/core/embedding.py::Embedding.compute_mask",
+     "keras/src/layers/rnn/time_distributed.py::TimeDistributed.call",
+     "keras/src/backend/common/masking.py::set_keras_mask"
+    ],
+    "keras-team__keras-20824": [
+     "keras/src/saving/object_registration.py::register_keras_serializable",
+     "keras/src/saving/saving_lib.py::_load_model_from_fileobj",
+     "keras/src/saving/object_registration.py::get_registered_object"
+    ],
+    "keras-team__keras-20880": [
+     "keras/src/layers/layer.py::Layer.__init__",
+     "keras/src/layers/layer.py::Layer._maybe_build",
+     "keras/src/layers/layer.py::Layer.build"
+    ],
+    "keras-team__keras-21072": [
+     "keras/src/trainers/trainer.py::Trainer.compute_loss",
+     "keras/src/trainers/trainer.py::Trainer.stateless_compute_loss",
+     "keras/src/trainers/trainer.py::Trainer._compute_loss"
+    ]
+   },
+   "hits": {
+    "keras-team__keras-19915": false,
+    "keras-team__keras-19924": true,
+    "keras-team__keras-19931": true,
+    "keras-team__keras-19937": false,
+    "keras-team__keras-19955": false,
+    "keras-team__keras-19973": false,
+    "keras-team__keras-19998": false,
+    "keras-team__keras-20064": true,
+    "keras-team__keras-20079": false,
+    "keras-team__keras-20120": false,
+    "keras-team__keras-20122": true,
+    "keras-team__keras-20123": true,
+    "keras-team__keras-20125": false,
+    "keras-team__keras-20168": false,
+    "keras-team__keras-20197": false,
+    "keras-team__keras-20206": false,
+    "keras-team__keras-20296": false,
+    "keras-team__keras-20383": false,
+    "keras-team__keras-20389": false,
+    "keras-team__keras-20396": true,
+    "keras-team__keras-20443": false,
+    "keras-team__keras-20534": true,
+    "keras-team__keras-20609": true,
+    "keras-team__keras-20703": false,
+    "keras-team__keras-20765": true,
+    "keras-team__keras-20824": false,
+    "keras-team__keras-20880": false,
+    "keras-team__keras-21072": false
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.7733,
+    "localization_rate": 0.3214,
+    "n_false_positive": 58,
+    "n_flags": 75,
+    "n_localized": 9,
+    "n_tasks": 28,
+    "per_repo": {
+     "keras-team/keras": {
+      "false_positive_rate": 0.7733,
+      "localization_rate": 0.3214,
+      "n_false_positive": 58,
+      "n_flags": 75,
+      "n_localized": 9,
+      "n_tasks": 28
+     }
+    }
+   },
+   "retrieved": {
+    "keras-team__keras-19915": [],
+    "keras-team__keras-19924": [],
+    "keras-team__keras-19931": [],
+    "keras-team__keras-19937": [],
+    "keras-team__keras-19955": [],
+    "keras-team__keras-19973": [],
+    "keras-team__keras-19998": [],
+    "keras-team__keras-20064": [],
+    "keras-team__keras-20079": [],
+    "keras-team__keras-20120": [],
+    "keras-team__keras-20122": [],
+    "keras-team__keras-20123": [],
+    "keras-team__keras-20125": [],
+    "keras-team__keras-20168": [],
+    "keras-team__keras-20197": [],
+    "keras-team__keras-20206": [],
+    "keras-team__keras-20296": [],
+    "keras-team__keras-20383": [],
+    "keras-team__keras-20389": [],
+    "keras-team__keras-20396": [],
+    "keras-team__keras-20443": [],
+    "keras-team__keras-20534": [],
+    "keras-team__keras-20609": [],
+    "keras-team__keras-20703": [],
+    "keras-team__keras-20765": [],
+    "keras-team__keras-20824": [],
+    "keras-team__keras-20880": [],
+    "keras-team__keras-21072": []
+   },
+   "scores": {
+    "keras-team__keras-19915": {},
+    "keras-team__keras-19924": {},
+    "keras-team__keras-19931": {},
+    "keras-team__keras-19937": {},
+    "keras-team__keras-19955": {},
+    "keras-team__keras-19973": {},
+    "keras-team__keras-19998": {},
+    "keras-team__keras-20064": {},
+    "keras-team__keras-20079": {},
+    "keras-team__keras-20120": {},
+    "keras-team__keras-20122": {},
+    "keras-team__keras-20123": {},
+    "keras-team__keras-20125": {},
+    "keras-team__keras-20168": {},
+    "keras-team__keras-20197": {},
+    "keras-team__keras-20206": {},
+    "keras-team__keras-20296": {},
+    "keras-team__keras-20383": {},
+    "keras-team__keras-20389": {},
+    "keras-team__keras-20396": {},
+    "keras-team__keras-20443": {},
+    "keras-team__keras-20534": {},
+    "keras-team__keras-20609": {},
+    "keras-team__keras-20703": {},
+    "keras-team__keras-20765": {},
+    "keras-team__keras-20824": {},
+    "keras-team__keras-20880": {},
+    "keras-team__keras-21072": {}
+   },
+   "tau": 0.0,
+   "version": "rolling",
+   "versions": {
+    "keras-team__keras-19915": null,
+    "keras-team__keras-19924": null,
+    "keras-team__keras-19931": null,
+    "keras-team__keras-19937": null,
+    "keras-team__keras-19955": null,
+    "keras-team__keras-19973": null,
+    "keras-team__keras-19998": null,
+    "keras-team__keras-20064": null,
+    "keras-team__keras-20079": null,
+    "keras-team__keras-20120": null,
+    "keras-team__keras-20122": null,
+    "keras-team__keras-20123": null,
+    "keras-team__keras-20125": null,
+    "keras-team__keras-20168": null,
+    "keras-team__keras-20197": null,
+    "keras-team__keras-20206": null,
+    "keras-team__keras-20296": null,
+    "keras-team__keras-20383": null,
+    "keras-team__keras-20389": null,
+    "keras-team__keras-20396": null,
+    "keras-team__keras-20443": null,
+    "keras-team__keras-20534": null,
+    "keras-team__keras-20609": null,
+    "keras-team__keras-20703": null,
+    "keras-team__keras-20765": null,
+    "keras-team__keras-20824": null,
+    "keras-team__keras-20880": null,
+    "keras-team__keras-21072": null
+   }
+  },
+  "treatment": {
+   "file_hits": {
+    "keras-team__keras-19915": false,
+    "keras-team__keras-19924": true,
+    "keras-team__keras-19931": true,
+    "keras-team__keras-19937": false,
+    "keras-team__keras-19955": false,
+    "keras-team__keras-19973": true,
+    "keras-team__keras-19998": false,
+    "keras-team__keras-20064": true,
+    "keras-team__keras-20079": true,
+    "keras-team__keras-20120": false,
+    "keras-team__keras-20122": true,
+    "keras-team__keras-20123": true,
+    "keras-team__keras-20125": true,
+    "keras-team__keras-20168": false,
+    "keras-team__keras-20197": true,
+    "keras-team__keras-20206": true,
+    "keras-team__keras-20296": true,
+    "keras-team__keras-20383": false,
+    "keras-team__keras-20389": true,
+    "keras-team__keras-20396": true,
+    "keras-team__keras-20443": false,
+    "keras-team__keras-20534": true,
+    "keras-team__keras-20609": true,
+    "keras-team__keras-20703": false,
+    "keras-team__keras-20765": true,
+    "keras-team__keras-20824": false,
+    "keras-team__keras-20880": true,
+    "keras-team__keras-21072": false
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.7722,
+    "localization_rate": 0.6071,
+    "n_false_positive": 61,
+    "n_flags": 79,
+    "n_localized": 17,
+    "n_tasks": 28,
+    "per_repo": {
+     "keras-team/keras": {
+      "false_positive_rate": 0.7722,
+      "localization_rate": 0.6071,
+      "n_false_positive": 61,
+      "n_flags": 79,
+      "n_localized": 17,
+      "n_tasks": 28
+     }
+    }
+   },
+   "flags": {
+    "keras-team__keras-19915": [
+     "keras/src/export/__init__.py::<module>",
+     "keras/src/saving/__init__.py::<module>",
+     "keras/src/layers/layer.py::Layer.get_config"
+    ],
+    "keras-team__keras-19924": [
+     "keras/src/saving/saving_lib.py::_load_model_from_fileobj",
+     "keras/src/saving/saving_api.py::load_model",
+     "keras/src/saving/saving_lib.py::load_model"
+    ],
+    "keras-team__keras-19931": [
+     "keras/src/backend/tensorflow/numpy.py::tril",
+     "keras/src/backend/tensorflow/numpy.py::triu",
+     "keras/src/backend/tensorflow/numpy.py::<module>"
+    ],
+    "keras-team__keras-19937": [],
+    "keras-team__keras-19955": [
+     "keras/src/callbacks/learning_rate_scheduler.py::LearningRateScheduler.on_epoch_begin",
+     "keras/src/callbacks/learning_rate_scheduler.py::LearningRateScheduler.__init__",
+     "keras/src/callbacks/learning_rate_scheduler.py::<module>"
+    ],
+    "keras-team__keras-19973": [
+     "keras/src/layers/attention/multi_head_attention.py::MultiHeadAttention.call",
+     "keras/src/layers/attention/multi_head_attention.py::MultiHeadAttention._compute_attention",
+     "keras/src/layers/attention/multi_head_attention.py::MultiHeadAttention.compute_output_shape"
+    ],
+    "keras-team__keras-19998": [
+     "keras/src/optimizers/sgd.py::SGD.update_step",
+     "keras/src/optimizers/adam.py::Adam.update_step",
+     "keras/src/optimizers/sgd.py::SGD.__init__"
+    ],
+    "keras-team__keras-20064": [
+     "keras/src/backend/tensorflow/core.py::map"
+    ],
+    "keras-team__keras-20079": [
+     "keras/src/layers/layer.py::Layer.__call__",
+     "keras/src/layers/preprocessing/rescaling.py::Rescaling.__init__"
+    ],
+    "keras-team__keras-20120": [
+     "keras/src/models/model.py::Model.from_config",
+     "keras/src/models/model.py::Model.build_from_config",
+     "keras/src/models/model.py::Model.__init__"
+    ],
+    "keras-team__keras-20122": [
+     "keras/src/backend/tensorflow/linalg.py::svd",
+     "keras/src/ops/linalg.py::svd",
+     "keras/src/backend/tensorflow/linalg.py::<module>"
+    ],
+    "keras-team__keras-20123": [
+     "keras/src/trainers/data_adapters/py_dataset_adapter.py::PyDatasetAdapter._make_multiprocessed_generator_fn",
+     "keras/src/trainers/data_adapters/py_dataset_adapter.py::PyDatasetAdapter.get_tf_dataset",
+     "keras/src/trainers/data_adapters/py_dataset_adapter.py::PyDatasetAdapter._get_iterator"
+    ],
+    "keras-team__keras-20125": [
+     "keras/src/backend/tensorflow/core.py::stop_gradient",
+     "keras/src/backend/common/keras_tensor.py::KerasTensor.__tf_tensor__"
+    ],
+    "keras-team__keras-20168": [
+     "keras/src/saving/saving_lib.py::save_model",
+     "keras/src/saving/saving_lib.py::_save_model_to_fileobj",
+     "keras/src/saving/serialization_lib.py::serialize_keras_object"
+    ],
+    "keras-team__keras-20197": [
+     "keras/src/trainers/compile_utils.py::CompileMetrics.build",
+     "keras/src/trainers/compile_utils.py::CompileMetrics._build_metrics_set",
+     "keras/src/trainers/compile_utils.py::CompileMetrics.result"
+    ],
+    "keras-team__keras-20206": [
+     "keras/src/models/sequential.py::Sequential._maybe_rebuild",
+     "keras/src/models/sequential.py::Sequential.__init__",
+     "keras/src/models/sequential.py::<module>"
+    ],
+    "keras-team__keras-20296": [
+     "keras/src/trainers/compile_utils.py::CompileLoss.__init__",
+     "keras/src/trainers/compile_utils.py::CompileLoss.build",
+     "keras/src/trainers/compile_utils.py::CompileLoss.call"
+    ],
+    "keras-team__keras-20383": [
+     "keras/src/ops/operation_utils.py::compute_take_along_axis_output_shape",
+     "keras/src/layers/core/dense.py::Dense.call"
+    ],
+    "keras-team__keras-20389": [
+     "keras/src/models/functional.py::Functional.get_config",
+     "keras/src/layers/layer.py::Layer.get_config",
+     "keras/src/models/functional.py::functional_from_config"
+    ],
+    "keras-team__keras-20396": [
+     "keras/src/trainers/trainer.py::Trainer.fit",
+     "keras/src/trainers/trainer.py::Trainer._symbolic_build",
+     "keras/src/backend/tensorflow/trainer.py::TensorFlowTrainer.fit"
+    ],
+    "keras-team__keras-20443": [
+     "keras/src/utils/traceback_utils.py::filter_traceback",
+     "keras/src/utils/traceback_utils.py::inject_argument_info_in_traceback",
+     "keras/src/utils/traceback_utils.py::format_argument_value"
+    ],
+    "keras-team__keras-20534": [
+     "keras/src/optimizers/base_optimizer.py::BaseOptimizer.apply_gradients",
+     "keras/src/optimizers/base_optimizer.py::BaseOptimizer._overwrite_variables_directly_with_gradients",
+     "keras/src/optimizers/base_optimizer.py::BaseOptimizer._check_variables_are_known"
+    ],
+    "keras-team__keras-20609": [
+     "keras/src/trainers/trainer.py::Trainer.evaluate",
+     "keras/src/trainers/trainer.py::Trainer.compute_loss",
+     "keras/src/trainers/trainer.py::Trainer._compute_loss"
+    ],
+    "keras-team__keras-20703": [
+     "keras/api/_tf_keras/keras/optimizers/__init__.py::<module>",
+     "keras/src/optimizers/__init__.py::<module>"
+    ],
+    "keras-team__keras-20765": [
+     "keras/src/layers/core/embedding.py::Embedding.compute_mask",
+     "keras/src/layers/rnn/time_distributed.py::TimeDistributed.call",
+     "keras/src/backend/common/masking.py::set_keras_mask"
+    ],
+    "keras-team__keras-20824": [
+     "keras/src/saving/object_registration.py::register_keras_serializable",
+     "keras/src/saving/saving_lib.py::_load_model_from_fileobj",
+     "keras/src/saving/object_registration.py::get_registered_object"
+    ],
+    "keras-team__keras-20880": [
+     "keras/src/layers/layer.py::Layer.__init__",
+     "keras/src/layers/layer.py::Layer._maybe_build",
+     "keras/src/layers/layer.py::Layer.build"
+    ],
+    "keras-team__keras-21072": [
+     "keras/src/trainers/trainer.py::Trainer.compute_loss",
+     "keras/src/trainers/trainer.py::Trainer.stateless_compute_loss",
+     "keras/src/trainers/trainer.py::Trainer._compute_loss"
+    ]
+   },
+   "hits": {
+    "keras-team__keras-19915": false,
+    "keras-team__keras-19924": true,
+    "keras-team__keras-19931": true,
+    "keras-team__keras-19937": false,
+    "keras-team__keras-19955": false,
+    "keras-team__keras-19973": false,
+    "keras-team__keras-19998": false,
+    "keras-team__keras-20064": true,
+    "keras-team__keras-20079": false,
+    "keras-team__keras-20120": false,
+    "keras-team__keras-20122": true,
+    "keras-team__keras-20123": true,
+    "keras-team__keras-20125": false,
+    "keras-team__keras-20168": false,
+    "keras-team__keras-20197": false,
+    "keras-team__keras-20206": false,
+    "keras-team__keras-20296": false,
+    "keras-team__keras-20383": false,
+    "keras-team__keras-20389": false,
+    "keras-team__keras-20396": true,
+    "keras-team__keras-20443": false,
+    "keras-team__keras-20534": true,
+    "keras-team__keras-20609": true,
+    "keras-team__keras-20703": false,
+    "keras-team__keras-20765": true,
+    "keras-team__keras-20824": false,
+    "keras-team__keras-20880": false,
+    "keras-team__keras-21072": false
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.7733,
+    "localization_rate": 0.3214,
+    "n_false_positive": 58,
+    "n_flags": 75,
+    "n_localized": 9,
+    "n_tasks": 28,
+    "per_repo": {
+     "keras-team/keras": {
+      "false_positive_rate": 0.7733,
+      "localization_rate": 0.3214,
+      "n_false_positive": 58,
+      "n_flags": 75,
+      "n_localized": 9,
+      "n_tasks": 28
+     }
+    }
+   },
+   "retrieved": {
+    "keras-team__keras-19915": [],
+    "keras-team__keras-19924": [],
+    "keras-team__keras-19931": [],
+    "keras-team__keras-19937": [],
+    "keras-team__keras-19955": [],
+    "keras-team__keras-19973": [],
+    "keras-team__keras-19998": [],
+    "keras-team__keras-20064": [],
+    "keras-team__keras-20079": [],
+    "keras-team__keras-20120": [],
+    "keras-team__keras-20122": [],
+    "keras-team__keras-20123": [],
+    "keras-team__keras-20125": [],
+    "keras-team__keras-20168": [],
+    "keras-team__keras-20197": [],
+    "keras-team__keras-20206": [],
+    "keras-team__keras-20296": [],
+    "keras-team__keras-20383": [],
+    "keras-team__keras-20389": [],
+    "keras-team__keras-20396": [],
+    "keras-team__keras-20443": [],
+    "keras-team__keras-20534": [],
+    "keras-team__keras-20609": [],
+    "keras-team__keras-20703": [],
+    "keras-team__keras-20765": [],
+    "keras-team__keras-20824": [],
+    "keras-team__keras-20880": [],
+    "keras-team__keras-21072": []
+   },
+   "scores": {
+    "keras-team__keras-19915": {},
+    "keras-team__keras-19924": {},
+    "keras-team__keras-19931": {},
+    "keras-team__keras-19937": {},
+    "keras-team__keras-19955": {},
+    "keras-team__keras-19973": {},
+    "keras-team__keras-19998": {},
+    "keras-team__keras-20064": {},
+    "keras-team__keras-20079": {},
+    "keras-team__keras-20120": {},
+    "keras-team__keras-20122": {},
+    "keras-team__keras-20123": {},
+    "keras-team__keras-20125": {},
+    "keras-team__keras-20168": {},
+    "keras-team__keras-20197": {},
+    "keras-team__keras-20206": {},
+    "keras-team__keras-20296": {},
+    "keras-team__keras-20383": {},
+    "keras-team__keras-20389": {},
+    "keras-team__keras-20396": {},
+    "keras-team__keras-20443": {},
+    "keras-team__keras-20534": {},
+    "keras-team__keras-20609": {},
+    "keras-team__keras-20703": {},
+    "keras-team__keras-20765": {},
+    "keras-team__keras-20824": {},
+    "keras-team__keras-20880": {},
+    "keras-team__keras-21072": {}
+   },
+   "tau": 0.0,
+   "version": "rolling",
+   "versions": {
+    "keras-team__keras-19915": null,
+    "keras-team__keras-19924": null,
+    "keras-team__keras-19931": null,
+    "keras-team__keras-19937": null,
+    "keras-team__keras-19955": null,
+    "keras-team__keras-19973": null,
+    "keras-team__keras-19998": null,
+    "keras-team__keras-20064": null,
+    "keras-team__keras-20079": null,
+    "keras-team__keras-20120": null,
+    "keras-team__keras-20122": null,
+    "keras-team__keras-20123": null,
+    "keras-team__keras-20125": null,
+    "keras-team__keras-20168": null,
+    "keras-team__keras-20197": null,
+    "keras-team__keras-20206": null,
+    "keras-team__keras-20296": null,
+    "keras-team__keras-20383": null,
+    "keras-team__keras-20389": null,
+    "keras-team__keras-20396": null,
+    "keras-team__keras-20443": null,
+    "keras-team__keras-20534": null,
+    "keras-team__keras-20609": null,
+    "keras-team__keras-20703": null,
+    "keras-team__keras-20765": null,
+    "keras-team__keras-20824": null,
+    "keras-team__keras-20880": null,
+    "keras-team__keras-21072": null
+   }
+  }
+ },
+ "control": {
+  "false_positive_rate": 0.7733,
+  "localization_rate": 0.3214,
+  "n_false_positive": 58,
+  "n_flags": 75,
+  "n_localized": 9,
+  "n_tasks": 28,
+  "per_repo": {
+   "keras-team/keras": {
+    "false_positive_rate": 0.7733,
+    "localization_rate": 0.3214,
+    "n_false_positive": 58,
+    "n_flags": 75,
+    "n_localized": 9,
+    "n_tasks": 28
+   }
+  }
+ },
+ "control_flags": {
+  "keras-team__keras-19915": [
+   "keras/src/export/__init__.py",
+   "keras/src/saving/__init__.py",
+   "keras/src/layers/layer.py"
+  ],
+  "keras-team__keras-19924": [
+   "keras/src/saving/saving_lib.py",
+   "keras/src/saving/saving_api.py",
+   "keras/src/saving/saving_lib.py"
+  ],
+  "keras-team__keras-19931": [
+   "keras/src/backend/tensorflow/numpy.py",
+   "keras/src/backend/tensorflow/numpy.py",
+   "keras/src/backend/tensorflow/numpy.py"
+  ],
+  "keras-team__keras-19937": [],
+  "keras-team__keras-19955": [
+   "keras/src/callbacks/learning_rate_scheduler.py",
+   "keras/src/callbacks/learning_rate_scheduler.py",
+   "keras/src/callbacks/learning_rate_scheduler.py"
+  ],
+  "keras-team__keras-19973": [
+   "keras/src/layers/attention/multi_head_attention.py",
+   "keras/src/layers/attention/multi_head_attention.py",
+   "keras/src/layers/attention/multi_head_attention.py"
+  ],
+  "keras-team__keras-19998": [
+   "keras/src/optimizers/sgd.py",
+   "keras/src/optimizers/adam.py",
+   "keras/src/optimizers/sgd.py"
+  ],
+  "keras-team__keras-20064": [
+   "keras/src/backend/tensorflow/core.py"
+  ],
+  "keras-team__keras-20079": [
+   "keras/src/layers/layer.py",
+   "keras/src/layers/preprocessing/rescaling.py"
+  ],
+  "keras-team__keras-20120": [
+   "keras/src/models/model.py",
+   "keras/src/models/model.py",
+   "keras/src/models/model.py"
+  ],
+  "keras-team__keras-20122": [
+   "keras/src/backend/tensorflow/linalg.py",
+   "keras/src/ops/linalg.py",
+   "keras/src/backend/tensorflow/linalg.py"
+  ],
+  "keras-team__keras-20123": [
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py",
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py",
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py"
+  ],
+  "keras-team__keras-20125": [
+   "keras/src/backend/tensorflow/core.py",
+   "keras/src/backend/common/keras_tensor.py"
+  ],
+  "keras-team__keras-20168": [
+   "keras/src/saving/saving_lib.py",
+   "keras/src/saving/saving_lib.py",
+   "keras/src/saving/serialization_lib.py"
+  ],
+  "keras-team__keras-20197": [
+   "keras/src/trainers/compile_utils.py",
+   "keras/src/trainers/compile_utils.py",
+   "keras/src/trainers/compile_utils.py"
+  ],
+  "keras-team__keras-20206": [
+   "keras/src/models/sequential.py",
+   "keras/src/models/sequential.py",
+   "keras/src/models/sequential.py"
+  ],
+  "keras-team__keras-20296": [
+   "keras/src/trainers/compile_utils.py",
+   "keras/src/trainers/compile_utils.py",
+   "keras/src/trainers/compile_utils.py"
+  ],
+  "keras-team__keras-20383": [
+   "keras/src/ops/operation_utils.py",
+   "keras/src/layers/core/dense.py"
+  ],
+  "keras-team__keras-20389": [
+   "keras/src/models/functional.py",
+   "keras/src/layers/layer.py",
+   "keras/src/models/functional.py"
+  ],
+  "keras-team__keras-20396": [
+   "keras/src/trainers/trainer.py",
+   "keras/src/trainers/trainer.py",
+   "keras/src/backend/tensorflow/trainer.py"
+  ],
+  "keras-team__keras-20443": [
+   "keras/src/utils/traceback_utils.py",
+   "keras/src/utils/traceback_utils.py",
+   "keras/src/utils/traceback_utils.py"
+  ],
+  "keras-team__keras-20534": [
+   "keras/src/optimizers/base_optimizer.py",
+   "keras/src/optimizers/base_optimizer.py",
+   "keras/src/optimizers/base_optimizer.py"
+  ],
+  "keras-team__keras-20609": [
+   "keras/src/trainers/trainer.py",
+   "keras/src/trainers/trainer.py",
+   "keras/src/trainers/trainer.py"
+  ],
+  "keras-team__keras-20703": [
+   "keras/api/_tf_keras/keras/optimizers/__init__.py",
+   "keras/src/optimizers/__init__.py"
+  ],
+  "keras-team__keras-20765": [
+   "keras/src/layers/core/embedding.py",
+   "keras/src/layers/rnn/time_distributed.py",
+   "keras/src/backend/common/masking.py"
+  ],
+  "keras-team__keras-20824": [
+   "keras/src/saving/object_registration.py",
+   "keras/src/saving/saving_lib.py",
+   "keras/src/saving/object_registration.py"
+  ],
+  "keras-team__keras-20880": [
+   "keras/src/layers/layer.py",
+   "keras/src/layers/layer.py",
+   "keras/src/layers/layer.py"
+  ],
+  "keras-team__keras-21072": [
+   "keras/src/trainers/trainer.py",
+   "keras/src/trainers/trainer.py",
+   "keras/src/trainers/trainer.py"
+  ]
+ },
+ "errors": {},
+ "gold": {
+  "keras-team__keras-19915": [
+   "keras/src/export/export_lib.py::_get_input_signature"
+  ],
+  "keras-team__keras-19924": [
+   "keras/src/saving/saving_lib.py::<module>",
+   "keras/src/saving/saving_lib.py::_load_model_from_fileobj",
+   "keras/src/saving/saving_lib.py::_save_model_to_fileobj",
+   "keras/src/saving/saving_lib.py::load_model"
+  ],
+  "keras-team__keras-19931": [
+   "keras/src/backend/tensorflow/numpy.py::<module>",
+   "keras/src/backend/tensorflow/numpy.py::tril",
+   "keras/src/backend/tensorflow/numpy.py::triu",
+   "keras/src/backend/tensorflow/numpy.py::vdot"
+  ],
+  "keras-team__keras-19937": [
+   "keras/src/losses/loss.py::<module>",
+   "keras/src/losses/loss.py::Loss",
+   "keras/src/losses/loss.py::Loss.__call__",
+   "keras/src/losses/loss.py::Loss.__init__",
+   "keras/src/losses/losses.py::BinaryCrossentropy",
+   "keras/src/losses/losses.py::BinaryFocalCrossentropy",
+   "keras/src/losses/losses.py::CTC",
+   "keras/src/losses/losses.py::CTC.__init__",
+   "keras/src/losses/losses.py::CategoricalCrossentropy",
+   "keras/src/losses/losses.py::CategoricalFocalCrossentropy",
+   "keras/src/losses/losses.py::CategoricalHinge",
+   "keras/src/losses/losses.py::CategoricalHinge.__init__",
+   "keras/src/losses/losses.py::CosineSimilarity",
+   "keras/src/losses/losses.py::CosineSimilarity.__init__",
+   "keras/src/losses/losses.py::Dice",
+   "keras/src/losses/losses.py::Hinge",
+   "keras/src/losses/losses.py::Hinge.__init__",
+   "keras/src/losses/losses.py::Huber",
+   "keras/src/losses/losses.py::Huber.__init__",
+   "keras/src/losses/losses.py::KLDivergence",
+   "keras/src/losses/losses.py::KLDivergence.__init__",
+   "keras/src/losses/losses.py::LogCosh",
+   "keras/src/losses/losses.py::LogCosh.__init__",
+   "keras/src/losses/losses.py::MeanAbsoluteError",
+   "keras/src/losses/losses.py::MeanAbsoluteError.__init__",
+   "keras/src/losses/losses.py::MeanAbsolutePercentageError",
+   "keras/src/losses/losses.py::MeanAbsolutePercentageError.__init__",
+   "keras/src/losses/losses.py::MeanSquaredError",
+   "keras/src/losses/losses.py::MeanSquaredError.__init__",
+   "keras/src/losses/losses.py::MeanSquaredLogarithmicError",
+   "keras/src/losses/losses.py::MeanSquaredLogarithmicError.__init__",
+   "keras/src/losses/losses.py::Poisson",
+   "keras/src/losses/losses.py::Poisson.__init__",
+   "keras/src/losses/losses.py::SparseCategoricalCrossentropy",
+   "keras/src/losses/losses.py::SquaredHinge",
+   "keras/src/losses/losses.py::SquaredHinge.__init__",
+   "keras/src/losses/losses.py::Tversky",
+   "keras/src/metrics/metric.py::<module>",
+   "keras/src/metrics/metric.py::Metric",
+   "keras/src/metrics/metric.py::Metric.__init__"
+  ],
+  "keras-team__keras-19955": [
+   "keras/src/backend/common/keras_tensor.py::<module>",
+   "keras/src/backend/common/keras_tensor.py::KerasTensor",
+   "keras/src/backend/common/keras_tensor.py::KerasTensor.__array__",
+   "keras/src/backend/common/keras_tensor.py::KerasTensor.__getitem__",
+   "keras/src/backend/common/keras_tensor.py::KerasTensor.squeeze",
+   "keras/src/backend/common/keras_tensor.py::any_symbolic_tensors",
+   "keras/src/backend/common/variables.py::<module>",
+   "keras/src/backend/common/variables.py::KerasVariable",
+   "keras/src/backend/common/variables.py::KerasVariable.__add__",
+   "keras/src/backend/common/variables.py::KerasVariable.__and__",
+   "keras/src/backend/common/variables.py::KerasVariable.__array__",
+   "keras/src/backend/common/variables.py::KerasVariable.__eq__",
+   "keras/src/backend/common/variables.py::KerasVariable.__floordiv__",
+   "keras/src/backend/common/variables.py::KerasVariable.__ge__",
+   "keras/src/backend/common/variables.py::KerasVariable.__getitem__",
+   "keras/src/backend/common/variables.py::KerasVariable.__gt__",
+   "keras/src/backend/common/variables.py::KerasVariable.__invert__",
+   "keras/src/backend/common/variables.py::KerasVariable.__le__",
+   "keras/src/backend/common/variables.py::KerasVariable.__lt__",
+   "keras/src/backend/common/variables.py::KerasVariable.__matmul__",
+   "keras/src/backend/common/variables.py::KerasVariable.__mod__",
+   "keras/src/backend/common/variables.py::KerasVariable.__mul__",
+   "keras/src/backend/common/variables.py::KerasVariable.__ne__",
+   "keras/src/backend/common/variables.py::KerasVariable.__or__",
+   "keras/src/backend/common/variables.py::KerasVariable.__pow__",
+   "keras/src/backend/common/variables.py::KerasVariable.__radd__",
+   "keras/src/backend/common/variables.py::KerasVariable.__rand__",
+   "keras/src/backend/common/variables.py::KerasVariable.__rfloordiv__",
+   "keras/src/backend/common/variables.py::KerasVariable.__rmatmul__",
+   "keras/src/backend/common/variables.py::KerasVariable.__rmod__",
+   "keras/src/backend/common/variables.py::KerasVariable.__rmul__",
+   "keras/src/backend/common/variables.py::KerasVariable.__ror__",
+   "keras/src/backend/common/variables.py::KerasVariable.__rpow__",
+   "keras/src/backend/common/variables.py::KerasVariable.__rsub__",
+   "keras/src/backend/common/variables.py::KerasVariable.__rtruediv__",
+   "keras/src/backend/common/variables.py::KerasVariable.__rxor__",
+   "keras/src/backend/common/variables.py::KerasVariable.__sub__",
+   "keras/src/backend/common/variables.py::KerasVariable.__truediv__",
+   "keras/src/backend/common/variables.py::KerasVariable.__xor__",
+   "keras/src/backend/common/variables.py::register_uninitialized_variable",
+   "keras/src/backend/exports.py::<module>",
+   "keras/src/backend/exports.py::Variable",
+   "keras/src/backend/torch/core.py::convert_to_tensor",
+   "keras/src/random/seed_generator.py::SeedGenerator.next"
+  ],
+  "keras-team__keras-19973": [
+   "keras/src/layers/attention/multi_head_attention.py::MultiHeadAttention.build"
+  ],
+  "keras-team__keras-19998": [
+   "keras/src/backend/jax/optimizer.py::JaxOptimizer._backend_apply_gradients",
+   "keras/src/optimizers/base_optimizer.py::<module>",
+   "keras/src/optimizers/base_optimizer.py::BaseOptimizer",
+   "keras/src/optimizers/base_optimizer.py::BaseOptimizer.__init__",
+   "keras/src/optimizers/base_optimizer.py::BaseOptimizer._backend_apply_gradients",
+   "keras/src/optimizers/base_optimizer.py::BaseOptimizer._backend_update_step",
+   "keras/src/optimizers/base_optimizer.py::BaseOptimizer._get_current_learning_rate",
+   "keras/src/optimizers/base_optimizer.py::BaseOptimizer._overwrite_variables_directly_with_gradients",
+   "keras/src/optimizers/base_optimizer.py::BaseOptimizer._track_variable",
+   "keras/src/optimizers/base_optimizer.py::BaseOptimizer.apply",
+   "keras/src/optimizers/base_optimizer.py::BaseOptimizer.apply_gradients"
+  ],
+  "keras-team__keras-20064": [
+   "keras/src/backend/tensorflow/core.py::<module>",
+   "keras/src/backend/tensorflow/core.py::map",
+   "keras/src/backend/tensorflow/core.py::scan"
+  ],
+  "keras-team__keras-20079": [
+   "keras/src/layers/preprocessing/rescaling.py::<module>",
+   "keras/src/layers/preprocessing/rescaling.py::Rescaling",
+   "keras/src/layers/preprocessing/rescaling.py::Rescaling.compute_output_shape",
+   "keras/src/layers/preprocessing/rescaling.py::Rescaling.get_config"
+  ],
+  "keras-team__keras-20120": [
+   "keras/src/models/functional.py::functional_from_config"
+  ],
+  "keras-team__keras-20122": [
+   "keras/src/backend/tensorflow/linalg.py::<module>",
+   "keras/src/backend/tensorflow/linalg.py::svd",
+   "keras/src/backend/torch/linalg.py::<module>",
+   "keras/src/backend/torch/linalg.py::svd"
+  ],
+  "keras-team__keras-20123": [
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py::<module>",
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py::OrderedEnqueuer",
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py::OrderedEnqueuer.__init__",
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py::OrderedEnqueuer._get_executor_init",
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py::OrderedEnqueuer._run",
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py::OrderedEnqueuer._wait_queue",
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py::OrderedEnqueuer.get",
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py::PyDataset",
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py::PyDatasetAdapter",
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py::PyDatasetAdapter.__init__",
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py::PyDatasetAdapter._get_iterator",
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py::PyDatasetAdapter._make_multiprocessed_generator_fn",
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py::PyDatasetAdapter._standardize_batch",
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py::PyDatasetAdapter.get_numpy_iterator",
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py::PyDatasetAdapter.get_tf_dataset",
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py::PyDatasetAdapter.get_torch_dataloader",
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py::PyDatasetAdapter.on_epoch_begin",
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py::PyDatasetAdapter.on_epoch_end",
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py::PyDatasetEnqueuer",
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py::PyDatasetEnqueuer.__del__",
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py::PyDatasetEnqueuer.__init__",
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py::PyDatasetEnqueuer._run",
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py::PyDatasetEnqueuer._send_py_dataset",
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py::PyDatasetEnqueuer.get",
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py::PyDatasetEnqueuer.is_running",
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py::PyDatasetEnqueuer.start",
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py::PyDatasetEnqueuer.stop",
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py::get_index",
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py::init_pool_generator"
+  ],
+  "keras-team__keras-20125": [
+   "keras/src/ops/core.py::<module>",
+   "keras/src/ops/core.py::stop_gradient"
+  ],
+  "keras-team__keras-20168": [
+   "keras/src/legacy/saving/legacy_h5_format.py::<module>",
+   "keras/src/legacy/saving/legacy_h5_format.py::load_subset_weights_from_hdf5_group",
+   "keras/src/legacy/saving/legacy_h5_format.py::load_weights_from_hdf5_group",
+   "keras/src/legacy/saving/legacy_h5_format.py::load_weights_from_hdf5_group_by_name"
+  ],
+  "keras-team__keras-20197": [
+   "keras/src/trainers/trainer.py::Trainer",
+   "keras/src/trainers/trainer.py::Trainer.compile",
+   "keras/src/trainers/trainer.py::Trainer.compute_loss",
+   "keras/src/trainers/trainer.py::Trainer.metrics",
+   "keras/src/trainers/trainer.py::Trainer.metrics_names",
+   "keras/src/trainers/trainer.py::Trainer.reset_metrics"
+  ],
+  "keras-team__keras-20206": [
+   "keras/src/models/sequential.py::Sequential",
+   "keras/src/models/sequential.py::Sequential.input_shape",
+   "keras/src/models/sequential.py::Sequential.inputs",
+   "keras/src/models/sequential.py::Sequential.output_shape",
+   "keras/src/models/sequential.py::Sequential.outputs"
+  ],
+  "keras-team__keras-20296": [
+   "keras/src/trainers/compile_utils.py::CompileLoss._filter_unused_inputs"
+  ],
+  "keras-team__keras-20383": [
+   "keras/src/backend/jax/__init__.py::<module>",
+   "keras/src/backend/jax/core.py::<module>",
+   "keras/src/backend/jax/core.py::Variable",
+   "keras/src/backend/numpy/__init__.py::<module>",
+   "keras/src/backend/numpy/core.py::<module>",
+   "keras/src/backend/numpy/core.py::Variable",
+   "keras/src/backend/tensorflow/__init__.py::<module>",
+   "keras/src/backend/tensorflow/core.py::<module>",
+   "keras/src/backend/tensorflow/core.py::Variable",
+   "keras/src/backend/torch/__init__.py::<module>",
+   "keras/src/backend/torch/core.py::<module>",
+   "keras/src/callbacks/callback_list.py::<module>",
+   "keras/src/callbacks/callback_list.py::CallbackList",
+   "keras/src/callbacks/callback_list.py::CallbackList.__init__",
+   "keras/src/callbacks/callback_list.py::CallbackList._configure_async_dispatch",
+   "keras/src/callbacks/callback_list.py::CallbackList.set_params"
+  ],
+  "keras-team__keras-20389": [
+   "keras/src/models/functional.py::deserialize_node"
+  ],
+  "keras-team__keras-20396": [
+   "keras/src/backend/jax/trainer.py::JAXTrainer.evaluate",
+   "keras/src/backend/jax/trainer.py::JAXTrainer.fit",
+   "keras/src/backend/jax/trainer.py::JAXTrainer.predict",
+   "keras/src/backend/numpy/trainer.py::NumpyTrainer.evaluate",
+   "keras/src/backend/numpy/trainer.py::NumpyTrainer.predict",
+   "keras/src/backend/tensorflow/trainer.py::<module>",
+   "keras/src/backend/tensorflow/trainer.py::TFEpochIterator",
+   "keras/src/backend/tensorflow/trainer.py::TFEpochIterator.__init__",
+   "keras/src/backend/tensorflow/trainer.py::TFEpochIterator._get_iterator",
+   "keras/src/backend/tensorflow/trainer.py::TFEpochIterator.catch_stop_iteration",
+   "keras/src/backend/tensorflow/trainer.py::TFEpochIterator.enumerate_epoch",
+   "keras/src/backend/tensorflow/trainer.py::TFEpochIterator.tf_sync",
+   "keras/src/backend/tensorflow/trainer.py::TensorFlowTrainer",
+   "keras/src/backend/tensorflow/trainer.py::TensorFlowTrainer._maybe_symbolic_build",
+   "keras/src/backend/tensorflow/trainer.py::TensorFlowTrainer.evaluate",
+   "keras/src/backend/tensorflow/trainer.py::TensorFlowTrainer.fit",
+   "keras/src/backend/tensorflow/trainer.py::TensorFlowTrainer.make_predict_function",
+   "keras/src/backend/tensorflow/trainer.py::TensorFlowTrainer.make_test_function",
+   "keras/src/backend/tensorflow/trainer.py::TensorFlowTrainer.make_train_function",
+   "keras/src/backend/tensorflow/trainer.py::TensorFlowTrainer.predict",
+   "keras/src/backend/tensorflow/trainer.py::TensorFlowTrainer.predict_step",
+   "keras/src/backend/tensorflow/trainer.py::reduce_per_replica",
+   "keras/src/backend/torch/trainer.py::TorchTrainer.evaluate",
+   "keras/src/backend/torch/trainer.py::TorchTrainer.fit",
+   "keras/src/backend/torch/trainer.py::TorchTrainer.predict",
+   "keras/src/trainers/epoch_iterator.py::<module>",
+   "keras/src/trainers/epoch_iterator.py::EpochIterator",
+   "keras/src/trainers/epoch_iterator.py::EpochIterator.__init__",
+   "keras/src/trainers/epoch_iterator.py::EpochIterator._get_iterator",
+   "keras/src/trainers/epoch_iterator.py::EpochIterator.enumerate_epoch",
+   "keras/src/trainers/epoch_iterator.py::EpochIterator.num_batches",
+   "keras/src/trainers/trainer.py::Trainer._symbolic_build"
+  ],
+  "keras-team__keras-20443": [
+   "keras/src/utils/io_utils.py::<module>",
+   "keras/src/utils/io_utils.py::ask_to_proceed_with_overwrite",
+   "keras/src/utils/io_utils.py::print_msg"
+  ],
+  "keras-team__keras-20534": [
+   "keras/src/optimizers/base_optimizer.py::BaseOptimizer._filter_empty_gradients",
+   "keras/src/optimizers/base_optimizer.py::BaseOptimizer._overwrite_variables_directly_with_gradients"
+  ],
+  "keras-team__keras-20609": [
+   "keras/src/backend/tensorflow/trainer.py::<module>",
+   "keras/src/backend/tensorflow/trainer.py::TFEpochIterator",
+   "keras/src/backend/tensorflow/trainer.py::TFEpochIterator.__init__",
+   "keras/src/backend/tensorflow/trainer.py::TensorFlowTrainer._maybe_symbolic_build",
+   "keras/src/losses/loss.py::<module>",
+   "keras/src/losses/loss.py::apply_mask",
+   "keras/src/losses/loss.py::reduce_values",
+   "keras/src/trainers/trainer.py::Trainer",
+   "keras/src/trainers/trainer.py::Trainer._compute_loss",
+   "keras/src/trainers/trainer.py::Trainer.compute_loss",
+   "keras/src/trainers/trainer.py::Trainer.stateless_compute_loss"
+  ],
+  "keras-team__keras-20703": [
+   "keras/src/backend/common/variables.py::Variable",
+   "keras/src/backend/common/variables.py::Variable.__init__",
+   "keras/src/layers/layer.py::Layer.add_weight",
+   "keras/src/optimizers/base_optimizer.py::BaseOptimizer.add_variable",
+   "keras/src/optimizers/base_optimizer.py::BaseOptimizer.add_variable_from_reference"
+  ],
+  "keras-team__keras-20765": [
+   "keras/src/layers/rnn/time_distributed.py::TimeDistributed.call"
+  ],
+  "keras-team__keras-20824": [
+   "keras/src/saving/serialization_lib.py::_retrieve_class_or_fn"
+  ],
+  "keras-team__keras-20880": [
+   "keras/src/export/tfsm_layer.py::TFSMLayer",
+   "keras/src/export/tfsm_layer.py::TFSMLayer.__init__",
+   "keras/src/export/tfsm_layer.py::TFSMLayer._add_existing_weight",
+   "keras/src/layers/activations/activation.py::Activation",
+   "keras/src/layers/activations/activation.py::Activation.__init__",
+   "keras/src/layers/activations/activation.py::Activation.call",
+   "keras/src/layers/activations/elu.py::ELU",
+   "keras/src/layers/activations/elu.py::ELU.__init__",
+   "keras/src/layers/activations/elu.py::ELU.call",
+   "keras/src/layers/activations/leaky_relu.py::LeakyReLU",
+   "keras/src/layers/activations/leaky_relu.py::LeakyReLU.__init__",
+   "keras/src/layers/activations/leaky_relu.py::LeakyReLU.call",
+   "keras/src/layers/activations/prelu.py::PReLU",
+   "keras/src/layers/activations/prelu.py::PReLU.build",
+   "keras/src/layers/activations/prelu.py::PReLU.call",
+   "keras/src/layers/activations/relu.py::ReLU",
+   "keras/src/layers/activations/relu.py::ReLU.__init__",
+   "keras/src/layers/activations/relu.py::ReLU.call",
+   "keras/src/layers/activations/softmax.py::Softmax",
+   "keras/src/layers/activations/softmax.py::Softmax.__init__",
+   "keras/src/layers/activations/softmax.py::Softmax.call",
+   "keras/src/layers/attention/additive_attention.py::AdditiveAttention",
+   "keras/src/layers/attention/additive_attention.py::AdditiveAttention._calculate_scores",
+   "keras/src/layers/attention/additive_attention.py::AdditiveAttention.build",
+   "keras/src/layers/attention/attention.py::Attention",
+   "keras/src/layers/attention/attention.py::Attention._calculate_scores",
+   "keras/src/layers/attention/attention.py::Attention.build",
+   "keras/src/layers/attention/grouped_query_attention.py::GroupedQueryAttention",
+   "keras/src/layers/attention/grouped_query_attention.py::GroupedQueryAttention._get_common_kwargs_for_sublayer",
+   "keras/src/layers/attention/grouped_query_attention.py::GroupedQueryAttention.build",
+   "keras/src/layers/attention/multi_head_attention.py::MultiHeadAttention",
+   "keras/src/layers/attention/multi_head_attention.py::MultiHeadAttention.build",
+   "keras/src/layers/attention/multi_head_attention.py::MultiHeadAttention.query_dense",
+   "keras/src/layers/convolutional/base_conv_transpose.py::BaseConvTranspose",
+   "keras/src/layers/convolutional/base_conv_transpose.py::BaseConvTranspose.build",
+   "keras/src/layers/convolutional/base_conv_transpose.py::BaseConvTranspose.call",
+   "keras/src/layers/convolutional/base_depthwise_conv.py::BaseDepthwiseConv",
+   "keras/src/layers/convolutional/base_depthwise_conv.py::BaseDepthwiseConv._get_input_channel",
+   "keras/src/layers/convolutional/base_depthwise_conv.py::BaseDepthwiseConv.build",
+   "keras/src/layers/convolutional/base_separable_conv.py::BaseSeparableConv",
+   "keras/src/layers/convolutional/base_separable_conv.py::BaseSeparableConv.build",
+   "keras/src/layers/convolutional/base_separable_conv.py::BaseSeparableConv.call",
+   "keras/src/layers/core/identity.py::Identity",
+   "keras/src/layers/core/identity.py::Identity.__init__",
+   "keras/src/layers/core/identity.py::Identity.call",
+   "keras/src/layers/core/masking.py::Masking",
+   "keras/src/layers/core/masking.py::Masking.__init__",
+   "keras/src/layers/core/masking.py::Masking.compute_mask",
+   "keras/src/layers/core/wrapper.py::Wrapper",
+   "keras/src/layers/core/wrapper.py::Wrapper.build",
+   "keras/src/layers/core/wrapper.py::Wrapper.get_config",
+   "keras/src/layers/layer.py::Layer",
+   "keras/src/layers/layer.py::Layer.__call__",
+   "keras/src/layers/layer.py::Layer._initialize_tracker",
+   "keras/src/layers/layer.py::Layer._obj_type",
+   "keras/src/layers/layer.py::Layer.build_from_config",
+   "keras/src/layers/layer.py::Layer.path",
+   "keras/src/layers/merging/base_merge.py::Merge",
+   "keras/src/layers/merging/base_merge.py::Merge.build",
+   "keras/src/layers/merging/base_merge.py::Merge.call",
+   "keras/src/layers/merging/concatenate.py::Concatenate",
+   "keras/src/layers/merging/concatenate.py::Concatenate._merge_function",
+   "keras/src/layers/merging/concatenate.py::Concatenate.build",
+   "keras/src/layers/merging/dot.py::Dot",
+   "keras/src/layers/merging/dot.py::Dot._merge_function",
+   "keras/src/layers/merging/dot.py::Dot.build",
+   "keras/src/layers/normalization/batch_normalization.py::BatchNormalization",
+   "keras/src/layers/normalization/batch_normalization.py::BatchNormalization.build",
+   "keras/src/layers/normalization/batch_normalization.py::BatchNormalization.compute_output_shape",
+   "keras/src/layers/normalization/layer_normalization.py::LayerNormalization",
+   "keras/src/layers/normalization/layer_normalization.py::LayerNormalization.build",
+   "keras/src/layers/normalization/layer_normalization.py::LayerNormalization.call",
+   "keras/src/layers/normalization/unit_normalization.py::UnitNormalization",
+   "keras/src/layers/normalization/unit_normalization.py::UnitNormalization.__init__",
+   "keras/src/layers/normalization/unit_normalization.py::UnitNormalization.call",
+   "keras/src/layers/pooling/base_global_pooling.py::BaseGlobalPooling",
+   "keras/src/layers/pooling/base_global_pooling.py::BaseGlobalPooling.__init__",
+   "keras/src/layers/pooling/base_global_pooling.py::BaseGlobalPooling.call",
+   "keras/src/layers/pooling/base_pooling.py::BasePooling",
+   "keras/src/layers/pooling/base_pooling.py::BasePooling.__init__",
+   "keras/src/layers/pooling/base_pooling.py::BasePooling.call",
+   "keras/src/layers/preprocessing/discretization.py::Discretization",
+   "keras/src/layers/preprocessing/discretization.py::Discretization.__init__",
+   "keras/src/layers/preprocessing/discretization.py::Discretization.build",
+   "keras/src/layers/preprocessing/discretization.py::Discretization.input_dtype",
+   "keras/src/layers/preprocessing/index_lookup.py::IndexLookup",
+   "keras/src/layers/preprocessing/index_lookup.py::IndexLookup.build",
+   "keras/src/layers/preprocessing/index_lookup.py::IndexLookup.build_from_config",
+   "keras/src/layers/preprocessing/index_lookup.py::IndexLookup.compute_dtype",
+   "keras/src/layers/preprocessing/index_lookup.py::IndexLookup.get_build_config",
+   "keras/src/layers/preprocessing/index_lookup.py::IndexLookup.set_vocabulary",
+   "keras/src/layers/preprocessing/normalization.py::Normalization",
+   "keras/src/layers/preprocessing/normalization.py::Normalization.adapt",
+   "keras/src/layers/preprocessing/normalization.py::Normalization.build",
+   "keras/src/layers/preprocessing/stft_spectrogram.py::STFTSpectrogram",
+   "keras/src/layers/preprocessing/stft_spectrogram.py::STFTSpectrogram._adjust_shapes",
+   "keras/src/layers/preprocessing/stft_spectrogram.py::STFTSpectrogram.build",
+   "keras/src/layers/regularization/activity_regularization.py::ActivityRegularization",
+   "keras/src/layers/regularization/activity_regularization.py::ActivityRegularization.__init__",
+   "keras/src/layers/regularization/activity_regularization.py::ActivityRegularization.call",
+   "keras/src/layers/regularization/alpha_dropout.py::AlphaDropout",
+   "keras/src/layers/regularization/alpha_dropout.py::AlphaDropout.__init__",
+   "keras/src/layers/regularization/alpha_dropout.py::AlphaDropout.call",
+   "keras/src/layers/regularization/dropout.py::Dropout",
+   "keras/src/layers/regularization/dropout.py::Dropout.__init__",
+   "keras/src/layers/regularization/dropout.py::Dropout.call",
+   "keras/src/layers/regularization/gaussian_dropout.py::GaussianDropout",
+   "keras/src/layers/regularization/gaussian_dropout.py::GaussianDropout.__init__",
+   "keras/src/layers/regularization/gaussian_dropout.py::GaussianDropout.call",
+   "keras/src/layers/regularization/gaussian_noise.py::GaussianNoise",
+   "keras/src/layers/regularization/gaussian_noise.py::GaussianNoise.__init__",
+   "keras/src/layers/regularization/gaussian_noise.py::GaussianNoise.call",
+   "keras/src/layers/reshaping/reshape.py::Reshape",
+   "keras/src/layers/reshaping/reshape.py::Reshape.build",
+   "keras/src/layers/reshaping/reshape.py::Reshape.call",
+   "keras/src/layers/rnn/bidirectional.py::Bidirectional",
+   "keras/src/layers/rnn/bidirectional.py::Bidirectional.build",
+   "keras/src/layers/rnn/bidirectional.py::Bidirectional.compute_mask",
+   "keras/src/layers/rnn/conv_lstm.py::ConvLSTMCell",
+   "keras/src/layers/rnn/conv_lstm.py::ConvLSTMCell.build",
+   "keras/src/layers/rnn/conv_lstm.py::ConvLSTMCell.call",
+   "keras/src/layers/rnn/gru.py::GRUCell",
+   "keras/src/layers/rnn/gru.py::GRUCell.build",
+   "keras/src/layers/rnn/gru.py::GRUCell.call",
+   "keras/src/layers/rnn/lstm.py::LSTMCell",
+   "keras/src/layers/rnn/lstm.py::LSTMCell._compute_carry_and_output",
+   "keras/src/layers/rnn/lstm.py::LSTMCell.build",
+   "keras/src/layers/rnn/rnn.py::RNN",
+   "keras/src/layers/rnn/rnn.py::RNN._create_state_variables",
+   "keras/src/layers/rnn/rnn.py::RNN.build",
+   "keras/src/layers/rnn/simple_rnn.py::SimpleRNNCell",
+   "keras/src/layers/rnn/simple_rnn.py::SimpleRNNCell.build",
+   "keras/src/layers/rnn/simple_rnn.py::SimpleRNNCell.call",
+   "keras/src/layers/rnn/stacked_rnn_cells.py::StackedRNNCells",
+   "keras/src/layers/rnn/stacked_rnn_cells.py::StackedRNNCells.build",
+   "keras/src/layers/rnn/stacked_rnn_cells.py::StackedRNNCells.get_config",
+   "keras/src/layers/rnn/time_distributed.py::TimeDistributed",
+   "keras/src/layers/rnn/time_distributed.py::TimeDistributed.build",
+   "keras/src/layers/rnn/time_distributed.py::TimeDistributed.call",
+   "keras/src/models/sequential.py::Sequential",
+   "keras/src/models/sequential.py::Sequential.build",
+   "keras/src/models/sequential.py::Sequential.call",
+   "keras/src/utils/jax_layer.py::JaxLayer",
+   "keras/src/utils/jax_layer.py::JaxLayer.__init__",
+   "keras/src/utils/jax_layer.py::JaxLayer.build",
+   "keras/src/utils/jax_layer.py::JaxLayer.call"
+  ],
+  "keras-team__keras-21072": [
+   "keras/src/backend/common/variables.py::Variable",
+   "keras/src/backend/common/variables.py::Variable.__init__",
+   "keras/src/backend/common/variables.py::Variable.aggregation",
+   "keras/src/backend/common/variables.py::Variable.value",
+   "keras/src/backend/tensorflow/core.py::<module>",
+   "keras/src/backend/tensorflow/core.py::Variable",
+   "keras/src/backend/tensorflow/core.py::Variable._initialize",
+   "keras/src/backend/tensorflow/core.py::Variable._initialize_with_initializer",
+   "keras/src/backend/tensorflow/core.py::Variable._map_aggregation",
+   "keras/src/backend/tensorflow/core.py::convert_to_tensor",
+   "keras/src/metrics/metric.py::Metric.add_variable"
+  ]
+ },
+ "granularity": "function",
+ "learn_errors": {},
+ "lift": {
+  "false_positive_rise_pts": 0.0,
+  "localization_lift_pts": 0.0
+ },
+ "memory_locations": {},
+ "mode": "rolling",
+ "n_errors": 0,
+ "n_eval": 28,
+ "retrieval_hit_rate": 0.0,
+ "retrieved": {
+  "keras-team__keras-19915": [],
+  "keras-team__keras-19924": [],
+  "keras-team__keras-19931": [],
+  "keras-team__keras-19937": [],
+  "keras-team__keras-19955": [],
+  "keras-team__keras-19973": [],
+  "keras-team__keras-19998": [],
+  "keras-team__keras-20064": [],
+  "keras-team__keras-20079": [],
+  "keras-team__keras-20120": [],
+  "keras-team__keras-20122": [],
+  "keras-team__keras-20123": [],
+  "keras-team__keras-20125": [],
+  "keras-team__keras-20168": [],
+  "keras-team__keras-20197": [],
+  "keras-team__keras-20206": [],
+  "keras-team__keras-20296": [],
+  "keras-team__keras-20383": [],
+  "keras-team__keras-20389": [],
+  "keras-team__keras-20396": [],
+  "keras-team__keras-20443": [],
+  "keras-team__keras-20534": [],
+  "keras-team__keras-20609": [],
+  "keras-team__keras-20703": [],
+  "keras-team__keras-20765": [],
+  "keras-team__keras-20824": [],
+  "keras-team__keras-20880": [],
+  "keras-team__keras-21072": []
+ },
+ "treatment": {
+  "false_positive_rate": 0.7733,
+  "localization_rate": 0.3214,
+  "n_false_positive": 58,
+  "n_flags": 75,
+  "n_localized": 9,
+  "n_tasks": 28,
+  "per_repo": {
+   "keras-team/keras": {
+    "false_positive_rate": 0.7733,
+    "localization_rate": 0.3214,
+    "n_false_positive": 58,
+    "n_flags": 75,
+    "n_localized": 9,
+    "n_tasks": 28
+   }
+  }
+ },
+ "treatment_flags": {
+  "keras-team__keras-19915": [
+   "keras/src/export/__init__.py",
+   "keras/src/saving/__init__.py",
+   "keras/src/layers/layer.py"
+  ],
+  "keras-team__keras-19924": [
+   "keras/src/saving/saving_lib.py",
+   "keras/src/saving/saving_api.py",
+   "keras/src/saving/saving_lib.py"
+  ],
+  "keras-team__keras-19931": [
+   "keras/src/backend/tensorflow/numpy.py",
+   "keras/src/backend/tensorflow/numpy.py",
+   "keras/src/backend/tensorflow/numpy.py"
+  ],
+  "keras-team__keras-19937": [],
+  "keras-team__keras-19955": [
+   "keras/src/callbacks/learning_rate_scheduler.py",
+   "keras/src/callbacks/learning_rate_scheduler.py",
+   "keras/src/callbacks/learning_rate_scheduler.py"
+  ],
+  "keras-team__keras-19973": [
+   "keras/src/layers/attention/multi_head_attention.py",
+   "keras/src/layers/attention/multi_head_attention.py",
+   "keras/src/layers/attention/multi_head_attention.py"
+  ],
+  "keras-team__keras-19998": [
+   "keras/src/optimizers/sgd.py",
+   "keras/src/optimizers/adam.py",
+   "keras/src/optimizers/sgd.py"
+  ],
+  "keras-team__keras-20064": [
+   "keras/src/backend/tensorflow/core.py"
+  ],
+  "keras-team__keras-20079": [
+   "keras/src/layers/layer.py",
+   "keras/src/layers/preprocessing/rescaling.py"
+  ],
+  "keras-team__keras-20120": [
+   "keras/src/models/model.py",
+   "keras/src/models/model.py",
+   "keras/src/models/model.py"
+  ],
+  "keras-team__keras-20122": [
+   "keras/src/backend/tensorflow/linalg.py",
+   "keras/src/ops/linalg.py",
+   "keras/src/backend/tensorflow/linalg.py"
+  ],
+  "keras-team__keras-20123": [
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py",
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py",
+   "keras/src/trainers/data_adapters/py_dataset_adapter.py"
+  ],
+  "keras-team__keras-20125": [
+   "keras/src/backend/tensorflow/core.py",
+   "keras/src/backend/common/keras_tensor.py"
+  ],
+  "keras-team__keras-20168": [
+   "keras/src/saving/saving_lib.py",
+   "keras/src/saving/saving_lib.py",
+   "keras/src/saving/serialization_lib.py"
+  ],
+  "keras-team__keras-20197": [
+   "keras/src/trainers/compile_utils.py",
+   "keras/src/trainers/compile_utils.py",
+   "keras/src/trainers/compile_utils.py"
+  ],
+  "keras-team__keras-20206": [
+   "keras/src/models/sequential.py",
+   "keras/src/models/sequential.py",
+   "keras/src/models/sequential.py"
+  ],
+  "keras-team__keras-20296": [
+   "keras/src/trainers/compile_utils.py",
+   "keras/src/trainers/compile_utils.py",
+   "keras/src/trainers/compile_utils.py"
+  ],
+  "keras-team__keras-20383": [
+   "keras/src/ops/operation_utils.py",
+   "keras/src/layers/core/dense.py"
+  ],
+  "keras-team__keras-20389": [
+   "keras/src/models/functional.py",
+   "keras/src/layers/layer.py",
+   "keras/src/models/functional.py"
+  ],
+  "keras-team__keras-20396": [
+   "keras/src/trainers/trainer.py",
+   "keras/src/trainers/trainer.py",
+   "keras/src/backend/tensorflow/trainer.py"
+  ],
+  "keras-team__keras-20443": [
+   "keras/src/utils/traceback_utils.py",
+   "keras/src/utils/traceback_utils.py",
+   "keras/src/utils/traceback_utils.py"
+  ],
+  "keras-team__keras-20534": [
+   "keras/src/optimizers/base_optimizer.py",
+   "keras/src/optimizers/base_optimizer.py",
+   "keras/src/optimizers/base_optimizer.py"
+  ],
+  "keras-team__keras-20609": [
+   "keras/src/trainers/trainer.py",
+   "keras/src/trainers/trainer.py",
+   "keras/src/trainers/trainer.py"
+  ],
+  "keras-team__keras-20703": [
+   "keras/api/_tf_keras/keras/optimizers/__init__.py",
+   "keras/src/optimizers/__init__.py"
+  ],
+  "keras-team__keras-20765": [
+   "keras/src/layers/core/embedding.py",
+   "keras/src/layers/rnn/time_distributed.py",
+   "keras/src/backend/common/masking.py"
+  ],
+  "keras-team__keras-20824": [
+   "keras/src/saving/object_registration.py",
+   "keras/src/saving/saving_lib.py",
+   "keras/src/saving/object_registration.py"
+  ],
+  "keras-team__keras-20880": [
+   "keras/src/layers/layer.py",
+   "keras/src/layers/layer.py",
+   "keras/src/layers/layer.py"
+  ],
+  "keras-team__keras-21072": [
+   "keras/src/trainers/trainer.py",
+   "keras/src/trainers/trainer.py",
+   "keras/src/trainers/trainer.py"
+  ]
+ },
+ "warmup": 20
+}
