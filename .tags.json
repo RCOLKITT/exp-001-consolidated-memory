@@ -1,0 +1,12 @@
+[
+ {
+  "name": "prereg-v1",
+  "sha": "a58d7e20ca6bda3aadf2240afe19d7161a024ba7",
+  "message": "EXP-001 pre-registration v1 (2026-09-10): docs/PREREGISTRATION.md, docs/exp-run.prereg.json"
+ },
+ {
+  "name": "prereg-v2",
+  "sha": "ab9e9bfa7e54a4f6905422d126a9b6ebf87e0ad3",
+  "message": "EXP-001 pre-registration v2 (2026-09-11): docs/PREREGISTRATION-v2.md, docs/exp-run.v2.json, placebo pool sha256 6c717cf7"
+ }
+]
