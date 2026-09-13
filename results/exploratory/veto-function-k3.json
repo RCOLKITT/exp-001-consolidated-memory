@@ -1,0 +1,116 @@
+{
+ "level": "function",
+ "k": 3,
+ "total": {
+  "tasks": 526,
+  "flags": 1390,
+  "fp": 1026,
+  "hit_before": 258,
+  "hit_after": 258,
+  "removed_fp": 45,
+  "removed_ok": 0,
+  "tasks_touched": 43
+ },
+ "per_repo": {
+  "conan-io/conan": {
+   "tasks": 143,
+   "flags": 390,
+   "fp": 307,
+   "hit_before": 60,
+   "hit_after": 60,
+   "removed_fp": 12,
+   "removed_ok": 0,
+   "tasks_touched": 12
+  },
+  "deepset-ai/haystack": {
+   "tasks": 68,
+   "flags": 165,
+   "fp": 82,
+   "hit_before": 52,
+   "hit_after": 52,
+   "removed_fp": 4,
+   "removed_ok": 0,
+   "tasks_touched": 4
+  },
+  "aws-cloudformation/cfn-lint": {
+   "tasks": 79,
+   "flags": 221,
+   "fp": 189,
+   "hit_before": 26,
+   "hit_after": 26,
+   "removed_fp": 25,
+   "removed_ok": 0,
+   "tasks_touched": 23
+  },
+  "matplotlib/matplotlib": {
+   "tasks": 79,
+   "flags": 181,
+   "fp": 126,
+   "hit_before": 47,
+   "hit_after": 47,
+   "removed_fp": 0,
+   "removed_ok": 0,
+   "tasks_touched": 0
+  },
+  "pylint-dev/pylint": {
+   "tasks": 42,
+   "flags": 112,
+   "fp": 85,
+   "hit_before": 20,
+   "hit_after": 20,
+   "removed_fp": 4,
+   "removed_ok": 0,
+   "tasks_touched": 4
+  },
+  "instructlab/instructlab": {
+   "tasks": 31,
+   "flags": 88,
+   "fp": 58,
+   "hit_before": 16,
+   "hit_after": 16,
+   "removed_fp": 0,
+   "removed_ok": 0,
+   "tasks_touched": 0
+  },
+  "keras-team/keras": {
+   "tasks": 28,
+   "flags": 75,
+   "fp": 58,
+   "hit_before": 9,
+   "hit_after": 9,
+   "removed_fp": 0,
+   "removed_ok": 0,
+   "tasks_touched": 0
+  },
+  "pdm-project/pdm": {
+   "tasks": 15,
+   "flags": 42,
+   "fp": 33,
+   "hit_before": 8,
+   "hit_after": 8,
+   "removed_fp": 0,
+   "removed_ok": 0,
+   "tasks_touched": 0
+  },
+  "reflex-dev/reflex": {
+   "tasks": 24,
+   "flags": 67,
+   "fp": 51,
+   "hit_before": 11,
+   "hit_after": 11,
+   "removed_fp": 0,
+   "removed_ok": 0,
+   "tasks_touched": 0
+  },
+  "sphinx-doc/sphinx": {
+   "tasks": 17,
+   "flags": 49,
+   "fp": 37,
+   "hit_before": 9,
+   "hit_after": 9,
+   "removed_fp": 0,
+   "removed_ok": 0,
+   "tasks_touched": 0
+  }
+ }
+}
