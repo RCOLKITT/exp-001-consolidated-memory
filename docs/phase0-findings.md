@@ -632,3 +632,48 @@ Cost of the registered run: ≈ 3,900 model calls across runs 10–12 and
 18–20 (the failed attempts 13–17 made 0–10 calls each). Files:
 `results/experiment/{18,19,20}/rolling/` (per repo), `results/experiment/21/`
 (merged gate4, paired analyses, config check).
+
+
+## 21. Exploratory, not registered: a veto memory (simulated on the v2 control flags)
+
+Both registered runs asked memory to point *at* the gold. The recorded
+control flags allow the opposite question to be answered without spend:
+what if memory remembered where the verifier is habitually *wrong* and
+suppressed those locations? `phase4.veto_sim` replays the rolling control
+arm prequentially (526 scored tasks, 1,390 flags): a location becomes
+vetoed after k false positives and no true positive, and its later flags
+are dropped. It is a filter, so it can only lower hit@3; the question is
+the exchange rate.
+
+| level | k | FP flags removed | correct flags removed | veto precision | hit@3 before → after | FP rate before → after |
+|---|---:|---:|---:|---:|---|---|
+| file | 1 | 294 of 689 (43%) | 33 | 0.90 | 0.641 → 0.624 | 0.496 → 0.372 |
+| file | 2 | 171 of 689 (25%) | 22 | 0.89 | 0.641 → 0.631 | 0.496 → 0.433 |
+| file | 3 | 111 of 689 (16%) | 13 | 0.90 | 0.641 → 0.635 | 0.496 → 0.457 |
+| function | 1 | 202 of 1,026 (20%) | 22 | 0.90 | 0.490 → 0.466 | 0.738 → 0.706 |
+| function | 2 | 78 of 1,026 (8%) | 4 | 0.95 | 0.490 → 0.489 | 0.738 → 0.725 |
+| function | 3 | 45 of 1,026 (4%) | 0 | 1.00 | 0.490 → 0.490 | 0.738 → 0.720 |
+
+(`results/exploratory/veto-*.json`; per-repo rows in each file.)
+
+Why this works when the pointer did not: the verifier's wrong guesses
+recur far more than the gold does. At file level, a quarter of all false
+positives are repeats of a file already wrong twice before, and nine
+times out of ten the repeat is wrong again; conan and cfn-lint each have
+a handful of "attractor" files the verifier names for issues that never
+touch them. The gold, by contrast, recurred at the same file only 55% of
+the time and at the same function 29% (§10–12), and even then the
+verifier had to *use* the pointer correctly. A veto needs no cooperation
+from the verifier: it acts on the output.
+
+Caveats that keep this exploratory: it is post hoc on data the v2 run
+produced; the filter never re-asks the verifier, so a deployed veto that
+frees a slot (or is injected as "do not flag X", which v1/v2 show perturbs
+answers) could do better or worse; and the hit@3 cost, though small, is
+real (file k=2: −1.0 pt for a 6.3-pt FP-rate drop). It reframes the
+thesis's second clause — "without inflating false positives" — into a
+first clause of its own: memory of one's own mistakes reduces false
+positives. Registering that would be a new experiment (v3) with FP-rate
+reduction as the primary criterion and a hit@3 loss ceiling as the guard;
+the kernel already supports it (promotion on `good` records with
+file-keyed consolidation is a policy setting, D24).

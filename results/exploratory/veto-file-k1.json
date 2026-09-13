@@ -1,0 +1,116 @@
+{
+ "level": "file",
+ "k": 1,
+ "total": {
+  "tasks": 526,
+  "flags": 1390,
+  "fp": 689,
+  "hit_before": 337,
+  "hit_after": 328,
+  "removed_fp": 294,
+  "removed_ok": 33,
+  "tasks_touched": 225
+ },
+ "per_repo": {
+  "conan-io/conan": {
+   "tasks": 143,
+   "flags": 390,
+   "fp": 214,
+   "hit_before": 82,
+   "hit_after": 78,
+   "removed_fp": 100,
+   "removed_ok": 11,
+   "tasks_touched": 71
+  },
+  "deepset-ai/haystack": {
+   "tasks": 68,
+   "flags": 165,
+   "fp": 45,
+   "hit_before": 58,
+   "hit_after": 58,
+   "removed_fp": 21,
+   "removed_ok": 2,
+   "tasks_touched": 21
+  },
+  "aws-cloudformation/cfn-lint": {
+   "tasks": 79,
+   "flags": 221,
+   "fp": 159,
+   "hit_before": 32,
+   "hit_after": 32,
+   "removed_fp": 87,
+   "removed_ok": 1,
+   "tasks_touched": 53
+  },
+  "matplotlib/matplotlib": {
+   "tasks": 79,
+   "flags": 181,
+   "fp": 65,
+   "hit_before": 64,
+   "hit_after": 60,
+   "removed_fp": 18,
+   "removed_ok": 8,
+   "tasks_touched": 23
+  },
+  "pylint-dev/pylint": {
+   "tasks": 42,
+   "flags": 112,
+   "fp": 63,
+   "hit_before": 22,
+   "hit_after": 21,
+   "removed_fp": 23,
+   "removed_ok": 4,
+   "tasks_touched": 18
+  },
+  "instructlab/instructlab": {
+   "tasks": 31,
+   "flags": 88,
+   "fp": 31,
+   "hit_before": 23,
+   "hit_after": 23,
+   "removed_fp": 11,
+   "removed_ok": 1,
+   "tasks_touched": 9
+  },
+  "keras-team/keras": {
+   "tasks": 28,
+   "flags": 75,
+   "fp": 39,
+   "hit_before": 15,
+   "hit_after": 15,
+   "removed_fp": 12,
+   "removed_ok": 2,
+   "tasks_touched": 10
+  },
+  "pdm-project/pdm": {
+   "tasks": 15,
+   "flags": 42,
+   "fp": 27,
+   "hit_before": 9,
+   "hit_after": 9,
+   "removed_fp": 8,
+   "removed_ok": 0,
+   "tasks_touched": 7
+  },
+  "reflex-dev/reflex": {
+   "tasks": 24,
+   "flags": 67,
+   "fp": 23,
+   "hit_before": 19,
+   "hit_after": 19,
+   "removed_fp": 7,
+   "removed_ok": 3,
+   "tasks_touched": 7
+  },
+  "sphinx-doc/sphinx": {
+   "tasks": 17,
+   "flags": 49,
+   "fp": 23,
+   "hit_before": 13,
+   "hit_after": 13,
+   "removed_fp": 7,
+   "removed_ok": 1,
+   "tasks_touched": 6
+  }
+ }
+}
