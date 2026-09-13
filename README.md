@@ -35,7 +35,9 @@ number 9, placebo margin 4.5, gated τ 0.50 secondary. **Result: H2 killed** (ru
 −1.33 pts vs control on 526 paired tasks (CI −3.3 to +0.6), treatment − placebo
 −0.57, FP +0.55, negative control 0.00. Two registered experiments, two clean
 negatives; the placebo arm shows the verifier reacts to the memory section's
-presence more than its content.
+presence more than its content. A v3 (veto memory) is drafted, not registered:
+[docs/PREREGISTRATION-v3-DRAFT.md](docs/PREREGISTRATION-v3-DRAFT.md) — its own placebo
+analysis says most of the gain is rank, not memory (findings §22, D39).
 
 ## Layout
 

@@ -677,3 +677,29 @@ positives. Registering that would be a new experiment (v3) with FP-rate
 reduction as the primary criterion and a hit@3 loss ceiling as the guard;
 the kernel already supports it (promotion on `good` records with
 file-keyed consolidation is a policy setting, D24).
+
+
+## 22. Veto memory against a matched placebo (development set; input to the v3 draft)
+
+Findings §21 simulated the veto on the v2 rolling flags, where function
+flags collapse to files and flatter file-level precision. Repeating it on
+v1's genuine file-level control flags (378 scored tasks, 1,057 flags) and
+adding the correct null — remove the *same number* of flags at the *same
+eligible ranks* at random — gives the honest picture:
+
+| rule | veto vs control | placebo vs control | veto − placebo |
+|---|---|---|---|
+| k = 2, rank-1 protected | FP −2.1 pts, hit −0.5, precision 0.96 | FP −1.7, hit −1.1, precision 0.91 | FP −0.4, hit +0.5, precision +0.04 |
+| k = 2, any rank | FP −2.7, hit −2.4, precision 0.91 | FP −1.2, hit −5.8, precision 0.81 | FP −1.5, hit +3.4, precision +0.10 |
+
+The placebo's own precision (0.91 at ranks 2–3) is the finding: the
+verifier's second and third guesses are false positives about nine times
+in ten, so *any* rule that drops them lowers the false-positive rate. The
+veto's targeting is real — it beats random removal on all three measures,
+both variants — but its increment is 0.4 FP points when the top guess is
+protected and 1.5 when it is not, the latter at a 2.4-point hit@3 cost.
+Bootstrap MDEs scaled to the largest held-out pool the corpus offers (759
+tasks) make the protected variant untestable and the unprotected one
+testable, barely (`docs/PREREGISTRATION-v3-DRAFT.md` §7). Rule choices
+here used only the ten development repos; the held-out repos' flags and
+gold have not been read.

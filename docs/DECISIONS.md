@@ -481,3 +481,15 @@ this corpus with this verifier; a different thesis (e.g. memory as a
 *veto* on repeated false positives rather than a pointer to gold, or
 memory consumed by a retrieval-augmented localizer that reads code
 rather than a file listing) would be a new experiment, not a v3.
+
+### D39. v3 drafted (veto memory) with the placebo verdict stated up front
+The draft fixes the veto rule on the ten development repos and reserves
+every other repository (60 with chains ≥ 5, 759 tasks) as held-out, so a
+registered run would be out-of-sample. The development data say the
+mechanism is targeted but small: matched random removal of low-ranked
+flags captures most of the false-positive reduction, because the
+verifier's rank-2/3 guesses are ~90% wrong. The recommendation recorded
+in the draft (§9) is to take that as the product lesson — show fewer or
+rank-weighted pointers — and run the veto experiment (variant U) only if
+repository-specific suppression is itself the requirement. No values
+are registered; nothing has been spent.
