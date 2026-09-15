@@ -1,0 +1,26 @@
+{
+ "level": "file",
+ "k": 2,
+ "total": {
+  "tasks": 36,
+  "flags": 91,
+  "fp": 31,
+  "hit_before": 35,
+  "hit_after": 35,
+  "removed_fp": 0,
+  "removed_ok": 0,
+  "tasks_touched": 0
+ },
+ "per_repo": {
+  "rcolkitt/vasperamemory": {
+   "tasks": 36,
+   "flags": 91,
+   "fp": 31,
+   "hit_before": 35,
+   "hit_after": 35,
+   "removed_fp": 0,
+   "removed_ok": 0,
+   "tasks_touched": 0
+  }
+ }
+}

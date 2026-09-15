@@ -493,3 +493,14 @@ in the draft (§9) is to take that as the product lesson — show fewer or
 rank-weighted pointers — and run the veto experiment (variant U) only if
 repository-specific suppression is itself the requirement. No values
 are registered; nothing has been spent.
+
+### D40. Memory Value Report format: history first, model run second, placebo always
+A per-repository report reads the commit history offline (recurrence,
+hotspots, co-change, breadth) before any model call, then runs the
+rolling design with a placebo arm, then maps both onto the product's
+existing tool surface. The first report (rcolkitt/vasperamemory, §23)
+found the control at ceiling because agent-written commit messages name
+the changed files; the run therefore cannot show memory lift, and says
+so. Reports are exploratory and never cite registered thresholds as
+passed or failed. The corpus lives under `reports/<repo>/history/`
+(never a path named `corpus/`, which the repo `.gitignore` drops).

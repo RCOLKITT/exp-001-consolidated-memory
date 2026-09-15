@@ -1,0 +1,112 @@
+{
+ "n_tasks": 36,
+ "arms": {
+  "control": {
+   "hit3": 0.9722222222222222,
+   "fp_rate": 0.34065934065934067,
+   "n_flags": 91,
+   "flags_per_task": 2.5277777777777777,
+   "retrieved": 0
+  },
+  "placebo": {
+   "hit3": 0.9444444444444444,
+   "fp_rate": 0.35555555555555557,
+   "n_flags": 90,
+   "flags_per_task": 2.5,
+   "retrieved": 36,
+   "wins": 0,
+   "losses": 1
+  },
+  "treatment": {
+   "hit3": 0.9444444444444444,
+   "fp_rate": 0.35555555555555557,
+   "n_flags": 90,
+   "flags_per_task": 2.5,
+   "retrieved": 36,
+   "wins": 0,
+   "losses": 1
+  }
+ },
+ "precision_by_rank": {
+  "1": [
+   33,
+   36
+  ],
+  "2": [
+   19,
+   32
+  ],
+  "3": [
+   8,
+   23
+  ]
+ },
+ "first_hit_rank": {
+  "1": 33,
+  "None": 1,
+  "2": 2
+ },
+ "show1": {
+  "hit": 0.9166666666666666,
+  "wrong_per_task": 0.08333333333333333
+ },
+ "show2": {
+  "hit": 0.9722222222222222,
+  "wrong_per_task": 0.4444444444444444
+ },
+ "show3": {
+  "hit": 0.9722222222222222,
+  "wrong_per_task": 0.8611111111111112
+ },
+ "dir_hit3": 0.9722222222222222,
+ "top_fp": [
+  [
+   "lib/utils.ts",
+   2,
+   0
+  ],
+  [
+   "lib/governance/ledger-service.ts",
+   2,
+   1
+  ],
+  [
+   "lib/governance/gate-service.ts",
+   2,
+   2
+  ],
+  [
+   "server/mcp-ai-learning.ts",
+   2,
+   0
+  ],
+  [
+   "components/service-worker-registration.tsx",
+   1,
+   0
+  ],
+  [
+   "lib/metrics-service.ts",
+   1,
+   0
+  ],
+  [
+   "lib/supabase.ts",
+   1,
+   0
+  ],
+  [
+   "__tests__/governance/no-bypass.test.ts",
+   1,
+   0
+  ]
+ ],
+ "rec_hit": [
+  20,
+  20
+ ],
+ "new_hit": [
+  15,
+  16
+ ]
+}

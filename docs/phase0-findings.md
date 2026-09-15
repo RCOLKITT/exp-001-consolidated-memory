@@ -703,3 +703,30 @@ tasks) make the protected variant untestable and the unprotected one
 testable, barely (`docs/PREREGISTRATION-v3-DRAFT.md` §7). Rule choices
 here used only the ten development repos; the held-out repos' flags and
 gold have not been read.
+
+## 23. Memory Value Report on a product repository (exploratory; run 23)
+
+First use of the history corpus builder (`phase0/repo_corpus.py`) and
+file-list mode (no clone on the runner) on a private TypeScript repo,
+rcolkitt/vasperamemory: 60 commits → 46 tasks, warm-up 10, 36 scored,
+arms control / treatment τ=0 / placebo. Full write-up in
+`reports/vasperamemory/MEMORY-VALUE-REPORT.md`.
+
+- Control hit@3 **0.972**, rank-1 precision 0.92; treatment and placebo
+  both 0.944 with the same single extra miss; treatment − placebo = 0.
+  Treatment flags identical to placebo on 20/36 tasks.
+- Cause: commit messages name the gold path in 20/36 scored tasks (file
+  name in 26/36). Agent-written commit messages make the commit log a
+  retrieval index; there is no room for a localizer-side memory.
+- History structure is strong: file recurrence 0.67 after warm-up, seen3
+  0.50 at build 20 (public-repo median ≈ 0.29), nine files carry 38% of
+  hits, register-repo route ↔ four `lib/` files co-change.
+- Veto sim: nothing to remove in 36 tasks.
+- Product read-out: the value is in a change prior, co-change and
+  source→test maps computed from the already-ingested `git_commits`
+  table, and in show-one display; not in prompt injection. Six gaps
+  listed in the report.
+
+Methods note: `phase4/memory_value.py` (read-out), file-list mode worked
+first time on the runner; attempt 1 (run 22) failed only because the
+corpus directory matched the repo `.gitignore`.
