@@ -1,0 +1,45 @@
+{
+  "model": "meta-llama/llama-3.3-70b-instruct",
+  "provider": "openai-compatible",
+  "base_url": "https://openrouter.ai/api/v1",
+  "model_extra": {
+    "provider": {
+      "order": [
+        "Crusoe",
+        "CoreWeave"
+      ],
+      "allow_fallbacks": false
+    }
+  },
+  "similarity": "embedding",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "theta": 0.45,
+  "rho": 0.7,
+  "cluster_similarity": 0.6,
+  "ttl": 30,
+  "top_k": 3,
+  "min_occurrences": 2,
+  "min_distinct_inputs": 2,
+  "report": "memory-value/vasperamemory",
+  "stage": "rolling",
+  "corpus_path": "reports/vasperamemory/corpus",
+  "file_lists": true,
+  "source_suffixes": ".ts,.tsx,.js,.mjs,.py",
+  "repos": [
+    "rcolkitt/vasperamemory"
+  ],
+  "negative_control": "",
+  "warmup": 10,
+  "seed": 17,
+  "granularity": "file",
+  "consolidation": "file",
+  "tau": 0.0,
+  "arms": [
+    "control",
+    "treatment:0",
+    "placebo:0"
+  ],
+  "placebo_pool": "docs/placebo-pool.v2.json",
+  "secondary_repos": []
+}
