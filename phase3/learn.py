@@ -53,6 +53,8 @@ def add_seam_args(ap):
     ap.add_argument("--granularity", default="file", choices=["file", "function"], help="v2: function-level flags via the two-stage verifier (LocalizerV2) and symbolised ground truth")
     ap.add_argument("--tau", type=float, default=0.0, help="v2: retrieval gate — inject a memory only if its retrieval cosine ≥ τ (0 = top-k as v1)")
     ap.add_argument("--functions-cache", default=None, help="v2: JSONL cache of function indexes (default: next to --cache)")
+    ap.add_argument("--file-lists", default=None, help="JSONL {instance_id, files:[...]} of the source tree at each task's base_commit — used instead of a checkout (private repos, value reports)")
+    ap.add_argument("--source-suffixes", default=".py", help="comma list of source suffixes for the verifier's file list and the gold (default .py)")
     ap.add_argument("--min-occurrences", type=int, default=CODE_PROMOTION_POLICY.min_occurrences, help="promotion: bad records needed (pre-registration value, D25)")
     ap.add_argument("--min-distinct-inputs", type=int, default=CODE_PROMOTION_POLICY.min_distinct_inputs, help="promotion: distinct tasks needed (D25)")
 
@@ -60,7 +62,15 @@ def add_seam_args(ap):
 def make_pipeline(repo, tasks, args, cache_path):
     client = CachedClient(None if args.offline else make_client(args.provider, args.base_url, args.api_key_env, args.model_extra), cache_path, offline=args.offline)
     repos_dir = Path(args.repos_dir)
-    list_files = lambda t: repo_file_tree(ensure_checkout(repos_dir, t))
+    suffixes = tuple(x.strip() for x in getattr(args, "source_suffixes", ".py").split(",") if x.strip())
+    if getattr(args, "file_lists", None):
+        trees = {}
+        for line in Path(args.file_lists).read_text().splitlines():
+            if line.strip():
+                row = json.loads(line); trees[row["instance_id"]] = [f for f in row["files"] if f.endswith(suffixes)][:4000]
+        list_files = lambda t: trees[t.instance_id]
+    else:
+        list_files = lambda t: repo_file_tree(ensure_checkout(repos_dir, t), suffixes=suffixes)
     granularity = getattr(args, "granularity", "file")
     index_of = None
     if granularity == "function":                                                # v2
@@ -69,7 +79,7 @@ def make_pipeline(repo, tasks, args, cache_path):
         loc = LocalizerV2(client, args.model, k=args.top_k, effort=args.effort)
         index_of = lambda t, path: fcache.spans(t.repo, t.base_commit, path)
     else:
-        truth = ground_truth_from_tasks(tasks)
+        truth = ground_truth_from_tasks(tasks, suffixes=suffixes if suffixes != (".py",) or getattr(args, "file_lists", None) else None)
         loc = Localizer(client, args.model, k=args.top_k, effort=args.effort)
     sem = similarity(args, Path(cache_path).with_name("embeddings.jsonl"))       # semantic: retrieval (and consolidation if chosen)
     cons = {"file": FileKeyedSimilarity(sem), "function": FunctionKeyedSimilarity(sem), "embedding": sem}[args.consolidation]   # D24 / v2

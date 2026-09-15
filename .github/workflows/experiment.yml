@@ -8,6 +8,9 @@
 #   "placebo_pool": "docs/placebo-pool.v2.json",   # rolling: pool file for a placebo arm (phase4.placebo_pool)
 #   "pool_from_run": 8,                     # stage placebo-pool: build the pool from that run's rolling-N artifact kernels
 #   "merge_runs": [10, 11, 12],             # stage merge: aggregate results/experiment/<n>/rolling of these (sharded) runs
+#   "corpus_path": "reports/<name>/corpus", # value reports: corpus committed on the branch (tasks.jsonl, filelists.jsonl, models.json) instead of a phase0 artifact
+#   "file_lists": true,                     # value reports: use corpus/filelists.jsonl instead of cloning the repository
+#   "source_suffixes": ".ts,.tsx,.js,.py",  # value reports: the verifier's file list and the gold use these suffixes
 #   "eval_run": "",                         # for stage=analyze: experiment run whose results/experiment/<n>/eval to analyse (must be on the branch)
 #   "secondary_repos": [],                  # for the paired analysis: labeled secondary subset (e.g. repos that passed Gate 3)
 #   "granularity": "file",                  # v2: "function" = two-stage verifier, symbolised ground truth, function-keyed consolidation
@@ -58,7 +61,7 @@ jobs:
           for k, d in [("corpus_run", ""), ("stage", "both"), ("learn_run", ""), ("eval_run", ""), ("build", 20), ("min_eval", 10), ("ceiling_metrics", ""), ("ceiling", 0.90),
                        ("negative_control", ""), ("model", "meta-llama/llama-3.3-70b-instruct"), ("provider", "openai-compatible"),
                        ("base_url", "https://openrouter.ai/api/v1"), ("similarity", "embedding"), ("embedding_model", "sentence-transformers/all-MiniLM-L6-v2"),
-                       ("embedding_revision", ""), ("theta", 0.45), ("rho", 0.70), ("cluster_similarity", 0.60), ("ttl", 30), ("top_k", 3), ("seed", 7), ("max_eval_per_repo", 0), ("consolidation", "file"), ("build_rule", ""), ("min_occurrences", 2), ("min_distinct_inputs", 2), ("granularity", "file"), ("tau", 0.0), ("warmup", 20), ("resume_run", ""), ("calibrate_tau", "false"), ("placebo_pool", ""), ("pool_from_run", "")]:
+                       ("embedding_revision", ""), ("theta", 0.45), ("rho", 0.70), ("cluster_similarity", 0.60), ("ttl", 30), ("top_k", 3), ("seed", 7), ("max_eval_per_repo", 0), ("consolidation", "file"), ("build_rule", ""), ("min_occurrences", 2), ("min_distinct_inputs", 2), ("granularity", "file"), ("tau", 0.0), ("warmup", 20), ("resume_run", ""), ("calibrate_tau", "false"), ("placebo_pool", ""), ("pool_from_run", ""), ("corpus_path", ""), ("file_lists", "false"), ("source_suffixes", "")]:
               print(f"{k}={g(k, d)}")
           print("repos=" + ",".join(c.get("repos", [])))
           print("secondary_repos=" + ",".join(c.get("secondary_repos", [])))
@@ -71,6 +74,9 @@ jobs:
         if: steps.cfg.outputs.stage != 'merge' && steps.cfg.outputs.stage != 'placebo-pool'
         run: |
           set -euo pipefail
+          if [ -n "${{ steps.cfg.outputs.corpus_path }}" ]; then
+            mkdir -p corpus && cp "${{ steps.cfg.outputs.corpus_path }}"/*.jsonl "${{ steps.cfg.outputs.corpus_path }}"/models.json corpus/ && ls corpus/ && wc -l corpus/tasks.jsonl && exit 0
+          fi
           N="${{ steps.cfg.outputs.corpus_run }}"; test -n "$N" || { echo "corpus_run is required"; exit 3; }
           RID=$(gh api "repos/${{ github.repository }}/actions/workflows/phase0.yml/runs?per_page=100" --jq ".workflow_runs[] | select(.run_number == $N) | .id" | head -1)
           test -n "$RID" || { echo "no phase0 run $N"; exit 3; }
@@ -91,6 +97,8 @@ jobs:
           P="$P --similarity ${{ steps.cfg.outputs.similarity }} --embedding-model ${{ steps.cfg.outputs.embedding_model }} --theta ${{ steps.cfg.outputs.theta }} --rho ${{ steps.cfg.outputs.rho }} --cluster-similarity ${{ steps.cfg.outputs.cluster_similarity }} --consolidation ${{ steps.cfg.outputs.consolidation }} --min-occurrences ${{ steps.cfg.outputs.min_occurrences }} --min-distinct-inputs ${{ steps.cfg.outputs.min_distinct_inputs }} --granularity ${{ steps.cfg.outputs.granularity }} --tau ${{ steps.cfg.outputs.tau }}"
           [ -n "${{ steps.cfg.outputs.embedding_revision }}" ] && P="$P --embedding-revision ${{ steps.cfg.outputs.embedding_revision }}"
           [ -n "${{ steps.cfg.outputs.negative_control }}" ] && P="$P --negative-control ${{ steps.cfg.outputs.negative_control }}"
+          [ "${{ steps.cfg.outputs.file_lists }}" = "True" ] || [ "${{ steps.cfg.outputs.file_lists }}" = "true" ] && P="$P --file-lists corpus/filelists.jsonl"
+          [ -n "${{ steps.cfg.outputs.source_suffixes }}" ] && P="$P --source-suffixes ${{ steps.cfg.outputs.source_suffixes }}"
           echo "COMMON=$P" >> "$GITHUB_ENV"
           echo 'MX=${{ steps.cfg.outputs.model_extra }}' >> "$GITHUB_ENV"
       - name: Phase 3 — learn

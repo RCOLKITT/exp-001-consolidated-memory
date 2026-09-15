@@ -56,7 +56,10 @@ def parse_patch(patch: str) -> PatchSummary:
 
 def is_test_path(path: str) -> bool:
     p = path.lower()
-    return "test" in p.split("/")[0] or "/tests/" in f"/{p}" or "/test/" in f"/{p}" or p.split("/")[-1].startswith("test_") or p.endswith("_test.py") or p.endswith("conftest.py")
+    name = p.split("/")[-1]
+    return ("test" in p.split("/")[0] or "/tests/" in f"/{p}" or "/test/" in f"/{p}" or "/__tests__/" in f"/{p}" or "/e2e/" in f"/{p}"
+            or name.startswith("test_") or p.endswith("_test.py") or p.endswith("conftest.py")
+            or ".test." in name or ".spec." in name or name.startswith("playwright.config"))
 
 
 SOURCE_SUFFIXES = (".py",)
@@ -69,18 +72,20 @@ def is_source_path(path: str) -> bool:
     return path.endswith(SOURCE_SUFFIXES)
 
 
-def ground_truth_from_tasks(tasks, exclude_tests: bool = True) -> GroundTruth:
-    """instance_id -> hunk locations of the gold patch (non-test files by default)."""
+def ground_truth_from_tasks(tasks, exclude_tests: bool = True, suffixes: tuple[str, ...] | None = None) -> GroundTruth:
+    """instance_id -> hunk locations of the gold patch (non-test files by default;
+    with `suffixes`, only files with those suffixes — the verifier's own file list —
+    and a task with no such hunk resolves to None, i.e. outside the metric)."""
     table: dict[str, tuple[Location, ...]] = {}
     for t in tasks:
         summary = parse_patch(t.patch)
-        hunks = tuple(h for h in summary.hunks if not (exclude_tests and is_test_path(h.path)))
-        table[t.instance_id] = hunks
+        hunks = tuple(h for h in summary.hunks if not (exclude_tests and is_test_path(h.path)) and (suffixes is None or h.path.endswith(suffixes)))
+        table[t.instance_id] = hunks if (suffixes is None or hunks) else None
     return GroundTruth(table)
 
 
-def gold_files(patch: str, exclude_tests: bool = True) -> tuple[str, ...]:
-    return tuple(f for f in parse_patch(patch).files if not (exclude_tests and is_test_path(f)))
+def gold_files(patch: str, exclude_tests: bool = True, suffixes: tuple[str, ...] | None = None) -> tuple[str, ...]:
+    return tuple(f for f in parse_patch(patch).files if not (exclude_tests and is_test_path(f)) and (suffixes is None or f.endswith(suffixes)))
 
 
 def symbolise_hunks(hunks, repo: str, commit: str, index: FunctionIndexCache) -> tuple[Location, ...]:

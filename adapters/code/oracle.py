@@ -56,7 +56,7 @@ class GroundTruth:
     def locations(self, instance_id: str) -> tuple[Location, ...] | None:
         raw = self._hunks.get(instance_id)
         if raw is None or self._resolver is None:
-            return raw
+            return raw          # None = no ground truth: the task is outside the metric
         if instance_id not in self._resolved:
             self._resolved[instance_id] = self._resolver(instance_id, raw)   # may be None: outside the metric
         return self._resolved[instance_id]
