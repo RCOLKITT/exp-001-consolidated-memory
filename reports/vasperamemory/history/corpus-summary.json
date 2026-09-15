@@ -1,0 +1,19 @@
+{
+ "commits": 60,
+ "tasks": 46,
+ "dropped": {
+  "no_parent": 1,
+  "no_source_gold": 13,
+  "short_message": 0
+ },
+ "repo": "rcolkitt/vasperamemory",
+ "branch": "origin/main",
+ "suffixes": [
+  ".ts",
+  ".tsx",
+  ".js",
+  ".mjs",
+  ".py"
+ ],
+ "median_tree_size": 421
+}
