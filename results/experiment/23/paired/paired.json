@@ -1,0 +1,351 @@
+{
+ "arm": "treatment",
+ "baseline": "control",
+ "errors": {},
+ "negative_control": null,
+ "per_repo": {
+  "rcolkitt/vasperamemory": {
+   "both_hit": 34,
+   "control_localized": 35,
+   "control_only_hit": 1,
+   "control_rate": 0.9722,
+   "flags_differed": 18,
+   "flags_differed_rate": 0.5,
+   "label": "rcolkitt/vasperamemory",
+   "lift_ci95_bootstrap_pts": [
+    -8.33,
+    0.0
+   ],
+   "lift_ci95_paired_wald_pts": [
+    -8.15,
+    2.59
+   ],
+   "lift_pts": -2.78,
+   "mcnemar_exact_p": 1.0,
+   "n_tasks": 36,
+   "neither_hit": 1,
+   "retrieval_coverage": 1.0,
+   "retrieved_any": 36,
+   "treatment_localized": 34,
+   "treatment_only_hit": 0,
+   "treatment_rate": 0.9444
+  }
+ },
+ "primary": {
+  "both_hit": 34,
+  "control_localized": 35,
+  "control_only_hit": 1,
+  "control_rate": 0.9722,
+  "flags_differed": 18,
+  "flags_differed_rate": 0.5,
+  "label": "primary: all treatment repos (registered)",
+  "lift_ci95_bootstrap_pts": [
+   -8.33,
+   0.0
+  ],
+  "lift_ci95_paired_wald_pts": [
+   -8.15,
+   2.59
+  ],
+  "lift_pts": -2.78,
+  "mcnemar_exact_p": 1.0,
+  "n_tasks": 36,
+  "neither_hit": 1,
+  "retrieval_coverage": 1.0,
+  "retrieved_any": 36,
+  "treatment_localized": 34,
+  "treatment_only_hit": 0,
+  "treatment_rate": 0.9444
+ },
+ "secondary": null,
+ "tasks": [
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "rcolkitt__vasperamemory-00456e20cb",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": false,
+   "flags_differed": true,
+   "instance_id": "rcolkitt__vasperamemory-0aec6b544a",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "rcolkitt__vasperamemory-0f10b324b1",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "rcolkitt__vasperamemory-1a69e3d927",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "rcolkitt__vasperamemory-1b9cba8f85",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "rcolkitt__vasperamemory-1e4b600af9",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "rcolkitt__vasperamemory-33e9e111f8",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "rcolkitt__vasperamemory-55e1e52dce",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "rcolkitt__vasperamemory-73a6775e42",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "rcolkitt__vasperamemory-753d59955a",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "rcolkitt__vasperamemory-774334c622",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "rcolkitt__vasperamemory-7c7af24bfc",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": false
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "rcolkitt__vasperamemory-8471fd45c4",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "rcolkitt__vasperamemory-9153908e03",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "rcolkitt__vasperamemory-917cf9c05b",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "rcolkitt__vasperamemory-9317acf05a",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "rcolkitt__vasperamemory-98a73f13f5",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "rcolkitt__vasperamemory-9c2285588f",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "rcolkitt__vasperamemory-a91df75637",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "rcolkitt__vasperamemory-ac0adaaf96",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "rcolkitt__vasperamemory-ac5583e859",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "rcolkitt__vasperamemory-af7d418bd5",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "rcolkitt__vasperamemory-b6b45f07ae",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "rcolkitt__vasperamemory-ba397b64e7",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "rcolkitt__vasperamemory-bc2897d401",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "rcolkitt__vasperamemory-be5eb2f624",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "rcolkitt__vasperamemory-bfb9638904",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "rcolkitt__vasperamemory-c229215f42",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "rcolkitt__vasperamemory-c8c7e1d09f",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "rcolkitt__vasperamemory-d7bc3e8e7e",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "rcolkitt__vasperamemory-d8b2886cb5",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "rcolkitt__vasperamemory-ded0f6e2f7",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "rcolkitt__vasperamemory-e18e397c21",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "rcolkitt__vasperamemory-efcd22c7bb",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": true,
+   "instance_id": "rcolkitt__vasperamemory-f8413efb09",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  },
+  {
+   "control_hit": true,
+   "flags_differed": false,
+   "instance_id": "rcolkitt__vasperamemory-fa5ad349de",
+   "repo": "rcolkitt/vasperamemory",
+   "retrieved": true,
+   "treatment_hit": true
+  }
+ ]
+}

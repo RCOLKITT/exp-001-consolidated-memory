@@ -1,0 +1,2809 @@
+{
+ "arms": {
+  "control": {
+   "file_hits": {
+    "rcolkitt__vasperamemory-00456e20cb": true,
+    "rcolkitt__vasperamemory-0aec6b544a": false,
+    "rcolkitt__vasperamemory-0f10b324b1": true,
+    "rcolkitt__vasperamemory-1a69e3d927": true,
+    "rcolkitt__vasperamemory-1b9cba8f85": true,
+    "rcolkitt__vasperamemory-1e4b600af9": true,
+    "rcolkitt__vasperamemory-33e9e111f8": true,
+    "rcolkitt__vasperamemory-55e1e52dce": true,
+    "rcolkitt__vasperamemory-73a6775e42": true,
+    "rcolkitt__vasperamemory-753d59955a": true,
+    "rcolkitt__vasperamemory-774334c622": true,
+    "rcolkitt__vasperamemory-7c7af24bfc": true,
+    "rcolkitt__vasperamemory-8471fd45c4": true,
+    "rcolkitt__vasperamemory-9153908e03": true,
+    "rcolkitt__vasperamemory-917cf9c05b": true,
+    "rcolkitt__vasperamemory-9317acf05a": true,
+    "rcolkitt__vasperamemory-98a73f13f5": true,
+    "rcolkitt__vasperamemory-9c2285588f": true,
+    "rcolkitt__vasperamemory-a91df75637": true,
+    "rcolkitt__vasperamemory-ac0adaaf96": true,
+    "rcolkitt__vasperamemory-ac5583e859": true,
+    "rcolkitt__vasperamemory-af7d418bd5": true,
+    "rcolkitt__vasperamemory-b6b45f07ae": true,
+    "rcolkitt__vasperamemory-ba397b64e7": true,
+    "rcolkitt__vasperamemory-bc2897d401": true,
+    "rcolkitt__vasperamemory-be5eb2f624": true,
+    "rcolkitt__vasperamemory-bfb9638904": true,
+    "rcolkitt__vasperamemory-c229215f42": true,
+    "rcolkitt__vasperamemory-c8c7e1d09f": true,
+    "rcolkitt__vasperamemory-d7bc3e8e7e": true,
+    "rcolkitt__vasperamemory-d8b2886cb5": true,
+    "rcolkitt__vasperamemory-ded0f6e2f7": true,
+    "rcolkitt__vasperamemory-e18e397c21": true,
+    "rcolkitt__vasperamemory-efcd22c7bb": true,
+    "rcolkitt__vasperamemory-f8413efb09": true,
+    "rcolkitt__vasperamemory-fa5ad349de": true
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.3407,
+    "localization_rate": 0.9722,
+    "n_false_positive": 31,
+    "n_flags": 91,
+    "n_localized": 35,
+    "n_tasks": 36,
+    "per_repo": {
+     "rcolkitt/vasperamemory": {
+      "false_positive_rate": 0.3407,
+      "localization_rate": 0.9722,
+      "n_false_positive": 31,
+      "n_flags": 91,
+      "n_localized": 35,
+      "n_tasks": 36
+     }
+    }
+   },
+   "flags": {
+    "rcolkitt__vasperamemory-00456e20cb": [
+     "public/sw.js",
+     "components/service-worker-registration.tsx",
+     "lib/utils.ts"
+    ],
+    "rcolkitt__vasperamemory-0aec6b544a": [
+     "lib/metrics-service.ts"
+    ],
+    "rcolkitt__vasperamemory-0f10b324b1": [
+     "server/index.ts",
+     "server/mcp-sse.ts",
+     "lib/admin-auth.ts"
+    ],
+    "rcolkitt__vasperamemory-1a69e3d927": [
+     "lib/ai-learning/decision-capture.ts",
+     "lib/governance/gate-service.ts",
+     "lib/governance/ledger-service.ts"
+    ],
+    "rcolkitt__vasperamemory-1b9cba8f85": [
+     "lib/ai-learning/decision-capture.ts",
+     "server/mcp-ai-learning.ts",
+     "lib/supabase.ts"
+    ],
+    "rcolkitt__vasperamemory-1e4b600af9": [
+     "server/tools/decision-tools.ts",
+     "server/tools/session-tools.ts",
+     "__tests__/governance/no-bypass.test.ts"
+    ],
+    "rcolkitt__vasperamemory-33e9e111f8": [
+     "lib/user-roles.ts",
+     "server/db-supabase.ts",
+     "app/dashboard/page.tsx"
+    ],
+    "rcolkitt__vasperamemory-55e1e52dce": [
+     "lib/security-middleware.ts",
+     "lib/hallucination-evolution-pipeline.ts",
+     "server/oauth-provider.ts"
+    ],
+    "rcolkitt__vasperamemory-73a6775e42": [
+     "lib/governance/conflict-checker.ts",
+     "lib/governance/gate-service.ts",
+     "server/tools/decision-tools.ts"
+    ],
+    "rcolkitt__vasperamemory-753d59955a": [
+     "lib/api-key.ts",
+     "server/index.ts",
+     "lib/identity.ts"
+    ],
+    "rcolkitt__vasperamemory-774334c622": [
+     "lib/memory-service.ts",
+     "server/mcp-sse.ts"
+    ],
+    "rcolkitt__vasperamemory-7c7af24bfc": [
+     "packages/cli/src/governance/ledger.ts",
+     "lib/governance/ledger-service.ts"
+    ],
+    "rcolkitt__vasperamemory-8471fd45c4": [
+     "lib/codebase-intelligence.ts",
+     "server/mcp-sse.ts",
+     "lib/utils.ts"
+    ],
+    "rcolkitt__vasperamemory-9153908e03": [
+     "packages/cli/src/setup-rules.ts",
+     "packages/cli/src/setup-cursor.ts",
+     "packages/cli/src/setup-windsurf.ts"
+    ],
+    "rcolkitt__vasperamemory-917cf9c05b": [
+     "app/features/page.tsx",
+     "app/pricing/page.tsx"
+    ],
+    "rcolkitt__vasperamemory-9317acf05a": [
+     "app/api/admin/stats/route.ts",
+     "lib/subscription.ts",
+     "server/mcp-ai-learning.ts"
+    ],
+    "rcolkitt__vasperamemory-98a73f13f5": [
+     "lib/codebase-intelligence.ts",
+     "server/index.ts",
+     "lib/export-import/importer.ts"
+    ],
+    "rcolkitt__vasperamemory-9c2285588f": [
+     "app/api/stripe/reconcile/route.ts",
+     "lib/security-middleware.ts"
+    ],
+    "rcolkitt__vasperamemory-a91df75637": [
+     "packages/cli/src/cli.ts",
+     "packages/cli/src/governance/schemas.ts"
+    ],
+    "rcolkitt__vasperamemory-ac0adaaf96": [
+     "app/layout.tsx",
+     "components/header.tsx",
+     "public/sw.js"
+    ],
+    "rcolkitt__vasperamemory-ac5583e859": [
+     "app/api/ai-learning/impact/route.ts",
+     "server/index.ts",
+     "server/mcp-auth-proxy.ts"
+    ],
+    "rcolkitt__vasperamemory-af7d418bd5": [
+     "app/api/projects/[id]/decisions/[decisionId]/restore/route.ts",
+     "lib/governance/gate-service.ts",
+     "lib/governance/ledger-service.ts"
+    ],
+    "rcolkitt__vasperamemory-b6b45f07ae": [
+     "app/dashboard/page.tsx",
+     "lib/projects.ts",
+     "app/api/projects/[id]/metrics/route.ts"
+    ],
+    "rcolkitt__vasperamemory-ba397b64e7": [
+     "server/governance-routes.ts"
+    ],
+    "rcolkitt__vasperamemory-bc2897d401": [
+     "packages/cli/src/local-server.ts",
+     "packages/cli/src/http-server.ts",
+     "packages/cli/src/local-db.ts"
+    ],
+    "rcolkitt__vasperamemory-be5eb2f624": [
+     "app/api/register/route.ts",
+     "app/api/auth/register-repo/route.ts"
+    ],
+    "rcolkitt__vasperamemory-bfb9638904": [
+     "packages/cli/src/cli.ts",
+     "packages/cli/src/setup-claude.ts"
+    ],
+    "rcolkitt__vasperamemory-c229215f42": [
+     "packages/cli/src/local-server.ts"
+    ],
+    "rcolkitt__vasperamemory-c8c7e1d09f": [
+     "app/api/debug/db-check/route.ts",
+     "app/api/test-db/route.ts",
+     "lib/subscription.ts"
+    ],
+    "rcolkitt__vasperamemory-d7bc3e8e7e": [
+     "server/tools/decision-tools.ts",
+     "server/mcp-sse.ts",
+     "server/tools/utils.ts"
+    ],
+    "rcolkitt__vasperamemory-d8b2886cb5": [
+     "lib/subscription.ts",
+     "lib/memory-service.ts",
+     "server/mcp-sse.ts"
+    ],
+    "rcolkitt__vasperamemory-ded0f6e2f7": [
+     "lib/governance/conflict-checker.ts",
+     "lib/governance/gate-service.ts",
+     "lib/embedding-service.ts"
+    ],
+    "rcolkitt__vasperamemory-e18e397c21": [
+     "lib/projects.ts"
+    ],
+    "rcolkitt__vasperamemory-efcd22c7bb": [
+     "lib/identity.ts",
+     "server/index.ts"
+    ],
+    "rcolkitt__vasperamemory-f8413efb09": [
+     "app/pricing/page.tsx",
+     "components/ui/button.tsx",
+     "app/layout.tsx"
+    ],
+    "rcolkitt__vasperamemory-fa5ad349de": [
+     "server/governance-routes.ts",
+     "packages/cli/src/cli.ts"
+    ]
+   },
+   "hits": {
+    "rcolkitt__vasperamemory-00456e20cb": true,
+    "rcolkitt__vasperamemory-0aec6b544a": false,
+    "rcolkitt__vasperamemory-0f10b324b1": true,
+    "rcolkitt__vasperamemory-1a69e3d927": true,
+    "rcolkitt__vasperamemory-1b9cba8f85": true,
+    "rcolkitt__vasperamemory-1e4b600af9": true,
+    "rcolkitt__vasperamemory-33e9e111f8": true,
+    "rcolkitt__vasperamemory-55e1e52dce": true,
+    "rcolkitt__vasperamemory-73a6775e42": true,
+    "rcolkitt__vasperamemory-753d59955a": true,
+    "rcolkitt__vasperamemory-774334c622": true,
+    "rcolkitt__vasperamemory-7c7af24bfc": true,
+    "rcolkitt__vasperamemory-8471fd45c4": true,
+    "rcolkitt__vasperamemory-9153908e03": true,
+    "rcolkitt__vasperamemory-917cf9c05b": true,
+    "rcolkitt__vasperamemory-9317acf05a": true,
+    "rcolkitt__vasperamemory-98a73f13f5": true,
+    "rcolkitt__vasperamemory-9c2285588f": true,
+    "rcolkitt__vasperamemory-a91df75637": true,
+    "rcolkitt__vasperamemory-ac0adaaf96": true,
+    "rcolkitt__vasperamemory-ac5583e859": true,
+    "rcolkitt__vasperamemory-af7d418bd5": true,
+    "rcolkitt__vasperamemory-b6b45f07ae": true,
+    "rcolkitt__vasperamemory-ba397b64e7": true,
+    "rcolkitt__vasperamemory-bc2897d401": true,
+    "rcolkitt__vasperamemory-be5eb2f624": true,
+    "rcolkitt__vasperamemory-bfb9638904": true,
+    "rcolkitt__vasperamemory-c229215f42": true,
+    "rcolkitt__vasperamemory-c8c7e1d09f": true,
+    "rcolkitt__vasperamemory-d7bc3e8e7e": true,
+    "rcolkitt__vasperamemory-d8b2886cb5": true,
+    "rcolkitt__vasperamemory-ded0f6e2f7": true,
+    "rcolkitt__vasperamemory-e18e397c21": true,
+    "rcolkitt__vasperamemory-efcd22c7bb": true,
+    "rcolkitt__vasperamemory-f8413efb09": true,
+    "rcolkitt__vasperamemory-fa5ad349de": true
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": 0.0,
+    "localization_lift_pts": 0.0
+   },
+   "metrics": {
+    "false_positive_rate": 0.3407,
+    "localization_rate": 0.9722,
+    "n_false_positive": 31,
+    "n_flags": 91,
+    "n_localized": 35,
+    "n_tasks": 36,
+    "per_repo": {
+     "rcolkitt/vasperamemory": {
+      "false_positive_rate": 0.3407,
+      "localization_rate": 0.9722,
+      "n_false_positive": 31,
+      "n_flags": 91,
+      "n_localized": 35,
+      "n_tasks": 36
+     }
+    }
+   },
+   "retrieved": {
+    "rcolkitt__vasperamemory-00456e20cb": [],
+    "rcolkitt__vasperamemory-0aec6b544a": [],
+    "rcolkitt__vasperamemory-0f10b324b1": [],
+    "rcolkitt__vasperamemory-1a69e3d927": [],
+    "rcolkitt__vasperamemory-1b9cba8f85": [],
+    "rcolkitt__vasperamemory-1e4b600af9": [],
+    "rcolkitt__vasperamemory-33e9e111f8": [],
+    "rcolkitt__vasperamemory-55e1e52dce": [],
+    "rcolkitt__vasperamemory-73a6775e42": [],
+    "rcolkitt__vasperamemory-753d59955a": [],
+    "rcolkitt__vasperamemory-774334c622": [],
+    "rcolkitt__vasperamemory-7c7af24bfc": [],
+    "rcolkitt__vasperamemory-8471fd45c4": [],
+    "rcolkitt__vasperamemory-9153908e03": [],
+    "rcolkitt__vasperamemory-917cf9c05b": [],
+    "rcolkitt__vasperamemory-9317acf05a": [],
+    "rcolkitt__vasperamemory-98a73f13f5": [],
+    "rcolkitt__vasperamemory-9c2285588f": [],
+    "rcolkitt__vasperamemory-a91df75637": [],
+    "rcolkitt__vasperamemory-ac0adaaf96": [],
+    "rcolkitt__vasperamemory-ac5583e859": [],
+    "rcolkitt__vasperamemory-af7d418bd5": [],
+    "rcolkitt__vasperamemory-b6b45f07ae": [],
+    "rcolkitt__vasperamemory-ba397b64e7": [],
+    "rcolkitt__vasperamemory-bc2897d401": [],
+    "rcolkitt__vasperamemory-be5eb2f624": [],
+    "rcolkitt__vasperamemory-bfb9638904": [],
+    "rcolkitt__vasperamemory-c229215f42": [],
+    "rcolkitt__vasperamemory-c8c7e1d09f": [],
+    "rcolkitt__vasperamemory-d7bc3e8e7e": [],
+    "rcolkitt__vasperamemory-d8b2886cb5": [],
+    "rcolkitt__vasperamemory-ded0f6e2f7": [],
+    "rcolkitt__vasperamemory-e18e397c21": [],
+    "rcolkitt__vasperamemory-efcd22c7bb": [],
+    "rcolkitt__vasperamemory-f8413efb09": [],
+    "rcolkitt__vasperamemory-fa5ad349de": []
+   },
+   "scores": {
+    "rcolkitt__vasperamemory-00456e20cb": {},
+    "rcolkitt__vasperamemory-0aec6b544a": {},
+    "rcolkitt__vasperamemory-0f10b324b1": {},
+    "rcolkitt__vasperamemory-1a69e3d927": {},
+    "rcolkitt__vasperamemory-1b9cba8f85": {},
+    "rcolkitt__vasperamemory-1e4b600af9": {},
+    "rcolkitt__vasperamemory-33e9e111f8": {},
+    "rcolkitt__vasperamemory-55e1e52dce": {},
+    "rcolkitt__vasperamemory-73a6775e42": {},
+    "rcolkitt__vasperamemory-753d59955a": {},
+    "rcolkitt__vasperamemory-774334c622": {},
+    "rcolkitt__vasperamemory-7c7af24bfc": {},
+    "rcolkitt__vasperamemory-8471fd45c4": {},
+    "rcolkitt__vasperamemory-9153908e03": {},
+    "rcolkitt__vasperamemory-917cf9c05b": {},
+    "rcolkitt__vasperamemory-9317acf05a": {},
+    "rcolkitt__vasperamemory-98a73f13f5": {},
+    "rcolkitt__vasperamemory-9c2285588f": {},
+    "rcolkitt__vasperamemory-a91df75637": {},
+    "rcolkitt__vasperamemory-ac0adaaf96": {},
+    "rcolkitt__vasperamemory-ac5583e859": {},
+    "rcolkitt__vasperamemory-af7d418bd5": {},
+    "rcolkitt__vasperamemory-b6b45f07ae": {},
+    "rcolkitt__vasperamemory-ba397b64e7": {},
+    "rcolkitt__vasperamemory-bc2897d401": {},
+    "rcolkitt__vasperamemory-be5eb2f624": {},
+    "rcolkitt__vasperamemory-bfb9638904": {},
+    "rcolkitt__vasperamemory-c229215f42": {},
+    "rcolkitt__vasperamemory-c8c7e1d09f": {},
+    "rcolkitt__vasperamemory-d7bc3e8e7e": {},
+    "rcolkitt__vasperamemory-d8b2886cb5": {},
+    "rcolkitt__vasperamemory-ded0f6e2f7": {},
+    "rcolkitt__vasperamemory-e18e397c21": {},
+    "rcolkitt__vasperamemory-efcd22c7bb": {},
+    "rcolkitt__vasperamemory-f8413efb09": {},
+    "rcolkitt__vasperamemory-fa5ad349de": {}
+   },
+   "tau": 0.0,
+   "version": null,
+   "versions": {
+    "rcolkitt__vasperamemory-00456e20cb": null,
+    "rcolkitt__vasperamemory-0aec6b544a": null,
+    "rcolkitt__vasperamemory-0f10b324b1": null,
+    "rcolkitt__vasperamemory-1a69e3d927": null,
+    "rcolkitt__vasperamemory-1b9cba8f85": null,
+    "rcolkitt__vasperamemory-1e4b600af9": null,
+    "rcolkitt__vasperamemory-33e9e111f8": null,
+    "rcolkitt__vasperamemory-55e1e52dce": null,
+    "rcolkitt__vasperamemory-73a6775e42": null,
+    "rcolkitt__vasperamemory-753d59955a": null,
+    "rcolkitt__vasperamemory-774334c622": null,
+    "rcolkitt__vasperamemory-7c7af24bfc": null,
+    "rcolkitt__vasperamemory-8471fd45c4": null,
+    "rcolkitt__vasperamemory-9153908e03": null,
+    "rcolkitt__vasperamemory-917cf9c05b": null,
+    "rcolkitt__vasperamemory-9317acf05a": null,
+    "rcolkitt__vasperamemory-98a73f13f5": null,
+    "rcolkitt__vasperamemory-9c2285588f": null,
+    "rcolkitt__vasperamemory-a91df75637": null,
+    "rcolkitt__vasperamemory-ac0adaaf96": null,
+    "rcolkitt__vasperamemory-ac5583e859": null,
+    "rcolkitt__vasperamemory-af7d418bd5": null,
+    "rcolkitt__vasperamemory-b6b45f07ae": null,
+    "rcolkitt__vasperamemory-ba397b64e7": null,
+    "rcolkitt__vasperamemory-bc2897d401": null,
+    "rcolkitt__vasperamemory-be5eb2f624": null,
+    "rcolkitt__vasperamemory-bfb9638904": null,
+    "rcolkitt__vasperamemory-c229215f42": null,
+    "rcolkitt__vasperamemory-c8c7e1d09f": null,
+    "rcolkitt__vasperamemory-d7bc3e8e7e": null,
+    "rcolkitt__vasperamemory-d8b2886cb5": null,
+    "rcolkitt__vasperamemory-ded0f6e2f7": null,
+    "rcolkitt__vasperamemory-e18e397c21": null,
+    "rcolkitt__vasperamemory-efcd22c7bb": null,
+    "rcolkitt__vasperamemory-f8413efb09": null,
+    "rcolkitt__vasperamemory-fa5ad349de": null
+   }
+  },
+  "placebo": {
+   "file_hits": {
+    "rcolkitt__vasperamemory-00456e20cb": true,
+    "rcolkitt__vasperamemory-0aec6b544a": false,
+    "rcolkitt__vasperamemory-0f10b324b1": true,
+    "rcolkitt__vasperamemory-1a69e3d927": true,
+    "rcolkitt__vasperamemory-1b9cba8f85": true,
+    "rcolkitt__vasperamemory-1e4b600af9": true,
+    "rcolkitt__vasperamemory-33e9e111f8": true,
+    "rcolkitt__vasperamemory-55e1e52dce": true,
+    "rcolkitt__vasperamemory-73a6775e42": true,
+    "rcolkitt__vasperamemory-753d59955a": true,
+    "rcolkitt__vasperamemory-774334c622": true,
+    "rcolkitt__vasperamemory-7c7af24bfc": false,
+    "rcolkitt__vasperamemory-8471fd45c4": true,
+    "rcolkitt__vasperamemory-9153908e03": true,
+    "rcolkitt__vasperamemory-917cf9c05b": true,
+    "rcolkitt__vasperamemory-9317acf05a": true,
+    "rcolkitt__vasperamemory-98a73f13f5": true,
+    "rcolkitt__vasperamemory-9c2285588f": true,
+    "rcolkitt__vasperamemory-a91df75637": true,
+    "rcolkitt__vasperamemory-ac0adaaf96": true,
+    "rcolkitt__vasperamemory-ac5583e859": true,
+    "rcolkitt__vasperamemory-af7d418bd5": true,
+    "rcolkitt__vasperamemory-b6b45f07ae": true,
+    "rcolkitt__vasperamemory-ba397b64e7": true,
+    "rcolkitt__vasperamemory-bc2897d401": true,
+    "rcolkitt__vasperamemory-be5eb2f624": true,
+    "rcolkitt__vasperamemory-bfb9638904": true,
+    "rcolkitt__vasperamemory-c229215f42": true,
+    "rcolkitt__vasperamemory-c8c7e1d09f": true,
+    "rcolkitt__vasperamemory-d7bc3e8e7e": true,
+    "rcolkitt__vasperamemory-d8b2886cb5": true,
+    "rcolkitt__vasperamemory-ded0f6e2f7": true,
+    "rcolkitt__vasperamemory-e18e397c21": true,
+    "rcolkitt__vasperamemory-efcd22c7bb": true,
+    "rcolkitt__vasperamemory-f8413efb09": true,
+    "rcolkitt__vasperamemory-fa5ad349de": true
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.3556,
+    "localization_rate": 0.9444,
+    "n_false_positive": 32,
+    "n_flags": 90,
+    "n_localized": 34,
+    "n_tasks": 36,
+    "per_repo": {
+     "rcolkitt/vasperamemory": {
+      "false_positive_rate": 0.3556,
+      "localization_rate": 0.9444,
+      "n_false_positive": 32,
+      "n_flags": 90,
+      "n_localized": 34,
+      "n_tasks": 36
+     }
+    }
+   },
+   "flags": {
+    "rcolkitt__vasperamemory-00456e20cb": [
+     "public/sw.js",
+     "app/dashboard/page.tsx",
+     "lib/utils.ts"
+    ],
+    "rcolkitt__vasperamemory-0aec6b544a": [
+     "lib/metrics-service.ts"
+    ],
+    "rcolkitt__vasperamemory-0f10b324b1": [
+     "server/index.ts",
+     "server/mcp-sse.ts",
+     "lib/team-service.ts"
+    ],
+    "rcolkitt__vasperamemory-1a69e3d927": [
+     "lib/ai-learning/decision-capture.ts",
+     "lib/governance/gate-service.ts",
+     "lib/governance/ledger-service.ts"
+    ],
+    "rcolkitt__vasperamemory-1b9cba8f85": [
+     "lib/ai-learning/decision-capture.ts",
+     "server/mcp-ai-learning.ts",
+     "lib/supabase.ts"
+    ],
+    "rcolkitt__vasperamemory-1e4b600af9": [
+     "server/tools/decision-tools.ts",
+     "server/tools/session-tools.ts",
+     "__tests__/governance/no-bypass.test.ts"
+    ],
+    "rcolkitt__vasperamemory-33e9e111f8": [
+     "lib/user-roles.ts",
+     "server/db-supabase.ts",
+     "lib/supabase.ts"
+    ],
+    "rcolkitt__vasperamemory-55e1e52dce": [
+     "lib/security-middleware.ts",
+     "lib/hallucination-evolution-pipeline.ts",
+     "server/oauth-provider.ts"
+    ],
+    "rcolkitt__vasperamemory-73a6775e42": [
+     "lib/governance/gate-service.ts",
+     "lib/governance/conflict-checker.ts",
+     "server/tools/decision-tools.ts"
+    ],
+    "rcolkitt__vasperamemory-753d59955a": [
+     "lib/api-key.ts",
+     "server/index.ts",
+     "lib/identity.ts"
+    ],
+    "rcolkitt__vasperamemory-774334c622": [
+     "lib/memory-service.ts",
+     "server/mcp-sse.ts"
+    ],
+    "rcolkitt__vasperamemory-7c7af24bfc": [
+     "packages/cli/src/governance/ledger.ts"
+    ],
+    "rcolkitt__vasperamemory-8471fd45c4": [
+     "lib/codebase-intelligence.ts",
+     "server/mcp-sse.ts",
+     "lib/github.ts"
+    ],
+    "rcolkitt__vasperamemory-9153908e03": [
+     "packages/cli/src/setup-rules.ts",
+     "packages/cli/src/setup-cursor.ts",
+     "packages/cli/src/setup-windsurf.ts"
+    ],
+    "rcolkitt__vasperamemory-917cf9c05b": [
+     "app/features/page.tsx",
+     "app/pricing/page.tsx"
+    ],
+    "rcolkitt__vasperamemory-9317acf05a": [
+     "app/api/admin/stats/route.ts",
+     "lib/subscription.ts",
+     "server/mcp-ai-learning.ts"
+    ],
+    "rcolkitt__vasperamemory-98a73f13f5": [
+     "lib/codebase-intelligence.ts",
+     "server/index.ts",
+     "lib/export-import/importer.ts"
+    ],
+    "rcolkitt__vasperamemory-9c2285588f": [
+     "app/api/stripe/reconcile/route.ts",
+     "lib/security-middleware.ts"
+    ],
+    "rcolkitt__vasperamemory-a91df75637": [
+     "packages/cli/src/governance/schemas.ts",
+     "packages/cli/src/cli.ts"
+    ],
+    "rcolkitt__vasperamemory-ac0adaaf96": [
+     "app/layout.tsx",
+     "components/header.tsx",
+     "public/sw.js"
+    ],
+    "rcolkitt__vasperamemory-ac5583e859": [
+     "app/api/ai-learning/impact/route.ts",
+     "server/index.ts",
+     "server/mcp-auth-proxy.ts"
+    ],
+    "rcolkitt__vasperamemory-af7d418bd5": [
+     "app/api/projects/[id]/decisions/[decisionId]/restore/route.ts",
+     "lib/governance/gate-service.ts",
+     "lib/governance/ledger-service.ts"
+    ],
+    "rcolkitt__vasperamemory-b6b45f07ae": [
+     "app/dashboard/page.tsx",
+     "lib/projects.ts",
+     "app/api/projects/[id]/metrics/route.ts"
+    ],
+    "rcolkitt__vasperamemory-ba397b64e7": [
+     "server/governance-routes.ts"
+    ],
+    "rcolkitt__vasperamemory-bc2897d401": [
+     "packages/cli/src/local-server.ts",
+     "packages/cli/src/governance/local-gate.ts",
+     "packages/cli/src/local-db.ts"
+    ],
+    "rcolkitt__vasperamemory-be5eb2f624": [
+     "app/api/register/route.ts",
+     "app/api/auth/register-repo/route.ts"
+    ],
+    "rcolkitt__vasperamemory-bfb9638904": [
+     "packages/cli/src/cli.ts",
+     "packages/cli/src/git-hooks.ts"
+    ],
+    "rcolkitt__vasperamemory-c229215f42": [
+     "packages/cli/src/local-server.ts"
+    ],
+    "rcolkitt__vasperamemory-c8c7e1d09f": [
+     "app/api/debug/db-check/route.ts",
+     "app/api/test-db/route.ts",
+     "lib/subscription.ts"
+    ],
+    "rcolkitt__vasperamemory-d7bc3e8e7e": [
+     "server/tools/decision-tools.ts",
+     "server/mcp-sse.ts",
+     "server/tools/index.ts"
+    ],
+    "rcolkitt__vasperamemory-d8b2886cb5": [
+     "lib/subscription.ts",
+     "lib/memory-service.ts",
+     "server/mcp-sse.ts"
+    ],
+    "rcolkitt__vasperamemory-ded0f6e2f7": [
+     "lib/governance/conflict-checker.ts",
+     "lib/governance/gate-service.ts",
+     "lib/embedding-service.ts"
+    ],
+    "rcolkitt__vasperamemory-e18e397c21": [
+     "lib/projects.ts"
+    ],
+    "rcolkitt__vasperamemory-efcd22c7bb": [
+     "lib/identity.ts",
+     "server/index.ts"
+    ],
+    "rcolkitt__vasperamemory-f8413efb09": [
+     "app/pricing/page.tsx",
+     "components/ui/button.tsx",
+     "app/layout.tsx"
+    ],
+    "rcolkitt__vasperamemory-fa5ad349de": [
+     "server/governance-routes.ts",
+     "packages/cli/src/cli.ts"
+    ]
+   },
+   "hits": {
+    "rcolkitt__vasperamemory-00456e20cb": true,
+    "rcolkitt__vasperamemory-0aec6b544a": false,
+    "rcolkitt__vasperamemory-0f10b324b1": true,
+    "rcolkitt__vasperamemory-1a69e3d927": true,
+    "rcolkitt__vasperamemory-1b9cba8f85": true,
+    "rcolkitt__vasperamemory-1e4b600af9": true,
+    "rcolkitt__vasperamemory-33e9e111f8": true,
+    "rcolkitt__vasperamemory-55e1e52dce": true,
+    "rcolkitt__vasperamemory-73a6775e42": true,
+    "rcolkitt__vasperamemory-753d59955a": true,
+    "rcolkitt__vasperamemory-774334c622": true,
+    "rcolkitt__vasperamemory-7c7af24bfc": false,
+    "rcolkitt__vasperamemory-8471fd45c4": true,
+    "rcolkitt__vasperamemory-9153908e03": true,
+    "rcolkitt__vasperamemory-917cf9c05b": true,
+    "rcolkitt__vasperamemory-9317acf05a": true,
+    "rcolkitt__vasperamemory-98a73f13f5": true,
+    "rcolkitt__vasperamemory-9c2285588f": true,
+    "rcolkitt__vasperamemory-a91df75637": true,
+    "rcolkitt__vasperamemory-ac0adaaf96": true,
+    "rcolkitt__vasperamemory-ac5583e859": true,
+    "rcolkitt__vasperamemory-af7d418bd5": true,
+    "rcolkitt__vasperamemory-b6b45f07ae": true,
+    "rcolkitt__vasperamemory-ba397b64e7": true,
+    "rcolkitt__vasperamemory-bc2897d401": true,
+    "rcolkitt__vasperamemory-be5eb2f624": true,
+    "rcolkitt__vasperamemory-bfb9638904": true,
+    "rcolkitt__vasperamemory-c229215f42": true,
+    "rcolkitt__vasperamemory-c8c7e1d09f": true,
+    "rcolkitt__vasperamemory-d7bc3e8e7e": true,
+    "rcolkitt__vasperamemory-d8b2886cb5": true,
+    "rcolkitt__vasperamemory-ded0f6e2f7": true,
+    "rcolkitt__vasperamemory-e18e397c21": true,
+    "rcolkitt__vasperamemory-efcd22c7bb": true,
+    "rcolkitt__vasperamemory-f8413efb09": true,
+    "rcolkitt__vasperamemory-fa5ad349de": true
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": 1.49,
+    "localization_lift_pts": -2.78
+   },
+   "metrics": {
+    "false_positive_rate": 0.3556,
+    "localization_rate": 0.9444,
+    "n_false_positive": 32,
+    "n_flags": 90,
+    "n_localized": 34,
+    "n_tasks": 36,
+    "per_repo": {
+     "rcolkitt/vasperamemory": {
+      "false_positive_rate": 0.3556,
+      "localization_rate": 0.9444,
+      "n_false_positive": 32,
+      "n_flags": 90,
+      "n_localized": 34,
+      "n_tasks": 36
+     }
+    }
+   },
+   "retrieved": {
+    "rcolkitt__vasperamemory-00456e20cb": [
+     "placebo:3",
+     "placebo:4",
+     "placebo:2"
+    ],
+    "rcolkitt__vasperamemory-0aec6b544a": [
+     "placebo:3",
+     "placebo:4",
+     "placebo:1"
+    ],
+    "rcolkitt__vasperamemory-0f10b324b1": [
+     "placebo:4",
+     "placebo:3",
+     "placebo:1",
+     "placebo:0",
+     "placebo:2"
+    ],
+    "rcolkitt__vasperamemory-1a69e3d927": [
+     "placebo:4",
+     "placebo:3",
+     "placebo:1",
+     "placebo:0",
+     "placebo:2"
+    ],
+    "rcolkitt__vasperamemory-1b9cba8f85": [
+     "placebo:3",
+     "placebo:4",
+     "placebo:1",
+     "placebo:0",
+     "placebo:2"
+    ],
+    "rcolkitt__vasperamemory-1e4b600af9": [
+     "placebo:3",
+     "placebo:4",
+     "placebo:1",
+     "placebo:0",
+     "placebo:2"
+    ],
+    "rcolkitt__vasperamemory-33e9e111f8": [
+     "placebo:3",
+     "placebo:4",
+     "placebo:0",
+     "placebo:1",
+     "placebo:2"
+    ],
+    "rcolkitt__vasperamemory-55e1e52dce": [
+     "placebo:4",
+     "placebo:3",
+     "placebo:1",
+     "placebo:2",
+     "placebo:0"
+    ],
+    "rcolkitt__vasperamemory-73a6775e42": [
+     "placebo:4",
+     "placebo:3",
+     "placebo:1",
+     "placebo:0",
+     "placebo:2"
+    ],
+    "rcolkitt__vasperamemory-753d59955a": [
+     "placebo:4",
+     "placebo:1",
+     "placebo:3",
+     "placebo:2",
+     "placebo:0"
+    ],
+    "rcolkitt__vasperamemory-774334c622": [
+     "placebo:3",
+     "placebo:4",
+     "placebo:1"
+    ],
+    "rcolkitt__vasperamemory-7c7af24bfc": [
+     "placebo:1",
+     "placebo:4",
+     "placebo:3",
+     "placebo:0",
+     "placebo:2"
+    ],
+    "rcolkitt__vasperamemory-8471fd45c4": [
+     "placebo:4",
+     "placebo:3",
+     "placebo:1",
+     "placebo:2"
+    ],
+    "rcolkitt__vasperamemory-9153908e03": [
+     "placebo:3",
+     "placebo:4",
+     "placebo:0",
+     "placebo:1",
+     "placebo:2"
+    ],
+    "rcolkitt__vasperamemory-917cf9c05b": [
+     "placebo:3",
+     "placebo:1",
+     "placebo:4",
+     "placebo:0"
+    ],
+    "rcolkitt__vasperamemory-9317acf05a": [
+     "placebo:3",
+     "placebo:4",
+     "placebo:2",
+     "placebo:1"
+    ],
+    "rcolkitt__vasperamemory-98a73f13f5": [
+     "placebo:4",
+     "placebo:3",
+     "placebo:1",
+     "placebo:0",
+     "placebo:2"
+    ],
+    "rcolkitt__vasperamemory-9c2285588f": [
+     "placebo:4",
+     "placebo:3",
+     "placebo:1"
+    ],
+    "rcolkitt__vasperamemory-a91df75637": [
+     "placebo:4",
+     "placebo:3",
+     "placebo:1",
+     "placebo:0",
+     "placebo:2"
+    ],
+    "rcolkitt__vasperamemory-ac0adaaf96": [
+     "placebo:3",
+     "placebo:4",
+     "placebo:1"
+    ],
+    "rcolkitt__vasperamemory-ac5583e859": [
+     "placebo:4",
+     "placebo:3",
+     "placebo:2"
+    ],
+    "rcolkitt__vasperamemory-af7d418bd5": [
+     "placebo:3",
+     "placebo:4",
+     "placebo:1",
+     "placebo:0",
+     "placebo:2"
+    ],
+    "rcolkitt__vasperamemory-b6b45f07ae": [
+     "placebo:3",
+     "placebo:4",
+     "placebo:0",
+     "placebo:1",
+     "placebo:2"
+    ],
+    "rcolkitt__vasperamemory-ba397b64e7": [
+     "placebo:4",
+     "placebo:3",
+     "placebo:1",
+     "placebo:0",
+     "placebo:2"
+    ],
+    "rcolkitt__vasperamemory-bc2897d401": [
+     "placebo:3",
+     "placebo:4",
+     "placebo:1",
+     "placebo:0",
+     "placebo:2"
+    ],
+    "rcolkitt__vasperamemory-be5eb2f624": [
+     "placebo:3",
+     "placebo:4",
+     "placebo:1",
+     "placebo:0"
+    ],
+    "rcolkitt__vasperamemory-bfb9638904": [
+     "placebo:4",
+     "placebo:3",
+     "placebo:1",
+     "placebo:0",
+     "placebo:2"
+    ],
+    "rcolkitt__vasperamemory-c229215f42": [
+     "placebo:1",
+     "placebo:4",
+     "placebo:3",
+     "placebo:2",
+     "placebo:0"
+    ],
+    "rcolkitt__vasperamemory-c8c7e1d09f": [
+     "placebo:3",
+     "placebo:4",
+     "placebo:1",
+     "placebo:0"
+    ],
+    "rcolkitt__vasperamemory-d7bc3e8e7e": [
+     "placebo:1",
+     "placebo:4",
+     "placebo:3",
+     "placebo:2",
+     "placebo:0"
+    ],
+    "rcolkitt__vasperamemory-d8b2886cb5": [
+     "placebo:4",
+     "placebo:3",
+     "placebo:1",
+     "placebo:0",
+     "placebo:2"
+    ],
+    "rcolkitt__vasperamemory-ded0f6e2f7": [
+     "placebo:4",
+     "placebo:3",
+     "placebo:1",
+     "placebo:0",
+     "placebo:2"
+    ],
+    "rcolkitt__vasperamemory-e18e397c21": [
+     "placebo:4",
+     "placebo:2",
+     "placebo:3",
+     "placebo:0",
+     "placebo:1"
+    ],
+    "rcolkitt__vasperamemory-efcd22c7bb": [
+     "placebo:4",
+     "placebo:0",
+     "placebo:1",
+     "placebo:3",
+     "placebo:2"
+    ],
+    "rcolkitt__vasperamemory-f8413efb09": [
+     "placebo:3",
+     "placebo:4",
+     "placebo:1"
+    ],
+    "rcolkitt__vasperamemory-fa5ad349de": [
+     "placebo:3",
+     "placebo:4",
+     "placebo:1",
+     "placebo:0",
+     "placebo:2"
+    ]
+   },
+   "scores": {
+    "rcolkitt__vasperamemory-00456e20cb": {
+     "placebo:2": 0.114193,
+     "placebo:3": 0.168114,
+     "placebo:4": 0.137185
+    },
+    "rcolkitt__vasperamemory-0aec6b544a": {
+     "placebo:1": 0.08208,
+     "placebo:3": 0.25956,
+     "placebo:4": 0.202268
+    },
+    "rcolkitt__vasperamemory-0f10b324b1": {
+     "placebo:0": 0.060922,
+     "placebo:1": 0.079267,
+     "placebo:2": 0.051767,
+     "placebo:3": 0.176628,
+     "placebo:4": 0.214552
+    },
+    "rcolkitt__vasperamemory-1a69e3d927": {
+     "placebo:0": 0.0,
+     "placebo:1": 0.04252,
+     "placebo:2": 0.0,
+     "placebo:3": 0.137891,
+     "placebo:4": 0.138571
+    },
+    "rcolkitt__vasperamemory-1b9cba8f85": {
+     "placebo:0": 0.020151,
+     "placebo:1": 0.129269,
+     "placebo:2": 0.0,
+     "placebo:3": 0.195075,
+     "placebo:4": 0.18008
+    },
+    "rcolkitt__vasperamemory-1e4b600af9": {
+     "placebo:0": 0.0,
+     "placebo:1": 0.112673,
+     "placebo:2": 0.0,
+     "placebo:3": 0.181136,
+     "placebo:4": 0.154596
+    },
+    "rcolkitt__vasperamemory-33e9e111f8": {
+     "placebo:0": 0.0,
+     "placebo:1": 0.0,
+     "placebo:2": 0.0,
+     "placebo:3": 0.177472,
+     "placebo:4": 0.171794
+    },
+    "rcolkitt__vasperamemory-55e1e52dce": {
+     "placebo:0": 0.03155,
+     "placebo:1": 0.134208,
+     "placebo:2": 0.043322,
+     "placebo:3": 0.145963,
+     "placebo:4": 0.154635
+    },
+    "rcolkitt__vasperamemory-73a6775e42": {
+     "placebo:0": 0.0,
+     "placebo:1": 0.132984,
+     "placebo:2": 0.0,
+     "placebo:3": 0.21241,
+     "placebo:4": 0.264684
+    },
+    "rcolkitt__vasperamemory-753d59955a": {
+     "placebo:0": 0.0,
+     "placebo:1": 0.085117,
+     "placebo:2": 0.019561,
+     "placebo:3": 0.0497,
+     "placebo:4": 0.085289
+    },
+    "rcolkitt__vasperamemory-774334c622": {
+     "placebo:1": 0.083109,
+     "placebo:3": 0.122253,
+     "placebo:4": 0.106019
+    },
+    "rcolkitt__vasperamemory-7c7af24bfc": {
+     "placebo:0": 0.0,
+     "placebo:1": 0.165223,
+     "placebo:2": 0.0,
+     "placebo:3": 0.104505,
+     "placebo:4": 0.118031
+    },
+    "rcolkitt__vasperamemory-8471fd45c4": {
+     "placebo:1": 0.034404,
+     "placebo:2": 0.013513,
+     "placebo:3": 0.094784,
+     "placebo:4": 0.112859
+    },
+    "rcolkitt__vasperamemory-9153908e03": {
+     "placebo:0": 0.200228,
+     "placebo:1": 0.154715,
+     "placebo:2": 0.138308,
+     "placebo:3": 0.234759,
+     "placebo:4": 0.204396
+    },
+    "rcolkitt__vasperamemory-917cf9c05b": {
+     "placebo:0": 0.087349,
+     "placebo:1": 0.213787,
+     "placebo:3": 0.242245,
+     "placebo:4": 0.212841
+    },
+    "rcolkitt__vasperamemory-9317acf05a": {
+     "placebo:1": 0.054678,
+     "placebo:2": 0.070239,
+     "placebo:3": 0.274239,
+     "placebo:4": 0.212392
+    },
+    "rcolkitt__vasperamemory-98a73f13f5": {
+     "placebo:0": 0.0,
+     "placebo:1": 0.078794,
+     "placebo:2": 0.0,
+     "placebo:3": 0.13595,
+     "placebo:4": 0.155356
+    },
+    "rcolkitt__vasperamemory-9c2285588f": {
+     "placebo:1": 0.162285,
+     "placebo:3": 0.234146,
+     "placebo:4": 0.259312
+    },
+    "rcolkitt__vasperamemory-a91df75637": {
+     "placebo:0": 0.0,
+     "placebo:1": 0.115933,
+     "placebo:2": 0.0,
+     "placebo:3": 0.17659,
+     "placebo:4": 0.190888
+    },
+    "rcolkitt__vasperamemory-ac0adaaf96": {
+     "placebo:1": 0.066457,
+     "placebo:3": 0.128553,
+     "placebo:4": 0.110178
+    },
+    "rcolkitt__vasperamemory-ac5583e859": {
+     "placebo:2": 0.059378,
+     "placebo:3": 0.26139,
+     "placebo:4": 0.278179
+    },
+    "rcolkitt__vasperamemory-af7d418bd5": {
+     "placebo:0": 0.0,
+     "placebo:1": 0.107223,
+     "placebo:2": 0.0,
+     "placebo:3": 0.13872,
+     "placebo:4": 0.130235
+    },
+    "rcolkitt__vasperamemory-b6b45f07ae": {
+     "placebo:0": 0.0,
+     "placebo:1": 0.0,
+     "placebo:2": 0.0,
+     "placebo:3": 0.087282,
+     "placebo:4": 0.078832
+    },
+    "rcolkitt__vasperamemory-ba397b64e7": {
+     "placebo:0": 0.051798,
+     "placebo:1": 0.101639,
+     "placebo:2": 0.040854,
+     "placebo:3": 0.131928,
+     "placebo:4": 0.19137
+    },
+    "rcolkitt__vasperamemory-bc2897d401": {
+     "placebo:0": 0.0,
+     "placebo:1": 0.070124,
+     "placebo:2": 0.0,
+     "placebo:3": 0.153093,
+     "placebo:4": 0.141837
+    },
+    "rcolkitt__vasperamemory-be5eb2f624": {
+     "placebo:0": 0.0,
+     "placebo:1": 0.006521,
+     "placebo:3": 0.08428,
+     "placebo:4": 0.080828
+    },
+    "rcolkitt__vasperamemory-bfb9638904": {
+     "placebo:0": 0.067038,
+     "placebo:1": 0.108453,
+     "placebo:2": 0.039449,
+     "placebo:3": 0.132361,
+     "placebo:4": 0.181355
+    },
+    "rcolkitt__vasperamemory-c229215f42": {
+     "placebo:0": 0.0,
+     "placebo:1": 0.162552,
+     "placebo:2": 0.003893,
+     "placebo:3": 0.10575,
+     "placebo:4": 0.146658
+    },
+    "rcolkitt__vasperamemory-c8c7e1d09f": {
+     "placebo:0": 0.0,
+     "placebo:1": 0.053392,
+     "placebo:3": 0.16508,
+     "placebo:4": 0.130606
+    },
+    "rcolkitt__vasperamemory-d7bc3e8e7e": {
+     "placebo:0": 0.0,
+     "placebo:1": 0.090078,
+     "placebo:2": 0.010533,
+     "placebo:3": 0.067763,
+     "placebo:4": 0.082838
+    },
+    "rcolkitt__vasperamemory-d8b2886cb5": {
+     "placebo:0": 0.074567,
+     "placebo:1": 0.103215,
+     "placebo:2": 0.071424,
+     "placebo:3": 0.155459,
+     "placebo:4": 0.181602
+    },
+    "rcolkitt__vasperamemory-ded0f6e2f7": {
+     "placebo:0": 0.0,
+     "placebo:1": 0.090093,
+     "placebo:2": 0.0,
+     "placebo:3": 0.161642,
+     "placebo:4": 0.172821
+    },
+    "rcolkitt__vasperamemory-e18e397c21": {
+     "placebo:0": 0.0,
+     "placebo:1": 0.0,
+     "placebo:2": 0.03219,
+     "placebo:3": 0.032084,
+     "placebo:4": 0.040496
+    },
+    "rcolkitt__vasperamemory-efcd22c7bb": {
+     "placebo:0": 0.063649,
+     "placebo:1": 0.047541,
+     "placebo:2": 0.0,
+     "placebo:3": 0.046236,
+     "placebo:4": 0.098441
+    },
+    "rcolkitt__vasperamemory-f8413efb09": {
+     "placebo:1": 0.083717,
+     "placebo:3": 0.210876,
+     "placebo:4": 0.175724
+    },
+    "rcolkitt__vasperamemory-fa5ad349de": {
+     "placebo:0": 0.0,
+     "placebo:1": 0.032886,
+     "placebo:2": 0.0,
+     "placebo:3": 0.058023,
+     "placebo:4": 0.042633
+    }
+   },
+   "tau": 0.0,
+   "version": "rolling",
+   "versions": {
+    "rcolkitt__vasperamemory-00456e20cb": null,
+    "rcolkitt__vasperamemory-0aec6b544a": null,
+    "rcolkitt__vasperamemory-0f10b324b1": null,
+    "rcolkitt__vasperamemory-1a69e3d927": null,
+    "rcolkitt__vasperamemory-1b9cba8f85": null,
+    "rcolkitt__vasperamemory-1e4b600af9": null,
+    "rcolkitt__vasperamemory-33e9e111f8": null,
+    "rcolkitt__vasperamemory-55e1e52dce": null,
+    "rcolkitt__vasperamemory-73a6775e42": null,
+    "rcolkitt__vasperamemory-753d59955a": null,
+    "rcolkitt__vasperamemory-774334c622": null,
+    "rcolkitt__vasperamemory-7c7af24bfc": null,
+    "rcolkitt__vasperamemory-8471fd45c4": null,
+    "rcolkitt__vasperamemory-9153908e03": null,
+    "rcolkitt__vasperamemory-917cf9c05b": null,
+    "rcolkitt__vasperamemory-9317acf05a": null,
+    "rcolkitt__vasperamemory-98a73f13f5": null,
+    "rcolkitt__vasperamemory-9c2285588f": null,
+    "rcolkitt__vasperamemory-a91df75637": null,
+    "rcolkitt__vasperamemory-ac0adaaf96": null,
+    "rcolkitt__vasperamemory-ac5583e859": null,
+    "rcolkitt__vasperamemory-af7d418bd5": null,
+    "rcolkitt__vasperamemory-b6b45f07ae": null,
+    "rcolkitt__vasperamemory-ba397b64e7": null,
+    "rcolkitt__vasperamemory-bc2897d401": null,
+    "rcolkitt__vasperamemory-be5eb2f624": null,
+    "rcolkitt__vasperamemory-bfb9638904": null,
+    "rcolkitt__vasperamemory-c229215f42": null,
+    "rcolkitt__vasperamemory-c8c7e1d09f": null,
+    "rcolkitt__vasperamemory-d7bc3e8e7e": null,
+    "rcolkitt__vasperamemory-d8b2886cb5": null,
+    "rcolkitt__vasperamemory-ded0f6e2f7": null,
+    "rcolkitt__vasperamemory-e18e397c21": null,
+    "rcolkitt__vasperamemory-efcd22c7bb": null,
+    "rcolkitt__vasperamemory-f8413efb09": null,
+    "rcolkitt__vasperamemory-fa5ad349de": null
+   }
+  },
+  "treatment": {
+   "file_hits": {
+    "rcolkitt__vasperamemory-00456e20cb": true,
+    "rcolkitt__vasperamemory-0aec6b544a": false,
+    "rcolkitt__vasperamemory-0f10b324b1": true,
+    "rcolkitt__vasperamemory-1a69e3d927": true,
+    "rcolkitt__vasperamemory-1b9cba8f85": true,
+    "rcolkitt__vasperamemory-1e4b600af9": true,
+    "rcolkitt__vasperamemory-33e9e111f8": true,
+    "rcolkitt__vasperamemory-55e1e52dce": true,
+    "rcolkitt__vasperamemory-73a6775e42": true,
+    "rcolkitt__vasperamemory-753d59955a": true,
+    "rcolkitt__vasperamemory-774334c622": true,
+    "rcolkitt__vasperamemory-7c7af24bfc": false,
+    "rcolkitt__vasperamemory-8471fd45c4": true,
+    "rcolkitt__vasperamemory-9153908e03": true,
+    "rcolkitt__vasperamemory-917cf9c05b": true,
+    "rcolkitt__vasperamemory-9317acf05a": true,
+    "rcolkitt__vasperamemory-98a73f13f5": true,
+    "rcolkitt__vasperamemory-9c2285588f": true,
+    "rcolkitt__vasperamemory-a91df75637": true,
+    "rcolkitt__vasperamemory-ac0adaaf96": true,
+    "rcolkitt__vasperamemory-ac5583e859": true,
+    "rcolkitt__vasperamemory-af7d418bd5": true,
+    "rcolkitt__vasperamemory-b6b45f07ae": true,
+    "rcolkitt__vasperamemory-ba397b64e7": true,
+    "rcolkitt__vasperamemory-bc2897d401": true,
+    "rcolkitt__vasperamemory-be5eb2f624": true,
+    "rcolkitt__vasperamemory-bfb9638904": true,
+    "rcolkitt__vasperamemory-c229215f42": true,
+    "rcolkitt__vasperamemory-c8c7e1d09f": true,
+    "rcolkitt__vasperamemory-d7bc3e8e7e": true,
+    "rcolkitt__vasperamemory-d8b2886cb5": true,
+    "rcolkitt__vasperamemory-ded0f6e2f7": true,
+    "rcolkitt__vasperamemory-e18e397c21": true,
+    "rcolkitt__vasperamemory-efcd22c7bb": true,
+    "rcolkitt__vasperamemory-f8413efb09": true,
+    "rcolkitt__vasperamemory-fa5ad349de": true
+   },
+   "file_metrics": {
+    "false_positive_rate": 0.3556,
+    "localization_rate": 0.9444,
+    "n_false_positive": 32,
+    "n_flags": 90,
+    "n_localized": 34,
+    "n_tasks": 36,
+    "per_repo": {
+     "rcolkitt/vasperamemory": {
+      "false_positive_rate": 0.3556,
+      "localization_rate": 0.9444,
+      "n_false_positive": 32,
+      "n_flags": 90,
+      "n_localized": 34,
+      "n_tasks": 36
+     }
+    }
+   },
+   "flags": {
+    "rcolkitt__vasperamemory-00456e20cb": [
+     "public/sw.js",
+     "lib/api-auth.ts",
+     "components/service-worker-registration.tsx"
+    ],
+    "rcolkitt__vasperamemory-0aec6b544a": [
+     "lib/supabase.ts"
+    ],
+    "rcolkitt__vasperamemory-0f10b324b1": [
+     "server/index.ts",
+     "server/mcp-sse.ts",
+     "lib/team-service.ts"
+    ],
+    "rcolkitt__vasperamemory-1a69e3d927": [
+     "lib/governance/gate-service.ts",
+     "lib/ai-learning/decision-capture.ts",
+     "server/governance-routes.ts"
+    ],
+    "rcolkitt__vasperamemory-1b9cba8f85": [
+     "lib/ai-learning/decision-capture.ts",
+     "server/mcp-ai-learning.ts",
+     "lib/supabase.ts"
+    ],
+    "rcolkitt__vasperamemory-1e4b600af9": [
+     "server/tools/decision-tools.ts",
+     "server/tools/session-tools.ts",
+     "server/mcp-sse.ts"
+    ],
+    "rcolkitt__vasperamemory-33e9e111f8": [
+     "lib/user-roles.ts",
+     "server/db-supabase.ts",
+     "app/dashboard/page.tsx"
+    ],
+    "rcolkitt__vasperamemory-55e1e52dce": [
+     "lib/security-middleware.ts",
+     "lib/hallucination-evolution-pipeline.ts",
+     "server/oauth-provider.ts"
+    ],
+    "rcolkitt__vasperamemory-73a6775e42": [
+     "lib/governance/gate-service.ts",
+     "lib/governance/conflict-checker.ts",
+     "server/tools/decision-tools.ts"
+    ],
+    "rcolkitt__vasperamemory-753d59955a": [
+     "lib/api-key.ts",
+     "app/api/ai-learning/context/route.ts",
+     "server/index.ts"
+    ],
+    "rcolkitt__vasperamemory-774334c622": [
+     "lib/memory-service.ts",
+     "server/mcp-sse.ts"
+    ],
+    "rcolkitt__vasperamemory-7c7af24bfc": [
+     "packages/cli/src/governance/ledger.ts"
+    ],
+    "rcolkitt__vasperamemory-8471fd45c4": [
+     "lib/codebase-intelligence.ts",
+     "server/mcp-sse.ts",
+     "server/mcp-stdio.ts"
+    ],
+    "rcolkitt__vasperamemory-9153908e03": [
+     "packages/cli/src/setup-rules.ts",
+     "packages/cli/src/cli.ts",
+     "server/governance-routes.ts"
+    ],
+    "rcolkitt__vasperamemory-917cf9c05b": [
+     "app/features/page.tsx",
+     "app/pricing/page.tsx"
+    ],
+    "rcolkitt__vasperamemory-9317acf05a": [
+     "app/api/admin/stats/route.ts",
+     "lib/subscription.ts",
+     "server/mcp-ai-learning.ts"
+    ],
+    "rcolkitt__vasperamemory-98a73f13f5": [
+     "lib/codebase-intelligence.ts",
+     "server/index.ts",
+     "lib/export-import/importer.ts"
+    ],
+    "rcolkitt__vasperamemory-9c2285588f": [
+     "app/api/stripe/reconcile/route.ts",
+     "lib/security-middleware.ts"
+    ],
+    "rcolkitt__vasperamemory-a91df75637": [
+     "packages/cli/src/cli.ts",
+     "packages/cli/src/governance/schemas.ts",
+     "packages/cli/src/governance/ledger.ts"
+    ],
+    "rcolkitt__vasperamemory-ac0adaaf96": [
+     "app/layout.tsx",
+     "public/sw.js",
+     "components/header.tsx"
+    ],
+    "rcolkitt__vasperamemory-ac5583e859": [
+     "app/api/ai-learning/impact/route.ts",
+     "server/index.ts",
+     "server/mcp-auth-proxy.ts"
+    ],
+    "rcolkitt__vasperamemory-af7d418bd5": [
+     "app/api/projects/[id]/decisions/[decisionId]/restore/route.ts",
+     "lib/governance/gate-service.ts",
+     "server/governance-routes.ts"
+    ],
+    "rcolkitt__vasperamemory-b6b45f07ae": [
+     "app/dashboard/page.tsx",
+     "lib/projects.ts",
+     "app/api/projects/[id]/metrics/route.ts"
+    ],
+    "rcolkitt__vasperamemory-ba397b64e7": [
+     "server/governance-routes.ts"
+    ],
+    "rcolkitt__vasperamemory-bc2897d401": [
+     "packages/cli/src/local-server.ts",
+     "packages/cli/src/local-db.ts"
+    ],
+    "rcolkitt__vasperamemory-be5eb2f624": [
+     "app/api/register/route.ts",
+     "app/api/auth/register-repo/route.ts"
+    ],
+    "rcolkitt__vasperamemory-bfb9638904": [
+     "packages/cli/src/cli.ts",
+     "packages/cli/src/setup-claude.ts"
+    ],
+    "rcolkitt__vasperamemory-c229215f42": [
+     "packages/cli/src/local-server.ts"
+    ],
+    "rcolkitt__vasperamemory-c8c7e1d09f": [
+     "app/api/debug/db-check/route.ts",
+     "app/api/test-db/route.ts",
+     "lib/subscription.ts"
+    ],
+    "rcolkitt__vasperamemory-d7bc3e8e7e": [
+     "server/tools/decision-tools.ts",
+     "server/mcp-sse.ts",
+     "server/tools/index.ts"
+    ],
+    "rcolkitt__vasperamemory-d8b2886cb5": [
+     "lib/subscription.ts",
+     "server/mcp-sse.ts",
+     "app/api/projects/route.ts"
+    ],
+    "rcolkitt__vasperamemory-ded0f6e2f7": [
+     "lib/governance/conflict-checker.ts",
+     "lib/governance/gate-service.ts",
+     "lib/embedding-service.ts"
+    ],
+    "rcolkitt__vasperamemory-e18e397c21": [
+     "lib/projects.ts"
+    ],
+    "rcolkitt__vasperamemory-efcd22c7bb": [
+     "lib/projects.ts",
+     "server/index.ts"
+    ],
+    "rcolkitt__vasperamemory-f8413efb09": [
+     "app/pricing/page.tsx",
+     "components/ui/button.tsx",
+     "components/theme-provider.tsx"
+    ],
+    "rcolkitt__vasperamemory-fa5ad349de": [
+     "server/governance-routes.ts",
+     "packages/cli/src/cli.ts"
+    ]
+   },
+   "hits": {
+    "rcolkitt__vasperamemory-00456e20cb": true,
+    "rcolkitt__vasperamemory-0aec6b544a": false,
+    "rcolkitt__vasperamemory-0f10b324b1": true,
+    "rcolkitt__vasperamemory-1a69e3d927": true,
+    "rcolkitt__vasperamemory-1b9cba8f85": true,
+    "rcolkitt__vasperamemory-1e4b600af9": true,
+    "rcolkitt__vasperamemory-33e9e111f8": true,
+    "rcolkitt__vasperamemory-55e1e52dce": true,
+    "rcolkitt__vasperamemory-73a6775e42": true,
+    "rcolkitt__vasperamemory-753d59955a": true,
+    "rcolkitt__vasperamemory-774334c622": true,
+    "rcolkitt__vasperamemory-7c7af24bfc": false,
+    "rcolkitt__vasperamemory-8471fd45c4": true,
+    "rcolkitt__vasperamemory-9153908e03": true,
+    "rcolkitt__vasperamemory-917cf9c05b": true,
+    "rcolkitt__vasperamemory-9317acf05a": true,
+    "rcolkitt__vasperamemory-98a73f13f5": true,
+    "rcolkitt__vasperamemory-9c2285588f": true,
+    "rcolkitt__vasperamemory-a91df75637": true,
+    "rcolkitt__vasperamemory-ac0adaaf96": true,
+    "rcolkitt__vasperamemory-ac5583e859": true,
+    "rcolkitt__vasperamemory-af7d418bd5": true,
+    "rcolkitt__vasperamemory-b6b45f07ae": true,
+    "rcolkitt__vasperamemory-ba397b64e7": true,
+    "rcolkitt__vasperamemory-bc2897d401": true,
+    "rcolkitt__vasperamemory-be5eb2f624": true,
+    "rcolkitt__vasperamemory-bfb9638904": true,
+    "rcolkitt__vasperamemory-c229215f42": true,
+    "rcolkitt__vasperamemory-c8c7e1d09f": true,
+    "rcolkitt__vasperamemory-d7bc3e8e7e": true,
+    "rcolkitt__vasperamemory-d8b2886cb5": true,
+    "rcolkitt__vasperamemory-ded0f6e2f7": true,
+    "rcolkitt__vasperamemory-e18e397c21": true,
+    "rcolkitt__vasperamemory-efcd22c7bb": true,
+    "rcolkitt__vasperamemory-f8413efb09": true,
+    "rcolkitt__vasperamemory-fa5ad349de": true
+   },
+   "lift_vs_control": {
+    "false_positive_rise_pts": 1.49,
+    "localization_lift_pts": -2.78
+   },
+   "metrics": {
+    "false_positive_rate": 0.3556,
+    "localization_rate": 0.9444,
+    "n_false_positive": 32,
+    "n_flags": 90,
+    "n_localized": 34,
+    "n_tasks": 36,
+    "per_repo": {
+     "rcolkitt/vasperamemory": {
+      "false_positive_rate": 0.3556,
+      "localization_rate": 0.9444,
+      "n_false_positive": 32,
+      "n_flags": 90,
+      "n_localized": 34,
+      "n_tasks": 36
+     }
+    }
+   },
+   "retrieved": {
+    "rcolkitt__vasperamemory-00456e20cb": [
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717"
+    ],
+    "rcolkitt__vasperamemory-0aec6b544a": [
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab"
+    ],
+    "rcolkitt__vasperamemory-0f10b324b1": [
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+     "70bc6e66439b2627b45db509e8cf01a7bddbdb354e0615cd300c1880e755d6f6",
+     "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62"
+    ],
+    "rcolkitt__vasperamemory-1a69e3d927": [
+     "4ca75ed698ecacbc688ec643d93734c0d44fd9b3e17b98a4bb3c41aed417aea1",
+     "684bff0b9f9f06d0d7c26c605dc15512cd5d81b63bc7ee11ef15960f10947159",
+     "2f2edfb3dc2cb2e73b5de0049219a8fd0afb9603ab39aa60acf0fbe099759bc5",
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+     "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62"
+    ],
+    "rcolkitt__vasperamemory-1b9cba8f85": [
+     "4ca75ed698ecacbc688ec643d93734c0d44fd9b3e17b98a4bb3c41aed417aea1",
+     "2f2edfb3dc2cb2e73b5de0049219a8fd0afb9603ab39aa60acf0fbe099759bc5",
+     "684bff0b9f9f06d0d7c26c605dc15512cd5d81b63bc7ee11ef15960f10947159",
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5"
+    ],
+    "rcolkitt__vasperamemory-1e4b600af9": [
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+     "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62",
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab"
+    ],
+    "rcolkitt__vasperamemory-33e9e111f8": [
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+     "4ca75ed698ecacbc688ec643d93734c0d44fd9b3e17b98a4bb3c41aed417aea1",
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+     "da258c71c6f0d60e69a4249926e7a9ed8ee1dfb8d35988aa34cbc5a4e4704fe1"
+    ],
+    "rcolkitt__vasperamemory-55e1e52dce": [
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+     "da258c71c6f0d60e69a4249926e7a9ed8ee1dfb8d35988aa34cbc5a4e4704fe1"
+    ],
+    "rcolkitt__vasperamemory-73a6775e42": [
+     "76239e94eea00c6e9bbd9da6dd19f3bfdaf102404e68ae48e5508ac675d54bec",
+     "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62",
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+     "70bc6e66439b2627b45db509e8cf01a7bddbdb354e0615cd300c1880e755d6f6",
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5"
+    ],
+    "rcolkitt__vasperamemory-753d59955a": [
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+     "7ac0892293b4561edb96d53b87f2f990b691ed2d1111fd540cb4605d3a4652de"
+    ],
+    "rcolkitt__vasperamemory-774334c622": [
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717"
+    ],
+    "rcolkitt__vasperamemory-7c7af24bfc": [
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+     "da258c71c6f0d60e69a4249926e7a9ed8ee1dfb8d35988aa34cbc5a4e4704fe1"
+    ],
+    "rcolkitt__vasperamemory-8471fd45c4": [
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717"
+    ],
+    "rcolkitt__vasperamemory-9153908e03": [
+     "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62",
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717"
+    ],
+    "rcolkitt__vasperamemory-917cf9c05b": [
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0"
+    ],
+    "rcolkitt__vasperamemory-9317acf05a": [
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5"
+    ],
+    "rcolkitt__vasperamemory-98a73f13f5": [
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+     "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62"
+    ],
+    "rcolkitt__vasperamemory-9c2285588f": [
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0"
+    ],
+    "rcolkitt__vasperamemory-a91df75637": [
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+     "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62"
+    ],
+    "rcolkitt__vasperamemory-ac0adaaf96": [
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0"
+    ],
+    "rcolkitt__vasperamemory-ac5583e859": [
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717"
+    ],
+    "rcolkitt__vasperamemory-af7d418bd5": [
+     "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62",
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+     "da258c71c6f0d60e69a4249926e7a9ed8ee1dfb8d35988aa34cbc5a4e4704fe1",
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab"
+    ],
+    "rcolkitt__vasperamemory-b6b45f07ae": [
+     "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62",
+     "684bff0b9f9f06d0d7c26c605dc15512cd5d81b63bc7ee11ef15960f10947159",
+     "76239e94eea00c6e9bbd9da6dd19f3bfdaf102404e68ae48e5508ac675d54bec",
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+     "7ac0892293b4561edb96d53b87f2f990b691ed2d1111fd540cb4605d3a4652de"
+    ],
+    "rcolkitt__vasperamemory-ba397b64e7": [
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+     "da258c71c6f0d60e69a4249926e7a9ed8ee1dfb8d35988aa34cbc5a4e4704fe1",
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5"
+    ],
+    "rcolkitt__vasperamemory-bc2897d401": [
+     "70bc6e66439b2627b45db509e8cf01a7bddbdb354e0615cd300c1880e755d6f6",
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717"
+    ],
+    "rcolkitt__vasperamemory-be5eb2f624": [
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717"
+    ],
+    "rcolkitt__vasperamemory-bfb9638904": [
+     "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62",
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0"
+    ],
+    "rcolkitt__vasperamemory-c229215f42": [
+     "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62",
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5"
+    ],
+    "rcolkitt__vasperamemory-c8c7e1d09f": [
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5"
+    ],
+    "rcolkitt__vasperamemory-d7bc3e8e7e": [
+     "76239e94eea00c6e9bbd9da6dd19f3bfdaf102404e68ae48e5508ac675d54bec",
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+     "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62",
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab"
+    ],
+    "rcolkitt__vasperamemory-d8b2886cb5": [
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+     "da258c71c6f0d60e69a4249926e7a9ed8ee1dfb8d35988aa34cbc5a4e4704fe1"
+    ],
+    "rcolkitt__vasperamemory-ded0f6e2f7": [
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+     "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62",
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab"
+    ],
+    "rcolkitt__vasperamemory-e18e397c21": [
+     "63c1e225c972be946466e619f3df2fb525fd643f304d445cd931fc9881dccab8",
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+     "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62"
+    ],
+    "rcolkitt__vasperamemory-efcd22c7bb": [
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+     "76239e94eea00c6e9bbd9da6dd19f3bfdaf102404e68ae48e5508ac675d54bec",
+     "da258c71c6f0d60e69a4249926e7a9ed8ee1dfb8d35988aa34cbc5a4e4704fe1"
+    ],
+    "rcolkitt__vasperamemory-f8413efb09": [
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0"
+    ],
+    "rcolkitt__vasperamemory-fa5ad349de": [
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+     "da258c71c6f0d60e69a4249926e7a9ed8ee1dfb8d35988aa34cbc5a4e4704fe1",
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5"
+    ]
+   },
+   "scores": {
+    "rcolkitt__vasperamemory-00456e20cb": {
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": 0.319135,
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717": 0.227276,
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0": 0.298865
+    },
+    "rcolkitt__vasperamemory-0aec6b544a": {
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": 0.156942,
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717": 0.422404,
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0": 0.171094
+    },
+    "rcolkitt__vasperamemory-0f10b324b1": {
+     "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62": 0.350934,
+     "70bc6e66439b2627b45db509e8cf01a7bddbdb354e0615cd300c1880e755d6f6": 0.353613,
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": 0.385528,
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5": 0.41336,
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0": 0.489615
+    },
+    "rcolkitt__vasperamemory-1a69e3d927": {
+     "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62": 0.241012,
+     "2f2edfb3dc2cb2e73b5de0049219a8fd0afb9603ab39aa60acf0fbe099759bc5": 0.358832,
+     "4ca75ed698ecacbc688ec643d93734c0d44fd9b3e17b98a4bb3c41aed417aea1": 0.477247,
+     "684bff0b9f9f06d0d7c26c605dc15512cd5d81b63bc7ee11ef15960f10947159": 0.44213,
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717": 0.323095
+    },
+    "rcolkitt__vasperamemory-1b9cba8f85": {
+     "2f2edfb3dc2cb2e73b5de0049219a8fd0afb9603ab39aa60acf0fbe099759bc5": 0.214609,
+     "4ca75ed698ecacbc688ec643d93734c0d44fd9b3e17b98a4bb3c41aed417aea1": 0.256709,
+     "684bff0b9f9f06d0d7c26c605dc15512cd5d81b63bc7ee11ef15960f10947159": 0.202681,
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5": 0.149622,
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717": 0.169354
+    },
+    "rcolkitt__vasperamemory-1e4b600af9": {
+     "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62": 0.271482,
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": 0.260223,
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5": 0.298412,
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717": 0.297347,
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0": 0.387341
+    },
+    "rcolkitt__vasperamemory-33e9e111f8": {
+     "4ca75ed698ecacbc688ec643d93734c0d44fd9b3e17b98a4bb3c41aed417aea1": 0.241965,
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": 0.344644,
+     "da258c71c6f0d60e69a4249926e7a9ed8ee1dfb8d35988aa34cbc5a4e4704fe1": 0.203787,
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5": 0.328618,
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0": 0.206307
+    },
+    "rcolkitt__vasperamemory-55e1e52dce": {
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": 0.231336,
+     "da258c71c6f0d60e69a4249926e7a9ed8ee1dfb8d35988aa34cbc5a4e4704fe1": 0.151033,
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5": 0.292893,
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717": 0.206339,
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0": 0.340042
+    },
+    "rcolkitt__vasperamemory-73a6775e42": {
+     "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62": 0.19626,
+     "70bc6e66439b2627b45db509e8cf01a7bddbdb354e0615cd300c1880e755d6f6": 0.1866,
+     "76239e94eea00c6e9bbd9da6dd19f3bfdaf102404e68ae48e5508ac675d54bec": 0.240565,
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5": 0.14901,
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717": 0.191697
+    },
+    "rcolkitt__vasperamemory-753d59955a": {
+     "7ac0892293b4561edb96d53b87f2f990b691ed2d1111fd540cb4605d3a4652de": 0.288572,
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": 0.434145,
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5": 0.427662,
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717": 0.337997,
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0": 0.387225
+    },
+    "rcolkitt__vasperamemory-774334c622": {
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": 0.345481,
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717": 0.243262,
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0": 0.45947
+    },
+    "rcolkitt__vasperamemory-7c7af24bfc": {
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": 0.397492,
+     "da258c71c6f0d60e69a4249926e7a9ed8ee1dfb8d35988aa34cbc5a4e4704fe1": 0.218764,
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5": 0.355735,
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717": 0.223223,
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0": 0.348798
+    },
+    "rcolkitt__vasperamemory-8471fd45c4": {
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": 0.341393,
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5": 0.422573,
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717": 0.263465,
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0": 0.339451
+    },
+    "rcolkitt__vasperamemory-9153908e03": {
+     "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62": 0.576144,
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": 0.350296,
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5": 0.316959,
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717": 0.273056,
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0": 0.302426
+    },
+    "rcolkitt__vasperamemory-917cf9c05b": {
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": 0.26116,
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5": 0.249333,
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717": 0.278826,
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0": 0.195003
+    },
+    "rcolkitt__vasperamemory-9317acf05a": {
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": 0.134259,
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5": 0.129391,
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717": 0.437265,
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0": 0.313433
+    },
+    "rcolkitt__vasperamemory-98a73f13f5": {
+     "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62": 0.218649,
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": 0.2796,
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5": 0.307562,
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717": 0.471626,
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0": 0.374067
+    },
+    "rcolkitt__vasperamemory-9c2285588f": {
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": 0.284661,
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717": 0.273941,
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0": 0.249865
+    },
+    "rcolkitt__vasperamemory-a91df75637": {
+     "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62": 0.270374,
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": 0.440652,
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5": 0.344937,
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717": 0.410681,
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0": 0.389997
+    },
+    "rcolkitt__vasperamemory-ac0adaaf96": {
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": 0.248324,
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717": 0.185273,
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0": 0.139861
+    },
+    "rcolkitt__vasperamemory-ac5583e859": {
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": 0.494056,
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717": 0.371986,
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0": 0.443024
+    },
+    "rcolkitt__vasperamemory-af7d418bd5": {
+     "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62": 0.281475,
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": 0.181556,
+     "da258c71c6f0d60e69a4249926e7a9ed8ee1dfb8d35988aa34cbc5a4e4704fe1": 0.231447,
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717": 0.273748,
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0": 0.228682
+    },
+    "rcolkitt__vasperamemory-b6b45f07ae": {
+     "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62": 0.318238,
+     "684bff0b9f9f06d0d7c26c605dc15512cd5d81b63bc7ee11ef15960f10947159": 0.139757,
+     "76239e94eea00c6e9bbd9da6dd19f3bfdaf102404e68ae48e5508ac675d54bec": 0.13488,
+     "7ac0892293b4561edb96d53b87f2f990b691ed2d1111fd540cb4605d3a4652de": 0.11672,
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": 0.117334
+    },
+    "rcolkitt__vasperamemory-ba397b64e7": {
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": 0.229141,
+     "da258c71c6f0d60e69a4249926e7a9ed8ee1dfb8d35988aa34cbc5a4e4704fe1": 0.14925,
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5": 0.132663,
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717": 0.228797,
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0": 0.21103
+    },
+    "rcolkitt__vasperamemory-bc2897d401": {
+     "70bc6e66439b2627b45db509e8cf01a7bddbdb354e0615cd300c1880e755d6f6": 0.415971,
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": 0.363608,
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5": 0.346802,
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717": 0.341756,
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0": 0.349139
+    },
+    "rcolkitt__vasperamemory-be5eb2f624": {
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": 0.439471,
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5": 0.360238,
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717": 0.358033,
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0": 0.478947
+    },
+    "rcolkitt__vasperamemory-bfb9638904": {
+     "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62": 0.305914,
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": 0.188963,
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5": 0.066065,
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717": 0.19881,
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0": 0.035749
+    },
+    "rcolkitt__vasperamemory-c229215f42": {
+     "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62": 0.385989,
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": 0.365832,
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5": 0.279507,
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717": 0.32966,
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0": 0.280438
+    },
+    "rcolkitt__vasperamemory-c8c7e1d09f": {
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": 0.206073,
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5": 0.171896,
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717": 0.25168,
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0": 0.310743
+    },
+    "rcolkitt__vasperamemory-d7bc3e8e7e": {
+     "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62": 0.396912,
+     "76239e94eea00c6e9bbd9da6dd19f3bfdaf102404e68ae48e5508ac675d54bec": 0.414449,
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": 0.385881,
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5": 0.398378,
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0": 0.414413
+    },
+    "rcolkitt__vasperamemory-d8b2886cb5": {
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": 0.369155,
+     "da258c71c6f0d60e69a4249926e7a9ed8ee1dfb8d35988aa34cbc5a4e4704fe1": 0.300188,
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5": 0.356936,
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717": 0.335508,
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0": 0.468096
+    },
+    "rcolkitt__vasperamemory-ded0f6e2f7": {
+     "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62": 0.214978,
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": 0.154284,
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5": 0.173393,
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717": 0.318264,
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0": 0.234651
+    },
+    "rcolkitt__vasperamemory-e18e397c21": {
+     "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62": 0.28777,
+     "63c1e225c972be946466e619f3df2fb525fd643f304d445cd931fc9881dccab8": 0.446322,
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": 0.385516,
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5": 0.362912,
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0": 0.368963
+    },
+    "rcolkitt__vasperamemory-efcd22c7bb": {
+     "76239e94eea00c6e9bbd9da6dd19f3bfdaf102404e68ae48e5508ac675d54bec": 0.260594,
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": 0.345134,
+     "da258c71c6f0d60e69a4249926e7a9ed8ee1dfb8d35988aa34cbc5a4e4704fe1": 0.248858,
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5": 0.27303,
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0": 0.302428
+    },
+    "rcolkitt__vasperamemory-f8413efb09": {
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": 0.169233,
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717": 0.19867,
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0": 0.16737
+    },
+    "rcolkitt__vasperamemory-fa5ad349de": {
+     "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": 0.272317,
+     "da258c71c6f0d60e69a4249926e7a9ed8ee1dfb8d35988aa34cbc5a4e4704fe1": 0.29534,
+     "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5": 0.203862,
+     "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717": 0.356266,
+     "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0": 0.316157
+    }
+   },
+   "tau": 0.0,
+   "version": "rolling",
+   "versions": {
+    "rcolkitt__vasperamemory-00456e20cb": "10a0729e6820446cb46ec94ee0c963d297631de52e45201afc5c1547155f14cd",
+    "rcolkitt__vasperamemory-0aec6b544a": "10a0729e6820446cb46ec94ee0c963d297631de52e45201afc5c1547155f14cd",
+    "rcolkitt__vasperamemory-0f10b324b1": "2f9ab1cc5aadd46368cc7c40287d23de5bd4ecf2af0f026027aace3e65aa4bd3",
+    "rcolkitt__vasperamemory-1a69e3d927": "f24fbc6baa9708ea9b5453c7083a10a46e18e230a9cfc574e33fe113d3917516",
+    "rcolkitt__vasperamemory-1b9cba8f85": "f24fbc6baa9708ea9b5453c7083a10a46e18e230a9cfc574e33fe113d3917516",
+    "rcolkitt__vasperamemory-1e4b600af9": "8b539f0c69153e66e75a2f149e0767a1d9e14837096999326c8e21bf0fc8e142",
+    "rcolkitt__vasperamemory-33e9e111f8": "2f9ab1cc5aadd46368cc7c40287d23de5bd4ecf2af0f026027aace3e65aa4bd3",
+    "rcolkitt__vasperamemory-55e1e52dce": "d196e44e074faac6c65aecee2134a4c6ef768d8a2baf5966c23d98917695c6dd",
+    "rcolkitt__vasperamemory-73a6775e42": "767739dfd40220e015dbbe3e8b3179e588830c399906e387b484eb9eb54ea14d",
+    "rcolkitt__vasperamemory-753d59955a": "2f9ab1cc5aadd46368cc7c40287d23de5bd4ecf2af0f026027aace3e65aa4bd3",
+    "rcolkitt__vasperamemory-774334c622": "10a0729e6820446cb46ec94ee0c963d297631de52e45201afc5c1547155f14cd",
+    "rcolkitt__vasperamemory-7c7af24bfc": "8b539f0c69153e66e75a2f149e0767a1d9e14837096999326c8e21bf0fc8e142",
+    "rcolkitt__vasperamemory-8471fd45c4": "a621a393818159dcf40a9e8f84770f7277495bb368094cd185c738305c917d14",
+    "rcolkitt__vasperamemory-9153908e03": "8b539f0c69153e66e75a2f149e0767a1d9e14837096999326c8e21bf0fc8e142",
+    "rcolkitt__vasperamemory-917cf9c05b": "a621a393818159dcf40a9e8f84770f7277495bb368094cd185c738305c917d14",
+    "rcolkitt__vasperamemory-9317acf05a": "a621a393818159dcf40a9e8f84770f7277495bb368094cd185c738305c917d14",
+    "rcolkitt__vasperamemory-98a73f13f5": "8b539f0c69153e66e75a2f149e0767a1d9e14837096999326c8e21bf0fc8e142",
+    "rcolkitt__vasperamemory-9c2285588f": "10a0729e6820446cb46ec94ee0c963d297631de52e45201afc5c1547155f14cd",
+    "rcolkitt__vasperamemory-a91df75637": "8b539f0c69153e66e75a2f149e0767a1d9e14837096999326c8e21bf0fc8e142",
+    "rcolkitt__vasperamemory-ac0adaaf96": "10a0729e6820446cb46ec94ee0c963d297631de52e45201afc5c1547155f14cd",
+    "rcolkitt__vasperamemory-ac5583e859": "10a0729e6820446cb46ec94ee0c963d297631de52e45201afc5c1547155f14cd",
+    "rcolkitt__vasperamemory-af7d418bd5": "8e0c1c08a69ccfdf378206f1f21d977744113262c8f2f6bb3535aa5259175c18",
+    "rcolkitt__vasperamemory-b6b45f07ae": "2f9ab1cc5aadd46368cc7c40287d23de5bd4ecf2af0f026027aace3e65aa4bd3",
+    "rcolkitt__vasperamemory-ba397b64e7": "d196e44e074faac6c65aecee2134a4c6ef768d8a2baf5966c23d98917695c6dd",
+    "rcolkitt__vasperamemory-bc2897d401": "8e0c1c08a69ccfdf378206f1f21d977744113262c8f2f6bb3535aa5259175c18",
+    "rcolkitt__vasperamemory-be5eb2f624": "a621a393818159dcf40a9e8f84770f7277495bb368094cd185c738305c917d14",
+    "rcolkitt__vasperamemory-bfb9638904": "8b539f0c69153e66e75a2f149e0767a1d9e14837096999326c8e21bf0fc8e142",
+    "rcolkitt__vasperamemory-c229215f42": "8b539f0c69153e66e75a2f149e0767a1d9e14837096999326c8e21bf0fc8e142",
+    "rcolkitt__vasperamemory-c8c7e1d09f": "a621a393818159dcf40a9e8f84770f7277495bb368094cd185c738305c917d14",
+    "rcolkitt__vasperamemory-d7bc3e8e7e": "f24fbc6baa9708ea9b5453c7083a10a46e18e230a9cfc574e33fe113d3917516",
+    "rcolkitt__vasperamemory-d8b2886cb5": "d196e44e074faac6c65aecee2134a4c6ef768d8a2baf5966c23d98917695c6dd",
+    "rcolkitt__vasperamemory-ded0f6e2f7": "8b539f0c69153e66e75a2f149e0767a1d9e14837096999326c8e21bf0fc8e142",
+    "rcolkitt__vasperamemory-e18e397c21": "31108bdaa71adc93b354755563ea8c41e017a3de34ac4eb2b166b0e81796899d",
+    "rcolkitt__vasperamemory-efcd22c7bb": "2f9ab1cc5aadd46368cc7c40287d23de5bd4ecf2af0f026027aace3e65aa4bd3",
+    "rcolkitt__vasperamemory-f8413efb09": "10a0729e6820446cb46ec94ee0c963d297631de52e45201afc5c1547155f14cd",
+    "rcolkitt__vasperamemory-fa5ad349de": "d196e44e074faac6c65aecee2134a4c6ef768d8a2baf5966c23d98917695c6dd"
+   }
+  }
+ },
+ "control": {
+  "false_positive_rate": 0.3407,
+  "localization_rate": 0.9722,
+  "n_false_positive": 31,
+  "n_flags": 91,
+  "n_localized": 35,
+  "n_tasks": 36,
+  "per_repo": {
+   "rcolkitt/vasperamemory": {
+    "false_positive_rate": 0.3407,
+    "localization_rate": 0.9722,
+    "n_false_positive": 31,
+    "n_flags": 91,
+    "n_localized": 35,
+    "n_tasks": 36
+   }
+  }
+ },
+ "control_flags": {
+  "rcolkitt__vasperamemory-00456e20cb": [
+   "public/sw.js",
+   "components/service-worker-registration.tsx",
+   "lib/utils.ts"
+  ],
+  "rcolkitt__vasperamemory-0aec6b544a": [
+   "lib/metrics-service.ts"
+  ],
+  "rcolkitt__vasperamemory-0f10b324b1": [
+   "server/index.ts",
+   "server/mcp-sse.ts",
+   "lib/admin-auth.ts"
+  ],
+  "rcolkitt__vasperamemory-1a69e3d927": [
+   "lib/ai-learning/decision-capture.ts",
+   "lib/governance/gate-service.ts",
+   "lib/governance/ledger-service.ts"
+  ],
+  "rcolkitt__vasperamemory-1b9cba8f85": [
+   "lib/ai-learning/decision-capture.ts",
+   "server/mcp-ai-learning.ts",
+   "lib/supabase.ts"
+  ],
+  "rcolkitt__vasperamemory-1e4b600af9": [
+   "server/tools/decision-tools.ts",
+   "server/tools/session-tools.ts",
+   "__tests__/governance/no-bypass.test.ts"
+  ],
+  "rcolkitt__vasperamemory-33e9e111f8": [
+   "lib/user-roles.ts",
+   "server/db-supabase.ts",
+   "app/dashboard/page.tsx"
+  ],
+  "rcolkitt__vasperamemory-55e1e52dce": [
+   "lib/security-middleware.ts",
+   "lib/hallucination-evolution-pipeline.ts",
+   "server/oauth-provider.ts"
+  ],
+  "rcolkitt__vasperamemory-73a6775e42": [
+   "lib/governance/conflict-checker.ts",
+   "lib/governance/gate-service.ts",
+   "server/tools/decision-tools.ts"
+  ],
+  "rcolkitt__vasperamemory-753d59955a": [
+   "lib/api-key.ts",
+   "server/index.ts",
+   "lib/identity.ts"
+  ],
+  "rcolkitt__vasperamemory-774334c622": [
+   "lib/memory-service.ts",
+   "server/mcp-sse.ts"
+  ],
+  "rcolkitt__vasperamemory-7c7af24bfc": [
+   "packages/cli/src/governance/ledger.ts",
+   "lib/governance/ledger-service.ts"
+  ],
+  "rcolkitt__vasperamemory-8471fd45c4": [
+   "lib/codebase-intelligence.ts",
+   "server/mcp-sse.ts",
+   "lib/utils.ts"
+  ],
+  "rcolkitt__vasperamemory-9153908e03": [
+   "packages/cli/src/setup-rules.ts",
+   "packages/cli/src/setup-cursor.ts",
+   "packages/cli/src/setup-windsurf.ts"
+  ],
+  "rcolkitt__vasperamemory-917cf9c05b": [
+   "app/features/page.tsx",
+   "app/pricing/page.tsx"
+  ],
+  "rcolkitt__vasperamemory-9317acf05a": [
+   "app/api/admin/stats/route.ts",
+   "lib/subscription.ts",
+   "server/mcp-ai-learning.ts"
+  ],
+  "rcolkitt__vasperamemory-98a73f13f5": [
+   "lib/codebase-intelligence.ts",
+   "server/index.ts",
+   "lib/export-import/importer.ts"
+  ],
+  "rcolkitt__vasperamemory-9c2285588f": [
+   "app/api/stripe/reconcile/route.ts",
+   "lib/security-middleware.ts"
+  ],
+  "rcolkitt__vasperamemory-a91df75637": [
+   "packages/cli/src/cli.ts",
+   "packages/cli/src/governance/schemas.ts"
+  ],
+  "rcolkitt__vasperamemory-ac0adaaf96": [
+   "app/layout.tsx",
+   "components/header.tsx",
+   "public/sw.js"
+  ],
+  "rcolkitt__vasperamemory-ac5583e859": [
+   "app/api/ai-learning/impact/route.ts",
+   "server/index.ts",
+   "server/mcp-auth-proxy.ts"
+  ],
+  "rcolkitt__vasperamemory-af7d418bd5": [
+   "app/api/projects/[id]/decisions/[decisionId]/restore/route.ts",
+   "lib/governance/gate-service.ts",
+   "lib/governance/ledger-service.ts"
+  ],
+  "rcolkitt__vasperamemory-b6b45f07ae": [
+   "app/dashboard/page.tsx",
+   "lib/projects.ts",
+   "app/api/projects/[id]/metrics/route.ts"
+  ],
+  "rcolkitt__vasperamemory-ba397b64e7": [
+   "server/governance-routes.ts"
+  ],
+  "rcolkitt__vasperamemory-bc2897d401": [
+   "packages/cli/src/local-server.ts",
+   "packages/cli/src/http-server.ts",
+   "packages/cli/src/local-db.ts"
+  ],
+  "rcolkitt__vasperamemory-be5eb2f624": [
+   "app/api/register/route.ts",
+   "app/api/auth/register-repo/route.ts"
+  ],
+  "rcolkitt__vasperamemory-bfb9638904": [
+   "packages/cli/src/cli.ts",
+   "packages/cli/src/setup-claude.ts"
+  ],
+  "rcolkitt__vasperamemory-c229215f42": [
+   "packages/cli/src/local-server.ts"
+  ],
+  "rcolkitt__vasperamemory-c8c7e1d09f": [
+   "app/api/debug/db-check/route.ts",
+   "app/api/test-db/route.ts",
+   "lib/subscription.ts"
+  ],
+  "rcolkitt__vasperamemory-d7bc3e8e7e": [
+   "server/tools/decision-tools.ts",
+   "server/mcp-sse.ts",
+   "server/tools/utils.ts"
+  ],
+  "rcolkitt__vasperamemory-d8b2886cb5": [
+   "lib/subscription.ts",
+   "lib/memory-service.ts",
+   "server/mcp-sse.ts"
+  ],
+  "rcolkitt__vasperamemory-ded0f6e2f7": [
+   "lib/governance/conflict-checker.ts",
+   "lib/governance/gate-service.ts",
+   "lib/embedding-service.ts"
+  ],
+  "rcolkitt__vasperamemory-e18e397c21": [
+   "lib/projects.ts"
+  ],
+  "rcolkitt__vasperamemory-efcd22c7bb": [
+   "lib/identity.ts",
+   "server/index.ts"
+  ],
+  "rcolkitt__vasperamemory-f8413efb09": [
+   "app/pricing/page.tsx",
+   "components/ui/button.tsx",
+   "app/layout.tsx"
+  ],
+  "rcolkitt__vasperamemory-fa5ad349de": [
+   "server/governance-routes.ts",
+   "packages/cli/src/cli.ts"
+  ]
+ },
+ "errors": {},
+ "gold": {
+  "rcolkitt__vasperamemory-00456e20cb": [
+   "public/sw.js"
+  ],
+  "rcolkitt__vasperamemory-0aec6b544a": [
+   "app/admin/layout.tsx",
+   "app/admin/monitoring/page.tsx",
+   "app/api/admin/monitoring/route.ts"
+  ],
+  "rcolkitt__vasperamemory-0f10b324b1": [
+   "app/api/assets/[id]/route.ts",
+   "app/api/assets/route.ts",
+   "app/api/patterns/privacy/route.ts",
+   "app/api/patterns/suggestions/route.ts",
+   "app/api/projects/[id]/export/route.ts",
+   "app/api/projects/[id]/import/route.ts",
+   "app/api/projects/[id]/summaries/context/route.ts",
+   "app/api/projects/[id]/summaries/route.ts",
+   "lib/admin-auth.ts",
+   "lib/governance/api-auth.ts",
+   "lib/team-service.ts",
+   "server/index.ts",
+   "server/mcp-sse.ts",
+   "server/mcp-stdio-enhanced.ts",
+   "server/universal-api.ts"
+  ],
+  "rcolkitt__vasperamemory-1a69e3d927": [
+   "lib/ai-learning/context-injection.ts",
+   "lib/ai-learning/decision-capture.ts"
+  ],
+  "rcolkitt__vasperamemory-1b9cba8f85": [
+   "lib/ai-learning/decision-capture.ts"
+  ],
+  "rcolkitt__vasperamemory-1e4b600af9": [
+   "server/tools/decision-tools.ts",
+   "server/tools/session-tools.ts"
+  ],
+  "rcolkitt__vasperamemory-33e9e111f8": [
+   "lib/user-roles.ts"
+  ],
+  "rcolkitt__vasperamemory-55e1e52dce": [
+   "attic/vscode-extension/out/extension.js",
+   "jest.config.js",
+   "lib/hallucination-evolution-pipeline.ts",
+   "lib/security-middleware.ts",
+   "server/mcp-streamable-http.ts",
+   "server/oauth-provider.ts"
+  ],
+  "rcolkitt__vasperamemory-73a6775e42": [
+   "lib/governance/conflict-checker.ts",
+   "lib/governance/gate-service.ts",
+   "server/tools/decision-tools.ts"
+  ],
+  "rcolkitt__vasperamemory-753d59955a": [
+   "app/api/ai-learning/context/route.ts",
+   "app/api/ai-learning/decisions/route.ts",
+   "app/api/ai-learning/impact/route.ts",
+   "app/api/auth/register-repo/route.ts",
+   "lib/api-key.ts",
+   "lib/identity.ts",
+   "lib/projects.ts",
+   "server/index.ts",
+   "server/universal-api.ts"
+  ],
+  "rcolkitt__vasperamemory-774334c622": [
+   "server/mcp-sse.ts",
+   "server/project-access.ts"
+  ],
+  "rcolkitt__vasperamemory-7c7af24bfc": [
+   "jest.config.js",
+   "lib/governance/ledger-service.ts"
+  ],
+  "rcolkitt__vasperamemory-8471fd45c4": [
+   "lib/codebase-intelligence.ts"
+  ],
+  "rcolkitt__vasperamemory-9153908e03": [
+   "packages/cli/src/setup-rules.ts"
+  ],
+  "rcolkitt__vasperamemory-917cf9c05b": [
+   "app/dashboard/docs/page.tsx",
+   "app/features/page.tsx",
+   "app/pricing/page.tsx",
+   "components/features-section.tsx",
+   "server/mcp-sse.ts"
+  ],
+  "rcolkitt__vasperamemory-9317acf05a": [
+   "app/api/admin/stats/route.ts",
+   "lib/subscription.ts"
+  ],
+  "rcolkitt__vasperamemory-98a73f13f5": [
+   "lib/codebase-intelligence.ts",
+   "lib/export-import/importer.ts",
+   "server/index.ts"
+  ],
+  "rcolkitt__vasperamemory-9c2285588f": [
+   "app/api/stripe/reconcile/route.ts",
+   "lib/rate-limit.ts"
+  ],
+  "rcolkitt__vasperamemory-a91df75637": [
+   "packages/cli/src/cli.ts",
+   "packages/cli/src/governance/verify-output.ts"
+  ],
+  "rcolkitt__vasperamemory-ac0adaaf96": [
+   "app/layout.tsx"
+  ],
+  "rcolkitt__vasperamemory-ac5583e859": [
+   "app/api/ai-learning/impact/route.ts",
+   "server/index.ts",
+   "server/oauth-routes.ts",
+   "server/team-analytics-dashboard.ts"
+  ],
+  "rcolkitt__vasperamemory-af7d418bd5": [
+   "app/api/projects/[id]/decisions/[decisionId]/restore/route.ts"
+  ],
+  "rcolkitt__vasperamemory-b6b45f07ae": [
+   "app/dashboard/page.tsx"
+  ],
+  "rcolkitt__vasperamemory-ba397b64e7": [
+   "packages/cli/src/cli.ts",
+   "packages/cli/src/context.ts",
+   "packages/cli/src/extract.ts",
+   "packages/cli/src/local-sessions.ts",
+   "packages/cli/src/session-end.ts",
+   "server/governance-routes.ts"
+  ],
+  "rcolkitt__vasperamemory-bc2897d401": [
+   "packages/cli/src/http-server.ts",
+   "packages/cli/src/local-db.ts",
+   "packages/cli/src/local-server.ts"
+  ],
+  "rcolkitt__vasperamemory-be5eb2f624": [
+   "app/api/auth/register-repo/route.ts",
+   "app/api/register/route.ts",
+   "lib/identity.ts",
+   "packages/cli/src/cli.ts"
+  ],
+  "rcolkitt__vasperamemory-bfb9638904": [
+   "packages/cli/src/claude-hooks.ts",
+   "packages/cli/src/cli.ts"
+  ],
+  "rcolkitt__vasperamemory-c229215f42": [
+   "lib/governance/tool-schemas.ts",
+   "packages/cli/src/governance/local-reads.ts",
+   "packages/cli/src/governance/tool-schemas.ts",
+   "packages/cli/src/local-server.ts"
+  ],
+  "rcolkitt__vasperamemory-c8c7e1d09f": [
+   "app/api/auth/register-repo/route.ts",
+   "app/api/debug/db-check/route.ts",
+   "app/api/test-db/route.ts",
+   "lib/memory-service.ts",
+   "lib/projects.ts",
+   "lib/subscription.ts"
+  ],
+  "rcolkitt__vasperamemory-d7bc3e8e7e": [
+   "server/mcp-sse.ts",
+   "server/tools/decision-tools.ts"
+  ],
+  "rcolkitt__vasperamemory-d8b2886cb5": [
+   "app/api/auth/register-repo/route.ts",
+   "app/api/projects/route.ts",
+   "lib/memory-service.ts",
+   "lib/projects.ts",
+   "lib/subscription.ts",
+   "server/mcp-sse.ts"
+  ],
+  "rcolkitt__vasperamemory-ded0f6e2f7": [
+   "lib/governance/conflict-checker.ts",
+   "lib/governance/gate-service.ts"
+  ],
+  "rcolkitt__vasperamemory-e18e397c21": [
+   "app/admin/layout.tsx",
+   "app/api/keys/route.ts",
+   "app/dashboard/page.tsx",
+   "lib/api-auth.ts",
+   "lib/api-key-client.ts",
+   "lib/projects.ts"
+  ],
+  "rcolkitt__vasperamemory-efcd22c7bb": [
+   "app/api/auth/register-repo/route.ts",
+   "lib/api-key.ts",
+   "lib/identity.ts",
+   "lib/projects.ts",
+   "server/index.ts"
+  ],
+  "rcolkitt__vasperamemory-f8413efb09": [
+   "app/pricing/page.tsx"
+  ],
+  "rcolkitt__vasperamemory-fa5ad349de": [
+   "packages/cli/jest.config.js",
+   "packages/cli/src/cli.ts",
+   "packages/cli/src/context.ts",
+   "server/governance-routes.ts"
+  ]
+ },
+ "granularity": "file",
+ "learn_errors": {},
+ "lift": {
+  "false_positive_rise_pts": 1.49,
+  "localization_lift_pts": -2.78
+ },
+ "memory_locations": {
+  "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62": "server/governance-routes.ts",
+  "2f2edfb3dc2cb2e73b5de0049219a8fd0afb9603ab39aa60acf0fbe099759bc5": "lib/governance/conflict-checker.ts",
+  "4ca75ed698ecacbc688ec643d93734c0d44fd9b3e17b98a4bb3c41aed417aea1": "lib/governance/gate-service.ts",
+  "63c1e225c972be946466e619f3df2fb525fd643f304d445cd931fc9881dccab8": "lib/identity.ts",
+  "684bff0b9f9f06d0d7c26c605dc15512cd5d81b63bc7ee11ef15960f10947159": "server/tools/decision-tools.ts",
+  "70bc6e66439b2627b45db509e8cf01a7bddbdb354e0615cd300c1880e755d6f6": "lib/codebase-intelligence.ts",
+  "76239e94eea00c6e9bbd9da6dd19f3bfdaf102404e68ae48e5508ac675d54bec": "packages/cli/src/local-server.ts",
+  "7ac0892293b4561edb96d53b87f2f990b691ed2d1111fd540cb4605d3a4652de": "lib/ai-learning/decision-capture.ts",
+  "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab": "packages/cli/src/cli.ts",
+  "da258c71c6f0d60e69a4249926e7a9ed8ee1dfb8d35988aa34cbc5a4e4704fe1": "app/pricing/page.tsx",
+  "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5": "server/mcp-sse.ts",
+  "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717": "lib/subscription.ts",
+  "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0": "server/index.ts"
+ },
+ "mode": "rolling",
+ "n_errors": 0,
+ "n_eval": 36,
+ "retrieval_hit_rate": 1.0,
+ "retrieved": {
+  "rcolkitt__vasperamemory-00456e20cb": [
+   "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+   "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+   "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717"
+  ],
+  "rcolkitt__vasperamemory-0aec6b544a": [
+   "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+   "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+   "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab"
+  ],
+  "rcolkitt__vasperamemory-0f10b324b1": [
+   "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+   "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+   "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+   "70bc6e66439b2627b45db509e8cf01a7bddbdb354e0615cd300c1880e755d6f6",
+   "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62"
+  ],
+  "rcolkitt__vasperamemory-1a69e3d927": [
+   "4ca75ed698ecacbc688ec643d93734c0d44fd9b3e17b98a4bb3c41aed417aea1",
+   "684bff0b9f9f06d0d7c26c605dc15512cd5d81b63bc7ee11ef15960f10947159",
+   "2f2edfb3dc2cb2e73b5de0049219a8fd0afb9603ab39aa60acf0fbe099759bc5",
+   "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+   "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62"
+  ],
+  "rcolkitt__vasperamemory-1b9cba8f85": [
+   "4ca75ed698ecacbc688ec643d93734c0d44fd9b3e17b98a4bb3c41aed417aea1",
+   "2f2edfb3dc2cb2e73b5de0049219a8fd0afb9603ab39aa60acf0fbe099759bc5",
+   "684bff0b9f9f06d0d7c26c605dc15512cd5d81b63bc7ee11ef15960f10947159",
+   "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+   "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5"
+  ],
+  "rcolkitt__vasperamemory-1e4b600af9": [
+   "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+   "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+   "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+   "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62",
+   "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab"
+  ],
+  "rcolkitt__vasperamemory-33e9e111f8": [
+   "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+   "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+   "4ca75ed698ecacbc688ec643d93734c0d44fd9b3e17b98a4bb3c41aed417aea1",
+   "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+   "da258c71c6f0d60e69a4249926e7a9ed8ee1dfb8d35988aa34cbc5a4e4704fe1"
+  ],
+  "rcolkitt__vasperamemory-55e1e52dce": [
+   "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+   "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+   "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+   "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+   "da258c71c6f0d60e69a4249926e7a9ed8ee1dfb8d35988aa34cbc5a4e4704fe1"
+  ],
+  "rcolkitt__vasperamemory-73a6775e42": [
+   "76239e94eea00c6e9bbd9da6dd19f3bfdaf102404e68ae48e5508ac675d54bec",
+   "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62",
+   "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+   "70bc6e66439b2627b45db509e8cf01a7bddbdb354e0615cd300c1880e755d6f6",
+   "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5"
+  ],
+  "rcolkitt__vasperamemory-753d59955a": [
+   "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+   "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+   "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+   "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+   "7ac0892293b4561edb96d53b87f2f990b691ed2d1111fd540cb4605d3a4652de"
+  ],
+  "rcolkitt__vasperamemory-774334c622": [
+   "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+   "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+   "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717"
+  ],
+  "rcolkitt__vasperamemory-7c7af24bfc": [
+   "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+   "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+   "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+   "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+   "da258c71c6f0d60e69a4249926e7a9ed8ee1dfb8d35988aa34cbc5a4e4704fe1"
+  ],
+  "rcolkitt__vasperamemory-8471fd45c4": [
+   "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+   "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+   "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+   "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717"
+  ],
+  "rcolkitt__vasperamemory-9153908e03": [
+   "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62",
+   "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+   "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+   "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+   "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717"
+  ],
+  "rcolkitt__vasperamemory-917cf9c05b": [
+   "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+   "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+   "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+   "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0"
+  ],
+  "rcolkitt__vasperamemory-9317acf05a": [
+   "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+   "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+   "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+   "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5"
+  ],
+  "rcolkitt__vasperamemory-98a73f13f5": [
+   "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+   "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+   "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+   "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+   "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62"
+  ],
+  "rcolkitt__vasperamemory-9c2285588f": [
+   "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+   "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+   "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0"
+  ],
+  "rcolkitt__vasperamemory-a91df75637": [
+   "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+   "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+   "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+   "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+   "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62"
+  ],
+  "rcolkitt__vasperamemory-ac0adaaf96": [
+   "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+   "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+   "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0"
+  ],
+  "rcolkitt__vasperamemory-ac5583e859": [
+   "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+   "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+   "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717"
+  ],
+  "rcolkitt__vasperamemory-af7d418bd5": [
+   "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62",
+   "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+   "da258c71c6f0d60e69a4249926e7a9ed8ee1dfb8d35988aa34cbc5a4e4704fe1",
+   "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+   "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab"
+  ],
+  "rcolkitt__vasperamemory-b6b45f07ae": [
+   "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62",
+   "684bff0b9f9f06d0d7c26c605dc15512cd5d81b63bc7ee11ef15960f10947159",
+   "76239e94eea00c6e9bbd9da6dd19f3bfdaf102404e68ae48e5508ac675d54bec",
+   "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+   "7ac0892293b4561edb96d53b87f2f990b691ed2d1111fd540cb4605d3a4652de"
+  ],
+  "rcolkitt__vasperamemory-ba397b64e7": [
+   "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+   "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+   "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+   "da258c71c6f0d60e69a4249926e7a9ed8ee1dfb8d35988aa34cbc5a4e4704fe1",
+   "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5"
+  ],
+  "rcolkitt__vasperamemory-bc2897d401": [
+   "70bc6e66439b2627b45db509e8cf01a7bddbdb354e0615cd300c1880e755d6f6",
+   "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+   "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+   "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+   "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717"
+  ],
+  "rcolkitt__vasperamemory-be5eb2f624": [
+   "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+   "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+   "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+   "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717"
+  ],
+  "rcolkitt__vasperamemory-bfb9638904": [
+   "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62",
+   "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+   "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+   "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+   "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0"
+  ],
+  "rcolkitt__vasperamemory-c229215f42": [
+   "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62",
+   "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+   "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+   "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+   "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5"
+  ],
+  "rcolkitt__vasperamemory-c8c7e1d09f": [
+   "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+   "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+   "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+   "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5"
+  ],
+  "rcolkitt__vasperamemory-d7bc3e8e7e": [
+   "76239e94eea00c6e9bbd9da6dd19f3bfdaf102404e68ae48e5508ac675d54bec",
+   "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+   "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+   "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62",
+   "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab"
+  ],
+  "rcolkitt__vasperamemory-d8b2886cb5": [
+   "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+   "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+   "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+   "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+   "da258c71c6f0d60e69a4249926e7a9ed8ee1dfb8d35988aa34cbc5a4e4704fe1"
+  ],
+  "rcolkitt__vasperamemory-ded0f6e2f7": [
+   "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+   "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+   "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62",
+   "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+   "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab"
+  ],
+  "rcolkitt__vasperamemory-e18e397c21": [
+   "63c1e225c972be946466e619f3df2fb525fd643f304d445cd931fc9881dccab8",
+   "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+   "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+   "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+   "299bc7f3cac9ef1b2b5ffe8c4c0ad88ae19805b2f71c7f1f5be44e0d012dbf62"
+  ],
+  "rcolkitt__vasperamemory-efcd22c7bb": [
+   "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+   "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+   "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5",
+   "76239e94eea00c6e9bbd9da6dd19f3bfdaf102404e68ae48e5508ac675d54bec",
+   "da258c71c6f0d60e69a4249926e7a9ed8ee1dfb8d35988aa34cbc5a4e4704fe1"
+  ],
+  "rcolkitt__vasperamemory-f8413efb09": [
+   "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+   "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+   "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0"
+  ],
+  "rcolkitt__vasperamemory-fa5ad349de": [
+   "f56e8091eb3de048881020ba730b5158ccb486bf859fa54bc227ddbb95c8e717",
+   "f66ae1b675919a8e40ada2ef585dcedfd42390c3036d405565d686b2a83f0bb0",
+   "da258c71c6f0d60e69a4249926e7a9ed8ee1dfb8d35988aa34cbc5a4e4704fe1",
+   "ba27ea97e2f7504901ca2469c49ffb379cae545656710202899b62abd52845ab",
+   "ee1e7071e46b64838f691922dae6d13d9226dada9b830ab715bd16bf075e05b5"
+  ]
+ },
+ "treatment": {
+  "false_positive_rate": 0.3556,
+  "localization_rate": 0.9444,
+  "n_false_positive": 32,
+  "n_flags": 90,
+  "n_localized": 34,
+  "n_tasks": 36,
+  "per_repo": {
+   "rcolkitt/vasperamemory": {
+    "false_positive_rate": 0.3556,
+    "localization_rate": 0.9444,
+    "n_false_positive": 32,
+    "n_flags": 90,
+    "n_localized": 34,
+    "n_tasks": 36
+   }
+  }
+ },
+ "treatment_flags": {
+  "rcolkitt__vasperamemory-00456e20cb": [
+   "public/sw.js",
+   "lib/api-auth.ts",
+   "components/service-worker-registration.tsx"
+  ],
+  "rcolkitt__vasperamemory-0aec6b544a": [
+   "lib/supabase.ts"
+  ],
+  "rcolkitt__vasperamemory-0f10b324b1": [
+   "server/index.ts",
+   "server/mcp-sse.ts",
+   "lib/team-service.ts"
+  ],
+  "rcolkitt__vasperamemory-1a69e3d927": [
+   "lib/governance/gate-service.ts",
+   "lib/ai-learning/decision-capture.ts",
+   "server/governance-routes.ts"
+  ],
+  "rcolkitt__vasperamemory-1b9cba8f85": [
+   "lib/ai-learning/decision-capture.ts",
+   "server/mcp-ai-learning.ts",
+   "lib/supabase.ts"
+  ],
+  "rcolkitt__vasperamemory-1e4b600af9": [
+   "server/tools/decision-tools.ts",
+   "server/tools/session-tools.ts",
+   "server/mcp-sse.ts"
+  ],
+  "rcolkitt__vasperamemory-33e9e111f8": [
+   "lib/user-roles.ts",
+   "server/db-supabase.ts",
+   "app/dashboard/page.tsx"
+  ],
+  "rcolkitt__vasperamemory-55e1e52dce": [
+   "lib/security-middleware.ts",
+   "lib/hallucination-evolution-pipeline.ts",
+   "server/oauth-provider.ts"
+  ],
+  "rcolkitt__vasperamemory-73a6775e42": [
+   "lib/governance/gate-service.ts",
+   "lib/governance/conflict-checker.ts",
+   "server/tools/decision-tools.ts"
+  ],
+  "rcolkitt__vasperamemory-753d59955a": [
+   "lib/api-key.ts",
+   "app/api/ai-learning/context/route.ts",
+   "server/index.ts"
+  ],
+  "rcolkitt__vasperamemory-774334c622": [
+   "lib/memory-service.ts",
+   "server/mcp-sse.ts"
+  ],
+  "rcolkitt__vasperamemory-7c7af24bfc": [
+   "packages/cli/src/governance/ledger.ts"
+  ],
+  "rcolkitt__vasperamemory-8471fd45c4": [
+   "lib/codebase-intelligence.ts",
+   "server/mcp-sse.ts",
+   "server/mcp-stdio.ts"
+  ],
+  "rcolkitt__vasperamemory-9153908e03": [
+   "packages/cli/src/setup-rules.ts",
+   "packages/cli/src/cli.ts",
+   "server/governance-routes.ts"
+  ],
+  "rcolkitt__vasperamemory-917cf9c05b": [
+   "app/features/page.tsx",
+   "app/pricing/page.tsx"
+  ],
+  "rcolkitt__vasperamemory-9317acf05a": [
+   "app/api/admin/stats/route.ts",
+   "lib/subscription.ts",
+   "server/mcp-ai-learning.ts"
+  ],
+  "rcolkitt__vasperamemory-98a73f13f5": [
+   "lib/codebase-intelligence.ts",
+   "server/index.ts",
+   "lib/export-import/importer.ts"
+  ],
+  "rcolkitt__vasperamemory-9c2285588f": [
+   "app/api/stripe/reconcile/route.ts",
+   "lib/security-middleware.ts"
+  ],
+  "rcolkitt__vasperamemory-a91df75637": [
+   "packages/cli/src/cli.ts",
+   "packages/cli/src/governance/schemas.ts",
+   "packages/cli/src/governance/ledger.ts"
+  ],
+  "rcolkitt__vasperamemory-ac0adaaf96": [
+   "app/layout.tsx",
+   "public/sw.js",
+   "components/header.tsx"
+  ],
+  "rcolkitt__vasperamemory-ac5583e859": [
+   "app/api/ai-learning/impact/route.ts",
+   "server/index.ts",
+   "server/mcp-auth-proxy.ts"
+  ],
+  "rcolkitt__vasperamemory-af7d418bd5": [
+   "app/api/projects/[id]/decisions/[decisionId]/restore/route.ts",
+   "lib/governance/gate-service.ts",
+   "server/governance-routes.ts"
+  ],
+  "rcolkitt__vasperamemory-b6b45f07ae": [
+   "app/dashboard/page.tsx",
+   "lib/projects.ts",
+   "app/api/projects/[id]/metrics/route.ts"
+  ],
+  "rcolkitt__vasperamemory-ba397b64e7": [
+   "server/governance-routes.ts"
+  ],
+  "rcolkitt__vasperamemory-bc2897d401": [
+   "packages/cli/src/local-server.ts",
+   "packages/cli/src/local-db.ts"
+  ],
+  "rcolkitt__vasperamemory-be5eb2f624": [
+   "app/api/register/route.ts",
+   "app/api/auth/register-repo/route.ts"
+  ],
+  "rcolkitt__vasperamemory-bfb9638904": [
+   "packages/cli/src/cli.ts",
+   "packages/cli/src/setup-claude.ts"
+  ],
+  "rcolkitt__vasperamemory-c229215f42": [
+   "packages/cli/src/local-server.ts"
+  ],
+  "rcolkitt__vasperamemory-c8c7e1d09f": [
+   "app/api/debug/db-check/route.ts",
+   "app/api/test-db/route.ts",
+   "lib/subscription.ts"
+  ],
+  "rcolkitt__vasperamemory-d7bc3e8e7e": [
+   "server/tools/decision-tools.ts",
+   "server/mcp-sse.ts",
+   "server/tools/index.ts"
+  ],
+  "rcolkitt__vasperamemory-d8b2886cb5": [
+   "lib/subscription.ts",
+   "server/mcp-sse.ts",
+   "app/api/projects/route.ts"
+  ],
+  "rcolkitt__vasperamemory-ded0f6e2f7": [
+   "lib/governance/conflict-checker.ts",
+   "lib/governance/gate-service.ts",
+   "lib/embedding-service.ts"
+  ],
+  "rcolkitt__vasperamemory-e18e397c21": [
+   "lib/projects.ts"
+  ],
+  "rcolkitt__vasperamemory-efcd22c7bb": [
+   "lib/projects.ts",
+   "server/index.ts"
+  ],
+  "rcolkitt__vasperamemory-f8413efb09": [
+   "app/pricing/page.tsx",
+   "components/ui/button.tsx",
+   "components/theme-provider.tsx"
+  ],
+  "rcolkitt__vasperamemory-fa5ad349de": [
+   "server/governance-routes.ts",
+   "packages/cli/src/cli.ts"
+  ]
+ },
+ "warmup": 10
+}

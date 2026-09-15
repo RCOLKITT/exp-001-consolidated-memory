@@ -1,0 +1,111 @@
+{
+ "arms": [
+  "control",
+  "treatment",
+  "placebo"
+ ],
+ "control": {
+  "false_positive_rate": 0.3407,
+  "localization_rate": 0.9722,
+  "n_false_positive": 31,
+  "n_flags": 91,
+  "n_localized": 35,
+  "n_tasks": 36,
+  "per_repo": {
+   "rcolkitt/vasperamemory": {
+    "false_positive_rate": 0.3407,
+    "localization_rate": 0.9722,
+    "n_false_positive": 31,
+    "n_flags": 91,
+    "n_localized": 35,
+    "n_tasks": 36
+   }
+  }
+ },
+ "effect_in_majority_of_repos": false,
+ "false_positive_rise_pts": 1.49,
+ "granularity": "file",
+ "localization_lift_pts": -2.78,
+ "mode": "rolling",
+ "negative_control_lift": null,
+ "per_repo_lift": {
+  "rcolkitt/vasperamemory": {
+   "false_positive_rise_pts": 1.49,
+   "localization_lift_pts": -2.78
+  }
+ },
+ "secondary_arms": {
+  "placebo": {
+   "control": {
+    "false_positive_rate": 0.3407,
+    "localization_rate": 0.9722,
+    "n_false_positive": 31,
+    "n_flags": 91,
+    "n_localized": 35,
+    "n_tasks": 36,
+    "per_repo": {
+     "rcolkitt/vasperamemory": {
+      "false_positive_rate": 0.3407,
+      "localization_rate": 0.9722,
+      "n_false_positive": 31,
+      "n_flags": 91,
+      "n_localized": 35,
+      "n_tasks": 36
+     }
+    }
+   },
+   "effect_in_majority_of_repos": false,
+   "false_positive_rise_pts": 1.49,
+   "localization_lift_pts": -2.78,
+   "negative_control_lift": null,
+   "per_repo_lift": {
+    "rcolkitt/vasperamemory": {
+     "false_positive_rise_pts": 1.49,
+     "localization_lift_pts": -2.78
+    }
+   },
+   "treatment": {
+    "false_positive_rate": 0.3556,
+    "localization_rate": 0.9444,
+    "n_false_positive": 32,
+    "n_flags": 90,
+    "n_localized": 34,
+    "n_tasks": 36,
+    "per_repo": {
+     "rcolkitt/vasperamemory": {
+      "false_positive_rate": 0.3556,
+      "localization_rate": 0.9444,
+      "n_false_positive": 32,
+      "n_flags": 90,
+      "n_localized": 34,
+      "n_tasks": 36
+     }
+    }
+   }
+  }
+ },
+ "tau": 0.0,
+ "treatment": {
+  "false_positive_rate": 0.3556,
+  "localization_rate": 0.9444,
+  "n_false_positive": 32,
+  "n_flags": 90,
+  "n_localized": 34,
+  "n_tasks": 36,
+  "per_repo": {
+   "rcolkitt/vasperamemory": {
+    "false_positive_rate": 0.3556,
+    "localization_rate": 0.9444,
+    "n_false_positive": 32,
+    "n_flags": 90,
+    "n_localized": 34,
+    "n_tasks": 36
+   }
+  }
+ },
+ "treatment_minus_placebo": {
+  "false_positive_pts": 0.0,
+  "localization_pts": 0.0
+ },
+ "warmup": 10
+}
